@@ -1,0 +1,27 @@
+{
+  "name": "iris-personal-office",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node scripts/run-tests.mjs",
+    "test:domain": "node scripts/run-tests.mjs tests/domain",
+    "test:reconstruction": "node scripts/run-tests.mjs tests/reconstruction",
+    "test:circuit": "node scripts/run-tests.mjs tests/circuit",
+    "test:authority": "node scripts/run-tests.mjs tests/authority-privacy",
+    "test:failure": "node scripts/run-tests.mjs tests/failure",
+    "test:provider": "node scripts/run-tests.mjs tests/provider-substitution",
+    "test:big": "node scripts/run-tests.mjs tests/big-separation",
+    "check": "node --experimental-strip-types scripts/static-check.mjs"
+  },
+  "dependencies": {
+    "ai": "^7.0.0",
+    "@ai-sdk/workflow": "^1.0.0",
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@opentelemetry/api": "^1.9.0",
+    "@neondatabase/serverless": "^1.0.0"
+  }
+}
