@@ -5,7 +5,7 @@ import { think } from './think.ts';
 import { evaluateAuthority } from '../domain/authority.ts';
 import { evaluatePrivacy } from '../domain/privacy.ts';
 import type { ActionIntent } from '../domain/action-intent.ts';
-import type { ToolContract, ToolExecutor } from '../tools/tool-contract.ts';
+import { toolContractMatches, type ToolContract, type ToolExecutor } from '../tools/tool-contract.ts';
 import { act } from './act.ts';
 import { verifyFixtureEffect } from '../tools/verification.ts';
 import { recordCandidateLearning } from './learn.ts';
@@ -17,16 +17,17 @@ export async function runBoundedCircuit(args:{
   subjectRef:string; predicate:string; actionScope:string; privacyScope:string; intent:ActionIntent;
   contract:ToolContract; executor:ToolExecutor; fixtureRead:()=>unknown; expectedEffect:unknown; now:string;
 }) {
+  if (!toolContractMatches(args.intent,args.contract,args.actionScope,args.privacyScope)) return {status:'HOLD_TOOL_CONTRACT_MISMATCH'};
   const started=Date.now();
   const orientation=orient(args.repo,args.principalId);
   const perception=perceive(args.repo,args.subjectRef,[args.predicate]);
   const thought=think({objective_id:args.objectiveId,perception_qualified:perception.qualified,desired_operation:args.intent.operation});
-  const auth=evaluateAuthority([...args.repo.authorityPolicies.values()],args.actionScope,args.now,orientation.explicit_decision_scopes);
-  const privacy=evaluatePrivacy([...args.repo.privacyPolicies.values()],args.privacyScope,args.now);
+  const auth=evaluateAuthority([...args.repo.authorityPolicies.values()],args.contract.authority_scope,args.now,orientation.explicit_decision_scopes);
+  const privacy=evaluatePrivacy([...args.repo.privacyPolicies.values()],args.contract.privacy_scope,args.now);
   if (auth!=='AUTHORIZED_WITHIN_STANDING_SCOPE') return {status:'HOLD_AUTHORITY',auth,privacy};
   if (privacy!=='ALLOW') return {status:'HOLD_PRIVACY',auth,privacy};
   if (!args.repo.intents.has(args.intent.intent_id)) { args.repo.intents.set(args.intent.intent_id,structuredClone(args.intent)); args.repo.stateVersion++; }
-  const receipt=await act(args.intent,args.contract,args.executor);
+  const receipt=await act(args.intent,args.contract,args.executor,args.actionScope,args.privacyScope);
   args.repo.receipts.set(receipt.receipt_id,structuredClone(receipt)); args.repo.stateVersion++;
   const verification=verifyFixtureEffect(args.intent,receipt,args.fixtureRead(),args.expectedEffect);
   args.repo.verifications.set(verification.verification_id,verification); args.repo.stateVersion++;

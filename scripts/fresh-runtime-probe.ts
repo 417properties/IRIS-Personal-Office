@@ -47,6 +47,18 @@ switch(caseName) {
     passed=h.length===2 && h[0]?.value==='READY' && h[1]?.value==='DONE' && Boolean(h[0]?.effective_to);
     detail={historyLength:h.length,values:h.map(x=>x.value)}; break;
   }
+  case "R9_INTENT_ONLY":
+  case "R10_RECEIPT_WITHOUT_VERIFICATION": {
+    const x=continuityAdmission(repo,envelope.priorStateVersion);
+    const receipt=repo.receipts.get("receipt-1");
+    const crashState=repo.intents.has("intent-1") && repo.verifications.size===0 && (caseName==="R9_INTENT_ONLY"
+      ? repo.receipts.size===0
+      : repo.receipts.size===1 && receipt?.intent_id==="intent-1" && receipt.completion_class==="SUCCESS" && receipt.tool_reported_status==="SUCCESS");
+    passed=crashState && !x.admitted && x.reason==="RECONCILIATION_REQUIRED" && x.requires_reorient
+      && x.unresolved_effect_intent_ids.length===1 && x.unresolved_effect_intent_ids[0]==="intent-1"
+      && repo.objectives.get("obj-parent")?.status==="OPEN" && repo.obligations.get("obl-1")?.status==="OPEN";
+    detail=x; break;
+  }
   default: throw new Error(`UNKNOWN_CASE:${caseName}`);
 }
 process.stdout.write(JSON.stringify({caseName,passed,detail,stateVersion:repo.stateVersion}));
