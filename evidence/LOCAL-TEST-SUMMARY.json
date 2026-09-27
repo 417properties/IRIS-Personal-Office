@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-27",
+  "scope": "IRIS C0-C3 bounded nonproduction candidate",
+  "full_test_total": 56,
+  "full_test_pass": 56,
+  "full_test_fail": 0,
+  "c2_fresh_process_cases": 8,
+  "schema_required_tables": 17,
+  "migrations": [
+    "001_iris_core.sql",
+    "002_work_episode.sql",
+    "003_action_effect.sql",
+    "004_instrumentation.sql"
+  ],
+  "external_model_calls": 0,
+  "real_external_tool_calls": 0,
+  "aaron_mechanical_interventions_in_tests": 0,
+  "production_deployments": 0,
+  "continuity_status": "OFF",
+  "operational_promotion": false
+}

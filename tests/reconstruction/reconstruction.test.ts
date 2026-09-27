@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { seededRepo, NOW } from '../helpers.ts';
+import { continuityAdmission } from '../../src/state/continuity-admission.ts';
+import { perceive } from '../../src/runtime/perceive.ts';
+
+test('R1_CLEAN_CONTINUATION',()=>{const r=seededRepo(); const x=continuityAdmission(r,r.stateVersion); assert.equal(x.admitted,true); assert.equal(x.requires_reorient,false); assert.deepEqual(x.open_obligation_ids,['obl-1']);});
+test('R2_CURRENT_CHANGED_AFTER_INTERRUPTION',()=>{const r=seededRepo(); const prior=r.stateVersion; r.publishCurrent({assertion_id:'a2',subject_ref:'fixture:source',predicate:'status',value:'UPDATED',effective_from:'2026-09-27T12:01:00.000Z',source_occurrence_refs:['ev-1'],qualification:'VERIFIED',freshness:'FRESH',coverage:'COMPLETE',uncertainty:[],version:2,invalidated_by_refs:[]}); const x=continuityAdmission(r,prior); assert.equal(x.requires_reorient,true);});
+test('R3_CONFLICTING_EVIDENCE',()=>{const r=seededRepo(); r.publishCurrent({assertion_id:'a2',subject_ref:'fixture:source',predicate:'status',value:'UNKNOWN',effective_from:'2026-09-27T12:01:00.000Z',source_occurrence_refs:['ev-1'],qualification:'CONFLICT',freshness:'FRESH',coverage:'CONFLICT',uncertainty:['conflicting evidence'],version:2,invalidated_by_refs:[]}); const p=perceive(r,'fixture:source',['status']); assert.equal(p.conflict,true); assert.equal(p.qualified,false);});
+test('R4_MISSING_SOURCE',()=>{const p=perceive(seededRepo(),'fixture:source',['status','missing']); assert.equal(p.missing_source,true); assert.equal(p.qualified,false);});
+test('R5_AMBIGUOUS_EXTERNAL_EFFECT',()=>{const r=seededRepo(); r.verifications.set('v1',{verification_id:'v1',intent_id:'i1',disposition:'AMBIGUOUS_EFFECT',evidence_refs:[],verified_at:NOW,notes:[]}); const x=continuityAdmission(r,r.stateVersion); assert.equal(x.admitted,false); assert.equal(x.reason,'RECONCILIATION_REQUIRED');});
+test('R6_OPEN_OBLIGATION_NO_CONVERSATION',()=>{const r=seededRepo(); const x=continuityAdmission(r,r.stateVersion); assert.ok(x.open_obligation_ids.includes('obl-1'));});
+test('R7_PRESERVED_AUTHORITY_STATE',()=>{const r=seededRepo(); assert.equal(r.authorityPolicies.get('auth-1')!.basis_type,'STANDING_AUTHORIZATION'); assert.equal(r.orientations.get('orient-1')!.predicted_preferences[0]!.key,'spending.purchase');});
+test('R8_HISTORY_SURVIVES_NEW_CURRENT',()=>{const r=seededRepo(); r.publishCurrent({assertion_id:'a2',subject_ref:'fixture:source',predicate:'status',value:'DONE',effective_from:'2026-09-27T12:01:00.000Z',source_occurrence_refs:['ev-1'],qualification:'VERIFIED',freshness:'FRESH',coverage:'COMPLETE',uncertainty:[],version:2,invalidated_by_refs:[]}); assert.equal(r.currentHistory('fixture:source','status').length,2); assert.equal(r.currentHistory('fixture:source','status')[0]!.effective_to,'2026-09-27T12:01:00.000Z');});
