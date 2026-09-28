@@ -1,0 +1,535 @@
+{
+  "artifact": "IRIS-PILOT-001-AMIR-BASELINE-EVIDENCE-v0.1",
+  "schema_version": "amir-baseline-evidence-v1",
+  "evaluator": "PROFESSOR / INDEPENDENT_AMIR_EVALUATOR",
+  "authority": "ZERO_AUTHORITY",
+  "protocol": {
+    "commit": "214f44781a641fbcbb85901a6540f41f7d590a77",
+    "blob": "8feb16d4f29696b05b1db8e86707b4d1327351ca"
+  },
+  "frozen_population": {
+    "ledger_path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-AMIR-OBSERVATION-EPISODES-v0.1.json",
+    "ledger_commit": "7d90effd4cb9fb1a0d504615629554d2af26ed5f",
+    "ledger_blob": "b5a8170abd4243261a293e8d70125bc6ba3657cf",
+    "ledger_bytes": 35883,
+    "ledger_sha256": "ff8de36c42778715093e80fd234e6c38c0d616f9a343dd84fc8ef95b8608d09b",
+    "population_digest_method": "SHA256 of UTF-8 compact, sort_keys JSON array in ledger order of episode_id, evaluator_disposition, verified_objective_progress",
+    "population_digest": "a4693f14b853acbee4a9907b6d8f691e5ae3d411c26b2157a3b5f2838093f615",
+    "observation_start": "2026-09-28T02:00:00Z",
+    "observation_stop": "2026-09-28T17:15:45Z"
+  },
+  "episodes": [
+    {
+      "episode_id": "AMIR-E1-8695cf767e40c0d9",
+      "objective_or_work_lineage": "IRIS Pilot 001 Phase E1 pre-Builder evaluation population freeze and Builder re-release",
+      "episode_start": "2026-09-28T02:34:27Z",
+      "episode_end": "2026-09-28T03:06:57Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "32-case label-free population, adjudication protocol, and independence certification frozen; V0 explicitly re-released.",
+      "progress_verification_evidence": {
+        "disposition": "IRIS_PILOT_001_PREBUILDER_EVALUATION_POPULATION_FROZEN / CASE_INPUT_MANIFEST_READY / ADJUDICATION_PROTOCOL_READY / INDEPENDENCE_CERTIFIED / V0_MAY_RESUME",
+        "evaluator_head": "aa8bba661976c2ef2c1d115b548fc2a86122e2f8",
+        "population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5862011275",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5862011453",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5862011368",
+        "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5862060685",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5862060986",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5862061278",
+        "personal-context:2026-09-28T03:06:52Z"
+      ],
+      "aaron_interventions": [],
+      "conflict_unknown_state": "No Aaron action inferred from status reporting."
+    },
+    {
+      "episode_id": "AMIR-E1-e14b0a71e97b1a1a",
+      "objective_or_work_lineage": "IRIS Pilot 001 canonical repository recovery and execution handoff to DEV 6.4",
+      "episode_start": "2026-09-28T04:22:20Z",
+      "episode_end": "2026-09-28T05:22:38Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "Clean canonical checkout at accepted base established; deterministic rebuild/publication assigned to DEV 6.4.",
+      "progress_verification_evidence": {
+        "desktop": "DESKTOP-02R4J3T",
+        "checkout": "C:\\Users\\Lesa Lay\\IRIS-Pilot001-Recovery",
+        "accepted_base": "bee076c69290922bfe141b9603763ac943619dfe",
+        "routing_state": "IRIS_PILOT_001_REBUILD_PUBLICATION_TRANSFERRED_TO_DEV_6_4"
+      },
+      "evidence_refs": [
+        "personal-context:2026-09-28T04:22:20Z",
+        "personal-context:2026-09-28T04:23:55Z",
+        "personal-context:2026-09-28T05:22:38Z",
+        "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5863047297",
+        "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5863306453",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5863306656",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5863306409"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-21e8c618e891af11",
+          "timestamp": "2026-09-28T04:22:20Z",
+          "source_ref": null,
+          "excerpt_sha256": "9b9bcf91a4d00f38fc3a61b48cf047cd60986338d805f7df02af951391d30a79",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron carried exact workspace/routing state across the failed V0 publication path."
+        }
+      ],
+      "conflict_unknown_state": "Only recovery/routing, not source completion, is qualified."
+    },
+    {
+      "episode_id": "AMIR-E1-2942bda8f328ee0f",
+      "objective_or_work_lineage": "BIG Master Launch W03 source-Builder boundary closure and trusted-binding gate opening",
+      "episode_start": "2026-09-28T04:45:39Z",
+      "episode_end": "2026-09-28T04:45:51Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "W03 source remained accepted at c2244717…; trusted runtime/provider binding became next gate.",
+      "progress_verification_evidence": {
+        "accepted_source": "c2244717f627f8476fa36e7aa82f06104abb1b30",
+        "state": "W03_SOURCE_BUILDER_BOUNDARY_COMPLETE / MAIN_V0_STOPPED"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5863586988",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5863586516",
+        "personal-context:2026-09-28T04:45:39Z",
+        "gmail:2026-09-28T04:45:51Z:[Task Update] BIG Functional Progress Watch"
+      ],
+      "aaron_interventions": [],
+      "conflict_unknown_state": "No evidence-bound Aaron action."
+    },
+    {
+      "episode_id": "AMIR-E1-b918432317c29b3d",
+      "objective_or_work_lineage": "W03 trusted runtime/provider-binding Blueprint v1.1 freeze",
+      "episode_start": "2026-09-28T04:56:06Z",
+      "episode_end": "2026-09-28T05:17:09Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "Smallest trusted binding composition frozen against accepted source and provider identities.",
+      "progress_verification_evidence": {
+        "commit": "b8a1b01e2b1bb645a444dd5c144c1c4ec14e159d",
+        "blueprint_sha256": "23fc7f1f53315cca6be990ca4ae62bf02d5bde488f251f8280de39bc83d8223d",
+        "packet_sha256": "38b1237c5a917c86a261c075874539c1350c517c66a9ce1258b914ea5576d89e"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5863723580",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5863906143",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5863906655",
+        "personal-context:2026-09-28T05:14:17Z",
+        "personal-context:2026-09-28T05:17:09Z"
+      ],
+      "aaron_interventions": [],
+      "conflict_unknown_state": "No Aaron intervention inferred from later status."
+    },
+    {
+      "episode_id": "AMIR-E1-0c4344acd8151f75",
+      "objective_or_work_lineage": "W03 runtime environment source-guard conflict and v1.2 bounded resolution",
+      "episode_start": "2026-09-28T05:36:31Z",
+      "episode_end": "2026-09-28T05:50:43Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "v1.2 authorized one binding module and exact env allowlist while preserving Builder release.",
+      "progress_verification_evidence": {
+        "commit": "bcf8bad73c4a4ceb8986eaae54b571f8c358b885",
+        "state": "VERIFIER_EXCEPTION_CLOSED / EXISTING_BUILDER_RELEASE_RESUMED"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5864064436",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5864120049",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5864120352",
+        "personal-context:2026-09-28T05:36:31Z",
+        "personal-context:2026-09-28T05:38:08Z",
+        "personal-context:2026-09-28T05:50:43Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-a43f5b761bf29565",
+          "timestamp": "2026-09-28T05:38:08Z",
+          "source_ref": null,
+          "excerpt_sha256": "815ab93dbbf2875ddcb0ec09b87754b543b89d4bf33ffcab8db22539c0747ac7",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron corrected execution-lane identity so W03 returned to the proper BIG Builder."
+        }
+      ],
+      "conflict_unknown_state": "Correction repaired lane/context identity, not policy."
+    },
+    {
+      "episode_id": "AMIR-E1-75bcf8336c8e1479",
+      "objective_or_work_lineage": "W03 trusted-child identity-pin source conflict and v1.3 resolution",
+      "episode_start": "2026-09-28T06:15:39Z",
+      "episode_end": "2026-09-28T06:15:39Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "v1.3 closed identity-pin gap while preserving verifier checkpoint.",
+      "progress_verification_evidence": {
+        "commit": "6c22be716022811983d56ea01ffb0869aa00b3f6",
+        "mechanism": "GIT_OBJECT_DERIVED_PREBUILD_RUNTIME_PIN_V1",
+        "resume_checkpoint": "bca7dabadabd8cecd0827768a5104abfa0be27cf"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5864393860",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5864497295",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5864497727",
+        "personal-context:2026-09-28T06:15:39Z"
+      ],
+      "aaron_interventions": [],
+      "conflict_unknown_state": "No evidence-bound Aaron intervention."
+    },
+    {
+      "episode_id": "AMIR-E1-46c0a16a03c2b253",
+      "objective_or_work_lineage": "W03 trusted runtime/provider-binding child completion and exact candidate freeze",
+      "episode_start": "2026-09-28T07:04:51Z",
+      "episode_end": "2026-09-28T07:13:50Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "Exact W03 candidate frozen and routed for independent qualification.",
+      "progress_verification_evidence": {
+        "head": "bdda769dc8383002308c37e81beef124ae1cf9b3",
+        "tree": "a755c37ab62acd41311aee07fc194a05e7f4443b",
+        "builder_report": "97/97 PASS",
+        "next_gate": "INDEPENDENT_QUALIFICATION_REQUIRED"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5865095875",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5865096301",
+        "personal-context:2026-09-28T07:04:51Z",
+        "personal-context:2026-09-28T07:13:50Z"
+      ],
+      "aaron_interventions": [],
+      "conflict_unknown_state": "Builder PASS is not independent acceptance."
+    },
+    {
+      "episode_id": "AMIR-E1-e40df8cc7dcd52c3",
+      "objective_or_work_lineage": "W03 exact-head independent trusted-binding qualification",
+      "episode_start": "2026-09-28T07:31:31Z",
+      "episode_end": "2026-09-28T07:51:48Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "W03 candidate independently qualified PASS and became deployment-release eligible without authorizing deployment.",
+      "progress_verification_evidence": {
+        "disposition": "W03_TRUSTED_RUNTIME_PROVIDER_BINDING_QUALIFICATION_PASS / DEPLOYMENT_RELEASE_ELIGIBLE",
+        "head": "bdda769dc8383002308c37e81beef124ae1cf9b3",
+        "tree": "a755c37ab62acd41311aee07fc194a05e7f4443b",
+        "provider_native_ip11": "DEFERRED"
+      },
+      "evidence_refs": [
+        "personal-context:2026-09-28T07:31:31Z",
+        "personal-context:2026-09-28T07:35:46Z",
+        "personal-context:2026-09-28T07:51:48Z",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5865302182",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5865301994",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5865338990"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-3efd9ec9bf048835",
+          "timestamp": "2026-09-28T07:31:31Z",
+          "source_ref": null,
+          "excerpt_sha256": "611d041a62d8597bbf1b7386a0ffd0eaf1fe878ca27607aaa6d1da463125aea7",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron manually routed the frozen candidate to Professor."
+        }
+      ],
+      "conflict_unknown_state": "Provider-native Preview qualification remains unearned."
+    },
+    {
+      "episode_id": "AMIR-E1-df303f14a97305e8",
+      "objective_or_work_lineage": "W03 provider-native Preview qualification preflight and credential-custody HOLD",
+      "episode_start": "2026-09-28T07:37:39Z",
+      "episode_end": null,
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_BLOCKED",
+      "verified_objective_progress": false,
+      "progress_claim": "Preflight preserved accepted package and identified blocker; qualification incomplete.",
+      "progress_verification_evidence": {
+        "disposition": "W03_PROVIDER_NATIVE_QUALIFICATION_PREFLIGHT_HOLD / SOURCE_AND_BINDING_STILL_ACCEPTED / CREDENTIAL_CUSTODY_REQUIRED",
+        "provider_mutation_count": 0,
+        "w04_started": false
+      },
+      "evidence_refs": [
+        "personal-context:2026-09-28T07:37:39Z",
+        "personal-context:2026-09-28T07:37:46Z",
+        "personal-context:2026-09-28T07:37:48Z",
+        "personal-context:2026-09-28T07:49:58Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-8f4554e0835de90c",
+          "timestamp": "2026-09-28T07:37:39Z",
+          "source_ref": null,
+          "excerpt_sha256": "ff9654baa1789a8d1b00212268288cbe7292c0a621cd3e4e26fdfeda1c4f8f11",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron manually relayed the provider-preflight return."
+        },
+        {
+          "intervention_id": "AMIR-I-b9c60fcabe15d2a6",
+          "timestamp": "2026-09-28T07:49:58Z",
+          "source_ref": null,
+          "excerpt_sha256": "163c9aac07a5107f42eb5e975c75a1e082211e134bf82f2b4dfc30df882b344b",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron corrected a system-created project-identity error."
+        }
+      ],
+      "conflict_unknown_state": "Blocked on Redis endpoint, reader/writer credentials, and ACL mapping."
+    },
+    {
+      "episode_id": "AMIR-E1-c77d63fd02ac7e54",
+      "objective_or_work_lineage": "Storefront S0.1 observed-transaction finality recovery and reconciliation",
+      "episode_start": "2026-09-28T02:29:37Z",
+      "episode_end": "2026-09-28T02:49:37Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "Advanced to PAYMENT_OBSERVED / SUCCESSFUL_INCLUSION_PROVEN with primary+witness agreement and SETTLEMENT_UNKNOWN hold.",
+      "progress_verification_evidence": {
+        "state": "PAYMENT_OBSERVED / SUCCESSFUL_INCLUSION_PROVEN / SETTLEMENT_UNKNOWN / NOT_DELIVERED / NO_SECOND_PAYMENT"
+      },
+      "evidence_refs": [
+        "personal-context:2026-09-28T02:29:37Z",
+        "personal-context:2026-09-28T02:35:19Z",
+        "personal-context:2026-09-28T02:35:36Z",
+        "personal-context:2026-09-28T02:49:37Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-a63ade9b729d250d",
+          "timestamp": "2026-09-28T02:35:19Z",
+          "source_ref": null,
+          "excerpt_sha256": "7008e21467dccc1e8961213b938d48001e9ca6506b35405204cb487cf47b1fc1",
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron authorized bounded recovery; excluded from mechanical numerator."
+        }
+      ],
+      "conflict_unknown_state": "Verified progress is truthful reconciliation-state advance, not settlement completion."
+    },
+    {
+      "episode_id": "AMIR-E1-f8874da0854ec87a",
+      "objective_or_work_lineage": "IRIS Springfield AI Opportunity Radar exploration",
+      "episode_start": "2026-09-28T07:25:11Z",
+      "episode_end": null,
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_OPEN",
+      "verified_objective_progress": false,
+      "progress_claim": "Opportunity-radar concept articulated.",
+      "progress_verification_evidence": null,
+      "evidence_refs": [
+        "personal-context:2026-09-28T07:25:11Z",
+        "personal-context:2026-09-28T07:25:30Z",
+        "personal-context:2026-09-28T07:26:57Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-3382d8f8cca01653",
+          "timestamp": "2026-09-28T07:25:11Z",
+          "source_ref": null,
+          "excerpt_sha256": "eb15aabcb3ee153294a087fb19c9187208acc44a804bb0c83e59a3ce9e381e8d",
+          "primary_class": "PRINCIPAL_ONLY_SUBSTANTIVE_ACT",
+          "rationale": "Strategic direction, not mechanical routing."
+        }
+      ],
+      "conflict_unknown_state": "Open exploratory work; concept alone is insufficient."
+    },
+    {
+      "episode_id": "AMIR-E1-bdcb0ad54bbf605b",
+      "objective_or_work_lineage": "Aaron manual morning-state checklist retrieval",
+      "episode_start": "2026-09-28T03:15:51Z",
+      "episode_end": null,
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_UNKNOWN_PROGRESS",
+      "verified_objective_progress": false,
+      "progress_claim": "Manual retrieval occurred.",
+      "progress_verification_evidence": null,
+      "evidence_refs": [
+        "personal-context:2026-09-28T03:15:51Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-84b178a3237081ca",
+          "timestamp": "2026-09-28T03:15:51Z",
+          "source_ref": null,
+          "excerpt_sha256": "2a1faf236226793fdbfaf8a695168a4200eb3e1399de2e99eb7fcf6b60402167",
+          "primary_class": "MECHANICAL",
+          "rationale": "Manual state retrieval/reconstruction that an effective Personal Office should carry."
+        }
+      ],
+      "conflict_unknown_state": "VERIFIED_PROGRESS_EVIDENCE_INSUFFICIENT."
+    },
+    {
+      "episode_id": "AMIR-E1-eb47e14a62769741",
+      "objective_or_work_lineage": "IRIS personal-operations-first sequencing and 417 path",
+      "episode_start": "2026-09-28T14:11:53Z",
+      "episode_end": null,
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_OPEN_AT_STOP",
+      "verified_objective_progress": false,
+      "progress_claim": "Aaron preferred personal communications and life organization before 417 Airbnb communication work.",
+      "progress_verification_evidence": null,
+      "evidence_refs": [
+        "personal-context:2026-09-28T14:11:53Z",
+        "personal-context:2026-09-28T14:14:32Z",
+        "personal-context:2026-09-28T14:20:30Z",
+        "personal-context:2026-09-28T14:21:55Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-e1-personal-sequencing",
+          "timestamp": "2026-09-28T14:20:30Z",
+          "source_ref": "personal-context:2026-09-28T14:20:30Z",
+          "excerpt_sha256": null,
+          "primary_class": "PREFERENCE_JUDGMENT",
+          "rationale": "Aaron set preferred initial work ordering; retrieved summary lacks a verbatim preserved excerpt."
+        }
+      ],
+      "conflict_unknown_state": "No verified progress by stop; do not infer implementation from preference."
+    },
+    {
+      "episode_id": "AMIR-E1-0da6570e44986d66",
+      "objective_or_work_lineage": "W03 Vercel empty-project bootstrap exception and v1.4 Builder release",
+      "episode_start": "2026-09-28T14:55:29Z",
+      "episode_end": "2026-09-28T15:05:19Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "IBA v1.4 exception closed the zero-deployment Preview bootstrap blocker and released bounded provider qualification without W03 provider closure.",
+      "progress_verification_evidence": {
+        "disposition": "W03_VERCEL_EMPTY_PROJECT_BOOTSTRAP_EXCEPTION_READY / BUILDER_MAY_RESUME_PROVIDER_QUALIFICATION",
+        "commit": "dc4ebdf71d6549398d9c629ea537fd0b48a9a632",
+        "blueprint_blob": "9e12804687f494e02916279dbffeff2e869c2f26",
+        "builder_packet_blob": "18a8f9ccadd722ae418705e605606e22e9d42904"
+      },
+      "evidence_refs": [
+        "personal-context:2026-09-28T14:55:29Z",
+        "personal-context:2026-09-28T14:56:41Z",
+        "https://github.com/417properties/BIG-Navigator/commit/dc4ebdf71d6549398d9c629ea537fd0b48a9a632",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5872692282",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5872706329",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5872693045"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-0da6570e-relay",
+          "timestamp": "2026-09-28T14:55:29Z",
+          "source_ref": "personal-context:2026-09-28T14:55:29Z",
+          "excerpt_sha256": "cadbfec358583449ce6e6e062b368a4c322d1416839f175fa0c58dc27348b1d4",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron manually carried Main V0's exact dry-run/first-deployment blocker into the architecture lane; the excerpt is a preserved retrieval snippet, not the full message."
+        },
+        {
+          "intervention_id": "AMIR-I-0da6570e-scope",
+          "timestamp": "2026-09-28T14:56:41Z",
+          "source_ref": "personal-context:2026-09-28T14:56:41Z",
+          "excerpt_sha256": null,
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron bounded the one-time exception and prohibited deployment/authority expansion; not a mechanical intervention."
+        }
+      ],
+      "conflict_unknown_state": "The pasted V0 text is only partially preserved; relay is independently identified as Aaron-authored by personal-context retrieval."
+    },
+    {
+      "episode_id": "AMIR-E1-017826d21d301494",
+      "objective_or_work_lineage": "Professor succession checkpoint and next Master Launch handoff",
+      "episode_start": "2026-09-28T15:17:29Z",
+      "episode_end": null,
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_OPEN_AT_STOP",
+      "verified_objective_progress": false,
+      "progress_claim": "Checkpoint requested; no completion evidence by stop.",
+      "progress_verification_evidence": null,
+      "evidence_refs": [
+        "personal-context:2026-09-28T15:17:29Z",
+        "personal-context:2026-09-28T15:19:09Z"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-017826d2-stop",
+          "timestamp": "2026-09-28T15:17:29Z",
+          "source_ref": "personal-context:2026-09-28T15:17:29Z",
+          "excerpt_sha256": "0e2cdfabf5183c9977634500de19bdf761f1bb3e191b0316e6aeffce226c0ce7",
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron explicitly redirected the task and set the checkpoint scope."
+        }
+      ],
+      "conflict_unknown_state": "Open at stop; later completed checkpoint excluded by frozen stop boundary."
+    },
+    {
+      "episode_id": "AMIR-E1-cda8dd6bf5e1d995",
+      "objective_or_work_lineage": "W03 Vercel Node entrypoint adaptation v1.5 documentary freeze",
+      "episode_start": "2026-09-28T15:43:27Z",
+      "episode_end": "2026-09-28T16:09:14Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "IBA v1.5 froze the Node entrypoint adaptation contract and opened narrow Builder requalification.",
+      "progress_verification_evidence": {
+        "disposition": "W03_VERCEL_NODE_ENTRYPOINT_ADAPTATION_READY / NARROW_BUILDER_REQUALIFICATION_REQUIRED",
+        "commit": "3d4d6b443bb58ce5aa28a34e4d727fa867649f09",
+        "blueprint_blob": "fa6a684a5d4dcac91883e08c01b15e3cbe980519",
+        "builder_packet_blob": "f419c3fef8cf3da4eb0c71693fc124a8fface8bd"
+      },
+      "evidence_refs": [
+        "personal-context:2026-09-28T15:43:27Z",
+        "personal-context:2026-09-28T15:44:20Z",
+        "personal-context:2026-09-28T15:53:58Z",
+        "personal-context:2026-09-28T16:07:11Z",
+        "https://github.com/417properties/BIG-Navigator/commit/3d4d6b443bb58ce5aa28a34e4d727fa867649f09",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5873911265",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5873911922"
+      ],
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-relay",
+          "timestamp": "2026-09-28T15:44:20Z",
+          "source_ref": "personal-context:2026-09-28T15:44:20Z",
+          "excerpt_sha256": "42c883cdaaac6f86a2a9d31f723b6399775f6de3ad0a85e73b028c7afb7f745d",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron manually relayed Main V0's runtime observation to the architecture lane."
+        },
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-scope",
+          "timestamp": "2026-09-28T15:44:20Z",
+          "source_ref": "personal-context:2026-09-28T15:44:20Z",
+          "excerpt_sha256": null,
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron bounded the adaptation and prohibited implementation/deployment/Redis expansion."
+        },
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-routing",
+          "timestamp": "2026-09-28T15:53:58Z",
+          "source_ref": "personal-context:2026-09-28T15:53:58Z",
+          "excerpt_sha256": "38a4a6ea2b7888c092f8c7ed52d3b6407b2e1126c36e564722ebb878b5e24488",
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron set a prospective communication requirement for future V0 releases; this is a governing scope decision, not a past mechanical handoff."
+        },
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-publication",
+          "timestamp": "2026-09-28T16:07:11Z",
+          "source_ref": "personal-context:2026-09-28T16:07:11Z",
+          "excerpt_sha256": "b22f80c96c851ca0089eef23e407520efd5308f877c4ed472513ef3e59748513",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron had to prompt delivery of the already-completed amendment to V0 and the Work Bus after the document-availability gap was reported."
+        }
+      ],
+      "conflict_unknown_state": "Original short Aaron excerpts for the two follow-up interactions were retrieved with timestamps; both are classified. No remaining intervention classification UNKNOWN in qualifying episodes."
+    },
+    {
+      "episode_id": "AMIR-E1-87bc236513f79a9e",
+      "objective_or_work_lineage": "W03 Vercel Node adapter exact-head build and independent qualification",
+      "episode_start": "2026-09-28T16:32:08Z",
+      "episode_end": "2026-09-28T17:15:45Z",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+      "verified_objective_progress": true,
+      "progress_claim": "Exact adapted candidate cdaa987 was independently qualified and became eligible for separately authorized Preview provider qualification.",
+      "progress_verification_evidence": {
+        "disposition": "W03_VERCEL_NODE_ENTRYPOINT_ADAPTER_INDEPENDENT_QUALIFICATION_PASS / ADAPTED_PREVIEW_PROVIDER_QUALIFICATION_RELEASE_ELIGIBLE",
+        "head": "cdaa987ccc904e455665e76052eeb80864584380",
+        "tree": "f3c2ca66b135c4e0d79bbe3558ff64eae584a676",
+        "qualified_package_sha256": "5ddb51d41d534b4f3ef892293e2febcb6ae9385cac8305a80465b7685fde3596"
+      },
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/commit/cdaa987ccc904e455665e76052eeb80864584380",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5874961792",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5874962014"
+      ],
+      "aaron_interventions": [],
+      "conflict_unknown_state": "No authenticated Aaron-authored action with a preserved excerpt is established for this episode; the retrieved reviewer-routing prompt was assistant-authored. Provider-native qualification remains unearned."
+    }
+  ],
+  "numerator_rule": "Count MECHANICAL interventions only in VERIFIED_OBJECTIVE_PROGRESS_EPISODE records.",
+  "denominator_rule": "Count each VERIFIED_OBJECTIVE_PROGRESS_EPISODE once; blocked/open/unknown progress records remain reported but do not enter denominator.",
+  "candidate_outputs_inspected": false,
+  "labels_created": false
+}
