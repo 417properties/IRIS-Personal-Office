@@ -190,9 +190,25 @@ Loading/availability never grants tools or authority.
 Implement types/pure validation only. No live sensors.
 Sensor availability does not persist. EPHEMERAL_WORKING expires. Only EVIDENCE_CANDIDATE may enter existing evidence qualification, and never Current directly.
 
-### 16.6 Human-end-state seams
+### 16.6 Batch-3 human-end-state seams
 Do not implement Aaron State engine, anticipation engine, attention arbiter, resource optimizer, opportunity/threat radar, relationship engine or graduated-autonomy runtime.
-No operational tests for these documentary seams.
+
+Preserve the governing product target:
+- Aaron can live his life rather than administer it.
+- Aaron gets freer, not busier.
+
+Preserve:
+`INFERENCE != FACT`
+`PREDICTED_DESIRE != CURRENT_DECISION`
+`SENSED_NEED != AUTHORITY`
+`AWARENESS != SURVEILLANCE`
+`AVAILABLE_ATTENTION != PERMISSION_TO_INTERRUPT`
+`RELATIONSHIP_MODEL != TRUTH_ABOUT_ANOTHER_PERSON`
+`OPPORTUNITY_DETECTED != OPPORTUNITY_QUALIFIED`
+`PREPARED_ACTION != AUTHORIZED_ACTION`
+`REPEATED_SUCCESS != UNLIMITED_AUTHORITY`.
+
+Pilot 001 remains exactly `What needs Aaron?`. These are documentary extension seams only; no operational tests or runtime implementation are required in Pilot 001.
 
 ## 17. Proof matrix
 
