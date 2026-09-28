@@ -1,7 +1,7 @@
 {
   "artifact": "IRIS-PILOT-001-AMIR-OBSERVATION-EPISODES-v0.1",
   "schema_version": "amir-observation-episodes-v1",
-  "status": "POPULATION_FROZEN_PENDING_INTERVENTION_RECONCILIATION",
+  "status": "POPULATION_FROZEN_READY_FOR_BASELINE_PUBLICATION",
   "observation_start": "2026-09-28T02:00:00Z",
   "evidence_deadline": "2026-10-12T02:00:00Z",
   "qualifying_episode_target": 12,
@@ -572,7 +572,7 @@
     },
     {
       "episode_id": "AMIR-E1-cda8dd6bf5e1d995",
-      "status": "CLOSED_WITH_INTERVENTION_UNKNOWN",
+      "status": "CLOSED",
       "objective_or_work_lineage": "W03 Vercel Node entrypoint adaptation v1.5 documentary freeze",
       "episode_start": "2026-09-28T15:43:27Z",
       "episode_end": "2026-09-28T16:09:14Z",
@@ -623,29 +623,29 @@
           "intervention_id": "AMIR-I-cda8dd6b-routing",
           "timestamp": "2026-09-28T15:53:58Z",
           "source_ref": "personal-context:2026-09-28T15:53:58Z",
-          "preserved_excerpt": null,
-          "excerpt_sha256": null,
-          "primary_class": "INTERVENTION_CLASSIFICATION_UNKNOWN",
-          "rationale": "Aaron required Work Bus communications; exact wording is unavailable, so mechanical follow-up cannot be distinguished conclusively from a prospective policy instruction."
+          "preserved_excerpt": "every V0 round I release will include the communication requirement as part of the job itself",
+          "excerpt_sha256": "38a4a6ea2b7888c092f8c7ed52d3b6407b2e1126c36e564722ebb878b5e24488",
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron set a prospective communication requirement for future V0 releases; this is a governing scope decision, not a past mechanical handoff."
         },
         {
           "intervention_id": "AMIR-I-cda8dd6b-publication",
           "timestamp": "2026-09-28T16:07:11Z",
           "source_ref": "personal-context:2026-09-28T16:07:11Z",
-          "preserved_excerpt": null,
-          "excerpt_sha256": null,
-          "primary_class": "INTERVENTION_CLASSIFICATION_UNKNOWN",
-          "rationale": "Aaron requested amendment publication after a claimed documentary availability gap; exact user wording is unavailable, so the mechanical/authority components cannot be decomposed."
+          "preserved_excerpt": "In accordance with the work bus post, please provide V0 with the complete work and sent to the appropriate Github # work bus.",
+          "excerpt_sha256": "b22f80c96c851ca0089eef23e407520efd5308f877c4ed472513ef3e59748513",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron had to prompt delivery of the already-completed amendment to V0 and the Work Bus after the document-availability gap was reported."
         }
       ],
       "intervention_classifications": [
         "MECHANICAL",
         "AUTHORITY_DECISION",
-        "INTERVENTION_CLASSIFICATION_UNKNOWN",
-        "INTERVENTION_CLASSIFICATION_UNKNOWN"
+        "AUTHORITY_DECISION",
+        "MECHANICAL"
       ],
-      "conflict_unknown_state": "Two Aaron interactions lack original preserved excerpts; their mechanical classification could change the governing numerator. Do not publish a numerical baseline until resolved.",
-      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE_INTERVENTION_CLASSIFICATION_UNRESOLVED"
+      "conflict_unknown_state": "Original short Aaron excerpts for the two follow-up interactions were retrieved with timestamps; both are classified. No remaining intervention classification UNKNOWN in qualifying episodes.",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE"
     },
     {
       "episode_id": "AMIR-E1-87bc236513f79a9e",
@@ -682,11 +682,8 @@
   "interim_amir_publication_prohibited": true,
   "labels_created": false,
   "last_observation_cutoff": "2026-09-28T17:15:45Z",
-  "evaluator_note": "Population frozen in event order at the twelfth verified-progress episode. Later events are outside this population. Two observed Aaron interactions in a qualifying episode lack original preserved excerpts, so no numerical AMIR or terminal success is published. Prior episode records and IDs retained.",
+  "evaluator_note": "Population frozen at twelfth verified-progress episode; later events excluded. Short authenticated Aaron excerpts for the two W03 follow-ups were retrieved and classified without using candidate outputs. Interim AMIR remains unpublished pending final evidence-bound aggregation.",
   "observation_stop": "2026-09-28T17:15:45Z",
   "observation_stop_reason": "TWELFTH_VERIFIED_OBJECTIVE_PROGRESS_EPISODE_ADJUDICATED",
-  "pending_intervention_evidence": [
-    "personal-context:2026-09-28T15:53:58Z",
-    "personal-context:2026-09-28T16:07:11Z"
-  ]
+  "pending_intervention_evidence": []
 }
