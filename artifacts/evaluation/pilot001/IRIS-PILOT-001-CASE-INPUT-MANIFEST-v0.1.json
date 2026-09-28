@@ -1,0 +1,5125 @@
+{
+  "artifact_id": "IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.1",
+  "schema_version": "pilot001.case-input.v0.1",
+  "status": "FROZEN_INPUTS_ONLY_NO_LABELS",
+  "governing_documentary_object": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "branch": "iba/iris-pilot001-amir-gate-decoupling-v0-4",
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb"
+  },
+  "publication_role": "PROFESSOR_INDEPENDENT_EVALUATOR",
+  "case_count": 32,
+  "population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+  "digest_method": "SHA-256 over UTF-8 RFC-8785-compatible canonical JSON of the cases array (object keys lexicographically sorted; array order preserved; no insignificant whitespace)",
+  "labels_present": false,
+  "prohibited_prebuild_fields": [
+    "expected_ar_classification",
+    "expected_inclusion",
+    "expected_omission",
+    "expected_completeness_state",
+    "expected_consequence_class",
+    "expected_score"
+  ],
+  "ordered_case_ids": [
+    "p1e1_7c9a4d12f6b38e01",
+    "p1e1_2e84b7c519ad603f",
+    "p1e1_91f0c3a86d2b745e",
+    "p1e1_4bd762e90fa13c58",
+    "p1e1_d38a05f741c96b2e",
+    "p1e1_6f12e9b43a80d75c",
+    "p1e1_a5073c8ed1946f2b",
+    "p1e1_18ce74a2b9f563d0",
+    "p1e1_e24b906d71c5a83f",
+    "p1e1_53ad18f6c0729be4",
+    "p1e1_b790e4612d3fc85a",
+    "p1e1_0f6c83ad529e174b",
+    "p1e1_c14e7b950a36d82f",
+    "p1e1_8a35d0c27fe4619b",
+    "p1e1_376db819a04fc25e",
+    "p1e1_f0592c6b831a4d7e",
+    "p1e1_642e1fa9c37d805b",
+    "p1e1_9d03b75e214ac86f",
+    "p1e1_25fb84c0de71936a",
+    "p1e1_da760e315b8c42f9",
+    "p1e1_4c19a8e260d735bf",
+    "p1e1_87be31d95a60c4f2",
+    "p1e1_1ad593f8c472e06b",
+    "p1e1_be4062a71f9d358c",
+    "p1e1_730c5de819a24bf6",
+    "p1e1_0a98f214c76be35d",
+    "p1e1_c62d4a0b957e183f",
+    "p1e1_5e13b8d074ca926f",
+    "p1e1_eb7490c231fd685a",
+    "p1e1_39c08fa672e1bd54",
+    "p1e1_a16d537c80b429ef",
+    "p1e1_6b4f29e8d105ca73"
+  ],
+  "cases": [
+    {
+      "case_id": "p1e1_7c9a4d12f6b38e01",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_1",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_1",
+          "objective_id": "obj_1",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "PREPARE_DECISION_PACKET",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [
+        {
+          "decision_requirement_id": "dr_01",
+          "status": "OPEN",
+          "decision_maker_identity_id": "principal_aaron",
+          "decision_class": "BOUNDED_DIRECTION_CHOICE",
+          "reserved_authority_class": null,
+          "resolving_decision_ref": null,
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_1_a",
+          "final_digest": "bracket_1_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_2e84b7c519ad603f",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_2",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_2",
+          "objective_id": "obj_2",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "PROVIDE_REQUESTED_INPUT",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_2_a",
+          "final_digest": "bracket_2_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_91f0c3a86d2b745e",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_3",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_3",
+          "objective_id": "obj_3",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "REQUEST_RESERVED_APPROVAL",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "principal_aaron",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": "FINANCIAL_COMMITMENT",
+        "matching_current_delegation": "ABSENT",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_3_a",
+          "final_digest": "bracket_3_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_4bd762e90fa13c58",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_4",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_4",
+          "objective_id": "obj_4",
+          "state": "BLOCKED",
+          "owner_identity_id": "external_team",
+          "required_action_kind": "RESOLVE_MATERIAL_INSTRUCTION_CONFLICT",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": "principal_aaron",
+        "state": "REQUIRED_OPEN",
+        "reason_class": "INCOMPATIBLE_INSTRUCTIONS",
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_4_a",
+          "final_digest": "bracket_4_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": [
+        {
+          "conflict_id": "conf_04",
+          "type": "INCOMPATIBLE_OBLIGATIONS",
+          "state": "UNRESOLVED",
+          "assertion_refs": [
+            "obl_4",
+            "assertion_4b"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "p1e1_d38a05f741c96b2e",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_5",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_5",
+          "objective_id": "obj_5",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "AUTHORIZE_IRREVERSIBLE_RELEASE",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [
+        {
+          "decision_requirement_id": "dr_05",
+          "status": "OPEN",
+          "decision_maker_identity_id": "principal_aaron",
+          "decision_class": "IRREVERSIBLE_RELEASE_DECISION",
+          "reserved_authority_class": "LEGAL_OR_FINANCIAL_COMMITMENT",
+          "resolving_decision_ref": null,
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "authority_state": {
+        "authority_holder_identity_id": "principal_aaron",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": "LEGAL_OR_FINANCIAL_COMMITMENT",
+        "matching_current_delegation": "ABSENT",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": "principal_aaron",
+        "state": "REQUIRED_OPEN",
+        "reason_class": "MATERIAL_AUTHORITY_AMBIGUITY",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_5_a",
+          "final_digest": "bracket_5_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": [
+        {
+          "conflict_id": "conf_05",
+          "type": "AUTHORITY_CONFLICT",
+          "state": "UNRESOLVED",
+          "assertion_refs": [
+            "authority_claim_5a",
+            "authority_claim_5b"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "p1e1_6f12e9b43a80d75c",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_6",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Prepare an informational digest mentioning Aaron without requesting action.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_6",
+          "objective_id": "obj_6",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "DELIVER_INFORMATIONAL_DIGEST",
+          "informational_only": true,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_6_a",
+          "final_digest": "bracket_6_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_a5073c8ed1946f2b",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_7",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Complete an IRIS-owned read-only reconciliation for Aaron's office.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_7",
+          "objective_id": "obj_7",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_7_a",
+          "final_digest": "bracket_7_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_18ce74a2b9f563d0",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_8",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_8",
+          "objective_id": "obj_8",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "SEND_INFORMATIONAL_COPY",
+          "informational_only": true,
+          "recipient_identity_id": "principal_aaron",
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_8_a",
+          "final_digest": "bracket_8_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_e24b906d71c5a83f",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_9",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_9",
+          "objective_id": "obj_9",
+          "state": "SATISFIED",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "PROVIDE_REQUESTED_INPUT",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "resolution_ref": "evidence://obl_9_satisfied",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_9_a",
+          "final_digest": "bracket_9_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_53ad18f6c0729be4",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_10",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_10",
+          "objective_id": "obj_10",
+          "state": "SUPERSEDED",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "SELECT_OLD_OPTION",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "superseding_ref": "decision://new_path",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_10_a",
+          "final_digest": "bracket_10_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_b790e4612d3fc85a",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_11",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_11",
+          "objective_id": "obj_11",
+          "state": "ABANDONED",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "CONTINUE_RETIRED_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "abandonment_ref": "decision://retire_work",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_11_a",
+          "final_digest": "bracket_11_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_0f6c83ad529e174b",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_12",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_12",
+          "objective_id": "obj_12",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "COMPLETE_READ_ONLY_SYNTHESIS",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_12_a",
+          "final_digest": "bracket_12_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_c14e7b950a36d82f",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_13",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_13",
+          "objective_id": "obj_13",
+          "state": "OPEN",
+          "owner_identity_id": "external_team",
+          "required_action_kind": "DELIVER_EXTERNAL_ARTIFACT",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_13_a",
+          "final_digest": "bracket_13_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_8a35d0c27fe4619b",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_14",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_14",
+          "objective_id": "obj_14",
+          "state": "BLOCKED",
+          "owner_identity_id": "external_team",
+          "required_action_kind": "REQUEST_PRINCIPAL_ESCALATION",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": "principal_aaron",
+        "state": "REQUIRED_OPEN",
+        "reason_class": "MATERIAL_ESCALATION",
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_14_a",
+          "final_digest": "bracket_14_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_376db819a04fc25e",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_15",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_15a",
+          "canonical_anchor_id": "anchor_15",
+          "objective_id": "obj_15",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "PROVIDE_INPUT",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        },
+        {
+          "obligation_id": "obl_15b",
+          "canonical_anchor_id": "anchor_15",
+          "objective_id": "obj_15",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "PROVIDE_INPUT",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [
+        {
+          "record_refs": [
+            "obl_15a",
+            "obl_15b"
+          ],
+          "anchor_refs": [
+            "anchor_15"
+          ],
+          "identity_evidence_state": "EXACT_CANONICAL_ANCHOR_MATCH"
+        }
+      ],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_15_a",
+          "final_digest": "bracket_15_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_f0592c6b831a4d7e",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_16",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_16a",
+          "canonical_anchor_id": "anchor_16",
+          "objective_id": "obj_16",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "CHOOSE_DATE",
+          "display_text": "Choose the review date.",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        },
+        {
+          "obligation_id": "obl_16b",
+          "canonical_anchor_id": "anchor_16",
+          "objective_id": "obj_16",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "CHOOSE_DATE",
+          "display_text": "Select when the review occurs.",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [
+        {
+          "record_refs": [
+            "obl_16a",
+            "obl_16b"
+          ],
+          "anchor_refs": [
+            "anchor_16"
+          ],
+          "identity_evidence_state": "SHARED_CANONICAL_ANCHOR_DIFFERENT_EXPRESSION"
+        }
+      ],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_16_a",
+          "final_digest": "bracket_16_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_642e1fa9c37d805b",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_17",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_17a",
+          "canonical_anchor_id": "anchor_17a",
+          "objective_id": "obj_17",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "APPROVE_VENDOR_A",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        },
+        {
+          "obligation_id": "obl_17b",
+          "canonical_anchor_id": "anchor_17b",
+          "objective_id": "obj_17",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "APPROVE_VENDOR_B",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [
+        {
+          "record_refs": [
+            "obl_17a",
+            "obl_17b"
+          ],
+          "anchor_refs": [
+            "anchor_17a",
+            "anchor_17b"
+          ],
+          "identity_evidence_state": "SIMILAR_TEXT_DISTINCT_CANONICAL_ANCHORS"
+        }
+      ],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_17_a",
+          "final_digest": "bracket_17_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_9d03b75e214ac86f",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_18",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_18a",
+          "canonical_anchor_id": null,
+          "objective_id": "obj_18",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "CONFIRM_SCOPE",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        },
+        {
+          "obligation_id": "obl_18b",
+          "canonical_anchor_id": null,
+          "objective_id": "obj_18",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "CONFIRM_SCOPE",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [
+        {
+          "record_refs": [
+            "obl_18a",
+            "obl_18b"
+          ],
+          "anchor_refs": [],
+          "identity_evidence_state": "UNCERTAIN_NO_CANONICAL_ANCHOR"
+        }
+      ],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_18_a",
+          "final_digest": "bracket_18_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "DUPLICATE_CANONICAL_IDENTITY"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_25fb84c0de71936a",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_19",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_19a",
+          "objective_id": "obj_19",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "PROCEED_OPTION_A",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        },
+        {
+          "obligation_id": "obl_19b",
+          "objective_id": "obj_19",
+          "state": "OPEN",
+          "owner_identity_id": "principal_aaron",
+          "required_action_kind": "PROCEED_OPTION_B_INCOMPATIBLE",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_19_a",
+          "final_digest": "bracket_19_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": [
+        {
+          "conflict_id": "conf_19",
+          "type": "INCOMPATIBLE_OBLIGATIONS",
+          "state": "UNRESOLVED",
+          "assertion_refs": [
+            "obl_19a",
+            "obl_19b"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "p1e1_da760e315b8c42f9",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_20",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_20",
+          "objective_id": "obj_20",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": null,
+        "authority_holder_status": "CONFLICTING",
+        "reserved_authority_class": "RESOURCE_COMMITMENT",
+        "matching_current_delegation": "CONFLICTING_RECORDS",
+        "authority_generation": null,
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_20_a",
+          "final_digest": "bracket_20_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": [
+        {
+          "conflict_id": "conf_20",
+          "type": "AUTHORITY_CONFLICT",
+          "state": "UNRESOLVED",
+          "assertion_refs": [
+            "authority_claim_20a",
+            "authority_claim_20b"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "p1e1_4c19a8e260d735bf",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_21",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_21",
+          "objective_id": "obj_21",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [
+        {
+          "assertion_id": "cur_21a",
+          "field": "objective.state",
+          "value": "OPEN",
+          "source_ref": "src_objective"
+        },
+        {
+          "assertion_id": "cur_21b",
+          "field": "objective.state",
+          "value": "CLOSED",
+          "source_ref": "src_obligation"
+        }
+      ],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_21_a",
+          "final_digest": "bracket_21_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": [
+        {
+          "conflict_id": "conf_21",
+          "type": "INCOMPATIBLE_CURRENT_STATE",
+          "state": "UNRESOLVED",
+          "assertion_refs": [
+            "cur_21a",
+            "cur_21b"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "p1e1_87be31d95a60c4f2",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_22",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_22",
+          "objective_id": "obj_22",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [
+          {
+            "intent_id": "intent_22",
+            "status": "SUBMITTED",
+            "operation": "EXTERNAL_MUTATION"
+          }
+        ],
+        "receipts": [
+          {
+            "receipt_id": "receipt_22",
+            "intent_id": "intent_22",
+            "provider_status": "ACCEPTED"
+          }
+        ],
+        "verifications": [],
+        "reconciliation_state": "UNKNOWN_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_22_a",
+          "final_digest": "bracket_22_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": [
+        {
+          "conflict_id": "conf_22",
+          "type": "EFFECT_REALITY_CONFLICT",
+          "state": "UNRESOLVED",
+          "assertion_refs": [
+            "intent_22",
+            "receipt_22"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "p1e1_1ad593f8c472e06b",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_23",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Monitor a declared scope with no open Aaron action.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_23",
+          "objective_id": "obj_23",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "MONITOR_READ_ONLY",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_23_a",
+          "final_digest": "bracket_23_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [
+        {
+          "domain": "commerce_execution",
+          "basis": "OUTSIDE_DECLARED_SCOPE",
+          "evidence_ref": "scope://pilot001"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_be4062a71f9d358c",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "MISSING",
+          "freshness_status": "UNKNOWN",
+          "observed_at": null,
+          "provenance_refs": []
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_24",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_24_a",
+          "final_digest": "bracket_24_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "REQUIRED_OBLIGATION_SOURCE"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_730c5de819a24bf6",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "STALE",
+          "observed_at": "2026-09-20T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_25",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_25",
+          "objective_id": "obj_25",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_25_a",
+          "final_digest": "bracket_25_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "CURRENT_OBJECTIVE_FRESHNESS"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_0a98f214c76be35d",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "UNKNOWN",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_26",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_26",
+          "objective_id": "obj_26",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_26_a",
+          "final_digest": "bracket_26_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "OBJECTIVE_SOURCE_APPLICABILITY"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_c62d4a0b957e183f",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [
+          {
+            "domain": "external_legal_case_file",
+            "basis": "INTENTIONALLY_OUT_OF_SCOPE_FOR_BOUNDED_PILOT",
+            "evidence_ref": "scope://pilot001"
+          }
+        ],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_27",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_27",
+          "objective_id": "obj_27",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_27_a",
+          "final_digest": "bracket_27_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [
+          "Excluded domain is explicit and must not be silently reclassified as covered."
+        ],
+        "declared_out_of_scope_domains": [
+          "external_legal_case_file"
+        ]
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [
+        {
+          "domain": "external_legal_case_file",
+          "basis": "INTENTIONALLY_OUT_OF_SCOPE_FOR_BOUNDED_PILOT",
+          "evidence_ref": "scope://pilot001"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_5e13b8d074ca926f",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_28",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_28",
+          "objective_id": "obj_28",
+          "state": "OPEN",
+          "owner_identity_id": null,
+          "required_action_kind": "UNRESOLVED_ACTION",
+          "informational_only": false,
+          "applicability": "UNKNOWN",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": null,
+        "authority_holder_status": "UNKNOWN",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "UNKNOWN",
+        "authority_generation": null,
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_28_a",
+          "final_digest": "bracket_28_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "OBLIGATION_OWNER",
+        "AARON_RELEVANCE",
+        "AUTHORITY_HOLDER"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_eb7490c231fd685a",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PARTIAL",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective_partial"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_29",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_29",
+          "objective_id": "obj_29",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "REQUEST_RESERVED_SAFETY_DECISION",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "principal_aaron",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": "SAFETY_DECISION",
+        "matching_current_delegation": "ABSENT",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_29_a",
+          "final_digest": "bracket_29_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "NONMATERIAL_OBJECTIVE_DETAIL"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_39c08fa672e1bd54",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_30",
+        "principal_id": "principal_beth",
+        "state": "OPEN",
+        "statement": "Private record belonging to another principal.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_30",
+          "objective_id": "obj_30",
+          "state": "OPEN",
+          "owner_identity_id": "principal_beth",
+          "required_action_kind": "PRIVATE_OTHER_PRINCIPAL_ACTION",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_beth",
+        "access_basis": "NO_CROSS_PRINCIPAL_AUTHORIZATION",
+        "disclosure_state": "PRIVACY_EXCLUDED_AUDIT_REQUIRED"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_30_a",
+          "final_digest": "bracket_30_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [],
+      "known_exclusions": [
+        {
+          "domain": "record_obj_30",
+          "basis": "WRONG_PRINCIPAL_PRIVATE_RECORD",
+          "evidence_ref": "privacy://no_authorization"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_a16d537c80b429ef",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": []
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://authority"
+          ]
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_31",
+        "principal_id": "principal_beth",
+        "state": "OPEN",
+        "statement": "Bounded cross-principal dependency packet authorized for Aaron's decision.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_31",
+          "objective_id": "obj_31",
+          "state": "OPEN",
+          "owner_identity_id": "principal_beth",
+          "required_action_kind": "REQUEST_BOUNDED_AARON_DECISION",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [
+        {
+          "decision_requirement_id": "dr_31",
+          "status": "OPEN",
+          "decision_maker_identity_id": "principal_aaron",
+          "decision_class": "BOUNDED_CROSS_PRINCIPAL_DECISION",
+          "reserved_authority_class": null,
+          "resolving_decision_ref": null,
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_beth",
+        "access_basis": "EXPLICIT_BOUNDED_PACKET_AUTHORIZATION",
+        "disclosure_state": "PERMITTED_FIELDS_ONLY"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_31_a",
+          "final_digest": "bracket_31_a",
+          "rerun_count": 0
+        },
+        "required_surface_notes": [],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [
+        {
+          "packet_id": "big_packet_31",
+          "qualification_state": "QUALIFIED_BOUNDED",
+          "allowed_fields": [
+            "decision_requirement_id",
+            "deadline",
+            "provenance_ref"
+          ],
+          "provenance_refs": [
+            "big://packet/31"
+          ]
+        }
+      ],
+      "missing_dimensions": [],
+      "known_exclusions": [],
+      "conflicts": []
+    },
+    {
+      "case_id": "p1e1_6b4f29e8d105ca73",
+      "case_version": "1.0",
+      "fixture_time": "2026-09-28T00:00:00Z",
+      "declared_scope": {
+        "scope_id": "pilot001_declared_scope_v1",
+        "principal_id": "principal_aaron",
+        "included_domains": [
+          "qualified_personal_office_inputs"
+        ],
+        "required_source_classes": [
+          "OBJECTIVE_STATE",
+          "OBLIGATION_STATE",
+          "AUTHORITY_STATE",
+          "EFFECT_STATE"
+        ],
+        "known_exclusions": [],
+        "scope_change_requests": [
+          {
+            "request_id": "scope_req_32",
+            "requested_change": "DROP_AUTHORITY_STATE_AFTER_INITIAL_READ",
+            "approval_state": "NOT_AUTHORIZED"
+          }
+        ]
+      },
+      "principal_identity": {
+        "principal_id": "principal_aaron",
+        "identity_status": "VERIFIED"
+      },
+      "sources": [
+        {
+          "source_id": "src_objective",
+          "source_class": "OBJECTIVE_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://objective"
+          ]
+        },
+        {
+          "source_id": "src_obligation",
+          "source_class": "OBLIGATION_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://obligation"
+          ]
+        },
+        {
+          "source_id": "src_authority",
+          "source_class": "AUTHORITY_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "MISSING",
+          "freshness_status": "UNKNOWN",
+          "observed_at": null,
+          "provenance_refs": []
+        },
+        {
+          "source_id": "src_effect",
+          "source_class": "EFFECT_STATE",
+          "system": "IRIS_CANONICAL_INPUT_FIXTURE",
+          "identity_status": "VERIFIED",
+          "applicability": "APPLICABLE",
+          "availability": "PRESENT",
+          "freshness_status": "CURRENT",
+          "observed_at": "2026-09-28T00:00:00Z",
+          "provenance_refs": [
+            "fixture://effect"
+          ]
+        }
+      ],
+      "objective": {
+        "objective_id": "obj_32",
+        "principal_id": "principal_aaron",
+        "state": "OPEN",
+        "statement": "Advance the bounded fixture objective.",
+        "source_refs": [
+          "src_objective"
+        ]
+      },
+      "obligations": [
+        {
+          "obligation_id": "obl_32",
+          "objective_id": "obj_32",
+          "state": "OPEN",
+          "owner_identity_id": "iris_office",
+          "required_action_kind": "IRIS_MECHANICAL_WORK",
+          "informational_only": false,
+          "applicability": "APPLICABLE",
+          "source_refs": [
+            "src_obligation"
+          ]
+        }
+      ],
+      "decision_requirements": [],
+      "authority_state": {
+        "authority_holder_identity_id": "iris_office",
+        "authority_holder_status": "VERIFIED",
+        "reserved_authority_class": null,
+        "matching_current_delegation": "VALID_BOUNDED_READ_ONLY",
+        "authority_generation": "ag_fixture_1",
+        "source_refs": [
+          "src_authority"
+        ]
+      },
+      "escalation": {
+        "target_identity_id": null,
+        "state": "NOT_REQUIRED",
+        "reason_class": null,
+        "source_refs": [
+          "src_obligation"
+        ]
+      },
+      "effect_state": {
+        "intents": [],
+        "receipts": [],
+        "verifications": [],
+        "reconciliation_state": "NO_EXTERNAL_EFFECT",
+        "source_refs": [
+          "src_effect"
+        ]
+      },
+      "current_assertions": [],
+      "duplicate_candidates": [],
+      "privacy": {
+        "record_principal_id": "principal_aaron",
+        "access_basis": "SAME_PRINCIPAL",
+        "disclosure_state": "PERMITTED_FOR_FIXTURE"
+      },
+      "coverage_inputs": {
+        "dependency_bracket": {
+          "initial_digest": "bracket_32_a",
+          "final_digest": "bracket_32_c",
+          "rerun_count": 2
+        },
+        "required_surface_notes": [
+          "Authority surface disappearance is not authorized scope narrowing.",
+          "Dependency bracket changed again after one rerun."
+        ],
+        "declared_out_of_scope_domains": []
+      },
+      "qualified_big_inputs": [],
+      "missing_dimensions": [
+        "REQUIRED_AUTHORITY_STATE",
+        "STABLE_DEPENDENCY_BRACKET"
+      ],
+      "known_exclusions": [],
+      "conflicts": []
+    }
+  ],
+  "authority_boundary": [
+    "ZERO_AUTHORITY",
+    "IRIS_PR1_UNCHANGED",
+    "CONTINUITY_OFF",
+    "NO_DEPLOYMENT",
+    "NO_EXTERNAL_EFFECT_AUTHORITY",
+    "NO_STANDING_AUTHORITY",
+    "NO_COMMERCE_AUTHORITY",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ]
+}
