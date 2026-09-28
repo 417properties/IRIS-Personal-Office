@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 import type { SqlExecutor } from '../state/postgres-repository.ts';
+import { buildProjection } from './pilot001-projection.ts';
 import type { PilotProjection } from './pilot001-types.ts';
-import type { buildProjection } from './pilot001-projection.ts';
 
 export const transitionMigrationFiles = [
   'db/migrations/005_agent_transition_identity_authority.sql',
@@ -46,11 +46,14 @@ export interface SnapshotDecoder {
 export interface ProjectionRepository {
   readRepeatableSnapshot():Promise<ProjectionInput & {dependencies:Record<string,string>}>;
   readDependencies():Promise<Record<string,string>>;
+  buildConsistentProjection():Promise<PilotProjection>;
   appendProjection(p: PilotProjection):Promise<void>;
 }
 
-// A caller-owned dedicated SQL session is required. This object carries no provider,
-// credential, connection string, or external-effect authority.
+function dependencyDigest(dependencies:Record<string,string>){
+  return digest(Object.entries(dependencies).sort(([a],[b])=>a.localeCompare(b)));
+}
+
 export class PostgresTransitionProjectionRepository implements ProjectionRepository {
   readonly sql:SqlExecutor;
   readonly decoder:SnapshotDecoder;
@@ -87,6 +90,23 @@ export class PostgresTransitionProjectionRepository implements ProjectionReposit
 
   async readDependencies():Promise<Record<string,string>>{
     return (await this.#read()).dependencies;
+  }
+
+  async buildConsistentProjection():Promise<PilotProjection>{
+    const first=await this.readRepeatableSnapshot();
+    const firstEnd=await this.readDependencies();
+    if(dependencyDigest(first.dependencies)===dependencyDigest(firstEnd)){
+      const {dependencies:_dependencies,...input}=first;
+      return buildProjection({...input,bracket:'STABLE'});
+    }
+
+    const second=await this.readRepeatableSnapshot();
+    const secondEnd=await this.readDependencies();
+    const {dependencies:_dependencies,...input}=second;
+    if(dependencyDigest(second.dependencies)===dependencyDigest(secondEnd)){
+      return buildProjection({...input,bracket:'RERUN_STABLE'});
+    }
+    return buildProjection({...input,bracket:'UNSTABLE'});
   }
 
   async appendProjection(p:PilotProjection):Promise<void>{
