@@ -1,7 +1,7 @@
 {
   "artifact": "IRIS-PILOT-001-AMIR-OBSERVATION-EPISODES-v0.1",
   "schema_version": "amir-observation-episodes-v1",
-  "status": "OBSERVATION_ACTIVE",
+  "status": "POPULATION_FROZEN_PENDING_INTERVENTION_RECONCILIATION",
   "observation_start": "2026-09-28T02:00:00Z",
   "evidence_deadline": "2026-10-12T02:00:00Z",
   "qualifying_episode_target": 12,
@@ -443,11 +443,250 @@
       ],
       "conflict_unknown_state": "VERIFIED_PROGRESS_EVIDENCE_INSUFFICIENT.",
       "evaluator_disposition": "OBSERVED_NONQUALIFYING_UNKNOWN_PROGRESS"
+    },
+    {
+      "episode_id": "AMIR-E1-eb47e14a62769741",
+      "status": "OPEN_AT_STOP",
+      "objective_or_work_lineage": "IRIS personal-operations-first sequencing and 417 path",
+      "episode_start": "2026-09-28T14:11:53Z",
+      "episode_end": null,
+      "source_systems": [
+        "AUTHENTICATED_AARON_CONVERSATION"
+      ],
+      "evidence_refs": [
+        "personal-context:2026-09-28T14:11:53Z",
+        "personal-context:2026-09-28T14:14:32Z",
+        "personal-context:2026-09-28T14:20:30Z",
+        "personal-context:2026-09-28T14:21:55Z"
+      ],
+      "admission_rationale": "Identifiable IRIS/Personal-Office sequencing objective; no qualified artifact or bounded accepted-state transition by the stop boundary.",
+      "progress_claim": "Aaron preferred personal communications and life organization before 417 Airbnb communication work.",
+      "verified_objective_progress": false,
+      "progress_verification_evidence": null,
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-e1-personal-sequencing",
+          "timestamp": "2026-09-28T14:20:30Z",
+          "source_ref": "personal-context:2026-09-28T14:20:30Z",
+          "preserved_excerpt": null,
+          "excerpt_sha256": null,
+          "primary_class": "PREFERENCE_JUDGMENT",
+          "rationale": "Aaron set preferred initial work ordering; retrieved summary lacks a verbatim preserved excerpt."
+        }
+      ],
+      "intervention_classifications": [
+        "PREFERENCE_JUDGMENT"
+      ],
+      "conflict_unknown_state": "No verified progress by stop; do not infer implementation from preference.",
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_OPEN_AT_STOP"
+    },
+    {
+      "episode_id": "AMIR-E1-0da6570e44986d66",
+      "status": "CLOSED",
+      "objective_or_work_lineage": "W03 Vercel empty-project bootstrap exception and v1.4 Builder release",
+      "episode_start": "2026-09-28T14:55:29Z",
+      "episode_end": "2026-09-28T15:05:19Z",
+      "source_systems": [
+        "AUTHENTICATED_AARON_CONVERSATION",
+        "BIG#567",
+        "BIG#695",
+        "GITHUB_IMMUTABLE_COMMIT"
+      ],
+      "evidence_refs": [
+        "personal-context:2026-09-28T14:55:29Z",
+        "personal-context:2026-09-28T14:56:41Z",
+        "https://github.com/417properties/BIG-Navigator/commit/dc4ebdf71d6549398d9c629ea537fd0b48a9a632",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5872692282",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5872706329",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5872693045"
+      ],
+      "admission_rationale": "One bounded first-deployment bootstrap blocker, v1.4 documentary correction, and explicit Builder release; Work Bus/Master Launch posts are aliases.",
+      "progress_claim": "IBA v1.4 exception closed the zero-deployment Preview bootstrap blocker and released bounded provider qualification without W03 provider closure.",
+      "verified_objective_progress": true,
+      "progress_verification_evidence": {
+        "disposition": "W03_VERCEL_EMPTY_PROJECT_BOOTSTRAP_EXCEPTION_READY / BUILDER_MAY_RESUME_PROVIDER_QUALIFICATION",
+        "commit": "dc4ebdf71d6549398d9c629ea537fd0b48a9a632",
+        "blueprint_blob": "9e12804687f494e02916279dbffeff2e869c2f26",
+        "builder_packet_blob": "18a8f9ccadd722ae418705e605606e22e9d42904"
+      },
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-0da6570e-relay",
+          "timestamp": "2026-09-28T14:55:29Z",
+          "source_ref": "personal-context:2026-09-28T14:55:29Z",
+          "preserved_excerpt": "The dry run matches all 21 qualified files—58,020 bytes—including the exact sidecar…",
+          "excerpt_sha256": "cadbfec358583449ce6e6e062b368a4c322d1416839f175fa0c58dc27348b1d4",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron manually carried Main V0's exact dry-run/first-deployment blocker into the architecture lane; the excerpt is a preserved retrieval snippet, not the full message."
+        },
+        {
+          "intervention_id": "AMIR-I-0da6570e-scope",
+          "timestamp": "2026-09-28T14:56:41Z",
+          "source_ref": "personal-context:2026-09-28T14:56:41Z",
+          "preserved_excerpt": null,
+          "excerpt_sha256": null,
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron bounded the one-time exception and prohibited deployment/authority expansion; not a mechanical intervention."
+        }
+      ],
+      "intervention_classifications": [
+        "MECHANICAL",
+        "AUTHORITY_DECISION"
+      ],
+      "conflict_unknown_state": "The pasted V0 text is only partially preserved; relay is independently identified as Aaron-authored by personal-context retrieval.",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE"
+    },
+    {
+      "episode_id": "AMIR-E1-017826d21d301494",
+      "status": "OPEN_AT_STOP",
+      "objective_or_work_lineage": "Professor succession checkpoint and next Master Launch handoff",
+      "episode_start": "2026-09-28T15:17:29Z",
+      "episode_end": null,
+      "source_systems": [
+        "AUTHENTICATED_AARON_CONVERSATION"
+      ],
+      "evidence_refs": [
+        "personal-context:2026-09-28T15:17:29Z",
+        "personal-context:2026-09-28T15:19:09Z"
+      ],
+      "admission_rationale": "Aaron initiated a bounded BIG succession/documentation objective. Its later GitHub artifact was after the stop boundary and cannot enter the frozen population as verified progress.",
+      "progress_claim": "Checkpoint requested; no completion evidence by stop.",
+      "verified_objective_progress": false,
+      "progress_verification_evidence": null,
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-017826d2-stop",
+          "timestamp": "2026-09-28T15:17:29Z",
+          "source_ref": "personal-context:2026-09-28T15:17:29Z",
+          "preserved_excerpt": "STOP YOUR CURRENT TASK. Start your succession checkpoint protocol list for the next succession chat. Stop working on your current task. You’ve already completed a checkpoint but List all next steps and work needed to start next BIG Master Launch process. Also make a list of lessons learned on this thread.",
+          "excerpt_sha256": "0e2cdfabf5183c9977634500de19bdf761f1bb3e191b0316e6aeffce226c0ce7",
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron explicitly redirected the task and set the checkpoint scope."
+        }
+      ],
+      "intervention_classifications": [
+        "AUTHORITY_DECISION"
+      ],
+      "conflict_unknown_state": "Open at stop; later completed checkpoint excluded by frozen stop boundary.",
+      "evaluator_disposition": "OBSERVED_NONQUALIFYING_OPEN_AT_STOP"
+    },
+    {
+      "episode_id": "AMIR-E1-cda8dd6bf5e1d995",
+      "status": "CLOSED_WITH_INTERVENTION_UNKNOWN",
+      "objective_or_work_lineage": "W03 Vercel Node entrypoint adaptation v1.5 documentary freeze",
+      "episode_start": "2026-09-28T15:43:27Z",
+      "episode_end": "2026-09-28T16:09:14Z",
+      "source_systems": [
+        "AUTHENTICATED_AARON_CONVERSATION",
+        "BIG#567",
+        "BIG#695",
+        "GITHUB_IMMUTABLE_COMMIT"
+      ],
+      "evidence_refs": [
+        "personal-context:2026-09-28T15:43:27Z",
+        "personal-context:2026-09-28T15:44:20Z",
+        "personal-context:2026-09-28T15:53:58Z",
+        "personal-context:2026-09-28T16:07:11Z",
+        "https://github.com/417properties/BIG-Navigator/commit/3d4d6b443bb58ce5aa28a34e4d727fa867649f09",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5873911265",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5873911922"
+      ],
+      "admission_rationale": "The exact Preview runtime mismatch induced one bounded documentary adaptation and Builder release; Work Bus/Master Launch are cross-post aliases.",
+      "progress_claim": "IBA v1.5 froze the Node entrypoint adaptation contract and opened narrow Builder requalification.",
+      "verified_objective_progress": true,
+      "progress_verification_evidence": {
+        "disposition": "W03_VERCEL_NODE_ENTRYPOINT_ADAPTATION_READY / NARROW_BUILDER_REQUALIFICATION_REQUIRED",
+        "commit": "3d4d6b443bb58ce5aa28a34e4d727fa867649f09",
+        "blueprint_blob": "fa6a684a5d4dcac91883e08c01b15e3cbe980519",
+        "builder_packet_blob": "f419c3fef8cf3da4eb0c71693fc124a8fface8bd"
+      },
+      "aaron_interventions": [
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-relay",
+          "timestamp": "2026-09-28T15:44:20Z",
+          "source_ref": "personal-context:2026-09-28T15:44:20Z",
+          "preserved_excerpt": "Preview `/api/health` reached the deployed Vercel runtime but timed out.",
+          "excerpt_sha256": "42c883cdaaac6f86a2a9d31f723b6399775f6de3ad0a85e73b028c7afb7f745d",
+          "primary_class": "MECHANICAL",
+          "rationale": "Aaron manually relayed Main V0's runtime observation to the architecture lane."
+        },
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-scope",
+          "timestamp": "2026-09-28T15:44:20Z",
+          "source_ref": "personal-context:2026-09-28T15:44:20Z",
+          "preserved_excerpt": null,
+          "excerpt_sha256": null,
+          "primary_class": "AUTHORITY_DECISION",
+          "rationale": "Aaron bounded the adaptation and prohibited implementation/deployment/Redis expansion."
+        },
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-routing",
+          "timestamp": "2026-09-28T15:53:58Z",
+          "source_ref": "personal-context:2026-09-28T15:53:58Z",
+          "preserved_excerpt": null,
+          "excerpt_sha256": null,
+          "primary_class": "INTERVENTION_CLASSIFICATION_UNKNOWN",
+          "rationale": "Aaron required Work Bus communications; exact wording is unavailable, so mechanical follow-up cannot be distinguished conclusively from a prospective policy instruction."
+        },
+        {
+          "intervention_id": "AMIR-I-cda8dd6b-publication",
+          "timestamp": "2026-09-28T16:07:11Z",
+          "source_ref": "personal-context:2026-09-28T16:07:11Z",
+          "preserved_excerpt": null,
+          "excerpt_sha256": null,
+          "primary_class": "INTERVENTION_CLASSIFICATION_UNKNOWN",
+          "rationale": "Aaron requested amendment publication after a claimed documentary availability gap; exact user wording is unavailable, so the mechanical/authority components cannot be decomposed."
+        }
+      ],
+      "intervention_classifications": [
+        "MECHANICAL",
+        "AUTHORITY_DECISION",
+        "INTERVENTION_CLASSIFICATION_UNKNOWN",
+        "INTERVENTION_CLASSIFICATION_UNKNOWN"
+      ],
+      "conflict_unknown_state": "Two Aaron interactions lack original preserved excerpts; their mechanical classification could change the governing numerator. Do not publish a numerical baseline until resolved.",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE_INTERVENTION_CLASSIFICATION_UNRESOLVED"
+    },
+    {
+      "episode_id": "AMIR-E1-87bc236513f79a9e",
+      "status": "CLOSED",
+      "objective_or_work_lineage": "W03 Vercel Node adapter exact-head build and independent qualification",
+      "episode_start": "2026-09-28T16:32:08Z",
+      "episode_end": "2026-09-28T17:15:45Z",
+      "source_systems": [
+        "GITHUB_IMMUTABLE_COMMIT",
+        "BIG#567",
+        "BIG#695"
+      ],
+      "evidence_refs": [
+        "https://github.com/417properties/BIG-Navigator/commit/cdaa987ccc904e455665e76052eeb80864584380",
+        "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5874961792",
+        "https://github.com/417properties/BIG-Navigator/issues/695#issuecomment-5874962014"
+      ],
+      "admission_rationale": "One adapted exact-head construction/qualification lineage; the candidate commit and independent receipt support one bounded release-eligibility advance.",
+      "progress_claim": "Exact adapted candidate cdaa987 was independently qualified and became eligible for separately authorized Preview provider qualification.",
+      "verified_objective_progress": true,
+      "progress_verification_evidence": {
+        "disposition": "W03_VERCEL_NODE_ENTRYPOINT_ADAPTER_INDEPENDENT_QUALIFICATION_PASS / ADAPTED_PREVIEW_PROVIDER_QUALIFICATION_RELEASE_ELIGIBLE",
+        "head": "cdaa987ccc904e455665e76052eeb80864584380",
+        "tree": "f3c2ca66b135c4e0d79bbe3558ff64eae584a676",
+        "qualified_package_sha256": "5ddb51d41d534b4f3ef892293e2febcb6ae9385cac8305a80465b7685fde3596"
+      },
+      "aaron_interventions": [],
+      "intervention_classifications": [],
+      "conflict_unknown_state": "No authenticated Aaron-authored action with a preserved excerpt is established for this episode; the retrieved reviewer-routing prompt was assistant-authored. Provider-native qualification remains unearned.",
+      "evaluator_disposition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE"
     }
   ],
   "interim_amir": null,
   "interim_amir_publication_prohibited": true,
   "labels_created": false,
-  "last_observation_cutoff": "2026-09-28T08:21:34Z",
-  "evaluator_note": "Cross-posts deduplicated by causal lineage. Interim AMIR and aggregate numerator/denominator are intentionally not computed or published."
+  "last_observation_cutoff": "2026-09-28T17:15:45Z",
+  "evaluator_note": "Population frozen in event order at the twelfth verified-progress episode. Later events are outside this population. Two observed Aaron interactions in a qualifying episode lack original preserved excerpts, so no numerical AMIR or terminal success is published. Prior episode records and IDs retained.",
+  "observation_stop": "2026-09-28T17:15:45Z",
+  "observation_stop_reason": "TWELFTH_VERIFIED_OBJECTIVE_PROGRESS_EPISODE_ADJUDICATED",
+  "pending_intervention_evidence": [
+    "personal-context:2026-09-28T15:53:58Z",
+    "personal-context:2026-09-28T16:07:11Z"
+  ]
 }
