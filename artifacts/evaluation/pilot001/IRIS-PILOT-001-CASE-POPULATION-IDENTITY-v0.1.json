@@ -1,0 +1,90 @@
+{
+  "artifact_id": "IRIS-PILOT-001-CASE-POPULATION-IDENTITY-v0.1",
+  "schema_version": "pilot001.population-identity.v0.1",
+  "status": "FROZEN_PREBUILDER",
+  "publication_timestamp": "2026-09-28T02:04:05Z",
+  "evaluator_role": "PROFESSOR_INDEPENDENT_EVALUATOR",
+  "evaluation_branch": "evaluation/iris-pilot001-prebuilder-population-v0-1",
+  "governing_documentary_object": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "branch": "iba/iris-pilot001-amir-gate-decoupling-v0-4",
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb"
+  },
+  "case_count": 32,
+  "ordered_case_ids": [
+    "p1e1_7c9a4d12f6b38e01",
+    "p1e1_2e84b7c519ad603f",
+    "p1e1_91f0c3a86d2b745e",
+    "p1e1_4bd762e90fa13c58",
+    "p1e1_d38a05f741c96b2e",
+    "p1e1_6f12e9b43a80d75c",
+    "p1e1_a5073c8ed1946f2b",
+    "p1e1_18ce74a2b9f563d0",
+    "p1e1_e24b906d71c5a83f",
+    "p1e1_53ad18f6c0729be4",
+    "p1e1_b790e4612d3fc85a",
+    "p1e1_0f6c83ad529e174b",
+    "p1e1_c14e7b950a36d82f",
+    "p1e1_8a35d0c27fe4619b",
+    "p1e1_376db819a04fc25e",
+    "p1e1_f0592c6b831a4d7e",
+    "p1e1_642e1fa9c37d805b",
+    "p1e1_9d03b75e214ac86f",
+    "p1e1_25fb84c0de71936a",
+    "p1e1_da760e315b8c42f9",
+    "p1e1_4c19a8e260d735bf",
+    "p1e1_87be31d95a60c4f2",
+    "p1e1_1ad593f8c472e06b",
+    "p1e1_be4062a71f9d358c",
+    "p1e1_730c5de819a24bf6",
+    "p1e1_0a98f214c76be35d",
+    "p1e1_c62d4a0b957e183f",
+    "p1e1_5e13b8d074ca926f",
+    "p1e1_eb7490c231fd685a",
+    "p1e1_39c08fa672e1bd54",
+    "p1e1_a16d537c80b429ef",
+    "p1e1_6b4f29e8d105ca73"
+  ],
+  "population_digest": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 canonical JSON of manifest cases array; object keys lexicographically sorted; array order preserved; no insignificant whitespace",
+    "value": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980"
+  },
+  "case_input_manifest": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.1.json",
+    "bytes": 157380,
+    "sha256": "fde99bb1b1aa82a5b98f1d17eae1b42d790afabb0d9b74a2804f0ab9e6ff31df",
+    "git_blob": "cac80fce950924af8140a8689953bef35a2217f6"
+  },
+  "adjudication_protocol": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.1.md",
+    "bytes": 10035,
+    "sha256": "93679dae74274f03e7f564ea52be2ef7c0e70c9d06efb3343ded49fcf12574b7",
+    "git_blob": "62ddbc5189a6fde6fe0697ac8e1ed933dc606363"
+  },
+  "independence_certification": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-PREBUILDER-INDEPENDENCE-CERTIFICATION-v0.1.json",
+    "bytes": 1692,
+    "sha256": "b11942abebc6f51ac4e14577e59958241e8e5bf8badc0d2d0b2cdfc6085fe6d8",
+    "git_blob": "089f73faefefd797d986da11dd862161f2ac4419"
+  },
+  "round_trip_verification": {
+    "manifest": "PASS",
+    "adjudication_protocol": "PASS",
+    "independence_certification": "PASS"
+  },
+  "labels_present": false,
+  "frozen_before_builder": true,
+  "amir_baseline_required_for_builder_resumption": false,
+  "authority_boundary": [
+    "ZERO_AUTHORITY",
+    "IRIS_PR1_UNCHANGED",
+    "CONTINUITY_OFF",
+    "NO_DEPLOYMENT",
+    "NO_EXTERNAL_EFFECT_AUTHORITY",
+    "NO_STANDING_AUTHORITY",
+    "NO_COMMERCE_AUTHORITY",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ]
+}
+
