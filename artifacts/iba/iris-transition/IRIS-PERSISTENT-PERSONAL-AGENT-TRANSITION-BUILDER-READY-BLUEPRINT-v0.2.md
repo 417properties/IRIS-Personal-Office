@@ -691,37 +691,107 @@ Rules:
 
 Pilot 001 implements types/pure validation only; no live sensors.
 
-## 32. Human-end-state extension seams
+## 32. Batch 3 — Human-end-state recalibration
 
-These seams are non-operational and create no new stores/brains.
+This is a governing product constraint, not a new subsystem set.
 
-**Aaron State:** future derived projection from OrientationState/Aaron Current/objectives/evidence with fact-vs-inference, provenance, freshness and uncertainty.
+**North Star:** Aaron can live his life rather than administer it.  
+**Governing outcome:** Aaron gets freer, not busier.
+
+The architecture is therefore judged not only by technical capability but by whether it can eventually support a Personal Office / Chief-of-Staff end state: IRIS can understand Aaron's evolving situation, protect his attention, manage objectives and obligations, coordinate workers, prepare decisions/actions, surface opportunities/threats when decision-relevant, act only inside earned authority, verify outcomes, learn, and remain quiet when Aaron is not needed.
+
+These future capabilities MUST reuse existing canonical primitives and MUST NOT create a second Current, observer brain, planner brain, relationship-truth store, resource-optimizer authority, or autonomous authority layer.
+
+Permanent separations:
 `INFERENCE != FACT`
-`AARON_STATE_PROJECTION != NEW_AARON_CURRENT`
-
-**Need / Intent Anticipation:** predictions are evidence/inference candidates only.
-`PREDICTED_NEED != ACTUAL_NEED`
 `PREDICTED_DESIRE != CURRENT_DECISION`
+`PREDICTED_NEED != ACTUAL_NEED`
 `SENSED_NEED != AUTHORITY`
-
-**Attention / Interruption:** future presentation may rank already-classified Pilot 001 interventions but MUST NOT suppress a known Aaron-required intervention or convert attention availability into permission.
+`AWARENESS != SURVEILLANCE`
+`TASK_COMPLETION != OBJECTIVE_COMPLETION`
 `AVAILABLE_ATTENTION != PERMISSION_TO_INTERRUPT`
-
-**Objective Stewardship:** existing Objective/Obligation semantics remain canonical. Future detectors emit evidence/candidate obligations; they cannot rewrite Aaron objectives from inference.
-
-**Resource Arbitration:** recommendation seam only; no optimizer may override explicit objectives, Current, privacy, authority or reserved decisions.
-
-**Opportunity / Threat:** `sense -> investigate -> qualify -> compare -> prepare -> surface when decision-relevant`.
-`OPPORTUNITY_DETECTED != OPPORTUNITY_QUALIFIED`
-`THREAT_DETECTED != THREAT_CONFIRMED`
-
-**Social / Relationship:** qualified projection/evidence aid only.
 `RELATIONSHIP_MODEL != TRUTH_ABOUT_ANOTHER_PERSON`
 `INFERRED_MOTIVE != FACT`
+`OPPORTUNITY_DETECTED != OPPORTUNITY_QUALIFIED`
+`THREAT_DETECTED != THREAT_CONFIRMED`
+`PREPARED_ACTION != AUTHORIZED_ACTION`
+`REPEATED_SUCCESS != UNLIMITED_AUTHORITY`
 
-**Graduated autonomy:** `OBSERVE -> RECOMMEND -> PREPARE -> REQUEST_APPROVAL -> EXECUTE_BOUNDED_ACTION -> STANDING_AUTHORITY_WHERE_SEPARATELY_EARNED`.
-`REPEATED_SUCCESS != UNLIMITED_AUTHORITY`.
-Performance may inform admission review; only accepted authority policy/generation/lease semantics can grant authority.
+### 32.1 Aaron State Modeling
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Future Aaron-state projection extends OrientationState / Aaron Current / Objective / Obligation / qualified evidence. It is derived, noncanonical, and every projected field must carry fact-vs-inference classification, provenance, freshness and uncertainty.
+
+`AARON_STATE_PROJECTION != NEW_AARON_CURRENT`.
+
+Candidate dimensions may include priorities, commitments, time constraints, attention, legitimately observed energy/cognitive-load signals, resource/capital constraints, relationship commitments and competing objectives.
+
+### 32.2 Need / Intent Anticipation
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Predictions may justify future nonconsequential preparation only inside separately admitted scope. They cannot create decisions, objectives, authority or effect permission.
+
+### 32.3 Attention & Interruption Intelligence
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Future attention logic may rank or schedule surfacing of already-qualified Pilot-001 interventions using urgency, consequence, reversibility, freshness, Aaron-required status, interruption cost, delay cost and coverage confidence.
+
+It MUST NOT:
+- suppress a known consequential Aaron-required item;
+- convert available attention into permission to interrupt;
+- create a competing alert brain;
+- count silence as successful omission when coverage is incomplete.
+
+### 32.4 Objective Stewardship
+Classification: `ALREADY_SATISFIED`.
+
+Existing Objective / Obligation / Work Episode semantics remain canonical. Future stalled-objective, forgotten-obligation, conflict, nonproductive-activity and changed-assumption detectors may emit evidence or candidate obligations, but may not rewrite Aaron's objectives from inference.
+
+### 32.5 Personal Resource Arbitration
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Future multi-resource reasoning may consider time, attention, cognitive-load evidence, money/capital, relationship capital, optionality, friction, risk and opportunity cost. It remains recommendation/preparation only and cannot override explicit objectives, Current, privacy, authority or reserved decisions.
+
+### 32.6 Opportunity / Threat Radar
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Future chain:
+`sense -> investigate -> qualify -> compare to Aaron Current/objectives -> prepare -> surface when decision-relevant`.
+
+Detection never equals qualification and the system must avoid ambient alert spam.
+
+### 32.7 Social & Relationship Intelligence
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Future relationship models are privacy-governed, evidence-bounded projections. They carry provenance, uncertainty and applicability and cannot become canonical truth about another person merely from model interpretation.
+
+### 32.8 Graduated / Earned Autonomy
+Classification: `DOCUMENTARY_EXTENSION_POINT_ONLY`.
+
+Future progression:
+`OBSERVE -> RECOMMEND -> PREPARE -> REQUEST_APPROVAL -> EXECUTE_BOUNDED_ACTION -> STANDING_AUTHORITY_WHERE_SEPARATELY_EARNED`.
+
+Prepared work is never authorized work. Capability performance may inform an admission review, but only accepted authority-policy / generation / lease semantics can grant authority.
+
+### 32.9 Presence Without Surveillance
+Classification: `EXTEND_EXISTING_PRIMITIVE`.
+
+Selective Perception in §31 is the governing seam. The architecture supports contextual presence without making continuous raw audio/video/location persistence the default.
+
+### 32.10 Pilot 001 containment
+Pilot 001 remains exactly **What needs Aaron?**
+
+Batch 3 adds no implementation requirements for:
+- continuous ambient perception;
+- Aaron State engine;
+- anticipation engine;
+- attention arbiter;
+- resource optimizer;
+- opportunity/threat radar;
+- relationship intelligence;
+- graduated-autonomy runtime.
+
+Pilot 001 only preserves future-safe interfaces through its existing Objective/Obligation, coverage, evidence, authority and output semantics.
 
 ## 33. Addendum 002 proof obligations
 
