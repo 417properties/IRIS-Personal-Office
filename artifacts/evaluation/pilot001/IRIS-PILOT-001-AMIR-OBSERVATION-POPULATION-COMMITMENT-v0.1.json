@@ -1,0 +1,57 @@
+{
+  "artifact": "IRIS-PILOT-001-AMIR-OBSERVATION-POPULATION-COMMITMENT-v0.1",
+  "schema_version": "amir-observation-population-commitment-v1",
+  "status": "FROZEN_BEFORE_OBSERVATION",
+  "governing_documentary_commit": "2fdadf9b73396d85623156fc766770db3cadfab8",
+  "protocol_filename": "IRIS-PILOT-001-AMIR-OBSERVATION-PROTOCOL-v0.1.md",
+  "observation_start": "2026-09-28T02:00:00Z",
+  "observation_start_local": "2026-09-27T21:00:00-05:00",
+  "evidence_deadline": "2026-10-12T02:00:00Z",
+  "evidence_deadline_local": "2026-10-11T21:00:00-05:00",
+  "sampling_design": {
+    "type": "FIXED_QUALIFYING_EPISODE_TARGET_WITH_FIXED_DEADLINE",
+    "qualifying_episode_target": 12,
+    "minimum_sample_requirement": 12,
+    "admission_rule": "ALL_ELIGIBLE_EPISODES_FIRST_EVIDENCED_AFTER_START_AND_BEFORE_STOP_BOUNDARY",
+    "stop_rule": "STOP_AT_TWELFTH_ADJUDICATED_VERIFIED_OBJECTIVE_PROGRESS_EPISODE_OR_RETURN_HOLD_AT_DEADLINE",
+    "deadline_hold": "AMIR_OBSERVATION_SAMPLE_INSUFFICIENT",
+    "interim_metric_publication": "PROHIBITED"
+  },
+  "primary_observation_surfaces": [
+    "417properties/IRIS-Personal-Office#3",
+    "417properties/BIG-Navigator#567",
+    "417properties/BIG-Navigator#695",
+    "AUTHENTICATED_AARON_BIG_IRIS_CONVERSATION_EVIDENCE_WHEN_TIMESTAMP_AND_CONTENT_DIGEST_CAN_BE_PRESERVED"
+  ],
+  "episode_identity_format": "AMIR-E1-<first-16-hex-of-sha256(amir-observation-v1|objective_or_work_lineage|first_evidence_ref)>",
+  "episode_schema_required_fields": [
+    "episode_id",
+    "objective_or_work_lineage",
+    "episode_start",
+    "episode_end",
+    "source_systems",
+    "evidence_refs",
+    "verified_objective_progress",
+    "progress_verification_evidence",
+    "aaron_interventions",
+    "intervention_classifications",
+    "conflict_unknown_state",
+    "evaluator_disposition"
+  ],
+  "progress_requirement": "INDEPENDENTLY_SUPPORTED_BOUNDED_OBJECTIVE_STATE_ADVANCE",
+  "numerator_class": "MECHANICAL",
+  "denominator_class": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+  "formula": "mechanical_intervention_count / verified_objective_progress_episode_count",
+  "anti_selection_rule": "NO_OUTCOME_BASED_ADMISSION_REMOVAL_EXTENSION_OR_EARLY_STOPPING",
+  "evaluator": {
+    "office": "PROFESSOR",
+    "role": "INDEPENDENT_AMIR_EVALUATOR",
+    "authority": "ZERO_AUTHORITY"
+  },
+  "builder_boundary": {
+    "pilot_001_implemented": false,
+    "v0_resumed": false,
+    "builder_selects_population": false,
+    "builder_measures_baseline": false
+  }
+}
