@@ -1,0 +1,51 @@
+{
+  "artifact_id": "IRIS-PILOT-001-PREBUILDER-INDEPENDENCE-CERTIFICATION-v0.1",
+  "schema_version": "pilot001.independence-certification.v0.1",
+  "status": "FROZEN_PREBUILDER",
+  "governing_documentary_object": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "branch": "iba/iris-pilot001-amir-gate-decoupling-v0-4",
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb"
+  },
+  "evaluator": {
+    "office": "PROFESSOR",
+    "role": "INDEPENDENT_EVALUATOR"
+  },
+  "certifications": [
+    "BUILDER_DID_NOT_SELECT_FINAL_CASE_POPULATION",
+    "BUILDER_DID_NOT_AUTHOR_ADJUDICATION_PROTOCOL",
+    "NO_GOVERNING_LABELS_EXIST_PREBUILD",
+    "NO_GOVERNING_LABELS_EXIST_YET",
+    "CASE_POPULATION_FROZEN_BEFORE_BUILD",
+    "LABELS_CREATED_ONLY_AFTER_CANDIDATE_FREEZE",
+    "LABEL_ADJUDICATOR_BLIND_TO_CANDIDATE_OUTPUTS_UNTIL_LABEL_PUBLICATION",
+    "AMIR_BASELINE_NOT_REQUIRED_FOR_BUILDER_RESUMPTION"
+  ],
+  "sequencing": [
+    "CASE_POPULATION_FREEZE",
+    "V0_SOURCE_CONSTRUCTION",
+    "EXACT_CANDIDATE_HEAD_FREEZE",
+    "PROFESSOR_BLIND_ADJUDICATION",
+    "LABEL_PUBLICATION",
+    "INDEPENDENT_SCORING"
+  ],
+  "labels_artifact_created": false,
+  "amir_state": {
+    "observation_branch": "evaluation/iris-pilot001-amir-observation-v0-1",
+    "frozen_protocol_commit": "214f44781a641fbcbb85901a6540f41f7d590a77",
+    "builder_gate": false,
+    "utility_gate_later": true
+  },
+  "pr1_state": "UNCHANGED_BY_THIS_EVALUATION_FREEZE",
+  "authority_boundary": [
+    "ZERO_AUTHORITY",
+    "IRIS_PR1_UNCHANGED",
+    "CONTINUITY_OFF",
+    "NO_DEPLOYMENT",
+    "NO_EXTERNAL_EFFECT_AUTHORITY",
+    "NO_STANDING_AUTHORITY",
+    "NO_COMMERCE_AUTHORITY",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ]
+}
+
