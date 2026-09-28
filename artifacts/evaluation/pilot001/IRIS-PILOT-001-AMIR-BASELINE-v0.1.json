@@ -1,0 +1,149 @@
+{
+  "artifact": "IRIS-PILOT-001-AMIR-BASELINE-v0.1",
+  "schema_version": "amir-baseline-v1",
+  "status": "OBSERVATION_COMPLETE_EVIDENCE_BOUND",
+  "evaluator": {
+    "office": "PROFESSOR",
+    "role": "INDEPENDENT_AMIR_EVALUATOR",
+    "authority": "ZERO_AUTHORITY"
+  },
+  "protocol": {
+    "commit": "214f44781a641fbcbb85901a6540f41f7d590a77",
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-AMIR-OBSERVATION-PROTOCOL-v0.1.md",
+    "blob": "8feb16d4f29696b05b1db8e86707b4d1327351ca"
+  },
+  "population_commitment": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-AMIR-OBSERVATION-POPULATION-COMMITMENT-v0.1.json",
+    "blob": "db0a102fbb09694bc9d4f0ac22a7f372819fef25"
+  },
+  "observation_start": "2026-09-28T02:00:00Z",
+  "observation_stop": "2026-09-28T17:15:45Z",
+  "evidence_window": {
+    "start_inclusive": "2026-09-28T02:00:00Z",
+    "end_inclusive": "2026-09-28T17:15:45Z"
+  },
+  "population": {
+    "episode_ledger_path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-AMIR-OBSERVATION-EPISODES-v0.1.json",
+    "episode_ledger_commit": "7d90effd4cb9fb1a0d504615629554d2af26ed5f",
+    "episode_ledger_blob": "b5a8170abd4243261a293e8d70125bc6ba3657cf",
+    "episode_ledger_bytes": 35883,
+    "episode_ledger_sha256": "ff8de36c42778715093e80fd234e6c38c0d616f9a343dd84fc8ef95b8608d09b",
+    "population_digest": "a4693f14b853acbee4a9907b6d8f691e5ae3d411c26b2157a3b5f2838093f615",
+    "population_digest_method": "SHA256 of UTF-8 compact, sort_keys JSON array in ledger order of episode_id, evaluator_disposition, verified_objective_progress",
+    "observed_episode_count": 17,
+    "verified_objective_progress_episode_count": 12,
+    "nonqualifying_episode_count": 5,
+    "nonqualifying_dispositions": {
+      "OBSERVED_NONQUALIFYING_BLOCKED": 1,
+      "OBSERVED_NONQUALIFYING_OPEN": 1,
+      "OBSERVED_NONQUALIFYING_UNKNOWN_PROGRESS": 1,
+      "OBSERVED_NONQUALIFYING_OPEN_AT_STOP": 2
+    }
+  },
+  "metric": {
+    "name": "AMIR",
+    "definition": "Aaron Mechanical Intervention Rate",
+    "numerator_definition": "MECHANICAL Aaron interventions inside verified objective progress episodes",
+    "denominator_definition": "VERIFIED_OBJECTIVE_PROGRESS_EPISODE",
+    "mechanical_intervention_count": 6,
+    "verified_objective_progress_episode_count": 12,
+    "value": 0.5,
+    "formula": "6 / 12 = 0.5",
+    "counted_interventions": [
+      {
+        "episode_id": "AMIR-E1-e14b0a71e97b1a1a",
+        "intervention_id": "AMIR-I-21e8c618e891af11",
+        "evidence_ref": "personal-context:2026-09-28T04:22:20Z",
+        "excerpt_sha256": "9b9bcf91a4d00f38fc3a61b48cf047cd60986338d805f7df02af951391d30a79",
+        "rationale": "Aaron carried exact workspace/routing state across the failed V0 publication path."
+      },
+      {
+        "episode_id": "AMIR-E1-0c4344acd8151f75",
+        "intervention_id": "AMIR-I-a43f5b761bf29565",
+        "evidence_ref": "https://github.com/417properties/BIG-Navigator/issues/567#issuecomment-5864064436",
+        "excerpt_sha256": "815ab93dbbf2875ddcb0ec09b87754b543b89d4bf33ffcab8db22539c0747ac7",
+        "rationale": "Aaron corrected execution-lane identity so W03 returned to the proper BIG Builder."
+      },
+      {
+        "episode_id": "AMIR-E1-e40df8cc7dcd52c3",
+        "intervention_id": "AMIR-I-3efd9ec9bf048835",
+        "evidence_ref": "personal-context:2026-09-28T07:31:31Z",
+        "excerpt_sha256": "611d041a62d8597bbf1b7386a0ffd0eaf1fe878ca27607aaa6d1da463125aea7",
+        "rationale": "Aaron manually routed the frozen candidate to Professor."
+      },
+      {
+        "episode_id": "AMIR-E1-0da6570e44986d66",
+        "intervention_id": "AMIR-I-0da6570e-relay",
+        "evidence_ref": "personal-context:2026-09-28T14:55:29Z",
+        "excerpt_sha256": "cadbfec358583449ce6e6e062b368a4c322d1416839f175fa0c58dc27348b1d4",
+        "rationale": "Aaron manually carried Main V0's exact dry-run/first-deployment blocker into the architecture lane; the excerpt is a preserved retrieval snippet, not the full message."
+      },
+      {
+        "episode_id": "AMIR-E1-cda8dd6bf5e1d995",
+        "intervention_id": "AMIR-I-cda8dd6b-relay",
+        "evidence_ref": "personal-context:2026-09-28T15:44:20Z",
+        "excerpt_sha256": "42c883cdaaac6f86a2a9d31f723b6399775f6de3ad0a85e73b028c7afb7f745d",
+        "rationale": "Aaron manually relayed Main V0's runtime observation to the architecture lane."
+      },
+      {
+        "episode_id": "AMIR-E1-cda8dd6bf5e1d995",
+        "intervention_id": "AMIR-I-cda8dd6b-publication",
+        "evidence_ref": "personal-context:2026-09-28T16:07:11Z",
+        "excerpt_sha256": "b22f80c96c851ca0089eef23e407520efd5308f877c4ed472513ef3e59748513",
+        "rationale": "Aaron had to prompt delivery of the already-completed amendment to V0 and the Work Bus after the document-availability gap was reported."
+      }
+    ],
+    "denominator_episode_ids": [
+      "AMIR-E1-8695cf767e40c0d9",
+      "AMIR-E1-e14b0a71e97b1a1a",
+      "AMIR-E1-2942bda8f328ee0f",
+      "AMIR-E1-b918432317c29b3d",
+      "AMIR-E1-0c4344acd8151f75",
+      "AMIR-E1-75bcf8336c8e1479",
+      "AMIR-E1-46c0a16a03c2b253",
+      "AMIR-E1-e40df8cc7dcd52c3",
+      "AMIR-E1-c77d63fd02ac7e54",
+      "AMIR-E1-0da6570e44986d66",
+      "AMIR-E1-cda8dd6bf5e1d995",
+      "AMIR-E1-87bc236513f79a9e"
+    ]
+  },
+  "all_observed_aaron_intervention_counts_by_class": {
+    "MECHANICAL": 9,
+    "AUTHORITY_DECISION": 5,
+    "PRINCIPAL_ONLY_SUBSTANTIVE_ACT": 1,
+    "PREFERENCE_JUDGMENT": 1
+  },
+  "qualifying_episode_intervention_counts_by_class": {
+    "MECHANICAL": 6,
+    "AUTHORITY_DECISION": 4
+  },
+  "unknown_intervention_count": 0,
+  "unknown_progress_episode_count": 1,
+  "unknown_treatment": "The one morning-state retrieval has no independently verified objective-state advance by the frozen stop; it remains reported as nonqualifying UNKNOWN_PROGRESS and is not credited as success. It does not enter either side of the verified-progress ratio. No qualifying intervention classification is unresolved.",
+  "supporting_evidence": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-AMIR-BASELINE-EVIDENCE-v0.1.json",
+    "commit": "4dfbc84f47090de07a0d39396626bd7eb47c1cb0",
+    "blob": "e3034ccf7dfc4ae93912ab3e52e9a1578c168345",
+    "bytes": 28894,
+    "sha256": "5d70244683b58bcca679c6c775b299c5a68be9982c7f28f9a57a438e0207f89c"
+  },
+  "certifications": [
+    "BASELINE_PROTOCOL_FROZEN_BEFORE_OBSERVATION",
+    "SAMPLE_RULE_NOT_CHANGED_AFTER_RESULT_OBSERVATION",
+    "BUILDER_DID_NOT_MEASURE_GOVERNING_AMIR_BASELINE",
+    "PILOT_001_NOT_USED_TO_REDUCE_BASELINE",
+    "RESERVED_AARON_DECISIONS_EXCLUDED_FROM_MECHANICAL_NUMERATOR",
+    "NUMERATOR_AND_DENOMINATOR_EVIDENCE_BOUND"
+  ],
+  "boundaries": [
+    "ZERO_AUTHORITY",
+    "IRIS_PR1_UNCHANGED",
+    "CONTINUITY_OFF",
+    "NO_DEPLOYMENT",
+    "NO_EXTERNAL_EFFECT_AUTHORITY",
+    "NO_STANDING_AUTHORITY",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ],
+  "interpretation_limit": "Descriptive bounded pre-Pilot baseline for the frozen observed population; no population-wide statistical or Pilot utility claim."
+}
