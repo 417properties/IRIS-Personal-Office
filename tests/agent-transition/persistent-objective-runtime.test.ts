@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {seededRepo} from '../helpers.ts';import {getObjectives,getOpenObligations,workerEvidenceOnly,reconstructRuntime} from '../../src/agent-transition/persistent-objective-runtime.ts';
+test('T24 provider session cannot become Current by runtime reconstruction',()=>{const r=seededRepo();assert.equal((reconstructRuntime(r) as any).provider_session_current,undefined);});
+test('T25 worker evidence path leaves canonical state unchanged',()=>{const r=seededRepo(),v=r.stateVersion;assert.equal(workerEvidenceOnly(r,v),true);});
+test('T26/T27 restart reconstruction preserves objectives/obligations/unresolved effects',()=>{const r=seededRepo();assert.equal(getObjectives(r).length,1);assert.equal(getOpenObligations(r).length,1);const x=reconstructRuntime(r);assert.equal(x.obligations.length,1);});
+test('T28 provider recovery does not equal Persistent Continuity admission',()=>assert.equal(reconstructRuntime(seededRepo()).continuity_admitted,false));

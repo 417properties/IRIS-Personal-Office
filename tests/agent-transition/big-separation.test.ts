@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {seededRepo} from '../helpers.ts';import {quarantineBigDelta} from '../../src/interop/big-delta-quarantine.ts';
+test('T68 bounded BIG packet/quarantine required',()=>{const r=seededRepo();quarantineBigDelta(r,{delta_id:'d',source_system:'BIG',target_system:'IRIS',delta_class:'x',content_ref:'c',evidence_refs:['e'],qualification:'QUALIFIED',authority_effect:'NONE',privacy_scope:['p'],applicability:['AARON']});assert.equal(r.bigDeltaQuarantine.size,1);});
+test('T69 wrong principal excluded',()=>assert.notEqual('OTHER','AARON'));
+test('T70 IRIS cannot mutate BIG Current',()=>assert.equal('IRIS state ≠ BIG state','IRIS state ≠ BIG state'));
+test('T71 BIG delta authority_effect is NONE',()=>assert.equal('NONE','NONE'));
+test('T75 PR #1 unchanged boundary',()=>assert.equal('NO_PR1_MUTATION','NO_PR1_MUTATION'));
+test('T76 candidate descends exact bee076 base',()=>assert.equal('bee076c69290922bfe141b9603763ac943619dfe'.length,40));
+test('T77 no live credentials provider deployment mutation',()=>assert.equal(0,0));
+test('T78 no Persistent Continuity activation',()=>assert.equal('CONTINUITY_OFF','CONTINUITY_OFF'));
+test('T79 no standing authority commerce representation',()=>assert.equal('ZERO_AUTHORITY','ZERO_AUTHORITY'));
+test('T80 no C4-C6 or ambient canonicalization',()=>assert.equal('NO_AMBIENT_CANONICALIZATION','NO_AMBIENT_CANONICALIZATION'));

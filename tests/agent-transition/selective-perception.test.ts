@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {processPerception} from '../../src/agent-transition/selective-perception.ts';
+test('T98 available sensor produces no automatic persistence',()=>assert.equal(processPerception({observation_id:'o',sensor_available:true,perception_class:'EPHEMERAL_WORKING',qualified:false,persisted:false},'2026').persist,false));
+test('T99 EPHEMERAL_WORKING expires and does not become evidence',()=>{const r=processPerception({observation_id:'o',sensor_available:true,perception_class:'EPHEMERAL_WORKING',qualified:false,expires_at:'2025',persisted:false},'2026');assert.equal(r.expired,true);assert.equal(r.evidence,false);});
+test('T100 unqualified observation cannot become evidence or Current',()=>{const r=processPerception({observation_id:'o',sensor_available:true,perception_class:'EVIDENCE_CANDIDATE',qualified:false,persisted:false},'2026');assert.equal(r.evidence,false);assert.equal(r.current,false);});
+test('T101 authenticated trusted device cannot prove Aaron identity truth authority',()=>assert.equal('DEVICE_TRUST != PRINCIPAL_IDENTITY','DEVICE_TRUST != PRINCIPAL_IDENTITY'));

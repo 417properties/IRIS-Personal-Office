@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {buildProjection} from '../../src/agent-transition/pilot001-projection.ts';import type {SourceEvaluation} from '../../src/agent-transition/pilot001-types.ts';
+const s:SourceEvaluation={source_id:'s',required:true,present:true,principal_match:true,identity:'VERIFIED',applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true};
+test('T55 one dependency drift reruns and stabilizes',()=>{const p=buildProjection({candidates:[],sources:[s],conflicts:[],privacyExcluded:[],bracket:'RERUN_STABLE',started_at:'a',emitted_at:'b'});assert.equal(p.completeness_state,'COMPLETE_FOR_DECLARED_SCOPE');assert.equal(p.snapshot.bracket_status,'RERUN_STABLE');});
+test('T56 repeated instability => UNKNOWN_COVERAGE',()=>assert.equal(buildProjection({candidates:[],sources:[s],conflicts:[],privacyExcluded:[],bracket:'UNSTABLE',started_at:'a',emitted_at:'b'}).completeness_state,'UNKNOWN_COVERAGE'));

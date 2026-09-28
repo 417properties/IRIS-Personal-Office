@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {qualifyResearchWorkerResult} from '../../src/agent-transition/research-worker.ts';
+const x={worker_identity_id:'wrk1',provider_ref:'provider',evidence_refs:['e'],artifact_ref:'a',external_effect_count:0 as const,authority_effect:'NONE' as const};
+test('T72/T73 provider result is evidence only with zero external effect/no Current mutation',()=>{const y=qualifyResearchWorkerResult(x);assert.equal(y.external_effect_count,0);assert.equal(y.authority_effect,'NONE');assert.equal(y.canonical_current_mutation,false);});
+test('T74 replacement worker preserves semantic evidence without inheriting identity',()=>{const y=qualifyResearchWorkerResult({...x,worker_identity_id:'wrk2'});assert.equal(y.worker_identity_id,'wrk2');assert.deepEqual(y.evidence_refs,x.evidence_refs);});

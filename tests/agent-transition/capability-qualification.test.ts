@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {admitQualification,isRouteEligible} from '../../src/agent-transition/capability-qualification.ts';
+const q={qualification_id:'q',capability_candidate_id:'c',role_scope:'research',evaluation_population_ref:'e',dimensions:[],evidence_refs:['ev'],falsifier_refs:[],evaluation_result:'PASS' as const,admission_state:'CANDIDATE' as const,version:1};
+test('T92 benchmark evidence alone cannot ADMIT',()=>assert.throws(()=>admitQualification({...q,benchmark_only:true}),/BENCHMARK/));
+test('T93 role-specific qualification cannot leak to another role',()=>assert.equal(isRouteEligible({...q,admission_state:'ADMITTED'},'operations','2026'),false));
+test('T94 DEMOTED/EXPIRED is not route eligible and history remains data',()=>assert.equal(isRouteEligible({...q,admission_state:'DEMOTED'},'research','2026'),false));
