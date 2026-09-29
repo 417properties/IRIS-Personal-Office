@@ -1,0 +1,64 @@
+{
+  "schema_version": "pilot001.frozen-candidate-execution-evidence.v0.1",
+  "authority_effect": "NONE",
+  "execution_branch": "evaluation/iris-pilot001-e1-frozen-candidate-harness-v0-1",
+  "harness_head": "6cd32f701550c2819491895a7563a62c8e3e2a07",
+  "frozen_candidate": {
+    "head": "2fd02febbc94e738b2f4be6a23622263a2ee4f3c",
+    "tree": "c6015cf7eab00756e2a3ab111dcb51aea8430648"
+  },
+  "frozen_e1": {
+    "head": "aa8bba661976c2ef2c1d115b548fc2a86122e2f8",
+    "case_count": 32,
+    "population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+    "manifest_sha256": "fde99bb1b1aa82a5b98f1d17eae1b42d790afabb0d9b74a2804f0ab9e6ff31df",
+    "manifest_git_blob": "cac80fce950924af8140a8689953bef35a2217f6"
+  },
+  "accepted_binding": {
+    "head": "f2faa2efe80166714bdff827a200def6ffe93f66",
+    "path": "artifacts/iba/iris-transition/IRIS-PILOT-001-E1-TO-FROZEN-CANDIDATE-EXECUTION-BINDING-v0.1.md",
+    "sha256": "30427e56886059dd74f8b3187cbb7164b688c7a9e83f0a2b68e4d1a7caf18faa",
+    "git_blob": "e0c6244d916e7970f965eb8a95972d73e8e28d24"
+  },
+  "qualification": {
+    "harness_tests": {
+      "tests": 17,
+      "pass": 17,
+      "fail": 0
+    },
+    "repository_regression": {
+      "tests": 171,
+      "pass": 171,
+      "fail": 0
+    },
+    "source_boundary": {
+      "base": "2fd02febbc94e738b2f4be6a23622263a2ee4f3c",
+      "candidate_files_modified": 0,
+      "forbidden_harness_source_hits": 0,
+      "allowed_additive_paths_only": true
+    },
+    "pin_checks": "PASS"
+  },
+  "execution": {
+    "canonical_publication_run": {
+      "case_count": 32,
+      "index_sha256": "858098db0d663340c6043fdef88de60abd07750520cd984e63d0d0cf878748ac",
+      "index_git_blob": "04b15bf7e8e4c27763be69add46b4d630d2a5706"
+    },
+    "deterministic_verification_rerun": {
+      "case_count": 32,
+      "compared_files": 33,
+      "byte_identical": true,
+      "mismatches": 0,
+      "vector_digest": "e2ce80987928709e3872fbb9ae808ea4e06b1af6e77512289422772c54eccea0"
+    }
+  },
+  "independence": {
+    "labels_consumed": 0,
+    "scoring_performed": false,
+    "e2_reference_answers_read": false,
+    "e3_metrics_computed": false,
+    "candidate_mutated": false
+  },
+  "failures_or_unknowns": []
+}
