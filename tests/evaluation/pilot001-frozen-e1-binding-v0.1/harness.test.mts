@@ -70,8 +70,8 @@ test('decision and obligation roots stay separate and candidate root order is fr
 
 test('missing source cannot be resurrected by embedded record values',()=>{
   const {input}=decodeFrozenE1Case(byMissing('REQUIRED_OBLIGATION_SOURCE'));
-  assert.ok(input.candidates.length>0);
-  assert.ok(input.candidates.some((c:any)=>c.applicability==='UNKNOWN'||c.source_identity==='UNKNOWN'||c.freshness==='UNKNOWN'));
+  assert.equal(input.candidates.length,0);
+  assert.equal(input.sources.find((s:any)=>s.source_id==='pilot001:obligations').present,false);
   assert.notEqual(buildProjection(input).completeness_state,'COMPLETE_FOR_DECLARED_SCOPE');
 });
 
