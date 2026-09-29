@@ -36,7 +36,9 @@ const FLAG_NAMES=['--candidate-head','--candidate-tree','--e1-head','--populatio
 
 function fail(message:string):never { throw new Error('HARNESS_HOLD: '+message); }
 function git(...args:string[]):string { return execFileSync('git',args,{encoding:'utf8'}).trim(); }
-function readPinned(p:string):Buffer { assertAllowedRuntimePath(p); return fs.readFileSync(p); }
+function gitBytes(...args:string[]):Buffer { return execFileSync('git',args); }
+function readPinnedWorking(p:string):Buffer { assertAllowedRuntimePath(p); return fs.readFileSync(p); }
+function readPinnedE1(p:string):Buffer { assertAllowedRuntimePath(p); return gitBytes('show',PINS.e1Head+':'+p); }
 
 export function parseArgs(argv:string[]){
   if(argv.length!==FLAG_NAMES.length*2) fail('exact seven flag/value pairs required');
@@ -67,15 +69,14 @@ export function verifyPins(args:ReturnType<typeof parseArgs>){
     if(git('hash-object',file)!==blob) fail('working candidate file changed '+file);
   }
 
-  const manifestBytes=readPinned(args.manifest);
+  const manifestBytes=readPinnedE1(args.manifest);
   if(sha256Bytes(manifestBytes)!==PINS.manifestSha256||gitBlobSha1(manifestBytes)!==PINS.manifestBlob) fail('manifest byte identity mismatch');
   if(git('rev-parse',args.e1Head+':'+args.manifest)!==PINS.manifestBlob) fail('E1 manifest Git pin mismatch');
 
-  const bindingBytes=readPinned(args.binding);
+  const bindingBytes=readPinnedWorking(args.binding);
   if(sha256Bytes(bindingBytes)!==PINS.bindingSha256||gitBlobSha1(bindingBytes)!==PINS.bindingBlob) fail('accepted binding byte identity mismatch');
 
-  assertAllowedRuntimePath(PINS.populationPath);
-  const populationBytes=fs.readFileSync(PINS.populationPath);
+  const populationBytes=readPinnedE1(PINS.populationPath);
   const populationBlob=gitBlobSha1(populationBytes);
   if(git('rev-parse',args.e1Head+':'+PINS.populationPath)!==populationBlob) fail('population identity differs from frozen E1');
   if(git('rev-parse',args.e1Head+':'+PINS.protocolPath)!==PINS.protocolBlob) fail('adjudication protocol blob mismatch');
