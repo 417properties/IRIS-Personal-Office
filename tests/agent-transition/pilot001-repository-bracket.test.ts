@@ -20,6 +20,19 @@ class FakeSql implements SqlExecutor{
   }
 }
 
+test('repository type-erased decoder cannot promote malformed required-source facts to COMPLETE',async()=>{
+  const malformedDecoder:SnapshotDecoder={decode(_rows:Readonly<CanonicalRows>,at:string){
+    const malformed=structuredClone(sources) as unknown as Array<Record<string,unknown>>;
+    Object.assign(malformed.find(s=>s.source_id==='pilot001:qualified_big_quarantine_evidence')!,{freshness:null,provenance_ok:'false'});
+    return {candidates:[],sources:malformed as unknown as SourceEvaluation[],conflicts:[],privacyExcluded:[],bracket:'STABLE',started_at:at,emitted_at:at};
+  }};
+  const repo=new PostgresTransitionProjectionRepository(new FakeSql(['A','A']),malformedDecoder,()=> '2026-09-28T00:00:00Z');
+  const p=await repo.buildConsistentProjection();
+  assert.equal(p.completeness_state,'UNKNOWN_COVERAGE');
+  assert.notDeepEqual(p.coverage_gaps,[]);
+  assert.deepEqual(p.justified_omissions,[]);
+});
+
 test('repository performs real stable end-bracket comparison',async()=>{
   const repo=new PostgresTransitionProjectionRepository(new FakeSql(['A','A']),decoder,()=> '2026-09-28T00:00:00Z');
   const p=await repo.buildConsistentProjection();
