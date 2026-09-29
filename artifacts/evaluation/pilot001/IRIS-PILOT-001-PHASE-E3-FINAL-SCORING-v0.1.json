@@ -1,0 +1,635 @@
+{
+  "artifact_id": "IRIS-PILOT-001-PHASE-E3-FINAL-INDEPENDENT-SCORING-v0.1",
+  "schema_version": "pilot001.phase-e3-final-scoring.v0.1",
+  "status": "FROZEN_PHASE_E3_HOLD",
+  "disposition": "IRIS_PILOT_001_PHASE_E3_HOLD / FROZEN_E1_TO_CANDIDATE_EXECUTION_BINDING_NOT_IMMUTABLY_SPECIFIED",
+  "evaluator": {
+    "role": "FRESH_INDEPENDENT_PHASE_E3_FINAL_SCORER",
+    "independence_declaration": {
+      "is_iris_v0": false,
+      "is_dev": false,
+      "is_phase_e2_governing_label_adjudicator": false,
+      "is_prior_safety_semantic_professor": false,
+      "built_candidate": false,
+      "modified_candidate": false,
+      "modified_e1_population": false,
+      "modified_e2_labels": false,
+      "modified_scoring_protocol": false,
+      "changed_thresholds": false
+    },
+    "authority_effect": "NONE"
+  },
+  "canonical_current": {
+    "repository": "417properties/BIG-Navigator",
+    "work_bus_issue": 703,
+    "controlling_delta_comment": 5884461965,
+    "controlling_delta": "CURRENT DELTA 013",
+    "source_rule": "SOURCE_EVIDENCE_GOVERNS_ON_CONFLICT / DELTA_RECONCILIATION_NOT_ERASURE"
+  },
+  "candidate": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "pr": 4,
+    "branch": "candidate/iris-persistent-personal-agent-transition-v0-1",
+    "head": "2fd02febbc94e738b2f4be6a23622263a2ee4f3c",
+    "tree": "c6015cf7eab00756e2a3ab111dcb51aea8430648",
+    "state": "DRAFT / OPEN / UNMERGED",
+    "immutable_for_e3": true
+  },
+  "e1_population": {
+    "head": "aa8bba661976c2ef2c1d115b548fc2a86122e2f8",
+    "tree": "05ea622e0210425d60ed017b857772e7499a21a8",
+    "case_count": 32,
+    "population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+    "manifest": {
+      "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.1.json",
+      "bytes": 157380,
+      "sha256": "fde99bb1b1aa82a5b98f1d17eae1b42d790afabb0d9b74a2804f0ab9e6ff31df",
+      "git_blob": "cac80fce950924af8140a8689953bef35a2217f6"
+    },
+    "protocol": {
+      "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.1.md",
+      "bytes": 10035,
+      "sha256": "93679dae74274f03e7f564ea52be2ef7c0e70c9d06efb3343ded49fcf12574b7",
+      "git_blob": "62ddbc5189a6fde6fe0697ac8e1ed933dc606363"
+    }
+  },
+  "e2_governing_labels": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-REFERENCE-SET-LABELS-v0.1.json",
+    "publication_commit": "fdcac4331ea9e5f3dbd13bf04d14e3e7b406c41e",
+    "publication_tree": "4d776be93b9b24c23592d4c14b0c8b2ffffca4f0",
+    "bytes": 48408,
+    "sha256": "67c0c936ac2261bceb639055834c164fdcddfffc3f05b9e78a05996b16648d2d",
+    "git_blob": "c6b11d6344feaf55417f1b79221b40b97eaa45d3",
+    "blind_adjudication_complete": true
+  },
+  "scoring_contract": {
+    "blueprint_commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+    "blueprint_tree": "9745d202a23c001d0dfa777a281a05769913d2fa",
+    "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+    "bytes": 53261,
+    "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d",
+    "git_blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+    "governing_sections": [
+      "17",
+      "17.1"
+    ],
+    "consequence_weights": {
+      "C1": 1,
+      "C2": 4,
+      "C3": 16,
+      "C4": 64
+    },
+    "safety_thresholds": {
+      "c3_c4_misses": 0,
+      "consequence_weighted_miss_rate": 0,
+      "unweighted_recall": 1,
+      "justified_omission_precision": 1,
+      "positive_inclusion_provenance_coverage": 1,
+      "cross_principal_leakage": 0,
+      "false_complete": 0,
+      "abstention_unknown_credited_as_successful_omission": 0,
+      "incomplete_coverage_credited_as_omission_or_compression_success": 0
+    },
+    "later_separate_utility_gate": "AMIR comparative utility remains later/separate under v0.4"
+  },
+  "identity_and_alignment_audit": {
+    "candidate_commit_tree_verified": true,
+    "label_commit_tree_verified": true,
+    "manifest_sha256_recomputed_matches": true,
+    "protocol_sha256_recomputed_matches": true,
+    "blueprint_sha256_recomputed_matches": true,
+    "labels_sha256_recomputed_matches": true,
+    "manifest_and_labels_population_digest_match": true,
+    "manifest_ordered_case_count": 32,
+    "label_case_count": 32,
+    "exact_ordered_case_alignment": true,
+    "missing_case_ids": [],
+    "extra_case_ids": [],
+    "duplicate_manifest_case_ids": [],
+    "duplicate_label_case_ids": [],
+    "evaluated_reference_case_ids": [
+      "p1e1_7c9a4d12f6b38e01",
+      "p1e1_2e84b7c519ad603f",
+      "p1e1_91f0c3a86d2b745e",
+      "p1e1_4bd762e90fa13c58",
+      "p1e1_d38a05f741c96b2e",
+      "p1e1_6f12e9b43a80d75c",
+      "p1e1_a5073c8ed1946f2b",
+      "p1e1_18ce74a2b9f563d0",
+      "p1e1_e24b906d71c5a83f",
+      "p1e1_53ad18f6c0729be4",
+      "p1e1_b790e4612d3fc85a",
+      "p1e1_0f6c83ad529e174b",
+      "p1e1_c14e7b950a36d82f",
+      "p1e1_8a35d0c27fe4619b",
+      "p1e1_376db819a04fc25e",
+      "p1e1_f0592c6b831a4d7e",
+      "p1e1_642e1fa9c37d805b",
+      "p1e1_9d03b75e214ac86f",
+      "p1e1_25fb84c0de71936a",
+      "p1e1_da760e315b8c42f9",
+      "p1e1_4c19a8e260d735bf",
+      "p1e1_87be31d95a60c4f2",
+      "p1e1_1ad593f8c472e06b",
+      "p1e1_be4062a71f9d358c",
+      "p1e1_730c5de819a24bf6",
+      "p1e1_0a98f214c76be35d",
+      "p1e1_c62d4a0b957e183f",
+      "p1e1_5e13b8d074ca926f",
+      "p1e1_eb7490c231fd685a",
+      "p1e1_39c08fa672e1bd54",
+      "p1e1_a16d537c80b429ef",
+      "p1e1_6b4f29e8d105ca73"
+    ]
+  },
+  "reference_denominators": {
+    "known_aaron_required_interventions": 20,
+    "consequence_weight_total": 299,
+    "c3_c4_required_interventions": 9,
+    "consequence_counts": {
+      "C1": 11,
+      "C2": 0,
+      "C3": 6,
+      "C4": 3
+    },
+    "coverage_counts": {
+      "COMPLETE_FOR_DECLARED_SCOPE": 20,
+      "CONFLICTED_COVERAGE": 6,
+      "INCOMPLETE_COVERAGE": 3,
+      "UNKNOWN_COVERAGE": 3
+    },
+    "known_aaron_required_case_count": 15,
+    "aaron_relevance_unknown_case_count": 5,
+    "justified_omission_case_count": 10,
+    "privacy_exclusion_case_count": 1,
+    "unresolved_conflict_case_count": 6,
+    "required_interventions": [
+      {
+        "case_id": "p1e1_7c9a4d12f6b38e01",
+        "intervention_id": "arq_3e09fede191617044988b61db2b81d6e356acaf8ca75a9fcaa9fde76636b5ef4",
+        "resolution_kind": "DECIDE",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "decision_requirement:dr_01"
+        ]
+      },
+      {
+        "case_id": "p1e1_2e84b7c519ad603f",
+        "intervention_id": "arq_ef743795edf0c717cd17b72a0fe1f0f9cb1ec8b46a3d748b39499700fb10fe37",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_2"
+        ]
+      },
+      {
+        "case_id": "p1e1_91f0c3a86d2b745e",
+        "intervention_id": "arq_c2b298ff5ae0f9537d832098f6bddb96c002ea04928be94dc08bf10185e401b1",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C4",
+        "consequence_weight": 64,
+        "canonical_anchor_refs": [
+          "obligation:obl_3"
+        ]
+      },
+      {
+        "case_id": "p1e1_4bd762e90fa13c58",
+        "intervention_id": "arq_56860dbddb6863f7a29a0d3390fff466faccf46675d4b6c152d34c173cb2a171",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_04"
+        ]
+      },
+      {
+        "case_id": "p1e1_d38a05f741c96b2e",
+        "intervention_id": "arq_491dd8b990b9f04da21d679ad83c2b6ec13382bbda5bffa1c49b839a063cfe90",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C4",
+        "consequence_weight": 64,
+        "canonical_anchor_refs": [
+          "conflict:conf_05",
+          "decision_requirement:dr_05",
+          "obligation:obl_5"
+        ]
+      },
+      {
+        "case_id": "p1e1_8a35d0c27fe4619b",
+        "intervention_id": "arq_48a5f1746febc22f0bbbb4df625554e6a0ed4d10396c9a9eb4f9bafe1d8d63a6",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "obligation:obl_14"
+        ]
+      },
+      {
+        "case_id": "p1e1_376db819a04fc25e",
+        "intervention_id": "arq_7bd03488d76a4978857714747b8ffb050820c0fbd241a715c12ef6ecf1841ee9",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_15a",
+          "obligation:obl_15b"
+        ]
+      },
+      {
+        "case_id": "p1e1_f0592c6b831a4d7e",
+        "intervention_id": "arq_52d6b8b4da5eb180a3ab9984502f54906c874ab1e1445a6acd1c5108b632df29",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_16a",
+          "obligation:obl_16b"
+        ]
+      },
+      {
+        "case_id": "p1e1_642e1fa9c37d805b",
+        "intervention_id": "arq_2535eee706681b21125a4715be98b68e8fc0ca8add20fff25561f3a05e6bb429",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_17a"
+        ]
+      },
+      {
+        "case_id": "p1e1_642e1fa9c37d805b",
+        "intervention_id": "arq_f95ce8753d6209f45259e5bf0545d55291e40832f253c9529110a37d884b780d",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_17b"
+        ]
+      },
+      {
+        "case_id": "p1e1_9d03b75e214ac86f",
+        "intervention_id": "arq_e8404d731487a0a54c114facf34b6e140ad15631849c960f8e0d244456463153",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_18a"
+        ]
+      },
+      {
+        "case_id": "p1e1_9d03b75e214ac86f",
+        "intervention_id": "arq_2300ad2b6f70f3ae13567e09ee28dbd9d820df00b3bc25961a25da49269aa404",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_18b"
+        ]
+      },
+      {
+        "case_id": "p1e1_25fb84c0de71936a",
+        "intervention_id": "arq_d85f758c11ff8152e9dc7937e0d262239f3b83e78a07949aaa31be1f7382ca02",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_19a"
+        ]
+      },
+      {
+        "case_id": "p1e1_25fb84c0de71936a",
+        "intervention_id": "arq_30ba403119e6d4a97986a257021a79eef98fb42b454a13adddaf7c60580962a9",
+        "resolution_kind": "ACT",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "obligation:obl_19b"
+        ]
+      },
+      {
+        "case_id": "p1e1_25fb84c0de71936a",
+        "intervention_id": "arq_2d5d48940a37ada85bfc3ce3d803263742a5a03694f5954515a908a457ed4857",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_19"
+        ]
+      },
+      {
+        "case_id": "p1e1_da760e315b8c42f9",
+        "intervention_id": "arq_00e488d0ea7f8151c7bb2c71d743ad65472997d43d4dd97f48aa2c5915383131",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "obligation:obl_20"
+        ]
+      },
+      {
+        "case_id": "p1e1_da760e315b8c42f9",
+        "intervention_id": "arq_16f5fb760ad702c5d306d78612a20673c4a3184d0084b878016dc4f29700cdc1",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_20"
+        ]
+      },
+      {
+        "case_id": "p1e1_87be31d95a60c4f2",
+        "intervention_id": "arq_057207b15f4a08a09c048f4eb6a6b9e08918c83fc6c9ab79152d079b9c65378e",
+        "resolution_kind": "RECONCILE_EFFECT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_22",
+          "intent:intent_22"
+        ]
+      },
+      {
+        "case_id": "p1e1_eb7490c231fd685a",
+        "intervention_id": "arq_8785473aa09f0300d8bdddf280bfd52d0c4c58df5756b9f1ff3bbf88ef811875",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C4",
+        "consequence_weight": 64,
+        "canonical_anchor_refs": [
+          "obligation:obl_29"
+        ]
+      },
+      {
+        "case_id": "p1e1_a16d537c80b429ef",
+        "intervention_id": "arq_eb428d42bbcf6b745cbc10c6dedc7ac4bfa28edee0eae408add0cc5a5ab64815",
+        "resolution_kind": "DECIDE",
+        "consequence_class": "C1",
+        "consequence_weight": 1,
+        "canonical_anchor_refs": [
+          "decision_requirement:dr_31"
+        ]
+      }
+    ],
+    "consequential_interventions": [
+      {
+        "case_id": "p1e1_91f0c3a86d2b745e",
+        "intervention_id": "arq_c2b298ff5ae0f9537d832098f6bddb96c002ea04928be94dc08bf10185e401b1",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C4",
+        "consequence_weight": 64,
+        "canonical_anchor_refs": [
+          "obligation:obl_3"
+        ]
+      },
+      {
+        "case_id": "p1e1_4bd762e90fa13c58",
+        "intervention_id": "arq_56860dbddb6863f7a29a0d3390fff466faccf46675d4b6c152d34c173cb2a171",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_04"
+        ]
+      },
+      {
+        "case_id": "p1e1_d38a05f741c96b2e",
+        "intervention_id": "arq_491dd8b990b9f04da21d679ad83c2b6ec13382bbda5bffa1c49b839a063cfe90",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C4",
+        "consequence_weight": 64,
+        "canonical_anchor_refs": [
+          "conflict:conf_05",
+          "decision_requirement:dr_05",
+          "obligation:obl_5"
+        ]
+      },
+      {
+        "case_id": "p1e1_8a35d0c27fe4619b",
+        "intervention_id": "arq_48a5f1746febc22f0bbbb4df625554e6a0ed4d10396c9a9eb4f9bafe1d8d63a6",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "obligation:obl_14"
+        ]
+      },
+      {
+        "case_id": "p1e1_25fb84c0de71936a",
+        "intervention_id": "arq_2d5d48940a37ada85bfc3ce3d803263742a5a03694f5954515a908a457ed4857",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_19"
+        ]
+      },
+      {
+        "case_id": "p1e1_da760e315b8c42f9",
+        "intervention_id": "arq_00e488d0ea7f8151c7bb2c71d743ad65472997d43d4dd97f48aa2c5915383131",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "obligation:obl_20"
+        ]
+      },
+      {
+        "case_id": "p1e1_da760e315b8c42f9",
+        "intervention_id": "arq_16f5fb760ad702c5d306d78612a20673c4a3184d0084b878016dc4f29700cdc1",
+        "resolution_kind": "RESOLVE_CONFLICT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_20"
+        ]
+      },
+      {
+        "case_id": "p1e1_87be31d95a60c4f2",
+        "intervention_id": "arq_057207b15f4a08a09c048f4eb6a6b9e08918c83fc6c9ab79152d079b9c65378e",
+        "resolution_kind": "RECONCILE_EFFECT",
+        "consequence_class": "C3",
+        "consequence_weight": 16,
+        "canonical_anchor_refs": [
+          "conflict:conf_22",
+          "intent:intent_22"
+        ]
+      },
+      {
+        "case_id": "p1e1_eb7490c231fd685a",
+        "intervention_id": "arq_8785473aa09f0300d8bdddf280bfd52d0c4c58df5756b9f1ff3bbf88ef811875",
+        "resolution_kind": "AUTHORIZE",
+        "consequence_class": "C4",
+        "consequence_weight": 64,
+        "canonical_anchor_refs": [
+          "obligation:obl_29"
+        ]
+      }
+    ]
+  },
+  "scoring_execution_audit": {
+    "exact_candidate_source_evidence": {
+      "transition_repository_blob": "d9a2f376f02cc31b213c54597c4efb3f5a5bb925",
+      "coverage_blob": "836a0b0eeb6cddd66b5ef7356aef68ee70fd6157",
+      "classifier_blob": "6809f0aad783b8c5ddc8e7ef9e55feb87e4a026a",
+      "projection_blob": "31bcebf6bfac23551059c69a82ca22828e315db4",
+      "metrics_blob": "12893b54a0c559281e538a1642dd3cc95fac0c69"
+    },
+    "source_file_count_searched_for_snapshot_decoder": 18,
+    "snapshot_decoder_symbol_locations": [
+      "src/agent-transition/transition-repository.ts"
+    ],
+    "concrete_snapshot_decoder_implementation_found": false,
+    "committed_e1_manifest_to_projection_input_adapter_found": false,
+    "committed_e1_scoring_runner_found": false,
+    "committed_per_case_candidate_output_artifact_found": false,
+    "package_scoring_command_found": false,
+    "frozen_builder_receipt_states": {
+      "e1_cases_executed": "32/32",
+      "governing_labels_consumed": 0,
+      "governing_labels_created": 0,
+      "e1_scoring_performed": false
+    },
+    "material_schema_boundary": {
+      "e1_fixture_source_classes": [
+        "OBJECTIVE_STATE",
+        "OBLIGATION_STATE",
+        "AUTHORITY_STATE",
+        "EFFECT_STATE"
+      ],
+      "candidate_required_source_requirement_ids": [
+        "pilot001:objectives",
+        "pilot001:obligations",
+        "pilot001:obligation_governance",
+        "pilot001:decision_requirements",
+        "pilot001:authority_generation_and_leases",
+        "pilot001:unresolved_intents_and_effects",
+        "pilot001:applicability_current_assertions",
+        "pilot001:qualified_big_quarantine_evidence"
+      ],
+      "e1_principal_identity_example": "principal_aaron",
+      "candidate_classifier_principal_identity": "AARON",
+      "frozen_mapping_or_normalization_contract_found": false
+    }
+  },
+  "hold_reason": {
+    "exact_reason": "FROZEN_E1_TO_CANDIDATE_EXECUTION_BINDING_NOT_IMMUTABLY_SPECIFIED",
+    "explanation": [
+      "Phase E3 requires candidate outputs on the frozen 32-case population before any miss, recall, omission, provenance, leakage, completeness, excess-notification, conflict, abstention, freshness, or compression numerator can be established.",
+      "The exact frozen candidate contains the evaluation primitives but no concrete SnapshotDecoder, no committed E1 manifest adapter, no E1 scoring runner, and no immutable per-case candidate-output artifact.",
+      "The frozen E1 fixture schema and the candidate ProjectionInput/source-requirement schema are not identical; transforming between them requires consequential mapping and identity-normalization choices.",
+      "Creating those choices after E2 labels are public would add a new non-frozen scoring transformation and could change COMPLETE/INCOMPLETE/UNKNOWN/CONFLICTED states, intervention identity, omissions, and misses.",
+      "Therefore scoring metrics cannot be honestly computed from current immutable evidence without inventing a post-label execution binding."
+    ],
+    "governing_falsifier_proven": false,
+    "candidate_metric_failure_proven": false,
+    "evidence_sufficiency_failure_proven": true
+  },
+  "metrics": {
+    "consequence_weighted_miss_rate": {
+      "status": "NOT_SCORED_HOLD",
+      "numerator": null,
+      "denominator_weight": 299,
+      "threshold": 0
+    },
+    "unweighted_recall": {
+      "status": "NOT_SCORED_HOLD",
+      "numerator_correct_required": null,
+      "denominator_required": 20,
+      "threshold": 1
+    },
+    "c3_c4_misses": {
+      "status": "NOT_SCORED_HOLD",
+      "numerator": null,
+      "denominator_required_c3_c4": 9,
+      "threshold": 0
+    },
+    "justified_omission_precision": {
+      "status": "NOT_SCORED_HOLD",
+      "numerator_valid_candidate_omissions": null,
+      "denominator_candidate_claimed_omissions": null,
+      "threshold": 1
+    },
+    "positive_inclusion_provenance_coverage": {
+      "status": "NOT_SCORED_HOLD",
+      "numerator_provenance_bound_inclusions": null,
+      "denominator_candidate_inclusions": null,
+      "threshold": 1
+    },
+    "cross_principal_leakage": {
+      "status": "NOT_SCORED_HOLD",
+      "count": null,
+      "threshold": 0
+    },
+    "false_complete": {
+      "status": "NOT_SCORED_HOLD",
+      "count": null,
+      "threshold": 0
+    },
+    "abstention_unknown_credited_as_successful_omission": {
+      "status": "NOT_SCORED_HOLD",
+      "count": null,
+      "threshold": 0
+    },
+    "incomplete_coverage_credited_as_omission_or_compression_success": {
+      "status": "NOT_SCORED_HOLD",
+      "count": null,
+      "threshold": 0
+    },
+    "excess_notification_rate": {
+      "status": "NOT_SCORED_HOLD",
+      "numerator_excess_candidate_notifications": null,
+      "denominator_candidate_notifications": null,
+      "utility_threshold_max": 0.25
+    },
+    "abstention": {
+      "status": "NOT_SCORED_HOLD",
+      "candidate_count": null
+    },
+    "incomplete_coverage": {
+      "status": "NOT_SCORED_HOLD",
+      "candidate_count": null,
+      "reference_count": 3
+    },
+    "conflict": {
+      "status": "NOT_SCORED_HOLD",
+      "candidate_count": null,
+      "reference_count": 6
+    },
+    "freshness_latency": {
+      "status": "NOT_SCORED_HOLD",
+      "candidate_value": null
+    },
+    "institutional_change_to_aaron_decision_compression": {
+      "status": "NOT_SCORED_HOLD",
+      "candidate_value": null,
+      "utility_threshold_min": 2
+    },
+    "amir": {
+      "status": "DEFERRED_BY_FROZEN_V0_4_PHASE_E3_CONTRACT",
+      "reason": "later comparative utility gate"
+    }
+  },
+  "confidence": {
+    "result_confidence": "HIGH",
+    "evidence_sufficiency_confidence": "HIGH",
+    "note": "High confidence in HOLD caused by missing immutable execution binding; no confidence claim is made about PASS/FAIL metrics because they were not computable."
+  },
+  "required_next_evidence": [
+    "An immutable, candidate-neutral E1 manifest-to-candidate execution binding/harness that is fully specified without using E2 labels and that deterministically emits one candidate result per frozen case ID.",
+    "The binding must specify principal normalization, mapping from frozen fixture source classes/fields to all eight immutable candidate source requirements, candidate construction, conflict/privacy mapping, dependency-bracket interpretation, duplicate handling, and output serialization.",
+    "After that binding is independently frozen and shown not to encode E2 answer labels, rerun exact candidate head 2fd02febbc94e738b2f4be6a23622263a2ee4f3c on all 32 cases and publish immutable per-case outputs for independent metric scoring."
+  ],
+  "boundaries": [
+    "ZERO_AUTHORITY",
+    "CONTINUITY_OFF",
+    "NO_PR4_MERGE",
+    "NO_DEPLOYMENT",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ],
+  "publication_binding": {
+    "branch": "evaluation/iris-pilot001-phase-e3-final-scoring-v0-1",
+    "artifact_path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-PHASE-E3-FINAL-SCORING-v0.1.json",
+    "note": "Git commit/head/tree and final artifact blob/byte/SHA identities are bound by the immutable round-trip publication receipt because a Git-tracked file cannot self-contain its own final commit hash without circularity."
+  }
+}
