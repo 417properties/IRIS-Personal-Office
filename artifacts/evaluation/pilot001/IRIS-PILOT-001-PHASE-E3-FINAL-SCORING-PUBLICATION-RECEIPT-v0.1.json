@@ -1,0 +1,29 @@
+{
+  "artifact_id": "IRIS-PILOT-001-PHASE-E3-FINAL-SCORING-PUBLICATION-RECEIPT-v0.1",
+  "status": "IMMUTABLE_PUBLICATION_BINDING",
+  "disposition": "IRIS_PILOT_001_PHASE_E3_HOLD / FROZEN_E1_TO_CANDIDATE_EXECUTION_BINDING_NOT_IMMUTABLY_SPECIFIED",
+  "branch": "evaluation/iris-pilot001-phase-e3-final-scoring-v0-1",
+  "scoring_artifact": {
+    "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-PHASE-E3-FINAL-SCORING-v0.1.json",
+    "bytes": 23702,
+    "sha256": "66515e293ced16f1b9469a7277074ad3b496249713121253a0206df62fd0826a",
+    "git_blob": "68007b21d373efb1e4b283d7c580301dc43d9e6f",
+    "publication_commit": "3bcecd82344cd799e90c638cc8fae20ff2d2c8ea",
+    "publication_head": "3bcecd82344cd799e90c638cc8fae20ff2d2c8ea",
+    "publication_tree": "4fdfe01a762a305233311d6428f6f2f015a7fce2",
+    "round_trip_reread": true
+  },
+  "candidate": {
+    "head": "2fd02febbc94e738b2f4be6a23622263a2ee4f3c",
+    "tree": "c6015cf7eab00756e2a3ab111dcb51aea8430648"
+  },
+  "e1_population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+  "e2_labels": {
+    "commit": "fdcac4331ea9e5f3dbd13bf04d14e3e7b406c41e",
+    "tree": "4d776be93b9b24c23592d4c14b0c8b2ffffca4f0",
+    "blob": "c6b11d6344feaf55417f1b79221b40b97eaa45d3",
+    "bytes": 48408,
+    "sha256": "67c0c936ac2261bceb639055834c164fdcddfffc3f05b9e78a05996b16648d2d"
+  },
+  "verification": "PASS — published scoring bytes round-trip reread; Git blob and SHA-256 independently recomputed"
+}
