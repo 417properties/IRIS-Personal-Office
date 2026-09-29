@@ -7,8 +7,9 @@ import {REQUIRED_SOURCE_IDS,assertAllowedRuntimePath,decodeFrozenE1Case,normaliz
 import {canonicalBytes,sha256Canonical} from '../../../evaluation/pilot001/frozen-e1-binding-v0.1/canonical-json.mts';
 import {PINS,parseArgs,verifyPins} from '../../../evaluation/pilot001/frozen-e1-binding-v0.1/run.mts';
 
-const manifest=JSON.parse(fs.readFileSync(PINS.manifestPath,'utf8'));
-const population=JSON.parse(fs.readFileSync(PINS.populationPath,'utf8'));
+const gitText=(ref:string,p:string)=>execFileSync('git',['show',ref+':'+p],{encoding:'utf8'});
+const manifest=JSON.parse(gitText(PINS.e1Head,PINS.manifestPath));
+const population=JSON.parse(gitText(PINS.e1Head,PINS.populationPath));
 const byId=(id:string)=>manifest.cases.find((c:any)=>c.case_id===id);
 const byMissing=(dim:string)=>manifest.cases.find((c:any)=>c.missing_dimensions.includes(dim));
 const clone=<T>(value:T):T=>structuredClone(value);
