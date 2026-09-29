@@ -38,6 +38,10 @@ export function evaluateCoverage(sources:SourceEvaluation[],candidates:PilotCand
   if(requiredSources.some(s=>s.required!==true)) return 'UNKNOWN_COVERAGE';
   if(requiredSources.some(s=>!s.principal_match)) return 'UNKNOWN_COVERAGE';
   if(requiredSources.some(s=>s.identity!=='VERIFIED'||s.applicability==='UNKNOWN')) return 'UNKNOWN_COVERAGE';
+  // Frozen v0.4 requires every immutable required source to be present or proven inapplicable.
+  // Applicable sources require known freshness; INAPPLICABLE is supportable only with provenance.
+  if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&s.freshness==='UNKNOWN')) return 'UNKNOWN_COVERAGE';
+  if(requiredSources.some(s=>s.applicability==='INAPPLICABLE'&&(!s.provenance_ok||s.freshness==='UNKNOWN'))) return 'UNKNOWN_COVERAGE';
   if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&(!s.present||s.freshness==='STALE'||!s.provenance_ok||s.partial))) return 'INCOMPLETE_COVERAGE';
 
   // Optional/non-contract sources cannot make required coverage disappear and cannot elevate coverage.
