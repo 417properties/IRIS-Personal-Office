@@ -106,6 +106,22 @@ test('T54d unsupported required-source inapplicability fails closed',()=>{
   assert.equal(justifiedOmission(item,coverage),false);
 });
 
+test('T54e stale required-source inapplicability cannot produce COMPLETE or omission',()=>{
+  const sources=allSources('pilot001:qualified_big_quarantine_evidence',{applicability:'INAPPLICABLE',present:false,freshness:'STALE',provenance_ok:true});
+  const projection=buildProjection({candidates:[item],sources,conflicts:[],privacyExcluded:[],bracket:'STABLE',started_at:'2026-09-29T00:00:00Z',emitted_at:'2026-09-29T00:00:00Z'});
+  assert.equal(projection.completeness_state,'INCOMPLETE_COVERAGE');
+  assert.notDeepEqual(projection.coverage_gaps,[]);
+  assert.deepEqual(projection.justified_omissions,[]);
+});
+
+test('T54f partial required-source inapplicability cannot produce COMPLETE or omission',()=>{
+  const sources=allSources('pilot001:qualified_big_quarantine_evidence',{applicability:'INAPPLICABLE',present:false,freshness:'CURRENT',provenance_ok:true,partial:true});
+  const projection=buildProjection({candidates:[item],sources,conflicts:[],privacyExcluded:[],bracket:'STABLE',started_at:'2026-09-29T00:00:00Z',emitted_at:'2026-09-29T00:00:00Z'});
+  assert.equal(projection.completeness_state,'INCOMPLETE_COVERAGE');
+  assert.notDeepEqual(projection.coverage_gaps,[]);
+  assert.deepEqual(projection.justified_omissions,[]);
+});
+
 test('T55 one stabilized rerun may proceed; T56 repeated instability UNKNOWN',()=>{
   assert.equal(evaluateCoverage(allSources(),[item],[],'RERUN_STABLE'),'COMPLETE_FOR_DECLARED_SCOPE');
   assert.equal(evaluateCoverage(allSources(),[item],[],'UNSTABLE'),'UNKNOWN_COVERAGE');
