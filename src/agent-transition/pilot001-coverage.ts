@@ -13,6 +13,23 @@ export const REQUIRED_SOURCE_REQUIREMENT_IDS = [
 
 const REQUIRED_SOURCE_ID_SET = new Set<string>(REQUIRED_SOURCE_REQUIREMENT_IDS);
 
+const SOURCE_IDENTITIES = new Set(['VERIFIED','UNKNOWN','CONFLICT']);
+const SOURCE_APPLICABILITIES = new Set(['APPLICABLE','INAPPLICABLE','UNKNOWN']);
+const SOURCE_FRESHNESSES = new Set(['CURRENT','STALE','UNKNOWN']);
+
+function hasValidRequiredSourceRuntimeShape(source:SourceEvaluation):boolean {
+  const value=source as unknown as Record<string,unknown>;
+  return typeof value.source_id==='string' &&
+    typeof value.required==='boolean' &&
+    typeof value.present==='boolean' &&
+    typeof value.principal_match==='boolean' &&
+    typeof value.provenance_ok==='boolean' &&
+    (value.partial===undefined||typeof value.partial==='boolean') &&
+    typeof value.identity==='string' && SOURCE_IDENTITIES.has(value.identity) &&
+    typeof value.applicability==='string' && SOURCE_APPLICABILITIES.has(value.applicability) &&
+    typeof value.freshness==='string' && SOURCE_FRESHNESSES.has(value.freshness);
+}
+
 function missingMaterialClassification(c:PilotCandidate):boolean {
   if(c.decision_requirement_id && c.decision_status==='OPEN' && (!c.decision_maker_identity_id || c.decision_maker_identity_id==='UNKNOWN')) return true;
   if(c.reserved_authority_class){
@@ -34,6 +51,8 @@ export function evaluateCoverage(sources:SourceEvaluation[],candidates:PilotCand
     requiredSources.push(matches[0]!);
   }
 
+  // TypeScript annotations are not runtime evidence. Malformed decoded required-source facts fail closed.
+  if(requiredSources.some(s=>!hasValidRequiredSourceRuntimeShape(s))) return 'UNKNOWN_COVERAGE';
   // Required status is immutable contract state, never caller-narrowable input.
   if(requiredSources.some(s=>s.required!==true)) return 'UNKNOWN_COVERAGE';
   if(requiredSources.some(s=>!s.principal_match)) return 'UNKNOWN_COVERAGE';
