@@ -122,6 +122,29 @@ test('T54f partial required-source inapplicability cannot produce COMPLETE or om
   assert.deepEqual(projection.justified_omissions,[]);
 });
 
+test('T54g malformed runtime required-source shapes fail closed before completeness',()=>{
+  const malformed:Array<Record<string,unknown>>=[
+    {applicability:null},
+    {freshness:null},
+    {identity:'UNVERIFIED'},
+    {applicability:'NOT_EVALUATED'},
+    {freshness:'NOT_EVALUATED'},
+    {required:'true'},
+    {present:'true'},
+    {principal_match:1},
+    {provenance_ok:'false'},
+    {partial:'false'}
+  ];
+  for(const patch of malformed){
+    const sources=allSources();
+    Object.assign(sources.find(s=>s.source_id==='pilot001:qualified_big_quarantine_evidence')!,patch);
+    const projection=buildProjection({candidates:[item],sources,conflicts:[],privacyExcluded:[],bracket:'STABLE',started_at:'2026-09-29T00:00:00Z',emitted_at:'2026-09-29T00:00:00Z'});
+    assert.equal(projection.completeness_state,'UNKNOWN_COVERAGE');
+    assert.notDeepEqual(projection.coverage_gaps,[]);
+    assert.deepEqual(projection.justified_omissions,[]);
+  }
+});
+
 test('T55 one stabilized rerun may proceed; T56 repeated instability UNKNOWN',()=>{
   assert.equal(evaluateCoverage(allSources(),[item],[],'RERUN_STABLE'),'COMPLETE_FOR_DECLARED_SCOPE');
   assert.equal(evaluateCoverage(allSources(),[item],[],'UNSTABLE'),'UNKNOWN_COVERAGE');
