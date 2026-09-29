@@ -42,6 +42,7 @@ export function evaluateCoverage(sources:SourceEvaluation[],candidates:PilotCand
   // Applicable sources require known freshness; INAPPLICABLE is supportable only with provenance.
   if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&s.freshness==='UNKNOWN')) return 'UNKNOWN_COVERAGE';
   if(requiredSources.some(s=>s.applicability==='INAPPLICABLE'&&(!s.provenance_ok||s.freshness==='UNKNOWN'))) return 'UNKNOWN_COVERAGE';
+  if(requiredSources.some(s=>s.applicability==='INAPPLICABLE'&&(s.freshness==='STALE'||s.partial))) return 'INCOMPLETE_COVERAGE';
   if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&(!s.present||s.freshness==='STALE'||!s.provenance_ok||s.partial))) return 'INCOMPLETE_COVERAGE';
 
   // Optional/non-contract sources cannot make required coverage disappear and cannot elevate coverage.
