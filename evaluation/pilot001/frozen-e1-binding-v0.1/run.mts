@@ -37,8 +37,8 @@ const FLAG_NAMES=['--candidate-head','--candidate-tree','--e1-head','--populatio
 function fail(message:string):never { throw new Error('HARNESS_HOLD: '+message); }
 function git(...args:string[]):string { return execFileSync('git',args,{encoding:'utf8'}).trim(); }
 function gitBytes(...args:string[]):Buffer { return execFileSync('git',args); }
-function readPinnedWorking(p:string):Buffer { assertAllowedRuntimePath(p); return fs.readFileSync(p); }
-function readPinnedE1(p:string):Buffer { assertAllowedRuntimePath(p); return gitBytes('show',PINS.e1Head+':'+p); }
+function readPinnedGit(ref:string,p:string):Buffer { assertAllowedRuntimePath(p); return gitBytes('show',ref+':'+p); }
+function readPinnedE1(p:string):Buffer { return readPinnedGit(PINS.e1Head,p); }
 
 export function parseArgs(argv:string[]){
   if(argv.length!==FLAG_NAMES.length*2) fail('exact seven flag/value pairs required');
@@ -73,8 +73,10 @@ export function verifyPins(args:ReturnType<typeof parseArgs>){
   if(sha256Bytes(manifestBytes)!==PINS.manifestSha256||gitBlobSha1(manifestBytes)!==PINS.manifestBlob) fail('manifest byte identity mismatch');
   if(git('rev-parse',args.e1Head+':'+args.manifest)!==PINS.manifestBlob) fail('E1 manifest Git pin mismatch');
 
-  const bindingBytes=readPinnedWorking(args.binding);
+  const branchHead=git('rev-parse','HEAD');
+  const bindingBytes=readPinnedGit(branchHead,args.binding);
   if(sha256Bytes(bindingBytes)!==PINS.bindingSha256||gitBlobSha1(bindingBytes)!==PINS.bindingBlob) fail('accepted binding byte identity mismatch');
+  if(git('rev-parse',branchHead+':'+args.binding)!==PINS.bindingBlob) fail('accepted binding Git blob mismatch');
 
   const populationBytes=readPinnedE1(PINS.populationPath);
   const populationBlob=gitBlobSha1(populationBytes);
