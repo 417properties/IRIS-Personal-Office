@@ -1,0 +1,463 @@
+{
+  "artifact_id": "IRIS_PILOT_001_E1_TO_FROZEN_CANDIDATE_EXECUTION_BINDING",
+  "schema_version": "pilot001.e1-to-frozen-candidate-execution-binding.v0.1",
+  "status": "BUILDER_READY_CANDIDATE_NEUTRAL_LABEL_INDEPENDENT",
+  "authority_effect": "NONE",
+  "purpose": "Deterministically transform one frozen Phase-E1 case into exactly one invocation of the unchanged frozen Pilot-001 candidate and one canonical serialized execution output.",
+  "governing_current": {
+    "work_bus": "417properties/BIG-Navigator#703",
+    "current_delta": 14,
+    "comment_id": 5884809566,
+    "iris_routing_comment_id": 5884830725,
+    "pr4_carrier_comment_id": 5884831076,
+    "rule": "SOURCE_EVIDENCE_GOVERNS_ON_CONFLICT / DELTA_RECONCILIATION_NOT_ERASURE"
+  },
+  "frozen_pins": {
+    "blueprint": {
+      "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+      "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+      "git_blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+      "bytes": 53261,
+      "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d"
+    },
+    "e1": {
+      "head": "aa8bba661976c2ef2c1d115b548fc2a86122e2f8",
+      "tree": "05ea622e0210425d60ed017b857772e7499a21a8",
+      "case_count": 32,
+      "population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+      "manifest": {
+        "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.1.json",
+        "git_blob": "cac80fce950924af8140a8689953bef35a2217f6",
+        "bytes": 157380,
+        "sha256": "fde99bb1b1aa82a5b98f1d17eae1b42d790afabb0d9b74a2804f0ab9e6ff31df"
+      },
+      "adjudication_protocol": {
+        "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.1.md",
+        "git_blob": "62ddbc5189a6fde6fe0697ac8e1ed933dc606363",
+        "bytes": 10035,
+        "sha256": "93679dae74274f03e7f564ea52be2ef7c0e70c9d06efb3343ded49fcf12574b7"
+      },
+      "prebuilder_independence": {
+        "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-PREBUILDER-INDEPENDENCE-CERTIFICATION-v0.1.json",
+        "git_blob": "089f73faefefd797d986da11dd862161f2ac4419",
+        "bytes": 1692,
+        "sha256": "b11942abebc6f51ac4e14577e59958241e8e5bf8badc0d2d0b2cdfc6085fe6d8"
+      }
+    },
+    "candidate": {
+      "repository": "417properties/IRIS-Personal-Office",
+      "pr": 4,
+      "head": "2fd02febbc94e738b2f4be6a23622263a2ee4f3c",
+      "tree": "c6015cf7eab00756e2a3ab111dcb51aea8430648",
+      "state": "DRAFT_OPEN_UNMERGED",
+      "relevant_source_blobs": {
+        "src/agent-transition/pilot001-types.ts": "c8c7aa257b1f319b5fe518f8cebaf9ff55ea6301",
+        "src/agent-transition/pilot001-projection.ts": "31bcebf6bfac23551059c69a82ca22828e315db4",
+        "src/agent-transition/pilot001-coverage.ts": "836a0b0eeb6cddd66b5ef7356aef68ee70fd6157",
+        "src/agent-transition/pilot001-classifier.ts": "6809f0aad783b8c5ddc8e7ef9e55feb87e4a026a",
+        "src/agent-transition/transition-repository.ts": "d9a2f376f02cc31b213c54597c4efb3f5a5bb925"
+      }
+    }
+  },
+  "independence_certification": {
+    "e2_per_case_labels_consumed": false,
+    "e2_reference_artifact_consumed": false,
+    "e3_metric_numerators_consumed": false,
+    "e3_candidate_scores_consumed": false,
+    "candidate_source_modified": false,
+    "e1_population_modified": false,
+    "scoring_metrics_modified": false,
+    "thresholds_modified": false,
+    "derivation_basis": [
+      "frozen Blueprint v0.4",
+      "frozen E1 case-input manifest",
+      "frozen E1 adjudication protocol",
+      "frozen E1 prebuilder independence certification",
+      "exact frozen candidate API/interfaces/source semantics",
+      "abstract E3 HOLD cause only"
+    ],
+    "publication_ancestry_rule": "This artifact branch descends from the exact E1 frozen head aa8bba661976c2ef2c1d115b548fc2a86122e2f8, whose ancestry contains the frozen Blueprint and E1 objects but predates E2 label publication."
+  },
+  "case_identity_contract": {
+    "population_order_source": "E1 manifest ordered_case_ids",
+    "rule": "For each ordered case_id, invoke the frozen candidate exactly once. No fan-out into multiple candidate invocations and no cross-case aggregation.",
+    "case_index": "zero-based index in frozen ordered_case_ids",
+    "reject_if": [
+      "case_id missing",
+      "case_id duplicated",
+      "case order differs",
+      "case_count != 32",
+      "population digest mismatch"
+    ]
+  },
+  "identity_normalization": {
+    "comparison_is_case_sensitive": true,
+    "mappings": [
+      {
+        "input": "principal_aaron",
+        "output": "AARON",
+        "meaning": "canonical Pilot principal"
+      },
+      {
+        "input": "AARON",
+        "output": "AARON",
+        "meaning": "already canonical; accepted only in harness-internal normalized values"
+      }
+    ],
+    "other_identity_rule": "Any other nonempty fixture identity token is preserved byte-for-byte and MUST NOT be guessed, aliased, uppercased, or mapped to AARON.",
+    "null_rule": "A null/absent optional identity remains absent. Where the frozen candidate treats the missing dimension as load-bearing, the candidate receives UNKNOWN/undefined exactly as required by its interface; the harness may not synthesize a holder/owner/decision-maker.",
+    "malformed_rule": "Whitespace-only, non-string, or ambiguous identity values cause BINDING_FAIL_CLOSED for that case; no candidate invocation occurs until the binding implementation defect is corrected."
+  },
+  "required_source_order": [
+    "pilot001:objectives",
+    "pilot001:obligations",
+    "pilot001:obligation_governance",
+    "pilot001:decision_requirements",
+    "pilot001:authority_generation_and_leases",
+    "pilot001:unresolved_intents_and_effects",
+    "pilot001:applicability_current_assertions",
+    "pilot001:qualified_big_quarantine_evidence"
+  ],
+  "source_evaluation_common_rules": {
+    "required": "Always true for all eight immutable required-source IDs; caller data cannot narrow this.",
+    "principal_match": "true only when declared_scope.principal_id and principal_identity.principal_id both normalize to AARON and principal_identity.identity_status is VERIFIED.",
+    "source_identity_map": {
+      "VERIFIED": "VERIFIED",
+      "UNKNOWN": "UNKNOWN",
+      "CONFLICT": "CONFLICT",
+      "CONFLICTING": "CONFLICT"
+    },
+    "availability_map": {
+      "PRESENT": {
+        "present": true,
+        "partial": false
+      },
+      "PARTIAL": {
+        "present": true,
+        "partial": true
+      },
+      "MISSING": {
+        "present": false,
+        "partial": false
+      }
+    },
+    "applicability_combine": "If every contributing source says APPLICABLE => APPLICABLE; every contributing source says INAPPLICABLE => INAPPLICABLE; UNKNOWN or a material mixture => UNKNOWN.",
+    "freshness_combine": "UNKNOWN dominates STALE; STALE dominates CURRENT.",
+    "identity_combine": "CONFLICT dominates UNKNOWN; UNKNOWN dominates VERIFIED.",
+    "provenance_ok": "true only when every contributing present/partial source has nonempty provenance_refs and every record source_ref resolves exactly. Missing source provenance remains false; no invented provenance.",
+    "immutable_empty_surface_rule": "An explicitly present empty top-level E1 array is evidence that the queried surface was read and empty at fixture_time. Empty rows do not mean a missing surface."
+  },
+  "source_mapping": [
+    {
+      "target": "pilot001:objectives",
+      "e1_fields": [
+        "objective",
+        "sources[src_objective]"
+      ],
+      "backing_source_ids": [
+        "src_objective"
+      ],
+      "evidence_rule": "objective must exist and every objective.source_refs entry must resolve; source status is inherited from src_objective."
+    },
+    {
+      "target": "pilot001:obligations",
+      "e1_fields": [
+        "obligations[]",
+        "sources[src_obligation]"
+      ],
+      "backing_source_ids": [
+        "src_obligation"
+      ],
+      "evidence_rule": "obligations array may be empty, but the required surface status is inherited from src_obligation."
+    },
+    {
+      "target": "pilot001:obligation_governance",
+      "e1_fields": [
+        "obligations[].owner_identity_id",
+        "decision_requirements[]",
+        "authority_state",
+        "escalation",
+        "sources[src_obligation]",
+        "sources[src_authority]"
+      ],
+      "backing_source_ids": [
+        "src_obligation",
+        "src_authority"
+      ],
+      "evidence_rule": "Governance is composite because the frozen Blueprint distinguishes owner, decision-maker, authority-holder, reserved authority and escalation target. Both contributing source surfaces are load-bearing."
+    },
+    {
+      "target": "pilot001:decision_requirements",
+      "e1_fields": [
+        "decision_requirements[]",
+        "sources[src_obligation]"
+      ],
+      "backing_source_ids": [
+        "src_obligation"
+      ],
+      "evidence_rule": "The array may be empty; every nonempty decision requirement source_ref must resolve. No decision requirement is inferred from owner/authority/mention."
+    },
+    {
+      "target": "pilot001:authority_generation_and_leases",
+      "e1_fields": [
+        "authority_state",
+        "sources[src_authority]"
+      ],
+      "backing_source_ids": [
+        "src_authority"
+      ],
+      "evidence_rule": "authority_state is representation evidence only; missing/unknown/conflicting authority is preserved and never repaired from other fields."
+    },
+    {
+      "target": "pilot001:unresolved_intents_and_effects",
+      "e1_fields": [
+        "effect_state",
+        "sources[src_effect]"
+      ],
+      "backing_source_ids": [
+        "src_effect"
+      ],
+      "evidence_rule": "intents/receipts/verifications/reconciliation_state are carried only from effect_state; no provider completion is inferred."
+    },
+    {
+      "target": "pilot001:applicability_current_assertions",
+      "e1_fields": [
+        "current_assertions[]"
+      ],
+      "backing_source_ids": "For a nonempty array, the exact union of current_assertions[].source_ref; for an empty array, the immutable E1 manifest surface itself.",
+      "evidence_rule": "Every nonempty assertion source_ref must resolve. Empty current_assertions is a present empty queried surface, not proof that other required surfaces are complete."
+    },
+    {
+      "target": "pilot001:qualified_big_quarantine_evidence",
+      "e1_fields": [
+        "qualified_big_inputs[]"
+      ],
+      "backing_source_ids": "Immutable E1 qualified_big_inputs surface plus each packet's provenance_refs.",
+      "evidence_rule": "Empty array => present/APPLICABLE/CURRENT/provenance_ok=true because the frozen snapshot explicitly queried the surface and found no admitted packets. Nonempty packet => present only; identity/provenance require QUALIFIED_BOUNDED and nonempty provenance. Freshness is CURRENT only if the packet itself carries an evaluable observed/qualified basis and explicit valid-through or source max-age covering fixture_time. Missing such freshness evidence => UNKNOWN, never guessed from fixture publication time."
+    }
+  ],
+  "projection_input_contract": {
+    "interface": "Parameters<typeof buildProjection>[0] / ProjectionInput at frozen candidate head",
+    "candidates_order": [
+      "OBLIGATION candidates in frozen obligations array order",
+      "DECISION_REQUIREMENT candidates in frozen decision_requirements array order",
+      "EFFECT candidates in frozen effect_state.intents array order when unresolved/conflicted",
+      "standalone CONFLICT candidates in frozen conflicts array order when no exact existing candidate anchor consumes the conflict",
+      "synthetic cross-principal UNKNOWN candidates in the source record's frozen order"
+    ],
+    "sources_order": "exact required_source_order above",
+    "conflicts_order": "frozen conflicts array order after validation that every entry is UNRESOLVED and has a recognized frozen conflict class; serialized value is conflict_id only",
+    "privacyExcluded_order": "lexicographic by deterministic nonsecret exclusion token",
+    "started_at": "exact case.fixture_time",
+    "emitted_at": "exact case.fixture_time",
+    "bracket_rule": {
+      "STABLE": "rerun_count == 0 AND initial_digest == final_digest",
+      "UNSTABLE": "rerun_count >= 2 OR a second instability is explicitly encoded",
+      "RERUN_STABLE": "permitted only when future frozen input explicitly proves one rerun stabilized; current 32-case population contains no such shape",
+      "unsupported": "any other bracket encoding fails closed; the harness must not infer stability"
+    },
+    "prohibited_defaults": [
+      "No current timestamp",
+      "No random UUID",
+      "No environment-dependent ordering",
+      "No inferred source freshness",
+      "No inferred principal alias",
+      "No inferred obligation/decision linkage",
+      "No inferred authority holder/delegation",
+      "No inferred privacy authorization"
+    ]
+  },
+  "candidate_construction": {
+    "obligation_candidate": {
+      "count": "one per frozen obligation unless the entire record is privacy-excluded",
+      "id": "e1:<case_id>:obligation:<raw obligation_id>",
+      "principal_id": "normalize privacy.record_principal_id; wrong-principal private records without bounded authorization remain outside Aaron candidate classification",
+      "objective_id": "exact obligation.objective_id when present",
+      "obligation_id": "If a validated duplicate record proves one exact canonical_anchor_id, use that canonical_anchor_id; otherwise use raw obligation_id.",
+      "obligation_status": "exact obligation.state string",
+      "obligation_owner": "normalize obligation.owner_identity_id; null remains absent",
+      "concrete_action_remaining": "true only when required_action_kind is a nonempty string, informational_only is false, applicability is APPLICABLE, and state is OPEN|IN_PROGRESS|WAITING|HOLD|BLOCKED; otherwise false",
+      "informational_only": "exact frozen boolean",
+      "applicability": "exact frozen obligation.applicability when it is a candidate enum; unknown/unrecognized fails closed",
+      "freshness_source": "worst freshness among exact load-bearing source_refs plus any attached authority/escalation/conflict source",
+      "source_identity_source": "worst identity among exact load-bearing source_refs plus any attached authority/escalation/conflict source",
+      "provenance_refs": "sorted unique union of resolved frozen provenance_refs only",
+      "authority_attachment": "Attach reserved_authority_class/authority_holder_identity_id/valid_delegation only when the obligation is the unique unambiguous open/applicable required-next-step carrier for case-level reserved authority. Current frozen reserved-authority cases satisfy this single-carrier condition; otherwise fail closed.",
+      "valid_delegation_map": {
+        "VALID_BOUNDED_READ_ONLY": true,
+        "ABSENT": false,
+        "UNKNOWN": null,
+        "CONFLICTING_RECORDS": null
+      },
+      "escalation_attachment": "REQUIRED_OPEN attaches only when there is one unambiguous obligation carrier. Multiple plausible carriers without an exact anchor fail closed.",
+      "duplicate_handling": "per duplicate_semantics"
+    },
+    "decision_requirement_candidate": {
+      "count": "one per admissible frozen decision requirement; never silently merged into an obligation because E1 decision records do not carry an obligation_id",
+      "id": "e1:<case_id>:decision:<decision_requirement_id>",
+      "decision_requirement_id": "exact frozen ID",
+      "decision_status": "exact frozen status when privacy permits",
+      "decision_maker_identity_id": "normalized exact frozen identity when privacy permits",
+      "applicability": "derived only from the exact backing source applicability and privacy gate; no owner/authority inference",
+      "reserved_authority_class": "exact decision_requirement.reserved_authority_class when nonnull",
+      "authority_attachment": "When reserved_authority_class is nonnull, attach the single case authority_state; unknown/conflicting holder/delegation remains unknown.",
+      "objective_id": "unset unless a future frozen E1 record explicitly carries an objective_id",
+      "obligation_id": "unset unless a future frozen E1 record explicitly carries an obligation_id"
+    },
+    "effect_candidate": {
+      "count": "one per intent only when effect_state.reconciliation_state is unresolved/unknown or an unresolved conflict exactly references that intent/its receipt",
+      "id": "e1:<case_id>:intent:<intent_id>",
+      "intent_id": "exact frozen intent_id",
+      "unresolved_effect": "true for unresolved/unknown reconciliation; never inferred from provider ACCEPTED alone",
+      "provenance_refs": "resolved src_effect provenance only"
+    },
+    "conflict_candidate": {
+      "exact_attachment_rule": "If conflict.assertion_refs exactly identify an existing raw obligation ID, decision_requirement_id, intent_id, or receipt linked to an effect candidate, attach material_conflict=true and conflict_id to every exactly matched candidate.",
+      "standalone_rule": "If no existing candidate is exactly identified, create e1:<case_id>:conflict:<conflict_id> with principal_id=AARON, material_conflict=true, conflict_id exact, and source semantics selected only by frozen conflict class: obligation=>src_obligation; current-state=>assertion refs; authority=>src_authority; effect=>src_effect; source-identity=>the conflicting source refs; possible-duplicate=>src_obligation.",
+      "multiple_conflicts_rule": "A candidate receiving more than one different conflict_id fails closed because frozen PilotCandidate has only one conflict_id slot."
+    },
+    "why_field": "Do not synthesize why. Leave undefined so frozen candidate interventionFor uses its own deterministic class-list fallback."
+  },
+  "duplicate_semantics": {
+    "EXACT_CANONICAL_ANCHOR_MATCH": "Require exactly one nonempty anchor_refs value and every referenced obligation.canonical_anchor_id equal to it; normalize all those candidates' obligation_id to that anchor.",
+    "SHARED_CANONICAL_ANCHOR_DIFFERENT_EXPRESSION": "Same exact-anchor normalization as above; display wording never affects identity.",
+    "SIMILAR_TEXT_DISTINCT_CANONICAL_ANCHORS": "Require distinct nonempty canonical anchors; preserve separately and do not add possible_duplicate_refs merely from semantic similarity.",
+    "UNCERTAIN_NO_CANONICAL_ANCHOR": "Require empty anchor_refs and no canonical_anchor_id on referenced obligations; keep raw obligation IDs distinct and add reciprocal sorted raw obligation IDs to possible_duplicate_refs.",
+    "collision_rule": "Any contradictory duplicate evidence, anchor collision across unrelated record sets, or unknown duplicate state fails closed."
+  },
+  "conflict_semantics": {
+    "allowed_classes": [
+      "INCOMPATIBLE_OBLIGATIONS",
+      "INCOMPATIBLE_CURRENT_STATE",
+      "AUTHORITY_CONFLICT",
+      "EFFECT_REALITY_CONFLICT",
+      "SOURCE_IDENTITY_CONFLICT",
+      "POSSIBLE_DUPLICATE_UNRESOLVED"
+    ],
+    "state_rule": "Only UNRESOLVED conflict entries are supplied to ProjectionInput.conflicts. A different state must be explicitly mapped by a later frozen binding revision; this binding does not guess resolution.",
+    "no_resolution_rule": "Never choose a winning assertion, obligation, authority claim, receipt or current state."
+  },
+  "privacy_and_exclusions": {
+    "same_principal": "principal_aaron + SAME_PRINCIPAL + PERMITTED_FOR_FIXTURE may be consumed subject to normal source checks.",
+    "wrong_principal_private": "NO_CROSS_PRINCIPAL_AUTHORIZATION / PRIVACY_EXCLUDED_AUDIT_REQUIRED => do not construct candidates from excluded private fields; require a matching frozen known_exclusion and emit a deterministic privacy_excluded:<domain> token.",
+    "bounded_cross_principal": "EXPLICIT_BOUNDED_PACKET_AUTHORIZATION / PERMITTED_FIELDS_ONLY => consume only fields named in a QUALIFIED_BOUNDED packet.allowed_fields. No semantic widening.",
+    "insufficient_bounded_packet": "If at least one Aaron-relevant canonical identifier is authorized but any load-bearing classifier field is not authorized, construct an AARON_RELEVANCE_UNKNOWN candidate using only authorized IDs plus packet provenance; set applicability=UNKNOWN and emit nonsecret privacy_withheld field-name tokens. Do not read the withheld value into ProjectionInput.",
+    "known_nonprivacy_exclusions": "Preserve and audit in the output wrapper; they do not silently remove any of the eight immutable required sources. An exclusion can narrow only the explicitly named domain and only with frozen basis/evidence_ref.",
+    "scope_change_requests": "Only APPROVED/authorized frozen requests may change scope. NOT_AUTHORIZED requests are audit-only and cannot narrow coverage."
+  },
+  "omission_and_coverage_semantics": {
+    "governing_candidate_behavior": "Frozen evaluateCoverage and justifiedOmission are authoritative after the harness constructs ProjectionInput.",
+    "preserve": [
+      "COMPLETE_FOR_DECLARED_SCOPE",
+      "INCOMPLETE_COVERAGE",
+      "CONFLICTED_COVERAGE",
+      "UNKNOWN_COVERAGE",
+      "ABSENCE_FROM_AARON_REQUIRED_SET != PROVEN_IRRELEVANT",
+      "INCOMPLETE_COVERAGE => NO_COMPLETE_OMISSION_CLAIM"
+    ],
+    "mapping_rule": "STALE, PARTIAL, MISSING, UNKNOWN identity/applicability/freshness, unresolved material conflict, privacy-withheld load-bearing classification fields, and unstable bracket are never normalized upward."
+  },
+  "deterministic_serialized_output_contract": {
+    "schema_version": "pilot001.e1-frozen-candidate-output.v0.1",
+    "one_file_per_case": "<case_index_2digit>-<case_id>.json",
+    "output_directory": "artifacts/evaluation/pilot001/candidate-outputs-v0.1/",
+    "required_fields": [
+      "schema_version",
+      "case_index",
+      "case_id",
+      "e1_head",
+      "e1_population_digest",
+      "candidate_head",
+      "candidate_tree",
+      "binding_artifact_sha256",
+      "projection_input_sha256",
+      "candidate_output",
+      "candidate_output_projection_id",
+      "aaron_required_intervention_ids",
+      "aaron_required_ar_classes_by_intervention",
+      "aaron_relevance_unknown_ids",
+      "justified_omission_ids",
+      "privacy_exclusions",
+      "coverage_state",
+      "unresolved_conflicts",
+      "candidate_consequence_claim",
+      "canonicalization",
+      "output_sha256"
+    ],
+    "candidate_consequence_claim": "null. Consequence class/weight is reference-set evidence, not candidate output, and MUST NOT be fabricated by the harness.",
+    "canonical_candidate_output": "exact object returned by frozen buildProjection with no postprocessing except embedding in the wrapper",
+    "derived_index_fields": "Intervention/unknown/omission/coverage arrays are exact direct field extractions from candidate_output only; no reclassification.",
+    "canonicalization": "RFC-8785-compatible JSON: UTF-8; object keys lexicographically sorted recursively; array order preserved; no insignificant whitespace; no trailing newline for digest bytes.",
+    "projection_input_sha256": "SHA-256 of the same canonicalization applied to the exact ProjectionInput passed to buildProjection.",
+    "output_sha256": "SHA-256 of canonical wrapper bytes with output_sha256 field omitted.",
+    "nondeterministic_fields": "none. System wall-clock, filesystem paths, host IDs and run timestamps are prohibited from scoring-identity files.",
+    "byte_identity_rule": "Same frozen case + same frozen candidate + same accepted binding MUST yield byte-identical canonical output."
+  },
+  "external_harness_boundary": {
+    "invariant": "EXTERNAL_EVALUATION_HARNESS != CANDIDATE_MODIFICATION",
+    "allowed": "Read frozen E1 representation, validate pins, construct ProjectionInput exactly under this binding, invoke frozen exported buildProjection exactly once per case, canonicalize/publish outputs.",
+    "forbidden": "Patch/import-shim candidate semantics, monkey-patch crypto/JSON, alter required-source constants, bypass evaluateCoverage/classifyAaron/interventionFor, mutate frozen candidate files, interpret E2 labels, compute E3 metrics."
+  },
+  "fail_closed_rules": [
+    "Any E1 field needed for a load-bearing mapping is structurally malformed.",
+    "A referenced source/provenance/record ID does not resolve exactly.",
+    "Multiple materially different authority/escalation associations remain plausible.",
+    "A required source identity cannot be constructed without guessing.",
+    "Principal normalization is ambiguous.",
+    "A cross-principal field is not explicitly authorized.",
+    "A duplicate record contradicts its canonical anchor evidence.",
+    "A candidate would require more than one conflict_id.",
+    "A dependency bracket shape is not explicitly supported.",
+    "A new enum/value appears outside this binding.",
+    "Any implementation attempts to consume E2 labels or E3 score outcomes."
+  ],
+  "deeper_layer_falsification": {
+    "question": "If this mapping appears deterministic, what hidden choice still remains capable of changing the score?",
+    "tested_classes": [
+      "four E1 source classes expanding to eight immutable candidate source IDs",
+      "principal_aaron normalization",
+      "empty required surface versus missing source",
+      "stale/partial/unknown source propagation",
+      "decision/obligation non-merging",
+      "reserved-authority association cardinality",
+      "conflict attachment versus standalone conflict",
+      "exact/shared/distinct/uncertain duplicate identity",
+      "cross-principal private exclusion",
+      "bounded packet field-level authorization",
+      "dependency bracket stability",
+      "candidate and output ordering",
+      "case-specific known exclusions without scope narrowing"
+    ],
+    "frozen_population_structural_preflight": {
+      "case_count": 32,
+      "unmapped_schema_or_enum_shapes": 0,
+      "unresolved_source_refs": 0,
+      "unsupported_bracket_shapes": 0,
+      "duplicate_contract_errors": 0,
+      "cross_principal_cases": 2,
+      "cross_principal_fail_closed_unknown_cases": 1,
+      "conflict_entries_exactly_attachable_to_existing_candidate": 3,
+      "conflict_entries_requiring_deterministic_standalone_candidate": 3,
+      "candidate_execution_performed": false,
+      "scoring_performed": false
+    }
+  },
+  "downstream_sequence": [
+    "FRESH_INDEPENDENT_BINDING_ACCEPTANCE",
+    "AUTHORIZED_DEV_OR_EXECUTION_OWNER_IMPLEMENTS_EXTERNAL_HARNESS_ONLY",
+    "UNCHANGED_FROZEN_CANDIDATE_EXECUTES_32_CASES",
+    "IMMUTABLE_PER_CASE_OUTPUTS_AND_BUNDLE_RECEIPT_PUBLISHED",
+    "FRESH_PHASE_E3_SCORER_RESUMES_AGAINST_ALREADY_FROZEN_E2_LABELS"
+  ],
+  "standing_boundaries": [
+    "ZERO_AUTHORITY",
+    "CONTINUITY_OFF",
+    "NO_CANDIDATE_MUTATION",
+    "NO_PR4_MERGE",
+    "NO_DEPLOYMENT",
+    "NO_OPERATIONAL_PROMOTION",
+    "NO_PHASE_E3_SCORING",
+    "IRIS_CURRENT != BIG_CURRENT",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ]
+}
