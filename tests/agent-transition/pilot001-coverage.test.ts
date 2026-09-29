@@ -94,6 +94,18 @@ test('T54b caller required:false cannot narrow immutable required-source coverag
   assert.deepEqual(projection.justified_omissions,[]);
 });
 
+test('T54c required applicable UNKNOWN freshness cannot produce COMPLETE or omission',()=>{
+  const coverage=evaluateCoverage(allSources('pilot001:qualified_big_quarantine_evidence',{freshness:'UNKNOWN'}),[item],[],'STABLE');
+  assert.equal(coverage,'UNKNOWN_COVERAGE');
+  assert.equal(justifiedOmission(item,coverage),false);
+});
+
+test('T54d unsupported required-source inapplicability fails closed',()=>{
+  const coverage=evaluateCoverage(allSources('pilot001:qualified_big_quarantine_evidence',{applicability:'INAPPLICABLE',present:false,freshness:'UNKNOWN',provenance_ok:false}),[item],[],'STABLE');
+  assert.equal(coverage,'UNKNOWN_COVERAGE');
+  assert.equal(justifiedOmission(item,coverage),false);
+});
+
 test('T55 one stabilized rerun may proceed; T56 repeated instability UNKNOWN',()=>{
   assert.equal(evaluateCoverage(allSources(),[item],[],'RERUN_STABLE'),'COMPLETE_FOR_DECLARED_SCOPE');
   assert.equal(evaluateCoverage(allSources(),[item],[],'UNSTABLE'),'UNKNOWN_COVERAGE');
