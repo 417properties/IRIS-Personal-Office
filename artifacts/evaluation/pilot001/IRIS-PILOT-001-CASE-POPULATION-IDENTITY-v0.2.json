@@ -1,0 +1,55 @@
+{
+  "artifact_id": "IRIS-PILOT-001-CASE-POPULATION-IDENTITY-v0.2",
+  "schema_version": "pilot001.population-identity.v0.2",
+  "evaluation_round": "POST_FAIL_E1_FRESH_INDEPENDENT",
+  "status": "FROZEN_PREBUILDER",
+  "evaluator_role": "NEW_FRESH_INDEPENDENT_POST_FAIL_E1_EVALUATOR",
+  "evaluator_session_id": "nD3udfQPYZA",
+  "predecessor_evidence": {
+    "phase_e3_disposition": "IRIS_PILOT_001_PHASE_E3_FINAL_SCORING_FAIL / IMMUTABLE_EVIDENCE_PUBLISHED_AND_VERIFIED",
+    "predecessor_evidence_commit": "5e92a059b5d1e15e10ea513ccd29f707b5d4013e",
+    "predecessor_evidence_tree": "578a8b7efa2098001399bbc3fd9589ad2303ad7e",
+    "predecessor_evidence_sole_parent": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+    "old_population_disjoint_check": {
+      "old_case_count": 32,
+      "old_id_prefix": "p1e1_",
+      "old_population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+      "new_id_prefix": "p1e1r2_",
+      "overlap_found": false
+    }
+  },
+  "governing_documentary_object": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+    "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+    "blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+    "bytes": 53261,
+    "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d",
+    "governing_sections": ["15", "16", "17", "17.1"]
+  },
+  "publication_base": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "base_branch": "main",
+    "base_commit": "ef212a946cf9c373f30cbe65c5024527740828f7",
+    "note": "Safe noncandidate base; contains no candidate/label/evaluation artifacts. New evidence branch adds only this v0.2 E1 freeze on top of this base."
+  },
+  "case_count": 30,
+  "population_digest": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 canonical JSON of manifest cases array; object keys lexicographically sorted; array order preserved; no insignificant whitespace (json.dumps sort_keys=True, separators=(',', ':'))",
+    "value": "acff0d9e1a2c268803f009c875d28f41ac8d8376e95ee551bd3a0ec75eb7c140"
+  },
+  "labels_present": false,
+  "frozen_before_builder": true,
+  "builder_dev_authorship_of_population_or_protocol": false,
+  "authority_boundary": [
+    "ZERO_AUTHORITY",
+    "CONTINUITY_OFF",
+    "NO_PR4_MERGE",
+    "NO_DEPLOYMENT",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "BIG_ACTIVATION_NOT_AUTHORIZED",
+    "NO_STANDING_AUTHORITY",
+    "NO_COMMERCE_AUTHORITY"
+  ]
+}
