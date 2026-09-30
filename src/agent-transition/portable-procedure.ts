@@ -1,0 +1,2 @@
+export interface PortableProcedure{procedure_id:string;qualified:boolean;retired_at?:string;supersedes_capability_id?:string;provider_compatibility:string[];tool_refs:string[];}
+export function loadProcedure(p:PortableProcedure,provider:string){if(!p.qualified||p.retired_at)throw new Error('PROCEDURE_NOT_QUALIFIED');if(!p.provider_compatibility.includes(provider))throw new Error('PROCEDURE_PROVIDER_INCOMPATIBLE');return {procedure_id:p.procedure_id,loaded:true,tool_authority:[],authority_effect:'NONE' as const};}

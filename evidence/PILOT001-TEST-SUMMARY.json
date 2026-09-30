@@ -1,0 +1,72 @@
+{
+  "disposition": "IRIS_PILOT_001_REQUIRED_SOURCE_FLAG_BYPASS_CORRECTED_AND_LOCALLY_VERIFIED",
+  "prior_held_head": "9d396e00e4611bc87a329009f614e75d4d98e318",
+  "governing_base": "bee076c69290922bfe141b9603763ac943619dfe",
+  "governing_v0_4": {
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+    "blueprint_sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d",
+    "builder_packet_sha256": "e2efa80f71077ed5db1b9adeb3cdb17a593056d216a2f27bee2d6ec9dc167007"
+  },
+  "professor_hold_comment": 5881062954,
+  "correction": [
+    "immutable required-source membership now derives from REQUIRED_SOURCE_REQUIREMENT_IDS",
+    "caller required:false cannot narrow the governing source contract",
+    "required-flag mismatch fails closed",
+    "all immutable required identities are evaluated unconditionally for principal/identity/applicability/presence/freshness/provenance",
+    "exact all-eight required:false invalid-facts negative control added"
+  ],
+  "proof": {
+    "pilot_tests": {
+      "status": "PASS",
+      "passed": 86,
+      "failed": 0
+    },
+    "full_repository": {
+      "status": "PASS",
+      "passed": 165,
+      "failed": 0
+    },
+    "static_schema": {
+      "status": "PASS"
+    },
+    "strict_typescript_candidate_source": {
+      "status": "PASS"
+    },
+    "postgresql_wasm": {
+      "status": "PASS",
+      "engine": "PGlite/PostgreSQL-WASM",
+      "version": "0.5.8",
+      "extensions": [
+        "pgcrypto"
+      ],
+      "migrations": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006"
+      ],
+      "table_count": 35,
+      "required_new_tables": 18,
+      "missing_tables": 0,
+      "missing_extension_columns": 0,
+      "default_coverage_seed_count": 1
+    },
+    "phase_e1": {
+      "status": "PASS",
+      "mode": "UNLABELED_PHASE_E1_INPUT_EXECUTION_ONLY",
+      "cases": 32,
+      "population_digest": "969c448021389502bcf4f689d7b7cea5d526fde250cbe264f9f8b1f3d6aee980",
+      "governing_labels_consumed": 0,
+      "governing_labels_created": 0,
+      "scoring_performed": false
+    }
+  },
+  "authority_effect": "ZERO_AUTHORITY",
+  "merge": false,
+  "deployment": false,
+  "continuity_activation": false,
+  "self_acceptance": false,
+  "next_owner": "FRESH_INDEPENDENT_EXACT_HEAD_SAFETY_SEMANTIC_ACCEPTOR"
+}

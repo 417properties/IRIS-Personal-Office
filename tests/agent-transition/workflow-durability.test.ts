@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {resumeDisposition,type WorkflowCheckpoint} from '../../src/agent-transition/workflow-durability.ts';
+const q:WorkflowCheckpoint={checkpoint_id:'c',workflow_id:'w',step_id:'s',checkpoint_version:1,checkpoint_class:'QUALIFIED_WORKFLOW',payload_digest:'d',worker_identity_id:'wrk1',provider_session_ref:'old',unresolved_effect_refs:[],resumable:true,effect_class:'ZERO_EFFECT',replay_class:'ZERO_EFFECT_SAFE'};
+test('T81 provider session disappearance leaves qualified checkpoint usable',()=>assert.equal(resumeDisposition({...q,provider_session_ref:undefined}),'RESUME_ZERO_EFFECT'));
+test('T82 tentative provider state cannot be admitted',()=>assert.equal(resumeDisposition({...q,checkpoint_class:'TENTATIVE_PROVIDER'}),'HOLD_UNQUALIFIED_CHECKPOINT'));
+test('T83 replacement worker must use a new identity',()=>{assert.equal(resumeDisposition(q,'wrk1'),'HOLD_REPLACEMENT_IDENTITY_REQUIRED');assert.equal(resumeDisposition(q,'wrk2'),'RESUME_ZERO_EFFECT');});
+test('T84 unresolved effect survives restart',()=>assert.equal(resumeDisposition({...q,unresolved_effect_refs:['effect']}),'RECONCILIATION_REQUIRED'));
+test('T85 effectful step never blindly replays',()=>assert.equal(resumeDisposition({...q,effect_class:'EFFECTFUL',replay_class:'RECONCILE_BEFORE_REPLAY'}),'NO_AUTOMATIC_REPLAY'));
