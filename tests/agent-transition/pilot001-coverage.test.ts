@@ -6,7 +6,7 @@ import type {PilotCandidate,SourceEvaluation} from '../../src/agent-transition/p
 
 const src=(source_id:string,p:Partial<SourceEvaluation>={}):SourceEvaluation=>({
   source_id,required:true,present:true,principal_match:true,identity:'VERIFIED',
-  applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true,...p
+  applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true,partial:false,...p
 });
 const allSources=(patchId?:string,patch:Partial<SourceEvaluation>={}):SourceEvaluation[] =>
   REQUIRED_SOURCE_REQUIREMENT_IDS.map(id=>src(id,id===patchId?patch:{}));

@@ -5,7 +5,7 @@ import {REQUIRED_SOURCE_REQUIREMENT_IDS} from '../../src/agent-transition/pilot0
 import type {SqlExecutor} from '../../src/state/postgres-repository.ts';
 import type {SourceEvaluation} from '../../src/agent-transition/pilot001-types.ts';
 
-const sources:SourceEvaluation[]=REQUIRED_SOURCE_REQUIREMENT_IDS.map(source_id=>({source_id,required:true,present:true,principal_match:true,identity:'VERIFIED',applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true}));
+const sources:SourceEvaluation[]=REQUIRED_SOURCE_REQUIREMENT_IDS.map(source_id=>({source_id,required:true,present:true,principal_match:true,identity:'VERIFIED',applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true,partial:false}));
 const decoder:SnapshotDecoder={decode(_rows:Readonly<CanonicalRows>,at:string){return {candidates:[],sources,conflicts:[],privacyExcluded:[],bracket:'STABLE',started_at:at,emitted_at:at};}};
 
 class FakeSql implements SqlExecutor{

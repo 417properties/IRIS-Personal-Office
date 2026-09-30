@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {buildProjection} from '../../src/agent-transition/pilot001-projection.ts';import {REQUIRED_SOURCE_REQUIREMENT_IDS} from '../../src/agent-transition/pilot001-coverage.ts';import type {PilotCandidate,SourceEvaluation} from '../../src/agent-transition/pilot001-types.ts';
-const sources:SourceEvaluation[]=REQUIRED_SOURCE_REQUIREMENT_IDS.map(source_id=>({source_id,required:true,present:true,principal_match:true,identity:'VERIFIED',applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true}));
+const sources:SourceEvaluation[]=REQUIRED_SOURCE_REQUIREMENT_IDS.map(source_id=>({source_id,required:true,present:true,principal_match:true,identity:'VERIFIED',applicability:'APPLICABLE',freshness:'CURRENT',provenance_ok:true,partial:false}));
 const base={sources,conflicts:[],privacyExcluded:[],started_at:'a',emitted_at:'b'} as const;
 test('T55 one dependency drift reruns and stabilizes',()=>{const p=buildProjection({...base,candidates:[],bracket:'RERUN_STABLE'});assert.equal(p.completeness_state,'COMPLETE_FOR_DECLARED_SCOPE');assert.equal(p.snapshot.bracket_status,'RERUN_STABLE');});
 test('T56 repeated instability => UNKNOWN_COVERAGE',()=>assert.equal(buildProjection({...base,candidates:[],bracket:'UNSTABLE'}).completeness_state,'UNKNOWN_COVERAGE'));

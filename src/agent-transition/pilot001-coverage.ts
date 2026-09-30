@@ -24,7 +24,7 @@ function hasValidRequiredSourceRuntimeShape(source:SourceEvaluation):boolean {
     typeof value.present==='boolean' &&
     typeof value.principal_match==='boolean' &&
     typeof value.provenance_ok==='boolean' &&
-    (value.partial===undefined||typeof value.partial==='boolean') &&
+    typeof value.partial==='boolean' &&
     typeof value.identity==='string' && SOURCE_IDENTITIES.has(value.identity) &&
     typeof value.applicability==='string' && SOURCE_APPLICABILITIES.has(value.applicability) &&
     typeof value.freshness==='string' && SOURCE_FRESHNESSES.has(value.freshness);
@@ -61,8 +61,9 @@ export function evaluateCoverage(sources:SourceEvaluation[],candidates:PilotCand
   // Applicable sources require known freshness; INAPPLICABLE is supportable only with provenance.
   if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&s.freshness==='UNKNOWN')) return 'UNKNOWN_COVERAGE';
   if(requiredSources.some(s=>s.applicability==='INAPPLICABLE'&&(!s.provenance_ok||s.freshness==='UNKNOWN'))) return 'UNKNOWN_COVERAGE';
-  if(requiredSources.some(s=>s.applicability==='INAPPLICABLE'&&(s.freshness==='STALE'||s.partial))) return 'INCOMPLETE_COVERAGE';
-  if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&(!s.present||s.freshness==='STALE'||!s.provenance_ok||s.partial))) return 'INCOMPLETE_COVERAGE';
+  if(requiredSources.some(s=>s.partial!==false)) return 'INCOMPLETE_COVERAGE';
+  if(requiredSources.some(s=>s.applicability==='INAPPLICABLE'&&s.freshness==='STALE')) return 'INCOMPLETE_COVERAGE';
+  if(requiredSources.some(s=>s.applicability==='APPLICABLE'&&(!s.present||s.freshness==='STALE'||!s.provenance_ok))) return 'INCOMPLETE_COVERAGE';
 
   // Optional/non-contract sources cannot make required coverage disappear and cannot elevate coverage.
   for(const source of sources){
