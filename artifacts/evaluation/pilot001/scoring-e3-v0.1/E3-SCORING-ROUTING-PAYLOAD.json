@@ -1,0 +1,44 @@
+{
+  "artifact_id": "IRIS-PILOT-001-PHASE-E3-SCORING-ROUTING-PAYLOAD",
+  "disposition": "IRIS_PILOT_001_PHASE_E3_FINAL_SCORING_FAIL",
+  "scoring_status": "COMPLETE_BY_INDEPENDENT_SCORER",
+  "publication_status": "NOT_PUBLISHED_scorer_write_broker_unavailable",
+  "routing_status": "NOT_ROUTED",
+  "base_source_commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+  "publish_to_repo": "417properties/IRIS-Personal-Office",
+  "publish_mode": "NEW_EVIDENCE_ONLY_BRANCH_AND_COMMIT",
+  "must_not_modify": ["candidate", "harness", "binding", "E1", "E2", "existing branches", "existing PRs"],
+  "governing_falsifiers": [
+    {"metric": "unweighted_recall", "frozen_threshold": "== 1.000", "observed": 0.0},
+    {"metric": "consequence_weighted_miss_rate", "frozen_threshold": "== 0.000", "observed": 1.0},
+    {"metric": "c3_c4_misses", "frozen_threshold": "== 0", "observed": 9},
+    {"metric": "false_COMPLETE", "frozen_threshold": "== 0", "observed": 1},
+    {"metric": "incomplete_coverage_credited_as_success", "frozen_threshold": "== 0", "observed": 1}
+  ],
+  "denominators": {
+    "total_required_interventions": 20,
+    "detected_interventions": 0,
+    "total_consequence_weight": 299,
+    "missed_consequence_weight": 299,
+    "c3_c4_total": 9,
+    "candidate_positive_inclusions_total": 20,
+    "justified_omissions_total": 11
+  },
+  "matching_predicate": "FROZEN intervention identity arq_<sha256(\"pilot001-intervention-v1\"|principal_id|resolution_kind|sorted_exact_anchor_refs)> (labels adjudication_rules; Protocol S13/S14). No relaxed/post-hoc predicate used.",
+  "utility_gates": "NOT_EVALUATED_DEFERRED (Blueprint S17: after safety pass only; AMIR baseline absent; safety fails).",
+  "artifacts_to_publish": [
+    "artifacts/evaluation/pilot001/scoring-e3-v0.1/IRIS-PILOT-001-PHASE-E3-SCORING-EVIDENCE-v0.1.json",
+    "artifacts/evaluation/pilot001/scoring-e3-v0.1/iris_e3_scorer.py",
+    "artifacts/evaluation/pilot001/scoring-e3-v0.1/IRIS-PILOT-001-PHASE-E3-SCORING-RETURN-v0.1.md",
+    "artifacts/evaluation/pilot001/scoring-e3-v0.1/E3-SCORING-ROUTING-PAYLOAD.json"
+  ],
+  "post_publication_verification_required": "remote raw-byte readback of each published blob == manifest bytes/sha256/git_blob (see E3-SCORING-MANIFEST.json)",
+  "routing": {
+    "detailed_result": "IRIS Issue #3",
+    "short_carrier": "IRIS PR #4 (only comment explicitly required by assignment)",
+    "source_return": "BIG-Navigator #703 (canonical succession Current delta)"
+  },
+  "reproduction": "python3 iris_e3_scorer.py --fetch --out <dir> --verify-git-objects  (stdlib only; fetches immutable pinned bytes from public raw.githubusercontent.com; deterministic).",
+  "next_owner": "STRATA (reconcile scoring result; route next Blueprint v0.4 maturity / AMIR gate if earned), then independent review; no self-accept.",
+  "authority_ceiling": ["ZERO_AUTHORITY", "CONTINUITY_OFF", "NO_CANDIDATE_MUTATION", "NO_LABEL_MUTATION", "NO_PR4_MERGE", "NO_DEPLOYMENT", "IRIS_NOT_OPERATIONALLY_PROMOTED", "BIG_ACTIVATION_NOT_AUTHORIZED"]
+}

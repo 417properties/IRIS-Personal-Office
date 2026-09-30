@@ -1,0 +1,503 @@
+{
+  "artifact_id": "IRIS-PILOT-001-PHASE-E3-SCORING-PUBLICATION-MANIFEST-v0.1",
+  "repository": "417properties/IRIS-Personal-Office",
+  "base_source_commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+  "base_source_tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+  "publisher_role": "PARENT_MECHANICAL_PUBLICATION_AND_BYTE_VERIFICATION_ONLY",
+  "independent_scorer": {
+    "source_chat": "BJnEB5kgCsF",
+    "source_message": "hYpp4VvPzKcDnr0OsiNdJzkKiQJdJSRR",
+    "source_files_receipt_sha256": "adb67c5d421aac8b7747663e9c54eceaa027372fd51de6f7c30290431b5a9db0",
+    "source_message_receipt_sha256": "c0822c4ca344a5a54216010fff2eb0dbdd8ca4c9491c1e8d84ae7c7c6bada459"
+  },
+  "authority_effect": "NONE",
+  "authority_ceiling": [
+    "ZERO_AUTHORITY",
+    "CONTINUITY_OFF",
+    "NO_CANDIDATE_MUTATION",
+    "NO_LABEL_MUTATION",
+    "NO_PR4_MERGE",
+    "NO_DEPLOYMENT",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ],
+  "original_scorer_files_unchanged": true,
+  "scorer_publication_status_fields": "Historical source-handoff state, preserved verbatim; publication/routing receipts are recorded separately by the capability owner.",
+  "scoring_disposition_sourced_from_independent_scorer": "IRIS_PILOT_001_PHASE_E3_FINAL_SCORING_FAIL",
+  "governing_falsifiers_sourced_from_independent_scorer": [
+    {
+      "frozen_threshold": "== 0",
+      "metric": "c3_c4_misses",
+      "observed": 9
+    },
+    {
+      "frozen_threshold": "== 0.000",
+      "metric": "consequence_weighted_miss_rate",
+      "observed": 1.0
+    },
+    {
+      "frozen_threshold": "== 1.000",
+      "metric": "unweighted_recall",
+      "observed": 0.0
+    },
+    {
+      "frozen_threshold": "== 0",
+      "metric": "false_COMPLETE",
+      "observed": 1
+    },
+    {
+      "frozen_threshold": "== 0",
+      "metric": "incomplete_coverage_credited_as_success",
+      "observed": 1
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "artifacts/evaluation/pilot001/scoring-e3-v0.1/E3-SCORING-ROUTING-PAYLOAD.json",
+      "bytes": 3018,
+      "sha256": "a84d977a577472f7c27f729b8b7e230f123b426e501f140868bc3ddae8476e3d",
+      "git_blob": "9b622654bf5257464a50a80b331f83af1dbf333d",
+      "provenance": "INDEPENDENT_SCORER_UNCHANGED_BYTES"
+    },
+    {
+      "path": "artifacts/evaluation/pilot001/scoring-e3-v0.1/IRIS-PILOT-001-PHASE-E3-SCORING-EVIDENCE-v0.1.json",
+      "bytes": 61856,
+      "sha256": "015676a36b4b33d7633f88d340ee8aeddc8eebdfa7e6efc907400dfeb33ff08e",
+      "git_blob": "7e92eb447762fecb70515a6e03eed01ee80a6891",
+      "provenance": "INDEPENDENT_SCORER_UNCHANGED_BYTES"
+    },
+    {
+      "path": "artifacts/evaluation/pilot001/scoring-e3-v0.1/IRIS-PILOT-001-PHASE-E3-SCORING-RETURN-v0.1.md",
+      "bytes": 6955,
+      "sha256": "8134feae91476b4732886c9e4e33dd2bbf957a0aa6d5464196d2d87f68dd7850",
+      "git_blob": "403ff26d0b8b30d5f52be7d62f485ddad6d1fbee",
+      "provenance": "INDEPENDENT_SCORER_UNCHANGED_BYTES"
+    },
+    {
+      "path": "artifacts/evaluation/pilot001/scoring-e3-v0.1/iris_e3_scorer.py",
+      "bytes": 38151,
+      "sha256": "12067fffe1b49ad112f6ca5842ccde9fa06cd0579eb5b20f334f8094f7515fbf",
+      "git_blob": "31fac3b779fb8f7f92d0c80a91850835ebb3b6d7",
+      "provenance": "INDEPENDENT_SCORER_UNCHANGED_BYTES"
+    },
+    {
+      "path": "artifacts/evaluation/pilot001/scoring-e3-v0.1/fetch-frozen-e3-inputs.py",
+      "bytes": 3314,
+      "sha256": "be7a4b45ae7e2e8d53568aad4b4112a943fcad284d571044df1385740d131ef6",
+      "git_blob": "591cdb85a46abf59cd0b07827a140e17c46f2cff",
+      "provenance": "PARENT_MECHANICAL_INPUT_TRANSPORT_ONLY"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/IRIS-PILOT-001-FROZEN-CANDIDATE-OUTPUT-INDEX-v0.1.json",
+      "local_name": "IRIS-PILOT-001-FROZEN-CANDIDATE-OUTPUT-INDEX-v0.1.json",
+      "bytes": 12997,
+      "sha256": "858098db0d663340c6043fdef88de60abd07750520cd984e63d0d0cf878748ac",
+      "git_blob": "04b15bf7e8e4c27763be69add46b4d630d2a5706"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/IRIS-PILOT-001-FROZEN-CANDIDATE-EXECUTION-EVIDENCE-v0.1.json",
+      "local_name": "IRIS-PILOT-001-FROZEN-CANDIDATE-EXECUTION-EVIDENCE-v0.1.json",
+      "bytes": 2222,
+      "sha256": "95423d98295c14fea1f7b26eb8a8046a06c7bcc0446da64cf30408c3bcab6243",
+      "git_blob": "9d52676d3f292cfea60efd19a34035d36ed5878c"
+    },
+    {
+      "commit": "fdcac4331ea9e5f3dbd13bf04d14e3e7b406c41e",
+      "tree": "4d776be93b9b24c23592d4c14b0c8b2ffffca4f0",
+      "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-REFERENCE-SET-LABELS-v0.1.json",
+      "local_name": "IRIS-PILOT-001-REFERENCE-SET-LABELS-v0.1.json",
+      "bytes": 48408,
+      "sha256": "67c0c936ac2261bceb639055834c164fdcddfffc3f05b9e78a05996b16648d2d",
+      "git_blob": "c6b11d6344feaf55417f1b79221b40b97eaa45d3"
+    },
+    {
+      "commit": "aa8bba661976c2ef2c1d115b548fc2a86122e2f8",
+      "tree": "05ea622e0210425d60ed017b857772e7499a21a8",
+      "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.1.json",
+      "local_name": "IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.1.json",
+      "bytes": 157380,
+      "sha256": "fde99bb1b1aa82a5b98f1d17eae1b42d790afabb0d9b74a2804f0ab9e6ff31df",
+      "git_blob": "cac80fce950924af8140a8689953bef35a2217f6"
+    },
+    {
+      "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+      "tree": "9745d202a23c001d0dfa777a281a05769913d2fa",
+      "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+      "local_name": "IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+      "bytes": 53261,
+      "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d",
+      "git_blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786"
+    },
+    {
+      "commit": "aa8bba661976c2ef2c1d115b548fc2a86122e2f8",
+      "tree": "05ea622e0210425d60ed017b857772e7499a21a8",
+      "path": "artifacts/evaluation/pilot001/IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.1.md",
+      "local_name": "IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.1.md",
+      "bytes": 10035,
+      "sha256": "93679dae74274f03e7f564ea52be2ef7c0e70c9d06efb3343ded49fcf12574b7",
+      "git_blob": "62ddbc5189a6fde6fe0697ac8e1ed933dc606363"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_7c9a4d12f6b38e01.json",
+      "local_name": "p1e1_7c9a4d12f6b38e01.json",
+      "bytes": 3930,
+      "sha256": "5a81f900698861c714084c72db0b8102b9f0adfebcd3fff05d0a98ac32af29a5",
+      "git_blob": "dcd9cb7877c8140beba50d6e4eda5226de97e617"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_2e84b7c519ad603f.json",
+      "local_name": "p1e1_2e84b7c519ad603f.json",
+      "bytes": 3874,
+      "sha256": "7e6b8db42ba21f435d8654b8a43f2eddc570e1bf626741ca742be72f81a52593",
+      "git_blob": "6638c22e615e3582ba898834bfb8a11f78e46526"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_91f0c3a86d2b745e.json",
+      "local_name": "p1e1_91f0c3a86d2b745e.json",
+      "bytes": 3902,
+      "sha256": "66d5ec12f7aa28e68e6f10d86b849927c9f93e0133263af1e38f16b337f78a0f",
+      "git_blob": "6c207398d55d08de03edda4c0f71719fab956b65"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_4bd762e90fa13c58.json",
+      "local_name": "p1e1_4bd762e90fa13c58.json",
+      "bytes": 3936,
+      "sha256": "651c573e22b8f644d8e5f6081365f031fa4c0eb3c37237f3da74cf8884423666",
+      "git_blob": "39323bef11f460d77cca6f3cbf21d0a89ba8daa0"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_d38a05f741c96b2e.json",
+      "local_name": "p1e1_d38a05f741c96b2e.json",
+      "bytes": 4654,
+      "sha256": "348eef5574fb260759962c742d77ddf827c3c84fe6984de85735a4d20addd65f",
+      "git_blob": "9c702227e2e85d4216b900cae32482083a074524"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_6f12e9b43a80d75c.json",
+      "local_name": "p1e1_6f12e9b43a80d75c.json",
+      "bytes": 3594,
+      "sha256": "772c558a0f3eea4784dc2042cb1b9a8fb6c0ea63e9658d2e8bd9399a9788f600",
+      "git_blob": "ec14dfc27f85388147970314ed2d5dd6efdaee7b"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_a5073c8ed1946f2b.json",
+      "local_name": "p1e1_a5073c8ed1946f2b.json",
+      "bytes": 3594,
+      "sha256": "f751f764faf0789e813ef1199e8047701d6e7bab14acde58f40aa333652cc460",
+      "git_blob": "2414e916b215eca73c9912946e1cf7a76bce7fff"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_18ce74a2b9f563d0.json",
+      "local_name": "p1e1_18ce74a2b9f563d0.json",
+      "bytes": 3594,
+      "sha256": "43be868d55a22a124ac7338720a08397a12ed78e1dbb0c1eccedf6b8bc066296",
+      "git_blob": "76b957713fc11f5426f335d390904808fec66376"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_e24b906d71c5a83f.json",
+      "local_name": "p1e1_e24b906d71c5a83f.json",
+      "bytes": 3594,
+      "sha256": "2828dffad99d7c6eb9fc0e3f23dfd0b929600e85484169e31a6d3751834032b2",
+      "git_blob": "834f07aa44070d2758165a3aeeb445c0aaa11f06"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_53ad18f6c0729be4.json",
+      "local_name": "p1e1_53ad18f6c0729be4.json",
+      "bytes": 3601,
+      "sha256": "ae3f3bab55350734f69a3f58292120cc871eaba2d359adc5f4bc2570cc4b30a9",
+      "git_blob": "cc03cd689abcba0833a27fb1fd6090161e1f209e"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_b790e4612d3fc85a.json",
+      "local_name": "p1e1_b790e4612d3fc85a.json",
+      "bytes": 3602,
+      "sha256": "6708c9b452fee3a3893a4d196ff86cd9e3be273baa4a0880ad7474387693563e",
+      "git_blob": "2a01da19624780bc26c6258aa0167dc8b7a7d521"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_0f6c83ad529e174b.json",
+      "local_name": "p1e1_0f6c83ad529e174b.json",
+      "bytes": 3602,
+      "sha256": "de44afc052f0f7ac7831c967289f2c6b150c009ab2e6b99e2f5b9eda81d4e0fd",
+      "git_blob": "7ed000966bd48a2cfc30c934082bd3c5bea6d197"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_c14e7b950a36d82f.json",
+      "local_name": "p1e1_c14e7b950a36d82f.json",
+      "bytes": 3602,
+      "sha256": "da8b1dbe1498b3e5e65965247022462b918ef9030a263f2892ab0d60594516c8",
+      "git_blob": "429e00b4756555186120c7295af5a8abd4bb0b82"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_8a35d0c27fe4619b.json",
+      "local_name": "p1e1_8a35d0c27fe4619b.json",
+      "bytes": 3896,
+      "sha256": "4a9cfe9598fc5b5950a63af02db735a8ac74d611d248a9eed1997c51c310f8ac",
+      "git_blob": "c72294a6fd20a65aa4cdd76ae9867b7051059f1a"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_376db819a04fc25e.json",
+      "local_name": "p1e1_376db819a04fc25e.json",
+      "bytes": 3960,
+      "sha256": "74aa45851366fcac906df114f2e3842e7c7a720816c52aa1c593246fc385d5ac",
+      "git_blob": "3a17b57cff530edc9f822a3dddc5b1293590ecfa"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_f0592c6b831a4d7e.json",
+      "local_name": "p1e1_f0592c6b831a4d7e.json",
+      "bytes": 3960,
+      "sha256": "3080875e7e6481fa48cdfe4f719ce1055fcd8bc1a582fe7b34a799f65eba057e",
+      "git_blob": "a1f9e99a9a000b7cff7784729732581f5876abab"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_642e1fa9c37d805b.json",
+      "local_name": "p1e1_642e1fa9c37d805b.json",
+      "bytes": 4293,
+      "sha256": "f9d6c3801d21d1a5c97e5eadd3df27ea5d6fd22d7da0d72f75a23d7f66b12f30",
+      "git_blob": "80e52555970c5340062ef8919fb4ab3353c26e4c"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_9d03b75e214ac86f.json",
+      "local_name": "p1e1_9d03b75e214ac86f.json",
+      "bytes": 4319,
+      "sha256": "7892c2e428cb9b29c8630090897203d154d3852665df44a7778e1d473686222b",
+      "git_blob": "f615f9e0664a90d88aafe1971ba0b2d65d0189f7"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_25fb84c0de71936a.json",
+      "local_name": "p1e1_25fb84c0de71936a.json",
+      "bytes": 4399,
+      "sha256": "de07ae7822b0354c0c39259e1c78f33b6f9d30ebd4a038ea7bb9030cffedc9bc",
+      "git_blob": "2f68025a4f078675379d763574f9f81252a8ce85"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_da760e315b8c42f9.json",
+      "local_name": "p1e1_da760e315b8c42f9.json",
+      "bytes": 4511,
+      "sha256": "df090acf9ab7acf9d8febf27d900d0f5befba67e2b362edb3a4b841f0ac167de",
+      "git_blob": "7df866b0748a07430e1eca6a3ccb7dffe0b9855f"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_4c19a8e260d735bf.json",
+      "local_name": "p1e1_4c19a8e260d735bf.json",
+      "bytes": 3947,
+      "sha256": "f4e819dec08b7e7c151e52c0e565175a42ff94c6c85229ba48bfc3a69f96078b",
+      "git_blob": "d65b2e1f7ca448ef4779221b6db9c1d7509aa2ba"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_87be31d95a60c4f2.json",
+      "local_name": "p1e1_87be31d95a60c4f2.json",
+      "bytes": 3940,
+      "sha256": "b3dfe68b819d4a038c40e21b84d5d0c4a5ab15107f40a6cfc6214fb697aa8501",
+      "git_blob": "9e00fc034b292d1f27c1d6221d7d1e0957cdbea8"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_1ad593f8c472e06b.json",
+      "local_name": "p1e1_1ad593f8c472e06b.json",
+      "bytes": 3700,
+      "sha256": "a0a3b2be9e4d6ea33be290e5b82707be3b67f866c0f7ad6dadddb3d8d1d95c6c",
+      "git_blob": "9b6c12782b675eca47602854391b79690d76f17c"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_be4062a71f9d358c.json",
+      "local_name": "p1e1_be4062a71f9d358c.json",
+      "bytes": 3519,
+      "sha256": "1a1c3ba20fcf50130dcb673f6ba1a7935e7c5869863a0355a7ac8a18ea52200f",
+      "git_blob": "9279d422dfae48a04a27b456394a2af9d33e31eb"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_730c5de819a24bf6.json",
+      "local_name": "p1e1_730c5de819a24bf6.json",
+      "bytes": 3575,
+      "sha256": "dd9c2dd4eaf8aa640805ec79dc4d42ec9e59f9478031f56eb671a1114fa9bf74",
+      "git_blob": "bca85b137a63f36bf4733d374b04c48a0302cd26"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_0a98f214c76be35d.json",
+      "local_name": "p1e1_0a98f214c76be35d.json",
+      "bytes": 3570,
+      "sha256": "fd18f5a267f6ffdad36b84fe173782c58e520db2e378925f20bb15765880c3b6",
+      "git_blob": "9826bf2b719ed34dafe1152b65d5a57c8727a58c"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_c62d4a0b957e183f.json",
+      "local_name": "p1e1_c62d4a0b957e183f.json",
+      "bytes": 3728,
+      "sha256": "8931e9d40dc241951083d79ac562339c17cc3c8691878e12b4bcb8a68de75362",
+      "git_blob": "3ca82c7c4be689916a67015af8df45828d6595bd"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_5e13b8d074ca926f.json",
+      "local_name": "p1e1_5e13b8d074ca926f.json",
+      "bytes": 4045,
+      "sha256": "95ec18ccbbfa6ed191c46c16c2c56139af8fb278d4208157b6d261cf17940a8a",
+      "git_blob": "2e9c284e49a3a1f6fb7d44d87b5171695f3ddb78"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_eb7490c231fd685a.json",
+      "local_name": "p1e1_eb7490c231fd685a.json",
+      "bytes": 3911,
+      "sha256": "6b360eda8d070cd0f079f77d89314a8a6d33c95a6f95f1586e04f23af8aa65b8",
+      "git_blob": "07cbeb44ec9e2c8c531bdeb652cfb5e39d3e9068"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_39c08fa672e1bd54.json",
+      "local_name": "p1e1_39c08fa672e1bd54.json",
+      "bytes": 3780,
+      "sha256": "e204a9e362128ccd46455e1ddf8fda2039c4a05990fdcee368bde657d96b5488",
+      "git_blob": "872bed04f2f113df01755d16931d0eb41c6aaf39"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_a16d537c80b429ef.json",
+      "local_name": "p1e1_a16d537c80b429ef.json",
+      "bytes": 4118,
+      "sha256": "123c32d4f0f58ade6b9bca76d4b6af4c4921a8796a464cc98c4c69092c18aaba",
+      "git_blob": "8953801527d0c643310013e692207e87e05cf428"
+    },
+    {
+      "commit": "b85c30a676f0991e8c33af9a32a16587fd2671ee",
+      "tree": "78be0a8fdcd7fb4237fb94e8f6d310c76cb7633b",
+      "path": "artifacts/evaluation/pilot001/execution-binding-v0.1/outputs/p1e1_6b4f29e8d105ca73.json",
+      "local_name": "p1e1_6b4f29e8d105ca73.json",
+      "bytes": 3584,
+      "sha256": "34ab2c116c28a3e3449bd46c308bb8b1745a9ffdda96e7b2b650cfca467ec6ee",
+      "git_blob": "1e03a4e6771156160ce2a795b3eb70cfb26f4234"
+    }
+  ],
+  "reproduction": {
+    "status": "DIRECT_REPRODUCTION_VERIFIED",
+    "command_from_this_directory": "python3 fetch-frozen-e3-inputs.py --manifest E3-SCORING-MANIFEST.json --out /tmp/iris-e3-frozen-inputs && python3 iris_e3_scorer.py --dir /tmp/iris-e3-frozen-inputs --out /tmp/iris-e3-reproduced --verify-git-objects",
+    "transport_limitation": "The unchanged scorer's --fetch shortcut concatenates RAW + repository-relative output path without the commit separator and is not usable for output retrieval. The supplied transport-only helper constructs commit-pinned URLs, verifies bytes/SHA-256/Git blob for every input, and supports the scorer's working --dir mode. No scoring predicate or source artifact is changed.",
+    "determinism_scope": "Metrics, thresholds, denominators, case ordering and complete missed-intervention records reproduce exactly. generated_at_utc and diagnostic missed_interventions display order can differ; the latter is Python set iteration. No whole-file rerun byte-determinism is claimed, and the original four scorer artifacts remain byte-identical.",
+    "verified_at_utc": "2026-09-29T23:41:03.465022+00:00",
+    "verified_frozen_files": 38,
+    "verified_input_checks": 131,
+    "full_scoring_object_equal_including_display_order": false,
+    "exact_metrics_thresholds_denominators_and_falsifiers_equal": true,
+    "all_32_case_positions_and_result_values_equal": true,
+    "missed_intervention_exact_row_multisets_equal": true,
+    "diagnostic_missed_intervention_display_order_differences": [
+      {
+        "case_id": "p1e1_9d03b75e214ac86f",
+        "original_display_order": [
+          "arq_e8404d731487a0a54c114facf34b6e140ad15631849c960f8e0d244456463153",
+          "arq_2300ad2b6f70f3ae13567e09ee28dbd9d820df00b3bc25961a25da49269aa404"
+        ],
+        "reproduced_display_order": [
+          "arq_2300ad2b6f70f3ae13567e09ee28dbd9d820df00b3bc25961a25da49269aa404",
+          "arq_e8404d731487a0a54c114facf34b6e140ad15631849c960f8e0d244456463153"
+        ]
+      },
+      {
+        "case_id": "p1e1_25fb84c0de71936a",
+        "original_display_order": [
+          "arq_d85f758c11ff8152e9dc7937e0d262239f3b83e78a07949aaa31be1f7382ca02",
+          "arq_2d5d48940a37ada85bfc3ce3d803263742a5a03694f5954515a908a457ed4857",
+          "arq_30ba403119e6d4a97986a257021a79eef98fb42b454a13adddaf7c60580962a9"
+        ],
+        "reproduced_display_order": [
+          "arq_30ba403119e6d4a97986a257021a79eef98fb42b454a13adddaf7c60580962a9",
+          "arq_d85f758c11ff8152e9dc7937e0d262239f3b83e78a07949aaa31be1f7382ca02",
+          "arq_2d5d48940a37ada85bfc3ce3d803263742a5a03694f5954515a908a457ed4857"
+        ]
+      }
+    ],
+    "serialization_comparison_rule": "All result values and list ordering must be identical except missed_interventions display order, which the unchanged scorer produces by Python set iteration. Complete missed rows are compared as multiplicity-preserving exact JSON multisets; anchor arrays and strings are never reordered, normalized or mapped. This comparison changes no scoring predicate or original artifact.",
+    "all_input_check_records_equal": true,
+    "sourced_dev_receipts_unchanged": true,
+    "candidate_executed": false,
+    "harness_executed": false,
+    "scorer_artifacts_modified": false,
+    "scoring_artifact_source": "Independent scorer BJnEB5kgCsF, message hYpp4VvPzKcDnr0OsiNdJzkKiQJdJSRR",
+    "reproduction_executor_role": "Parent executing unchanged independent scorer for mechanical reproduction only; not new independent acceptance",
+    "original_evidence_identity": {
+      "bytes": 61856,
+      "sha256": "015676a36b4b33d7633f88d340ee8aeddc8eebdfa7e6efc907400dfeb33ff08e",
+      "git_blob": "7e92eb447762fecb70515a6e03eed01ee80a6891"
+    },
+    "reproduced_evidence_identity": {
+      "bytes": 61856,
+      "sha256": "34a8c7caee5351a6fd2e02d445064edbd5c542b6e2fff06af8a4671a4958003c",
+      "git_blob": "5d39f4b839da2499ca3f7659c76f3d3f6d92b9c4"
+    }
+  },
+  "next_owner": "STRATA for reconciliation, not this publisher",
+  "stop_condition": "Publish evidence, verify remote bytes, route source return to IRIS #3, IRIS PR #4 and BIG #703, then STOP. No Current advancement or self-acceptance.",
+  "publication_authority_freshness": {
+    "issuance_delta": 24,
+    "issuance_comment": 5899471320,
+    "inherited_e3_assignment_comment": 5899206549,
+    "latest_read_delta": 26,
+    "latest_read_comment": 5901098292,
+    "latest_read_comment_body_sha256": "02a0ce524650318046223a5261d406e8619465b473c7e526152969da10cf9fa9",
+    "scope": "Delta 026 explicitly preserves IRIS as a separate active fresh independent E3 scoring lane. W03 remains out of scope. This is parent publication freshness, not a claim that the earlier scorer read Delta 026."
+  }
+}
