@@ -1,0 +1,90 @@
+{
+  "actual_observed_freeze_timestamp_utc": "2026-09-30T02:35:00Z",
+  "artifact": "IRIS-PILOT-001-PREBUILDER-INDEPENDENCE-CERTIFICATION-v0.3.json",
+  "certification_self_sha256_of_prior_serialization": "bc930b1e3bd8ebbf53d7b3afde5e1860a0f765d825a96f853d5730dc6fd4a78b",
+  "consequence_thresholds_preserved_unchanged": {
+    "source": "Blueprint v0.4 Sec.17, restated verbatim in IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.3.md; not recomputed, rescaled, or reinterpreted by this evaluator.",
+    "weights": {
+      "C1": 1,
+      "C2": 4,
+      "C3": 16,
+      "C4": 64
+    }
+  },
+  "consumed_sources": {
+    "directly_read_by_this_evaluator": [
+      "IRIS-Personal-Office#3 comment 5902549341 (exact E1 assignment) - public, direct gh/API read",
+      "IRIS-Personal-Office PR#4 comment 5902549716 (carrier) - public, direct gh/API read",
+      "Blueprint v0.4 at commit cda075e0137571aaf9fcb4b752ce0085d361e0cb, blob c030c5f475f38d6edd4bda52ecd74d6f9d9eb786 - public, direct read+hash-verified",
+      "IRIS-PILOT-001-CASE-POPULATION-IDENTITY-v0.1.json (round-1 population, case IDs + digest metadata ONLY) - public, direct read, for non-overlap proof only",
+      "main branch tree at ef212a946cf9c373f30cbe65c5024527740828f7 (clean noncandidate base) - public, direct read",
+      "candidate branch tree listing (path names only, no file content opened) - public, direct read"
+    ],
+    "never_read": [
+      "old round-1 E2 per-case answer labels",
+      "old E3 per-case answer/miss ledgers",
+      "any repaired candidate code, diff, or output",
+      "old E1 manifest/protocol/certification prose content beyond case-ID/digest metadata"
+    ],
+    "parent_mediated_receipts_not_self_read": [
+      "BIG-Navigator#703 issue body, Delta 029 comment 5902550235, Delta 030 comment 5902568300 (BIG-Navigator is a private repo; this evaluator's unauthenticated read returns 404; these three bodies were provided as parent-authenticated receipts with parent-computed SHA-256, and are used as receipts, not as this evaluator's own direct reads)"
+    ]
+  },
+  "evaluator_role": "NEW fresh independent IRIS post-fail E1 evaluator (not DEV, not IBA, not the prior E1/E2 evaluator, not the E3 scorer)",
+  "evaluator_session_id": "nD3udfQPYZA",
+  "file_identities": {
+    "IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.3.md": {
+      "byte_length": 4922,
+      "git_blob_id": "2bdb739cfdd4addc4456ef64b595bb5dc20bba9e",
+      "sha256": "01908a0f0a1a5ff9a8a2e8e837092a22d14be9fc68aa33379b20676139c993b7"
+    },
+    "IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.3.json": {
+      "byte_length": 331370,
+      "git_blob_id": "81f8b7e3e9ac44c1f23c2a53fe15634367364b2a",
+      "sha256": "42e40d67dc543cd394f862ef20a43c7460dc13c8780ab4fc78b2906b025bb0fb"
+    },
+    "IRIS-PILOT-001-CASE-POPULATION-IDENTITY-v0.3.json": {
+      "byte_length": 2361,
+      "git_blob_id": "4033e030238252d1fa35d3197c71fc5174aff72f",
+      "sha256": "b233fe70e841edebb6ce2890215e2b992f0d4c3f1cd461d9910dffe392fd77d4"
+    }
+  },
+  "freeze_timestamp_provenance": "observed via `date -u` in this evaluator's own sandbox during this correction round; NOT an asserted external event time and NOT the fixture dates embedded in synthetic source records (those are fictional test-fixture dates, e.g. 2026-09-15..2026-09-24, used only for deterministic synthetic scenario construction, and are explicitly distinguished here from this freeze timestamp).",
+  "governing_dev_repair_observation": {
+    "checks": [
+      {
+        "checked_by": "this evaluator, direct gh/API read",
+        "observed_state": "assignment comment 5902549341 is the latest relevant comment consumed; no later DEV repair release comment was read or observed",
+        "surface": "IRIS-Personal-Office#3"
+      },
+      {
+        "checked_by": "parent-mediated authenticated receipt (BIG-Navigator is private; this evaluator cannot read it directly and did not claim to)",
+        "observed_state": "parent reports Current Delta 030 (comment 5902568300) remains latest, with no later DEV repair release recorded, as of two separate parent checks during this session",
+        "surface": "BIG-Navigator#703"
+      }
+    ],
+    "statement": "As of the source checks listed below, no DEV repair release was observed on the checked sources. This is a record of what was checked and when, not a proof that no DEV activity has occurred on any unchecked surface."
+  },
+  "no_answer_labels_certification": {
+    "mechanically_checked_by": "scan_forbidden() in gen_v03.py, executed over every case object before freeze; zero hits recorded at generation time.",
+    "statement": "No governing answer label (AR class, resolution_kind, intervention_id, coverage_state, completeness_state, conflict_class, disposition, consequence weight/class, or rationale) exists in any round-3 input case, the protocol document, or this certification."
+  },
+  "no_candidate_inspection_certification": {
+    "statement": "No repaired candidate code, diff, or output was inspected or executed by this evaluator at any point in round 2 or round 3."
+  },
+  "no_dev_authorship_certification": {
+    "statement": "DEV/Builder did not author, select, or alter this population, its protocol, its case IDs, its digest, or any Blueprint threshold. This evaluator authored the population and protocol independently from Blueprint v0.4 source only."
+  },
+  "prior_round_disposition": {
+    "round_2_commit": "cf77917a4653dabe378cc780548db759afbb2b09",
+    "round_2_defects_corrected_in_round_3": [
+      "unsupported certification chronology predating the E1 assignment and this session's own work",
+      "prose-only scenario_text vignettes lacking Blueprint Sec.8-14 adjudicable source-fact structure",
+      "disjointness proof did not state its own ID-prefix-only limitation"
+    ],
+    "round_2_disposition": "SUPERSEDED_WITH_DEFECTS, preserved unmodified, not erased, not amended.",
+    "round_2_sole_parent": "ef212a946cf9c373f30cbe65c5024527740828f7",
+    "round_2_tree": "fde310bcb60dd3a599bf6e5d55caecfc3e731a8c"
+  },
+  "sequencing_preserved_unchanged": "Blueprint v0.4 Sec.17.1: E1 (this) -> separate DEV repair release -> exact candidate freeze -> NEW blind E2 adjudicator without candidate outputs -> fresh E3 scoring. This evaluator performs only E1 and stops at STRATA."
+}

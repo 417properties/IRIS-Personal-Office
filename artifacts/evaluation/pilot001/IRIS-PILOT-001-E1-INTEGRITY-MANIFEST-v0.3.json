@@ -1,0 +1,45 @@
+{
+  "artifact": "IRIS-PILOT-001-E1-INTEGRITY-MANIFEST-v0.3.json",
+  "case_count": 30,
+  "case_id_prefix": "p1e1r3_",
+  "file_identities": {
+    "IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.3.md": {
+      "byte_length": 4922,
+      "git_blob_id": "2bdb739cfdd4addc4456ef64b595bb5dc20bba9e",
+      "sha256": "01908a0f0a1a5ff9a8a2e8e837092a22d14be9fc68aa33379b20676139c993b7"
+    },
+    "IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.3.json": {
+      "byte_length": 331370,
+      "git_blob_id": "81f8b7e3e9ac44c1f23c2a53fe15634367364b2a",
+      "sha256": "42e40d67dc543cd394f862ef20a43c7460dc13c8780ab4fc78b2906b025bb0fb"
+    },
+    "IRIS-PILOT-001-CASE-POPULATION-IDENTITY-v0.3.json": {
+      "byte_length": 2361,
+      "git_blob_id": "4033e030238252d1fa35d3197c71fc5174aff72f",
+      "sha256": "b233fe70e841edebb6ce2890215e2b992f0d4c3f1cd461d9910dffe392fd77d4"
+    },
+    "IRIS-PILOT-001-PREBUILDER-INDEPENDENCE-CERTIFICATION-v0.3.json": {
+      "byte_length": 6269,
+      "git_blob_id": "c0965a1332387b4b0e3c736862415ccda5d2a5d7",
+      "sha256": "45ac22d065d7a6d682dcc4ecaba1a659e4eb452a327657c3e9b1ac7f748a1164"
+    }
+  },
+  "freeze_timestamp_utc": "2026-09-30T02:35:00Z",
+  "population_digest_sha256": "770c08449df22f8206da12e22b1b0e0413cc6554bd5789caf0c0895abc2cd89c",
+  "population_round": 3,
+  "scope_statement": "This manifest binds the byte identity of the 3 leaf artifacts listed under file_identities plus the independence certification. It does NOT include its own bytes in its own hash (no recursive self-hashing claim). Its own bytes are pinned externally by the Git blob ID recorded for it in this evaluator's final receipt, computed by `git hash-object` AFTER this file is written, outside this file.",
+  "validation_performed": {
+    "checker_script": "IRIS-PILOT-001-E1-INTEGRITY-CHECK-v0.3.py (co-located; re-running it reproduces every hash/count above from the frozen files without adjudicating any case or invoking any classifier)",
+    "checks": [
+      "schema shape check: every case has case_id, coverage_contract, source_snapshot, snapshot_reads, freshness_declarations, known_exclusions_encountered",
+      "case_id uniqueness: 30 distinct case_ids confirmed",
+      "case_id prefix disjointness vs round-1 (p1e1_) and round-2 (p1e1r2_): confirmed, prefix-only",
+      "prohibited-label-field scan: recursive key scan over every case object against a blocklist (ar_class, resolution_kind, intervention_id, coverage_state, completeness_state, conflict_class, disposition, consequence_weight, rationale, and related output-only fields); zero hits",
+      "byte-length + SHA-256 + git hash-object recomputation for every leaf file"
+    ],
+    "checks_not_performed": [
+      "no case was adjudicated (no AR class, resolution_kind, or coverage_state was computed for any case)",
+      "no candidate code was executed or read"
+    ]
+  }
+}
