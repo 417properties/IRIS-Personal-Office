@@ -1,0 +1,297 @@
+{
+  "artifact": "IRIS-PILOT-001-REPLACEMENT-E1-POSTFREEZE-REVALIDATION-PARTIAL-v1",
+  "authority": {
+    "body": {
+      "bytes": 5000,
+      "git_blob": "cd63ff1ee54a60ca014f8c96da3ea3ee1267c22f",
+      "sha256": "c0ac16fbffe13b8909264fb6a8a98da397c78a58637ad4bf1f15eca55c4a9f2b"
+    },
+    "provenance": "Existing custodian Z9PtvDOsCeL authenticated source read; transported exact cached text, locally hash-verified. Latest-comment check at 2026-10-02T20:54Z is a custodian receipt, not direct caller verification.",
+    "source_task": "I6GvKJUe3ehgm7OLvS3KsZ0AA6TBZ5fw",
+    "url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5960874459"
+  },
+  "candidate": {
+    "branch": "candidate/iris-persistent-personal-agent-transition-v0-1",
+    "draft": true,
+    "head": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+    "merged": false,
+    "pr": 4,
+    "remote_identity_verification": "Direct public GitHub API before qualification and again at freeze",
+    "repository": "417properties/IRIS-Personal-Office",
+    "sole_parent": "2fd02febbc94e738b2f4be6a23622263a2ee4f3c",
+    "state": "open",
+    "tree": "af4808dc6c6db17ed7dc5cdd923fe5b9697c006a"
+  },
+  "certifications": [
+    "ZERO_GOVERNING_LABELS",
+    "ZERO_REPLACEMENT_E1_CANDIDATE_OUTPUTS",
+    "ZERO_SCORING",
+    "NO_CANDIDATE_REPAIR",
+    "NO_DEPLOYMENT",
+    "NO_PROVIDER_ACCESS",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "CONTINUITY_DEFAULT_OFF",
+    "ZERO_AUTHORITY",
+    "NO_PRODUCTION",
+    "NO_IRIS_CONTINUITY_ADMISSION",
+    "BIG_ACTIVATION_NOT_AUTHORIZED",
+    "ROUND3_E1_SUPERSEDED_FOR_EVALUATION_BY_CONSEQUENCE_INPUT_DEFECT",
+    "ROUND3_E2_HOLD_VALID"
+  ],
+  "created_at": "2026-10-02T20:56:42.131392+00:00",
+  "disposition": "QUALIFICATION_PASS_ZERO_SOURCE_DELTA / HOLD_HARNESS_COMPATIBILITY_UNVERIFIED / STRATA_DECISION_REQUIRED",
+  "execution_scope": {
+    "candidate_source_or_test_mutations": 0,
+    "e2_or_e3_performed": false,
+    "evaluator_woken": false,
+    "governing_labels_created": 0,
+    "governing_labels_read": 0,
+    "holdout_scoring": false,
+    "pr_mutations": 0,
+    "provider_or_production_access": false,
+    "replacement_candidate_outputs": 0,
+    "replacement_case_inputs_consumed": 0
+  },
+  "interface_review": {
+    "action_taken": "No adapter invented; no candidate changes; no case shards opened, fetched or executed. No runtime compatibility claimed.",
+    "established": "Manifest format, ordered shards, eight canonical source surfaces, bounded coverage contract, ordered snapshot/end-bracket protocol and additional consequence packets are documented. Structural checker source was read, not executed. Published structural verification is inherited E1 evidence, not a rerun.",
+    "missing": "No immutable candidate-neutral harness/adapter implementation or mapping proof was cited by cached #703 body or replacement-E1 receipt. Structural checker is not a candidate adapter. Contract resemblance alone does not establish the required semantics-preserving consumption.",
+    "required_next_action": "STRATA supplies or names the governing immutable candidate-neutral adapter/mapping and narrowly releases its non-holdout verification, or explicitly adjudicates the required proof. This receipt is not a candidate defect, repair release, completed refreeze or E2 release.",
+    "reviewed_immutable_files": [
+      {
+        "bytes": 17169,
+        "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+        "git_blob": "5aa65205d401409b5b07b82e57864841bd57120b",
+        "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/adjudication-protocol.md",
+        "sha256": "619b28d8cc6fdd8048bdaeff2807a10f438349f1a7249f3701b209a7e786d66b"
+      },
+      {
+        "bytes": 3169,
+        "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+        "git_blob": "fef39e3284eae5559ac016c01211c0d9bc244fa5",
+        "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/case-input-manifest.json",
+        "sha256": "0eca9c456d85bd2b3e62cd1752d0cf4de81988c519c2ae0724a81573269b53d6"
+      },
+      {
+        "bytes": 16672,
+        "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+        "git_blob": "caacd07b1635ed0cff3921c6d2f6c33a87f6506e",
+        "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/structural-checker.py",
+        "sha256": "3b63512ad7154611f240edc880eb20567961cbe792bce3b5f5f2dd985f729fbf"
+      },
+      {
+        "bytes": 1882,
+        "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+        "git_blob": "a468cecd222314444a7d43a4e6d03d46c43e4112",
+        "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/structural-verification.json",
+        "sha256": "ac17f5ed6019e8b70edc79fd316c83b798048a1c3edcf94fdb96082d715b4019"
+      }
+    ],
+    "status": "UNVERIFIED_EXECUTABLE_HARNESS_COMPATIBILITY"
+  },
+  "local_supporting_receipt_pins": [
+    {
+      "bytes": 26674,
+      "git_blob": "62de4d6b089f1988fc1e09cec253896470b13fc7",
+      "local_receipt": "source-before.json",
+      "sha256": "3fed8bb1b2269d34a186404ff65057e7e47636669d626dd2db59c935e367301f"
+    },
+    {
+      "bytes": 26674,
+      "git_blob": "2d884680e860ac50d29e357d1170f4e0cce09111",
+      "local_receipt": "source-after.json",
+      "sha256": "3c86d64fbd982de922ff357708ed4f6be51e88c78fa98b5d43b988beae40eb19"
+    },
+    {
+      "bytes": 3708,
+      "git_blob": "eb93e65c02f7f22ee5f18a563917248386d68bc8",
+      "local_receipt": "pilot.log",
+      "sha256": "11af59d6a1fdbd803558e785f3f1d2d9e5b0bc85079f5e0657899fa10f4bcab4"
+    },
+    {
+      "bytes": 13386,
+      "git_blob": "6b1528036f5e7f91f25a5981cb12dc71e353d450",
+      "local_receipt": "repository.log",
+      "sha256": "adbdb317f442e3709db9faf7de10c58de5a673ced1cde6014449351afc514100"
+    },
+    {
+      "bytes": 222,
+      "git_blob": "92198f384f2727f8b08c80287fc6bb19f68f85e3",
+      "local_receipt": "static.log",
+      "sha256": "6ce442e8804d31cac7f2d5c271f31c67cb46bc4cd03370ebaa0155eb4ee4aa41"
+    },
+    {
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "local_receipt": "diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 7752,
+      "git_blob": "5fa2ea9c7fb4a51b137db6f627f88f28cd81b6aa",
+      "local_receipt": "focused-governing.log",
+      "sha256": "50db18e533144dcf8e2180028c8ea70e3ed754a566f2956c0cf29d8be39b74c4"
+    },
+    {
+      "bytes": 5000,
+      "git_blob": "cd63ff1ee54a60ca014f8c96da3ea3ee1267c22f",
+      "local_receipt": "canonical-release.txt",
+      "sha256": "c0ac16fbffe13b8909264fb6a8a98da397c78a58637ad4bf1f15eca55c4a9f2b"
+    },
+    {
+      "bytes": 4684,
+      "git_blob": "0370b2acc828692efd78a65c217c0de46f974589",
+      "local_receipt": "governing-repair-qualification.txt",
+      "sha256": "27113781c843949562ff60b6b31125d2889d3f1bfda332a31c871f56fc26f189"
+    }
+  ],
+  "next_owner": "STRATA; no automatic blind-E2 wake",
+  "publication_state_at_seal": "Local sealed partial receipt. Remote publication/readback and routing are separate receipts; not asserted here. Supporting raw logs/inventories remain local unless separately published.",
+  "qualification": {
+    "focused": {
+      "bytes": 7752,
+      "command": [
+        "node",
+        "scripts/run-tests.mjs",
+        "tests/agent-transition"
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-10-02T20:54:34.765470+00:00",
+      "git_blob": "5fa2ea9c7fb4a51b137db6f627f88f28cd81b6aa",
+      "sha256": "50db18e533144dcf8e2180028c8ea70e3ed754a566f2956c0cf29d8be39b74c4",
+      "started_at": "2026-10-02T20:54:32.065788+00:00",
+      "totals": {
+        "cancelled": 0,
+        "fail": 0,
+        "pass": 99,
+        "skipped": 0,
+        "tests": 99,
+        "todo": 0
+      }
+    },
+    "governing_repair_receipt": 5904019264,
+    "other_runs": [
+      {
+        "command": [
+          "node",
+          "--experimental-strip-types",
+          "--test",
+          "tests/agent-transition/pilot001-classification.test.ts",
+          "tests/agent-transition/pilot001-concurrency.test.ts",
+          "tests/agent-transition/pilot001-coverage.test.ts",
+          "tests/agent-transition/pilot001-metrics.test.ts",
+          "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+          "tests/agent-transition/pilot001-repository-bracket.test.ts"
+        ],
+        "cwd": "/tmp/iris-post-e1-revalidation",
+        "exit_code": 0,
+        "finished_at": "2026-10-02T20:50:49.963261+00:00",
+        "log": "pilot.log",
+        "log_pin": {
+          "bytes": 3708,
+          "git_blob": "eb93e65c02f7f22ee5f18a563917248386d68bc8",
+          "sha256": "11af59d6a1fdbd803558e785f3f1d2d9e5b0bc85079f5e0657899fa10f4bcab4"
+        },
+        "name": "pilot",
+        "started_at": "2026-10-02T20:50:48.864291+00:00",
+        "totals": {
+          "cancelled": 0,
+          "fail": 0,
+          "pass": 42,
+          "skipped": 0,
+          "tests": 42,
+          "todo": 0
+        }
+      },
+      {
+        "command": [
+          "node",
+          "scripts/run-tests.mjs"
+        ],
+        "cwd": "/tmp/iris-post-e1-revalidation",
+        "exit_code": 0,
+        "finished_at": "2026-10-02T20:50:55.564732+00:00",
+        "log": "repository.log",
+        "log_pin": {
+          "bytes": 13386,
+          "git_blob": "6b1528036f5e7f91f25a5981cb12dc71e353d450",
+          "sha256": "adbdb317f442e3709db9faf7de10c58de5a673ced1cde6014449351afc514100"
+        },
+        "name": "repository",
+        "started_at": "2026-10-02T20:50:49.963902+00:00",
+        "totals": {
+          "cancelled": 0,
+          "fail": 0,
+          "pass": 178,
+          "skipped": 0,
+          "tests": 178,
+          "todo": 0
+        }
+      },
+      {
+        "command": [
+          "node",
+          "--experimental-strip-types",
+          "scripts/static-check.mjs"
+        ],
+        "cwd": "/tmp/iris-post-e1-revalidation",
+        "exit_code": 0,
+        "finished_at": "2026-10-02T20:50:55.621893+00:00",
+        "log": "static.log",
+        "log_pin": {
+          "bytes": 222,
+          "git_blob": "92198f384f2727f8b08c80287fc6bb19f68f85e3",
+          "sha256": "6ce442e8804d31cac7f2d5c271f31c67cb46bc4cd03370ebaa0155eb4ee4aa41"
+        },
+        "name": "static",
+        "started_at": "2026-10-02T20:50:55.565223+00:00",
+        "totals": {}
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "cwd": "/tmp/iris-post-e1-revalidation",
+        "exit_code": 0,
+        "finished_at": "2026-10-02T20:50:55.625252+00:00",
+        "log": "diff-check.log",
+        "log_pin": {
+          "bytes": 0,
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "name": "diff-check",
+        "started_at": "2026-10-02T20:50:55.622326+00:00",
+        "totals": {}
+      }
+    ],
+    "scope": "Only candidate repository fixtures. Initial pilot001 filename subset passed 42 tests and is supplemental, not the governing 99-test proof. Full agent-transition suite independently passed 99; full repository passed 178. Fixture metric tests are not holdout scoring."
+  },
+  "replacement_e1": {
+    "case_count": 40,
+    "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "identity_verification": "Commit/tree/parent/ref directly verified. Population digest is the immutable manifest declaration and published E1/STRATA certification; not recomputed from case shards.",
+    "population_sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+    "receipts": [
+      5960787153,
+      5960789202
+    ],
+    "ref": "refs/heads/evidence/iris-pilot001-replacement-e1-v0-4-08e89d578d95",
+    "round": 4,
+    "sole_parent": "93057f2bb820d09531fbe7d09476a67108add5ae",
+    "tree": "fe0264a8fa5d0bc5ac7ee1dd9210f35dd97a6fc4",
+    "version": "0.4"
+  },
+  "source_delta": {
+    "before_after_inventory_equal": true,
+    "changed_paths": [],
+    "git_status_porcelain": "",
+    "proof_method": "Every tracked working-tree file hashed as opaque bytes and compared with the exact candidate Git blob before and after qualification and at freeze. Same candidate HEAD/tree; no source/test edits; no new candidate commit.",
+    "semantic_delta": 0,
+    "source_delta": 0,
+    "tracked_blobs_compared": 103
+  },
+  "successful_refreeze_claimed": false
+}
