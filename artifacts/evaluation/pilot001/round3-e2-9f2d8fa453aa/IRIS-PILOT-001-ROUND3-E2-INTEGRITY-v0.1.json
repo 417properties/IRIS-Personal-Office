@@ -1,0 +1,18 @@
+{
+  "artifact": "IRIS-PILOT-001-ROUND3-E2-INTEGRITY-v0.1.json",
+  "disposition": "IRIS_PILOT_001_ROUND3_BLIND_E2_HOLD / CONSEQUENCE_BASIS_UNDERDETERMINED",
+  "files": {
+    "IRIS-PILOT-001-ROUND3-E2-HOLD-v0.1.md": {
+      "bytes": 4771,
+      "git_blob": "b63389c556f50d53f35a1a4aa8e34bfc591e1adb",
+      "sha256": "a7cb934d57a5c895820f8f64b05918ff4c661035821164a0cb0d256f94ba34ae"
+    },
+    "IRIS-PILOT-001-ROUND3-E2-INPUT-VERIFICATION-v0.1.json": {
+      "bytes": 9733,
+      "git_blob": "096c2e5209e4c5aa46af94dd9c0336453aaae1e8",
+      "sha256": "1e6e56a9e32d180282cae687f655e170c8ea946437fe8fe6373f873b869265f3"
+    }
+  },
+  "population_digest_sha256": "770c08449df22f8206da12e22b1b0e0413cc6554bd5789caf0c0895abc2cd89c",
+  "scope": "Identities bind the other two artifacts. This manifest is bound externally by Git blob and receipt, not self-hashed."
+}

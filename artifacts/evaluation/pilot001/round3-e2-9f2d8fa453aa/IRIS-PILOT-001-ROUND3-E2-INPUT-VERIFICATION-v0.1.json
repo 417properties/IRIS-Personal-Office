@@ -1,0 +1,223 @@
+{
+  "artifact": "IRIS-PILOT-001-ROUND3-E2-INPUT-VERIFICATION-v0.1.json",
+  "blueprint": {
+    "blueprint_v0_4_blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+    "blueprint_v0_4_commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+    "blueprint_v0_4_path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+    "blueprint_v0_4_sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d",
+    "bytes": 53261,
+    "exact_path_at_pinned_commit_matches_blob_bytes": true,
+    "git_blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+    "input_schema_derived_from_sections": [
+      "8",
+      "9(definitions only, not applied)",
+      "10(anchor vocabulary only, not applied)",
+      "11(class vocabulary only, not applied)",
+      "12",
+      "13",
+      "14(definitions only, not applied)"
+    ],
+    "repository": "417properties/IRIS-Personal-Office",
+    "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d"
+  },
+  "disposition": "IRIS_PILOT_001_ROUND3_BLIND_E2_HOLD / CONSEQUENCE_BASIS_UNDERDETERMINED",
+  "e1": {
+    "case_ids_sorted": [
+      "p1e1r3_0551194418ba9074",
+      "p1e1r3_068dd9a62f5bd90b",
+      "p1e1r3_0c4ba46ea1ffecd0",
+      "p1e1r3_0eadf139cfd2a3a4",
+      "p1e1r3_1c8e63b90f0eb854",
+      "p1e1r3_1de857c1383ea7d8",
+      "p1e1r3_20c438270d159b2d",
+      "p1e1r3_213d0953784048bd",
+      "p1e1r3_24289b20d68d642b",
+      "p1e1r3_328b337b82d6626d",
+      "p1e1r3_480ea57cb270d71e",
+      "p1e1r3_506266f02de6221d",
+      "p1e1r3_5b6f26b1e2215590",
+      "p1e1r3_6bd2564f4b4f7bca",
+      "p1e1r3_6e52d0f1d084eef8",
+      "p1e1r3_8bf4d02a57aa481a",
+      "p1e1r3_91af1d0aaab95fd4",
+      "p1e1r3_9496e84ddedc25ae",
+      "p1e1r3_99a376e76d71a585",
+      "p1e1r3_9f04d0db36ff8ac4",
+      "p1e1r3_a9fb1fdd5d834144",
+      "p1e1r3_c6629efb5d780c63",
+      "p1e1r3_d187aac9d3d210a3",
+      "p1e1r3_dd8f125d6e20da2d",
+      "p1e1r3_e56cc11b2c49e60f",
+      "p1e1r3_e8dbf824e6fc0b08",
+      "p1e1r3_ed2cd5a2bd6ef960",
+      "p1e1r3_f25505719f9f24ba",
+      "p1e1r3_f803e8265d5035fc",
+      "p1e1r3_fd3bf643234769f5"
+    ],
+    "count": 30,
+    "duplicate_ids": [],
+    "extra_ids": [],
+    "file_identities": {
+      "IRIS-PILOT-001-ADJUDICATION-PROTOCOL-v0.3.md": {
+        "bytes": 4922,
+        "git_blob": "2bdb739cfdd4addc4456ef64b595bb5dc20bba9e",
+        "sha256": "01908a0f0a1a5ff9a8a2e8e837092a22d14be9fc68aa33379b20676139c993b7"
+      },
+      "IRIS-PILOT-001-CASE-INPUT-MANIFEST-v0.3.json": {
+        "bytes": 331370,
+        "git_blob": "81f8b7e3e9ac44c1f23c2a53fe15634367364b2a",
+        "sha256": "42e40d67dc543cd394f862ef20a43c7460dc13c8780ab4fc78b2906b025bb0fb"
+      },
+      "IRIS-PILOT-001-CASE-POPULATION-IDENTITY-v0.3.json": {
+        "bytes": 2361,
+        "git_blob": "4033e030238252d1fa35d3197c71fc5174aff72f",
+        "sha256": "b233fe70e841edebb6ce2890215e2b992f0d4c3f1cd461d9910dffe392fd77d4"
+      },
+      "IRIS-PILOT-001-E1-INTEGRITY-CHECK-v0.3.py": {
+        "bytes": 4133,
+        "git_blob": "2ea9a99e222075bd77713138a552e25aa219e084",
+        "sha256": "a51689ceaeedcd090bd6692c02df1710d3125e56a597e315b25200dcc65f4d4c"
+      },
+      "IRIS-PILOT-001-E1-INTEGRITY-MANIFEST-v0.3.json": {
+        "bytes": 2849,
+        "git_blob": "fada7acaa490d96b1620daae8af1424054cd9eb1",
+        "sha256": "2cb9f29cd94702b6e044164f05d4982fcacf844c425405fd700645d5a9f4f6bb"
+      },
+      "IRIS-PILOT-001-PREBUILDER-INDEPENDENCE-CERTIFICATION-v0.3.json": {
+        "bytes": 6269,
+        "git_blob": "c0965a1332387b4b0e3c736862415ccda5d2a5d7",
+        "sha256": "45ac22d065d7a6d682dcc4ecaba1a659e4eb452a327657c3e9b1ac7f748a1164"
+      }
+    },
+    "head": "6346fbb5b35986ce86a2c1848a6dd7646897aa7b",
+    "missing_ids": [],
+    "population_digest_sha256": "770c08449df22f8206da12e22b1b0e0413cc6554bd5789caf0c0895abc2cd89c",
+    "prohibited_answer_label_fields": [],
+    "recursive_tree_truncated": false,
+    "ref": "refs/heads/evidence/iris-pilot001-post-fail-e1-population-v0-3-nD3udfQPYZA",
+    "sole_parent": "cf77917a4653dabe378cc780548db759afbb2b09",
+    "tree": "0163968080ce86495ec147ffcbf2ce7531513077",
+    "tree_git_identity_recomputed": true,
+    "unique_ids": 30
+  },
+  "evaluator_session": "9f2d8fa453aa",
+  "observed_at_utc": "2026-10-02T19:35:25.611496+00:00",
+  "release": {
+    "body_sha256": "513cefd7636b9c8dd8c59a12ca9be1e156268cdaad7ae88873ffcad19c0f7f86",
+    "created_at": "2026-10-02T18:27:11Z",
+    "url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5958734842"
+  },
+  "repository": "417properties/IRIS-Personal-Office",
+  "review": {
+    "candidate_derived_signals_consumed": 0,
+    "candidate_executions": 0,
+    "candidate_scoring_runs": 0,
+    "frozen_case_records_reviewed": 30,
+    "governing_label_artifacts_published": 0,
+    "governing_labels_completed": false,
+    "history_streams_read": 0,
+    "metric_denominators_frozen": false,
+    "old_answer_labels_consumed": 0,
+    "provider_accesses": 0
+  },
+  "single_blocker": {
+    "case_id": "p1e1r3_0551194418ba9074",
+    "code": "CONSEQUENCE_BASIS_UNDERDETERMINED",
+    "decision_rows": [
+      {
+        "created_at": "2026-09-17T00:00:00Z",
+        "decision_class": "ROUTINE_OPERATION",
+        "decision_maker_identity_id": "AARON",
+        "decision_requirement_id": "decision_requirement:4f0b9cb105ed",
+        "objective_id": "objective:268bde8f80f7",
+        "obligation_id": "obligation:2fbd54c5f440",
+        "principal_id": "AARON",
+        "reserved_authority_class": null,
+        "resolved_at": null,
+        "source_refs": [
+          {
+            "captured_at": "2026-09-30T02:00:00Z",
+            "content_sha256": "9a8e11868900c142c9729cb87f04adbcf27ff1cd13b851f1e9e7e8efda169017",
+            "fixture_note": "SYNTHETIC_FIXTURE - not real Aaron data; deterministic test bytes only",
+            "locator": "synthetic://iris_canonical/p1e1r3_0551194418ba9074/decision_requirement/0",
+            "source_class": "DECISION_REQUIREMENT",
+            "source_system": "iris_canonical"
+          }
+        ],
+        "status": "OPEN",
+        "version": 1
+      },
+      {
+        "created_at": "2026-09-17T00:00:00Z",
+        "decision_class": "ROUTINE_OPERATION",
+        "decision_maker_identity_id": "AARON",
+        "decision_requirement_id": "decision_requirement:19e41fc367c4",
+        "objective_id": "objective:1d628caf1eb5",
+        "obligation_id": "obligation:b6671b404b01",
+        "principal_id": "AARON",
+        "reserved_authority_class": null,
+        "resolved_at": null,
+        "source_refs": [
+          {
+            "captured_at": "2026-09-30T02:00:00Z",
+            "content_sha256": "2eb163e1cb2db56b4328a3db78249231622052626d3805f197e82f39924a277c",
+            "fixture_note": "SYNTHETIC_FIXTURE - not real Aaron data; deterministic test bytes only",
+            "locator": "synthetic://iris_canonical/p1e1r3_0551194418ba9074/decision_requirement/2",
+            "source_class": "DECISION_REQUIREMENT",
+            "source_system": "iris_canonical"
+          }
+        ],
+        "status": "OPEN",
+        "version": 1
+      }
+    ],
+    "domain": "legal",
+    "effect_on_completion": "Cannot freeze exact governing consequence weights and consequence-weighted required-intervention denominator without an unsupported assumption. No provisional labels or weights are promoted.",
+    "governance_rows": [
+      {
+        "applicability_state": "APPLICABLE",
+        "authority_holder_identity_id": null,
+        "decision_maker_identity_id": "AARON",
+        "escalation_target_identity_id": null,
+        "obligation_id": "obligation:2fbd54c5f440",
+        "owner_identity_id": "AARON",
+        "reserved_authority_class": null,
+        "source_refs": [
+          {
+            "captured_at": "2026-09-30T02:00:00Z",
+            "content_sha256": "91c2095378c8cb97faf019927ef5ff75662620f3ec6b3e68f0ffd729bd530c1c",
+            "fixture_note": "SYNTHETIC_FIXTURE - not real Aaron data; deterministic test bytes only",
+            "locator": "synthetic://iris_canonical/p1e1r3_0551194418ba9074/obligation_governance/0",
+            "source_class": "OBLIGATION_GOVERNANCE",
+            "source_system": "iris_canonical"
+          }
+        ],
+        "updated_at": "2026-09-21T00:00:00Z",
+        "version": 1
+      },
+      {
+        "applicability_state": "APPLICABLE",
+        "authority_holder_identity_id": null,
+        "decision_maker_identity_id": "AARON",
+        "escalation_target_identity_id": null,
+        "obligation_id": "obligation:b6671b404b01",
+        "owner_identity_id": "AARON",
+        "reserved_authority_class": null,
+        "source_refs": [
+          {
+            "captured_at": "2026-09-30T02:00:00Z",
+            "content_sha256": "553656d71e5c052c167e8d0443cccf5b6bf44d7c581fcee0b1c6a84988b84aa6",
+            "fixture_note": "SYNTHETIC_FIXTURE - not real Aaron data; deterministic test bytes only",
+            "locator": "synthetic://iris_canonical/p1e1r3_0551194418ba9074/obligation_governance/1",
+            "source_class": "OBLIGATION_GOVERNANCE",
+            "source_system": "iris_canonical"
+          }
+        ],
+        "updated_at": "2026-09-21T00:00:00Z",
+        "version": 1
+      }
+    ],
+    "missing_fact": "Candidate-free consequence basis for the two OPEN AARON ROUTINE_OPERATION decisions: what is the decision and is its consequence routine bounded reversible, material, reserved/material escalation, or legal/financial/safety/irreversible? Alternatively, a canonical rule resolving whether domain=legal alone governs C4 despite decision_class=ROUTINE_OPERATION. Neither source describes the decision consequences or supplies that precedence rule.",
+    "source_json_pointer": "/cases/5"
+  }
+}
