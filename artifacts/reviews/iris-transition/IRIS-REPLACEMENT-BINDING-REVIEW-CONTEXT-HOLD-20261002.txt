@@ -1,0 +1,29 @@
+IRIS_PILOT_001_REPLACEMENT_E1_EXECUTION_BINDING_INDEPENDENT_ACCEPTANCE_HOLD / REVIEW_CONTEXT_CONTAMINATED_BY_CANDIDATE_TEST_EXPECTATIONS
+
+Reviewer runtime: /root/iris_binding_clean_replacement
+Sole starting authority: https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5962959197
+
+REPLACEMENT_E1_EXECUTION_BINDING_REVIEW_STARTING_CONTEXT_CHECK = PASS
+
+Admission was recorded before review targets or source were retrieved. Starting context contained no E2 answers/aggregates, expected interventions/reference classifications, candidate outputs/predictions, E3 results, or score-derived configuration.
+
+Authority retrieval used issue-comment structured-response filtering to exact ID 5962959197. No surrounding issue history was emitted. No shared workspace or prior-agent files were inspected.
+
+The exact binding and Builder packet were retrieved through immutable commit/path file fetches. Returned blob identities matched the expected binding blob 40b05a3b98ee4a25345310c0dcf89521c43a40c5 and Builder packet blob 8cc34a5e199de92d34baf1b78853ffe269fd96db. Full byte/hash/tree/parent verification was not completed.
+
+During Git provenance retrieval, github_fetch_commit returned a normalized nested commit object containing file patches. A purported metadata-only emission included that nested object. The resulting output exposed candidate test expectations from commit 185dbd1be80bd54c6cf5dcc085f105a637fe7e44, including expected intervention outputs. This exceeded the permitted candidate source/API/interface input boundary and compromised independent review context.
+
+The reviewer stopped immediately upon recognizing the exposure. This runtime is retired from independent exact-binding acceptance. No PASS or substantive binding defect is asserted. The exact binding remains unaccepted by this review.
+
+No candidate cases were executed; no candidate outputs were generated; no scoring was performed; no implementation, repair, source mutation, merge, deployment, provider access, continuity change, or authority expansion occurred.
+
+Mechanical publication assistance is requested solely to publish these exact sealed bytes as immutable evidence and exact readback receipts to IRIS Issue #3 and BIG-Navigator #703. The orchestrator must not alter reviewer judgment.
+
+Any subsequent fresh reviewer must avoid emitting whole normalized commit objects: their nested diff/files fields may contain prohibited candidate test expectations. Git identity retrieval must strictly project individually permitted identity fields before any model-visible emission.
+
+Preserve:
+REPLACEMENT_E1_FROZEN / POST_REPLACEMENT_E1_CANDIDATE_REFREEZE_CLOSED / REPLACEMENT_E1_BLIND_E2_CLOSED / IRIS_NOT_OPERATIONALLY_PROMOTED / CONTINUITY_DEFAULT_OFF / ZERO_AUTHORITY / NO_PRODUCTION / NO_IRIS_CONTINUITY_ADMISSION / BIG_ACTIVATION_NOT_AUTHORIZED
+
+SOURCE_EVIDENCE_GOVERNS_ON_CONFLICT / DELTA_RECONCILIATION_NOT_ERASURE
+
+STOP.
