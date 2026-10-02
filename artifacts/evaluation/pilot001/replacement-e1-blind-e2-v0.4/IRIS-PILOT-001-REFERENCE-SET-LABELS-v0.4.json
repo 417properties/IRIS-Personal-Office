@@ -1,0 +1,2452 @@
+{
+  "adjudication_certification": {
+    "blind_to_candidate_source_tests_outputs_reviews_scores": true,
+    "candidate_executed": false,
+    "candidate_outputs_created": false,
+    "e1_protocol_candidate_modified": false,
+    "e3_scoring_performed": false,
+    "governing_labels_created_from": [
+      "replacement-E1 case inputs",
+      "frozen protocol v0.4",
+      "Blueprint v0.4 sections 8-17.1"
+    ]
+  },
+  "alignment": {
+    "adjudicated_case_count": 40,
+    "duplicate_case_ids": [],
+    "expected_case_count": 40,
+    "extra_case_ids": [],
+    "missing_case_ids": [],
+    "result": "EXACT_40_CASE_ALIGNMENT_PASS"
+  },
+  "artifact": "IRIS-PILOT-001-REPLACEMENT-E1-REFERENCE-SET-LABELS-v0.4",
+  "blueprint_binding": {
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+    "controlling_sections": "8-17.1",
+    "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md"
+  },
+  "cases": [
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_121fb1ae4a68464fb6dedd38468a39da",
+      "completeness_state": "INCOMPLETE_COVERAGE",
+      "coverage_reasons": [
+        "qualified_big_packets:KNOWN_MISSING_STALE_INACCESSIBLE_OR_INSUFFICIENT"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:811629e8a73c479c828c9d877603afd9"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:c06382b30e924820a759e41303c711af",
+            "obligation:bc26e3701ce546eaaa5f62ba3711d4b0"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:0dcec8c72d2b44c58ddedc3d4daa6102",
+            "impact_packet:cd21bbde8b2c41a09b8e14236dc93c3f"
+          ],
+          "intervention_id": "arq_e035cc1c04581dc154f66fc550422690c4018a7bd44930cc611e794e0217c912",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:d6e2964485da4a97a05164bba4c3d9a1"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:811629e8a73c479c828c9d877603afd9",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:bc26e3701ce546eaaa5f62ba3711d4b0",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_13f14125911f4e4fafe0e128438a33ae",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:b44162760d7f4d7983cf2c3a509f5265"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:87601618b2e1415889d15b36cbf12242",
+            "objective:d41226720b3549e29f4eacce27b32f41",
+            "obligation:b44162760d7f4d7983cf2c3a509f5265"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:858b2dde567e4e8da0c3e0247558a699",
+            "impact_packet:a0079e397ab4461e94d2b8fc6dbf6943",
+            "impact_packet:f03a5b13f41741198dd5860f4a2caaa5"
+          ],
+          "intervention_id": "arq_63a63a1f43a16d11bfe17d6f9086164c6ed1773590298bb5e6dd531f06debb0b",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:967365e71b1c4848a8844c91e1139e4b"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:87601618b2e1415889d15b36cbf12242",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:b44162760d7f4d7983cf2c3a509f5265",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:02a2af86929a4d89af327e0338ac4dfd",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_1720ad8063854fcd9cb5388db87d982d",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:a239bad60441470f861e7916c7227657"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:5304c81075b94529b3da9f2e81083444",
+            "objective:f7acea9f560844f3a30b4d76881a1a71",
+            "obligation:a239bad60441470f861e7916c7227657"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:55e0074e041a472f84a6a85be0e0bd70",
+            "impact_packet:5e9656895ad84f4cbc3770a83d83d7bb",
+            "impact_packet:6a62a781eb7943e2b6343e4016d86531"
+          ],
+          "intervention_id": "arq_056208a1071e92c3d4009f1452304920564f3bcb680afe12c0dd975fa2cb722a",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:487453929ded44cdacf7505314d8002d"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:5304c81075b94529b3da9f2e81083444",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:a239bad60441470f861e7916c7227657",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_2746198707b748999b539d1723fd84a2",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:3090e728e7ac401b9cf202e888387506"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:f2239db242724bada10fd6c5d1a29dff",
+            "objective:6f560bd25151494897ae08c7616f10ea",
+            "obligation:3090e728e7ac401b9cf202e888387506"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:46b79fcaa61943c99eff0f1933737d27",
+            "impact_packet:8daf97bca73948319f70a7ece6347aa4",
+            "impact_packet:cae39869325241698de956a9459087be"
+          ],
+          "intervention_id": "arq_dde3958fb941c55e397849dd72fc6715d1459c9f5ab5bfe41aad04b21570ac02",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:2c089574d7244a019f26cadb67d7d3f0"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:f2239db242724bada10fd6c5d1a29dff",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:3090e728e7ac401b9cf202e888387506",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:19453432d95e4006b1df090edffaf19c",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [
+        {
+          "reason": "AARON_RELEVANCE_UNKNOWN",
+          "record_ref": "decision_requirement:d88d6b9696ff447f8592e64eec3bb725"
+        },
+        {
+          "reason": "AARON_RELEVANCE_UNKNOWN_APPLICABILITY",
+          "record_ref": "obligation:3a2c46613df543cc921ca5a1630832ea"
+        }
+      ],
+      "case_id": "p1e1r4_2b75131e44224cd98957c79b899fb168",
+      "completeness_state": "UNKNOWN_COVERAGE",
+      "coverage_reasons": [
+        "LOAD_BEARING_AARON_RELEVANCE_UNKNOWN",
+        "LOAD_BEARING_APPLICABILITY_UNKNOWN"
+      ],
+      "justified_omissions": [],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:d88d6b9696ff447f8592e64eec3bb725",
+          "disposition": "AARON_RELEVANCE_UNKNOWN"
+        },
+        {
+          "candidate_ref": "obligation:3a2c46613df543cc921ca5a1630832ea",
+          "disposition": "AARON_RELEVANCE_UNKNOWN"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_2e5f0efaa1c54ab3b9121139cc69c1f3",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:402db57937ad4c5a8f57337975045fe6"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:cada6a79a0744c30b6330dc58310a8fb",
+            "objective:136b17d827424164875a0c909ca679d6",
+            "obligation:402db57937ad4c5a8f57337975045fe6"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:4f3e5fc71afd48daa834624464f8a0c7",
+            "impact_packet:956e9308f40d4fc187aae1792cd338e0",
+            "impact_packet:b10e42b1fde6445cbb2f6d33fa479a09"
+          ],
+          "intervention_id": "arq_14504e4a05730f5b36182e05eb40b46a6b7add0c31448d8111a3f66bfb48015a",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:2733993ef31d492091b845c01a01982d"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:cada6a79a0744c30b6330dc58310a8fb",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:402db57937ad4c5a8f57337975045fe6",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+      "completeness_state": "UNKNOWN_COVERAGE",
+      "coverage_reasons": [
+        "authority_state:UNKNOWN"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:f0006f0892854e89b9b30091c8c65487"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:02f70911008b402b96ecd184e5786ac1",
+            "objective:66a062f104a24466a0c2e4d8510cf87f",
+            "obligation:f0006f0892854e89b9b30091c8c65487"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:18fe7d6796984244a244255a53e30fdb",
+            "impact_packet:27893eecb4174e63b0df27d994a25c3a",
+            "impact_packet:f91a72179ed24740a919d6983c2345e7"
+          ],
+          "intervention_id": "arq_cb5d2a88ff378c61cc9c7f0c655607cead547bc0c88c43fc99671a0789cd9403",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:e16907017aa94c8782ced752e7a476c7"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:02f70911008b402b96ecd184e5786ac1",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:f0006f0892854e89b9b30091c8c65487",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:b38adc5c340a4a5baec5c9a8395c30b1",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_3592698cabc744789906162b61657890",
+      "completeness_state": "CONFLICTED_COVERAGE",
+      "coverage_reasons": [
+        "MATERIAL_INCOMPATIBLE_CURRENT_STATE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:de5f53050f0c4d3ab3aff1ed4cbad582"
+        },
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:b3c3c67639594094abc930cc450fd274"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "conflict:conf_32d577e3d7fe6b73b5280fb298d8abae5b9abdb2f1afbdb8580d90716975473d",
+            "objective:083dabaa11c34e499a492c2381aef180",
+            "obligation:b3c3c67639594094abc930cc450fd274"
+          ],
+          "ar_classes": [
+            "AR-4"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:01e831d227a14e748ff1eb6e014432ca",
+            "impact_packet:54f33193b4d74ae7a6c4ba622940b9aa"
+          ],
+          "intervention_id": "arq_093cdf10023ab3beb8bf0efce412ba21665205a3307becf222a0a1ed7d6f7d03",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:206ba7d8da4e41e08b91b4942565c2ae"
+          ],
+          "resolution_kind": "RESOLVE_CONFLICT",
+          "why_aaron_is_required": "Incompatible exclusive instructions require Aaron judgment"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "conflict:conf_32d577e3d7fe6b73b5280fb298d8abae5b9abdb2f1afbdb8580d90716975473d",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "decision_requirement:de5f53050f0c4d3ab3aff1ed4cbad582",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:b3c3c67639594094abc930cc450fd274",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": [
+        {
+          "conflict_class": "INCOMPATIBLE_CURRENT_STATE",
+          "conflict_id": "conf_32d577e3d7fe6b73b5280fb298d8abae5b9abdb2f1afbdb8580d90716975473d",
+          "disposition": "CONFLICT_REQUIRES_REVIEW",
+          "source_anchor_refs": [
+            "instruction:209593c8008649b28329b14e62766d68",
+            "instruction:bf7abddd95bd48fcad6e6d742213599d",
+            "objective:083dabaa11c34e499a492c2381aef180",
+            "obligation:b3c3c67639594094abc930cc450fd274"
+          ]
+        }
+      ]
+    },
+    {
+      "aaron_relevance_unknown": [
+        {
+          "reason": "AARON_RELEVANCE_UNKNOWN",
+          "record_ref": "decision_requirement:857eacf570d843b4ad8b6554393e7047"
+        },
+        {
+          "reason": "AARON_RELEVANCE_UNKNOWN_OWNER",
+          "record_ref": "obligation:70a1a2f10e7945399240b0e73aed9972"
+        }
+      ],
+      "case_id": "p1e1r4_40cad8d6ee7440a5bd0fe22d674f9db7",
+      "completeness_state": "UNKNOWN_COVERAGE",
+      "coverage_reasons": [
+        "LOAD_BEARING_AARON_RELEVANCE_UNKNOWN",
+        "LOAD_BEARING_OWNER_UNKNOWN"
+      ],
+      "justified_omissions": [],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:857eacf570d843b4ad8b6554393e7047",
+          "disposition": "AARON_RELEVANCE_UNKNOWN"
+        },
+        {
+          "candidate_ref": "obligation:70a1a2f10e7945399240b0e73aed9972",
+          "disposition": "AARON_RELEVANCE_UNKNOWN"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_42df16ee5c5f4b68825c2fa2437c73eb",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:ca009ae6666449fc9b67c112443a51f2"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:78297d83ca7b48838c02f2bd05656321",
+            "objective:5a8a56028bac4f52959b421e59e39b95",
+            "obligation:ca009ae6666449fc9b67c112443a51f2"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C2",
+          "consequence_predicates": [
+            "P2_DELAY_PRIVACY_OR_COORDINATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 4,
+          "impact_packet_refs": [
+            "impact_packet:0d7eb75bb2df4fb58817cef5b5046bc7",
+            "impact_packet:33a13705fec840b89270a70536d65bdf",
+            "impact_packet:d69bbd7570fd4768b71cfa180c7be9f7"
+          ],
+          "intervention_id": "arq_a1b37e82c75ca725dcb8eee291f31f94a66d0e4f188ec2756d88cbaebb6d15f7",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:7a56fc6a9de34c1c961f7b0ed73f659e"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:78297d83ca7b48838c02f2bd05656321",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:ca009ae6666449fc9b67c112443a51f2",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_4723163be86740adaeb6f0d98bb562f8",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:f0f63cd26fa94b33a09a7c4ac5f9a397"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:019b5555d5e04d5a91a3bcdcc0fb36cf",
+            "obligation:b004ea3417d4412abb7842a96d38e381"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:100cbcffd7f641a7af2bc88ad230b3e5",
+            "impact_packet:987823d9b64d45b296d008adc06cc660"
+          ],
+          "intervention_id": "arq_2191efd2ea45f88e1c81e7807acbd6d842f19f12262e00192bf1bcff39a4f944",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:abff4e96a16a4e79a0c06f2499eaac33"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        },
+        {
+          "anchor_refs": [
+            "objective:019b5555d5e04d5a91a3bcdcc0fb36cf",
+            "obligation:7a2612320b994843937ce6e16a487b08"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:987823d9b64d45b296d008adc06cc660",
+            "impact_packet:e9794be81a314de18dd6afddb7a9e1d2"
+          ],
+          "intervention_id": "arq_522b3a7f9de122b982412ea920bef55f97f8a60213c39920adac8e494b829bd4",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:abff4e96a16a4e79a0c06f2499eaac33"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:f0f63cd26fa94b33a09a7c4ac5f9a397",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:7a2612320b994843937ce6e16a487b08",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:b004ea3417d4412abb7842a96d38e381",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_593111b7f3bb4e32bd0a6456bba2942a",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:7b8e7776e67b4abbaa70f3608719e6fc"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:6cdc3edd5e8e487584bca6d058d96070",
+            "objective:15a0a24aaa964258853f82f44c1c09ba",
+            "obligation:7b8e7776e67b4abbaa70f3608719e6fc"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:048d67529be04d82941f99513c15b456",
+            "impact_packet:98d7f2dd21d24d5eabfaa9e2a2dd8576",
+            "impact_packet:c4a4574732984e0686a520cf8a1962f0"
+          ],
+          "intervention_id": "arq_a279a4f7e1b5e87621cd31b5fc342f019f9c57370b528f25719347dec0d5b202",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:1f38739093bc4c99994d876e0dcfd2cf"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:6cdc3edd5e8e487584bca6d058d96070",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:7b8e7776e67b4abbaa70f3608719e6fc",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:8cc0fbb926504c90800dedec2327fe39",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_6f43027d04774acda0ac9dd58bc2f4af",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:293ea3c456b0465fab1063a03c44d034"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:9c36f9322de04539953253112779e975",
+            "obligation:a600a4ce5ccf443bae4e9c3434cf0968"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:409907286b2d4593bb07a90821f0d1f2",
+            "impact_packet:ebaff855650a4982b7673e859d71b393"
+          ],
+          "intervention_id": "arq_84f209562a00411abbc51c66e975888491ae6f833498599b881328fac25a4bc3",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:128291e6c8ef4b0382a4fc5f841ecc55"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        },
+        {
+          "anchor_refs": [
+            "intent:d250c2cf94104b61abafbfffcbb842fe",
+            "objective:9c36f9322de04539953253112779e975",
+            "obligation:a600a4ce5ccf443bae4e9c3434cf0968"
+          ],
+          "ar_classes": [
+            "AR-4"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:14bc694f51f34ddd9f8961e8dd0eb354",
+            "impact_packet:409907286b2d4593bb07a90821f0d1f2",
+            "impact_packet:ebaff855650a4982b7673e859d71b393"
+          ],
+          "intervention_id": "arq_4e39ff803e9cafad36c47d292ecb4db00966b3e291c71751470b86927d13025b",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:128291e6c8ef4b0382a4fc5f841ecc55"
+          ],
+          "resolution_kind": "RECONCILE_EFFECT",
+          "why_aaron_is_required": "Consequential intent effect remains unresolved"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:293ea3c456b0465fab1063a03c44d034",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "intent:d250c2cf94104b61abafbfffcbb842fe",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:a600a4ce5ccf443bae4e9c3434cf0968",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_74f2cf49960f40bfa3823273642a9ba7",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:015fc643a75841eda43f5afb57ca93bf"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:8b2582ae02c94705a0f3ab3290239097",
+            "objective:35f09ac68a034a6fa10fc4e4821bd670",
+            "obligation:015fc643a75841eda43f5afb57ca93bf"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C2",
+          "consequence_predicates": [
+            "P2_DELAY_PRIVACY_OR_COORDINATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 4,
+          "impact_packet_refs": [
+            "impact_packet:7db02af8aac1447da49319dea43dc37e",
+            "impact_packet:9b0759a3bf1e4ab38052083da637f06a",
+            "impact_packet:fc4c6698184f4c0ba11c0e47ff77b2ee"
+          ],
+          "intervention_id": "arq_2fa9b508732c8ce2899fb209c53010d3bca79539845f765889e52b8ae516ecc2",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:9c790db3d1004a38a8087b59bea41d0a"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:8b2582ae02c94705a0f3ab3290239097",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:015fc643a75841eda43f5afb57ca93bf",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_7dcf3c720886405b8a462f3585e9a6b9",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:954838a57f4648d4a03eaff65a1ecad9"
+        },
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:26a2a9fb563d48a1b7fa0dd079b24e82"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:954838a57f4648d4a03eaff65a1ecad9",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:26a2a9fb563d48a1b7fa0dd079b24e82",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:1bbcc81fc8804cdc9dff2125e1a5424f"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:0a9cb6c1b78a4910aa3d5e21fa960f51",
+            "obligation:9902f0b12e9c4b20873e6e809e27d179"
+          ],
+          "ar_classes": [
+            "AR-2",
+            "AR-4"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:499c8e2d5deb44bba8a74e13e323b513",
+            "impact_packet:fd07cb2fed4647a09a925ccc71c6242d"
+          ],
+          "intervention_id": "arq_1cfd2348366f697ad86d3d9dbd7ca7cd2694b9065034f49d8988a828e2eb013c",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:e6430d9e07374cfdbfa0fdc9dd740216"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action is materially blocked pending Aaron judgment"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:1bbcc81fc8804cdc9dff2125e1a5424f",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:9902f0b12e9c4b20873e6e809e27d179",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_83ad2c1f30a744de8c624da6057e13fd",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:2c78e1b435624c0ca32d0952b22ca225"
+        },
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:69b58fdf62e3412b8da6f70c69da3557"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:2c78e1b435624c0ca32d0952b22ca225",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:69b58fdf62e3412b8da6f70c69da3557",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_8625d48d6c914acf9c695e861070ff4e",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:4377c968121c4b38b8924c898c52f44c"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:4e31a68ac793405191bbc94d56937b25",
+            "obligation:1e610e529e0b4408a194ada00461180a"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:536c25cc74d2414da3c208878ec8470a",
+            "impact_packet:d5574ac639a5491ab942c1f92f0fd297"
+          ],
+          "intervention_id": "arq_6ae1024e211dd8cdcc131e52a0329c897a6878a38ece2a24fd4acc8bffdcfde2",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:6b2562ed66c6456592dd376900e2752b"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "RERUN_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:4377c968121c4b38b8924c898c52f44c",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:1e610e529e0b4408a194ada00461180a",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_88e1157e7c7c4fa3b401bc31a17a4535",
+      "completeness_state": "UNKNOWN_COVERAGE",
+      "coverage_reasons": [
+        "qualified_big_packets:UNKNOWN"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:32928b15f0524c8891594ef276e00557"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:95c1e97f49024e24946c596395e1f17f",
+            "obligation:d7e602c36b754c44bc5c84fd197a8ac1"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:1f78783bd08a48baad8600859b554f99",
+            "impact_packet:eb68e33e672f4e4480ddeec406871a6d"
+          ],
+          "intervention_id": "arq_09a107538e87c87497b6c8505a4749f32ac3ac12452fa92e0e850337eea67368",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:d416a62b6efb44588fb912961d836913"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:32928b15f0524c8891594ef276e00557",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:d7e602c36b754c44bc5c84fd197a8ac1",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_95581400e36945daa8b5f0beca122ada",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:c63fadbefae5401fb01805d67f0b0e34"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:cf98532dbbff45cb8ecc5af7226b0cbc",
+            "objective:34e00cdba98641b3be6dde09de326ddd",
+            "obligation:c63fadbefae5401fb01805d67f0b0e34"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C4",
+          "consequence_predicates": [
+            "P4_LEGAL_FINANCIAL_SAFETY_OR_IRREVERSIBLE",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 64,
+          "impact_packet_refs": [
+            "impact_packet:20101ee4d0244e6499f07e7740e64ae3",
+            "impact_packet:5041f3095db24ea5bc4d3e3c00b3639c",
+            "impact_packet:932b1e777c92464e9a62240aff9a34ab"
+          ],
+          "intervention_id": "arq_6ec1201c4413e0149985ef094671debe6baf6a3ef9a127264e6962b6ca06cf6e",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:b52fb6e92dad48d08669ba9db0f28ca0"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:cf98532dbbff45cb8ecc5af7226b0cbc",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:c63fadbefae5401fb01805d67f0b0e34",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_9f4b83c6c71644fd88451639fdf88db8",
+      "completeness_state": "INCOMPLETE_COVERAGE",
+      "coverage_reasons": [
+        "qualified_big_packets:KNOWN_MISSING_STALE_INACCESSIBLE_OR_INSUFFICIENT"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:7c15000a192c41118f9d2c7308841846"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:bdeed84b93c94cdeb79b3baeaed5ad5d",
+            "obligation:9cbe805095ae47ce8244275f70975988"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:982490421ead4864b1166bf3dff6c1fb",
+            "impact_packet:9c04522dc311464f911b34774f9c7b70"
+          ],
+          "intervention_id": "arq_09b78ff4e4293e4edce70aadff65d7139899d2453fe9103ab0920873893698a3",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:8bf61dc378624c13b796a49d31be91a3"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:7c15000a192c41118f9d2c7308841846",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:9cbe805095ae47ce8244275f70975988",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_a09424d46ca04ea3955094402e78966a",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:884613f4c1cc47ca8d1e8ccdb28ecafc"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:74ebdb6b6c7e4c929050ba7da797116e",
+            "objective:322d818c291a4f158925f812280e6069",
+            "obligation:884613f4c1cc47ca8d1e8ccdb28ecafc"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:26e1d75b26b24e3f95214f1f076a332d",
+            "impact_packet:4f92e8cc887740249b2b03dd676e88b6",
+            "impact_packet:c607e5fc5b3042fb867a6b18d5cce767"
+          ],
+          "intervention_id": "arq_5b9092e539214a9695297a3fa8c97f2c0ae68d0b5b1b1457f428114d78115293",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:9dfb3f5694924c8f86955f852f2a6002"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:74ebdb6b6c7e4c929050ba7da797116e",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:884613f4c1cc47ca8d1e8ccdb28ecafc",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:539b250eda264c46b37263151835c3c1",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_a515b5de91da4708b8a14da07664b37a",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:2986c37c3faf46fa954e6656b09bcfad"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:c2a07974b18e4ebf81e3f55330fe2940",
+            "obligation:fba3a66ead3e46e793f5348fa38b1f7b"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:4140aa25765346148de415d16c80c014",
+            "impact_packet:9f2a5581c64a4ead9c82976b192e9b77"
+          ],
+          "intervention_id": "arq_62e9ce4fda3f492f0d83540e57cb0e3906366e2e1679e486caa301dedf4ca846",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:c338539bafba4e4cbd4549a5a146a4af"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "RERUN_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:2986c37c3faf46fa954e6656b09bcfad",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:fba3a66ead3e46e793f5348fa38b1f7b",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
+      "completeness_state": "CONFLICTED_COVERAGE",
+      "coverage_reasons": [
+        "MATERIAL_POSSIBLE_DUPLICATE_UNRESOLVED"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:6f6315b5ec0b4e78b5b1a846cb56eb4e"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:46b9bfe032724b97a46b202187d43cc6",
+            "obligation:af6abeb0cf104e19bf59b400088a90b7"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:a179d2c033a048be887d663eb136d339",
+            "impact_packet:d9b2a8d66dbc4d33b5785f31192f7f16"
+          ],
+          "intervention_id": "arq_a679bdf56d3b3ed4dbc09374fc1444ed7982b716ddaed21f8458c8b47e7a8128",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:c14d559eb106405aa3ba9b4f5d7c7596"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        },
+        {
+          "anchor_refs": [
+            "objective:46b9bfe032724b97a46b202187d43cc6",
+            "obligation:c1805592acb24fb884c9ec909d348408"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:6ef7147b15884e6193ff76c1322f0ba6",
+            "impact_packet:d9b2a8d66dbc4d33b5785f31192f7f16"
+          ],
+          "intervention_id": "arq_bf3d769d0ec43e7142dd6fcb48130e718dd37cba3b9104c5e01cffb9090b8286",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:c14d559eb106405aa3ba9b4f5d7c7596"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        },
+        {
+          "anchor_refs": [
+            "conflict:conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
+            "objective:46b9bfe032724b97a46b202187d43cc6",
+            "obligation:af6abeb0cf104e19bf59b400088a90b7",
+            "obligation:c1805592acb24fb884c9ec909d348408"
+          ],
+          "ar_classes": [
+            "AR-4"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:6ef7147b15884e6193ff76c1322f0ba6",
+            "impact_packet:a179d2c033a048be887d663eb136d339",
+            "impact_packet:d9b2a8d66dbc4d33b5785f31192f7f16"
+          ],
+          "intervention_id": "arq_396af28a5cd3a4678b9ee7dd67c622b66a8b6cfed41ce8c53166f26e917ca370",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:c14d559eb106405aa3ba9b4f5d7c7596"
+          ],
+          "resolution_kind": "RESOLVE_CONFLICT",
+          "why_aaron_is_required": "Possible duplicate cannot be consolidated without Aaron judgment"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "conflict:conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "decision_requirement:6f6315b5ec0b4e78b5b1a846cb56eb4e",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:af6abeb0cf104e19bf59b400088a90b7",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:c1805592acb24fb884c9ec909d348408",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": [
+        {
+          "conflict_class": "POSSIBLE_DUPLICATE_UNRESOLVED",
+          "conflict_id": "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
+          "disposition": "CONFLICT_REQUIRES_REVIEW",
+          "source_anchor_refs": [
+            "objective:46b9bfe032724b97a46b202187d43cc6",
+            "obligation:af6abeb0cf104e19bf59b400088a90b7",
+            "obligation:c1805592acb24fb884c9ec909d348408"
+          ]
+        }
+      ]
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_b786a178b8324097a51161f46f96b5e4",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:44140c59e7a84085ab0797ea6bef7b5d"
+        },
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:2afa2357e62a4622b571a228c54dd31f"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:44140c59e7a84085ab0797ea6bef7b5d",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:2afa2357e62a4622b571a228c54dd31f",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_be72a0a686754345ac8bc70f34ea13f6",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:71985747231d4a448e9b9b30415635dc"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:099311bfa3d8413ca9abc4c0497108f9",
+            "objective:31ca1b04930d460bad9a34f48e2be0f1",
+            "obligation:71985747231d4a448e9b9b30415635dc"
+          ],
+          "ar_classes": [
+            "AR-1",
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:160f67ee81a64316a85f90d8217e8751",
+            "impact_packet:941678a3d60a4413ac2d8714cba2159e",
+            "impact_packet:ddd7314744e74ec3a62d5bf276d5916e"
+          ],
+          "intervention_id": "arq_c74464a8edadc7e112af305a12678944a271934d22de202d729e51b83183908e",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:16394ff5b6ee4abcaa3ecdc1b5e540f2"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:099311bfa3d8413ca9abc4c0497108f9",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:71985747231d4a448e9b9b30415635dc",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:9d93ad33850b42bca99f62ff8050d7ec",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:b1085746c772450dbfa15d97da5bffa4"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [
+        {
+          "disposition": "PRIVACY_EXCLUDED",
+          "record_ref": "source_packet:b8ac8fd78e794c25b476e145f4e6006b",
+          "source_principal_id": "OTHER_PRINCIPAL"
+        }
+      ],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:f5e672d0d0bc4f5fbbdf226e7cb01fd1",
+            "obligation:25c89af99ad34d22b57b8a0eb93d3505"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:0253a9a2914440c1a7f8d41a6bcdb622",
+            "impact_packet:89b93cb936334c28a9f283b61b66a39e"
+          ],
+          "intervention_id": "arq_58c4d31a9659aa54031f6a82f3f7da1cf51dd66a3589a10c0dbf5d0485cf910a",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:939708d2923840c59bc7e6630d385903"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:b1085746c772450dbfa15d97da5bffa4",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:25c89af99ad34d22b57b8a0eb93d3505",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:5cc768fe319044498c30af2c79ee95fb"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:7a9ab0d54fe04449a1d4d91b7eca46d6",
+            "objective:41e0726ab3e844c59c977e4cbb133b6f",
+            "obligation:5cc768fe319044498c30af2c79ee95fb"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:3c7c773a95fa456e94f9f55ed28f3a3c",
+            "impact_packet:70f622d4e3f84269bef0b0cd7aa66ed7",
+            "impact_packet:7497415b0b9c49caa728b3407808f10d"
+          ],
+          "intervention_id": "arq_1a107e69ded4d04d94ac5fe44c26815d90f12e36f1595ebb46395e876a71297d",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:c79e87c5029b4be49971ba972154bc43"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:7a9ab0d54fe04449a1d4d91b7eca46d6",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:5cc768fe319044498c30af2c79ee95fb",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:9c58e8c6ff8b4357baf5352d00512931",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_ced4056d128542acaa474e6fb85df018",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:d6ff35d896264c96ae30fc3caa6220b4"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:793ca1df9f744b3b961a79f103a301cb",
+            "objective:5bb096b8c2a445568173f404c5844c22",
+            "obligation:d6ff35d896264c96ae30fc3caa6220b4"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:aa0b18f437e64934ae845d3cc13fbf9e",
+            "impact_packet:e828b4e27a6646bf8a4104ff075c0acc",
+            "impact_packet:ec4f55d4aa174381ab4d42a33e6ae946"
+          ],
+          "intervention_id": "arq_a60cf03df01616aa002056cbf38a99fa1a7c88d6ca7714c5e7b0518137db4a85",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:bea9e337bc1a4650a45014244373e215"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:793ca1df9f744b3b961a79f103a301cb",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:d6ff35d896264c96ae30fc3caa6220b4",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:c9d9bbdd255247deb2b0f43f7d5bb654",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_d2040e93b0524d66adeb59eeb580d1db",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:6f3735292b6b4ac59c4fb30ae01f1364"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:714623f8351f41cc941f76bb8d7761ba",
+            "obligation:477ddf77d897404eaa270ce97a553792"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:64aa5c384f3f41d0b74962998d95ba88",
+            "impact_packet:fc74aa41123b41d4a837ea5c8316434c"
+          ],
+          "intervention_id": "arq_fddc43d38c4f6b9b171bfd50967dc4727313254a07b0464b9132c1d7bfeeb26f",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:357d040587de4469b7c4325222770cc8"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:6f3735292b6b4ac59c4fb30ae01f1364",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:477ddf77d897404eaa270ce97a553792",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_d374c5fb7c064f98bad29f633804d4c8",
+      "completeness_state": "UNKNOWN_COVERAGE",
+      "coverage_reasons": [
+        "SECOND_SNAPSHOT_INSTABILITY"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:4fc29135fb6143f6918531fd5c6b1ece"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:68273231b42f435e86337e9d40f4df49",
+            "obligation:96315a710ff042b3a3c4a90eae2e0ce1"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:5c3af6e201fd4e98b069421e2fc91932",
+            "impact_packet:e5ad889126694e57a44b83525dd272b0"
+          ],
+          "intervention_id": "arq_15ac8a8a9a6c9580c190bf62dcd96e16cd68442656003874f891807d12b4f1ea",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:6c5419de8bf74015a4d591eafd805230"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "SECOND_INSTABILITY",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:4fc29135fb6143f6918531fd5c6b1ece",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:96315a710ff042b3a3c4a90eae2e0ce1",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_d504e20ade654857a871565f2ae65fe0",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:dd898e9bb7434de78e625db30af9827c"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:1b897e754f7e4e4c8f984c65ed47b2b4",
+            "objective:9a5032b33aac4f98a24a66fdb59dc008",
+            "obligation:dd898e9bb7434de78e625db30af9827c"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:01bba0dc932340e18eaf1a7264c285e2",
+            "impact_packet:114956c8e3094cbaaba90090af53f8e7",
+            "impact_packet:c9e077886423474bbe0cb008e7e6d1b3"
+          ],
+          "intervention_id": "arq_b05f0824e91c6b396623dbf440dfdd9c30c255e1544a8c7bbbe03f9ed230b75c",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:3054c5a8d35147cdb82b9e9226745d0a"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:1b897e754f7e4e4c8f984c65ed47b2b4",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:dd898e9bb7434de78e625db30af9827c",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:335cf98a9a864efca0c0fc22ed7c7dbe",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_dd291386b74e4b568634d20c138457ea",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:4875747fdec64917815dd8f89059b7b9"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:cd04621971e14da99a11300924adb81e",
+            "obligation:1b3146da2fac4befa199947d0e30e3d2"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:2901671779014ce3860f6f03e790fcee",
+            "impact_packet:af995a5368974bc0bd28ffbb32cf195c"
+          ],
+          "intervention_id": "arq_1a979e6a118a961cd08ec984ed2b459561d3fec14bf6c243b556862e401876bb",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:6425614ef2e04b0c8cef663ba90e8a8b"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:4875747fdec64917815dd8f89059b7b9",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:1b3146da2fac4befa199947d0e30e3d2",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_dd2cc07623df4d2eb8a9ea5a74a4bd62",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:52a78562c086405db26bc83e47db8a57"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "objective:f50b702b3b74402e949917f1ae50880a",
+            "obligation:884a557e3feb492d9532d2ec2d73f8f5"
+          ],
+          "ar_classes": [
+            "AR-2"
+          ],
+          "consequence_class": "C1",
+          "consequence_predicates": [
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 1,
+          "impact_packet_refs": [
+            "impact_packet:7837ffbf0e8c4a1a9ffcd97352ec842d",
+            "impact_packet:7dba9cb4fbdc4acebad0ed85c8336ae8"
+          ],
+          "intervention_id": "arq_bd672284d98400270796ef11ef8f71eaa444b86ddeb290e3b29f36550483c74b",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:108a8e384845401097993f6f0c8a1655"
+          ],
+          "resolution_kind": "ACT",
+          "why_aaron_is_required": "Concrete remaining Aaron-owned action"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:52a78562c086405db26bc83e47db8a57",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:884a557e3feb492d9532d2ec2d73f8f5",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_deb7781d201d4be2b56dd9351cf7fe2b",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_UNRESOLVED_AARON_DECISION",
+          "record_ref": "decision_requirement:0f89d51e001243349fcd58c87c7ad7e6"
+        },
+        {
+          "basis": "EFFECT_VERIFIED_OR_NOT_CONSEQUENTIAL",
+          "record_ref": "intent:e422660f1bf74f1d93558560bb138f5b"
+        },
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:e5273903217a4a39975598aa20e9c44f"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:0f89d51e001243349fcd58c87c7ad7e6",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "intent:e422660f1bf74f1d93558560bb138f5b",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "obligation:e5273903217a4a39975598aa20e9c44f",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_e097b565f97b4071ac145ac35c373c2b",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:f34ef17ad23c44e4862f7fde075d11f6"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:51deabbb1bf94610a0bb36d54cda385a",
+            "objective:dd8488f9dace4e498e1e601e111b31ad",
+            "obligation:f34ef17ad23c44e4862f7fde075d11f6"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C4",
+          "consequence_predicates": [
+            "P4_LEGAL_FINANCIAL_SAFETY_OR_IRREVERSIBLE",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 64,
+          "impact_packet_refs": [
+            "impact_packet:15432eedf43547dd88394732f39d491c",
+            "impact_packet:36c17c1ec5e84d7b91c49d0428f70428",
+            "impact_packet:dbae5f664a034096b2a67d7432e8a093"
+          ],
+          "intervention_id": "arq_409de899b34d15c7880b7358891c2c027154548c1a6da975d4ac7dbd106e59b4",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:6d29fc50a4a249b4b35f17bf43974972"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:51deabbb1bf94610a0bb36d54cda385a",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:f34ef17ad23c44e4862f7fde075d11f6",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_e77d2a6a825a43f7af5b42afc5a94046",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:8090fa9a014048d7ab23fd9db07daa64"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:c961454cd5ed4e5a865b88cc707c61f8",
+            "objective:a9e6dc1040c94fe7918206a2c1d89d32",
+            "obligation:8090fa9a014048d7ab23fd9db07daa64"
+          ],
+          "ar_classes": [
+            "AR-3"
+          ],
+          "consequence_class": "C3",
+          "consequence_predicates": [
+            "P3_RESERVED_EFFECT_OR_ESCALATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 16,
+          "impact_packet_refs": [
+            "impact_packet:15f16d0e1dff482d83fdada728b66760",
+            "impact_packet:5ddc1e2b4ddf4a35925360c4eed77f56",
+            "impact_packet:f1bb3e108dab4703b708ae35bc0992cf"
+          ],
+          "intervention_id": "arq_1ef707e58c3853637ee9dab4be42f4bbdfff5a78aac47020907afb31cd3abdcb",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:8d83cbcfbab544aaa3f551cdfb01932c"
+          ],
+          "resolution_kind": "AUTHORIZE",
+          "why_aaron_is_required": "Reserved permission step is bound to the same decision requirement"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:c961454cd5ed4e5a865b88cc707c61f8",
+          "disposition": "CONSOLIDATED_INTO_AUTHORIZE"
+        },
+        {
+          "candidate_ref": "obligation:8090fa9a014048d7ab23fd9db07daa64",
+          "disposition": "JUSTIFIED_OMISSION"
+        },
+        {
+          "candidate_ref": "required_next_step:e4a7140288ce4becb382f0325f96a229",
+          "disposition": "REFERENCE_INTERVENTION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_e7b44f97f31f4e3393e351889b5e08dc",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:706cdab512094ecc935353fd85ebdc78"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:fa3983f7fb344c5f9654a7d5dc82c676",
+            "objective:d1bdb6a957384fdfb2a75298c49dd1d0",
+            "obligation:706cdab512094ecc935353fd85ebdc78"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C4",
+          "consequence_predicates": [
+            "P4_LEGAL_FINANCIAL_SAFETY_OR_IRREVERSIBLE",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 64,
+          "impact_packet_refs": [
+            "impact_packet:35fb07b1714946ed817d5c3fde56151e",
+            "impact_packet:b98a47f3e27c45558d6e51672ee38136",
+            "impact_packet:cc4b9ac2f2e145c2abbc8be6d1ef2126"
+          ],
+          "intervention_id": "arq_dfd8adc0e319575e0829e74b11528fdb87392237a18f652142e635aca40738a8",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:1d550577ec9840468015b61ec67c746a"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:fa3983f7fb344c5f9654a7d5dc82c676",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:706cdab512094ecc935353fd85ebdc78",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_f85385028435417489be4037792fe886",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:cbc0af4d965e4f229f883e9753a7ded8"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:c214b0b3d2644c5cb02c20fdc3b44a37",
+            "objective:e303b440487e412eb17e595869ae5814",
+            "obligation:cbc0af4d965e4f229f883e9753a7ded8"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C2",
+          "consequence_predicates": [
+            "P2_DELAY_PRIVACY_OR_COORDINATION",
+            "P1_ROUTINE_BOUNDED_REVERSIBLE"
+          ],
+          "consequence_weight": 4,
+          "impact_packet_refs": [
+            "impact_packet:1ac39d90345d4b06b39a26327f4321fc",
+            "impact_packet:25c77292df9e4ef0a9eef1790ab1a49d",
+            "impact_packet:69eb00af4aed4691b07f8adfd16f6dde"
+          ],
+          "intervention_id": "arq_9130d0432514464b4daac8d568234b66648281e312ee54597a7159185456af14",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:4b2186d0b9ca4c9d83c201aaef64c164"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:c214b0b3d2644c5cb02c20fdc3b44a37",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:cbc0af4d965e4f229f883e9753a7ded8",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    },
+    {
+      "aaron_relevance_unknown": [],
+      "case_id": "p1e1r4_ffe412518160474496a3d21e784e4bc3",
+      "completeness_state": "COMPLETE_FOR_DECLARED_SCOPE",
+      "coverage_reasons": [
+        "ALL_REQUIRED_SURFACES_PROVEN_AND_STABLE"
+      ],
+      "justified_omissions": [
+        {
+          "basis": "NOT_OPEN_APPLICABLE_AARON_OWNED_REMAINING_ACTION",
+          "record_ref": "obligation:69003b7e3e5141a4822c5bcce117e4ee"
+        }
+      ],
+      "principal_id": "AARON",
+      "privacy_exclusions": [],
+      "reference_interventions": [
+        {
+          "anchor_refs": [
+            "decision_requirement:f2d6ea6005964be5b6b08cb14c9f6452",
+            "objective:b8c2406f6fbf4047b442da14c356b4bc",
+            "obligation:69003b7e3e5141a4822c5bcce117e4ee"
+          ],
+          "ar_classes": [
+            "AR-1"
+          ],
+          "consequence_class": "C4",
+          "consequence_predicates": [
+            "P4_LEGAL_FINANCIAL_SAFETY_OR_IRREVERSIBLE"
+          ],
+          "consequence_weight": 64,
+          "impact_packet_refs": [
+            "impact_packet:13957e8a04ba40e0a3e60aa32429d298",
+            "impact_packet:91676e943eca49d99126f40bfa18432e",
+            "impact_packet:b0bab101e7734bd3a8717bf359c71840"
+          ],
+          "intervention_id": "arq_83b905b9aa522a7de0d58a7455dcb24dc698ec2bd184b0033b8babfd8df91a9d",
+          "principal_id": "AARON",
+          "provenance_refs": [
+            "evidence:c668663601124110a0786048128359de"
+          ],
+          "resolution_kind": "DECIDE",
+          "why_aaron_is_required": "Open applicable Aaron decision with complete unresolved history"
+        }
+      ],
+      "snapshot_bracket_disposition": "INITIAL_PAIR",
+      "source_candidate_dispositions": [
+        {
+          "candidate_ref": "decision_requirement:f2d6ea6005964be5b6b08cb14c9f6452",
+          "disposition": "REFERENCE_INTERVENTION"
+        },
+        {
+          "candidate_ref": "obligation:69003b7e3e5141a4822c5bcce117e4ee",
+          "disposition": "JUSTIFIED_OMISSION"
+        }
+      ],
+      "unresolved_conflicts": []
+    }
+  ],
+  "consequence_weights": {
+    "C1": 1,
+    "C2": 4,
+    "C3": 16,
+    "C4": 64
+  },
+  "disposition": "IRIS_PILOT_001_REPLACEMENT_E1_BLIND_E2_FREEZE_PASS",
+  "metric_denominators": {
+    "abstention": {
+      "denominator_source_candidates": 96,
+      "expected_unknown_numerator": 4
+    },
+    "amir": {
+      "denominator": "SEPARATELY_AUTHORIZED_INDEPENDENT_OBSERVATION_POPULATION",
+      "status": "NOT_EVALUABLE_FROM_SYNTHETIC_E2"
+    },
+    "c3_miss_gate": {
+      "allowed_misses": 0,
+      "reference_count": 14
+    },
+    "c4_miss_gate": {
+      "allowed_misses": 0,
+      "reference_count": 4
+    },
+    "compression": {
+      "eligible_complete_case_count": 31,
+      "institutional_source_change_numerator": "E3_CANDIDATE_OUTPUT_DEPENDENT",
+      "reference_decision_denominator": 29
+    },
+    "coverage": {
+      "conflict_rate_numerator": 2,
+      "denominator_cases": 40,
+      "incomplete_rate_numerator": 2,
+      "state_counts": {
+        "COMPLETE_FOR_DECLARED_SCOPE": 31,
+        "CONFLICTED_COVERAGE": 2,
+        "INCOMPLETE_COVERAGE": 2,
+        "UNKNOWN_COVERAGE": 5
+      }
+    },
+    "excess_notification": {
+      "denominator": "E3_CANDIDATE_OUTPUT_DEPENDENT"
+    },
+    "freshness_latency": {
+      "count": "E3_CANDIDATE_OUTPUT_DEPENDENT"
+    },
+    "justified_omission_precision": {
+      "denominator": "E3_CANDIDATE_OUTPUT_DEPENDENT"
+    },
+    "provenance_coverage": {
+      "denominator": "E3_CANDIDATE_OUTPUT_DEPENDENT"
+    },
+    "unweighted_recall": {
+      "denominator": 38
+    },
+    "weighted_miss": {
+      "denominator": 509
+    }
+  },
+  "next_frontier": "CANDIDATE_NEUTRAL_EXECUTION_BINDING_NEXT",
+  "next_owner": "STRATA",
+  "preserved": [
+    "ROUND3_E1_SUPERSEDED_FOR_EVALUATION_BY_CONSEQUENCE_INPUT_DEFECT",
+    "ROUND3_E2_HOLD_VALID_AS_HISTORICAL_EVIDENCE",
+    "REPLACEMENT_E1_FROZEN",
+    "POST_REPLACEMENT_E1_CANDIDATE_REFREEZE_CLOSED",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "CONTINUITY_DEFAULT_OFF",
+    "ZERO_AUTHORITY",
+    "NO_PRODUCTION",
+    "NO_IRIS_CONTINUITY_ADMISSION",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ],
+  "replacement_e1_binding": {
+    "case_count": 40,
+    "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "population_sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+    "protocol_sha256": "619b28d8cc6fdd8048bdaeff2807a10f438349f1a7249f3701b209a7e786d66b",
+    "ref": "refs/heads/evidence/iris-pilot001-replacement-e1-v0-4-08e89d578d95",
+    "sole_parent": "93057f2bb820d09531fbe7d09476a67108add5ae",
+    "structural_verification": "STRUCTURAL_ADJUDICABILITY_PASS",
+    "tree": "fe0264a8fa5d0bc5ac7ee1dd9210f35dd97a6fc4"
+  },
+  "repository": "417properties/IRIS-Personal-Office",
+  "starting_context_check": "REPLACEMENT_E1_BLIND_E2_STARTING_CONTEXT_CHECK = PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "artifact": "IRIS-PILOT-001-REPLACEMENT-E1-BLIND-E2-INTEGRITY-v0.4",
+  "repository": "417properties/IRIS-Personal-Office",
+  "base_directory": "artifacts/evaluation/pilot001/replacement-e1-blind-e2-v0.4",
+  "parent_commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+  "intended_ref": "refs/heads/evidence/iris-pilot001-replacement-e1-blind-e2-v0-4",
+  "files": [
+    {
+      "path": "IRIS-PILOT-001-REFERENCE-SET-LABELS-v0.4.json",
+      "bytes": 88198,
+      "sha256": "63557de0b8ea6579e316f46f2cd567476d5a2f27e2b8ffee02b14bacfb59f34a",
+      "git_blob": "8f37b1064784e6f1860c5707b540b476fbe4c72a"
+    },
+    {
+      "path": "IRIS-PILOT-001-REPLACEMENT-E1-BLIND-E2-CERTIFICATION-v0.4.json",
+      "bytes": 3787,
+      "sha256": "d38b83fd28809b87fa51c397e2f345005703d437147693bf457251371e0bd4cf",
+      "git_blob": "7217a3759743ba4b47c6610e3b01c6f035879d3c"
+    }
+  ],
+  "self_binding": "This integrity manifest is bound by its Git blob, immutable commit/tree, and post-publication remote readback receipt; no recursive self-hash.",
+  "disposition": "GOVERNING_LABELS_IMMUTABLE_ON_PUBLICATION"
+}

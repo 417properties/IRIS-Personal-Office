@@ -1,0 +1,86 @@
+{
+  "artifact": "IRIS-PILOT-001-REPLACEMENT-E1-BLIND-E2-CERTIFICATION-v0.4",
+  "adjudicator_role": "fresh independent blind E2 evaluator",
+  "adjudicator_distinct_from": [
+    "replacement-E1 evaluator",
+    "Builder/Main V0",
+    "Professor/STRATA candidate reviewers",
+    "candidate executor",
+    "later E3 scorer",
+    "prior contaminated or held E2 sessions"
+  ],
+  "starting_context_check": "REPLACEMENT_E1_BLIND_E2_STARTING_CONTEXT_CHECK = PASS",
+  "starting_context_contained_candidate_outputs_predictions": false,
+  "starting_context_contained_candidate_test_review_results": false,
+  "starting_context_contained_prior_e2_e3_labels_scoring": false,
+  "starting_context_contained_case_level_candidate_behavior": false,
+  "authorized_inputs_only": true,
+  "candidate_source_inspected": false,
+  "candidate_tests_inspected": false,
+  "candidate_outputs_or_predictions_inspected": false,
+  "candidate_review_findings_or_qualification_results_consumed": false,
+  "old_round3_e2_answer_content_consumed": false,
+  "historical_e3_answers_or_scoring_consumed": false,
+  "dev_repair_evidence_consumed_as_case_answers": false,
+  "candidate_executed": false,
+  "candidate_outputs_created": false,
+  "e3_scoring_performed": false,
+  "e1_protocol_or_candidate_modified": false,
+  "replacement_e1": {
+    "ref": "refs/heads/evidence/iris-pilot001-replacement-e1-v0-4-08e89d578d95",
+    "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "tree": "fe0264a8fa5d0bc5ac7ee1dd9210f35dd97a6fc4",
+    "sole_parent": "93057f2bb820d09531fbe7d09476a67108add5ae",
+    "case_count": 40,
+    "population_sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+    "protocol_bytes": 17169,
+    "protocol_sha256": "619b28d8cc6fdd8048bdaeff2807a10f438349f1a7249f3701b209a7e786d66b",
+    "protocol_git_blob": "5aa65205d401409b5b07b82e57864841bd57120b"
+  },
+  "blueprint": {
+    "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+    "tree": "9745d202a23c001d0dfa777a281a05769913d2fa",
+    "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+    "bytes": 53261,
+    "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d",
+    "git_blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+    "controlling_sections": "8-17.1"
+  },
+  "label_freeze_summary": {
+    "case_count": 40,
+    "reference_intervention_count": 38,
+    "weighted_miss_denominator": 509,
+    "consequence_counts": {"C1": 17, "C2": 3, "C3": 14, "C4": 4},
+    "coverage_counts": {
+      "COMPLETE_FOR_DECLARED_SCOPE": 31,
+      "INCOMPLETE_COVERAGE": 2,
+      "CONFLICTED_COVERAGE": 2,
+      "UNKNOWN_COVERAGE": 5
+    },
+    "alignment": "EXACT_40_CASE_ALIGNMENT_PASS",
+    "missing_cases": 0,
+    "extra_cases": 0,
+    "duplicate_cases": 0
+  },
+  "governing_labels": {
+    "path": "artifacts/evaluation/pilot001/replacement-e1-blind-e2-v0.4/IRIS-PILOT-001-REFERENCE-SET-LABELS-v0.4.json",
+    "bytes": 88198,
+    "sha256": "63557de0b8ea6579e316f46f2cd567476d5a2f27e2b8ffee02b14bacfb59f34a",
+    "git_blob": "8f37b1064784e6f1860c5707b540b476fbe4c72a"
+  },
+  "disposition": "IRIS_PILOT_001_REPLACEMENT_E1_BLIND_E2_FREEZE_PASS / GOVERNING_LABELS_IMMUTABLE / CANDIDATE_NEUTRAL_EXECUTION_BINDING_NEXT",
+  "next_owner": "STRATA",
+  "stop_boundary": "No candidate execution or candidate output generation is authorized in E2",
+  "preserved": [
+    "ROUND3_E1_SUPERSEDED_FOR_EVALUATION_BY_CONSEQUENCE_INPUT_DEFECT",
+    "ROUND3_E2_HOLD_VALID_AS_HISTORICAL_EVIDENCE",
+    "REPLACEMENT_E1_FROZEN",
+    "POST_REPLACEMENT_E1_CANDIDATE_REFREEZE_CLOSED",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "CONTINUITY_DEFAULT_OFF",
+    "ZERO_AUTHORITY",
+    "NO_PRODUCTION",
+    "NO_IRIS_CONTINUITY_ADMISSION",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ]
+}
