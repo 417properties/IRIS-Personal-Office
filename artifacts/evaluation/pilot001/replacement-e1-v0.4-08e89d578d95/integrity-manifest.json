@@ -1,0 +1,70 @@
+{
+  "artifact": "IRIS-PILOT-001-REPLACEMENT-E1-INTEGRITY-v0.4",
+  "base_directory": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95",
+  "files": [
+    {
+      "bytes": 17169,
+      "git_blob": "5aa65205d401409b5b07b82e57864841bd57120b",
+      "path": "adjudication-protocol.md",
+      "sha256": "619b28d8cc6fdd8048bdaeff2807a10f438349f1a7249f3701b209a7e786d66b"
+    },
+    {
+      "bytes": 3169,
+      "git_blob": "fef39e3284eae5559ac016c01211c0d9bc244fa5",
+      "path": "case-input-manifest.json",
+      "sha256": "0eca9c456d85bd2b3e62cd1752d0cf4de81988c519c2ae0724a81573269b53d6"
+    },
+    {
+      "bytes": 302533,
+      "git_blob": "7a35d77ad927218f903e63f966ccee3341e7d717",
+      "path": "case-inputs-01.json",
+      "sha256": "62d1ba80143ec687e16cfed89641634108ab7520faa5fb04082fd92508e9a721"
+    },
+    {
+      "bytes": 311749,
+      "git_blob": "53a8c9dbf36b1bc666d164daed3bcbf05c46b230",
+      "path": "case-inputs-02.json",
+      "sha256": "6085e37d0bcbe2b04f23070d11095406a4f17fc0a3e351676920fc758f63a09f"
+    },
+    {
+      "bytes": 310747,
+      "git_blob": "4d492ac0d661b6fdb6315461fba5f720757a3cc7",
+      "path": "case-inputs-03.json",
+      "sha256": "136da8531ee7fb02f88abcd0f94b2cda42cc9b8da3802a33dd554ee7b53011be"
+    },
+    {
+      "bytes": 303058,
+      "git_blob": "86924bb9e12c6e39e155ee6fcb0ca9f75dae7dec",
+      "path": "case-inputs-04.json",
+      "sha256": "297d8a91115be81c5337f9973b423cfdcbf47c4b7ef81ed5ba8fa55356582685"
+    },
+    {
+      "bytes": 3505,
+      "git_blob": "9fcf719ccb939b7b437a586936da2a9a23c4ee37",
+      "path": "independence-certification.json",
+      "sha256": "733801ec6b7179abed466f3ed97d7b4a90c7e9ea0fb99f488a237da5f3953577"
+    },
+    {
+      "bytes": 3148,
+      "git_blob": "ff873138926524501eba5ea1230f9635fca124c8",
+      "path": "population-identity.json",
+      "sha256": "011874c2d8a62a79dac035585d5334a2e2d18a79dd64d2d76bf6f14bee37e9ab"
+    },
+    {
+      "bytes": 16672,
+      "git_blob": "caacd07b1635ed0cff3921c6d2f6c33a87f6506e",
+      "path": "structural-checker.py",
+      "sha256": "3b63512ad7154611f240edc880eb20567961cbe792bce3b5f5f2dd985f729fbf"
+    },
+    {
+      "bytes": 1882,
+      "git_blob": "a468cecd222314444a7d43a4e6d03d46c43e4112",
+      "path": "structural-verification.json",
+      "sha256": "ac17f5ed6019e8b70edc79fd316c83b798048a1c3edcf94fdb96082d715b4019"
+    }
+  ],
+  "intended_ref": "refs/heads/evidence/iris-pilot001-replacement-e1-v0-4-08e89d578d95",
+  "repository": "417properties/IRIS-Personal-Office",
+  "self_binding": "This integrity manifest is bound by its actual Git blob and post-publication readback receipt; no recursive self-hash.",
+  "sole_parent": "93057f2bb820d09531fbe7d09476a67108add5ae"
+}

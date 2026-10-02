@@ -1,0 +1,47 @@
+{
+  "artifact": "IRIS-PILOT-001-REPLACEMENT-E1-INDEPENDENCE-v0.4",
+  "evaluator_session": "08e89d578d95",
+  "role": "independent replacement-E1 population and protocol evaluator",
+  "starting_context_check": "REPLACEMENT_E1_STARTING_CONTEXT_CHECK = PASS",
+  "starting_context_candidate_outputs_predictions_results_or_case_behavior": false,
+  "starting_context_prior_E2_E3_answers": false,
+  "population_and_protocol_authored_by": "this independent E1 session",
+  "builder_dev_v0_authored_or_selected_population_or_protocol": false,
+  "candidate_source_inspected": false,
+  "candidate_tests_outputs_reviews_scores_inspected": false,
+  "candidate_executed_or_scored": false,
+  "E2_labels_created": false,
+  "E3_work_performed": false,
+  "provider_access": false,
+  "builder_wake": false,
+  "governing_release": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5960229515",
+  "authorized_source_objects": [
+    {"repo": "417properties/IRIS-Personal-Office", "commit": "93057f2bb820d09531fbe7d09476a67108add5ae", "consumed": "Git commit/tree metadata and candidate-free E2 HOLD document only; no E2 answer labels"},
+    {"repo": "417properties/IRIS-Personal-Office", "commit": "6346fbb5b35986ce86a2c1848a6dd7646897aa7b", "consumed": "Git commit/tree/ref metadata, v0.3 protocol and population identity; no case manifest used as an authoring template"},
+    {"repo": "417properties/IRIS-Personal-Office", "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb", "consumed": "exact Blueprint v0.4 only, plus Git commit/tree metadata used to locate it"}
+  ],
+  "retrieval_notes": [
+    "An exact-SHA metadata lookup in BIG-Navigator returned 404 before the Blueprint object was found in IRIS-Personal-Office; no alternate governing object was substituted.",
+    "A recursive Blueprint-commit tree response exposed file paths and blob identities, including source/test filenames. None of those source/test/evidence blobs were fetched; no implementation contents or test results were inspected.",
+    "The authorized release and HOLD document necessarily described one historical source-input defect; they supplied no candidate behavior or governing reference answer labels.",
+    "No complete historical BIG #703 or IRIS #3 comment stream was fetched. Receipt readbacks will address exact newly created comment IDs only."
+  ],
+  "novelty": "Forty de novo synthetic cases, with random opaque case IDs and new source-record IDs; no Round-3 case copied, repaired, excluded or silently modified. Shared Blueprint semantics and the authorized defect fact pattern are not claimed semantically disjoint from prior work.",
+  "chronology": "This replacement freezes before any later candidate adaptation authorized by STRATA. An exact candidate is known to exist. This session makes no assertion that the replacement predates that candidate or that no unseen candidate activity exists.",
+  "reference_labels": "ZERO_GOVERNING_LABELS",
+  "round3_disposition": "ROUND3_E1_SUPERSEDED_FOR_EVALUATION_BY_CONSEQUENCE_INPUT_DEFECT",
+  "round3_hold": "ROUND3_E2_HOLD_VALID",
+  "historical_refs_mutated": false,
+  "next_owner": "STRATA for sequence reconciliation only",
+  "preserved": [
+    "FIRST_TWO_PERSISTENT_OFFICES_ESTABLISHED_BOUNDED_ATTENDED",
+    "M4_401_DURABLY_OFF",
+    "BIG-OFFICE-DEVELOPMENT_DURABLY_OFF",
+    "IRIS_NOT_OPERATIONALLY_PROMOTED",
+    "CONTINUITY_DEFAULT_OFF",
+    "ZERO_AUTHORITY",
+    "NO_PRODUCTION",
+    "NO_IRIS_CONTINUITY_ADMISSION",
+    "BIG_ACTIVATION_NOT_AUTHORIZED"
+  ]
+}

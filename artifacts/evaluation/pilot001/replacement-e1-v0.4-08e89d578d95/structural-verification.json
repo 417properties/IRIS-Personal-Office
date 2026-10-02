@@ -1,0 +1,30 @@
+{
+  "answer_label_fields": 0,
+  "candidate_inputs_consumed": 0,
+  "case_specific_classifications_generated": 0,
+  "checks": [
+    "exact eight source envelopes and requirements for every case, including explicit unavailable-source observations",
+    "closed source record inventories and verified synthetic provenance",
+    "every potentially consequence-bearing record bound to a complete source impact packet",
+    "exact subject/version and all internal references resolve",
+    "all consequence fields present; source restoration/effect/reserved facts consistent; supported evidence exists without computing classes",
+    "cross-record abandonment scope and separate decision reaffirmation present",
+    "resolved/superseded decision histories present",
+    "exact permission-to-decision bindings remove duplicate resolution ambiguity",
+    "bounded snapshot read pairs and complete version-change source chains",
+    "strict input-field allowlist; no answer-label fields",
+    "unique opaque IDs; exact membership; deterministic ordering and population digest"
+  ],
+  "impact_packet_count": 221,
+  "limits": [
+    "structural presence and source consistency proof only; no AR, class, intervention, coverage answer or scoring truth generated",
+    "de novo authorship certification is provenance evidence, not a claim that synthetic scenarios are semantically disjoint from every historical scenario",
+    "runtime implementation and optional future-worker interfaces are not executed or evaluated at E1; this population concerns Pilot 001 projection and its governing source/authority boundaries"
+  ],
+  "population_count": 40,
+  "population_sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+  "resolved_reference_occurrences": 5008,
+  "result": "STRUCTURAL_ADJUDICABILITY_PASS",
+  "source_record_count": 611,
+  "unique_source_and_packet_ids": 832
+}
