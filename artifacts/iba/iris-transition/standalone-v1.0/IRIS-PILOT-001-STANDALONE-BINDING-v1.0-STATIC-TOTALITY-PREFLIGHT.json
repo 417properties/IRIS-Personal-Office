@@ -183,7 +183,13 @@
       "possible_duplicate_obligation_roots": 2
     },
     "reserved_authority_candidate_roots": 20,
-    "multiple_conflict_id_candidates": 0
+    "multiple_conflict_id_candidates": 0,
+    "obligation_lifecycle_applicability_classes": 6,
+    "obligation_lifecycle_applicability_total": 42,
+    "decision_lifecycle_applicability_classes": 7,
+    "decision_lifecycle_applicability_total": 40,
+    "cross_record_status_applicability_cascade": false,
+    "terminal_status_does_not_rewrite_independent_APPLICABLE_governance": true
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
