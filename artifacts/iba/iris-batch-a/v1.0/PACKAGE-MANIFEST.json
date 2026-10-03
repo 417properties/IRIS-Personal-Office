@@ -1,0 +1,42 @@
+{
+  "artifact": "IRIS-BATCH-A-CONSTITUTIONAL-RECONCILIATION-v1.0-PACKAGE-MANIFEST",
+  "authority": "NONE",
+  "canonical_route": "BIG #703/5971125848",
+  "control_surface": "BIG #703/5971096636",
+  "sealed_audit_base": {
+    "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+    "tree": "2b936223b1559281fdfa0e93cec5da610685d762",
+    "audit_report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86"
+  },
+  "branch": "iba/iris-batch-a-constitutional-reconciliation-v1-0",
+  "package_head_before_manifest": "c58077949e7c5a7337876ab0f96ad3fcca5756e0",
+  "package_tree_before_manifest": "f3a9406a61415ecab76c26463feaf09e49ccfab2",
+  "consolidated_object": {
+    "path": "artifacts/iba/iris-batch-a/v1.0/IRIS-BATCH-A-CONSTITUTIONAL-RECONCILIATION-v1.0.md",
+    "blob": "32c422efc4238c9b02f5d20409f8f7e39e8483f8",
+    "bytes": 56831,
+    "sha256": "9945b906d9b83a3e2ee26f051993c709b5de03d43d7646608aa2a3f3229cb140",
+    "required_artifact_families": 26,
+    "named_requirement_receipts": 57,
+    "founder_decision_required": 0
+  },
+  "pre_manifest_diff": {
+    "changed_files": [
+      "artifacts/iba/iris-batch-a/v1.0/IRIS-BATCH-A-CONSTITUTIONAL-RECONCILIATION-v1.0.md"
+    ],
+    "source_code_changes": 0,
+    "schema_changes": 0,
+    "test_changes": 0,
+    "candidate_changes": 0,
+    "replacement_e1_changes": 0
+  },
+  "independence_and_scope": {
+    "candidate_executed": false,
+    "e1_regenerated": false,
+    "e2_e3_consumed": false,
+    "scoring": false,
+    "implementation_performed": false,
+    "authority_changed": false
+  },
+  "disposition": "IRIS_BATCH_A_CONSTITUTIONAL_RECONCILIATION_COMPLETE / STRATA_RECONCILIATION_REQUIRED / NO_GATE_PROGRESS"
+}
