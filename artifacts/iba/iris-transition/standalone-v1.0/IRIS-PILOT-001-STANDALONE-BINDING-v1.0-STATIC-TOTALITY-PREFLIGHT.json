@@ -129,7 +129,15 @@
       "SOURCE_IDENTITY_CONFLICT": 0
     },
     "proven_self_identity_no_conflict_case_count": 1,
-    "conflict_class_selection_implicit_or_defaulted": false
+    "conflict_class_selection_implicit_or_defaulted": false,
+    "pilot_candidate_property_order_exact_24": true,
+    "pilot_candidate_why_supplied": false,
+    "pilot_candidate_common_booleans_explicit": true,
+    "escalation_required_demonstrated_value": false,
+    "candidate_health_reduction_frozen": true,
+    "provenance_refs_exact_typed_sorted_dedup": true,
+    "possible_duplicate_refs_always_array": true,
+    "optional_candidate_null_substitution_permitted": false
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
