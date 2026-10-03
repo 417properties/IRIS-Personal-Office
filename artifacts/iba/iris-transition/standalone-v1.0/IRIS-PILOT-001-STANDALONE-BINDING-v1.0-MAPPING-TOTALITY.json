@@ -219,7 +219,7 @@
       "source_structure": "current_assertion",
       "relevant_fields_or_tokens": "predicate/value/applicability/subject_refs",
       "binding_rule_id": "§4,§9",
-      "projection_input_derivation_or_disposition": "exact conflict/applicability evidence only; not independent root",
+      "projection_input_derivation_or_disposition": "same exact subject/predicate with materially incompatible exclusive values -> INCOMPATIBLE_CURRENT_STATE; otherwise exact applicability/current evidence only",
       "provenance_ref_scope": "subject_refs",
       "load_bearing": true
     },
@@ -251,7 +251,7 @@
       "source_structure": "instruction",
       "relevant_fields_or_tokens": "instruction/subject_ref/effective_at",
       "binding_rule_id": "§9",
-      "projection_input_derivation_or_disposition": "explicit exact conflict evidence only; never root alone unless conflict rule resolves exact refs",
+      "projection_input_derivation_or_disposition": "two mutually exclusive exact instructions on same obligation -> INCOMPATIBLE_OBLIGATIONS; otherwise evidence only; no semantic similarity inference",
       "provenance_ref_scope": "subject_ref",
       "load_bearing": true
     },
@@ -307,7 +307,7 @@
       "source_structure": "source_link_observation",
       "relevant_fields_or_tokens": "left/right/identity_proven/possible_same/authoritative_merge_ref",
       "binding_rule_id": "§9",
-      "projection_input_derivation_or_disposition": "six-way total duplicate decision table; conflict/merge/no-effect/named HOLD",
+      "projection_input_derivation_or_disposition": "six-way identity decision table; demonstrated distinct possible duplicate -> POSSIBLE_DUPLICATE_UNRESOLVED; demonstrated proven self-identity -> no conflict",
       "provenance_ref_scope": "left_ref+right_ref",
       "load_bearing": true
     },
@@ -964,5 +964,55 @@
         "partial": true
       }
     ]
+  },
+  "demonstrated_conflict_generation": {
+    "cases": [
+      {
+        "case_id": "p1e1r4_3592698cabc744789906162b61657890",
+        "shape": "two mutually exclusive instructions on same obligation",
+        "conflict_class": "INCOMPATIBLE_OBLIGATIONS",
+        "subject_refs": [
+          "obligation:b3c3c67639594094abc930cc450fd274"
+        ],
+        "generates_conflict": true
+      },
+      {
+        "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+        "shape": "same predicate exclusive_index_owner with TEAM_X vs TEAM_Y on same objective",
+        "conflict_class": "INCOMPATIBLE_CURRENT_STATE",
+        "subject_refs": [
+          "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"
+        ],
+        "generates_conflict": true
+      },
+      {
+        "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
+        "shape": "distinct refs; possible_same=true; identity_proven=false; authoritative_merge_ref=null",
+        "conflict_class": "POSSIBLE_DUPLICATE_UNRESOLVED",
+        "subject_refs": [
+          "obligation:af6abeb0cf104e19bf59b400088a90b7",
+          "obligation:c1805592acb24fb884c9ec909d348408"
+        ],
+        "generates_conflict": true
+      },
+      {
+        "case_id": "p1e1r4_dd291386b74e4b568634d20c138457ea",
+        "shape": "same ref; identity_proven=true; authoritative_merge_ref=null",
+        "conflict_class": null,
+        "subject_refs": [
+          "obligation:1b3146da2fac4befa199947d0e30e3d2"
+        ],
+        "generates_conflict": false,
+        "disposition": "PROVEN_SELF_IDENTITY"
+      }
+    ],
+    "demonstrated_conflict_class_counts": {
+      "INCOMPATIBLE_OBLIGATIONS": 1,
+      "INCOMPATIBLE_CURRENT_STATE": 1,
+      "POSSIBLE_DUPLICATE_UNRESOLVED": 1,
+      "AUTHORITY_CONFLICT": 0,
+      "EFFECT_REALITY_CONFLICT": 0,
+      "SOURCE_IDENTITY_CONFLICT": 0
+    }
   }
 }
