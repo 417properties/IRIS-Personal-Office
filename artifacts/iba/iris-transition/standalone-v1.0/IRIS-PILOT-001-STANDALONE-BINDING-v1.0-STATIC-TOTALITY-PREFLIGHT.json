@@ -166,7 +166,24 @@
     },
     "escalation_governance_AARON_count": 2,
     "escalation_required_true_count": 1,
-    "escalation_reverse_link_spray_forbidden": true
+    "escalation_reverse_link_spray_forbidden": true,
+    "unstable_case_count": 1,
+    "unstable_case_semantic_ambiguity_count": 0,
+    "unstable_nonsemantic_version_events_preserve_semantics": true,
+    "prebuild_candidate_census": {
+      "obligation_roots": 42,
+      "decision_roots": 40,
+      "unresolved_intent_roots": 1,
+      "conflict_only_roots": 1,
+      "total": 84
+    },
+    "conflict_attachment_census": {
+      "instruction_conflict_obligation_roots": 1,
+      "current_state_conflict_only_roots": 1,
+      "possible_duplicate_obligation_roots": 2
+    },
+    "reserved_authority_candidate_roots": 20,
+    "multiple_conflict_id_candidates": 0
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
