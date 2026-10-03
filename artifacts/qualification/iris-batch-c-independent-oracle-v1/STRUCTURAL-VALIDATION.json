@@ -8,20 +8,32 @@
     "component/legacy/preservation/requirement references",
     "28 frozen Batch-A SHA/Git-blob/size identities",
     "sealed audit report and SEAL exact Git blob/SHA256",
-    "gap-specific scalar field withholding",
-    "all ten required oracle families and supporting state/catalog tables"
+    "all ten required oracle families and supporting state/catalog tables",
+    "Q-DISPOSITION-AMENDMENT-VALIDATION.json exact bounded preservation/source/precedence checks"
   ],
   "counts": {
-    "vectors": 402,
-    "proof_schemas": 464,
+    "vectors": 419,
+    "proof_schemas": 482,
     "coordinate_rows": 504,
     "legacy_dispositions": 25,
     "causal_findings": 20,
     "bounded_nonfindings": 13,
     "preserved_capabilities": 22,
     "artifact20_class_mappings": 18,
-    "open_clarifications": 1
+    "open_clarifications": 0,
+    "amended_original_vectors": 3,
+    "unchanged_original_vectors": 399,
+    "new_Q_vectors": 17,
+    "amended_original_proofs": 4,
+    "unchanged_original_proofs": 460,
+    "new_Q_proofs": 18,
+    "conditional_selector_rows": 254,
+    "authorized_primary_classes": 7,
+    "ordered_overlap_pairs": 21,
+    "privacy_guard_classes": 7,
+    "required_clarification_checks": 8
   },
   "does_not_establish": "Candidate conformance, actual caller closure, SQL execution, every distributed schedule, legacy test rerun, phase advancement, authority, continuity or independent acceptance.",
-  "errors": []
+  "errors": [],
+  "amendment_status": "Q-DISPOSITION source-determinate; acceptance remains open"
 }

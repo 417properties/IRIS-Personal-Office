@@ -10,7 +10,39 @@
       "requirement": "terminal/inapplicable/private roots cannot silently disappear",
       "scenario_id": "WS-TERMINAL-PRIVATE-INAPPLICABLE",
       "proof_id": "P-WS-TERMINAL-PRIVATE-INAPPLICABLE",
-      "status": "derived; downstream execution required"
+      "status": "derived; downstream execution required",
+      "Q_DISPOSITION_clarification_vector_ids": [
+        "A1-OVERLAP-PRIVACY-TERMINAL",
+        "A1-OVERLAP-CONFLICT-UNKNOWN",
+        "QD-V2-RECORD",
+        "QD-PRECEDENCE",
+        "QD-PRIVACY-ALL",
+        "QD-TERMINAL-UNKNOWN",
+        "QD-NOTAPPLICABLE-UNKNOWN",
+        "QD-CONFLICT-TERMINAL",
+        "QD-DEFER-KNOWN",
+        "QD-BOUNDARY-RECIPIENT",
+        "QD-BOUNDARY-PURPOSE",
+        "QD-PRIVATE-SECONDARY-NEGATIVE",
+        "QD-ROUNDTRIP-COLD",
+        "QD-ROUNDTRIP-COMMUNICATION",
+        "QD-NO-LOCAL-PRECEDENCE",
+        "QD-SECONDARY-REASON-DROP",
+        "QD-REACTIVATION-PRESERVATION",
+        "QD-UNKNOWN-PRIVACY-NEGATIVE",
+        "QD-PRIMARY-NOT-AUTHORITY"
+      ],
+      "clarification_source": {
+        "artifact": "Q-DISPOSITION-CLARIFICATION",
+        "path": "sources/BIG-comment-5971926463.json",
+        "repository": "417properties/BIG-Navigator",
+        "comment_id": 5971926463,
+        "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+        "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+        "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+        "bytes": 8333,
+        "authority": "canonical architecture clarification"
+      }
     },
     {
       "requirement": "same objective distinct resolution; explicit equivalent resolution",

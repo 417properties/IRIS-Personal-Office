@@ -1,0 +1,363 @@
+{
+  "amendment": "IRIS-BATCH-C-v1.1-Q-DISPOSITION-ONLY",
+  "baseline_commit": "889341d0abb17d896701726448b62d2d2891149f",
+  "baseline_package_sha256": "5415875ee1a678fa60adacc11b69047c155e68a037102d78d5d9e391dbb4f049",
+  "canonical_clarification": {
+    "artifact": "Q-DISPOSITION-CLARIFICATION",
+    "path": "sources/BIG-comment-5971926463.json",
+    "repository": "417properties/BIG-Navigator",
+    "comment_id": 5971926463,
+    "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+    "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+    "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+    "bytes": 8333,
+    "authority": "canonical architecture clarification"
+  },
+  "mirror": "sources/IRIS-comment-5971928147.json",
+  "changed_baseline_files_excluding_manifest": [
+    "README.md",
+    "SOURCE-BOUNDARY-AND-INDEPENDENCE.json",
+    "STRUCTURAL-VALIDATION.json",
+    "oracles/A1.json",
+    "oracles/WHOLE.json",
+    "proofs/PROOF-INDEX.json",
+    "proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json",
+    "proofs/REQUIREMENT-COVERAGE.json",
+    "proofs/TWO-LAYERS-DEEP-FINDINGS-NONFINDINGS.json"
+  ],
+  "new_amendment_files": [
+    "Q-DISPOSITION-AMENDMENT-DELTA.json",
+    "Q-DISPOSITION-AMENDMENT-VALIDATION.json",
+    "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+    "oracles/Q-DISPOSITION-PRECEDENCE-TABLE.json",
+    "sources/BIG-comment-5971926463.json",
+    "sources/IRIS-comment-5971928147.json"
+  ],
+  "amended_original_vector_ids": [
+    "A1-OVERLAP-CONFLICT-UNKNOWN",
+    "A1-OVERLAP-PRIVACY-TERMINAL",
+    "WS-TERMINAL-PRIVATE-INAPPLICABLE"
+  ],
+  "amended_original_proof_ids": [
+    "P-A1-OVERLAP-CONFLICT-UNKNOWN",
+    "P-A1-OVERLAP-PRIVACY-TERMINAL",
+    "P-CAUSAL-D03",
+    "P-WS-TERMINAL-PRIVATE-INAPPLICABLE"
+  ],
+  "added_Q_vector_ids": [
+    "QD-BOUNDARY-PURPOSE",
+    "QD-BOUNDARY-RECIPIENT",
+    "QD-CONFLICT-TERMINAL",
+    "QD-DEFER-KNOWN",
+    "QD-NO-LOCAL-PRECEDENCE",
+    "QD-NOTAPPLICABLE-UNKNOWN",
+    "QD-PRECEDENCE",
+    "QD-PRIMARY-NOT-AUTHORITY",
+    "QD-PRIVACY-ALL",
+    "QD-PRIVATE-SECONDARY-NEGATIVE",
+    "QD-REACTIVATION-PRESERVATION",
+    "QD-ROUNDTRIP-COLD",
+    "QD-ROUNDTRIP-COMMUNICATION",
+    "QD-SECONDARY-REASON-DROP",
+    "QD-TERMINAL-UNKNOWN",
+    "QD-UNKNOWN-PRIVACY-NEGATIVE",
+    "QD-V2-RECORD"
+  ],
+  "added_Q_proof_ids": [
+    "P-QD-BOUNDARY-PURPOSE",
+    "P-QD-BOUNDARY-RECIPIENT",
+    "P-QD-CONFLICT-TERMINAL",
+    "P-QD-DEFER-KNOWN",
+    "P-QD-NO-LOCAL-PRECEDENCE",
+    "P-QD-NOTAPPLICABLE-UNKNOWN",
+    "P-QD-PRECEDENCE",
+    "P-QD-PRECEDENCE-TABLE",
+    "P-QD-PRIMARY-NOT-AUTHORITY",
+    "P-QD-PRIVACY-ALL",
+    "P-QD-PRIVATE-SECONDARY-NEGATIVE",
+    "P-QD-REACTIVATION-PRESERVATION",
+    "P-QD-ROUNDTRIP-COLD",
+    "P-QD-ROUNDTRIP-COMMUNICATION",
+    "P-QD-SECONDARY-REASON-DROP",
+    "P-QD-TERMINAL-UNKNOWN",
+    "P-QD-UNKNOWN-PRIVACY-NEGATIVE",
+    "P-QD-V2-RECORD"
+  ],
+  "preserved_baseline_file_ids": [
+    "oracles/A1-COORDINATE-PRODUCT.json",
+    "oracles/A2.json",
+    "oracles/A3.json",
+    "oracles/A4-STATE-MACHINE.json",
+    "oracles/A4.json",
+    "oracles/A5.json",
+    "oracles/COMMUNICATION.json",
+    "oracles/EXECUTIVE.json",
+    "oracles/FUNCTIONAL.json",
+    "oracles/IEF-MANDATORY-DIMENSION-CATALOG.json",
+    "oracles/IEF.json",
+    "proofs/EXECUTED-LEGACY-DISPOSITIONS.json",
+    "proofs/PERSONAL-OFFICE-PRESERVATION.json",
+    "sources/00-IRIS-BATCH-A-MASTER-CONSTITUTION-v1.0.md",
+    "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+    "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+    "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+    "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+    "sources/05-PERSONAL-NERVOUS-SYSTEM.md",
+    "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+    "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+    "sources/08-IRIS-IEF-CONSTITUTION.md",
+    "sources/09-MATURITY-AXES-NON-COLLAPSE.md",
+    "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+    "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+    "sources/12-INTENT-CAPABILITY-PRESERVATION-MATRIX.md",
+    "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+    "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+    "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+    "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+    "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+    "sources/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+    "sources/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+    "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+    "sources/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+    "sources/22-FOUNDER-AMBIGUITY-REGISTER.md",
+    "sources/23-FALSIFIER-PREMORTEM-SET.md",
+    "sources/24-DEFERRED-SCOPE-MAP.md",
+    "sources/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+    "sources/26-ICCP-COMMUNICATION-CONSTITUTION.md",
+    "sources/BIG-comment-5970182571.json",
+    "sources/BIG-comment-5970957076.json",
+    "sources/BIG-comment-5970991430.json",
+    "sources/BIG-comment-5971006516.json",
+    "sources/BIG-comment-5971366932.json",
+    "sources/BIG-comment-5971539564.json",
+    "sources/audit-SEAL.json",
+    "sources/audit-comment-5966245144.json",
+    "sources/audit-full-report.md",
+    "sources/audit-sections-10-11.md",
+    "sources/expected-identities.json",
+    "sources/verification.json"
+  ],
+  "counts": {
+    "vectors": 419,
+    "proof_schemas": 482,
+    "coordinate_rows": 504,
+    "legacy_dispositions": 25,
+    "causal_findings": 20,
+    "bounded_nonfindings": 13,
+    "preserved_capabilities": 22,
+    "artifact20_class_mappings": 18,
+    "open_clarifications": 0,
+    "amended_original_vectors": 3,
+    "unchanged_original_vectors": 399,
+    "new_Q_vectors": 17,
+    "amended_original_proofs": 4,
+    "unchanged_original_proofs": 460,
+    "new_Q_proofs": 18,
+    "conditional_selector_rows": 254,
+    "authorized_primary_classes": 7,
+    "ordered_overlap_pairs": 21,
+    "privacy_guard_classes": 7,
+    "required_clarification_checks": 8
+  },
+  "source_required_checks_and_two_layers_deeper": [
+    {
+      "check_id": "C1",
+      "required_check": "full internal reason conservation",
+      "vector_ids": [
+        "QD-V2-RECORD",
+        "QD-SECONDARY-REASON-DROP",
+        "QD-REACTIVATION-PRESERVATION"
+      ],
+      "observed_or_negative_condition": "Correct scalar primary but secondary UNKNOWN/terminal/conflict/reason evidence lost",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Selector/DTO replaces compound record by primary enum",
+      "enabling_systemic_cause": "Visible convenience field becomes a second canonical truth owner",
+      "bounded_or_exhaustive_check": "All typed reasons/coordinates/evidence plus valid retention/invalidator lineage survive repository/adapter/cold roundtrip",
+      "recurrence_control": "A5 owns complete state, visible primary is derived; any added decoder/caller reopens reason conservation",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C2",
+      "required_check": "exactly one visible disposition per boundary",
+      "vector_ids": [
+        "QD-PRECEDENCE",
+        "QD-PRIVACY-ALL",
+        "QD-V2-RECORD"
+      ],
+      "observed_or_negative_condition": "Multiple scalar values or no explicit primary for admitted source-qualified root",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Consumers independently combine or prioritize predicates",
+      "enabling_systemic_cause": "No shared source-owned versioned selector across consuming boundaries",
+      "bounded_or_exhaustive_check": "7 winners, 21 order pairs, 254 conditional table rows under stated admitted-class bound",
+      "recurrence_control": "One versioned IRIS primary selector, exact root/principal/boundary/as_of and explicit representation map",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C3",
+      "required_check": "unauthorized projection cannot leak private secondary reasons",
+      "vector_ids": [
+        "QD-PRIVATE-SECONDARY-NEGATIVE",
+        "QD-PRIVACY-ALL",
+        "QD-UNKNOWN-PRIVACY-NEGATIVE"
+      ],
+      "observed_or_negative_condition": "PRIVACY_EXCLUDED scalar still accompanied by private reason/type/count/reference",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Renderer copies internal reason_set or evidence/provenance links",
+      "enabling_systemic_cause": "A3 minimum-necessary and exact purpose/recipient separated from truth but omitted at receiving arrow",
+      "bounded_or_exhaustive_check": "Privacy dominates all 7 semantic classes; direct reason/value/type/count/reference negative controls; unknown permission cannot enter allowed selector",
+      "recurrence_control": "Privacy outer guard plus boundary-safe visible_reason_projection/ref resolution; complete internal state retained under retention",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C4",
+      "required_check": "recipient/purpose changes projection not canonical truth",
+      "vector_ids": [
+        "QD-BOUNDARY-RECIPIENT",
+        "QD-BOUNDARY-PURPOSE",
+        "QD-REACTIVATION-PRESERVATION"
+      ],
+      "observed_or_negative_condition": "Changing audience alters lifecycle/history or discards original reasons",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Boundary view is persisted as replacement canonical state",
+      "enabling_systemic_cause": "Projection/repository ontology collapses consumer-specific view into Current",
+      "bounded_or_exhaustive_check": "Minimal pairs vary only recipient or purpose at same cut; compare root/principal/A1/lifecycle/evidence canonical equality",
+      "recurrence_control": "Boundary-tagged derived views; exact independently qualified disclosure result, no new truth store",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C5",
+      "required_check": "conflict+UNKNOWN conserves both, primary CONFLICT_HOLD",
+      "vector_ids": [
+        "A1-OVERLAP-CONFLICT-UNKNOWN",
+        "QD-SECONDARY-REASON-DROP",
+        "QD-PRECEDENCE"
+      ],
+      "observed_or_negative_condition": "UNKNOWN wins primary or disappears under known conflict",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Local UNKNOWN shortcut or reducer favors one epistemic state",
+      "enabling_systemic_cause": "No distinction between stronger known routing blocker and independent canonical coordinates",
+      "bounded_or_exhaustive_check": "Original exact minimal pair plus reason-drop and all first-winner table classes",
+      "recurrence_control": "Authorized source precedence + compound reason preservation; conflict resolution requalifies holder without inventing certainty",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C6",
+      "required_check": "terminal+privacy preserves history, prohibited recipient excluded",
+      "vector_ids": [
+        "A1-OVERLAP-PRIVACY-TERMINAL",
+        "QD-PRIVACY-ALL",
+        "QD-BOUNDARY-RECIPIENT"
+      ],
+      "observed_or_negative_condition": "Terminal reveals private history or privacy exclusion deletes history",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Terminal filter runs before A3 or root removed globally",
+      "enabling_systemic_cause": "Disclosure authorization mistaken for existence/history truth",
+      "bounded_or_exhaustive_check": "Original exact minimal pair, all 7 privacy guard controls and permitted/prohibited history view pair",
+      "recurrence_control": "Privacy outer guard and A5 retained terminal evidence subject to normal retention",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C7",
+      "required_check": "roundtrip/reconstruction preserves full reason set",
+      "vector_ids": [
+        "QD-ROUNDTRIP-COLD",
+        "QD-ROUNDTRIP-COMMUNICATION",
+        "QD-V2-RECORD"
+      ],
+      "observed_or_negative_condition": "DTO/schema/Dense/checkpoint retains only scalar label",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Unversioned or lossy codec omits secondary reason/evidence/boundary fields",
+      "enabling_systemic_cause": "No common decoder ownership or declared loss/conformance boundary",
+      "bounded_or_exhaustive_check": "Versioned record map plus memory/SQL/export-import/cold and qualified ICCP loss/reference paths; empirical runs still required",
+      "recurrence_control": "Explicit source-versioned maps; reject/HOLD/requalify material loss; A5 exact reconstruction and ICCP privacy-safe negotiated meaning",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    },
+    {
+      "check_id": "C8",
+      "required_check": "no different implementation-local precedence",
+      "vector_ids": [
+        "QD-NO-LOCAL-PRECEDENCE",
+        "QD-PRECEDENCE",
+        "QD-PRIMARY-NOT-AUTHORITY"
+      ],
+      "observed_or_negative_condition": "One helper conforms while another consumer selects another primary or grants effects",
+      "observation_class": "source-described overlap ambiguity / source-derived adversarial risk, not new candidate observation",
+      "direct_mechanism": "Scattered local priority/permission predicates",
+      "enabling_systemic_cause": "Nominal semantic owner bypassed by alternate renderer/decoder/caller",
+      "bounded_or_exhaustive_check": "Same qualified overlap inputs through kernel/classifier/coverage/projection/repository/cold/Pilot/ICCP; transitive actual caller proof required downstream",
+      "recurrence_control": "One IRIS-owned versioned selector and source maps; new consuming caller triggers mandatory common-seam proof",
+      "implementation_evidence": "unexecuted; source derivation and package mechanics only"
+    }
+  ],
+  "scope_bound": {
+    "predicate_meaning": "Each Boolean predicate is already source-qualified for the exact root/boundary/as_of. Lower historical/reason facts must not be incorrectly asserted as current active predicates. The selector never manufactures facts or decides semantic admissibility.",
+    "signatures": "127 nonempty predicate signatures × proven PERMITTED/PROHIBITED privacy = 254 conditional rows. Applicable source-consistent admitted signatures exhaust this selector class; an upstream inconsistent signature must be explicitly rejected, not fabricated as a valid aggregate.",
+    "outside_class": [
+      "no true semantic predicate for an admitted authorized root",
+      "unproven/UNKNOWN privacy (existing A3 blocks unauthorized admission; QD-UNKNOWN-PRIVACY-NEGATIVE)",
+      "invalid/incomplete root/schema/reason evidence",
+      "different as-of requiring requalification"
+    ],
+    "truth_vs_projection": "Primary is one boundary projection. The complete typed internal reason set may include additional material reasons not represented by a winning predicate; every such reason/evidence remains conserved.",
+    "no_empirical_exhaustiveness": "No claim of exhaustive distributed executions, actual callers or arbitrary canonical-state combinations."
+  },
+  "versioned_spelling_map": {
+    "source_v1": "frozen artifact13 at dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+    "source_v2": "BIG #703/5971926463 IRIS_ROOT_DISPOSITION_V2 equivalent",
+    "rows": [
+      {
+        "frozen_v1_artifact13_spelling": "PRIVACY_EXCLUDED",
+        "clarified_v2_spelling": "PRIVACY_EXCLUDED",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "INVALID_REJECTED",
+        "clarified_v2_spelling": "INVALID_REJECTED",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "CONFLICT_HOLD",
+        "clarified_v2_spelling": "CONFLICT_HOLD",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "TERMINAL_RETAINED",
+        "clarified_v2_spelling": "TERMINAL_RETAINED",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "JUSTIFIED_NOT_APPLICABLE",
+        "clarified_v2_spelling": "JUSTIFIED_NOT_APPLICABLE",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "RELEVANCE_UNKNOWN",
+        "clarified_v2_spelling": "RELEVANCE_UNKNOWN",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "DEFERRED/SUPPRESSED_WITH_REACTIVATION",
+        "clarified_v2_spelling": "DEFERRED_SUPPRESSED_WITH_REACTIVATION",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      },
+      {
+        "frozen_v1_artifact13_spelling": "KNOWN_REQUIRED",
+        "clarified_v2_spelling": "KNOWN_REQUIRED",
+        "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+        "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+      }
+    ],
+    "v1_unchanged": "All original non-affected v1 vectors retain their exact spelling/semantics. New v2 spellings are mapped explicitly; adapters may not silently case-fold/default."
+  },
+  "local_ancillary_source_copy": "sources/PACKAGE-MANIFEST.json was outside original 62-file publication seal; preserved locally byte-identical and remains excluded from publication, avoiding unrelated source archival delta.",
+  "question_disposition": "Exactly Q-DISPOSITION closed; no residual constitutional question; Batch-C acceptance not self-closed.",
+  "no_implementation_or_scoring": true,
+  "progress": "NO_NEW_GATE_PROGRESS"
+}

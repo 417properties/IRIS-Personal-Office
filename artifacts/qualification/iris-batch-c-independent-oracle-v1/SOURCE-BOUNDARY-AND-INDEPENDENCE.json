@@ -30,5 +30,44 @@
     "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
     "derivation_date": "2026-10-03",
     "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+  },
+  "Q_DISPOSITION_amendment": {
+    "revision": {
+      "oracle_version": "1.1-Q-DISPOSITION-ONLY",
+      "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+      "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+      "clarification_comment": "BIG #703/5971926463",
+      "derivation_date": "2026-10-03",
+      "time_vectors": "same explicit symbolic decision cuts as v1; no live provider observation"
+    },
+    "exact_new_evidence": [
+      {
+        "artifact": "Q-DISPOSITION-CLARIFICATION",
+        "path": "sources/BIG-comment-5971926463.json",
+        "repository": "417properties/BIG-Navigator",
+        "comment_id": 5971926463,
+        "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+        "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+        "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+        "bytes": 8333,
+        "authority": "canonical architecture clarification"
+      },
+      {
+        "artifact": "Q-DISPOSITION-MIRROR",
+        "path": "sources/IRIS-comment-5971928147.json",
+        "repository": "417properties/IRIS-Personal-Office",
+        "comment_id": 5971928147,
+        "comment_url": "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5971928147",
+        "sha256": "9718d4b22a26da2a691ff8c8f35774fff46556027c24da53ab88d3759716049b",
+        "blob": "5350e590a8b49b12d86c43fc34150fd70674c79d",
+        "bytes": 1153,
+        "authority": "mirror only; no additional authority"
+      }
+    ],
+    "scope": "original two A1 overlaps, WHOLE overlap scenario, directly dependent D03/index/coverage/question metadata plus necessary Q-specific discriminator vectors",
+    "independence": "Resumed same independent author context; no candidate/Builder source, expected outputs, scores, executions or results consumed. No implementation mutations or legacy empirical retests.",
+    "preservation": "original v1 local package/payload intact; frozen source snapshots unchanged",
+    "publication": "none by author; changed-files-only payload prepared for root",
+    "acceptance": "Q-DISPOSITION encoding closed only; Batch-C acceptance stays open and NO_NEW_GATE_PROGRESS"
   }
 }

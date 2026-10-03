@@ -622,42 +622,63 @@
       "proof_id": "P-A1-OVERLAP-PRIVACY-TERMINAL",
       "path": "oracles/A1.json",
       "claim_invariant": {
-        "invariants": [
-          "history retained subject to privacy/retention",
-          "no private content disclosure",
-          "exact object identity and one disposition",
-          "no silent disappearance"
+        "canonical_reason_set": [
+          "TERMINAL_SATISFIED",
+          "DISCLOSURE_PROHIBITED (exact recipient/purpose)"
         ],
-        "exact_disposition": "UNRESOLVED: TERMINAL_RETAINED vs PRIVACY_EXCLUDED; no priority chosen"
+        "canonical_lifecycle": "SATISFIED historical truth remains, subject to normal retention policy",
+        "prohibited_recipient_primary": "PRIVACY_EXCLUDED",
+        "prohibited_visible_reasons": "privacy-safe exclusion only; no terminal fact/private reason/evidence reference leak",
+        "authorized_history_primary": "TERMINAL_RETAINED for a separately proven permitted boundary with no stronger invalid/conflict predicate",
+        "canonical_truth_when_boundary_changes": "root/principal identity, terminal history and A1 coordinates unchanged; boundary-specific privacy result/projection reevaluated separately",
+        "invariants": {
+          "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+          "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+          "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+          "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+          "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+          "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+        }
       },
       "semantic_artifacts": [
         "01",
         "13",
         "14",
-        "17"
+        "17",
+        "Q-DISPOSITION-CLARIFICATION"
       ],
-      "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
       "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
     },
     {
       "proof_id": "P-A1-OVERLAP-CONFLICT-UNKNOWN",
       "path": "oracles/A1.json",
       "claim_invariant": {
-        "invariants": [
-          "retain CONFLICTED item facts and UNKNOWN holder separately",
-          "no unsafe positive promotion",
-          "exact identity and explicit destination",
-          "no silent disappearance"
+        "canonical_reason_set": [
+          "EPISTEMIC_CONFLICT",
+          "REQUIRED_HOLDER_UNKNOWN"
         ],
-        "exact_disposition": "UNRESOLVED: CONFLICT_HOLD vs RELEVANCE_UNKNOWN; no priority chosen"
+        "primary_visible_disposition": "CONFLICT_HOLD",
+        "required_holder": "UNKNOWN remains explicit, not FALSE/known-absent",
+        "after_conflict_resolution": "requalify from exact updated Current; unresolved holder may then determine RELEVANCE_UNKNOWN, no automatic known-required promotion",
+        "visible_reasons": "authorized subset of both reasons/evidence; no reason loss in canonical record",
+        "invariants": {
+          "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+          "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+          "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+          "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+          "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+          "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+        }
       },
       "semantic_artifacts": [
         "01",
         "13",
         "16",
-        "17"
+        "17",
+        "Q-DISPOSITION-CLARIFICATION"
       ],
-      "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
       "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
     },
     {
@@ -6807,7 +6828,34 @@
     {
       "proof_id": "P-WS-TERMINAL-PRIVATE-INAPPLICABLE",
       "path": "oracles/WHOLE.json",
-      "claim_invariant": "Separate nonoverlapping roots have explicit terminal/private/uncertain destinations; all identities conserved, unauthorized private content never egresses. Overlaps separately withheld under Q-DISPOSITION.",
+      "claim_invariant": {
+        "preserved_nonoverlapping_constraint": "Separate nonoverlapping roots have explicit terminal/private/uncertain destinations; all identities conserved, unauthorized private content never egresses.",
+        "overlap_variants": {
+          "terminal+prohibited_recipient": "PRIVACY_EXCLUDED externally, TERMINAL_RETAINED in permitted history boundary; retain terminal reason/history internally",
+          "conflict+holder_UNKNOWN+permitted": "CONFLICT_HOLD; both canonical reasons retained",
+          "terminal+UNKNOWN+permitted": "TERMINAL_RETAINED; material UNKNOWN secondary reason retained",
+          "proven_not_applicable+holder_UNKNOWN+permitted": "JUSTIFIED_NOT_APPLICABLE; UNKNOWN cannot resurrect proven non-applicability",
+          "conflict+terminal+permitted": "CONFLICT_HOLD until conflict reconciled; terminal assertion/evidence retained",
+          "known_required+valid_defer+permitted": "DEFERRED_SUPPRESSED_WITH_REACTIVATION; underlying requirement and invalidators retained"
+        },
+        "integrated_requirements": {
+          "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+          "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+          "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+          "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+          "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+          "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+        },
+        "source_order_authorized": [
+          "INVALID_REJECTED",
+          "CONFLICT_HOLD",
+          "TERMINAL_RETAINED",
+          "JUSTIFIED_NOT_APPLICABLE",
+          "RELEVANCE_UNKNOWN",
+          "DEFERRED_SUPPRESSED_WITH_REACTIVATION",
+          "KNOWN_REQUIRED"
+        ]
+      },
       "semantic_artifacts": [
         "01",
         "02",
@@ -6827,9 +6875,10 @@
         "20",
         "24",
         "25",
-        "26"
+        "26",
+        "Q-DISPOSITION-CLARIFICATION"
       ],
-      "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
       "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
     },
     {
@@ -7680,13 +7729,14 @@
     {
       "proof_id": "P-CAUSAL-D03",
       "path": "proofs/TWO-LAYERS-DEEP-FINDINGS-NONFINDINGS.json",
-      "claim_invariant": "A1 conservation + explicit versioned domain maps + total destination audit",
+      "claim_invariant": "A1 conservation + explicit versioned domain maps + total destination audit; Q-DISPOSITION uses IRIS-owned versioned compound reasons with privacy outer guard and one boundary-specific source primary; no local precedence",
       "semantic_artifacts": [
         "10",
         "20",
-        "23"
+        "23",
+        "Q-DISPOSITION-CLARIFICATION"
       ],
-      "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
       "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
     },
     {
@@ -8061,6 +8111,380 @@
       ],
       "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
       "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+    },
+    {
+      "proof_id": "P-QD-V2-RECORD",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "required_semantics": [
+          "root_ref",
+          "principal_ref",
+          "as_of",
+          "boundary_id/consumer_class",
+          "full A1 canonical coordinates",
+          "lifecycle/applicability state",
+          "privacy/disclosure result where material",
+          "primary_visible_disposition",
+          "reason_set[] with typed reasons and evidence refs",
+          "visible_reason_projection[]",
+          "reactivation/invalidator_refs[] where applicable",
+          "schema/version/provenance"
+        ],
+        "one_primary": "exactly one artifact13 visible value per admitted boundary",
+        "full_reason_count": "one or more canonical typed reasons, not one reason merely because primary count is one",
+        "history": "A5 persists/reconstructs all internal coordinates/reasons subject to normal retention",
+        "noncollapse": [
+          "PRIMARY_VISIBLE_DISPOSITION != COMPLETE_CANONICAL_STATE",
+          "ONE_VISIBLE_DISPOSITION != ONE_CANONICAL_REASON",
+          "PRIVACY_EXCLUSION != HISTORY_DELETION",
+          "CONFLICT_HOLD != UNKNOWN_ERASURE"
+        ]
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-PRECEDENCE",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "authorized_order": [
+          "INVALID_REJECTED",
+          "CONFLICT_HOLD",
+          "TERMINAL_RETAINED",
+          "JUSTIFIED_NOT_APPLICABLE",
+          "RELEVANCE_UNKNOWN",
+          "DEFERRED_SUPPRESSED_WITH_REACTIVATION",
+          "KNOWN_REQUIRED"
+        ],
+        "selection": "first applicable in source order; all other true reasons retained",
+        "truth": "precedence is routing/projection only; never changes independent A1 facts/applicability/history",
+        "explicit_spelling_map": {
+          "source_v1": "frozen artifact13 at dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "source_v2": "BIG #703/5971926463 IRIS_ROOT_DISPOSITION_V2 equivalent",
+          "rows": [
+            {
+              "frozen_v1_artifact13_spelling": "PRIVACY_EXCLUDED",
+              "clarified_v2_spelling": "PRIVACY_EXCLUDED",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "INVALID_REJECTED",
+              "clarified_v2_spelling": "INVALID_REJECTED",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "CONFLICT_HOLD",
+              "clarified_v2_spelling": "CONFLICT_HOLD",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "TERMINAL_RETAINED",
+              "clarified_v2_spelling": "TERMINAL_RETAINED",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "JUSTIFIED_NOT_APPLICABLE",
+              "clarified_v2_spelling": "JUSTIFIED_NOT_APPLICABLE",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "RELEVANCE_UNKNOWN",
+              "clarified_v2_spelling": "RELEVANCE_UNKNOWN",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "DEFERRED/SUPPRESSED_WITH_REACTIVATION",
+              "clarified_v2_spelling": "DEFERRED_SUPPRESSED_WITH_REACTIVATION",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            },
+            {
+              "frozen_v1_artifact13_spelling": "KNOWN_REQUIRED",
+              "clarified_v2_spelling": "KNOWN_REQUIRED",
+              "semantic_equivalence": "explicit IRIS-owned versioned representation translation only; no truth/evidence/authority change",
+              "reverse_translation": "exact frozen v1 spelling, not case-fold/default"
+            }
+          ],
+          "v1_unchanged": "All original non-affected v1 vectors retain their exact spelling/semantics. New v2 spellings are mapped explicitly; adapters may not silently case-fold/default."
+        },
+        "admitted_class_bound": {
+          "predicate_meaning": "Each Boolean predicate is already source-qualified for the exact root/boundary/as_of. Lower historical/reason facts must not be incorrectly asserted as current active predicates. The selector never manufactures facts or decides semantic admissibility.",
+          "signatures": "127 nonempty predicate signatures × proven PERMITTED/PROHIBITED privacy = 254 conditional rows. Applicable source-consistent admitted signatures exhaust this selector class; an upstream inconsistent signature must be explicitly rejected, not fabricated as a valid aggregate.",
+          "outside_class": [
+            "no true semantic predicate for an admitted authorized root",
+            "unproven/UNKNOWN privacy (existing A3 blocks unauthorized admission; QD-UNKNOWN-PRIVACY-NEGATIVE)",
+            "invalid/incomplete root/schema/reason evidence",
+            "different as-of requiring requalification"
+          ],
+          "truth_vs_projection": "Primary is one boundary projection. The complete typed internal reason set may include additional material reasons not represented by a winning predicate; every such reason/evidence remains conserved.",
+          "no_empirical_exhaustiveness": "No claim of exhaustive distributed executions, actual callers or arbitrary canonical-state combinations."
+        }
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-PRIVACY-ALL",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "primary_for_every_prohibited_case": "PRIVACY_EXCLUDED",
+        "guard_order": "privacy before all 7 authorized semantic classes, including INVALID and CONFLICT",
+        "canonical": "underlying reasons, evidence, coordinates, history and invalidators preserved subject to retention",
+        "external": "only privacy-safe reason; secondary state, number, kind, values and resolvable references must not leak what recipient is not authorized to know"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-TERMINAL-UNKNOWN",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "primary": "TERMINAL_RETAINED",
+        "retained_canonical_reasons": [
+          "terminal lifecycle reason",
+          "material holder UNKNOWN"
+        ],
+        "requalification": "source facts and current boundary requalified on relevant invalidators; no disappearance/automatic revival/promotion"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-NOTAPPLICABLE-UNKNOWN",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "primary": "JUSTIFIED_NOT_APPLICABLE",
+        "retained_canonical_reasons": [
+          "positive non-applicability proof",
+          "holder UNKNOWN"
+        ],
+        "requalification": "source facts and current boundary requalified on relevant invalidators; no disappearance/automatic revival/promotion"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-CONFLICT-TERMINAL",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "primary": "CONFLICT_HOLD",
+        "retained_canonical_reasons": [
+          "EPISTEMIC_CONFLICT",
+          "historical terminal assertion/evidence"
+        ],
+        "requalification": "source facts and current boundary requalified on relevant invalidators; no disappearance/automatic revival/promotion"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-DEFER-KNOWN",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "primary": "DEFERRED_SUPPRESSED_WITH_REACTIVATION",
+        "retained_canonical_reasons": [
+          "KNOWN_REQUIREMENT",
+          "DEFERRED_SUPPRESSED with base/reason/invalidators"
+        ],
+        "requalification": "source facts and current boundary requalified on relevant invalidators; no disappearance/automatic revival/promotion"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-BOUNDARY-RECIPIENT",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "A_primary": "TERMINAL_RETAINED",
+        "B_primary": "PRIVACY_EXCLUDED",
+        "invariant_equal": [
+          "root/principal identity",
+          "A1 canonical fact coordinates",
+          "terminal history and lifecycle evidence",
+          "complete canonical reason/evidence basis"
+        ],
+        "boundary_specific": "disclosure assessment and visible reason projection are reevaluated/tagged by exact boundary; not a second truth store",
+        "not_allowed": "recipient/purpose change itself rewrites terminal truth, drops UNKNOWN/conflict or creates authority"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-BOUNDARY-PURPOSE",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "A_primary": "TERMINAL_RETAINED",
+        "B_primary": "PRIVACY_EXCLUDED",
+        "invariant_equal": [
+          "root/principal identity",
+          "A1 canonical fact coordinates",
+          "terminal history and lifecycle evidence",
+          "complete canonical reason/evidence basis"
+        ],
+        "boundary_specific": "disclosure assessment and visible reason projection are reevaluated/tagged by exact boundary; not a second truth store",
+        "not_allowed": "recipient/purpose change itself rewrites terminal truth, drops UNKNOWN/conflict or creates authority"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-PRIVATE-SECONDARY-NEGATIVE",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "external_projection": "reject/redact unauthorized reason/detail/reference; primary alone is not sufficient privacy proof",
+        "authorized_internal": "complete canonical reason set retained where retention permits",
+        "privacy_check": "purpose, exact recipient and minimum necessary projection independently enforced"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-ROUNDTRIP-COLD",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "canonical_roundtrip": "same root/principal identity, coordinates, complete typed reason/evidence set, lifecycle/privacy restrictions, versions/provenance and invalidators",
+        "permitted_primary": "same source order at same qualified boundary/cut",
+        "prohibited_primary": "PRIVACY_EXCLUDED with safe visible subset",
+        "different_cut": "revalidate temporal/retention/boundary facts, do not demand stale historical view be current",
+        "method_limit": "mechanical oracle structural validation is not SQL/cold empirical conformance"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-ROUNDTRIP-COMMUNICATION",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "authorized_internal_reconstruction": "complete required canonical meaning/reason/evidence set preserved or resolvably referenced within A3 permissions",
+        "external_projection": "transport only authorized safe subset; do not require disclosing full private reasons to prohibited receiver",
+        "loss": "missing required reason/coordinates/boundary/version -> HOLD/fallback/requalification before use; no silently pick a different primary",
+        "no_new_truth": "Dense/Wire/projection remains derived; delivery not authority/Current"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-NO-LOCAL-PRECEDENCE",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "all_admitted_views": "one IRIS-owned versioned equivalent source selector; boundary-relative differences justified only by exact consumer privacy/purpose/cut evidence",
+        "negative_result": "different unauthorized local precedence fails Q-DISPOSITION conformance even if helper tests pass",
+        "proof_scope": "actual transitive caller/adaptor inventory and execution still required downstream"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-SECONDARY-REASON-DROP",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "conformance": "FAIL despite correct primary",
+        "required": "CONFLICTED and UNKNOWN facts/reasons/evidence remain independent and reconstructable",
+        "after_reconciliation": "only explicit source-backed fact/correction/requalification can alter reasons; resolving conflict does not prove holder known"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-REACTIVATION-PRESERVATION",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "external_primary": "PRIVACY_EXCLUDED without leaking private wait/wake details",
+        "internal_primary": "DEFERRED_SUPPRESSED_WITH_REACTIVATION in permitted view absent stronger reason",
+        "history": "known-required status and deferred reactivation contract retained subject to retention; privacy exclusion is not destruction/sleep cancellation",
+        "wake": "relevant invalidator triggers existing source-qualified requalification, not automatic known-required action"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-UNKNOWN-PRIVACY-NEGATIVE",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "egress": "fail closed under existing A3; do not enter permitted semantic selector or expose private secondary reasons without proof",
+        "epistemic": "UNKNOWN permission retained; not rewritten as proven DISCLOSURE_PROHIBITED or false",
+        "scope": "this negative grades forbidden unauthorized admission/leak, not a new primary spelling for an unadmitted projection"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-PRIMARY-NOT-AUTHORITY",
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "claim_invariant": {
+        "release": "primary does not grant tool/effect authority, objective closure, institutional promotion or extra retention",
+        "truth": "current requirement/history/conflict facts are conserved independent of permitted action",
+        "no_scope_expansion": "clarification resolves projection encoding only"
+      },
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+    },
+    {
+      "proof_id": "P-QD-PRECEDENCE-TABLE",
+      "path": "oracles/Q-DISPOSITION-PRECEDENCE-TABLE.json",
+      "claim_invariant": "Privacy outer guard and first applicable source-qualified authorized primary preserve every simultaneous canonical reason across every conditional nonempty predicate signature.",
+      "semantic_artifacts": [
+        "Q-DISPOSITION-CLARIFICATION"
+      ],
+      "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+      "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
     }
   ],
   "note": "All scope schemas are expanded in their artifact; this index is not a conformance PASS."

@@ -1,5 +1,5 @@
 {
-  "status": "ONE_OPEN_ENCODING_CLARIFICATION",
+  "status": "Q_DISPOSITION_CLOSED_BY_SOURCE; NO_OPEN_ENCODING_CLARIFICATIONS; BATCH_C_ACCEPTANCE_OPEN",
   "questions": [
     {
       "question_id": "Q-DISPOSITION",
@@ -87,7 +87,12 @@
             "terminal_detail": "retained internally with terminal reason",
             "history": "retained internally"
           },
-          "incompatibility": "Exactly one scalar visible disposition cannot simultaneously be these two values. Both preserve history/privacy/conservation absent a source priority."
+          "incompatibility": "Exactly one scalar visible disposition cannot simultaneously be these two values. Both preserve history/privacy/conservation absent a source priority.",
+          "resolved_outcomes": {
+            "prohibited_recipient": "PRIVACY_EXCLUDED",
+            "permitted_history": "TERMINAL_RETAINED",
+            "canonical": "TERMINAL_SATISFIED and boundary-specific disclosure result retained; no history deletion"
+          }
         },
         {
           "same_input": {
@@ -98,24 +103,104 @@
           },
           "outcome_A": "CONFLICT_HOLD with UNKNOWN reason",
           "outcome_B": "RELEVANCE_UNKNOWN with conflict reason",
-          "incompatibility": "Single scalar disposition differs while both preserve separate epistemic facts and deny unsafe promotion."
+          "incompatibility": "Single scalar disposition differs while both preserve separate epistemic facts and deny unsafe promotion.",
+          "resolved_outcome": {
+            "primary": "CONFLICT_HOLD",
+            "reasons": [
+              "EPISTEMIC_CONFLICT",
+              "REQUIRED_HOLDER_UNKNOWN"
+            ]
+          }
         }
       ],
       "why_precedence_does_not_resolve": "Founder/base and accepted contracts require distinct coordinates, no silent drop and privacy protection, but neither supplies a priority between the listed simultaneous disposition predicates. Audit falsifies dropped/positive roots; it is not authority to choose the new partition. Implementation/tests are evidence only.",
       "affected_vector_ids": [
         "A1-OVERLAP-PRIVACY-TERMINAL",
         "A1-OVERLAP-CONFLICT-UNKNOWN",
-        "WS-TERMINAL-PRIVATE-INAPPLICABLE (overlap variants only)"
+        "WS-TERMINAL-PRIVATE-INAPPLICABLE",
+        "QD-V2-RECORD",
+        "QD-PRECEDENCE",
+        "QD-PRIVACY-ALL",
+        "QD-TERMINAL-UNKNOWN",
+        "QD-NOTAPPLICABLE-UNKNOWN",
+        "QD-CONFLICT-TERMINAL",
+        "QD-DEFER-KNOWN",
+        "QD-BOUNDARY-RECIPIENT",
+        "QD-BOUNDARY-PURPOSE",
+        "QD-PRIVATE-SECONDARY-NEGATIVE",
+        "QD-ROUNDTRIP-COLD",
+        "QD-ROUNDTRIP-COMMUNICATION",
+        "QD-NO-LOCAL-PRECEDENCE",
+        "QD-SECONDARY-REASON-DROP",
+        "QD-REACTIVATION-PRESERVATION",
+        "QD-UNKNOWN-PRIVACY-NEGATIVE",
+        "QD-PRIMARY-NOT-AUTHORITY"
       ],
       "affected_proof_ids": [
         "P-A1-OVERLAP-PRIVACY-TERMINAL",
         "P-A1-OVERLAP-CONFLICT-UNKNOWN",
-        "P-WS-TERMINAL-PRIVATE-INAPPLICABLE (overlap scalar only)",
-        "P-A1-PRODUCT (does not grade destination precedence)"
+        "P-WS-TERMINAL-PRIVATE-INAPPLICABLE",
+        "P-QD-V2-RECORD",
+        "P-QD-PRECEDENCE",
+        "P-QD-PRIVACY-ALL",
+        "P-QD-TERMINAL-UNKNOWN",
+        "P-QD-NOTAPPLICABLE-UNKNOWN",
+        "P-QD-CONFLICT-TERMINAL",
+        "P-QD-DEFER-KNOWN",
+        "P-QD-BOUNDARY-RECIPIENT",
+        "P-QD-BOUNDARY-PURPOSE",
+        "P-QD-PRIVATE-SECONDARY-NEGATIVE",
+        "P-QD-ROUNDTRIP-COLD",
+        "P-QD-ROUNDTRIP-COMMUNICATION",
+        "P-QD-NO-LOCAL-PRECEDENCE",
+        "P-QD-SECONDARY-REASON-DROP",
+        "P-QD-REACTIVATION-PRESERVATION",
+        "P-QD-UNKNOWN-PRIVACY-NEGATIVE",
+        "P-QD-PRIMARY-NOT-AUTHORITY",
+        "P-CAUSAL-D03"
       ],
-      "non_scoreable_boundary": "Only exact scalar disposition for overlapping predicates is withheld. Privacy, no release without authority, terminal history and explicit identity/destination conservation remain scoreable constraints. Nonoverlapping disposition vectors remain scoreable.",
-      "required_return": "A1/A4/A5-owned priority or canonical compound-reason rule with privacy-safe visible representation, exact cases and schema/version; no new implementation-local owner.",
-      "Founder_threshold": "Not established: no authority/privacy/end-state rights policy change requested; IBA1.9 must clarify existing-intent encoding."
+      "non_scoreable_boundary": "None remaining for the two clarified source-proven overlap inputs. Exact primary is now determinate; unknown privacy negative remains an unadmitted/unsafe egress check under existing A3, not a fabricated primary.",
+      "required_return": "Satisfied by bounded v1.1 amendment; Professor returns resealed object for STRATA adjudication. Gate not self-closed.",
+      "Founder_threshold": "Not established: no authority/privacy/end-state rights policy change requested; IBA1.9 must clarify existing-intent encoding.",
+      "status": "CLOSED_BY_EXACT_IBA_ENCODING_CLARIFICATION; ORACLE_AMENDED; NOT_BATCH_C_GATE_ACCEPTANCE",
+      "resolution_source": [
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
+        },
+        {
+          "artifact": "Q-DISPOSITION-MIRROR",
+          "path": "sources/IRIS-comment-5971928147.json",
+          "repository": "417properties/IRIS-Personal-Office",
+          "comment_id": 5971928147,
+          "comment_url": "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5971928147",
+          "sha256": "9718d4b22a26da2a691ff8c8f35774fff46556027c24da53ab88d3759716049b",
+          "blob": "5350e590a8b49b12d86c43fc34150fd70674c79d",
+          "bytes": 1153,
+          "authority": "mirror only; no additional authority"
+        }
+      ],
+      "resolved_model": {
+        "versioned_record": "IRIS_ROOT_DISPOSITION_V2 equivalent compound reason+boundary primary",
+        "privacy_outer_guard": "known exact prohibition -> PRIVACY_EXCLUDED",
+        "authorized_order": [
+          "INVALID_REJECTED",
+          "CONFLICT_HOLD",
+          "TERMINAL_RETAINED",
+          "JUSTIFIED_NOT_APPLICABLE",
+          "RELEVANCE_UNKNOWN",
+          "DEFERRED_SUPPRESSED_WITH_REACTIVATION",
+          "KNOWN_REQUIRED"
+        ],
+        "canonical_truth": "all true reasons/evidence and coordinates conserved subject to retention; visible subset privacy-safe"
+      }
     }
   ],
   "source_closed_questions": [

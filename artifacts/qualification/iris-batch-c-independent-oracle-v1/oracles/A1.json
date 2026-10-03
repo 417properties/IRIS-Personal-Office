@@ -3380,13 +3380,23 @@
         "visible_disposition_count_required": 1
       },
       "expected": {
-        "invariants": [
-          "history retained subject to privacy/retention",
-          "no private content disclosure",
-          "exact object identity and one disposition",
-          "no silent disappearance"
+        "canonical_reason_set": [
+          "TERMINAL_SATISFIED",
+          "DISCLOSURE_PROHIBITED (exact recipient/purpose)"
         ],
-        "exact_disposition": "UNRESOLVED: TERMINAL_RETAINED vs PRIVACY_EXCLUDED; no priority chosen"
+        "canonical_lifecycle": "SATISFIED historical truth remains, subject to normal retention policy",
+        "prohibited_recipient_primary": "PRIVACY_EXCLUDED",
+        "prohibited_visible_reasons": "privacy-safe exclusion only; no terminal fact/private reason/evidence reference leak",
+        "authorized_history_primary": "TERMINAL_RETAINED for a separately proven permitted boundary with no stronger invalid/conflict predicate",
+        "canonical_truth_when_boundary_changes": "root/principal identity, terminal history and A1 coordinates unchanged; boundary-specific privacy result/projection reevaluated separately",
+        "invariants": {
+          "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+          "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+          "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+          "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+          "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+          "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+        }
       },
       "semantic_sources": [
         {
@@ -3416,24 +3426,48 @@
           "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
           "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
           "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
         }
       ],
       "required_observations": [
         "input/evidence snapshot identities and as-of",
         "result/disposition with retained epistemic coordinates",
         "durable writes, effect submissions and continuation state where applicable",
-        "consumer/caller identity and boundary trace"
+        "consumer/caller identity and boundary trace",
+        "canonical complete typed reason_set/evidence vs privacy-safe visible_reason_projection",
+        "exact recipient/purpose/boundary and one primary at the same as_of",
+        "pre/post boundary-change canonical identity/coordinates/reason equality"
       ],
       "proof": {
         "proof_id": "P-A1-OVERLAP-PRIVACY-TERMINAL",
         "claim_invariant": {
-          "invariants": [
-            "history retained subject to privacy/retention",
-            "no private content disclosure",
-            "exact object identity and one disposition",
-            "no silent disappearance"
+          "canonical_reason_set": [
+            "TERMINAL_SATISFIED",
+            "DISCLOSURE_PROHIBITED (exact recipient/purpose)"
           ],
-          "exact_disposition": "UNRESOLVED: TERMINAL_RETAINED vs PRIVACY_EXCLUDED; no priority chosen"
+          "canonical_lifecycle": "SATISFIED historical truth remains, subject to normal retention policy",
+          "prohibited_recipient_primary": "PRIVACY_EXCLUDED",
+          "prohibited_visible_reasons": "privacy-safe exclusion only; no terminal fact/private reason/evidence reference leak",
+          "authorized_history_primary": "TERMINAL_RETAINED for a separately proven permitted boundary with no stronger invalid/conflict predicate",
+          "canonical_truth_when_boundary_changes": "root/principal identity, terminal history and A1 coordinates unchanged; boundary-specific privacy result/projection reevaluated separately",
+          "invariants": {
+            "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+            "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+            "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+            "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+            "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+            "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+          }
         },
         "semantic_source": [
           {
@@ -3463,35 +3497,55 @@
             "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
             "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
             "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "Q-DISPOSITION-CLARIFICATION",
+            "path": "sources/BIG-comment-5971926463.json",
+            "repository": "417properties/BIG-Navigator",
+            "comment_id": 5971926463,
+            "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+            "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+            "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+            "bytes": 8333,
+            "authority": "canonical architecture clarification"
           }
         ],
-        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
-        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
-        "PASS_establishes": "The observed run satisfies only A1-OVERLAP-PRIVACY-TERMINAL under its explicit premises and tested consumers.",
-        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
-        "falsifier": "Selecting one scalar without adjudicated priority.",
-        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "dependency_closure": "A1 canonical facts/reasons + A3 exact boundary privacy -> IRIS-owned versioned disposition selector -> classifier/coverage/projection/Pilot/ICCP adapters -> A5 canonical persistence and cold reconstruction -> same boundary selector; all callers use one precedence, no local owner.",
+        "method": "Independent source deduction from exact IBA clarification; finite boundary/precedence/overlap minimal pairs and adversarial loss/leak/reconstruction cases. Mechanical package checks only were executed; downstream implementation conformance remains unexecuted.",
+        "PASS_establishes": "Only the tested Q-DISPOSITION reason conservation, privacy-safe boundary projection and source precedence cases through the stated exercised consumers.",
+        "PASS_does_not_establish": "Untested callers, every distributed schedule, actual SQL execution, candidate correctness outside Q-DISPOSITION, action/authority, legacy empirical retest, continuity, IEF maturity or Batch-C acceptance.",
+        "falsifier": "Wrong boundary primary, erased secondary canonical reason/evidence, leaked unauthorized reason/content/reference, truth changed solely by recipient/purpose, roundtrip loss or a different local precedence.",
+        "independence_class": "RESUMED_FRESH_SOURCE_ONLY_ORACLE_AUTHOR; NO_CANDIDATE_OR_BUILDER_RESULTS",
         "implementation_assumptions": [
-          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
-          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+          "Versioned IRIS-owned equivalent of IRIS_ROOT_DISPOSITION_V2; internal spelling/factoring may differ through explicit total mapping.",
+          "Selector consumes proven predicates and exact boundary/as_of evidence; it cannot invent or adjudicate fact/privacy truth.",
+          "No candidate/Builder outputs, scores or implementation expected results used; all empirical conformance remains downstream."
         ],
-        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
         "as_of_version": {
-          "oracle_version": "1.0",
+          "oracle_version": "1.1-Q-DISPOSITION-ONLY",
           "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+          "clarification_comment": "BIG #703/5971926463",
           "derivation_date": "2026-10-03",
-          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+          "time_vectors": "same explicit symbolic decision cuts as v1; no live provider observation"
         },
         "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
       },
-      "scoreability": "DETERMINATE_INVARIANTS_WITH_UNSCORED_EXACT_DISPOSITION",
-      "gap_id": "Q-DISPOSITION",
-      "unscored_expected_fields": [
-        "exact_disposition"
-      ],
-      "scoreable_expected_fields": [
-        "invariants"
-      ]
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null,
+      "clarified_question": "Q-DISPOSITION",
+      "clarification_source": {
+        "artifact": "Q-DISPOSITION-CLARIFICATION",
+        "path": "sources/BIG-comment-5971926463.json",
+        "repository": "417properties/BIG-Navigator",
+        "comment_id": 5971926463,
+        "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+        "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+        "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+        "bytes": 8333,
+        "authority": "canonical architecture clarification"
+      }
     },
     {
       "id": "A1-OVERLAP-CONFLICT-UNKNOWN",
@@ -3504,13 +3558,22 @@
         "visible_disposition_count_required": 1
       },
       "expected": {
-        "invariants": [
-          "retain CONFLICTED item facts and UNKNOWN holder separately",
-          "no unsafe positive promotion",
-          "exact identity and explicit destination",
-          "no silent disappearance"
+        "canonical_reason_set": [
+          "EPISTEMIC_CONFLICT",
+          "REQUIRED_HOLDER_UNKNOWN"
         ],
-        "exact_disposition": "UNRESOLVED: CONFLICT_HOLD vs RELEVANCE_UNKNOWN; no priority chosen"
+        "primary_visible_disposition": "CONFLICT_HOLD",
+        "required_holder": "UNKNOWN remains explicit, not FALSE/known-absent",
+        "after_conflict_resolution": "requalify from exact updated Current; unresolved holder may then determine RELEVANCE_UNKNOWN, no automatic known-required promotion",
+        "visible_reasons": "authorized subset of both reasons/evidence; no reason loss in canonical record",
+        "invariants": {
+          "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+          "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+          "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+          "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+          "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+          "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+        }
       },
       "semantic_sources": [
         {
@@ -3540,24 +3603,47 @@
           "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
           "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
           "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
         }
       ],
       "required_observations": [
         "input/evidence snapshot identities and as-of",
         "result/disposition with retained epistemic coordinates",
         "durable writes, effect submissions and continuation state where applicable",
-        "consumer/caller identity and boundary trace"
+        "consumer/caller identity and boundary trace",
+        "canonical complete typed reason_set/evidence vs privacy-safe visible_reason_projection",
+        "exact recipient/purpose/boundary and one primary at the same as_of",
+        "pre/post boundary-change canonical identity/coordinates/reason equality"
       ],
       "proof": {
         "proof_id": "P-A1-OVERLAP-CONFLICT-UNKNOWN",
         "claim_invariant": {
-          "invariants": [
-            "retain CONFLICTED item facts and UNKNOWN holder separately",
-            "no unsafe positive promotion",
-            "exact identity and explicit destination",
-            "no silent disappearance"
+          "canonical_reason_set": [
+            "EPISTEMIC_CONFLICT",
+            "REQUIRED_HOLDER_UNKNOWN"
           ],
-          "exact_disposition": "UNRESOLVED: CONFLICT_HOLD vs RELEVANCE_UNKNOWN; no priority chosen"
+          "primary_visible_disposition": "CONFLICT_HOLD",
+          "required_holder": "UNKNOWN remains explicit, not FALSE/known-absent",
+          "after_conflict_resolution": "requalify from exact updated Current; unresolved holder may then determine RELEVANCE_UNKNOWN, no automatic known-required promotion",
+          "visible_reasons": "authorized subset of both reasons/evidence; no reason loss in canonical record",
+          "invariants": {
+            "canonical": "Full independent A1 coordinates, lifecycle/applicability and all simultaneous typed true reasons/evidence are preserved by A5 subject to normal retention policy. Primary is a projection, never complete truth.",
+            "boundary": "Exactly one primary_visible_disposition per admitted boundary-specific projection; boundary_id/consumer_class, principal/root refs, purpose/recipient and as_of are explicit.",
+            "privacy": "A3 exact recipient/purpose prohibition selects PRIVACY_EXCLUDED before semantic precedence. Unauthorized visible_reason_projection exposes only a privacy-safe reason, never private secondary reason/value/reference.",
+            "authorized": "Only inside a proven permitted disclosure boundary, choose the first applicable semantic disposition in the source order. All secondary canonical reasons remain true, not erased.",
+            "permission_unknown": "Do not treat unknown privacy as known permitted/prohibited. A3 fail-closed qualification blocks unauthorized disclosure; no new primary spelling is invented for an unadmitted projection.",
+            "action": "KNOWN_REQUIRED or any visible primary is not authority to act, proof of effect, or objective closure."
+          }
         },
         "semantic_source": [
           {
@@ -3587,35 +3673,77 @@
             "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
             "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
             "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "Q-DISPOSITION-CLARIFICATION",
+            "path": "sources/BIG-comment-5971926463.json",
+            "repository": "417properties/BIG-Navigator",
+            "comment_id": 5971926463,
+            "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+            "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+            "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+            "bytes": 8333,
+            "authority": "canonical architecture clarification"
           }
         ],
-        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
-        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
-        "PASS_establishes": "The observed run satisfies only A1-OVERLAP-CONFLICT-UNKNOWN under its explicit premises and tested consumers.",
-        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
-        "falsifier": "Selecting one scalar without adjudicated priority.",
-        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "dependency_closure": "A1 canonical facts/reasons + A3 exact boundary privacy -> IRIS-owned versioned disposition selector -> classifier/coverage/projection/Pilot/ICCP adapters -> A5 canonical persistence and cold reconstruction -> same boundary selector; all callers use one precedence, no local owner.",
+        "method": "Independent source deduction from exact IBA clarification; finite boundary/precedence/overlap minimal pairs and adversarial loss/leak/reconstruction cases. Mechanical package checks only were executed; downstream implementation conformance remains unexecuted.",
+        "PASS_establishes": "Only the tested Q-DISPOSITION reason conservation, privacy-safe boundary projection and source precedence cases through the stated exercised consumers.",
+        "PASS_does_not_establish": "Untested callers, every distributed schedule, actual SQL execution, candidate correctness outside Q-DISPOSITION, action/authority, legacy empirical retest, continuity, IEF maturity or Batch-C acceptance.",
+        "falsifier": "Wrong boundary primary, erased secondary canonical reason/evidence, leaked unauthorized reason/content/reference, truth changed solely by recipient/purpose, roundtrip loss or a different local precedence.",
+        "independence_class": "RESUMED_FRESH_SOURCE_ONLY_ORACLE_AUTHOR; NO_CANDIDATE_OR_BUILDER_RESULTS",
         "implementation_assumptions": [
-          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
-          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+          "Versioned IRIS-owned equivalent of IRIS_ROOT_DISPOSITION_V2; internal spelling/factoring may differ through explicit total mapping.",
+          "Selector consumes proven predicates and exact boundary/as_of evidence; it cannot invent or adjudicate fact/privacy truth.",
+          "No candidate/Builder outputs, scores or implementation expected results used; all empirical conformance remains downstream."
         ],
-        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
         "as_of_version": {
-          "oracle_version": "1.0",
+          "oracle_version": "1.1-Q-DISPOSITION-ONLY",
           "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+          "clarification_comment": "BIG #703/5971926463",
           "derivation_date": "2026-10-03",
-          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+          "time_vectors": "same explicit symbolic decision cuts as v1; no live provider observation"
         },
         "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
       },
-      "scoreability": "DETERMINATE_INVARIANTS_WITH_UNSCORED_EXACT_DISPOSITION",
-      "gap_id": "Q-DISPOSITION",
-      "unscored_expected_fields": [
-        "exact_disposition"
-      ],
-      "scoreable_expected_fields": [
-        "invariants"
-      ]
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null,
+      "clarified_question": "Q-DISPOSITION",
+      "clarification_source": {
+        "artifact": "Q-DISPOSITION-CLARIFICATION",
+        "path": "sources/BIG-comment-5971926463.json",
+        "repository": "417properties/BIG-Navigator",
+        "comment_id": 5971926463,
+        "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+        "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+        "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+        "bytes": 8333,
+        "authority": "canonical architecture clarification"
+      }
     }
-  ]
+  ],
+  "amendment_metadata": {
+    "scope": "only original two Q-DISPOSITION overlap records/proofs",
+    "clarification": {
+      "artifact": "Q-DISPOSITION-CLARIFICATION",
+      "path": "sources/BIG-comment-5971926463.json",
+      "repository": "417properties/BIG-Navigator",
+      "comment_id": 5971926463,
+      "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+      "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+      "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+      "bytes": 8333,
+      "authority": "canonical architecture clarification"
+    },
+    "revision": {
+      "oracle_version": "1.1-Q-DISPOSITION-ONLY",
+      "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+      "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+      "clarification_comment": "BIG #703/5971926463",
+      "derivation_date": "2026-10-03",
+      "time_vectors": "same explicit symbolic decision cuts as v1; no live provider observation"
+    }
+  }
 }

@@ -1,58 +1,94 @@
 {
-  "artifact": "IRIS-BATCH-C-INDEPENDENT-ORACLE-PROOF-v1.0",
+  "artifact": "IRIS-BATCH-C-INDEPENDENT-ORACLE-PROOF-v1.1-Q-DISPOSITION",
   "authority": "ZERO_AUTHORITY",
   "progress": "NO_NEW_GATE_PROGRESS",
-  "freeze_status": "FROZEN_DETERMINATE_CONSTRAINTS_WITH_Q_DISPOSITION_SCALAR_WITHHELD",
+  "freeze_status": "FROZEN_CLARIFIED_ORACLE; Q_DISPOSITION_CLOSED; BATCH_C_ACCEPTANCE_OPEN",
   "as_of": "2026-10-03",
   "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
   "dispatch": "BIG #703/5971539564",
   "acceptance_basis": "BIG #703/5971366932",
   "source_boundary": "SOURCE-BOUNDARY-AND-INDEPENDENCE.json",
-  "payload_file_count": 61,
-  "published_file_count_including_manifest": 62,
-  "package_sha256": "5415875ee1a678fa60adacc11b69047c155e68a037102d78d5d9e391dbb4f049",
+  "payload_file_count": 67,
+  "published_file_count_including_manifest": 68,
+  "package_sha256": "a52111862f7878c0d77eb63364d6100aa1d8f2576c467e572f0a3dd643f07e72",
   "hash_algorithm": "SHA256 of compact UTF8 JSON sorted payload records with keys path,sha256,bytes in that order; manifest excluded to avoid self-reference",
   "counts": {
-    "vectors": 402,
-    "proof_schemas": 464,
+    "vectors": 419,
+    "proof_schemas": 482,
     "coordinate_rows": 504,
     "legacy_dispositions": 25,
     "causal_findings": 20,
     "bounded_nonfindings": 13,
     "preserved_capabilities": 22,
     "artifact20_class_mappings": 18,
-    "open_clarifications": 1
+    "open_clarifications": 0,
+    "amended_original_vectors": 3,
+    "unchanged_original_vectors": 399,
+    "new_Q_vectors": 17,
+    "amended_original_proofs": 4,
+    "unchanged_original_proofs": 460,
+    "new_Q_proofs": 18,
+    "conditional_selector_rows": 254,
+    "authorized_primary_classes": 7,
+    "ordered_overlap_pairs": 21,
+    "privacy_guard_classes": 7,
+    "required_clarification_checks": 8
   },
   "files": [
     {
-      "path": "README.md",
-      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/README.md",
-      "bytes": 4979,
-      "sha256": "7c71c0d9136697e5dc9367ece4cc87a4a7fa41618440de0dfa77a05ffab77067",
-      "git_blob_sha": "d0ef706b9f02c368d9ebf4c4d75803e482dba823",
+      "path": "Q-DISPOSITION-AMENDMENT-DELTA.json",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/Q-DISPOSITION-AMENDMENT-DELTA.json",
+      "bytes": 19663,
+      "sha256": "fa82fee54e42f83a55589d73c5ebd518540199e2bde3184552bb4e03a1d9d0f9",
+      "git_blob_sha": "5b28341d5936a61c35fc21c165e513e69629c2eb",
       "proof_ids": [],
       "source_traceability": [],
-      "role": "package_control"
+      "role": "package_control",
+      "amendment_scope": "Q-DISPOSITION only"
+    },
+    {
+      "path": "Q-DISPOSITION-AMENDMENT-VALIDATION.json",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/Q-DISPOSITION-AMENDMENT-VALIDATION.json",
+      "bytes": 3340,
+      "sha256": "75980c4578c8ec77955183cafbc2e4da82f57454c6e9e598d43d229ea466a60d",
+      "git_blob_sha": "3b18f2843e1d00ff528b278ae46e022c7c992c76",
+      "proof_ids": [],
+      "source_traceability": [],
+      "role": "package_control",
+      "amendment_scope": "Q-DISPOSITION only"
+    },
+    {
+      "path": "README.md",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/README.md",
+      "bytes": 6421,
+      "sha256": "5a9ff66895b8938c1071f116adf65f703d70c01136cc279c77ef5d275ee196cd",
+      "git_blob_sha": "a85810a5d0ff1677965a8d38248bb1c05ab77ab0",
+      "proof_ids": [],
+      "source_traceability": [],
+      "role": "package_control",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "SOURCE-BOUNDARY-AND-INDEPENDENCE.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/SOURCE-BOUNDARY-AND-INDEPENDENCE.json",
-      "bytes": 2483,
-      "sha256": "9357f2cf4d4d388ce322f7a806a9e8cab428343592b3475f3eac47e80e4140b9",
-      "git_blob_sha": "c5a1a21785cfc0ae452f30dcf858eea42f0dcc05",
+      "bytes": 4738,
+      "sha256": "cfdecb8c81fd825a0b7c50c39a8046e0c6f61a2a58d31591309d9438f9cafe53",
+      "git_blob_sha": "cb94d8af0786db9cb0fa92c47bd105e3d4fbab0d",
       "proof_ids": [],
       "source_traceability": [],
-      "role": "package_control"
+      "role": "package_control",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "STRUCTURAL-VALIDATION.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/STRUCTURAL-VALIDATION.json",
-      "bytes": 1025,
-      "sha256": "8d061d08fc594297106d4ccc0537e5ffa3c302776b032bd93ff774c03e979d4d",
-      "git_blob_sha": "327832b2191b4e082dd25477206034545961277b",
+      "bytes": 1537,
+      "sha256": "3d10acdfe742b0bdb363eb3203c35662cedc9a7712a75538bf13ba80309537a1",
+      "git_blob_sha": "4ab3572f41d198f41c1cc8501b748bd42d8cad8e",
       "proof_ids": [],
       "source_traceability": [],
-      "role": "package_control"
+      "role": "package_control",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "oracles/A1-COORDINATE-PRODUCT.json",
@@ -94,9 +130,9 @@
     {
       "path": "oracles/A1.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/oracles/A1.json",
-      "bytes": 194980,
-      "sha256": "f76c1d32973a55aae35910ad67d1cc0c7bbe130c5e88f546fff4b5234c32b97a",
-      "git_blob_sha": "2dac03b518252a2dfe570055acb97c69d5385d0a",
+      "bytes": 207737,
+      "sha256": "a2b2ad3cae5ccaa20e8ebc37b065da972eff828a8f003646971f897c3a44653e",
+      "git_blob_sha": "7f18c863c1373121495507348f5b3c522002c0b1",
       "proof_ids": [
         "P-A1-COVERAGE-SCOPE",
         "P-A1-DEST-conflict",
@@ -135,49 +171,68 @@
       ],
       "source_traceability": [
         {
-          "id": "01",
-          "name": "A1-A5 constitutional contracts",
-          "path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
-          "blob": "56210d29770b92fc992d64abdc44020df79e344f"
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "03",
-          "name": "Transition Filtration",
-          "path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
-          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533"
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "13",
-          "name": "canonical domain/state machine",
-          "path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
-          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b"
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "14",
-          "name": "canonical authority/capability/privacy",
-          "path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
-          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20"
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "16",
-          "name": "canonical action/effect/lifecycle",
-          "path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
-          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7"
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "17",
-          "name": "canonical persistence/reconstruction",
-          "path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
-          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca"
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "20",
-          "name": "independent oracle derivation requirements",
-          "path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
-          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63"
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
         }
       ],
-      "role": "oracle"
+      "role": "oracle",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "oracles/A2.json",
@@ -1028,11 +1083,77 @@
       "role": "oracle"
     },
     {
+      "path": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "bytes": 124374,
+      "sha256": "0cf39dfc67e05cb4c59911353ecbafe93f16a532652fce19216e3f53e1411f0d",
+      "git_blob_sha": "0690b3ad612fb6c251a7d05d9ac8e5bafe3325ed",
+      "proof_ids": [
+        "P-QD-BOUNDARY-PURPOSE",
+        "P-QD-BOUNDARY-RECIPIENT",
+        "P-QD-CONFLICT-TERMINAL",
+        "P-QD-DEFER-KNOWN",
+        "P-QD-NO-LOCAL-PRECEDENCE",
+        "P-QD-NOTAPPLICABLE-UNKNOWN",
+        "P-QD-PRECEDENCE",
+        "P-QD-PRIMARY-NOT-AUTHORITY",
+        "P-QD-PRIVACY-ALL",
+        "P-QD-PRIVATE-SECONDARY-NEGATIVE",
+        "P-QD-REACTIVATION-PRESERVATION",
+        "P-QD-ROUNDTRIP-COLD",
+        "P-QD-ROUNDTRIP-COMMUNICATION",
+        "P-QD-SECONDARY-REASON-DROP",
+        "P-QD-TERMINAL-UNKNOWN",
+        "P-QD-UNKNOWN-PRIVACY-NEGATIVE",
+        "P-QD-V2-RECORD"
+      ],
+      "source_traceability": [
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
+        }
+      ],
+      "role": "oracle",
+      "amendment_scope": "Q-DISPOSITION only"
+    },
+    {
+      "path": "oracles/Q-DISPOSITION-PRECEDENCE-TABLE.json",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/oracles/Q-DISPOSITION-PRECEDENCE-TABLE.json",
+      "bytes": 284194,
+      "sha256": "8aa1ee74d4fcadd5fe1afc5e41a84d4e19011e64835d63cef2fac9b63645863d",
+      "git_blob_sha": "743ea463bcc83f6c9c914473d6613593b731ba34",
+      "proof_ids": [
+        "P-QD-PRECEDENCE-TABLE"
+      ],
+      "source_traceability": [
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
+        }
+      ],
+      "role": "oracle",
+      "amendment_scope": "Q-DISPOSITION only"
+    },
+    {
       "path": "oracles/WHOLE.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/oracles/WHOLE.json",
-      "bytes": 337773,
-      "sha256": "a35b855930fc6d835868dbbcb296ad860311c5770622e586cc33a22ad8afb82e",
-      "git_blob_sha": "08b1bcb5fb55f16f9f72baf43ad6f10c047c9770",
+      "bytes": 347118,
+      "sha256": "fae8cc166d74cc952b34e65ab33a45848cbd05d17c373a7548611019a8039ca2",
+      "git_blob_sha": "b48566a0c31d6f6efdbd96e61eb2ad499fa6a41d",
       "proof_ids": [
         "P-WS-AUTHORITY",
         "P-WS-CAUSAL-LEARNING",
@@ -1057,121 +1178,152 @@
       ],
       "source_traceability": [
         {
-          "id": "01",
-          "name": "A1-A5 constitutional contracts",
-          "path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
-          "blob": "56210d29770b92fc992d64abdc44020df79e344f"
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "02",
-          "name": "Executive Reasoning Constitution",
-          "path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
-          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5"
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "03",
-          "name": "Transition Filtration",
-          "path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
-          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533"
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "04",
-          "name": "Personal BIRE runtime metabolism",
-          "path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
-          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17"
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "05",
-          "name": "Personal Nervous System",
-          "path": "artifacts/iba/iris-batch-a-v1.0/05-PERSONAL-NERVOUS-SYSTEM.md",
-          "blob": "00b0d1e6ab6f1f99fe331853407509d9418b9d7c"
+          "artifact": "05",
+          "path": "sources/05-PERSONAL-NERVOUS-SYSTEM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/05-PERSONAL-NERVOUS-SYSTEM.md",
+          "blob": "00b0d1e6ab6f1f99fe331853407509d9418b9d7c",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "06",
-          "name": "Functional Perception",
-          "path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
-          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee"
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "07",
-          "name": "Temporal/as-of",
-          "path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
-          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8"
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "08",
-          "name": "IEF constitution/phase/floor",
-          "path": "artifacts/iba/iris-batch-a-v1.0/08-IRIS-IEF-CONSTITUTION.md",
-          "blob": "dadb4d34b079d1bb38ed5516b0ca6dfe88e76234"
+          "artifact": "08",
+          "path": "sources/08-IRIS-IEF-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/08-IRIS-IEF-CONSTITUTION.md",
+          "blob": "dadb4d34b079d1bb38ed5516b0ca6dfe88e76234",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "09",
-          "name": "developmental vs realization maturity",
-          "path": "artifacts/iba/iris-batch-a-v1.0/09-MATURITY-AXES-NON-COLLAPSE.md",
-          "blob": "610fa691598ff20b2d17151123e840319adb5d25"
+          "artifact": "09",
+          "path": "sources/09-MATURITY-AXES-NON-COLLAPSE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/09-MATURITY-AXES-NON-COLLAPSE.md",
+          "blob": "610fa691598ff20b2d17151123e840319adb5d25",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "13",
-          "name": "canonical domain/state machine",
-          "path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
-          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b"
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "14",
-          "name": "canonical authority/capability/privacy",
-          "path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
-          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20"
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "15",
-          "name": "canonical identity/resolution/causal occurrence",
-          "path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
-          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6"
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "16",
-          "name": "canonical action/effect/lifecycle",
-          "path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
-          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7"
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "17",
-          "name": "canonical persistence/reconstruction",
-          "path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
-          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca"
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "19",
-          "name": "impacted source/schema/test/caller surfaces",
-          "path": "artifacts/iba/iris-batch-a-v1.0/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
-          "blob": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053"
+          "artifact": "19",
+          "path": "sources/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+          "blob": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "20",
-          "name": "independent oracle derivation requirements",
-          "path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
-          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63"
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "24",
-          "name": "deferred-scope map",
-          "path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
-          "blob": "198f588874f3d84d24133e69f33df6a28e2ce394"
+          "artifact": "24",
+          "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+          "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "25",
-          "name": "Chief-of-Staff preservation/distillation proof",
-          "path": "artifacts/iba/iris-batch-a-v1.0/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
-          "blob": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d"
+          "artifact": "25",
+          "path": "sources/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+          "blob": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "26",
-          "name": "ICCP Communication Constitution",
-          "path": "artifacts/iba/iris-batch-a-v1.0/26-ICCP-COMMUNICATION-CONSTITUTION.md",
-          "blob": "62ce6427cf729ec39f69df6d76046b88b812a473"
+          "artifact": "26",
+          "path": "sources/26-ICCP-COMMUNICATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/26-ICCP-COMMUNICATION-CONSTITUTION.md",
+          "blob": "62ce6427cf729ec39f69df6d76046b88b812a473",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
         }
       ],
-      "role": "oracle"
+      "role": "oracle",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "proofs/EXECUTED-LEGACY-DISPOSITIONS.json",
@@ -1346,39 +1498,42 @@
     {
       "path": "proofs/PROOF-INDEX.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/proofs/PROOF-INDEX.json",
-      "bytes": 285309,
-      "sha256": "3e7e3ffb9d5354478b5bdefd2e49a9113315163bc4c154d4ed42ce267802c091",
-      "git_blob_sha": "da5ab814d3535a6c8ef279dba788bb687a977eea",
+      "bytes": 311731,
+      "sha256": "0878303a34b547ea38b5b94be066ac8b31e310b260287b10b54deb6d54ea904c",
+      "git_blob_sha": "d8437c286bbd76e44308d80d717d163f55aacece",
       "proof_ids": [],
       "source_traceability": [],
-      "role": "proof_scope_and_traceability"
+      "role": "proof_scope_and_traceability",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json",
-      "bytes": 7943,
-      "sha256": "03ff477ef5e12746142121b75343dd0d38d45223e89d219f94ff305034b921ad",
-      "git_blob_sha": "8fe4ed8628e63da945385bed307d8b9e79767339",
+      "bytes": 11350,
+      "sha256": "e95833a7fdc9d8c6c2e17df5c91c0dbf9a07095bc6d2ddabf3f0de2b2d493979",
+      "git_blob_sha": "78166b6eb9091f4489707d12c7cf499d4d11d333",
       "proof_ids": [],
       "source_traceability": [],
-      "role": "proof_scope_and_traceability"
+      "role": "proof_scope_and_traceability",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "proofs/REQUIREMENT-COVERAGE.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/proofs/REQUIREMENT-COVERAGE.json",
-      "bytes": 7506,
-      "sha256": "cf23e58fcf5b70c67604d1c9af288c26ed54379e1f43076f50d621944c66bb9c",
-      "git_blob_sha": "28934c4737ec579b4e7227454b432359736b7f52",
+      "bytes": 8770,
+      "sha256": "de7e4b13af1e131eaf89bda09df55828dd08251dd015c5372229aa31fd64a581",
+      "git_blob_sha": "8ca23dbfa5e2d3d468554a037550bb598148c325",
       "proof_ids": [],
       "source_traceability": [],
-      "role": "proof_scope_and_traceability"
+      "role": "proof_scope_and_traceability",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "proofs/TWO-LAYERS-DEEP-FINDINGS-NONFINDINGS.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/proofs/TWO-LAYERS-DEEP-FINDINGS-NONFINDINGS.json",
-      "bytes": 154038,
-      "sha256": "0cd8087fcc1ae355a31873a4ac5f6665eb2cee8291f9aef4fa10119221e972be",
-      "git_blob_sha": "13f2c79a76f27149fe290448c4ddf356b0c2a827",
+      "bytes": 156826,
+      "sha256": "98e13e875f85d24731512d4a2d9842d2e3255e1a1ca2e1b9cc77183aa8244295",
+      "git_blob_sha": "e126b243956522d6fe816c1142820efe7e81447e",
       "proof_ids": [
         "P-CAUSAL-D01",
         "P-CAUSAL-D02",
@@ -1416,43 +1571,61 @@
       ],
       "source_traceability": [
         {
-          "id": "01",
-          "name": "A1-A5 constitutional contracts",
-          "path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
-          "blob": "56210d29770b92fc992d64abdc44020df79e344f"
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "10",
-          "name": "D01-D20 causal-to-contract matrix",
-          "path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
-          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93"
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "11",
-          "name": "source precedence/traceability",
-          "path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
-          "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3"
+          "artifact": "11",
+          "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+          "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "20",
-          "name": "independent oracle derivation requirements",
-          "path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
-          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63"
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "23",
-          "name": "falsifier/pre-mortem set",
-          "path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
-          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57"
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
         },
         {
-          "id": "24",
-          "name": "deferred-scope map",
-          "path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
-          "blob": "198f588874f3d84d24133e69f33df6a28e2ce394"
+          "artifact": "24",
+          "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+          "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "Q-DISPOSITION-CLARIFICATION",
+          "path": "sources/BIG-comment-5971926463.json",
+          "repository": "417properties/BIG-Navigator",
+          "comment_id": 5971926463,
+          "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+          "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+          "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+          "bytes": 8333,
+          "authority": "canonical architecture clarification"
         }
       ],
-      "role": "proof_scope_and_traceability"
+      "role": "proof_scope_and_traceability",
+      "amendment_scope": "Q-DISPOSITION only"
     },
     {
       "path": "sources/00-IRIS-BATCH-A-MASTER-CONSTITUTION-v1.0.md",
@@ -1785,6 +1958,28 @@
       "role": "source_evidence"
     },
     {
+      "path": "sources/BIG-comment-5971926463.json",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/sources/BIG-comment-5971926463.json",
+      "bytes": 8333,
+      "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+      "git_blob_sha": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+      "proof_ids": [],
+      "source_traceability": [],
+      "role": "source_evidence",
+      "amendment_scope": "Q-DISPOSITION only"
+    },
+    {
+      "path": "sources/IRIS-comment-5971928147.json",
+      "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/sources/IRIS-comment-5971928147.json",
+      "bytes": 1153,
+      "sha256": "9718d4b22a26da2a691ff8c8f35774fff46556027c24da53ab88d3759716049b",
+      "git_blob_sha": "5350e590a8b49b12d86c43fc34150fd70674c79d",
+      "proof_ids": [],
+      "source_traceability": [],
+      "role": "source_evidence",
+      "amendment_scope": "Q-DISPOSITION only"
+    },
+    {
       "path": "sources/audit-SEAL.json",
       "destination_repository_path": "artifacts/qualification/iris-batch-c-independent-oracle-v1/sources/audit-SEAL.json",
       "bytes": 2564,
@@ -1846,5 +2041,33 @@
     }
   ],
   "limits": "Candidate conformance, actual caller closure, SQL execution, every distributed schedule, legacy test rerun, phase advancement, authority, continuity or independent acceptance.",
-  "constitutional_question": "proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json"
+  "constitutional_question": "proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json (Q-DISPOSITION resolved; no open question)",
+  "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+  "baseline_package_sha256": "5415875ee1a678fa60adacc11b69047c155e68a037102d78d5d9e391dbb4f049",
+  "clarification_sources": [
+    {
+      "artifact": "Q-DISPOSITION-CLARIFICATION",
+      "path": "sources/BIG-comment-5971926463.json",
+      "repository": "417properties/BIG-Navigator",
+      "comment_id": 5971926463,
+      "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+      "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+      "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+      "bytes": 8333,
+      "authority": "canonical architecture clarification"
+    },
+    {
+      "artifact": "Q-DISPOSITION-MIRROR",
+      "path": "sources/IRIS-comment-5971928147.json",
+      "repository": "417properties/IRIS-Personal-Office",
+      "comment_id": 5971928147,
+      "comment_url": "https://github.com/417properties/IRIS-Personal-Office/issues/3#issuecomment-5971928147",
+      "sha256": "9718d4b22a26da2a691ff8c8f35774fff46556027c24da53ab88d3759716049b",
+      "blob": "5350e590a8b49b12d86c43fc34150fd70674c79d",
+      "bytes": 1153,
+      "authority": "mirror only; no additional authority"
+    }
+  ],
+  "bounded_delta_report": "Q-DISPOSITION-AMENDMENT-DELTA.json",
+  "amendment_validation": "Q-DISPOSITION-AMENDMENT-VALIDATION.json"
 }

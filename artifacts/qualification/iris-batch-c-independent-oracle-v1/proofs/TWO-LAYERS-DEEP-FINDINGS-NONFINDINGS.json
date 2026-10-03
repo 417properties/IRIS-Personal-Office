@@ -183,10 +183,29 @@
       "direct_mechanism": "Positive predicates omit negative/terminal/free-token domains",
       "enabling_systemic_cause": "Root partition not total or source-owned",
       "demonstrated_or_adjacent_class": "All attention/action/root adapters and dispositions",
-      "exhaustive_or_bounded_check": "Bounded admitted root matrix; overlap scalar outcomes withheld under Q-DISPOSITION",
-      "recurrence_control": "A1 conservation + explicit versioned domain maps + total destination audit",
+      "exhaustive_or_bounded_check": "Original bounded admitted-root matrix retained. Q-DISPOSITION overlap amendment covers full typed reason conservation, exact one boundary primary, 7 authorized classes/21 valid overlap pairs, privacy over all 7 classes, source examples and roundtrip/caller negatives; no candidate execution.",
+      "recurrence_control": "A1 conservation + explicit versioned domain maps + total destination audit; Q-DISPOSITION uses IRIS-owned versioned compound reasons with privacy outer guard and one boundary-specific source primary; no local precedence",
       "oracle_ids": [
-        "WS-TERMINAL-PRIVATE-INAPPLICABLE"
+        "WS-TERMINAL-PRIVATE-INAPPLICABLE",
+        "A1-OVERLAP-PRIVACY-TERMINAL",
+        "A1-OVERLAP-CONFLICT-UNKNOWN",
+        "QD-V2-RECORD",
+        "QD-PRECEDENCE",
+        "QD-PRIVACY-ALL",
+        "QD-TERMINAL-UNKNOWN",
+        "QD-NOTAPPLICABLE-UNKNOWN",
+        "QD-CONFLICT-TERMINAL",
+        "QD-DEFER-KNOWN",
+        "QD-BOUNDARY-RECIPIENT",
+        "QD-BOUNDARY-PURPOSE",
+        "QD-PRIVATE-SECONDARY-NEGATIVE",
+        "QD-ROUNDTRIP-COLD",
+        "QD-ROUNDTRIP-COMMUNICATION",
+        "QD-NO-LOCAL-PRECEDENCE",
+        "QD-SECONDARY-REASON-DROP",
+        "QD-REACTIVATION-PRESERVATION",
+        "QD-UNKNOWN-PRIVACY-NEGATIVE",
+        "QD-PRIMARY-NOT-AUTHORITY"
       ],
       "semantic_sources": [
         {
@@ -212,15 +231,17 @@
         }
       ],
       "as_of_version": {
-        "oracle_version": "1.0",
+        "oracle_version": "1.1-Q-DISPOSITION-ONLY",
         "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+        "clarification_comment": "BIG #703/5971926463",
         "derivation_date": "2026-10-03",
-        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        "time_vectors": "same explicit symbolic decision cuts as v1; no live provider observation"
       },
       "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
       "proof": {
         "proof_id": "P-CAUSAL-D03",
-        "claim_invariant": "A1 conservation + explicit versioned domain maps + total destination audit",
+        "claim_invariant": "A1 conservation + explicit versioned domain maps + total destination audit; Q-DISPOSITION uses IRIS-owned versioned compound reasons with privacy outer guard and one boundary-specific source primary; no local precedence",
         "semantic_source": [
           {
             "artifact": "10",
@@ -242,24 +263,38 @@
             "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
             "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
             "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "Q-DISPOSITION-CLARIFICATION",
+            "path": "sources/BIG-comment-5971926463.json",
+            "repository": "417properties/BIG-Navigator",
+            "comment_id": 5971926463,
+            "comment_url": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5971926463",
+            "sha256": "e2bfc0598eea36e1d99bb28ea75303da622b3bd56553f80cc28f2fe719adefda",
+            "blob": "531d119c3c51ad2adce3f20e393e52e9941a83b5",
+            "bytes": 8333,
+            "authority": "canonical architecture clarification"
           }
         ],
-        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
-        "method": "Source-level causal challenge and discriminator derivation; Bounded admitted root matrix; overlap scalar outcomes withheld under Q-DISPOSITION",
-        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
-        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
-        "falsifier": "Second semantic owner/local caller retains mechanism: Positive predicates omit negative/terminal/free-token domains",
-        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "dependency_closure": "A1 canonical facts/reasons + A3 exact boundary privacy -> IRIS-owned versioned disposition selector -> classifier/coverage/projection/Pilot/ICCP adapters -> A5 canonical persistence and cold reconstruction -> same boundary selector; all callers use one precedence, no local owner.",
+        "method": "Independent source deduction from exact IBA clarification; finite boundary/precedence/overlap minimal pairs and adversarial loss/leak/reconstruction cases. Mechanical package checks only were executed; downstream implementation conformance remains unexecuted.",
+        "PASS_establishes": "Only the tested Q-DISPOSITION reason conservation, privacy-safe boundary projection and source precedence cases through the stated exercised consumers.",
+        "PASS_does_not_establish": "Untested callers, every distributed schedule, actual SQL execution, candidate correctness outside Q-DISPOSITION, action/authority, legacy empirical retest, continuity, IEF maturity or Batch-C acceptance.",
+        "falsifier": "Wrong boundary primary, erased secondary canonical reason/evidence, leaked unauthorized reason/content/reference, truth changed solely by recipient/purpose, roundtrip loss or a different local precedence.",
+        "independence_class": "RESUMED_FRESH_SOURCE_ONLY_ORACLE_AUTHOR; NO_CANDIDATE_OR_BUILDER_RESULTS",
         "implementation_assumptions": [
-          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
-          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+          "Versioned IRIS-owned equivalent of IRIS_ROOT_DISPOSITION_V2; internal spelling/factoring may differ through explicit total mapping.",
+          "Selector consumes proven predicates and exact boundary/as_of evidence; it cannot invent or adjudicate fact/privacy truth.",
+          "No candidate/Builder outputs, scores or implementation expected results used; all empirical conformance remains downstream."
         ],
-        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "evidence_class": "CONSTITUTION_PLUS_EXACT_IBA_CLARIFICATION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
         "as_of_version": {
-          "oracle_version": "1.0",
+          "oracle_version": "1.1-Q-DISPOSITION-ONLY",
           "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "baseline_oracle_commit": "889341d0abb17d896701726448b62d2d2891149f",
+          "clarification_comment": "BIG #703/5971926463",
           "derivation_date": "2026-10-03",
-          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+          "time_vectors": "same explicit symbolic decision cuts as v1; no live provider observation"
         },
         "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
       }

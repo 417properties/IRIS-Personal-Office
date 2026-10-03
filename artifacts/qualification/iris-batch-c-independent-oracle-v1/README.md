@@ -1,6 +1,6 @@
-# IRIS Batch-C Independent Oracle / Proof Package v1.0
+# IRIS Batch-C Independent Oracle / Proof Package v1.1 — Q-DISPOSITION amendment
 
-Status: FROZEN_SOURCE_DERIVED_ORACLE / ONE_ENCODING_CLARIFICATION / STRATA_RECONCILIATION_REQUIRED / NO_NEW_GATE_PROGRESS.
+Status: FROZEN_SOURCE_DERIVED_ORACLE / Q_DISPOSITION_CLARIFIED / BATCH_C_ACCEPTANCE_OPEN / STRATA_RECONCILIATION_REQUIRED / NO_NEW_GATE_PROGRESS.
 
 ## Scope and evidence
 
@@ -10,7 +10,7 @@ Every frozen Batch-A manifest/master/family source is archived and Git-blob veri
 
 ## Products
 
-- 402 vector records across ten oracle families, each with explicit premises, expected semantic constraints, source identity, dependency closure and full proof schema.
+- 419 vector records (402 original, only three original affected records amended; 17 directly Q-DISPOSITION-specific amplification records) across ten oracle families, each with explicit premises, expected semantic constraints, source identity, dependency closure and full proof schema.
 - A1 exhaustive 504-row coordinate representation/conservation product. Admissibility for a particular object is separately validated; the table does not invent 504 valid aggregate states.
 - A4 guarded lifecycle/effect machine; A3 independently bound-dimension mutations and uncertainty negatives; A5 memory/SQL/cold/enum/import/projection/checkpoint obligations.
 - Observable executive products without private chain-of-thought grading; negotiated ICCP roundtrip/loss/privacy/currentness; configuration-qualified Functional Perception; IEF cumulative mandatory catalog, weakest mandatory floor and dual-axis maturity.
@@ -18,9 +18,13 @@ Every frozen Batch-A manifest/master/family source is archived and Git-blob veri
 - 25 executed legacy semantic dispositions, covering the 17 artifact21 classes and audit11 historical gate classes. This execution compares old claim meaning with the constitution. It does not retest legacy code or renew historical PASS receipts. Only the two exact narrow source-compatible repairs survive normatively; other historical assets retain bounded evidence scope or normative claims are retired/rewritten/invalidated.
 - 22 Personal Office capability seams retain CORE_NOW, deferred and separately governed operating classifications.
 
-## One clarification and scoreability
+## Q-DISPOSITION clarification and bounded amendment
 
-`proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json` contains Q-DISPOSITION for Professor to route to IBA1.9: artifact13 requires exactly one root disposition but supplies no priority when terminal/privacy/conflict/UNKNOWN predicates overlap. It includes exact source closure, incompatible minimal pairs and affected proofs. Only the ambiguous scalar disposition is withheld; privacy, history, identity and no-unsafe-release constraints remain determinate. No implementation-favorable default is selected.
+Exact canonical IBA clarification BIG #703/5971926463 and mirror IRIS #3/5971928147 close only Q-DISPOSITION. Full typed internal reason/evidence sets and independent coordinates remain canonical. Exactly one visible primary is boundary-specific. Exact recipient/purpose disclosure prohibition selects PRIVACY_EXCLUDED as the outer guard. Inside a proven permitted boundary the order is INVALID_REJECTED > CONFLICT_HOLD > TERMINAL_RETAINED > JUSTIFIED_NOT_APPLICABLE > RELEVANCE_UNKNOWN > DEFERRED_SUPPRESSED_WITH_REACTIVATION > KNOWN_REQUIRED. Private secondary reasons cannot leak, and recipient/purpose projection changes do not rewrite canonical truth.
+
+Only the original two A1 overlap vectors, WHOLE overlap scenario, directly dependent D03/index/coverage/question/source metadata and necessary Q-specific discriminators changed. All other vector/proof records and frozen source snapshots are unchanged. `Q-DISPOSITION-AMENDMENT-DELTA.json` and `Q-DISPOSITION-AMENDMENT-VALIDATION.json` prove the bounded file/record delta mechanically. These checks do not execute a candidate, SQL/reconstruction runtime or historical tests. The resolved question retains its historical packet and exact resolution source in `proofs/READY-TO-ROUTE-CONSTITUTIONAL-QUESTION.json`.
+
+The amendment grades the complete overlap class through reason conservation, one primary per boundary, privacy-safe projection, recipient/purpose changes, conflict+UNKNOWN, terminal+privacy, roundtrip/cold reconstruction and no local precedence. The source clarification closes the encoding gap; it does not accept Batch C. Return the revised freeze for Professor/STRATA adjudication. NO_NEW_GATE_PROGRESS.
 
 Temporal effective/expiry wording was resolved by exact source 5971006516: validity begins at effective and ceases at expiry; revocation races require an ordered canonical cut. IEF definitions/floor/compounding are source-determinate; unqualified raw results cannot earn a phase and no numeric test-count threshold is invented.
 
@@ -34,4 +38,4 @@ The finite tables and bounded schedules are declared coverage domains, not exhau
 
 ## Seal
 
-`PACKAGE-MANIFEST.json` lists exact payload paths, SHA256, Git blob hash, byte sizes and source/proof traceability. The package hash is the SHA256 of sorted payload records `{path,sha256,bytes}` serialized as compact UTF8 JSON, excluding the manifest to avoid self-reference. The manifest file and publication payload have separate hashes in the external seal receipt. The payload maps destination paths to exact UTF8 contents. No GitHub publication was performed by this author.
+`PACKAGE-MANIFEST.json` lists exact payload paths, SHA256, Git blob hash, byte sizes and source/proof traceability. The package hash is the SHA256 of sorted payload records `{path,sha256,bytes}` serialized as compact UTF8 JSON, excluding the manifest to avoid self-reference. The manifest file and publication payload have separate hashes in the external seal receipt. The revision delta payload maps only changed/new destination paths to exact UTF8 contents; repository paths remain in the original v1 directory. No GitHub publication was performed by this author.
