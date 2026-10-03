@@ -1448,5 +1448,268 @@
     "unresolved_effect": false,
     "informational_only": false,
     "possible_duplicate_refs": []
+  },
+  "lifecycle_applicability_census": {
+    "obligations": {
+      "count": 42,
+      "classes": [
+        {
+          "count": 35,
+          "source": {
+            "status": "OPEN",
+            "governance": [
+              "APPLICABLE"
+            ],
+            "assertions": [
+              "APPLICABLE"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ]
+          },
+          "candidate": {
+            "obligation_status": "OPEN",
+            "applicability": "APPLICABLE"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "OPEN",
+            "governance": [
+              "UNKNOWN"
+            ],
+            "assertions": [
+              "UNKNOWN"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ]
+          },
+          "candidate": {
+            "obligation_status": "OPEN",
+            "applicability": "UNKNOWN"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "ABANDONED",
+            "governance": [
+              "APPLICABLE"
+            ],
+            "assertions": [
+              "APPLICABLE"
+            ],
+            "lifecycle": [
+              "OPEN",
+              "ABANDONED"
+            ]
+          },
+          "candidate": {
+            "obligation_status": "ABANDONED",
+            "applicability": "APPLICABLE"
+          }
+        },
+        {
+          "count": 2,
+          "source": {
+            "status": "OPEN",
+            "governance": [
+              "APPLICABLE"
+            ],
+            "assertions": [
+              "APPLICABLE"
+            ],
+            "lifecycle": []
+          },
+          "candidate": {
+            "obligation_status": "OPEN",
+            "applicability": "APPLICABLE"
+          }
+        },
+        {
+          "count": 2,
+          "source": {
+            "status": "SATISFIED",
+            "governance": [
+              "SATISFIED"
+            ],
+            "assertions": [
+              "SATISFIED"
+            ],
+            "lifecycle": [
+              "OPEN",
+              "SATISFIED"
+            ]
+          },
+          "candidate": {
+            "obligation_status": "SATISFIED",
+            "applicability": "SATISFIED"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "SUPERSEDED",
+            "governance": [
+              "SUPERSEDED"
+            ],
+            "assertions": [
+              "SUPERSEDED"
+            ],
+            "lifecycle": [
+              "OPEN",
+              "SUPERSEDED"
+            ]
+          },
+          "candidate": {
+            "obligation_status": "SUPERSEDED",
+            "applicability": "SUPERSEDED"
+          }
+        }
+      ],
+      "concrete_action_remaining_rule": "action_remaining===true && concrete_action nonempty && informational_only===false; candidate classifier separately gates terminal status"
+    },
+    "decisions": {
+      "count": 40,
+      "classes": [
+        {
+          "count": 33,
+          "source": {
+            "status": "OPEN",
+            "history_complete": true,
+            "assertions": [
+              "APPLICABLE"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": []
+          },
+          "candidate": {
+            "decision_status": "OPEN",
+            "applicability": "APPLICABLE"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "OPEN",
+            "history_complete": true,
+            "assertions": [
+              "UNKNOWN"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": []
+          },
+          "candidate": {
+            "decision_status": "OPEN",
+            "applicability": "UNKNOWN"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "OPEN",
+            "history_complete": true,
+            "assertions": [
+              "APPLICABLE",
+              "APPLICABLE"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": []
+          },
+          "candidate": {
+            "decision_status": "OPEN",
+            "applicability": "APPLICABLE"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "RESOLVED",
+            "history_complete": true,
+            "assertions": [
+              "APPLICABLE"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": [
+              "RESOLVED_EXACT"
+            ]
+          },
+          "candidate": {
+            "decision_status": "RESOLVED",
+            "applicability": "APPLICABLE"
+          }
+        },
+        {
+          "count": 2,
+          "source": {
+            "status": "RESOLVED",
+            "history_complete": true,
+            "assertions": [
+              "SATISFIED"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": [
+              "RESOLVED_EXACT"
+            ]
+          },
+          "candidate": {
+            "decision_status": "RESOLVED",
+            "applicability": "SATISFIED"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "SUPERSEDED",
+            "history_complete": true,
+            "assertions": [
+              "SUPERSEDED"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": [
+              "SUPERSEDED_EXACT"
+            ]
+          },
+          "candidate": {
+            "decision_status": "SUPERSEDED",
+            "applicability": "SUPERSEDED"
+          }
+        },
+        {
+          "count": 1,
+          "source": {
+            "status": "OPEN",
+            "history_complete": true,
+            "assertions": [
+              "APPLICABLE"
+            ],
+            "lifecycle": [
+              "OPEN"
+            ],
+            "action_decisions": [
+              "PENDING_NONRESOLVING"
+            ]
+          },
+          "candidate": {
+            "decision_status": "OPEN",
+            "applicability": "APPLICABLE"
+          }
+        }
+      ]
+    }
   }
 }
