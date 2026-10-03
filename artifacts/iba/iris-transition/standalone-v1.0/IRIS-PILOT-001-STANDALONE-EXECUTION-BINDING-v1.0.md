@@ -229,6 +229,19 @@ Create from the selected obligation:
 
 SATISFIED/SUPERSEDED/ABANDONED never auto-resurrect.
 
+### 7.1.1 Demonstrated obligation lifecycle/applicability table
+
+The frozen 42 obligations contain only these six exact state shapes:
+
+1. 35: source status OPEN + governance APPLICABLE + exact obligation assertion APPLICABLE + lifecycle OPEN -> `obligation_status=OPEN / applicability=APPLICABLE`.
+2. 2: source status OPEN + governance APPLICABLE + exact assertion APPLICABLE + no lifecycle event for that exact obligation -> `OPEN / APPLICABLE` because the selected canonical record itself is OPEN and no contradicting scoped lifecycle fact exists.
+3. 1: source status OPEN + governance UNKNOWN + exact assertion UNKNOWN + lifecycle OPEN -> `OPEN / UNKNOWN`.
+4. 1: source status ABANDONED + governance/assertion APPLICABLE + exact scoped lifecycle OPEN then ABANDONED -> `ABANDONED / ABANDONED`. Terminal exact lifecycle/source status defeats older APPLICABLE governance for the obligation only; it MUST NOT cascade to a linked decision.
+5. 2: source status SATISFIED + governance/assertion SATISFIED + lifecycle OPEN then SATISFIED -> `SATISFIED / SATISFIED`.
+6. 1: source status SUPERSEDED + governance/assertion SUPERSEDED + lifecycle OPEN then SUPERSEDED -> `SUPERSEDED / SUPERSEDED`.
+
+Any other obligation combination in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`. Contradictory same-ref current evidence is never resolved by borrowing a linked record's state or by consequence evidence.
+
 ### 7.2 Decision root
 Create from the selected decision requirement:
 - synthetic id `e1:<case_id>:decision:<raw_payload>`;
@@ -239,6 +252,20 @@ Create from the selected decision requirement:
 - otherwise preserve exact RESOLVED/SUPERSEDED/ABANDONED/UNKNOWN state;
 - decision_maker identity is exact or UNKNOWN;
 - reserved authority class is exact.
+
+### 7.2.1 Demonstrated decision lifecycle/applicability table
+
+The frozen 40 decision requirements contain only these seven exact shapes:
+
+1. 33: source OPEN + history_complete=true + exact APPLICABLE assertion + lifecycle OPEN + no resolving/superseding action_decision -> `decision_status=OPEN / applicability=APPLICABLE`.
+2. 1: same but exact applicability UNKNOWN -> `OPEN / UNKNOWN`.
+3. 1: OPEN with two exact APPLICABLE assertions that agree -> `OPEN / APPLICABLE`; agreeing duplicates do not create conflict or multiply evidence.
+4. 1: source RESOLVED + exact APPLICABLE assertion + exact RESOLVED action_decision resolving that decision -> `decision_status=RESOLVED / applicability=APPLICABLE`.
+5. 2: source RESOLVED + exact SATISFIED assertion + exact RESOLVED action_decision -> `RESOLVED / SATISFIED`.
+6. 1: source SUPERSEDED + exact SUPERSEDED assertion + exact SUPERSEDED action_decision naming that decision -> `SUPERSEDED / SUPERSEDED`.
+7. 1: source OPEN + APPLICABLE + lifecycle OPEN + PENDING action_decision that neither resolves nor supersedes -> `OPEN / APPLICABLE`.
+
+Decision lifecycle is exact-ref independent. A linked obligation's ABANDONED/SATISFIED/SUPERSEDED state cannot change any decision row above unless the exact decision ref is named by lifecycle/action-decision evidence. Any other decision combination in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
 ### 7.3 Unresolved intent root
 Create only when exact selected intent/effect evidence establishes `SUBMITTED_UNVERIFIED`, `AMBIGUOUS`, or `RECONCILIATION_REQUIRED` and the effect is consequential.
