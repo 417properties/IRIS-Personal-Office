@@ -110,7 +110,14 @@
     "explicit_unmapped_candidate_anchor_namespace_guard": true,
     "explicit_unmapped_intent_applicability_shape_guard": true,
     "semantic_input_allowlist_exact": true,
-    "historical_binding_normative_dependency_count": 0
+    "historical_binding_normative_dependency_count": 0,
+    "source_evaluation_surface_applicability_rule_frozen": true,
+    "source_evaluation_tuple_classes_exhaustively_enumerated": true,
+    "source_evaluation_tuple_total": 320,
+    "source_evaluation_unmapped_tuple_classes": 0,
+    "input_conflicts_exact_dedup_utf8_lexical": true,
+    "demonstrated_load_bearing_scalar_domains_enumerated": true,
+    "unenumerated_load_bearing_scalar_default_permitted": false
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
