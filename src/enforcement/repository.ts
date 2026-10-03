@@ -105,23 +105,33 @@ export async function replayEnforcement(events:readonly EnforcementEvent[],comma
 }
 export class EnforcementRepository {
  readonly canonical:CanonicalRepository;#backend:EnforcementBackend;
- constructor(backend:EnforcementBackend){this.#backend=backend;this.canonical=backend.canonical;}
- async command(input:unknown):Promise<unknown>{return this.#backend.atomic(async v=>{
+ constructor(backend:EnforcementBackend){
+  this.#backend=backend;
+  // Capture before either backend can queue or await. B1/B2 decoders remain authoritative.
+  const c=backend.canonical,capture=<T>(v:T)=>freeze(jsonValue(v)) as T;
+  this.canonical={append:async v=>c.append(capture(v)),history:async v=>c.history(capture(v)),current:async v=>c.current(capture(v)),reconstruct:async v=>c.reconstruct(capture(v)),exportSnapshot:()=>c.exportSnapshot(),importSnapshot:async wire=>c.importSnapshot(text(wire))};
+ }
+ async command(input:unknown):Promise<unknown>{const captured=freeze(jsonValue(input));return this.#backend.atomic(async v=>{
   const s=await replayEnforcement(v.events,v.canonical_commands),at=instant(this.#backend.clock());demand(!v.events.length||Date.parse(at)>=Date.parse(v.events.at(-1)!.at),'ENFORCEMENT_TIME_REGRESSION');
-  const before=canonicalJSON(s),result=await reduce(s,v.canonical,jsonValue(input),at);if(canonicalJSON(s)===before)return freeze(result);const event:EnforcementEvent={schema_version:ENFORCEMENT_SCHEMA,sequence:v.events.length+1,at,canonical_count:v.canonical_commands.length,canonical_digest:digest(v.canonical_commands),command:jsonValue(input),result:jsonValue(result)};
+  const before=canonicalJSON(s),result=await reduce(s,v.canonical,captured,at);if(canonicalJSON(s)===before)return freeze(result);const event:EnforcementEvent={schema_version:ENFORCEMENT_SCHEMA,sequence:v.events.length+1,at,canonical_count:v.canonical_commands.length,canonical_digest:digest(v.canonical_commands),command:captured,result:jsonValue(result)};
   await v.append(event);return freeze(result);
  });}
  async inspect():Promise<Readonly<State>>{return this.#backend.atomic(async v=>freeze(await replayEnforcement(v.events,v.canonical_commands)));}
  async nextSafeAction(ref:unknown){const a=await this.getAttempt(ref);return ['SUBMITTING','AMBIGUOUS_SUBMISSION'].includes(a.state)?'RECONCILIATION_REQUIRED':a.state==='RELEASED_SUBMITTED'?'B4_EFFECT_VERIFICATION_REQUIRED':a.state==='DENIED'?'HOLD':'VALIDATE_AT_RELEASE';}
- async getAttempt(ref:unknown):Promise<Readonly<ReleaseAttempt>>{return freeze(attempt(await this.inspect() as State,ref));}
- async reconstruct(principal:Identity,at:string){return this.#backend.atomic(async v=>{
-  const cut=instant(at),events=v.events.filter(e=>Date.parse(e.at)<=Date.parse(cut)),state=await replayEnforcement(events,v.canonical_commands);
-  const canonical=await v.canonical.reconstruct({schema_version:SCHEMA_VERSION,principal,as_of:cut});
-  return freeze({schema_version:ENFORCEMENT_SCHEMA,canonical,enforcement:{claims:state.claims.filter(c=>sameIdentity(c.principal,principal)),leases:state.leases.filter(l=>sameIdentity(l.principal,principal)),attempts:state.attempts.filter(a=>sameIdentity(a.intent.principal,principal)),revocations:state.revocations.filter(r=>sameIdentity(r.principal,principal))},admission:'NOT_ADJUDICATED',effect_verification:'NOT_ADJUDICATED'});
+ async getAttempt(ref:unknown):Promise<Readonly<ReleaseAttempt>>{const captured=freeze(decodeIdentity(ref));return freeze(attempt(await this.inspect() as State,captured));}
+ async reconstruct(principal:Identity,at:string){const captured=freeze(decodeIdentity(principal)),cut=instant(at);return this.#backend.atomic(async v=>{
+  const events=v.events.filter(e=>Date.parse(e.at)<=Date.parse(cut)),state=await replayEnforcement(events,v.canonical_commands);
+  const canonical=await v.canonical.reconstruct({schema_version:SCHEMA_VERSION,principal:captured,as_of:cut});
+  return freeze({schema_version:ENFORCEMENT_SCHEMA,canonical,enforcement:{claims:state.claims.filter(c=>sameIdentity(c.principal,captured)),leases:state.leases.filter(l=>sameIdentity(l.principal,captured)),attempts:state.attempts.filter(a=>sameIdentity(a.intent.principal,captured)),revocations:state.revocations.filter(r=>sameIdentity(r.principal,captured))},admission:'NOT_ADJUDICATED',effect_verification:'NOT_ADJUDICATED'});
  });}
  exportSnapshot(){return this.#backend.exportSnapshot();}importSnapshot(wire:string){return this.#backend.importSnapshot(wire);}
 }
 export interface ReleaseRequest {intent:ReleaseIntent;attempt:Identity;fence:ContinuationClaim;retry:boolean}
+export function decodeReleaseRequest(input:unknown):Readonly<ReleaseRequest>{
+ const r=record(input,['intent','attempt','fence','retry']),attempt=decodeIdentity(r.attempt);
+ demand(attempt.kind==='RELEASE_ATTEMPT','ATTEMPT_KIND');demand(typeof r.retry==='boolean','EXPLICIT_RETRY_REQUIRED');
+ return freeze({intent:decodeIntent(r.intent) as ReleaseIntent,attempt,fence:decodeContinuation(r.fence) as ContinuationClaim,retry:r.retry});
+}
 export interface SubmissionPermit {readonly dispatch_id:string}
 const permits=new WeakMap<SubmissionPermit,{intent:ReleaseIntent;attempt:Identity}>();
 // Unforgeable process-local dispatch capability, minted only after durable ownership.
@@ -139,24 +149,27 @@ export class ReleaseService {
  readonly repository:EnforcementRepository;#transport:ConsequentialTransport;#actor:{principal:Identity;grantee:Identity;incarnation:Identity;configuration_digest:string};
  constructor(repository:EnforcementRepository,transport:ConsequentialTransport,actor:{principal:Identity;grantee:Identity;incarnation:Identity;configuration_digest:string}){this.repository=repository;this.#transport=transport;this.#actor=freeze(actor);}
  async release(request:ReleaseRequest):Promise<Readonly<ReleaseAttempt>>{
-  const intent=decodeIntent(request.intent);const b=this.#transport.binding;demand(b.tool_id===intent.tool_id&&b.configuration_digest===intent.configuration_digest&&b.capability_id===intent.capability_id&&b.qualification_id===intent.qualification_id,'TRANSPORT_BINDING_MISMATCH');demand(sameIdentity(intent.principal,this.#actor.principal)&&sameIdentity(intent.grantee,this.#actor.grantee)&&sameIdentity(intent.incarnation,this.#actor.incarnation)&&intent.configuration_digest===this.#actor.configuration_digest,'EXECUTION_ACTOR_BINDING_MISMATCH');demand(typeof request.retry==='boolean','EXPLICIT_RETRY_REQUIRED');
-  const prepared=await this.repository.command({kind:'PREPARE',value:{intent,attempt:request.attempt,fence:request.fence}}) as ReleaseAttempt;
+  const captured=decodeReleaseRequest(request),intent=captured.intent;const b=freeze(jsonValue(this.#transport.binding)) as ConsequentialTransport['binding'];const preflight=this.#transport.preflight.bind(this.#transport),submit=this.#transport.submit.bind(this.#transport);demand(b.tool_id===intent.tool_id&&b.configuration_digest===intent.configuration_digest&&b.capability_id===intent.capability_id&&b.qualification_id===intent.qualification_id,'TRANSPORT_BINDING_MISMATCH');demand(sameIdentity(intent.principal,this.#actor.principal)&&sameIdentity(intent.grantee,this.#actor.grantee)&&sameIdentity(intent.incarnation,this.#actor.incarnation)&&intent.configuration_digest===this.#actor.configuration_digest,'EXECUTION_ACTOR_BINDING_MISMATCH');
+  const prepared=await this.repository.command({kind:'PREPARE',value:{intent,attempt:captured.attempt,fence:captured.fence}}) as ReleaseAttempt;
+  demand(same(prepared.attempt,captured.attempt)&&same(prepared.intent,intent)&&same(prepared.fence,captured.fence),'PREPARED_INVOCATION_BINDING_MISMATCH');
   if(!['PREPARED','NO_SUBMISSION_PROVEN'].includes(prepared.state))return prepared;
-  if(prepared.state==='NO_SUBMISSION_PROVEN'&&!request.retry)return prepared;
+  if(prepared.state==='NO_SUBMISSION_PROVEN'&&!captured.retry)return prepared;
   let probe:{ready:true}|{ready:false;evidence_refs:string[]};
-  try{probe=await this.#transport.preflight(intent);}catch{probe={ready:false,evidence_refs:['B3_LOCAL_PREFLIGHT_EXCEPTION_BEFORE_DISPATCH']};}
+  try{probe=await preflight(intent);}catch{probe={ready:false,evidence_refs:['B3_LOCAL_PREFLIGHT_EXCEPTION_BEFORE_DISPATCH']};}
   const p=record(probe,probe.ready===true?['ready']:['ready','evidence_refs']);demand(typeof p.ready==='boolean','PREFLIGHT_RESULT_INVALID');
-  if(!probe.ready)return await this.repository.command({kind:'PRE_SUBMISSION_FAILURE',value:{attempt:request.attempt,evidence_refs:probe.evidence_refs}}) as ReleaseAttempt;
-  const dispatchId=randomUUID();const claimed=await this.repository.command({kind:'RELEASE',value:{attempt:request.attempt,dispatch_id:dispatchId,retry:request.retry}}) as {owned:boolean;attempt:ReleaseAttempt};
+  if(!probe.ready)return await this.repository.command({kind:'PRE_SUBMISSION_FAILURE',value:{attempt:captured.attempt,evidence_refs:probe.evidence_refs}}) as ReleaseAttempt;
+  const dispatchId=randomUUID();const claimed=await this.repository.command({kind:'RELEASE',value:{attempt:captured.attempt,dispatch_id:dispatchId,retry:captured.retry}}) as {owned:boolean;attempt:ReleaseAttempt};
+  demand(same(claimed.attempt.attempt,captured.attempt)&&same(claimed.attempt.intent,intent)&&same(claimed.attempt.fence,captured.fence),'CLAIMED_INVOCATION_BINDING_MISMATCH');
   if(!claimed.owned)return claimed.attempt;
+  demand(claimed.attempt.dispatch_id===dispatchId&&claimed.attempt.state==='SUBMITTING'&&same(b,jsonValue(this.#transport.binding)),'DISPATCH_BINDING_MISMATCH');
   // Durable SUBMITTING linearizes release before any provider dispatch. Once possibly
   // submitted, every exception/timeout/malformed receipt is ambiguous, never retry proof.
-  let receipt:SubmissionReceipt;const permit=Object.freeze({dispatch_id:dispatchId});permits.set(permit,{intent:claimed.attempt.intent,attempt:claimed.attempt.attempt});
-  try{receipt=decodeSubmission(await this.#transport.submit(claimed.attempt.intent,claimed.attempt.attempt,permit),claimed.attempt);}
-  catch{return await this.repository.command({kind:'AMBIGUOUS',value:{attempt:request.attempt,dispatch_id:dispatchId,evidence_refs:['B3_TRANSPORT_EXCEPTION_OR_INVALID_RECEIPT_AFTER_RELEASE']}}) as ReleaseAttempt;}
+  let receipt:SubmissionReceipt;const permit=Object.freeze({dispatch_id:dispatchId});permits.set(permit,{intent,attempt:captured.attempt});
+  try{receipt=decodeSubmission(await submit(intent,captured.attempt,permit),claimed.attempt);}
+  catch{return await this.repository.command({kind:'AMBIGUOUS',value:{attempt:captured.attempt,dispatch_id:dispatchId,evidence_refs:['B3_TRANSPORT_EXCEPTION_OR_INVALID_RECEIPT_AFTER_RELEASE']}}) as ReleaseAttempt;}
   finally{permits.delete(permit);}
   // Persistence failure here propagates. A later caller sees SUBMITTING and reconciles.
-  return await this.repository.command({kind:'COMPLETE',value:{attempt:request.attempt,dispatch_id:dispatchId,receipt}}) as ReleaseAttempt;
+  return await this.repository.command({kind:'COMPLETE',value:{attempt:captured.attempt,dispatch_id:dispatchId,receipt}}) as ReleaseAttempt;
  }
 }
 export async function decodeEnforcementSnapshot(wire:string){const r=record(parseJSON(text(wire)),['schema_version','canonical','events']);demand(r.schema_version===ENFORCEMENT_SCHEMA,'B3_SNAPSHOT_SCHEMA');const canonical=await canonicalAt(denseArray((record(r.canonical,['schema_version','commands','records'])).commands) as unknown as AppendCommand[]);const exported=parseJSON(await canonical.exportSnapshot());demand(same(exported,r.canonical),'CANONICAL_SNAPSHOT_DRIFT');const commands=(exported as {commands:AppendCommand[]}).commands,events=denseArray(r.events) as unknown as EnforcementEvent[];await replayEnforcement(events,commands);return {canonical:exported,commands,events};}

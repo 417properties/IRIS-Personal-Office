@@ -1,0 +1,351 @@
+{
+  "schema_version": "IRIS_B3_REPAIR_DELTA_MANIFEST_V1",
+  "authority": "BIG #703/5973134406 + direct user STRATA 8.6.9 bounded repair dispatch",
+  "base": "3742bddbf4a48ab4a707b62df11cc241975b1ece",
+  "base_tree": "09ed49129fb620c951aa7a4d228e626bab120c4a",
+  "branch": "builder/iris-b3-bounded-repair-v1.1",
+  "manifest_self": "EXCLUDED_FROM_THIS_INNER_LIST; including-manifest identity returned externally",
+  "delta": {
+    "files": 13,
+    "bytes": 264376,
+    "sha256": "a49dcfd8447537778cfe936882df93be5390415156fa1267add88cd6d20795e1",
+    "algorithm": "SHA256(sorted UTF8 path+NUL+decimal bytes+NUL+file SHA256+LF)"
+  },
+  "runtime": {
+    "files": 32,
+    "bytes": 224413,
+    "sha256": "e131eafbe936e8ff238cf489a9be8699ec746484f45f640e318186a76788e501",
+    "algorithm": "SHA256(sorted UTF8 path+NUL+decimal bytes+NUL+file SHA256+LF)"
+  },
+  "runtime_roots": [
+    "src/enforcement/backends.ts",
+    "src/runtime/act.ts",
+    "src/runtime/iris-workflow.ts",
+    "src/tools/action-fixture-adapter.ts",
+    "src/agent-transition/authority-lease.ts",
+    "src/agent-transition/sentinel.ts",
+    "src/runtime/episode-controller.ts",
+    "src/state/migrations.ts"
+  ],
+  "runtime_derivation": "TypeScript 5.7.3 ESM verbatim transpilation; AST static value import/export closure; unchanged migration sources included",
+  "files": [
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/B3-BOUNDED-REPAIR-RETURN.md",
+      "mode": "100644",
+      "blob": "dfd690ecd3c86e1f548c6bdb81de3bdc17b74119",
+      "bytes": 11744,
+      "sha256": "68698ab4c24b4c62c6630777012afdafaf073d440997bfeb5c993962a924de24"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/FOCUSED-REPAIR.log",
+      "mode": "100644",
+      "blob": "a7fb4d112e995d8d586109ec9c89cf1850a49e6f",
+      "bytes": 4782,
+      "sha256": "681801870207ff388a2394d904638dba9b282b8eb4de69a62fb57fdd37f6c22b"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/FULL-REGRESSION.log",
+      "mode": "100644",
+      "blob": "5ab3f6929c6738a4e72dcbe0b84678f6685c4c91",
+      "bytes": 62813,
+      "sha256": "57af25d15ac655de695b59da0fc8d9028b9919636fe26a15edf623fdc9508e30"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/HELD-COUNTEREXAMPLES.log",
+      "mode": "100644",
+      "blob": "4e0e0a8a468b785a1b6b259a85781cccdf1e04dc",
+      "bytes": 34024,
+      "sha256": "6a339bf69c20cc29997fbe987044b5664eb3c5383a553f70544e70547122d497"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/PRELIMINARY-HARNESS-REGRESSION.log",
+      "mode": "100644",
+      "blob": "39b1d270b602a245288fb689cbd5b3050d884e73",
+      "bytes": 63887,
+      "sha256": "48c6511e60d1b5dbaf616ddfad922107e1fbe94a768b7e8b7baa2500b3324801"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/QUALIFICATION.json",
+      "mode": "100644",
+      "blob": "2cb49c117f821954996203766cfaf6a46f8ceef9",
+      "bytes": 41270,
+      "sha256": "52313e2b53439eb1328148ede17356ac13fa2fbc425c043d00e884288d548053"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/structural.log",
+      "mode": "100644",
+      "blob": "df934fc4c8c6a6fddd3fd7790ec8f01a06a26c81",
+      "bytes": 247,
+      "sha256": "28cefab0126c0837dda22d508b39a4537ecebdcdc006e9ac6c92195afebe8e39"
+    },
+    {
+      "path": "artifacts/development/iris-b3-repair-v1.1/typecheck.log",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/enforcement/backends.ts",
+      "mode": "100644",
+      "blob": "37d15eb0d7df3ed64b3fc6bb5a7f14a1ae80c346",
+      "bytes": 5130,
+      "sha256": "a9be323b6b623b43d6dd869d848f2070b4a848da0aa177113356c35e81bc2db4"
+    },
+    {
+      "path": "src/enforcement/repository.ts",
+      "mode": "100644",
+      "blob": "ee3e37f5fd0f7c07cfddd61766fd1383ef45825e",
+      "bytes": 22065,
+      "sha256": "1a74feb7b09e77496458f09ab6c7d71840b5076521c1eb34695e390cfcb7a93a"
+    },
+    {
+      "path": "tests/enforcement-repair/boundaries.test.ts",
+      "mode": "100644",
+      "blob": "2d6d2e52f2592f41821e35e21e3dd5faa00152c7",
+      "bytes": 7193,
+      "sha256": "3a60a87c5017985c2c44baa4e1678ffceaf39f721db2592bed958f95f9a13a8a"
+    },
+    {
+      "path": "tests/enforcement-repair/cold-reader.ts",
+      "mode": "100644",
+      "blob": "ed5914f38e5f6be85b119b5a28a453a7a1c069fd",
+      "bytes": 978,
+      "sha256": "838f3eb15cf42ef25d11edf23eb5750515427d9a19c77da1e676d69eab7b31f1"
+    },
+    {
+      "path": "tests/enforcement-repair/repair.test.ts",
+      "mode": "100644",
+      "blob": "e5535e2f16af3fc489ee5d8f9acd52a022baec1f",
+      "bytes": 10243,
+      "sha256": "2b24bbf317199125dcaa9d7a11e01b5d27812c6ba1bad1bba928537e8754ef1d"
+    }
+  ],
+  "runtime_files": [
+    {
+      "path": "db/migrations/001_iris_core.sql",
+      "mode": "100644",
+      "blob": "dcc44c4b0c29a7292e779bd4cc1ac91dbcff72b3",
+      "bytes": 50955,
+      "sha256": "999f35e3eec4488cad434991f9e2d181c879ea6a8f8b1707206b3cc3c69f28ad"
+    },
+    {
+      "path": "db/migrations/002_work_episode.sql",
+      "mode": "100644",
+      "blob": "5e9899f6ef2da5497d0d2840e2f92544e6bd8ae1",
+      "bytes": 1284,
+      "sha256": "0871dc69ea8e7765142340a20fa8302ca7ec5615c936a81fce937413e268420b"
+    },
+    {
+      "path": "db/migrations/003_action_effect.sql",
+      "mode": "100644",
+      "blob": "46166ee28628d547fd8211d7c44cd1c3f8e9098c",
+      "bytes": 3991,
+      "sha256": "634722acd138ff593f3200565a481fc65faf08b9ac0dd3e5147c0b6c77c56a3f"
+    },
+    {
+      "path": "db/migrations/004_instrumentation.sql",
+      "mode": "100644",
+      "blob": "cb3926180d1a466d7f09e890d4cf5130d4d36e7c",
+      "bytes": 1405,
+      "sha256": "02edead36323325f6b0559f2d007126f4867d4de81cfa983142a5cffe77c870d"
+    },
+    {
+      "path": "db/migrations/005_agent_transition_identity_authority.sql",
+      "mode": "100644",
+      "blob": "890d37a8c578cdfdd88619c1fcfad1956990a49e",
+      "bytes": 19153,
+      "sha256": "65799eba7c94775de1b696fb941044b698916654db21f04de182a132aa78fd70"
+    },
+    {
+      "path": "db/migrations/006_pilot001_projection.sql",
+      "mode": "100644",
+      "blob": "be42fa65511d7784294015eddbfee27a06b5cec3",
+      "bytes": 6626,
+      "sha256": "abce4d58e44d81a950ac7f7547760005412690e699471b91c7d3be7b49d5ee33"
+    },
+    {
+      "path": "db/migrations/007_b3_enforcement.sql",
+      "mode": "100644",
+      "blob": "b7c090a1a9378f6d8f8d15dc36c0ba1b1d300a39",
+      "bytes": 3074,
+      "sha256": "df8b78001ff01dd2794f8644f758e15b6daace946b5d8bfb69cf5e6ea15a7be2"
+    },
+    {
+      "path": "src/agent-transition/authority-lease.ts",
+      "mode": "100644",
+      "blob": "5dcad7071832c820cfa5b9412941109c2d34f433",
+      "bytes": 2986,
+      "sha256": "98e6fdeb1f7d73e438528ea1880947814907abcaf82ffe3294efa52175549496"
+    },
+    {
+      "path": "src/agent-transition/sentinel.ts",
+      "mode": "100644",
+      "blob": "4a5c28bb5146272969e37cdb018bd8cab3cf60ab",
+      "bytes": 1047,
+      "sha256": "9f38470886f600fa09d41e1f6e43745f5b40c4cde00475216f128a19ecb2fa11"
+    },
+    {
+      "path": "src/domain/canonical.ts",
+      "mode": "100644",
+      "blob": "d12c4708bb8e7376b821a004eb691c96bfdb5fd8",
+      "bytes": 9388,
+      "sha256": "2242dcf0cfa5823f772c9fb498f9407323ce8314feff637592e7df2ff974a2de"
+    },
+    {
+      "path": "src/domain/json.ts",
+      "mode": "100644",
+      "blob": "93f5c0d0aead26b1b0852d32504d653bb9e34392",
+      "bytes": 2072,
+      "sha256": "2cda8877bccdc340d65ce73500d88f00495d7396d80d3353411e8cf0e41b9093"
+    },
+    {
+      "path": "src/domain/relations.ts",
+      "mode": "100644",
+      "blob": "0d3f313b5635ba224cd962686532b23d10d0c200",
+      "bytes": 1490,
+      "sha256": "61682acd6d41048faded89e106ab2757e4b5fd39f688859c84ab9f4467d62248"
+    },
+    {
+      "path": "src/domain/root-disposition.ts",
+      "mode": "100644",
+      "blob": "06c0ca6034fb8d9559be4c2a4fc2646bc31404c2",
+      "bytes": 6328,
+      "sha256": "7d258b6c667a1520d74184694a7ce68bfd0361ae9e3145b38234ba859a7e93fb"
+    },
+    {
+      "path": "src/domain/source-dto.ts",
+      "mode": "100644",
+      "blob": "c562d1877a2c30b4a4bfac3dffab765d5a6da260",
+      "bytes": 19878,
+      "sha256": "2fa0670d0de29a90634bc2ac130ca092a5edf15adf081e7cfcbb0193ee1f9360"
+    },
+    {
+      "path": "src/enforcement/backends.ts",
+      "mode": "100644",
+      "blob": "37d15eb0d7df3ed64b3fc6bb5a7f14a1ae80c346",
+      "bytes": 5130,
+      "sha256": "a9be323b6b623b43d6dd869d848f2070b4a848da0aa177113356c35e81bc2db4"
+    },
+    {
+      "path": "src/enforcement/contracts.ts",
+      "mode": "100644",
+      "blob": "f0072346a802b1246ff504cb747a08296a52d181",
+      "bytes": 16239,
+      "sha256": "b4cb43df1547dac5ac7c331d85aa3bfc4a8873543c7e2c4c9c41f20b1c76c668"
+    },
+    {
+      "path": "src/enforcement/repository.ts",
+      "mode": "100644",
+      "blob": "ee3e37f5fd0f7c07cfddd61766fd1383ef45825e",
+      "bytes": 22065,
+      "sha256": "1a74feb7b09e77496458f09ab6c7d71840b5076521c1eb34695e390cfcb7a93a"
+    },
+    {
+      "path": "src/runtime/act.ts",
+      "mode": "100644",
+      "blob": "e2de972f31424848f1c224467d55a92d9c226ba5",
+      "bytes": 849,
+      "sha256": "cd5a5f747a2ddc174b9498152d30d3ed1319fc6865e32a56d7206cf8d3046f15"
+    },
+    {
+      "path": "src/runtime/episode-controller.ts",
+      "mode": "100644",
+      "blob": "27c8ea264d4ad46137d496962de3d387622e5819",
+      "bytes": 703,
+      "sha256": "f24aedd09af8f37f722fac6c651a74f63b09b929f201e6199adaa9a55cf046b0"
+    },
+    {
+      "path": "src/runtime/iris-workflow.ts",
+      "mode": "100644",
+      "blob": "2287d09aeba6463e82d41d6a531812b11f2fdb7e",
+      "bytes": 1178,
+      "sha256": "6855072f73191cbfd59813711816e3666ce03336b977e338fac27354903ad747"
+    },
+    {
+      "path": "src/semantic-kernel/continuation.ts",
+      "mode": "100644",
+      "blob": "3057e5b838d322dc92bb2fc7a1d843000c700ccf",
+      "bytes": 1511,
+      "sha256": "994a3a20e781ef30fbb8da56cb2820c6c7a50f2675d65d7d6292f1277183c4d0"
+    },
+    {
+      "path": "src/semantic-kernel/epistemic.ts",
+      "mode": "100644",
+      "blob": "5b537a96b3442960157ff625a0918d8476b2baf3",
+      "bytes": 6194,
+      "sha256": "0cb431c8ffa741394465f09f11b7a4982cecb13e13676fec5ca64d9a4ed669e6"
+    },
+    {
+      "path": "src/semantic-kernel/identity.ts",
+      "mode": "100644",
+      "blob": "296e8e80c5e0e0182f674d2d285e2adffc0f5c7d",
+      "bytes": 4445,
+      "sha256": "5027f61f65db2570f7b4bad7722e10adc0bac5a54e84224ab9b3a3cab1cb03ba"
+    },
+    {
+      "path": "src/semantic-kernel/lifecycle.ts",
+      "mode": "100644",
+      "blob": "975e4e08e3fad3cacc50bdc22336ae5bd65eeb76",
+      "bytes": 8441,
+      "sha256": "b988367e094528bfabc13fc1670f149932c26da1099ef9e1daa455157a179e15"
+    },
+    {
+      "path": "src/semantic-kernel/representation.ts",
+      "mode": "100644",
+      "blob": "245b571de8b2a6d2da4cd3d44934a4de320799e0",
+      "bytes": 4079,
+      "sha256": "292c204c52c850c1c1af63742700a4229a084c02b1f46af4d044aad18a05f438"
+    },
+    {
+      "path": "src/semantic-kernel/temporal.ts",
+      "mode": "100644",
+      "blob": "d2e7f7e7631ce032ab857680d7d473b1ceaea630",
+      "bytes": 2123,
+      "sha256": "89157c1250cc98958acd61dd90ad952f4fe317f922f11f5a9540cc703c7e6527"
+    },
+    {
+      "path": "src/semantic-kernel/validation.ts",
+      "mode": "100644",
+      "blob": "ead05d1770f0cebd112f59d4b2e6c7e40d9c9d9f",
+      "bytes": 2350,
+      "sha256": "fc96ce2241e922c3660c21533e2b7f172b2edf7fa78db960619ccd138eaa6e2e"
+    },
+    {
+      "path": "src/state/migrations.ts",
+      "mode": "100644",
+      "blob": "85519e94d8b81103c412860cd3738beac221d47e",
+      "bytes": 356,
+      "sha256": "a2695be09620dbc7022c722da2e858ebe4f74568c75f9931ba795b93e1145de3"
+    },
+    {
+      "path": "src/state/postgres-repository.ts",
+      "mode": "100644",
+      "blob": "354a7e2809d8ed2e40b5757d4a80d5c737419ac6",
+      "bytes": 1942,
+      "sha256": "7ebae99dd9a629901db38a7727a21b413d5076ee90a66ac3314f84efb6501f5b"
+    },
+    {
+      "path": "src/state/repository.ts",
+      "mode": "100644",
+      "blob": "cd3dea187a1962a67c07141af18fc16251ae0a41",
+      "bytes": 13563,
+      "sha256": "e59f48a5ddaecbb5ca7f4ddc2d2987142771406c618a9602e263a629d15e619d"
+    },
+    {
+      "path": "src/tools/action-fixture-adapter.ts",
+      "mode": "100644",
+      "blob": "4a1427bacf96d1f40401eb8b33d21c508819ef75",
+      "bytes": 2309,
+      "sha256": "49117b69f41bda12343b0414672cce81de589497f24d9403f058217a0f794888"
+    },
+    {
+      "path": "src/tools/tool-contract.ts",
+      "mode": "100644",
+      "blob": "c7749a04c3d3e422e3c08a4be5946fe456038266",
+      "bytes": 1259,
+      "sha256": "dfc03c234687756bc05a475560913ec27de3878405cea5b064088907c6546aff"
+    }
+  ],
+  "disposition": "STRATA_8_6_9_EXACT_HEAD_ACCEPTANCE_REQUIRED / NO_SELF_ACCEPTANCE"
+}

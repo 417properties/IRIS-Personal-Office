@@ -1,0 +1,600 @@
+✖ MEMORY mutation inside actual reducer history await cannot poison command/result journal (128.90687ms)
+✖ MEMORY pinned bookkeeping preflight-failure (188.897412ms)
+✖ MEMORY pinned bookkeeping submit-exception (308.06914ms)
+✖ MEMORY pinned bookkeeping bad-receipt (200.324793ms)
+✖ MEMORY strict whole request rejects malformed input (r    )=>{r.extra=true;} (185.695328ms)
+✔ MEMORY strict whole request rejects malformed input (r    )=>{delete r.retry;} (53.424856ms)
+✔ MEMORY strict whole request rejects malformed input (r    )=>{r.retry=null;} (55.180424ms)
+✔ MEMORY strict whole request rejects malformed input (r    )=>{r.attempt=[];} (83.461014ms)
+✔ MEMORY strict whole request rejects malformed input (r    )=>{r.fence=null;} (88.250189ms)
+✔ MEMORY strict whole request rejects malformed input (r    )=>{r.intent=undefined;} (50.114604ms)
+✔ MEMORY strict whole request rejects malformed input (r    )=>{Object.defineProperty(r.attempt,'id',{enumerable:true,get(){throw Error('GETTER_MUST_NOT_EXECUTE');}});} (74.989205ms)
+✖ MEMORY captured explicit proven-safe retry survives caller change (237.053314ms)
+✖ SQL mutation inside actual reducer history await cannot poison command/result journal (1426.841571ms)
+✖ SQL pinned bookkeeping preflight-failure (1219.36649ms)
+✖ SQL pinned bookkeeping submit-exception (1011.666797ms)
+✖ SQL pinned bookkeeping bad-receipt (947.594994ms)
+✖ SQL strict whole request rejects malformed input (r    )=>{r.extra=true;} (1000.927097ms)
+✔ SQL strict whole request rejects malformed input (r    )=>{delete r.retry;} (835.81357ms)
+✔ SQL strict whole request rejects malformed input (r    )=>{r.retry=null;} (833.765272ms)
+✔ SQL strict whole request rejects malformed input (r    )=>{r.attempt=[];} (918.882735ms)
+✔ SQL strict whole request rejects malformed input (r    )=>{r.fence=null;} (824.288418ms)
+✔ SQL strict whole request rejects malformed input (r    )=>{r.intent=undefined;} (886.76386ms)
+✔ SQL strict whole request rejects malformed input (r    )=>{Object.defineProperty(r.attempt,'id',{enumerable:true,get(){throw Error('GETTER_MUST_NOT_EXECUTE');}});} (960.901619ms)
+✖ SQL captured explicit proven-safe retry survives caller change (986.000614ms)
+✔ fresh SQL restoration rollback after an enforcement row, strict live capture guard and nonempty import (1219.49401ms)
+✔ canonical-only snapshot with no enforcement events restores to fresh SQL unchanged (738.161591ms)
+✖ MEMORY whole invocation pinned: replace (784.455482ms)
+✖ MEMORY whole invocation pinned: nested (628.228891ms)
+✖ MEMORY whole invocation pinned: retry (606.194115ms)
+✔ MEMORY whole invocation pinned: fence (1277.127871ms)
+✔ MEMORY whole invocation pinned: intent (1223.873978ms)
+✖ MEMORY whole invocation pinned: during-submit (536.541953ms)
+✖ MEMORY rejects accessor invocation intent without reading getter (158.234466ms)
+✖ MEMORY rejects accessor invocation attempt without reading getter (154.161647ms)
+✖ MEMORY rejects accessor invocation fence without reading getter (155.678231ms)
+✖ MEMORY rejects accessor invocation retry without reading getter (156.146444ms)
+✖ MEMORY command captured before queue and journal uses same deep command (60.636547ms)
+✖ MEMORY canonical and reconstruction queries capture before await (48.416682ms)
+✔ MEMORY -> fresh MEMORY: interleaving, as-of cuts, Current tail, fencing, revoke, submitting and ambiguity (6768.132829ms)
+✖ MEMORY -> fresh SQL: interleaving, as-of cuts, Current tail, fencing, revoke, submitting and ambiguity (2990.236835ms)
+✖ SQL whole invocation pinned: replace (1537.904141ms)
+✖ SQL whole invocation pinned: nested (1364.226023ms)
+✖ SQL whole invocation pinned: retry (1280.802104ms)
+✔ SQL whole invocation pinned: fence (1936.911463ms)
+✔ SQL whole invocation pinned: intent (2062.05641ms)
+✖ SQL whole invocation pinned: during-submit (1407.314212ms)
+✖ SQL rejects accessor invocation intent without reading getter (964.853013ms)
+✖ SQL rejects accessor invocation attempt without reading getter (905.246513ms)
+✖ SQL rejects accessor invocation fence without reading getter (974.17412ms)
+✖ SQL rejects accessor invocation retry without reading getter (906.698424ms)
+✖ SQL command captured before queue and journal uses same deep command (824.044925ms)
+✖ SQL canonical and reconstruction queries capture before await (819.331113ms)
+✔ SQL -> fresh MEMORY: interleaving, as-of cuts, Current tail, fencing, revoke, submitting and ambiguity (7246.194529ms)
+✖ SQL -> fresh SQL: interleaving, as-of cuts, Current tail, fencing, revoke, submitting and ambiguity (3472.340885ms)
+ℹ tests 54
+ℹ suites 0
+ℹ pass 20
+ℹ fail 34
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 41502.428774
+
+✖ failing tests:
+
+test at tests/enforcement-repair/boundaries.test.ts:8:2
+✖ MEMORY mutation inside actual reducer history await cannot poison command/result journal (128.90687ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      kind: 'TRANSFER_CONTINUATION',
+      value: {
+        expected: {
+          admission_evidence_refs: [
+  ...
+          },
+  +       fence_token: 'post-decode-mutation',
+  -       fence_token: 'opaque-fence:2',
+          generation: 2,
+          owner_incarnation: {
+  +         id: 'post-decode-owner',
+  -         id: 'successor',
+            kind: 'WORKER'
+          },
+          principal: {
+            id: 'principal:one',
+            kind: 'PRINCIPAL'
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/boundaries.test.ts:18:52)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { kind: 'TRANSFER_CONTINUATION', value: { expected: [Object], successor: [Object] } },
+    expected: { kind: 'TRANSFER_CONTINUATION', value: { expected: [Object], successor: [Object] } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/boundaries.test.ts:21:85
+✖ MEMORY pinned bookkeeping preflight-failure (188.897412ms)
+  Error [SemanticError]: ATTEMPT_MISSING
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at attempt (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:21:189)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:85:61)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/boundaries.test.ts:21:85
+✖ MEMORY pinned bookkeeping submit-exception (308.06914ms)
+  Error [SemanticError]: ATTEMPT_MISSING
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at attempt (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:21:189)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:89:129)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/boundaries.test.ts:21:85
+✖ MEMORY pinned bookkeeping bad-receipt (200.324793ms)
+  Error [SemanticError]: ATTEMPT_MISSING
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at attempt (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:21:189)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:89:129)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/boundaries.test.ts:22:297
+✖ MEMORY strict whole request rejects malformed input (r    )=>{r.extra=true;} (185.695328ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/boundaries.test.ts:22:535)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/boundaries.test.ts:23:2
+✖ MEMORY captured explicit proven-safe retry survives caller change (237.053314ms)
+  Error [SemanticError]: RETRY_NOT_ELIGIBLE
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:79:39)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/boundaries.test.ts:8:2
+✖ SQL mutation inside actual reducer history await cannot poison command/result journal (1426.841571ms)
+  Error [SemanticError]: SUCCESSOR_INCARNATION_UNREGISTERED
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:51:100)
+      at async replayEnforcement (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:102:162)
+      at async decodeEnforcementSnapshot (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:162:602)
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:36:194
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/boundaries.test.ts:21:85
+✖ SQL pinned bookkeeping preflight-failure (1219.36649ms)
+  Error [SemanticError]: ATTEMPT_MISSING
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at attempt (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:21:189)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:85:61)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/boundaries.test.ts:21:85
+✖ SQL pinned bookkeeping submit-exception (1011.666797ms)
+  Error [SemanticError]: ATTEMPT_MISSING
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at attempt (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:21:189)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:89:129)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/boundaries.test.ts:21:85
+✖ SQL pinned bookkeeping bad-receipt (947.594994ms)
+  Error [SemanticError]: ATTEMPT_MISSING
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at attempt (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:21:189)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:89:129)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/boundaries.test.ts:22:297
+✖ SQL strict whole request rejects malformed input (r    )=>{r.extra=true;} (1000.927097ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/boundaries.test.ts:22:535)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/boundaries.test.ts:23:2
+✖ SQL captured explicit proven-safe retry survives caller change (986.000614ms)
+  Error [SemanticError]: RETRY_NOT_ELIGIBLE
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:79:39)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ MEMORY whole invocation pinned: replace (784.455482ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   id: 'attempt:B',
+  -   id: 'attempt:1',
+      kind: 'RELEASE_ATTEMPT'
+    }
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:25:101)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { kind: 'RELEASE_ATTEMPT', id: 'attempt:B' },
+    expected: { kind: 'RELEASE_ATTEMPT', id: 'attempt:1' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ MEMORY whole invocation pinned: nested (628.228891ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   id: 'attempt:B',
+  -   id: 'attempt:1',
+      kind: 'RELEASE_ATTEMPT'
+    }
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:25:101)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { kind: 'RELEASE_ATTEMPT', id: 'attempt:B' },
+    expected: { kind: 'RELEASE_ATTEMPT', id: 'attempt:1' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ MEMORY whole invocation pinned: retry (606.194115ms)
+  Error [SemanticError]: RETRY_WITHOUT_PROOF
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:79:136)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ MEMORY whole invocation pinned: during-submit (536.541953ms)
+  Error [SemanticError]: DISPATCH_COMPARE_FAILED
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:90:3)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ MEMORY rejects accessor invocation intent without reading getter (158.234466ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ MEMORY rejects accessor invocation attempt without reading getter (154.161647ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ MEMORY rejects accessor invocation fence without reading getter (155.678231ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ MEMORY rejects accessor invocation retry without reading getter (156.146444ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:31:2
+✖ MEMORY command captured before queue and journal uses same deep command (60.636547ms)
+  Error [SemanticError]: CONTINUATION_COMPARE_FAILED
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:48:3)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b3-held-reproduction/src/enforcement/backends.ts:17:17
+
+test at tests/enforcement-repair/repair.test.ts:32:2
+✖ MEMORY canonical and reconstruction queries capture before await (48.416682ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      expected_version: 0,
+      schema_version: 'IRIS_B2_V1',
+      transition: null,
+      value: {
+  ...
+        object: {
+  +       id: 'changed',
+  -       id: 'queued:identity',
+          kind: 'INTENT'
+        },
+        object_type: 'IDENTITY',
+        payload: {
+  +       id: 'changed',
+  -       id: 'queued:identity',
+          kind: 'INTENT'
+        },
+        principal: {
+          id: 'principal:one',
+          kind: 'PRINCIPAL'
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:32:319)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { expected_version: 0, schema_version: 'IRIS_B2_V1', transition: null, value: { authority_refs: [], event_ref: 'event:identity:INTENT:queued:identity:1', evidence_refs: [Array], object: [Object], object_type: 'IDENTITY', payload: [Object], principal: [Object], privacy_refs: [Array], provenance_refs: [Array], record_id: 'identity:INTENT:queued:identity', references: [], schema_version: 'IRIS_B2_V1', source_representations: [], temporal: [Object], version: 1 } },
+    expected: { schema_version: 'IRIS_B2_V1', expected_version: 0, transition: null, value: { schema_version: 'IRIS_B2_V1', record_id: 'identity:INTENT:queued:identity', event_ref: 'event:identity:INTENT:queued:identity:1', object_type: 'IDENTITY', object: [Object], principal: [Object], version: 1, temporal: [Object], evidence_refs: [Array], provenance_refs: [Array], privacy_refs: [Array], authority_refs: [], references: [], source_representations: [], payload: [Object] } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:33:48
+✖ MEMORY -> fresh SQL: interleaving, as-of cuts, Current tail, fencing, revoke, submitting and ambiguity (2990.236835ms)
+  error: B3_CANONICAL_CAPTURE_COUNT
+      at ye.Ve (file:///tmp/iris-b2-pglite/package/dist/chunk-3WWIVTCY.js:1:17616)
+      at ye.nt (file:///tmp/iris-b2-pglite/package/dist/chunk-3WWIVTCY.js:1:15003)
+      at ye.parse (file:///tmp/iris-b2-pglite/package/dist/chunk-3WWIVTCY.js:1:13755)
+      at file:///tmp/iris-b2-pglite/package/dist/index.js:3:191801
+      at wasm://wasm/021cbcb2:wasm-function[3707]:0x27cef1
+      at wasm://wasm/021cbcb2:wasm-function[3717]:0x27d268
+      at wasm://wasm/021cbcb2:wasm-function[9494]:0x509d72
+      at wasm://wasm/021cbcb2:wasm-function[175]:0x598a3
+      at invoke_v (file:///tmp/iris-b2-pglite/package/dist/index.js:3:176458)
+      at wasm://wasm/021cbcb2:wasm-function[178]:0x5a0e8 {
+    length: 151,
+    severity: 'ERROR',
+    code: 'P0001',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: 'PL/pgSQL function iris_b3_append_integrity() line 10 at RAISE',
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'pl_exec.c',
+    line: '3925',
+    routine: 'exec_stmt_raise',
+    query: 'insert into iris_b3_enforcement_journal(sequence,event) values($1,$2::jsonb)',
+    params: [ 1, '{"at":"2026-10-01T01:00:00.000Z","canonical_count":14,"canonical_digest":"8be388cf59da8e08231cfc34f487ccb2dba248e27d3ba6c62d30c45d635ba56b","command":{"kind":"ADMIT_CONTINUATION","value":{"claim":{"admission_evidence_refs":["source:continuation-admission"],"causal_episode":{"id":"episode:cause","kind":"CAUSAL_OCCURRENCE"},"claim":{"id":"claim:1","kind":"CONTINUATION"},"fence_token":"opaque-fence:1","generation":1,"owner_incarnation":{"id":"worker","kind":"WORKER"},"principal":{"id":"principal:one","kind":"PRINCIPAL"},"temporal":{"effective_from":"2026-10-01T00:00:00.000Z","observed_at":"2026-10-01T00:00:00.000Z","recorded_at":"2026-10-01T00:00:00.000Z","valid_until":"2027-01-01T00:00:00.000Z"}}}},"result":{"admission_evidence_refs":["source:continuation-admission"],"causal_episode":{"id":"episode:cause","kind":"CAUSAL_OCCURRENCE"},"claim":{"id":"claim:1","kind":"CONTINUATION"},"fence_token":"opaque-fence:1","generation":1,"owner_incarnation":{"id":"worker","kind":"WORKER"},"principal":{"id":"principal:one","kind":"PRINCIPAL"},"temporal":{"effective_from":"2026-10-01T00:00:00.000Z","observed_at":"2026-10-01T00:00:00.000Z","recorded_at":"2026-10-01T00:00:00.000Z","valid_until":"2027-01-01T00:00:00.000Z"}},"schema_version":"IRIS_B3_V1","sequence":1}' ],
+    queryOptions: undefined
+  }
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ SQL whole invocation pinned: replace (1537.904141ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   id: 'attempt:B',
+  -   id: 'attempt:1',
+      kind: 'RELEASE_ATTEMPT'
+    }
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:25:101)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { kind: 'RELEASE_ATTEMPT', id: 'attempt:B' },
+    expected: { kind: 'RELEASE_ATTEMPT', id: 'attempt:1' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ SQL whole invocation pinned: nested (1364.226023ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   id: 'attempt:B',
+  -   id: 'attempt:1',
+      kind: 'RELEASE_ATTEMPT'
+    }
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:25:101)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { kind: 'RELEASE_ATTEMPT', id: 'attempt:B' },
+    expected: { kind: 'RELEASE_ATTEMPT', id: 'attempt:1' },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ SQL whole invocation pinned: retry (1280.802104ms)
+  Error [SemanticError]: RETRY_WITHOUT_PROOF
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:79:136)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/repair.test.ts:20:95
+✖ SQL whole invocation pinned: during-submit (1407.314212ms)
+  Error [SemanticError]: DISPATCH_COMPARE_FAILED
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:90:3)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ SQL rejects accessor invocation intent without reading getter (964.853013ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ SQL rejects accessor invocation attempt without reading getter (905.246513ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ SQL rejects accessor invocation fence without reading getter (974.17412ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:30:58
+✖ SQL rejects accessor invocation retry without reading getter (906.698424ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:30:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /DATA_COORDINATES/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:31:2
+✖ SQL command captured before queue and journal uses same deep command (824.044925ms)
+  Error [SemanticError]: CONTINUATION_COMPARE_FAILED
+      at demand (file:///tmp/iris-b3-held-reproduction/src/semantic-kernel/validation.ts:6:25)
+      at reduce (file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:48:3)
+      at file:///tmp/iris-b3-held-reproduction/src/enforcement/repository.ts:111:46
+      at async file:///tmp/iris-b2-pglite/package/dist/chunk-F2DQ4FIK.js:8:1740
+
+test at tests/enforcement-repair/repair.test.ts:32:2
+✖ SQL canonical and reconstruction queries capture before await (819.331113ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      expected_version: 0,
+      schema_version: 'IRIS_B2_V1',
+      transition: null,
+      value: {
+  ...
+        object: {
+  +       id: 'changed',
+  -       id: 'queued:identity',
+          kind: 'INTENT'
+        },
+        object_type: 'IDENTITY',
+        payload: {
+  +       id: 'changed',
+  -       id: 'queued:identity',
+          kind: 'INTENT'
+        },
+        principal: {
+          id: 'principal:one',
+          kind: 'PRINCIPAL'
+  
+      at TestContext.<anonymous> (file:///tmp/iris-b3-held-reproduction/tests/enforcement-repair/repair.test.ts:32:319)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { expected_version: 0, schema_version: 'IRIS_B2_V1', transition: null, value: { authority_refs: [], event_ref: 'event:identity:INTENT:queued:identity:1', evidence_refs: [Array], object: [Object], object_type: 'IDENTITY', payload: [Object], principal: [Object], privacy_refs: [Array], provenance_refs: [Array], record_id: 'identity:INTENT:queued:identity', references: [], schema_version: 'IRIS_B2_V1', source_representations: [], temporal: [Object], version: 1 } },
+    expected: { schema_version: 'IRIS_B2_V1', expected_version: 0, transition: null, value: { schema_version: 'IRIS_B2_V1', record_id: 'identity:INTENT:queued:identity', event_ref: 'event:identity:INTENT:queued:identity:1', object_type: 'IDENTITY', object: [Object], principal: [Object], version: 1, temporal: [Object], evidence_refs: [Array], provenance_refs: [Array], privacy_refs: [Array], authority_refs: [], references: [], source_representations: [], payload: [Object] } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/enforcement-repair/repair.test.ts:33:48
+✖ SQL -> fresh SQL: interleaving, as-of cuts, Current tail, fencing, revoke, submitting and ambiguity (3472.340885ms)
+  error: B3_CANONICAL_CAPTURE_COUNT
+      at ye.Ve (file:///tmp/iris-b2-pglite/package/dist/chunk-3WWIVTCY.js:1:17616)
+      at ye.nt (file:///tmp/iris-b2-pglite/package/dist/chunk-3WWIVTCY.js:1:15003)
+      at ye.parse (file:///tmp/iris-b2-pglite/package/dist/chunk-3WWIVTCY.js:1:13755)
+      at file:///tmp/iris-b2-pglite/package/dist/index.js:3:191801
+      at wasm://wasm/021cbcb2:wasm-function[3707]:0x27cef1
+      at wasm://wasm/021cbcb2:wasm-function[3717]:0x27d268
+      at wasm://wasm/021cbcb2:wasm-function[9494]:0x509d72
+      at wasm://wasm/021cbcb2:wasm-function[175]:0x598a3
+      at invoke_v (file:///tmp/iris-b2-pglite/package/dist/index.js:3:176458)
+      at wasm://wasm/021cbcb2:wasm-function[178]:0x5a0e8 {
+    length: 151,
+    severity: 'ERROR',
+    code: 'P0001',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: 'PL/pgSQL function iris_b3_append_integrity() line 10 at RAISE',
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'pl_exec.c',
+    line: '3925',
+    routine: 'exec_stmt_raise',
+    query: 'insert into iris_b3_enforcement_journal(sequence,event) values($1,$2::jsonb)',
+    params: [ 1, '{"at":"2026-10-01T01:00:00.000Z","canonical_count":14,"canonical_digest":"8be388cf59da8e08231cfc34f487ccb2dba248e27d3ba6c62d30c45d635ba56b","command":{"kind":"ADMIT_CONTINUATION","value":{"claim":{"admission_evidence_refs":["source:continuation-admission"],"causal_episode":{"id":"episode:cause","kind":"CAUSAL_OCCURRENCE"},"claim":{"id":"claim:1","kind":"CONTINUATION"},"fence_token":"opaque-fence:1","generation":1,"owner_incarnation":{"id":"worker","kind":"WORKER"},"principal":{"id":"principal:one","kind":"PRINCIPAL"},"temporal":{"effective_from":"2026-10-01T00:00:00.000Z","observed_at":"2026-10-01T00:00:00.000Z","recorded_at":"2026-10-01T00:00:00.000Z","valid_until":"2027-01-01T00:00:00.000Z"}}}},"result":{"admission_evidence_refs":["source:continuation-admission"],"causal_episode":{"id":"episode:cause","kind":"CAUSAL_OCCURRENCE"},"claim":{"id":"claim:1","kind":"CONTINUATION"},"fence_token":"opaque-fence:1","generation":1,"owner_incarnation":{"id":"worker","kind":"WORKER"},"principal":{"id":"principal:one","kind":"PRINCIPAL"},"temporal":{"effective_from":"2026-10-01T00:00:00.000Z","observed_at":"2026-10-01T00:00:00.000Z","recorded_at":"2026-10-01T00:00:00.000Z","valid_until":"2027-01-01T00:00:00.000Z"}},"schema_version":"IRIS_B3_V1","sequence":1}' ],
+    queryOptions: undefined
+  }

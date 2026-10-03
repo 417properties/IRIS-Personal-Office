@@ -36,8 +36,12 @@ export class PostgresEnforcementRepository extends EnforcementRepository {
    const {commands,events}=await read(tx);const wire=canonicalJSON({schema_version:ENFORCEMENT_SCHEMA,canonical:{schema_version:'IRIS_B2_V1',commands,records:commands.map(c=>c.value)},events});await decodeEnforcementSnapshot(wire);return wire;
   }),importSnapshot:async wire=>{const d=await decodeEnforcementSnapshot(wire);await locked(async tx=>{
    const before=await read(tx);demand(before.commands.length===0&&before.events.length===0,'IMPORT_REQUIRES_EMPTY_STORE');
-   for(const c of d.commands)await tx.query('insert into iris_b2_journal(principal_id,record_id,version,command) values($1,$2,$3,$4::jsonb)',[c.value.principal.id,c.value.record_id,c.value.version,JSON.stringify(c)]);
-   for(const e of d.events)await tx.query('insert into iris_b3_enforcement_journal(sequence,event) values($1,$2::jsonb)',[e.sequence,JSON.stringify(e)]);
+   // Rebuild the recorded causal prefix before each original enforcement event.
+   // Shared prefixes add no canonical row; the canonical-only tail follows all events.
+   let count=0;
+   const appendCanonical=async()=>{const c=d.commands[count]!;await tx.query('insert into iris_b2_journal(principal_id,record_id,version,command) values($1,$2,$3,$4::jsonb)',[c.value.principal.id,c.value.record_id,c.value.version,JSON.stringify(c)]);count++;};
+   for(const e of d.events){while(count<e.canonical_count)await appendCanonical();await tx.query('insert into iris_b3_enforcement_journal(sequence,event) values($1,$2::jsonb)',[e.sequence,JSON.stringify(e)]);}
+   while(count<d.commands.length)await appendCanonical();
   });}};super(backend);
  }
 }
