@@ -125,7 +125,7 @@ F104 exact PilotCandidate field-presence census matches the published 84-root ta
 F105 privacyExcluded is exactly one record in one case; all other cases [].
 F106 all 84 candidate provenance_refs arrays contain exactly one exact typed evidence source ref.
 F107 matrix/preflight contain one canonical semantic branch each for candidate construction, lifecycle, authority and conflicts; no contradictory duplicate branch remains.
-F108 static verifier source contains no candidate import/buildProjection call and checks the canonical v1.0 censuses/content addresses.
+F108 the sole canonical verifier is `verify-standalone-v1.0.mjs` under Node; no alternate Python verifier exists; it imports/calls no candidate/buildProjection, consumes no E2/E3/output/scoring, and must return exit 0 / failures=[] / 40_CASE_MAPPING_TOTALITY_PASS.
 
 ## Success
 All F001-F108 PASS and static preflight reports:
