@@ -1,0 +1,26 @@
+{
+  "candidate_files": 103,
+  "content_addressed_objects_verified": 121,
+  "foundation_files_unchanged": 63,
+  "population_digest": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+  "cases": 40,
+  "records": 611,
+  "impact_packets": 221,
+  "unique_ids": 832,
+  "resolved_ref_occurrences": 5008,
+  "record_type_census_equal": true,
+  "binding_semantic_dependency_hashes": 12,
+  "root_census": {
+    "obligation": 42,
+    "decision_requirement": 40,
+    "intent": 1,
+    "conflict_only": 1
+  },
+  "field_witness_cells": 2016,
+  "candidate_evaluation_executed": false,
+  "root_projection_outputs_generated": false,
+  "unresolved_derivations": [
+    "conflict-only id"
+  ],
+  "lossless_factoring_roundtrip": true
+}

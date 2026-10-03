@@ -1,0 +1,58 @@
+[
+  {
+    "object": "architecture/foundation-v0.1.md",
+    "bytes": 34766,
+    "sha256": "d634a1c54f14bb8e175bc87af0d98a1509a6d244ae9162b5daa7292789d919a2",
+    "git_blob_computed": "cf8bab6abea0acfaa07b885df13a47135d37f3ea",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "architecture/foundation-packet-v0.1.md",
+    "bytes": 10096,
+    "sha256": "23b93903621f607c551784f083f5136ca443cd11193023d82197d017e9a6b58a",
+    "git_blob_computed": "9c2131906c0cc2f666755b1ac94bed41856747c0",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "e1/structural-checker.py",
+    "bytes": 16672,
+    "sha256": "3b63512ad7154611f240edc880eb20567961cbe792bce3b5f5f2dd985f729fbf",
+    "git_blob_computed": "caacd07b1635ed0cff3921c6d2f6c33a87f6506e",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "context/comment-5965552071.json",
+    "bytes": 9174,
+    "sha256": "78d5f511ee7d6f280ee833d65c03a87617e1a66511f9d3cfc2ae7d46acfd0d2e",
+    "git_blob_computed": "380178ee35dd657c7571a8d0033977868ef9bc0d",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "context/comment-5965601867.json",
+    "bytes": 6636,
+    "sha256": "ece99922e4e4f0a63e1d2c6f71cbd348ace1fa59d008a75427823bbd38baa4b8",
+    "git_blob_computed": "0c4adbe64ed4a1572e68994ccd5c23b4c02004e5",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "context/comment-5965652948.json",
+    "bytes": 11419,
+    "sha256": "f30ad06b73d518e255f0b3af272705970fb7528692d68eea599e15a8e08b6913",
+    "git_blob_computed": "48e7fdaee9ecff90f21b89131a3ba33a1285b324",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "context/comment-5965679103.json",
+    "bytes": 17791,
+    "sha256": "da8ed92e6ebf3d54116e38c54253e963556321d84f35686368fde1ab7326c932",
+    "git_blob_computed": "d13f0b174d42eba70f735e19dcaa7dfa50e18642",
+    "note": "exact content bytes"
+  },
+  {
+    "object": "context/foundation-acceptance.json",
+    "bytes": 5922,
+    "sha256": "2e9bbdddc42005c8172a1a1c1f32ba370aa5b1f7aef37c7021d0c91bd0c89605",
+    "git_blob_computed": "bbf30a09f2b3daeaae924db5bf7e21dd98b922bb",
+    "note": "exact content bytes"
+  }
+]

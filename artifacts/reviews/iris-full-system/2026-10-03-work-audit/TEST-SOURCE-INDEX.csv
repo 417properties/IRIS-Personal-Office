@@ -1,0 +1,158 @@
+path,line,test_name,execution
+tests/agent-transition/ambient.test.ts,2,T64 unrestricted DB mutation is forbidden,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/ambient.test.ts,3,T65 protocol authentication creates no IRIS/Current authority,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/ambient.test.ts,4,T66/T67 trusted device proves provenance only; ambient stays quarantine/noncanonical,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,6,T07 full exact lease binding passes,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,7,T08-T17 stale/revoked/worker/session possession cannot authorize,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,8,T18 unresolved effect requires reconciliation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,9,T19 UNKNOWN authority fails closed,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,10,T20 reauthorization advances generation and stale lease cannot be reused,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,11,revocation advances generation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/authority-lease.test.ts,12,retired worker cannot receive lease,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,2,T68 bounded BIG packet/quarantine required,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,3,T69 wrong principal excluded,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,4,T70 IRIS cannot mutate BIG Current,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,5,T71 BIG delta authority_effect is NONE,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,6,T75 PR #1 unchanged boundary,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,7,T76 candidate descends exact bee076 base,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,8,T77 no live credentials provider deployment mutation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,9,T78 no Persistent Continuity activation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,10,T79 no standing authority commerce representation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/big-separation.test.ts,11,T80 no C4-C6 or ambient canonicalization,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/capability-qualification.test.ts,3,T92 benchmark evidence alone cannot ADMIT,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/capability-qualification.test.ts,4,T93 role-specific qualification cannot leak to another role,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/capability-qualification.test.ts,5,T94 DEMOTED/EXPIRED is not route eligible and history remains data,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/capability-router.test.ts,4,T89 route decision authority_effect=NONE,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/capability-router.test.ts,5,T90 unqualified expired demoted capability cannot route,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/capability-router.test.ts,6,T91 privacy/risk beats cheaper incompatible candidate,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,3,T01/T02 identities remain distinct,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,4,T03 provider cannot become worker by inference,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,5,"T04 trusted device is still DEVICE, not principal/truth/authority/current",NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,6,T05 replacement creates new identity/generation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,7,"T06/T88 retired, expired, revoked workers fail closed",NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,8,T86 provider/model substitution does not alter institutional worker identity,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,9,T87 successor worker receives new identity and no predecessor authority field exists,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/identity.test.ts,10,identity ID and generation reuse rejected,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/persistent-objective-runtime.test.ts,2,T24 provider session cannot become Current by runtime reconstruction,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/persistent-objective-runtime.test.ts,3,T25 worker evidence path leaves canonical state unchanged,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/persistent-objective-runtime.test.ts,4,T26/T27 restart reconstruction preserves objectives/obligations/unresolved effects,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/persistent-objective-runtime.test.ts,5,T28 provider recovery does not equal Persistent Continuity admission,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,3,T29-T32 exact AR predicates,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,4,T33 overlap retains multiple predicates,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,5,T34/T35/T36 informational/principal-only/satisfied negatives,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,6,T37 IRIS-owned + Aaron authority positive; T38 external-owned escalation positive,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,7,T39 exact canonical identity matches; T40 semantic similarity without anchor does not; T41 possible duplicate retained,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,8,open decision with missing decision-maker is UNKNOWN and not omittable,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-classification.test.ts,9,reserved authority without a proven valid delegation fails closed to AR-3,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-concurrency.test.ts,4,T55 one dependency drift reruns and stabilizes,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-concurrency.test.ts,5,T56 repeated instability => UNKNOWN_COVERAGE,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-concurrency.test.ts,6,load-bearing candidate change changes dependency digest,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-concurrency.test.ts,7,exact canonical duplicates consolidate to one intervention,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-concurrency.test.ts,8,"open decision with unknown decision-maker goes to relevance UNKNOWN, never justified omission",NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,18,"T44/T45/T46 stale, partial, missing required source => INCOMPLETE and no omission",NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,26,T47 unknown identity/applicability => UNKNOWN,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,31,T48 required source wrong principal fails closed,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,36,T42/T43/T49 material conflict prevents COMPLETE,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,40,T50 all qualified conditions => COMPLETE,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,44,T51 unclassifiable Aaron candidate => UNKNOWN,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,48,T52/T53 omission requires all material dimensions,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,53,T54 exact required source set cannot be silently narrowed away,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,59,T54b caller required:false cannot narrow immutable required-source coverage,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,97,T54c required applicable UNKNOWN freshness cannot produce COMPLETE or omission,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,103,T54d unsupported required-source inapplicability fails closed,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,109,T54e stale required-source inapplicability cannot produce COMPLETE or omission,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,117,T54f partial required-source inapplicability cannot produce COMPLETE or omission,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,125,T54g malformed runtime required-source shapes fail closed before completeness,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-coverage.test.ts,148,T55 one stabilized rerun may proceed; T56 repeated instability UNKNOWN,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-metrics.test.ts,2,T60 weights exactly 1/4/16/64,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-metrics.test.ts,3,T57/T61 consequential miss fails; trivial omission cannot offset,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-metrics.test.ts,4,T58 abstention is not omission success; T59 incomplete not compression success; T62 false COMPLETE fails,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-metrics.test.ts,5,T63 governing reference-set scoring is not a Builder function,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,20,post-E3: contextual objective does not pollute a decision intervention identity,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,27,post-E3: exact duplicate obligation roots consolidate before intervention hashing,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,35,post-E3: material conflict does not erase the underlying Aaron action,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,44,post-E3: unresolved effect selects RECONCILE_EFFECT and preserves conflict plus intent anchors,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,52,post-E3: one reserved-authority intervention may consolidate obligation decision and authority conflict,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,63,post-E3: reserved authority with no proven valid delegation fails closed to Aaron-required authorization,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-post-e3-repair.test.ts,70,post-E3: COMPLETE requires explicit non-partial evidence for every immutable required source,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-repository-bracket.test.ts,23,repository type-erased decoder cannot promote malformed required-source facts to COMPLETE,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-repository-bracket.test.ts,36,repository performs real stable end-bracket comparison,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-repository-bracket.test.ts,43,repository discards drifted first snapshot and reruns once,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/pilot001-repository-bracket.test.ts,50,repository fails UNKNOWN after second dependency instability,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/portable-procedure.test.ts,3,T95 loading procedure grants no tool or authority access,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/portable-procedure.test.ts,4,T96 superseded/retired/unqualified procedure rejected,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/portable-procedure.test.ts,5,T97 provider substitution preserves compatibility or fails,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/research-worker.test.ts,3,T72/T73 provider result is evidence only with zero external effect/no Current mutation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/research-worker.test.ts,4,T74 replacement worker preserves semantic evidence without inheriting identity,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/selective-perception.test.ts,2,T98 available sensor produces no automatic persistence,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/selective-perception.test.ts,3,T99 EPHEMERAL_WORKING expires and does not become evidence,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/selective-perception.test.ts,4,T100 unqualified observation cannot become evidence or Current,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/selective-perception.test.ts,5,T101 authenticated trusted device cannot prove Aaron identity truth authority,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/sentinel.test.ts,6,T21 valid check/release calls fake adapter once,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/sentinel.test.ts,7,T22 ambiguity after PREPARED requires reconciliation,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/sentinel.test.ts,8,T08-T13 invalid generation blocks adapter,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/sentinel.test.ts,9,T18 recovery of unknown PREPARED does not infer effect,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/sentinel.test.ts,10,T23 cognition receives no broker credential in release-attempt shape,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/workflow-durability.test.ts,3,T81 provider session disappearance leaves qualified checkpoint usable,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/workflow-durability.test.ts,4,T82 tentative provider state cannot be admitted,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/workflow-durability.test.ts,5,T83 replacement worker must use a new identity,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/workflow-durability.test.ts,6,T84 unresolved effect survives restart,NOT_RUN_SOURCE_ONLY
+tests/agent-transition/workflow-durability.test.ts,7,T85 effectful step never blindly replays,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,13,predicted preference only cannot authorize,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,14,standing authorization outside scope blocked,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,15,expired standing authorization blocked,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,16,explicit current Aaron decision in scope allowed,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,17,authority UNKNOWN blocks consequential action,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,18,privacy UNKNOWN blocks disclosure,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,19,MCP tool presence creates no authority,NOT_RUN_SOURCE_ONLY
+tests/authority-privacy/authority-privacy.test.ts,20,prior success does not create standing authority,NOT_RUN_SOURCE_ONLY
+tests/big-separation/big-separation.test.ts,8,BIG delta imports to quarantine only,NOT_RUN_SOURCE_ONLY
+tests/big-separation/big-separation.test.ts,9,BIG delta cannot mutate current assertion directly,NOT_RUN_SOURCE_ONLY
+tests/big-separation/big-separation.test.ts,10,BIG credential is absent from IRIS runtime contract,NOT_RUN_SOURCE_ONLY
+tests/big-separation/big-separation.test.ts,11,IRIS credential is not exposed to BIG adapter,NOT_RUN_SOURCE_ONLY
+tests/big-separation/big-separation.test.ts,12,BIG Current identifier remains external reference,NOT_RUN_SOURCE_ONLY
+tests/big-separation/big-separation.test.ts,13,shared provider does not imply shared canonical state,NOT_RUN_SOURCE_ONLY
+tests/circuit/circuit.test.ts,9,C3 positive circuit closes only after verified effect and records restrained learning,NOT_RUN_SOURCE_ONLY
+tests/circuit/circuit.test.ts,10,C3 negative control tool receipt success without effect cannot close objective,NOT_RUN_SOURCE_ONLY
+tests/domain/domain.test.ts,7,evidence occurrences are immutable,NOT_RUN_SOURCE_ONLY
+tests/domain/domain.test.ts,8,current advances without overwriting history,NOT_RUN_SOURCE_ONLY
+tests/domain/domain.test.ts,9,derived projection is explicitly noncanonical,NOT_RUN_SOURCE_ONLY
+tests/domain/domain.test.ts,10,one experience produces only candidate learning,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,8,kill after THINK resumes from canonical objective/obligation,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,9,kill after intent persisted preserves intent,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,10,kill after tool before receipt becomes effect-unknown boundary,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,11,kill after receipt before verification does not infer effect,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,12,external state change while asleep forces reorientation,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,13,competing continuation generations fail CAS,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,14,stale workflow checkpoint cannot outrank newer canonical state,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,15,tracing unavailable cannot block canonical reconstruction,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,16,model provider unavailable can fall back without changing authority,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,17,empty model session memory does not affect reconstruction,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,50,terminal verification for another intent cannot clear an unresolved persisted intent,NOT_RUN_SOURCE_ONLY
+tests/failure/continuity.test.ts,61,terminal verification cannot mask a coexisting unresolved disposition,NOT_RUN_SOURCE_ONLY
+tests/failure/effect-retry.test.ts,5,confirmed no-effect plus idempotent key allows bounded retry,NOT_RUN_SOURCE_ONLY
+tests/failure/effect-retry.test.ts,6,confirmed effect means no retry,NOT_RUN_SOURCE_ONLY
+tests/failure/effect-retry.test.ts,7,ambiguous landed effect requires reconciliation,NOT_RUN_SOURCE_ONLY
+tests/failure/effect-retry.test.ts,8,non-idempotent unsafe timeout/unknown holds,NOT_RUN_SOURCE_ONLY
+tests/failure/effect-retry.test.ts,9,duplicate receipt is reconciled as stored fact rather than creating authority,NOT_RUN_SOURCE_ONLY
+tests/failure/effect-retry.test.ts,10,receipt/tool success without verified effect is not objective success,NOT_RUN_SOURCE_ONLY
+tests/provider-substitution/provider-substitution.test.ts,9,cognition provider substitution leaves canonical semantics unchanged,NOT_RUN_SOURCE_ONLY
+tests/provider-substitution/provider-substitution.test.ts,10,workflow runtime ref is subordinate to canonical state,NOT_RUN_SOURCE_ONLY
+tests/provider-substitution/provider-substitution.test.ts,11,tracing can disappear without canonical loss,NOT_RUN_SOURCE_ONLY
+tests/provider-substitution/provider-substitution.test.ts,12,replaceable provider never becomes sole owner of irreducible property,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,26,fresh process R1_CLEAN_CONTINUATION,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,27,fresh process R2_CURRENT_CHANGED_AFTER_INTERRUPTION,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,28,fresh process R3_CONFLICTING_EVIDENCE,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,29,fresh process R4_MISSING_SOURCE,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,30,fresh process R5_AMBIGUOUS_EXTERNAL_EFFECT,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,31,fresh process R6_OPEN_OBLIGATION_NO_CONVERSATION,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,32,fresh process R7_PRESERVED_AUTHORITY_STATE,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/fresh-process.test.ts,33,fresh process R8_HISTORY_SURVIVES_NEW_CURRENT,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,7,R1_CLEAN_CONTINUATION,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,8,R2_CURRENT_CHANGED_AFTER_INTERRUPTION,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,9,R3_CONFLICTING_EVIDENCE,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,10,R4_MISSING_SOURCE,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,11,R5_AMBIGUOUS_EXTERNAL_EFFECT,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,12,R6_OPEN_OBLIGATION_NO_CONVERSATION,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,13,R7_PRESERVED_AUTHORITY_STATE,NOT_RUN_SOURCE_ONLY
+tests/reconstruction/reconstruction.test.ts,14,R8_HISTORY_SURVIVES_NEW_CURRENT,NOT_RUN_SOURCE_ONLY
