@@ -303,5 +303,28 @@
       "preliminary iba/iris-pilot001-standalone-execution-binding-v1-1"
     ],
     "reason": "concurrent pre-review mutation created contradictory authority/escalation/conflict/applicability rules; reconciled package has one rule per semantic question"
+  },
+  "candidate_path_totality": {
+    "path": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-CANDIDATE-PATH-TOTALITY.json",
+    "root_count": 84,
+    "UNKNOWN_ITEM": 6,
+    "KNOWN_CLASSIFICATION": 78,
+    "known_ar_class_predicate_counts": {
+      "AR-1": 10,
+      "AR-2": 16,
+      "AR-3": 18,
+      "AR-4": 4
+    },
+    "every_root_exact_candidate_id": true,
+    "every_root_complete_field_derivation": true,
+    "rule_references_resolved": true,
+    "authority_unknown_reserved_roots_route_UNKNOWN_ITEM": true,
+    "conflict_only_id_grammar": "e1:<case_id>:conflict:<untyped conf_<sha256>>"
+  },
+  "root_id_grammars": {
+    "obligation": "e1:<case_id>:obligation:<raw obligation payload>",
+    "decision": "e1:<case_id>:decision:<raw decision_requirement payload>",
+    "intent": "e1:<case_id>:intent:<raw intent payload>",
+    "conflict_only": "e1:<case_id>:conflict:<untyped conf_<sha256>>"
   }
 }
