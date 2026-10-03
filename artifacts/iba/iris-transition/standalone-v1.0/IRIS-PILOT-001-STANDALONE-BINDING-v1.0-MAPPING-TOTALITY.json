@@ -1,0 +1,309 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.0-MAPPING-TOTALITY",
+  "authority": "NONE",
+  "population": {
+    "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "count": 40,
+    "sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f"
+  },
+  "columns": [
+    "source_structure",
+    "relevant_fields_or_tokens",
+    "binding_rule_id",
+    "projection_input_derivation_or_disposition",
+    "provenance_ref_scope",
+    "load_bearing"
+  ],
+  "rows": [
+    {
+      "source_structure": "coverage_contract",
+      "relevant_fields_or_tokens": "contract_id/required_surfaces/scope_version",
+      "binding_rule_id": "§2,§3",
+      "projection_input_derivation_or_disposition": "validate frozen contract and exact eight-surface set; not a candidate root",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "snapshot_reads",
+      "relevant_fields_or_tokens": "ordered read_at + exact version maps",
+      "binding_rule_id": "§2",
+      "projection_input_derivation_or_disposition": "derive bracket and selected read time or named HOLD",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "source_envelope:PRESENT",
+      "relevant_fields_or_tokens": "availability=PRESENT",
+      "binding_rule_id": "§3.1",
+      "projection_input_derivation_or_disposition": "SourceEvaluation deterministic field reduction",
+      "provenance_ref_scope": "surface",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "source_envelope:UNKNOWN",
+      "relevant_fields_or_tokens": "availability=UNKNOWN",
+      "binding_rule_id": "§3.2",
+      "projection_input_derivation_or_disposition": "SourceEvaluation present=false/identity=UNKNOWN/applicability=UNKNOWN/freshness=UNKNOWN/partial=true",
+      "provenance_ref_scope": "surface",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "source_envelope:UNAVAILABLE",
+      "relevant_fields_or_tokens": "availability=UNAVAILABLE",
+      "binding_rule_id": "§3.3",
+      "projection_input_derivation_or_disposition": "SourceEvaluation present=false/applicability=APPLICABLE/partial=true plus exact envelope facts",
+      "provenance_ref_scope": "surface",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "evidence",
+      "relevant_fields_or_tokens": "provenance_verified/complete_enumeration/source_refs",
+      "binding_rule_id": "§3,§4",
+      "projection_input_derivation_or_disposition": "evidence/provenance basis; NOT_MAPPED_BY_DESIGN as root",
+      "provenance_ref_scope": "exact refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "resource",
+      "relevant_fields_or_tokens": "resource_kind/preimage_retained",
+      "binding_rule_id": "§4",
+      "projection_input_derivation_or_disposition": "NOT_MAPPED_BY_DESIGN as root; usable only through exact linked source semantics",
+      "provenance_ref_scope": "exact refs",
+      "load_bearing": false
+    },
+    {
+      "source_structure": "objective",
+      "relevant_fields_or_tokens": "typed id/status/owner/scope",
+      "binding_rule_id": "§6,§7",
+      "projection_input_derivation_or_disposition": "raw objective payload into candidate roots where referenced",
+      "provenance_ref_scope": "exact typed ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "obligation",
+      "relevant_fields_or_tokens": "typed id/status/owner/action/informational",
+      "binding_rule_id": "§4,§6,§7.1",
+      "projection_input_derivation_or_disposition": "obligation candidate root and exact material fields",
+      "provenance_ref_scope": "exact typed ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "obligation_governance",
+      "relevant_fields_or_tokens": "applicability/owner/decision-maker/authority",
+      "binding_rule_id": "§4,§7.1,§8",
+      "projection_input_derivation_or_disposition": "exact obligation-scoped candidate fields; no cross-ref cascade",
+      "provenance_ref_scope": "obligation_ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "decision_requirement",
+      "relevant_fields_or_tokens": "typed id/status/history/decision-maker/reserved authority",
+      "binding_rule_id": "§4,§6,§7.2",
+      "projection_input_derivation_or_disposition": "decision candidate root and exact material fields",
+      "provenance_ref_scope": "exact typed ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "applicability_assertion",
+      "relevant_fields_or_tokens": "applicability/subject_refs/effective_at",
+      "binding_rule_id": "§4,§7",
+      "projection_input_derivation_or_disposition": "applies only to exact subject_refs; evidence not root",
+      "provenance_ref_scope": "subject_refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "lifecycle_event",
+      "relevant_fields_or_tokens": "event_kind/affected_record_refs/effective_at",
+      "binding_rule_id": "§4",
+      "projection_input_derivation_or_disposition": "affects only exact refs; evidence not root",
+      "provenance_ref_scope": "affected_record_refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "authority_generation_state",
+      "relevant_fields_or_tokens": "generation/policies/scope/history",
+      "binding_rule_id": "§8",
+      "projection_input_derivation_or_disposition": "delegation validation state; NOT_MAPPED_BY_DESIGN as root",
+      "provenance_ref_scope": "exact authority domain context",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "identity",
+      "relevant_fields_or_tokens": "identity_kind/status/generation/envelopes",
+      "binding_rule_id": "§5,§8",
+      "projection_input_derivation_or_disposition": "identity/worker evidence; NOT_MAPPED_BY_DESIGN as root",
+      "provenance_ref_scope": "exact refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "work_episode",
+      "relevant_fields_or_tokens": "status/worker/objective/obligation",
+      "binding_rule_id": "§8",
+      "projection_input_derivation_or_disposition": "delegation/episode validation; NOT_MAPPED_BY_DESIGN as root",
+      "provenance_ref_scope": "exact refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "current_assertion",
+      "relevant_fields_or_tokens": "predicate/value/applicability/subject_refs",
+      "binding_rule_id": "§4,§9",
+      "projection_input_derivation_or_disposition": "exact conflict/applicability evidence only; not independent root",
+      "provenance_ref_scope": "subject_refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "big_packet",
+      "relevant_fields_or_tokens": "admission/authority_effect/source_current_mutation_allowed/time",
+      "binding_rule_id": "§10",
+      "projection_input_derivation_or_disposition": "qualified BIG SourceEvaluation only; never live authority",
+      "provenance_ref_scope": "qualified_big_packets envelope",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "required_next_step",
+      "relevant_fields_or_tokens": "permission_needed/subject_ref/decision_ref/reserved authority",
+      "binding_rule_id": "§4,§8",
+      "projection_input_derivation_or_disposition": "evidence only; can populate exact reserved-authority fields; never root",
+      "provenance_ref_scope": "subject_ref+decision_ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "authority_lease",
+      "relevant_fields_or_tokens": "state/generation/domain/policies/worker/episode/scope",
+      "binding_rule_id": "§8",
+      "projection_input_derivation_or_disposition": "valid_delegation exact match or false/UNKNOWN; never root",
+      "provenance_ref_scope": "exact lease ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "instruction",
+      "relevant_fields_or_tokens": "instruction/subject_ref/effective_at",
+      "binding_rule_id": "§9",
+      "projection_input_derivation_or_disposition": "explicit exact conflict evidence only; never root alone unless conflict rule resolves exact refs",
+      "provenance_ref_scope": "subject_ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "device_observation",
+      "relevant_fields_or_tokens": "canonicalization_authority/source_identity_verified/persistence",
+      "binding_rule_id": "§4,§5",
+      "projection_input_derivation_or_disposition": "NOT_MAPPED_BY_DESIGN unless exact qualification exists; demonstrated device claim cannot grant authority",
+      "provenance_ref_scope": "exact record",
+      "load_bearing": false
+    },
+    {
+      "source_structure": "intent",
+      "relevant_fields_or_tokens": "typed id/status/consequential/objective/obligation",
+      "binding_rule_id": "§4,§6,§7.3",
+      "projection_input_derivation_or_disposition": "unresolved-intent root only with exact unresolved effect; raw intent payload",
+      "provenance_ref_scope": "exact typed ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "effect_record",
+      "relevant_fields_or_tokens": "intent_ref/state/consequential/verification/receipt",
+      "binding_rule_id": "§4,§7.3",
+      "projection_input_derivation_or_disposition": "controls unresolved-intent admission/state only via exact intent_ref",
+      "provenance_ref_scope": "intent_ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "informational_receipt",
+      "relevant_fields_or_tokens": "requires_action/subject_ref",
+      "binding_rule_id": "§4",
+      "projection_input_derivation_or_disposition": "evidence only; NOT_MAPPED_BY_DESIGN as root",
+      "provenance_ref_scope": "subject_ref",
+      "load_bearing": false
+    },
+    {
+      "source_structure": "action_decision",
+      "relevant_fields_or_tokens": "status/resolves/supersedes/subject_ref",
+      "binding_rule_id": "§4,§7.2",
+      "projection_input_derivation_or_disposition": "decision lifecycle exact-ref evidence; never root",
+      "provenance_ref_scope": "exact refs",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "version_event",
+      "relevant_fields_or_tokens": "from/to/changed_fields/prior_semantic_values_retained",
+      "binding_rule_id": "§4",
+      "projection_input_derivation_or_disposition": "version selection/history only; never root",
+      "provenance_ref_scope": "subject_ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "source_link_observation",
+      "relevant_fields_or_tokens": "left/right/identity_proven/possible_same/authoritative_merge_ref",
+      "binding_rule_id": "§9",
+      "projection_input_derivation_or_disposition": "six-way total duplicate decision table; conflict/merge/no-effect/named HOLD",
+      "provenance_ref_scope": "left_ref+right_ref",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "source_packet",
+      "relevant_fields_or_tokens": "admission/privacy/source_principal/source_identity",
+      "binding_rule_id": "§5",
+      "projection_input_derivation_or_disposition": "foreign/quarantined privacy evidence; payload never copied; NOT_MAPPED_BY_DESIGN as Aaron root",
+      "provenance_ref_scope": "exact record",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "provider_session",
+      "relevant_fields_or_tokens": "canonical_admission/credential_retained/session_state",
+      "binding_rule_id": "§4,§8,§10",
+      "projection_input_derivation_or_disposition": "NOT_MAPPED_BY_DESIGN for authority/canonical roots; cannot grant delegation",
+      "provenance_ref_scope": "exact record",
+      "load_bearing": false
+    },
+    {
+      "source_structure": "impact_packet",
+      "relevant_fields_or_tokens": "consequence packet fields",
+      "binding_rule_id": "§11",
+      "projection_input_derivation_or_disposition": "NOT_MAPPED_BY_DESIGN for ProjectionInput semantics except integrity/link validation; consequence transformation forbidden",
+      "provenance_ref_scope": "impact_packet_ref",
+      "load_bearing": true
+    }
+  ],
+  "demonstrated_census": {
+    "record_type_counts": {
+      "evidence": 40,
+      "resource": 40,
+      "objective": 40,
+      "obligation": 42,
+      "obligation_governance": 42,
+      "decision_requirement": 40,
+      "applicability_assertion": 43,
+      "lifecycle_event": 44,
+      "authority_generation_state": 40,
+      "identity": 81,
+      "work_episode": 40,
+      "current_assertion": 41,
+      "big_packet": 39,
+      "required_next_step": 10,
+      "authority_lease": 8,
+      "instruction": 2,
+      "device_observation": 1,
+      "intent": 2,
+      "effect_record": 2,
+      "informational_receipt": 1,
+      "action_decision": 5,
+      "version_event": 4,
+      "source_link_observation": 2,
+      "source_packet": 1,
+      "provider_session": 1
+    },
+    "envelope_availability_counts": {
+      "PRESENT": 318,
+      "UNKNOWN": 1,
+      "UNAVAILABLE": 1
+    },
+    "candidate_anchor_typed_id_counts": {
+      "objective": 40,
+      "obligation": 42,
+      "decision_requirement": 40,
+      "intent": 2
+    },
+    "exact_intent_scoped_applicability_assertions": 0
+  },
+  "totality_policy": "Every demonstrated structure/token/state above has an explicit rule/disposition. Any source shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default."
+}
