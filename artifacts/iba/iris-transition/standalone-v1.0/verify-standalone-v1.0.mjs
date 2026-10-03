@@ -248,6 +248,10 @@ if(BINDING.includes("conf_5936fd")) fail("superseded conflict ID leaked");
 if(!BINDING.includes("escalation_required=false")) fail("binding missing canonical escalation=false rule");
 if(BINDING.includes("roots with `escalation_required=true`: 1")) fail("superseded escalation=true census leaked");
 if(!BUILDER.includes("F108")) fail("Builder falsifier packet incomplete");
+if(fs.existsSync(path.join(DIR,"verify-standalone-v1.0.py"))) fail("retired alternate Python verifier present");
+if(!BINDING.includes("verify-standalone-v1.0.mjs")) fail("binding does not name canonical Node verifier");
+if(!BINDING.includes("IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-VERIFIER-RESULT.json")) fail("binding does not name verifier result artifact");
+if(!BINDING.includes("IRIS-PILOT-001-STANDALONE-BINDING-v1.0-PACKAGE-INDEX.json")) fail("binding does not name package index");
 if(!BUILDER.includes("obligation_status=ABANDONED / applicability=APPLICABLE")) fail("Builder abandoned reduction drift");
 if(!BUILDER.includes("conf_4e885b98")) fail("Builder conflict ID drift");
 
