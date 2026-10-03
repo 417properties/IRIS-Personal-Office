@@ -80,5 +80,21 @@
     "anchor_count": 4,
     "conflict_id": "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
     "attachment": "CONFLICT_ONLY_ROOT"
-  }
+  },
+  "candidate_path_totality": {
+    "root_count": 84,
+    "UNKNOWN_ITEM": 6,
+    "KNOWN_CLASSIFICATION": 78,
+    "exact_candidate_id_bound": 84,
+    "complete_field_derivation_bound": 84,
+    "conflict_only_id_exact": "e1:p1e1r4_80ccea1138af42d8843eabe2a10fec66:conflict:conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
+    "unknown_authority_reserved_roots_route_UNKNOWN_ITEM": 2,
+    "rule_reference_failures": 0
+  },
+  "structural_controls_installed": [
+    "84-root field-by-field derivation + ID grammar proof",
+    "candidate tuple -> classifyAaron static path composition proof",
+    "binding/Builder rule-reference resolution check",
+    "exact pre-build ProjectionInput vector"
+  ]
 }
