@@ -639,7 +639,12 @@ A fresh independent reviewer receives ONLY:
 - the exact totality matrix;
 - the exact static preflight evidence;
 - the v1.0 Builder/falsifier packet;
+- the sole canonical candidate-neutral verifier source `verify-standalone-v1.0.mjs`;
+- the sealed verifier PASS result `IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-VERIFIER-RESULT.json`;
+- the immutable review-package index `IRIS-PILOT-001-STANDALONE-BINDING-v1.0-PACKAGE-INDEX.json`;
 - exact content-addressed semantic dependencies from the manifest.
+
+The Node verifier is the only normative mechanical preflight implementation for v1.0. No Python/alternate verifier is part of the package. Its required result is exit code 0, `failures=[]`, and `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 No search, directory traversal, historical binding reconstruction, tests, prior review judgments, E2/E3, or candidate output retrieval is required to understand the contract.
 
