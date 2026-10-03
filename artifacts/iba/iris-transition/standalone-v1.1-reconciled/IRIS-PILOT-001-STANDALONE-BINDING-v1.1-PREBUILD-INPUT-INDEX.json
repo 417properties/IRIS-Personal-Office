@@ -1,0 +1,211 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-PREBUILD-INPUT-INDEX",
+  "authority": "NONE",
+  "replacement_e1_commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+  "candidate_head": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+  "case_count": 40,
+  "vector_digest_algorithm": "SHA256(JSON.stringify([{case_id,projection_input_sha256,bytes}, ...manifest order]))",
+  "vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "entries": [
+    {
+      "case_id": "p1e1r4_121fb1ae4a68464fb6dedd38468a39da",
+      "projection_input_sha256": "672edc1d8096b94bcaf73bd57bb38c100bba6efc31f45c3c9e3e777633a07ea4",
+      "bytes": 3018
+    },
+    {
+      "case_id": "p1e1r4_13f14125911f4e4fafe0e128438a33ae",
+      "projection_input_sha256": "5b248e258413b7bb26ec3b88769c3ea9587ab12964fd30a37a186bbf0397c9f7",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_1720ad8063854fcd9cb5388db87d982d",
+      "projection_input_sha256": "fe1eafae4dc2c536c8613488d3fe1d44a0c1222c3027cbd1f49f6beb86dcc6e7",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_2746198707b748999b539d1723fd84a2",
+      "projection_input_sha256": "f33d199b35dad89260e4c3d256cda5c77354a0b41fbb0f0c4e1452c85b3013e9",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_2b75131e44224cd98957c79b899fb168",
+      "projection_input_sha256": "ba8c85bb091e7985bfd15ee49e6405f1226a9260a6d219627b36289645af4b46",
+      "bytes": 3014
+    },
+    {
+      "case_id": "p1e1r4_2e5f0efaa1c54ab3b9121139cc69c1f3",
+      "projection_input_sha256": "0eb5a1c2fe514a3f0b44cfdc423bff195986b6f9d85e75490d1d525159f47da4",
+      "bytes": 3025
+    },
+    {
+      "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+      "projection_input_sha256": "96d0d02e337f544bc90c590d8ae0d5451d90861ffc305c1b84f9b1f00d8bd186",
+      "bytes": 3205
+    },
+    {
+      "case_id": "p1e1r4_3592698cabc744789906162b61657890",
+      "projection_input_sha256": "5cb3562d5111c59b2448ed2ee82121869b304bdba63c39121d31883946391384",
+      "bytes": 3182
+    },
+    {
+      "case_id": "p1e1r4_40cad8d6ee7440a5bd0fe22d674f9db7",
+      "projection_input_sha256": "06b9617b11948e027214b2f359a0ce1cc320df7bc9c044bd203b2855e11480ce",
+      "bytes": 3025
+    },
+    {
+      "case_id": "p1e1r4_42df16ee5c5f4b68825c2fa2437c73eb",
+      "projection_input_sha256": "4b8e220bba9dc8d10fe59f96363102090f18ad28887c2185aab41230813ab6be",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_4723163be86740adaeb6f0d98bb562f8",
+      "projection_input_sha256": "72dab340400ba99f913b572ea0e72ba1dec71c2e8ffa149e62c92f89f672b039",
+      "bytes": 3607
+    },
+    {
+      "case_id": "p1e1r4_593111b7f3bb4e32bd0a6456bba2942a",
+      "projection_input_sha256": "a51d31b9cb6c4c442f9cf154bca387389e2cfba5ce905b4d9834be4e2a11bd71",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_6f43027d04774acda0ac9dd58bc2f4af",
+      "projection_input_sha256": "d34a1cb71d37c3fe35d15bb8be8181f7241d4a5585e06cb41a01a47d86961a9a",
+      "bytes": 3508
+    },
+    {
+      "case_id": "p1e1r4_74f2cf49960f40bfa3823273642a9ba7",
+      "projection_input_sha256": "20ee242e43c55dd1d3e1b39d2a453da6aa85a780f513e216b91d084b0b4254d3",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_7dcf3c720886405b8a462f3585e9a6b9",
+      "projection_input_sha256": "ad6c550c1d2a56b486a8e65e3c2a109ac8a29e8c1d134b84eb03db44d7bd1087",
+      "bytes": 3023
+    },
+    {
+      "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+      "projection_input_sha256": "f80956acf62c503bbef4ca3936442737fe8b518fe77810f33e358dd7832bfe0a",
+      "bytes": 3660
+    },
+    {
+      "case_id": "p1e1r4_83ad2c1f30a744de8c624da6057e13fd",
+      "projection_input_sha256": "5a2fb8e86627fb9cc140f6fb4561d685d8cfd5b43b519190c7971d1a2b334732",
+      "bytes": 3028
+    },
+    {
+      "case_id": "p1e1r4_8625d48d6c914acf9c695e861070ff4e",
+      "projection_input_sha256": "2267169f05e052b9317755acb0bc421be89a30648642eec94b5b69d68171cf53",
+      "bytes": 3026
+    },
+    {
+      "case_id": "p1e1r4_88e1157e7c7c4fa3b401bc31a17a4535",
+      "projection_input_sha256": "fb0bfa776066fd531475f0852dc7c0284c51ef52eebb4ae1b259c51c1d17b560",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_95581400e36945daa8b5f0beca122ada",
+      "projection_input_sha256": "be00daef4e5265e96fe33627697710fd4b106ec557b87a0c38eaa4e273132bc2",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_9f4b83c6c71644fd88451639fdf88db8",
+      "projection_input_sha256": "8588ad2a58106b3dc8022f1e70db32f5416d8c5e67b296ef7fbdef3c3b278c62",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_a09424d46ca04ea3955094402e78966a",
+      "projection_input_sha256": "900b2853245ad7d426966837a50fc097d5b4f0c274e6ca0bc20cc1c42dafa5ee",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_a515b5de91da4708b8a14da07664b37a",
+      "projection_input_sha256": "d059fbaf01535a7d5b8fc6100456ec0e220ef3d00cea19290f5c2528ad90b105",
+      "bytes": 3026
+    },
+    {
+      "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
+      "projection_input_sha256": "acb51c9a99f7678088f12e46a971ead49fb825ec5456579389dcba7e36726af4",
+      "bytes": 3938
+    },
+    {
+      "case_id": "p1e1r4_b786a178b8324097a51161f46f96b5e4",
+      "projection_input_sha256": "b5123c7ee4880401ba55a61f2d7806fdf4354573709d74d125d55ba1cce79e92",
+      "bytes": 3033
+    },
+    {
+      "case_id": "p1e1r4_be72a0a686754345ac8bc70f34ea13f6",
+      "projection_input_sha256": "183422f85179bfb026d754574642d36f7c1108ae388605beb78e869023dea5aa",
+      "bytes": 3264
+    },
+    {
+      "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
+      "projection_input_sha256": "fed0c3421a2a38b83aad31f3080cec74966d09baabc03715f14d4c81ca50f167",
+      "bytes": 3068
+    },
+    {
+      "case_id": "p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8",
+      "projection_input_sha256": "76e5db6c1e34d050430efba4ecee10e92775094c00a05fbe05593bf5647a8f78",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_ced4056d128542acaa474e6fb85df018",
+      "projection_input_sha256": "f14bcb6eb74b25a589a10c60130b23bd2db4748c22b7d8b5279af49999b7edc8",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_d2040e93b0524d66adeb59eeb580d1db",
+      "projection_input_sha256": "7e49854856af10535a8880eb5cea624019ce5faeddb6dbe5a87a1e2f9a063dc2",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_d374c5fb7c064f98bad29f633804d4c8",
+      "projection_input_sha256": "f367ff4526565ab216b9dc81dfd1a3bcdbd2fa254ce8dbc8c736249cca0a0897",
+      "bytes": 3022
+    },
+    {
+      "case_id": "p1e1r4_d504e20ade654857a871565f2ae65fe0",
+      "projection_input_sha256": "5345200649bea7406fc44f61c7149c09706b08d0cbafc8d22d23216d12a15c37",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_dd291386b74e4b568634d20c138457ea",
+      "projection_input_sha256": "ed1a6720369badd92dbd6df2df8a53fdf3bf224e0ad55bcf9f3e9472775ea5b7",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_dd2cc07623df4d2eb8a9ea5a74a4bd62",
+      "projection_input_sha256": "9d4151ccaaabbd16cdc1b98aeb542f4d3a669a13a36897a8b2fbd6d09f473950",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_deb7781d201d4be2b56dd9351cf7fe2b",
+      "projection_input_sha256": "984d3835d022349bfb039bca79eef968706400a579021fa1f8fe14a1dac4ce8d",
+      "bytes": 3028
+    },
+    {
+      "case_id": "p1e1r4_e097b565f97b4071ac145ac35c373c2b",
+      "projection_input_sha256": "688b00bb3b6023b54a38f7c3cb28c269b96f15054f8449d4900a36b38d668144",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_e77d2a6a825a43f7af5b42afc5a94046",
+      "projection_input_sha256": "696b250d8889502e42cd172c525c9895033077ba4299784ded2443a75eaa50b4",
+      "bytes": 3263
+    },
+    {
+      "case_id": "p1e1r4_e7b44f97f31f4e3393e351889b5e08dc",
+      "projection_input_sha256": "e2a31d373ecc33d36581ce7a003584666eb1b843e78fa8b6c401f3a2c40a5856",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_f85385028435417489be4037792fe886",
+      "projection_input_sha256": "f0ad2ac0d6f9d966759d563c154df43eeabe022eacb98c9022088c6bc2887bd0",
+      "bytes": 3020
+    },
+    {
+      "case_id": "p1e1r4_ffe412518160474496a3d21e784e4bc3",
+      "projection_input_sha256": "58e32e5fd5c16e1eba9e7f6839dcc6098471e6469230fcb32847ddd2e535bdf1",
+      "bytes": 3020
+    }
+  ]
+}
