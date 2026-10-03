@@ -56,9 +56,9 @@ The pre-acceptance verifier/reviewer must falsify the entire object:
 ## G. Conflicts and duplicates
 - exact conflict IDs:
   - conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86
-  - conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb
+  - conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613
   - conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d
-- exact attachments: instruction conflict one obligation; current-state conflict one conflict-only root; possible duplicate two obligations;
+- exact attachments: instruction conflict one obligation; current-state conflict one conflict-only root; possible duplicate two obligations; current-state conflict identity additionally includes the exact linked obligation anchor without attaching the conflict to that obligation;
 - proven self-identity creates no conflict;
 - current-state conflict may not reverse-link into obligation/decision roots;
 - conflict_id property present on all four conflict-bearing roots;
@@ -84,7 +84,7 @@ The pre-acceptance verifier/reviewer must falsify the entire object:
 - authority holder 18 AARON / 2 UNKNOWN;
 - valid_delegation 18 false / 2 omitted;
 - exact 40-case input index byte/hash entries;
-- ordered vector SHA-256 exactly `b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7`.
+- ordered vector SHA-256 exactly `8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35`.
 
 Any mismatch before candidate execution:
 `BINDING_HOLD/PREBUILD_INPUT_VECTOR_MISMATCH`
