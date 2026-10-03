@@ -17,7 +17,33 @@
     "population_sha256_expected": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f"
   },
   "checks": {
-    "exact_eight_surfaces_each_case": true,
+    "exact_case_count_40": true,
+    "exact_case_order_match": true,
+    "exact_population_digest_match": true,
+    "exact_top_level_shape_variants": 1,
+    "exact_top_level_fields": [
+      "case_id",
+      "coverage_contract",
+      "domain",
+      "emission_time",
+      "impact_packets",
+      "principal_id",
+      "records",
+      "snapshot_reads",
+      "snapshot_time",
+      "source_envelopes",
+      "source_requirements"
+    ],
+    "every_top_level_field_has_totality_disposition": true,
+    "case_principal_AARON_all_40": true,
+    "coverage_contract_exact_all_40": true,
+    "source_requirements_exact_eight_all_40": true,
+    "source_requirement_contract_fields_complete": true,
+    "exact_eight_source_envelopes_all_40": true,
+    "all_envelope_record_refs_resolve": true,
+    "all_envelope_source_refs_resolve": true,
+    "all_record_source_refs_resolve": true,
+    "duplicate_record_ids": 0,
     "availability_token_domain": [
       "PRESENT",
       "UNKNOWN",
@@ -28,9 +54,18 @@
       "UNKNOWN": 1,
       "UNAVAILABLE": 1
     },
+    "bracket_shape_counts": {
+      "STABLE": 37,
+      "RERUN_STABLE": 2,
+      "UNSTABLE": 1
+    },
+    "malformed_snapshot_bracket_shapes": 0,
+    "snapshot_time_equals_first_read_at_all_40": true,
     "demonstrated_record_type_count": 25,
     "every_demonstrated_record_type_has_totality_row": true,
     "every_demonstrated_availability_token_has_totality_row": true,
+    "obligation_to_governance_unique_joins": 42,
+    "intent_to_effect_unique_joins": 2,
     "typed_anchor_counts": {
       "objective": 40,
       "obligation": 42,
@@ -39,14 +74,41 @@
     },
     "all_candidate_anchor_source_ids_exact_namespace_valid": true,
     "candidate_owned_payload_rule_forbids_colon": true,
-    "cross_ref_applicability_leakage_forbidden": true,
+    "source_governance_applicability_tokens": [
+      "APPLICABLE",
+      "SATISFIED",
+      "SUPERSEDED",
+      "UNKNOWN"
+    ],
+    "source_assertion_applicability_tokens": [
+      "APPLICABLE",
+      "SATISFIED",
+      "SUPERSEDED",
+      "UNKNOWN"
+    ],
+    "source_lifecycle_tokens": [
+      "ABANDONED",
+      "OPEN",
+      "SATISFIED",
+      "SUPERSEDED"
+    ],
+    "all_candidate_applicability_tokens_fit_frozen_PilotCandidate_domain": true,
+    "SourceEvaluation_output_domains_frozen_and_valid": true,
+    "cross_ref_applicability_lifecycle_leakage_forbidden": true,
     "exact_intent_scoped_applicability_assertions": 0,
     "unresolved_intent_missing_exact_applicability_maps_to_UNKNOWN": true,
     "source_envelope_UNAVAILABLE_has_explicit_mapping": true,
     "proven_self_identity_has_explicit_no_conflict_mapping": true,
     "impact_consequence_fields_denied_as_transformation_inputs": true,
+    "implicit_runtime_defaults_permitted": false,
+    "candidate_invoked": false,
+    "buildProjection_invoked": false,
+    "candidate_outputs_consumed": 0,
+    "labels_consumed": 0,
+    "scoring": false,
     "unknown_shapes_unmapped": 0
   },
   "failures": [],
-  "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES"
+  "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
+  "preflight_version": "v1.1-strong-totality"
 }
