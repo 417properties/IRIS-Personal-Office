@@ -62,7 +62,7 @@ for (const scope of ["authority","privacy"] as const) {
     const fixture=new ActionFixtureAdapter({status:"READY"},true);
     let calls=0;
     const out=await runBoundedCircuit({repo,principalId:"aaron",objectiveId:"obj-parent",obligationId:"obl-1",episodeId:"episode-1",subjectRef:"fixture:source",predicate:"status",actionScope:contract.authority_scope,privacyScope:contract.privacy_scope,intent:fixtureIntent(),contract,executor:{execute:async intent=>{calls++;return fixture.execute(intent);}},fixtureRead:()=>fixture.read(),expectedEffect:{status:"COMPLETE"},now:NOW});
-    assert.equal(out.status,scope==="authority"?"HOLD_AUTHORITY":"HOLD_PRIVACY");
+    assert.equal(out.status,"HOLD_CANONICAL_RELEASE_REQUIRED");
     assert.equal(calls,0);
     assert.equal(exportLegacySnapshot(repo),before);
   });

@@ -1,0 +1,15 @@
+src/runtime/act.ts:4:export function releaseAction(service:ReleaseService,request:ReleaseRequest){if(!(service instanceof ReleaseService))throw new Error('CANONICAL_RELEASE_REQUIRED');return service.release(request);}
+src/runtime/act.ts:6:export async function act(intent:ActionIntent, contract:ToolContract, executor:ToolExecutor, actionScope:string, privacyScope:string): Promise<ActionReceipt> {
+src/runtime/episode-controller.ts:7:export function claimContinuation(_repo:LegacyRepository,_episode:WorkEpisode):never {throw new Error('CANONICAL_CONTINUATION_CAS_REQUIRED');}
+src/runtime/iris-workflow.ts:6:export async function runConsequentialCircuit(service:ReleaseService,request:ReleaseRequest){if(!(service instanceof ReleaseService))throw new Error('CANONICAL_RELEASE_REQUIRED');return service.release(request);}
+src/agent-transition/sentinel.ts:9: return service.release(request);
+src/tools/tool-contract.ts:11:  execute(intent:ActionIntent): Promise<ActionReceipt>;
+src/tools/action-fixture-adapter.ts:11:  async execute(_intent:ActionIntent):Promise<ActionReceipt> {throw new Error('CANONICAL_RELEASE_REQUIRED');}
+src/tools/action-fixture-adapter.ts:24: async submit(intent:Readonly<ReleaseIntent>,attempt:Identity,permit:SubmissionPermit):Promise<SubmissionReceipt>{
+src/agent-transition/authority-lease.ts:6:export function validateLease(_lease:AuthorityLease,ctx:LeaseContext):{valid:false;reason:string}{return {valid:false,reason:ctx.unresolved_effect?'EFFECT_RECONCILIATION_REQUIRED':'CANONICAL_AUTHORITY_SNAPSHOT_REQUIRED'};}
+src/agent-transition/authority-lease.ts:9:export function issueLease(_lease:AuthorityLease,ctx:LeaseContext):never {if(ctx.worker.retired_at||ctx.worker_profile.status!=='ACTIVE')throw new Error('WORKER_NOT_ELIGIBLE');throw new Error('CANONICAL_AUTHORITY_SNAPSHOT_REQUIRED');}
+src/domain/authority.ts:20:export function evaluateAuthority(
+src/domain/privacy.ts:14:export function evaluatePrivacy(policies: PrivacyPolicy[], scope: string, now: string): PrivacyDisposition {
+src/enforcement/repository.ts:136: submit(intent:Readonly<ReleaseIntent>,attempt:Identity,permit:SubmissionPermit):Promise<SubmissionReceipt>;
+src/enforcement/repository.ts:141: async release(request:ReleaseRequest):Promise<Readonly<ReleaseAttempt>>{
+src/enforcement/repository.ts:155:  try{receipt=decodeSubmission(await this.#transport.submit(claimed.attempt.intent,claimed.attempt.attempt,permit),claimed.attempt);}

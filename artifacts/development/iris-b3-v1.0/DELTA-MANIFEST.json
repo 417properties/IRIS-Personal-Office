@@ -1,0 +1,452 @@
+{
+  "schema_version": "IRIS_B3_DELTA_MANIFEST_V1",
+  "release": "BIG #703/5972622859",
+  "branch": "builder/iris-b3-authority-continuation-release-v1",
+  "base": "d5f28f7eb5862d410e69751ddfbaab1035952c27",
+  "base_tree": "390126041ac0f285035c33bdd8fa6a047e72f57a",
+  "manifest_self": "EXCLUDED_FROM_THIS_INNER_LIST; including-manifest identity returned externally",
+  "delta": {
+    "files": 29,
+    "bytes": 234807,
+    "sha256": "81fdb3813ad04eb7d8167b73b589febf963ae48574789a0612c7b9f8e8fe2c14",
+    "algorithm": "SHA256(sorted UTF8 path+NUL+decimal bytes+NUL+file SHA256+LF)"
+  },
+  "runtime": {
+    "files": 32,
+    "bytes": 222545,
+    "sha256": "f97ab756b64655bf1bd1e50c90058e2b6cbfc54728b246a2af5c83c58085542e",
+    "algorithm": "SHA256(sorted UTF8 path+NUL+decimal bytes+NUL+file SHA256+LF)"
+  },
+  "files": [
+    {
+      "path": "artifacts/development/iris-b3-v1.0/B3-CONTRACT-MAPPING-AND-RETURN.md",
+      "mode": "100644",
+      "blob": "2ca04ab772731abad7e1954d4680a2b0fd04a336",
+      "bytes": 26057,
+      "sha256": "77e6d88557f277bb14a73dcf0d662dffab02cbdcd348486ccdfd6b63dd4eda42"
+    },
+    {
+      "path": "artifacts/development/iris-b3-v1.0/CALLER-BOUNDARY.txt",
+      "mode": "100644",
+      "blob": "517c223809614f0f6e6f7345e406c47405363c9d",
+      "bytes": 2437,
+      "sha256": "b8739fb241ea66da45ce60bb542ced0b20c97e5639c2b07dbf77c12af7990181"
+    },
+    {
+      "path": "artifacts/development/iris-b3-v1.0/FOCUSED-CONFORMANCE.log",
+      "mode": "100644",
+      "blob": "cd15a75656befad915c4531012c25e67b8472412",
+      "bytes": 22683,
+      "sha256": "264cc86f39247cee4f6d4d316b774974810d245716281164cf03c21794caaad9"
+    },
+    {
+      "path": "artifacts/development/iris-b3-v1.0/FULL-REGRESSION.log",
+      "mode": "100644",
+      "blob": "8b2414f86018519f9820bb3426c5bab487d2fc2e",
+      "bytes": 58098,
+      "sha256": "c66d7f76c3e574d7fd74968bab0633ab97bc8be4bf4e5e9b2b7711aa6b365519"
+    },
+    {
+      "path": "artifacts/development/iris-b3-v1.0/QUALIFICATION.json",
+      "mode": "100644",
+      "blob": "518dce2181893f96256f6cc25f97efd1120bda85",
+      "bytes": 8327,
+      "sha256": "8372caae6f45c60a80e16bd75bc78953bc47a00643f791ad7ef9a669125d6612"
+    },
+    {
+      "path": "artifacts/development/iris-b3-v1.0/STRUCTURAL-CHECK.log",
+      "mode": "100644",
+      "blob": "df934fc4c8c6a6fddd3fd7790ec8f01a06a26c81",
+      "bytes": 247,
+      "sha256": "28cefab0126c0837dda22d508b39a4537ecebdcdc006e9ac6c92195afebe8e39"
+    },
+    {
+      "path": "artifacts/development/iris-b3-v1.0/TYPECHECK.log",
+      "mode": "100644",
+      "blob": "c1559d9f63b01fa6d6b1b3e61f1a4f474309268b",
+      "bytes": 783,
+      "sha256": "e0fdd4f6955e034e259d03c2e717c89fe81cfff8f375a172b920873c7f3f714f"
+    },
+    {
+      "path": "db/migrations/007_b3_enforcement.sql",
+      "mode": "100644",
+      "blob": "b7c090a1a9378f6d8f8d15dc36c0ba1b1d300a39",
+      "bytes": 3074,
+      "sha256": "df8b78001ff01dd2794f8644f758e15b6daace946b5d8bfb69cf5e6ea15a7be2"
+    },
+    {
+      "path": "src/agent-transition/authority-lease.ts",
+      "mode": "100644",
+      "blob": "5dcad7071832c820cfa5b9412941109c2d34f433",
+      "bytes": 2986,
+      "sha256": "98e6fdeb1f7d73e438528ea1880947814907abcaf82ffe3294efa52175549496"
+    },
+    {
+      "path": "src/agent-transition/sentinel.ts",
+      "mode": "100644",
+      "blob": "4a5c28bb5146272969e37cdb018bd8cab3cf60ab",
+      "bytes": 1047,
+      "sha256": "9f38470886f600fa09d41e1f6e43745f5b40c4cde00475216f128a19ecb2fa11"
+    },
+    {
+      "path": "src/enforcement/backends.ts",
+      "mode": "100644",
+      "blob": "f330c12baf032f063a800f36e668a935b3bc1ec5",
+      "bytes": 4788,
+      "sha256": "653b8bb28c890be49ce7fd8aabd441fe268ad5914360b019434f353d6b1fc932"
+    },
+    {
+      "path": "src/enforcement/contracts.ts",
+      "mode": "100644",
+      "blob": "f0072346a802b1246ff504cb747a08296a52d181",
+      "bytes": 16239,
+      "sha256": "b4cb43df1547dac5ac7c331d85aa3bfc4a8873543c7e2c4c9c41f20b1c76c668"
+    },
+    {
+      "path": "src/enforcement/repository.ts",
+      "mode": "100644",
+      "blob": "58eb2026981f6df8db794d4b16fd69ea1adb00e5",
+      "bytes": 20539,
+      "sha256": "5696c67ab05b8202f19a30a5c9a45b9b647c0bb10b04d58a4ce87da5de1eec86"
+    },
+    {
+      "path": "src/runtime/act.ts",
+      "mode": "100644",
+      "blob": "e2de972f31424848f1c224467d55a92d9c226ba5",
+      "bytes": 849,
+      "sha256": "cd5a5f747a2ddc174b9498152d30d3ed1319fc6865e32a56d7206cf8d3046f15"
+    },
+    {
+      "path": "src/runtime/episode-controller.ts",
+      "mode": "100644",
+      "blob": "27c8ea264d4ad46137d496962de3d387622e5819",
+      "bytes": 703,
+      "sha256": "f24aedd09af8f37f722fac6c651a74f63b09b929f201e6199adaa9a55cf046b0"
+    },
+    {
+      "path": "src/runtime/iris-workflow.ts",
+      "mode": "100644",
+      "blob": "2287d09aeba6463e82d41d6a531812b11f2fdb7e",
+      "bytes": 1178,
+      "sha256": "6855072f73191cbfd59813711816e3666ce03336b977e338fac27354903ad747"
+    },
+    {
+      "path": "src/state/migrations.ts",
+      "mode": "100644",
+      "blob": "85519e94d8b81103c412860cd3738beac221d47e",
+      "bytes": 356,
+      "sha256": "a2695be09620dbc7022c722da2e858ebe4f74568c75f9931ba795b93e1145de3"
+    },
+    {
+      "path": "src/tools/action-fixture-adapter.ts",
+      "mode": "100644",
+      "blob": "4a1427bacf96d1f40401eb8b33d21c508819ef75",
+      "bytes": 2309,
+      "sha256": "49117b69f41bda12343b0414672cce81de589497f24d9403f058217a0f794888"
+    },
+    {
+      "path": "tests/agent-transition/authority-lease.test.ts",
+      "mode": "100644",
+      "blob": "ba38395e15ece77844d27764bd3daf89d359a682",
+      "bytes": 3119,
+      "sha256": "f2894b972c0ef168fc1f4d656eeaf177c1c6f84a24fe5db1448e88db9d8d600b"
+    },
+    {
+      "path": "tests/agent-transition/sentinel.test.ts",
+      "mode": "100644",
+      "blob": "678daa2839614889ea360ba9b55c0644504bfeed",
+      "bytes": 1930,
+      "sha256": "6978bb51ead3627e748413284e7b658e1361fa3af32b49e0120df6b35a402195"
+    },
+    {
+      "path": "tests/authority-privacy/authority-privacy.test.ts",
+      "mode": "100644",
+      "blob": "b2f9432409beafab82851494ab7ee9d51a40707f",
+      "bytes": 5726,
+      "sha256": "873d4ec5dbc5db92a7c1b2a441e5d8494560656230266d3d5bb215160f9746e3"
+    },
+    {
+      "path": "tests/circuit/circuit.test.ts",
+      "mode": "100644",
+      "blob": "6d9c1235d3464b7d808722de560b79c32db92e45",
+      "bytes": 1352,
+      "sha256": "9da14d1a1c905d69e59e9439fc6c022d80b200cb674e03799e0955c33bdc611f"
+    },
+    {
+      "path": "tests/enforcement/authority.test.ts",
+      "mode": "100644",
+      "blob": "110bc3cdde936cbc74573665957f6e206ce8043b",
+      "bytes": 7445,
+      "sha256": "4c406489d9fa1d77abacc5d183aab06f9221918df9e6864185aaf732193b8aef"
+    },
+    {
+      "path": "tests/enforcement/cold-process.test.ts",
+      "mode": "100644",
+      "blob": "b984909560e6cdd0a8d1634e9689a023b3dff4bd",
+      "bytes": 2572,
+      "sha256": "2acb642cf3d2d9b33ea8c04b9594c0e36e9d04593fce9ed7c6e45f26178c2e0b"
+    },
+    {
+      "path": "tests/enforcement/cold-reader.ts",
+      "mode": "100644",
+      "blob": "54e0768a78c2f08c1f7280c0db96c82b42f7276e",
+      "bytes": 1691,
+      "sha256": "c843efb00630c420ce3f0235721dee2d292e824ad7be8af7f80161e8aeac7357"
+    },
+    {
+      "path": "tests/enforcement/fixtures.ts",
+      "mode": "100644",
+      "blob": "b1fba80e49836b2f24eda690e4f4a25b978ec875",
+      "bytes": 7300,
+      "sha256": "3f8aa34054aa629e07f9e76d475136cfa438dfb7eadc0b86b56c7cf11052819d"
+    },
+    {
+      "path": "tests/enforcement/persistence.test.ts",
+      "mode": "100644",
+      "blob": "1877368b2043fe4331edd50b7a92f18dcc8b74fb",
+      "bytes": 9260,
+      "sha256": "5e8129d179c98b7e51259e347c17911038a9139f6c80d378776cf87f60fa39e9"
+    },
+    {
+      "path": "tests/enforcement/release.test.ts",
+      "mode": "100644",
+      "blob": "609a63ace3a914a1695a0baef2f4b99429556a07",
+      "bytes": 15049,
+      "sha256": "59ae8c42e0b3bb9ec906f93d7b2a070d22397738302f1909434d3d28a7eb80a6"
+    },
+    {
+      "path": "tests/failure/continuity.test.ts",
+      "mode": "100644",
+      "blob": "b89946f5cd92551d363eb372c9aa41ee8ce9450d",
+      "bytes": 6663,
+      "sha256": "6e04ea1c51970890fdc5c7e28a7be11f51910e0db902489446276eb2e27f5cf2"
+    }
+  ],
+  "runtime_files": [
+    {
+      "path": "db/migrations/001_iris_core.sql",
+      "mode": "100644",
+      "blob": "dcc44c4b0c29a7292e779bd4cc1ac91dbcff72b3",
+      "bytes": 50955,
+      "sha256": "999f35e3eec4488cad434991f9e2d181c879ea6a8f8b1707206b3cc3c69f28ad"
+    },
+    {
+      "path": "db/migrations/002_work_episode.sql",
+      "mode": "100644",
+      "blob": "5e9899f6ef2da5497d0d2840e2f92544e6bd8ae1",
+      "bytes": 1284,
+      "sha256": "0871dc69ea8e7765142340a20fa8302ca7ec5615c936a81fce937413e268420b"
+    },
+    {
+      "path": "db/migrations/003_action_effect.sql",
+      "mode": "100644",
+      "blob": "46166ee28628d547fd8211d7c44cd1c3f8e9098c",
+      "bytes": 3991,
+      "sha256": "634722acd138ff593f3200565a481fc65faf08b9ac0dd3e5147c0b6c77c56a3f"
+    },
+    {
+      "path": "db/migrations/004_instrumentation.sql",
+      "mode": "100644",
+      "blob": "cb3926180d1a466d7f09e890d4cf5130d4d36e7c",
+      "bytes": 1405,
+      "sha256": "02edead36323325f6b0559f2d007126f4867d4de81cfa983142a5cffe77c870d"
+    },
+    {
+      "path": "db/migrations/005_agent_transition_identity_authority.sql",
+      "mode": "100644",
+      "blob": "890d37a8c578cdfdd88619c1fcfad1956990a49e",
+      "bytes": 19153,
+      "sha256": "65799eba7c94775de1b696fb941044b698916654db21f04de182a132aa78fd70"
+    },
+    {
+      "path": "db/migrations/006_pilot001_projection.sql",
+      "mode": "100644",
+      "blob": "be42fa65511d7784294015eddbfee27a06b5cec3",
+      "bytes": 6626,
+      "sha256": "abce4d58e44d81a950ac7f7547760005412690e699471b91c7d3be7b49d5ee33"
+    },
+    {
+      "path": "db/migrations/007_b3_enforcement.sql",
+      "mode": "100644",
+      "blob": "b7c090a1a9378f6d8f8d15dc36c0ba1b1d300a39",
+      "bytes": 3074,
+      "sha256": "df8b78001ff01dd2794f8644f758e15b6daace946b5d8bfb69cf5e6ea15a7be2"
+    },
+    {
+      "path": "src/agent-transition/authority-lease.ts",
+      "mode": "100644",
+      "blob": "5dcad7071832c820cfa5b9412941109c2d34f433",
+      "bytes": 2986,
+      "sha256": "98e6fdeb1f7d73e438528ea1880947814907abcaf82ffe3294efa52175549496"
+    },
+    {
+      "path": "src/agent-transition/sentinel.ts",
+      "mode": "100644",
+      "blob": "4a5c28bb5146272969e37cdb018bd8cab3cf60ab",
+      "bytes": 1047,
+      "sha256": "9f38470886f600fa09d41e1f6e43745f5b40c4cde00475216f128a19ecb2fa11"
+    },
+    {
+      "path": "src/domain/canonical.ts",
+      "mode": "100644",
+      "blob": "d12c4708bb8e7376b821a004eb691c96bfdb5fd8",
+      "bytes": 9388,
+      "sha256": "2242dcf0cfa5823f772c9fb498f9407323ce8314feff637592e7df2ff974a2de"
+    },
+    {
+      "path": "src/domain/json.ts",
+      "mode": "100644",
+      "blob": "93f5c0d0aead26b1b0852d32504d653bb9e34392",
+      "bytes": 2072,
+      "sha256": "2cda8877bccdc340d65ce73500d88f00495d7396d80d3353411e8cf0e41b9093"
+    },
+    {
+      "path": "src/domain/relations.ts",
+      "mode": "100644",
+      "blob": "0d3f313b5635ba224cd962686532b23d10d0c200",
+      "bytes": 1490,
+      "sha256": "61682acd6d41048faded89e106ab2757e4b5fd39f688859c84ab9f4467d62248"
+    },
+    {
+      "path": "src/domain/root-disposition.ts",
+      "mode": "100644",
+      "blob": "06c0ca6034fb8d9559be4c2a4fc2646bc31404c2",
+      "bytes": 6328,
+      "sha256": "7d258b6c667a1520d74184694a7ce68bfd0361ae9e3145b38234ba859a7e93fb"
+    },
+    {
+      "path": "src/domain/source-dto.ts",
+      "mode": "100644",
+      "blob": "c562d1877a2c30b4a4bfac3dffab765d5a6da260",
+      "bytes": 19878,
+      "sha256": "2fa0670d0de29a90634bc2ac130ca092a5edf15adf081e7cfcbb0193ee1f9360"
+    },
+    {
+      "path": "src/enforcement/backends.ts",
+      "mode": "100644",
+      "blob": "f330c12baf032f063a800f36e668a935b3bc1ec5",
+      "bytes": 4788,
+      "sha256": "653b8bb28c890be49ce7fd8aabd441fe268ad5914360b019434f353d6b1fc932"
+    },
+    {
+      "path": "src/enforcement/contracts.ts",
+      "mode": "100644",
+      "blob": "f0072346a802b1246ff504cb747a08296a52d181",
+      "bytes": 16239,
+      "sha256": "b4cb43df1547dac5ac7c331d85aa3bfc4a8873543c7e2c4c9c41f20b1c76c668"
+    },
+    {
+      "path": "src/enforcement/repository.ts",
+      "mode": "100644",
+      "blob": "58eb2026981f6df8db794d4b16fd69ea1adb00e5",
+      "bytes": 20539,
+      "sha256": "5696c67ab05b8202f19a30a5c9a45b9b647c0bb10b04d58a4ce87da5de1eec86"
+    },
+    {
+      "path": "src/runtime/act.ts",
+      "mode": "100644",
+      "blob": "e2de972f31424848f1c224467d55a92d9c226ba5",
+      "bytes": 849,
+      "sha256": "cd5a5f747a2ddc174b9498152d30d3ed1319fc6865e32a56d7206cf8d3046f15"
+    },
+    {
+      "path": "src/runtime/episode-controller.ts",
+      "mode": "100644",
+      "blob": "27c8ea264d4ad46137d496962de3d387622e5819",
+      "bytes": 703,
+      "sha256": "f24aedd09af8f37f722fac6c651a74f63b09b929f201e6199adaa9a55cf046b0"
+    },
+    {
+      "path": "src/runtime/iris-workflow.ts",
+      "mode": "100644",
+      "blob": "2287d09aeba6463e82d41d6a531812b11f2fdb7e",
+      "bytes": 1178,
+      "sha256": "6855072f73191cbfd59813711816e3666ce03336b977e338fac27354903ad747"
+    },
+    {
+      "path": "src/semantic-kernel/continuation.ts",
+      "mode": "100644",
+      "blob": "3057e5b838d322dc92bb2fc7a1d843000c700ccf",
+      "bytes": 1511,
+      "sha256": "994a3a20e781ef30fbb8da56cb2820c6c7a50f2675d65d7d6292f1277183c4d0"
+    },
+    {
+      "path": "src/semantic-kernel/epistemic.ts",
+      "mode": "100644",
+      "blob": "5b537a96b3442960157ff625a0918d8476b2baf3",
+      "bytes": 6194,
+      "sha256": "0cb431c8ffa741394465f09f11b7a4982cecb13e13676fec5ca64d9a4ed669e6"
+    },
+    {
+      "path": "src/semantic-kernel/identity.ts",
+      "mode": "100644",
+      "blob": "296e8e80c5e0e0182f674d2d285e2adffc0f5c7d",
+      "bytes": 4445,
+      "sha256": "5027f61f65db2570f7b4bad7722e10adc0bac5a54e84224ab9b3a3cab1cb03ba"
+    },
+    {
+      "path": "src/semantic-kernel/lifecycle.ts",
+      "mode": "100644",
+      "blob": "975e4e08e3fad3cacc50bdc22336ae5bd65eeb76",
+      "bytes": 8441,
+      "sha256": "b988367e094528bfabc13fc1670f149932c26da1099ef9e1daa455157a179e15"
+    },
+    {
+      "path": "src/semantic-kernel/representation.ts",
+      "mode": "100644",
+      "blob": "245b571de8b2a6d2da4cd3d44934a4de320799e0",
+      "bytes": 4079,
+      "sha256": "292c204c52c850c1c1af63742700a4229a084c02b1f46af4d044aad18a05f438"
+    },
+    {
+      "path": "src/semantic-kernel/temporal.ts",
+      "mode": "100644",
+      "blob": "d2e7f7e7631ce032ab857680d7d473b1ceaea630",
+      "bytes": 2123,
+      "sha256": "89157c1250cc98958acd61dd90ad952f4fe317f922f11f5a9540cc703c7e6527"
+    },
+    {
+      "path": "src/semantic-kernel/validation.ts",
+      "mode": "100644",
+      "blob": "ead05d1770f0cebd112f59d4b2e6c7e40d9c9d9f",
+      "bytes": 2350,
+      "sha256": "fc96ce2241e922c3660c21533e2b7f172b2edf7fa78db960619ccd138eaa6e2e"
+    },
+    {
+      "path": "src/state/migrations.ts",
+      "mode": "100644",
+      "blob": "85519e94d8b81103c412860cd3738beac221d47e",
+      "bytes": 356,
+      "sha256": "a2695be09620dbc7022c722da2e858ebe4f74568c75f9931ba795b93e1145de3"
+    },
+    {
+      "path": "src/state/postgres-repository.ts",
+      "mode": "100644",
+      "blob": "354a7e2809d8ed2e40b5757d4a80d5c737419ac6",
+      "bytes": 1942,
+      "sha256": "7ebae99dd9a629901db38a7727a21b413d5076ee90a66ac3314f84efb6501f5b"
+    },
+    {
+      "path": "src/state/repository.ts",
+      "mode": "100644",
+      "blob": "cd3dea187a1962a67c07141af18fc16251ae0a41",
+      "bytes": 13563,
+      "sha256": "e59f48a5ddaecbb5ca7f4ddc2d2987142771406c618a9602e263a629d15e619d"
+    },
+    {
+      "path": "src/tools/action-fixture-adapter.ts",
+      "mode": "100644",
+      "blob": "4a1427bacf96d1f40401eb8b33d21c508819ef75",
+      "bytes": 2309,
+      "sha256": "49117b69f41bda12343b0414672cce81de589497f24d9403f058217a0f794888"
+    },
+    {
+      "path": "src/tools/tool-contract.ts",
+      "mode": "100644",
+      "blob": "c7749a04c3d3e422e3c08a4be5946fe456038266",
+      "bytes": 1259,
+      "sha256": "dfc03c234687756bc05a475560913ec27de3878405cea5b064088907c6546aff"
+    }
+  ],
+  "disposition": "STRATA_RECONCILIATION_REQUIRED / NO_SELF_ACCEPTANCE"
+}

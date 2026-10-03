@@ -4,5 +4,6 @@ export const migrationFiles = [
   'db/migrations/003_action_effect.sql',
   'db/migrations/004_instrumentation.sql',
   'db/migrations/005_agent_transition_identity_authority.sql',
-  'db/migrations/006_pilot001_projection.sql'
+  'db/migrations/006_pilot001_projection.sql',
+  'db/migrations/007_b3_enforcement.sql'
 ] as const;

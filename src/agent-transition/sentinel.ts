@@ -1,7 +1,13 @@
-import {validateLease,type AuthorityLease,type LeaseContext} from './authority-lease.ts';
-export type ReleaseStatus='PREPARED'|'RELEASED_SUBMITTED'|'RECONCILIATION_REQUIRED'|'DENIED';
-export interface ReleaseAttempt { release_attempt_id:string; intent_id:string; lease_id:string; status:ReleaseStatus; idempotency_key:string; operation_digest:string; provider_call_id?:string; denial_reason?:string; }
-export interface FakeEffectAdapter { submit(a:ReleaseAttempt):Promise<{kind:'SUBMITTED';provider_call_id:string}|{kind:'AMBIGUOUS'}>; }
-export function prepareReleaseAttempt(intentId:string,lease:AuthorityLease):ReleaseAttempt{return {release_attempt_id:'rel_'+intentId,intent_id:intentId,lease_id:lease.lease_id,status:'PREPARED',idempotency_key:'idem_'+intentId,operation_digest:'op_'+intentId};}
-export async function validateAndRelease(attempt:ReleaseAttempt,lease:AuthorityLease,ctx:LeaseContext,adapter:FakeEffectAdapter):Promise<ReleaseAttempt>{ const v=validateLease(lease,ctx); if(!v.valid)return {...attempt,status:'DENIED',denial_reason:v.reason}; const r=await adapter.submit(attempt); return r.kind==='SUBMITTED'?{...attempt,status:'RELEASED_SUBMITTED',provider_call_id:r.provider_call_id}:{...attempt,status:'RECONCILIATION_REQUIRED'}; }
-export function recoverPreparedAttempt(attempt:ReleaseAttempt,knownReceipt:boolean):ReleaseAttempt { if(attempt.status!=='PREPARED')return structuredClone(attempt); return knownReceipt?{...attempt,status:'RELEASED_SUBMITTED'}:{...attempt,status:'RECONCILIATION_REQUIRED'}; }
+import {EnforcementRepository,ReleaseService,type ReleaseRequest,type ReleaseAttempt} from '../enforcement/repository.ts';
+export type {ReleaseAttempt} from '../enforcement/repository.ts';
+export function prepareReleaseAttempt(repository:EnforcementRepository,request:ReleaseRequest){
+ if(!(repository instanceof EnforcementRepository))throw new Error('CANONICAL_RELEASE_REQUIRED');
+ return repository.command({kind:'PREPARE',value:{intent:request.intent,attempt:request.attempt,fence:request.fence}}) as Promise<ReleaseAttempt>;
+}
+export function validateAndRelease(service:ReleaseService,request:ReleaseRequest){
+ if(!(service instanceof ReleaseService))throw new Error('CANONICAL_RELEASE_REQUIRED');
+ return service.release(request);
+}
+// Re-invocation observes PREPARED (not submitted) or possible submission. A boolean
+// knownReceipt never manufactures accepted submission or effect verification.
+export function recoverPreparedAttempt(repository:EnforcementRepository,request:ReleaseRequest){return repository.getAttempt(request.attempt);}
