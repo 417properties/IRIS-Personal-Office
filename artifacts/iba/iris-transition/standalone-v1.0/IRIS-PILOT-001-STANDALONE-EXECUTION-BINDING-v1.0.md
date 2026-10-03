@@ -305,477 +305,246 @@ The demonstrated unresolved case therefore maps:
 
 If an unresolved intent/effect in this frozen population presents an exact-scoped applicability evidence shape not covered by the decision rule above, fail `BINDING_HOLD/UNMAPPED_INTENT_APPLICABILITY_SHAPE` rather than choose a value.
 
-### 7.4 Common candidate health and explicit field population
+### 7.4 Common candidate health and field population
 
-Every produced PilotCandidate is constructed by ordered assignment. Optional fields that are not semantically applicable are omitted; null is never substituted unless this binding explicitly says UNKNOWN. The following fields are not Builder choices:
+Every PilotCandidate is created by ordered assignment. Optional fields that are not semantically applicable are omitted; null/undefined padding is prohibited unless this binding explicitly represents an unknown with the string `"UNKNOWN"`.
 
-- `principal_id="AARON"` for every admitted candidate.
-- `escalation_required=false` for replacement-E1 v0.4. This population contains no dedicated independent escalation record type. Material Aaron escalation is represented only through exact `material_conflict`, `unresolved_effect`, or reserved-authority fields; governance `escalation_target_identity_id` alone does not create a second AR-4 signal.
-- `unresolved_effect=true` only for §7.3 unresolved-intent roots; false for all other candidates.
-- `material_conflict=true` only when an exact §9 conflict is attached to that candidate or the candidate is the deterministic conflict-only root; false otherwise.
-- `informational_only` is the exact source boolean for obligation roots and false for decision/intent/conflict-only roots.
-- `applicability` is always supplied. Obligation/decision/intent roots use their exact root rule. A conflict-only root uses exact conflict-source applicability; if that applicability cannot be uniquely established, use UNKNOWN or fail the named source-shape HOLD—never default APPLICABLE.
-- `freshness` is always supplied from only the exact source envelopes/facts used by that candidate, reduced `UNKNOWN > STALE > CURRENT`.
-- `source_identity` is always supplied from only the exact source evidence used by that candidate, reduced `CONFLICT > UNKNOWN > VERIFIED`.
-- `provenance_refs` is always the UTF-8 byte-lexically sorted exact-deduped union of the original typed source_refs actually used to establish that candidate's fields. No binding/protocol/review URI may be invented as candidate provenance.
-- `possible_duplicate_refs` is always an array. It is empty unless the exact §9 unresolved-duplicate rule applies; then each affected obligation candidate receives the exact typed other-ref(s), sorted/deduped, with no payload stripping.
-- `why` is NEVER supplied by the decoder. The frozen candidate alone derives its fallback `why_aaron_required` from classification when needed.
+Common rules:
+- `principal_id="AARON"` on every admitted candidate.
+- `escalation_required=false` on all 84 candidates. Replacement-E1 v0.4 has no independent escalation-status record. A governance `escalation_target_identity_id` names a target if escalation exists; it does not independently create a second AR-4 signal. Material conflict, unresolved effect, and reserved-authority ambiguity use their dedicated fields.
+- `unresolved_effect=true` only on the one §7.3 unresolved-intent root; false otherwise.
+- `material_conflict=true` only on the four roots named in §9; false otherwise.
+- `informational_only` equals the exact source boolean on obligation roots; false on decision/intent/conflict-only roots.
+- `applicability` is always supplied under the exact root rules below.
+- `freshness` is always supplied from the exact load-bearing evidence closure used by the root, reduced UNKNOWN > STALE > CURRENT.
+- `source_identity` is always supplied from the exact load-bearing evidence closure, reduced CONFLICT > UNKNOWN > VERIFIED.
+- `provenance_refs` is the exact-deduped UTF-8 byte-lexical union of typed source_refs from the exact load-bearing evidence closure; no protocol/binding/review URI may be invented.
+- `possible_duplicate_refs` is always an array; only the exact unresolved-distinct-duplicate case populates typed other-ref values.
+- `why` is NEVER supplied by the decoder.
 
-Candidate health must not be improved by ignoring a used source with UNKNOWN/STALE/CONFLICT state. PARTIAL surface evidence may support a positively established item only when the item's exact used facts are sufficient; it cannot justify a false COMPLETE/omission claim.
+For reserved-authority roots, authority evidence is load-bearing. Therefore the single case with authority_state availability UNKNOWN degrades BOTH exact reserved roots to `applicability=UNKNOWN / freshness=UNKNOWN / source_identity=UNKNOWN`, sets `authority_holder_identity_id="UNKNOWN"`, and omits `valid_delegation`. This preserves the inherited fail-closed health reduction and does not borrow positive authority facts from the unusable surface.
 
 ### 7.5 Exact PilotCandidate property insertion order
 
-Because the frozen candidate computes a load-bearing digest with `JSON.stringify`, every candidate MUST be constructed in this exact insertion order:
+Because the frozen candidate hashes `JSON.stringify({sources,candidates,conflicts,privacyExcluded})`, property presence/order is normative.
 
-1. `id`
-2. `principal_id`
-3. `objective_id`, when applicable
-4. `obligation_id`, when applicable
-5. `decision_requirement_id`, when applicable
-6. `intent_id`, when applicable
-7. `conflict_id`, when applicable
-8. `obligation_status`, when applicable
-9. `obligation_owner`, when applicable
-10. `concrete_action_remaining`, when applicable
-11. `decision_status`, when applicable
-12. `decision_maker_identity_id`, when applicable
-13. `reserved_authority_class`, when nonnull/applicable
-14. `authority_holder_identity_id`, when reserved-authority classification is applicable
-15. `valid_delegation`, only when deterministically boolean
-16. `escalation_required`, always boolean
-17. `unresolved_effect`, always boolean
-18. `material_conflict`, always boolean
-19. `informational_only`, always boolean
-20. `applicability`
-21. `freshness`
-22. `source_identity`
-23. `provenance_refs`
-24. `possible_duplicate_refs`, always an array
+Construct each PilotCandidate in exactly this order:
+1. id
+2. principal_id
+3. objective_id, when applicable
+4. obligation_id, obligation roots only
+5. decision_requirement_id, decision roots only
+6. intent_id, intent roots only
+7. conflict_id, when attached/conflict-only
+8. obligation_status, obligation roots only
+9. obligation_owner, obligation roots only
+10. concrete_action_remaining, obligation roots only
+11. decision_status, decision roots only
+12. decision_maker_identity_id, decision roots only
+13. reserved_authority_class, only when exact nonnull reserved authority applies
+14. authority_holder_identity_id, only on reserved-authority roots
+15. valid_delegation, only when deterministically boolean
+16. escalation_required, always boolean
+17. unresolved_effect, always boolean
+18. material_conflict, always boolean
+19. informational_only, always boolean
+20. applicability
+21. freshness
+22. source_identity
+23. provenance_refs
+24. possible_duplicate_refs, always an array
 
-Any different property order, implicit omitted common field, inserted `why`, null-for-omitted substitution, or extra decoder-owned property fails `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE` before buildProjection.
+Any different insertion order, extra decoder-owned property, supplied `why`, or null/undefined padding fails `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE` before buildProjection.
 
-## 7.4 Exact PilotCandidate object construction contract
+### 7.6 Exact obligation/decision lifecycle-applicability reductions
 
-Because the frozen candidate computes its load-bearing dependency digest with `JSON.stringify({sources,candidates,conflicts,privacyExcluded})`, PilotCandidate property presence and insertion order are evaluation-relevant and are normative.
+Status/lifecycle and applicability are separate source dimensions; exact scoped evidence controls each. Cross-record lifecycle/applicability cascade is prohibited.
 
-Every candidate MUST be constructed by ordered assignment in exactly this order:
+Obligations — exactly 42:
+1. 35: OPEN + governance APPLICABLE + assertion APPLICABLE + lifecycle OPEN -> status OPEN / applicability APPLICABLE.
+2. 1: OPEN + governance UNKNOWN + assertion UNKNOWN + lifecycle OPEN -> OPEN / UNKNOWN.
+3. 1: ABANDONED + governance APPLICABLE + obligation-scoped assertion APPLICABLE + lifecycle OPEN then ABANDONED -> ABANDONED / APPLICABLE. The terminal status defeats AR-2; do not rewrite the later exact applicability assertion. A separate 11:55 decision-only reaffirmation does not cascade back to the obligation.
+4. 2: OPEN + governance APPLICABLE + assertion APPLICABLE + no lifecycle row -> OPEN / APPLICABLE.
+5. 2: SATISFIED + governance SATISFIED + assertion SATISFIED + lifecycle OPEN then SATISFIED -> SATISFIED / SATISFIED.
+6. 1: SUPERSEDED + governance SUPERSEDED + assertion SUPERSEDED + lifecycle OPEN then SUPERSEDED -> SUPERSEDED / SUPERSEDED.
 
-1. `id`
-2. `principal_id`
-3. `objective_id`, when semantically applicable
-4. `obligation_id`, obligation roots only
-5. `decision_requirement_id`, decision roots only
-6. `intent_id`, intent roots only
-7. `conflict_id`, when a deterministic material conflict is attached or for a conflict-only root
-8. `obligation_status`, obligation roots only
-9. `obligation_owner`, obligation roots only
-10. `concrete_action_remaining`, obligation roots only
-11. `decision_status`, decision roots only
-12. `decision_maker_identity_id`, decision roots only
-13. `reserved_authority_class`, only when exact nonnull reserved authority applies
-14. `authority_holder_identity_id`, only when reserved authority is being classified and the field is exact/UNKNOWN under §8
-15. `valid_delegation`, only when deterministically boolean under §8
-16. `escalation_required`, ALWAYS boolean
-17. `unresolved_effect`, ALWAYS boolean
-18. `material_conflict`, ALWAYS boolean
-19. `informational_only`, ALWAYS boolean
-20. `applicability`
-21. `freshness`
-22. `source_identity`
-23. `provenance_refs`
-24. `possible_duplicate_refs`, ALWAYS an array
+`concrete_action_remaining = action_remaining===true && concrete_action is nonempty && informational_only===false`; terminal status gating remains candidate-owned.
 
-`why` is NEVER supplied by the decoder. The frozen candidate may derive its own fallback explanation from its classes. Arbitrary decoder prose is prohibited because it would change output bytes.
+Decisions — exactly 40:
+1. 33: OPEN / complete history / one APPLICABLE assertion / lifecycle OPEN / no action_decision -> OPEN / APPLICABLE.
+2. 1: OPEN / complete history / UNKNOWN assertion / lifecycle OPEN -> OPEN / UNKNOWN.
+3. 1: OPEN / complete history / two identical APPLICABLE assertions / lifecycle OPEN -> OPEN / APPLICABLE.
+4. 1: RESOLVED / complete history / APPLICABLE assertion / exact resolving action_decision -> RESOLVED / APPLICABLE.
+5. 2: RESOLVED / complete history / SATISFIED assertion / exact resolving action_decision -> RESOLVED / SATISFIED.
+6. 1: SUPERSEDED / complete history / SUPERSEDED assertion / exact superseding action_decision -> SUPERSEDED / SUPERSEDED.
+7. 1: OPEN / complete history / APPLICABLE assertion / PENDING nonresolving action_decision -> OPEN / APPLICABLE.
 
-Optional properties that are not semantically applicable are OMITTED, not inserted as null/undefined. The only explicit UNKNOWN strings are those required by this binding. No Builder may add an otherwise legal optional property “for completeness.”
+Any other lifecycle/applicability combination in the frozen 40-case population fails `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
-### Candidate field reduction common to every root
+### 7.7 Exact candidate evidence closures
 
-- `principal_id="AARON"` exactly.
-- `freshness`: reduce only the exact source envelopes/records actually used to establish that candidate: UNKNOWN dominates STALE, which dominates CURRENT.
-- `source_identity`: CONFLICT dominates UNKNOWN, which dominates VERIFIED, using only exact used source evidence.
-- `provenance_refs`: exact-deduped UTF-8 byte-lexically sorted union of the source_refs from exact source records/envelopes actually used to establish candidate fields. Do not invent protocol/review/binding URIs.
-- `possible_duplicate_refs=[]` unless exact unresolved distinct duplicate evidence applies; then it is the exact-deduped UTF-8 byte-lexically sorted set of the other typed source refs.
-- `unresolved_effect=true` only on unresolved-intent roots; false on every other root.
-- `material_conflict=true` only when the deterministic §9 conflict is attached to that root or it is the conflict-only root; false otherwise.
-- `informational_only` is the exact obligation boolean on obligation roots; false on decision, intent, and conflict-only roots.
-- `escalation_required` is true only when BOTH: (a) the exact root carries a material canonical conflict/authority/privacy condition independently supported by §§8–9, AND (b) exact canonical governance for that root has `escalation_target_identity_id="AARON"`. Otherwise false. Impact-packet escalation_blocks are forbidden inputs.
-- application/lifecycle fields follow §§4, 7, and 8 only.
+Obligation root closure:
+objective; obligation; unique obligation_governance; all exact obligation-scoped applicability_assertions; all exact obligation lifecycle_events; exact required_next_step when reserved; exact authority-generation/lease/identity/work_episode evidence when reserved; exact attached conflict/source-link evidence.
 
-The frozen population demonstrates exactly two governance records with Aaron escalation target, both in the two material conflict cases. Under exact attachment rules:
-- case `p1e1r4_3592698cabc744789906162b61657890`: incompatible instructions directly target the obligation carrying Aaron escalation governance, so that obligation root has `material_conflict=true / escalation_required=true`;
-- case `p1e1r4_80ccea1138af42d8843eabe2a10fec66`: the incompatible current-state assertions are objective-scoped and produce the deterministic conflict-only root; the obligation's Aaron escalation target is not sprayed across that reverse link, so the conflict-only root has `material_conflict=true / escalation_required=false`.
+Decision root closure:
+objective; decision_requirement; all exact decision-scoped applicability_assertions; all exact decision lifecycle_events; all exact action_decisions naming that decision; exact required_next_step + linked governance/authority evidence when reserved; exact directly attached conflict evidence.
 
-No other root in the frozen population may have `escalation_required=true`.
+Intent root closure:
+objective; intent; unique linked effect_record; exact intent/effect-scoped applicability/lifecycle evidence; exact directly attached conflict evidence.
 
-### 7.5 Frozen obligation/decision lifecycle-applicability tables
+Conflict-only root closure:
+the exact conflict-generating records plus exact objective/obligation link records required by §9 to form the frozen conflict-anchor set.
 
-Status/lifecycle and applicability are independent candidate dimensions. Do not rewrite one from the other unless exact scoped source evidence supplies that exact value.
+No root may borrow evidence from another root to improve health or classification.
 
-For an obligation:
-- `obligation_status` is the exact selected obligation status;
-- `applicability` is the exact selected obligation governance/applicability assertion state after exact-ref lifecycle consistency checking;
-- terminal obligation status defeats AR-2 through the frozen classifier status predicate; it does NOT silently rewrite separately APPLICABLE governance.
-- `concrete_action_remaining = (action_remaining===true && concrete_action is nonempty && informational_only===false)` exactly, even if status is terminal; the classifier's status gate remains candidate-owned.
+### 7.8 Frozen 84-candidate census
 
-The 42 obligations demonstrate exactly these six classes:
-1. 35: status OPEN / governance APPLICABLE / assertion APPLICABLE / lifecycle OPEN -> candidate status OPEN / applicability APPLICABLE;
-2. 1: status OPEN / governance UNKNOWN / assertion UNKNOWN / lifecycle OPEN -> status OPEN / applicability UNKNOWN;
-3. 1: status ABANDONED / governance APPLICABLE / assertion APPLICABLE / lifecycle OPEN then ABANDONED -> status ABANDONED / applicability APPLICABLE;
-4. 2: status OPEN / governance APPLICABLE / assertion APPLICABLE / no lifecycle row -> status OPEN / applicability APPLICABLE;
-5. 2: status SATISFIED / governance SATISFIED / assertion SATISFIED / lifecycle OPEN then SATISFIED -> status SATISFIED / applicability SATISFIED;
-6. 1: status SUPERSEDED / governance SUPERSEDED / assertion SUPERSEDED / lifecycle OPEN then SUPERSEDED -> status SUPERSEDED / applicability SUPERSEDED.
+Root counts:
+- obligations 42;
+- decisions 40;
+- unresolved intent 1;
+- conflict-only 1;
+- total 84.
 
-For a decision:
-- `decision_status` preserves exact selected source status, with exact action_decision resolving/superseding refs controlling resolution history;
-- `applicability` is the exact decision-scoped applicability assertion state;
-- obligation lifecycle never rewrites either field;
-- PENDING action_decision does not resolve/supersede the decision.
+Candidate applicability after the reserved-authority UNKNOWN health reduction:
+- APPLICABLE 73;
+- UNKNOWN 5;
+- SATISFIED 4;
+- SUPERSEDED 2;
+- ABANDONED applicability 0.
 
-The 40 decisions demonstrate exactly these seven classes:
-1. 33: OPEN / history complete / one APPLICABLE assertion / lifecycle OPEN / no action_decision -> OPEN / APPLICABLE;
-2. 1: OPEN / history complete / UNKNOWN assertion / lifecycle OPEN -> OPEN / UNKNOWN;
-3. 1: OPEN / history complete / two identical APPLICABLE assertions / lifecycle OPEN -> OPEN / APPLICABLE; exact duplicate value evidence does not multiply or conflict;
-4. 1: RESOLVED / history complete / APPLICABLE assertion / lifecycle OPEN / exact RESOLVED action_decision naming the decision -> RESOLVED / APPLICABLE;
-5. 2: RESOLVED / history complete / SATISFIED assertion / lifecycle OPEN / exact RESOLVED action_decision -> RESOLVED / SATISFIED;
-6. 1: SUPERSEDED / history complete / SUPERSEDED assertion / lifecycle OPEN / exact superseding action_decision -> SUPERSEDED / SUPERSEDED;
-7. 1: OPEN / history complete / APPLICABLE assertion / lifecycle OPEN / PENDING action_decision that neither resolves nor supersedes -> OPEN / APPLICABLE.
+The five load-bearing UNKNOWN roots are:
+- 2 roots in `p1e1r4_2b75131e44224cd98957c79b899fb168` from exact item applicability UNKNOWN;
+- 2 reserved roots in `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39` from authority_state UNKNOWN;
+- 1 unresolved-intent root in `p1e1r4_6f43027d04774acda0ac9dd58bc2f4af` from absent exact intent/effect applicability.
 
-Any other obligation or decision lifecycle/applicability combination appearing in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+Boolean/conflict census:
+- escalation_required=true: 0;
+- unresolved_effect=true: 1;
+- material_conflict=true: 4;
+- informational_only=true: 1;
+- conflict_id present: 4;
+- nonempty possible_duplicate_refs: 2.
 
-### 7.6 Exact candidate evidence-closure sets
+Reserved-authority field census:
+- reserved_authority_class present on 20 roots;
+- authority_holder_identity_id: AARON on 18, UNKNOWN on 2;
+- valid_delegation: false on 18, omitted on 2, true on 0.
 
-Candidate health/provenance MUST be reduced from a closed, root-specific evidence set. The Builder may not choose a narrower or broader set case-by-case.
+Candidate health/value census:
+- freshness: CURRENT 82 / UNKNOWN 2 / STALE 0;
+- source_identity: VERIFIED 82 / UNKNOWN 2 / CONFLICT 0;
+- provenance_refs length: exactly 1 on all 84.
 
-Obligation root evidence closure:
-- exact objective record supplying objective_id;
-- exact obligation record;
-- unique exact obligation_governance record;
-- every exact applicability_assertion whose subject_refs includes that obligation;
-- every exact lifecycle_event whose affected_record_refs includes that obligation;
-- exact required_next_step that names that obligation when reserved authority is classified;
-- exact authority_generation_state + referenced lease/identity/work_episode records required to determine reserved authority/delegation;
-- exact conflict-generating/source-link records when that obligation receives conflict_id/material_conflict/possible_duplicate_refs.
+Field-presence census:
+id 84; principal_id 84; objective_id 84; obligation_id 42; decision_requirement_id 40; intent_id 1; conflict_id 4; obligation_status 42; obligation_owner 42; concrete_action_remaining 42; decision_status 40; decision_maker_identity_id 40; reserved_authority_class 20; authority_holder_identity_id 20; valid_delegation 18; escalation_required 84; unresolved_effect 84; material_conflict 84; informational_only 84; applicability 84; freshness 84; source_identity 84; provenance_refs 84; possible_duplicate_refs 84; why 0.
 
-Decision root evidence closure:
-- exact objective record;
-- exact decision_requirement record;
-- every exact decision-scoped applicability_assertion;
-- every exact lifecycle_event affecting that decision;
-- every exact action_decision whose subject/resolves/supersedes relation names that decision;
-- exact required_next_step plus linked governance/authority records when reserved authority is classified;
-- exact conflict-generating records only if that decision is directly attached to the conflict.
+Additional exact values:
+- obligation_owner AARON 20 / IRIS 20 / EXTERNAL_ORG 1 / UNKNOWN 1;
+- obligation_status OPEN 38 / ABANDONED 1 / SATISFIED 2 / SUPERSEDED 1;
+- decision_maker_identity_id IRIS 29 / AARON 10 / UNKNOWN 1;
+- decision_status OPEN 36 / RESOLVED 3 / SUPERSEDED 1.
 
-Intent root evidence closure:
-- exact objective record;
-- exact intent record;
-- unique exact linked effect_record;
-- exact intent/effect-scoped applicability/lifecycle evidence;
-- exact conflict evidence only if directly attached.
-
-Conflict-only root evidence closure:
-- exact incompatible source records that generated the conflict;
-- exact objective/obligation link records required by §9 to compute the conflict anchor set;
-- no unrelated case records.
-
-For each closure:
-- candidate `freshness = UNKNOWN` if any load-bearing used envelope is UNKNOWN/unevaluable, else STALE if any is STALE, else CURRENT;
-- candidate `source_identity = CONFLICT` if any used source identity is conflicting, else UNKNOWN if any used source identity is unknown/unverified for a load-bearing fact, else VERIFIED;
-- candidate `provenance_refs` is the exact-deduped UTF-8 byte-lexical union of source_refs on those used records plus the exact containing-envelope source_refs. Nothing else is admitted.
-
-If a required candidate field cannot be supported by that root's exact closure, set the explicitly authorized UNKNOWN/omission or fail the named HOLD; do not borrow evidence from another root.
-
-### 7.7 Frozen root/unknown census
-
-Before buildProjection, the exact 40-case population must produce:
-- obligation roots: 42;
-- decision roots: 40;
-- unresolved-intent roots: 1;
-- conflict-only roots: 1;
-- total PilotCandidate roots: 84.
-
-Load-bearing candidate unknowns:
-- case `p1e1r4_2b75131e44224cd98957c79b899fb168`: one obligation + one decision with exact applicability UNKNOWN -> 2 roots;
-- case `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`: one reserved obligation + one reserved decision degraded to UNKNOWN because authority_state availability=UNKNOWN -> 2 roots; valid_delegation omitted;
-- case `p1e1r4_6f43027d04774acda0ac9dd58bc2f4af`: one unresolved-intent root with no exact intent applicability -> 1 root.
-
-Thus exactly 5 candidate roots carry a load-bearing UNKNOWN applicability/health cause under this binding. No other root may be degraded to UNKNOWN absent an exact rule in this document.
-
-Conflict/material census before buildProjection:
-- generated material conflict IDs: 3;
-- roots with `material_conflict=true`: 4 (one incompatible-instruction obligation root; two unresolved-duplicate obligation roots; one incompatible-current-state conflict-only root);
-- roots with nonempty possible_duplicate_refs: 2;
-- roots with `escalation_required=true`: 1;
-- roots with `unresolved_effect=true`: 1;
-- roots with `informational_only=true`: 1.
-
-Any deviation is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
-
-### 7.6 Frozen candidate-root census
-
-Before buildProjection, the frozen 40-case population MUST produce exactly 84 PilotCandidate roots:
-- obligation roots: 42;
-- decision roots: 40;
-- unresolved-intent roots: 1;
-- conflict-only roots: 1.
-
-Candidate applicability census:
-- APPLICABLE: 75;
-- UNKNOWN: 3;
-- SATISFIED: 4;
-- SUPERSEDED: 2;
-- ABANDONED as candidate applicability: 0 (the single ABANDONED obligation retains status ABANDONED but independent applicability APPLICABLE).
-
-Always-boolean census:
-- `unresolved_effect=true`: 1 root;
-- `material_conflict=true`: 4 roots;
-- `escalation_required=true`: 1 root;
-- `informational_only=true`: 1 root.
-
-Identity/conflict field census:
-- `conflict_id` present: 4 roots;
-- nonempty `possible_duplicate_refs`: 2 roots;
-- reserved_authority_class present: 20 roots (10 obligation + 10 linked decision);
-- authority_holder_identity_id present on those 20 roots: 18 exact AARON, 2 exact UNKNOWN because the authority surface itself is UNKNOWN;
-- valid_delegation present=false on 18 roots; omitted on the same 2 UNKNOWN-authority roots; true on 0 roots.
-
-Any other root count or field-presence census is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
-
-### 7.7 Exact PilotCandidate field-presence census
-
-Across the exact 84 pre-buildProjection candidates, property presence MUST be:
-
-- id 84
-- principal_id 84
-- objective_id 84
-- obligation_id 42
-- decision_requirement_id 40
-- intent_id 1
-- conflict_id 4
-- obligation_status 42
-- obligation_owner 42
-- concrete_action_remaining 42
-- decision_status 40
-- decision_maker_identity_id 40
-- reserved_authority_class 20
-- authority_holder_identity_id 20
-- valid_delegation 18
-- escalation_required 84
-- unresolved_effect 84
-- material_conflict 84
-- informational_only 84
-- applicability 84
-- freshness 84
-- source_identity 84
-- provenance_refs 84
-- possible_duplicate_refs 84
-- why 0
-
-Exact value censuses:
-- obligation_owner: AARON 20 / IRIS 20 / EXTERNAL_ORG 1 / UNKNOWN 1;
-- obligation_status: OPEN 38 / ABANDONED 1 / SATISFIED 2 / SUPERSEDED 1;
-- decision_maker_identity_id: IRIS 29 / AARON 10 / UNKNOWN 1;
-- decision_status: OPEN 36 / RESOLVED 3 / SUPERSEDED 1;
-- candidate freshness: CURRENT 84 / STALE 0 / UNKNOWN 0;
-- candidate source_identity: VERIFIED 84 / UNKNOWN 0 / CONFLICT 0;
-- provenance_refs array length: exactly 1 for all 84 candidates.
-
-The conflict/duplicate/authority uncertainties in this frozen population are represented by their dedicated candidate fields and do not rewrite source_identity/freshness. Every direct candidate evidence union resolves to one exact case evidence source_ref. Any field-presence/value census drift is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+Any census drift is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
 ## 8. Authority, permission and delegation
 
 required_next_step never creates a root.
 
-If exact OPEN/APPLICABLE permission evidence has `permission_needed=true` and links an exact subject obligation, decision_ref, and reserved_authority_class, copy the exact reserved class onto the corresponding roots. Mismatch with decision/governance reserved class:
-`BINDING_HOLD/RESERVED_AUTHORITY_CLASS_MISMATCH`.
+Exactly 10 frozen cases contain an OPEN/APPLICABLE required_next_step with permission_needed=true and reserved_authority_class `PRINCIPAL_PRIVATE_DISCLOSURE`. In all 10, the step/governance/decision reserved class agrees exactly; mismatch fails `BINDING_HOLD/RESERVED_AUTHORITY_CLASS_MISMATCH`.
 
-Authority holder comes only from exact governance when the authority envelope is usable.
+Copy the exact reserved class onto the linked obligation and decision roots.
 
-`valid_delegation=true` only if a referenced authority_lease is ACTIVE at selected time and exact authority domain/generation, principal, operation_scope, privacy policy/scope, worker/episode, and authority policy match current authority_generation_state. Deterministically invalid mismatch/expiry/replaced worker -> false. Missing/ambiguous load-bearing state -> omit valid_delegation and degrade the relevant material dimension to UNKNOWN. Provider session/credential never grants delegation.
+When authority_state is usable, authority_holder_identity_id comes only from exact linked obligation_governance. `valid_delegation=true` only if a referenced lease is ACTIVE at selected time and exact authority-domain ref, authority generation, principal, operation_scope, privacy policy/scope, authority policy, current worker/work episode and IRIS identity match the selected Current authority-generation state. Worker identity generation and authority generation are distinct domains and MUST NOT be numerically equated.
 
-A permission-linked decision remains one authorization basis; decoder never manufactures an extra intervention.
+Deterministically invalid mismatch/expiry/revocation/supersession/no lease -> `valid_delegation=false`.
+The one authority_state UNKNOWN case -> `authority_holder_identity_id="UNKNOWN"`, omit valid_delegation, and degrade the two reserved roots to applicability/freshness/source_identity UNKNOWN under §7.4. Provider session/credential never grants delegation.
 
-### 8.1 Frozen delegation census
-
-Exactly 10 replacement-E1 cases contain an OPEN/APPLICABLE required_next_step with reserved authority class `PRINCIPAL_PRIVATE_DISCLOSURE`. Their required-next-step, governance, and decision reserved classes agree exactly.
-
-Apply the exact lease validation above. The candidate-neutral audit yields:
-- `valid_delegation=true`: 0 cases;
-- `valid_delegation=false`: 9 cases;
-- authority source UNKNOWN -> omit `valid_delegation` while degrading the load-bearing candidate/source health to UNKNOWN: exactly case `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`.
-
-The nine false cases fail for exact source reasons including privacy-scope mismatch, predecessor/replaced-worker mismatch, non-ACTIVE lease state, no referenced lease, generation mismatch, or expiry. A false result is not an inference that delegation never exists generally; it is the deterministic reduction for these frozen cases.
-
-For the single UNKNOWN authority-surface case, do NOT cascade authority uncertainty into independently known item lifecycle/applicability/freshness/source identity. On both exact reserved-authority roots set `authority_holder_identity_id="UNKNOWN"`, omit `valid_delegation`, and preserve the independently source-derived item fields. The frozen candidate's `missingMaterialClassification` then represents the load-bearing authority unknown without erasing unrelated evidence.
-
-### 8.1 Demonstrated reserved-authority / delegation table
-
-The frozen population contains exactly 10 OPEN/APPLICABLE `required_next_step` records with `permission_needed=true` and `reserved_authority_class=PRINCIPAL_PRIVATE_DISCLOSURE`. For all 10, the exact step class equals the linked obligation-governance and decision reserved class; any mismatch is `BINDING_HOLD/RESERVED_AUTHORITY_CLASS_MISMATCH`.
-
-The reserved class is copied onto the exact linked obligation and decision candidates. For usable authority envelopes, `authority_holder_identity_id` is copied from exact linked obligation_governance. For the one UNKNOWN authority envelope, positive holder evidence is not usable: set `authority_holder_identity_id="UNKNOWN"`, omit `valid_delegation`, and degrade item/source identity, freshness, and applicability to UNKNOWN as required by §7.4.
-
-Current delegation is true only when a referenced lease is ACTIVE at selected time and exact authority-domain ref, authority generation, principal, operation scope, privacy policy/scope, authority policy, work-episode ref, active current worker ref, and active IRIS ref all match. Worker identity generation is NOT authority generation and is never numerically equated to it.
-
-Exact demonstrated outcomes:
+Exact case outcomes:
 - `p1e1r4_13f14125911f4e4fafe0e128438a33ae`: false — privacy_scope mismatch.
-- `p1e1r4_2746198707b748999b539d1723fd84a2`: false — lease names replaced predecessor/non-current worker, not the open episode worker.
-- `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`: UNKNOWN authority surface/current_generation; holder UNKNOWN; `valid_delegation` omitted; health UNKNOWN.
-- `p1e1r4_593111b7f3bb4e32bd0a6456bba2942a`: false — lease state SUPERSEDED.
-- `p1e1r4_a09424d46ca04ea3955094402e78966a`: false — lease is not ACTIVE under the selected current state.
+- `p1e1r4_2746198707b748999b539d1723fd84a2`: false — lease worker is not the current open-episode worker.
+- `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`: authority UNKNOWN — holder UNKNOWN / valid_delegation omitted / root health UNKNOWN.
+- `p1e1r4_593111b7f3bb4e32bd0a6456bba2942a`: false — SUPERSEDED lease.
+- `p1e1r4_a09424d46ca04ea3955094402e78966a`: false — non-ACTIVE selected lease.
 - `p1e1r4_be72a0a686754345ac8bc70f34ea13f6`: false — no referenced lease.
-- `p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8`: false — lease authority generation does not equal current_generation.
-- `p1e1r4_ced4056d128542acaa474e6fb85df018`: false — lease expired before selected read.
-- `p1e1r4_d504e20ade654857a871565f2ae65fe0`: false — lease state REVOKED.
+- `p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8`: false — authority generation mismatch.
+- `p1e1r4_ced4056d128542acaa474e6fb85df018`: false — expired before selected read.
+- `p1e1r4_d504e20ade654857a871565f2ae65fe0`: false — REVOKED lease.
 - `p1e1r4_e77d2a6a825a43f7af5b42afc5a94046`: false — no referenced lease.
 
-Thus demonstrated delegation counts are `true=0 / false=9 / omitted-UNKNOWN=1`. Any different authority/delegation shape in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+Per-case delegation outcomes: true=0 / false=9 / omitted-UNKNOWN=1.
+Per-root candidate field outcomes: true=0 / false=18 / omitted=2.
 
 ## 9. Conflict and duplicate identity
 
-Conflict facts arise only from explicit source facts, never from consequence classes.
-
-Deterministic conflict classes are the frozen candidate enum. Conflict ID:
-`conf_<sha256(AARON|sorted exact anchors|class)>`, UTF-8 byte sort, exact dedupe, no Unicode normalization.
-
-Attach a conflict to every exactly referenced existing root. If none resolves, create one conflict-only root. If one PilotCandidate would require more than one distinct conflict_id:
-`BINDING_HOLD/MULTIPLE_CONFLICT_IDS_UNENCODABLE`.
-
-`input.conflicts` is the exact set of deterministic conflict IDs generated by these rules, exact-deduped and UTF-8 byte-lexically sorted. No source description, conflict class label, anchor ref, or consequence token may be placed in `input.conflicts`.
-
-### 9.1 Source-fact to conflict-class mapping
-
 Conflict class selection is source-fact deterministic:
-- mutually exclusive instructions applying to the same canonical obligation -> `INCOMPATIBLE_OBLIGATIONS`;
-- materially incompatible exact Current/current_assertion values for the same exact canonical subject/predicate -> `INCOMPATIBLE_CURRENT_STATE`;
-- incompatible exact current authority facts -> `AUTHORITY_CONFLICT`;
-- unresolved contradictory exact effect records for the same intent/effect reality -> `EFFECT_REALITY_CONFLICT`;
-- exact source-identity contradiction -> `SOURCE_IDENTITY_CONFLICT`;
-- distinct-ref unresolved possible duplicate under the six-way identity table -> `POSSIBLE_DUPLICATE_UNRESOLVED`.
+- mutually exclusive instructions on the same exact obligation -> INCOMPATIBLE_OBLIGATIONS;
+- incompatible exact current_assertion values for the same exact subject/predicate -> INCOMPATIBLE_CURRENT_STATE;
+- incompatible exact current authority facts -> AUTHORITY_CONFLICT;
+- contradictory exact effect reality -> EFFECT_REALITY_CONFLICT;
+- exact source-identity contradiction -> SOURCE_IDENTITY_CONFLICT;
+- unresolved distinct possible duplicate under the table below -> POSSIBLE_DUPLICATE_UNRESOLVED.
 
-Conflict anchors are the full exact set of incompatible canonical/source records plus their exact objective/obligation links required by the source relation. Do not import unrelated case records. If the source shape does not uniquely determine conflict class or anchor set, fail `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE` rather than choose a class.
+Conflict ID:
+`conf_<sha256(UTF8("AARON|" + "|".join(sorted_exact_anchor_refs) + "|" + conflict_class))>`
+with UTF-8 byte sort, exact dedupe, no Unicode normalization.
 
-The frozen 40-case population demonstrates exactly:
-- `p1e1r4_3592698cabc744789906162b61657890`: two mutually exclusive instructions on `obligation:b3c3c67639594094abc930cc450fd274` -> `INCOMPATIBLE_OBLIGATIONS`;
-- `p1e1r4_80ccea1138af42d8843eabe2a10fec66`: contradictory `exclusive_index_owner` current assertions `TEAM_X` vs `TEAM_Y` on `objective:0a9cb6c1b78a4910aa3d5e21fa960f51` -> `INCOMPATIBLE_CURRENT_STATE`;
-- `p1e1r4_ac08b94cee624ed7a450e17e3389a163`: distinct obligations with `possible_same_underlying_request=true`, `identity_proven=false`, and no authoritative merge -> `POSSIBLE_DUPLICATE_UNRESOLVED`;
-- `p1e1r4_dd291386b74e4b568634d20c138457ea`: same-ref + `identity_proven=true` -> PROVEN_SELF_IDENTITY / no conflict.
+For demonstrated conflicts, the anchor closure is the full exact set of incompatible source/canonical records plus exact objective/obligation links required by the pinned protocol. Attachment is narrower: attach only to roots directly referenced by the conflict-generating relation; a reverse objective->obligation link may be in the identity anchor closure without authorizing root attachment. If no root is directly resolved, create one conflict-only root. A candidate needing >1 distinct conflict_id fails `BINDING_HOLD/MULTIPLE_CONFLICT_IDS_UNENCODABLE`.
 
-No `AUTHORITY_CONFLICT`, `EFFECT_REALITY_CONFLICT`, or `SOURCE_IDENTITY_CONFLICT` generating shape is demonstrated in this frozen population. Encountering one during execution of these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+Exact demonstrated conflicts:
 
-### 9.3 Exact conflict attachment and conflict-only root construction
+1. `p1e1r4_3592698cabc744789906162b61657890`
+   class INCOMPATIBLE_OBLIGATIONS;
+   anchors:
+   `instruction:209593c8008649b28329b14e62766d68`,
+   `instruction:bf7abddd95bd48fcad6e6d742213599d`,
+   `objective:083dabaa11c34e499a492c2381aef180`,
+   `obligation:b3c3c67639594094abc930cc450fd274`;
+   ID `conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86`;
+   attach only to obligation `b3c3c67639594094abc930cc450fd274`.
 
-For the frozen demonstrated conflict shapes:
-- exclusive-instruction conflict on `obligation:b3c3c67639594094abc930cc450fd274`: attach the one deterministic conflict_id to that obligation candidate; `material_conflict=true`.
-- exclusive-current-state conflict on `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`: no obligation/decision/intent root is exactly referenced by the conflicting assertions, so create exactly one conflict-only candidate.
-- unresolved possible duplicate between `obligation:af6abeb0cf104e19bf59b400088a90b7` and `obligation:c1805592acb24fb884c9ec909d348408`: attach the same one deterministic conflict_id to both exact obligation candidates; each gets the other exact typed obligation ref in `possible_duplicate_refs`.
-- proven self-identity case creates no conflict and no duplicate refs.
+2. `p1e1r4_80ccea1138af42d8843eabe2a10fec66`
+   class INCOMPATIBLE_CURRENT_STATE;
+   anchors:
+   `assertion:9f4a8b630cdc4067a81be6875ee05386`,
+   `current_assertion:6f7e30c15ed84aa893f311aa237ce2be`,
+   `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`,
+   `obligation:9902f0b12e9c4b20873e6e809e27d179`;
+   ID `conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`;
+   the assertions directly subject only the objective, so reverse-link attachment to the obligation is forbidden; create the one conflict-only root.
 
-The conflict-only candidate is constructed exactly:
-- `id=e1:<case_id>:conflict:<conf_id>`;
-- `principal_id=AARON`;
-- `objective_id` = raw payload of the exact objective anchor when the conflict evidence uniquely carries that objective; otherwise omit;
-- `conflict_id=<conf_id>`;
-- `escalation_required=false`;
-- `unresolved_effect=false`;
-- `material_conflict=true`;
-- `informational_only=false`;
-- `applicability`, `freshness`, `source_identity`, and `provenance_refs` derive only from the exact conflict evidence under §7.4;
-- `possible_duplicate_refs=[]`;
-- all unrelated obligation/decision/intent/authority fields omitted;
-- exact property order remains §7.5.
+Conflict-only root:
+- id `e1:p1e1r4_80ccea1138af42d8843eabe2a10fec66:conflict:conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`;
+- principal_id AARON;
+- objective_id `0a9cb6c1b78a4910aa3d5e21fa960f51`;
+- conflict_id `conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`;
+- escalation_required=false / unresolved_effect=false / material_conflict=true / informational_only=false;
+- applicability=APPLICABLE / freshness=CURRENT / source_identity=VERIFIED;
+- provenance_refs = the one exact evidence source used by the conflict closure;
+- possible_duplicate_refs=[].
 
-For the demonstrated current-state conflict, both exact conflicting current assertions are APPLICABLE, current, provenance-verified Aaron evidence; therefore the conflict-only root has `applicability=APPLICABLE / freshness=CURRENT / source_identity=VERIFIED`.
+3. `p1e1r4_ac08b94cee624ed7a450e17e3389a163`
+   class POSSIBLE_DUPLICATE_UNRESOLVED;
+   anchors:
+   `objective:46b9bfe032724b97a46b202187d43cc6`,
+   `obligation:af6abeb0cf104e19bf59b400088a90b7`,
+   `obligation:c1805592acb24fb884c9ec909d348408`;
+   ID `conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d`;
+   attach to both exact obligation roots. Each receives the other typed obligation ref in possible_duplicate_refs.
 
-### 9.2 Exact demonstrated conflict identities and attachments
+Case `p1e1r4_dd291386b74e4b568634d20c138457ea` is same-ref + identity_proven=true: PROVEN_SELF_IDENTITY; no conflict, no possible_duplicate_refs, no merge.
 
-Conflict-anchor construction is frozen for the three demonstrated conflicts. UTF-8 byte sort and exact dedupe are already applied below.
-
-1. Case `p1e1r4_3592698cabc744789906162b61657890` — `INCOMPATIBLE_OBLIGATIONS`
-   - anchors:
-     - `instruction:209593c8008649b28329b14e62766d68`
-     - `instruction:bf7abddd95bd48fcad6e6d742213599d`
-     - `objective:083dabaa11c34e499a492c2381aef180`
-     - `obligation:b3c3c67639594094abc930cc450fd274`
-   - SHA preimage:
-     `AARON|instruction:209593c8008649b28329b14e62766d68|instruction:bf7abddd95bd48fcad6e6d742213599d|objective:083dabaa11c34e499a492c2381aef180|obligation:b3c3c67639594094abc930cc450fd274|INCOMPATIBLE_OBLIGATIONS`
-   - conflict_id:
-     `conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86`
-   - attach only to the exact obligation root `obligation:b3c3c67639594094abc930cc450fd274`.
-
-2. Case `p1e1r4_80ccea1138af42d8843eabe2a10fec66` — `INCOMPATIBLE_CURRENT_STATE`
-   - anchors:
-     - `assertion:9f4a8b630cdc4067a81be6875ee05386`
-     - `current_assertion:6f7e30c15ed84aa893f311aa237ce2be`
-     - `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`
-   - SHA preimage:
-     `AARON|assertion:9f4a8b630cdc4067a81be6875ee05386|current_assertion:6f7e30c15ed84aa893f311aa237ce2be|objective:0a9cb6c1b78a4910aa3d5e21fa960f51|INCOMPATIBLE_CURRENT_STATE`
-   - conflict_id:
-     `conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb`
-   - neither assertion directly resolves to an obligation/decision/intent root; create exactly one conflict-only root with objective payload `0a9cb6c1b78a4910aa3d5e21fa960f51`, this conflict_id, material_conflict=true, escalation_required=false.
-
-3. Case `p1e1r4_ac08b94cee624ed7a450e17e3389a163` — `POSSIBLE_DUPLICATE_UNRESOLVED`
-   - anchors:
-     - `objective:46b9bfe032724b97a46b202187d43cc6`
-     - `obligation:af6abeb0cf104e19bf59b400088a90b7`
-     - `obligation:c1805592acb24fb884c9ec909d348408`
-   - SHA preimage:
-     `AARON|objective:46b9bfe032724b97a46b202187d43cc6|obligation:af6abeb0cf104e19bf59b400088a90b7|obligation:c1805592acb24fb884c9ec909d348408|POSSIBLE_DUPLICATE_UNRESOLVED`
-   - conflict_id:
-     `conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d`
-   - attach to both exact obligation roots;
-   - left root possible_duplicate_refs=[`obligation:c1805592acb24fb884c9ec909d348408`];
-   - right root possible_duplicate_refs=[`obligation:af6abeb0cf104e19bf59b400088a90b7`].
-
-Case `p1e1r4_dd291386b74e4b568634d20c138457ea` is PROVEN_SELF_IDENTITY and generates no conflict ID, no conflict attachment, and no possible_duplicate_refs.
-
-`input.conflicts` therefore contains exactly the three conflict IDs above in UTF-8 byte-lexical order for their respective cases, and no fourth conflict exists.
-
-### 9.3 Duplicate/source-link identity table
-
-Duplicate/source-link decision order is total:
-
-1. same ref + identity_proven=true -> PROVEN_SELF_IDENTITY; no duplicate conflict, no possible_duplicate_refs, no merge;
+Duplicate/source-link decision table:
+1. same ref + identity_proven=true -> no duplicate effect;
 2. same ref + identity not proven -> no duplicate effect;
-3. distinct refs + valid authoritative_merge_ref -> require exact resolving admissible canonical anchor; use it;
+3. distinct refs + valid authoritative_merge_ref -> require exact canonical anchor;
 4. distinct refs + identity_proven=true + no canonical anchor -> `BINDING_HOLD/PROVEN_DISTINCT_REF_IDENTITY_WITHOUT_CANONICAL_ANCHOR`;
-5. distinct refs + identity not proven + possible_same_underlying_request=true + no authoritative merge -> POSSIBLE_DUPLICATE_UNRESOLVED; do not consolidate; retain exact other refs and deterministic conflict;
+5. distinct refs + identity not proven + possible_same=true + no merge -> POSSIBLE_DUPLICATE_UNRESOLVED;
 6. otherwise -> no duplicate effect.
 
-No semantic similarity or inferred identity equivalence.
+No semantic similarity or consequence evidence may choose identity/conflict behavior.
 
-### 9.3 Frozen demonstrated conflict identities
-
-For the exact 40-case population, the three generated conflicts are frozen to these exact anchor closures and IDs:
-
-1. case `p1e1r4_3592698cabc744789906162b61657890`
-   - class: `INCOMPATIBLE_OBLIGATIONS`
-   - anchors, UTF-8 lexical:
-     - `instruction:209593c8008649b28329b14e62766d68`
-     - `instruction:bf7abddd95bd48fcad6e6d742213599d`
-     - `objective:083dabaa11c34e499a492c2381aef180`
-     - `obligation:b3c3c67639594094abc930cc450fd274`
-   - exact ID: `conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86`.
-
-2. case `p1e1r4_80ccea1138af42d8843eabe2a10fec66`
-   - class: `INCOMPATIBLE_CURRENT_STATE`
-   - anchors:
-     - `assertion:9f4a8b630cdc4067a81be6875ee05386`
-     - `current_assertion:6f7e30c15ed84aa893f311aa237ce2be`
-     - `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`
-     - `obligation:9902f0b12e9c4b20873e6e809e27d179`
-   - exact ID: `conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`.
-   - the incompatible assertions directly subject the objective; no obligation/decision/intent root is directly assertion-referenced, so this is the one conflict-only root. The obligation link remains in the conflict anchor closure but does not authorize conflict attachment by reverse-link inference.
-
-3. case `p1e1r4_ac08b94cee624ed7a450e17e3389a163`
-   - class: `POSSIBLE_DUPLICATE_UNRESOLVED`
-   - anchors:
-     - `objective:46b9bfe032724b97a46b202187d43cc6`
-     - `obligation:af6abeb0cf104e19bf59b400088a90b7`
-     - `obligation:c1805592acb24fb884c9ec909d348408`
-   - exact ID: `conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d`.
-   - attach to both exact obligation roots; each receives the other typed obligation ref in possible_duplicate_refs.
-
-`input.conflicts` for every case is the exact-deduped UTF-8 byte-lexically sorted list of these generated IDs applicable to that case. All other cases have `input.conflicts=[]`.
+`input.conflicts` is the exact set of generated conflict IDs for the case, exact-deduped and UTF-8 byte-lexically sorted. All non-conflict cases have [].
 
 ## 10. Qualified BIG boundary
 
