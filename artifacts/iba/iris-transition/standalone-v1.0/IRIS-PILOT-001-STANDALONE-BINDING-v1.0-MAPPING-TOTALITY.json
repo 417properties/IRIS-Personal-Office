@@ -966,46 +966,6 @@
     ]
   },
   "demonstrated_conflict_generation": {
-    "cases": [
-      {
-        "case_id": "p1e1r4_3592698cabc744789906162b61657890",
-        "shape": "two mutually exclusive instructions on same obligation",
-        "conflict_class": "INCOMPATIBLE_OBLIGATIONS",
-        "subject_refs": [
-          "obligation:b3c3c67639594094abc930cc450fd274"
-        ],
-        "generates_conflict": true
-      },
-      {
-        "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
-        "shape": "same predicate exclusive_index_owner with TEAM_X vs TEAM_Y on same objective",
-        "conflict_class": "INCOMPATIBLE_CURRENT_STATE",
-        "subject_refs": [
-          "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"
-        ],
-        "generates_conflict": true
-      },
-      {
-        "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
-        "shape": "distinct refs; possible_same=true; identity_proven=false; authoritative_merge_ref=null",
-        "conflict_class": "POSSIBLE_DUPLICATE_UNRESOLVED",
-        "subject_refs": [
-          "obligation:af6abeb0cf104e19bf59b400088a90b7",
-          "obligation:c1805592acb24fb884c9ec909d348408"
-        ],
-        "generates_conflict": true
-      },
-      {
-        "case_id": "p1e1r4_dd291386b74e4b568634d20c138457ea",
-        "shape": "same ref; identity_proven=true; authoritative_merge_ref=null",
-        "conflict_class": null,
-        "subject_refs": [
-          "obligation:1b3146da2fac4befa199947d0e30e3d2"
-        ],
-        "generates_conflict": false,
-        "disposition": "PROVEN_SELF_IDENTITY"
-      }
-    ],
     "demonstrated_conflict_class_counts": {
       "INCOMPATIBLE_OBLIGATIONS": 1,
       "INCOMPATIBLE_CURRENT_STATE": 1,
@@ -1014,49 +974,7 @@
       "EFFECT_REALITY_CONFLICT": 0,
       "SOURCE_IDENTITY_CONFLICT": 0
     },
-    "exact_identities": [
-      {
-        "case_id": "p1e1r4_3592698cabc744789906162b61657890",
-        "conflict_class": "INCOMPATIBLE_OBLIGATIONS",
-        "anchors": [
-          "instruction:209593c8008649b28329b14e62766d68",
-          "instruction:bf7abddd95bd48fcad6e6d742213599d",
-          "objective:083dabaa11c34e499a492c2381aef180",
-          "obligation:b3c3c67639594094abc930cc450fd274"
-        ],
-        "conflict_id": "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
-        "attachment": [
-          "obligation:b3c3c67639594094abc930cc450fd274"
-        ]
-      },
-      {
-        "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
-        "conflict_class": "INCOMPATIBLE_CURRENT_STATE",
-        "anchors": [
-          "assertion:9f4a8b630cdc4067a81be6875ee05386",
-          "current_assertion:6f7e30c15ed84aa893f311aa237ce2be",
-          "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"
-        ],
-        "conflict_id": "conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb",
-        "attachment": [
-          "CONFLICT_ONLY_ROOT"
-        ]
-      },
-      {
-        "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
-        "conflict_class": "POSSIBLE_DUPLICATE_UNRESOLVED",
-        "anchors": [
-          "objective:46b9bfe032724b97a46b202187d43cc6",
-          "obligation:af6abeb0cf104e19bf59b400088a90b7",
-          "obligation:c1805592acb24fb884c9ec909d348408"
-        ],
-        "conflict_id": "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
-        "attachment": [
-          "obligation:af6abeb0cf104e19bf59b400088a90b7",
-          "obligation:c1805592acb24fb884c9ec909d348408"
-        ]
-      }
-    ],
+    "proven_self_identity_case": "p1e1r4_dd291386b74e4b568634d20c138457ea",
     "exact_conflicts": [
       {
         "case_id": "p1e1r4_3592698cabc744789906162b61657890",
@@ -1132,351 +1050,96 @@
     ],
     "common_fields": {
       "principal_id": "always AARON",
-      "escalation_required": "always false for replacement-E1 v0.4; no dedicated independent escalation record shape",
+      "escalation_required": "always false for replacement-E1 v0.4; no independent escalation-status source shape",
       "unresolved_effect": "true only unresolved-intent root; otherwise false",
-      "material_conflict": "true only exact attached/conflict-only §9 conflict; otherwise false",
-      "informational_only": "exact obligation source boolean on obligation root; otherwise false",
-      "applicability": "always supplied; root-specific exact rule; conflict-only exact conflict-source applicability or UNKNOWN/HOLD",
-      "freshness": "always supplied; exact used evidence reduction UNKNOWN > STALE > CURRENT",
-      "source_identity": "always supplied; exact used evidence reduction CONFLICT > UNKNOWN > VERIFIED",
-      "provenance_refs": "always sorted unique exact typed source_refs actually used",
-      "possible_duplicate_refs": "always array; exact typed other-ref(s) only for unresolved duplicate; otherwise []",
-      "why": "PROHIBITED_BY_DESIGN / decoder never supplies"
+      "material_conflict": "true only the four exact attached/conflict-only roots; otherwise false",
+      "informational_only": "exact obligation boolean; otherwise false",
+      "applicability": "always supplied; root-specific exact rule plus authority-UNKNOWN health degradation",
+      "freshness": "always supplied; UNKNOWN > STALE > CURRENT across exact load-bearing closure",
+      "source_identity": "always supplied; CONFLICT > UNKNOWN > VERIFIED across exact load-bearing closure",
+      "provenance_refs": "sorted unique exact typed source_refs from exact load-bearing closure",
+      "possible_duplicate_refs": "always array; exact typed other-ref only for unresolved duplicate",
+      "why": "PROHIBITED_BY_DESIGN / never supplied"
     },
-    "optional_fields": "omitted when not semantically applicable; null substitution prohibited except explicit UNKNOWN values represented by string fields"
-  },
-  "demonstrated_lifecycle_reduction": {
-    "obligations": [
-      {
-        "count": 35,
-        "source_status": "OPEN",
-        "governance": "APPLICABLE",
-        "assertions": [
-          "APPLICABLE"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "APPLICABLE"
-      },
-      {
-        "count": 2,
-        "source_status": "OPEN",
-        "governance": "APPLICABLE",
-        "assertions": [
-          "APPLICABLE"
-        ],
-        "lifecycle": [],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "APPLICABLE"
-      },
-      {
-        "count": 1,
-        "source_status": "OPEN",
-        "governance": "UNKNOWN",
-        "assertions": [
-          "UNKNOWN"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "UNKNOWN"
-      },
-      {
-        "count": 1,
-        "source_status": "ABANDONED",
-        "governance": "APPLICABLE",
-        "assertions": [
-          "APPLICABLE"
-        ],
-        "lifecycle": [
-          "ABANDONED",
-          "OPEN"
-        ],
-        "candidate_status": "ABANDONED",
-        "candidate_applicability": "ABANDONED",
-        "note": "terminal exact lifecycle defeats older APPLICABLE obligation governance only"
-      },
-      {
-        "count": 2,
-        "source_status": "SATISFIED",
-        "governance": "SATISFIED",
-        "assertions": [
-          "SATISFIED"
-        ],
-        "lifecycle": [
-          "OPEN",
-          "SATISFIED"
-        ],
-        "candidate_status": "SATISFIED",
-        "candidate_applicability": "SATISFIED"
-      },
-      {
-        "count": 1,
-        "source_status": "SUPERSEDED",
-        "governance": "SUPERSEDED",
-        "assertions": [
-          "SUPERSEDED"
-        ],
-        "lifecycle": [
-          "OPEN",
-          "SUPERSEDED"
-        ],
-        "candidate_status": "SUPERSEDED",
-        "candidate_applicability": "SUPERSEDED"
-      }
-    ],
-    "decisions": [
-      {
-        "count": 33,
-        "source_status": "OPEN",
-        "history_complete": true,
-        "assertions": [
-          "APPLICABLE"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "APPLICABLE"
-      },
-      {
-        "count": 1,
-        "source_status": "OPEN",
-        "history_complete": true,
-        "assertions": [
-          "UNKNOWN"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "UNKNOWN"
-      },
-      {
-        "count": 1,
-        "source_status": "OPEN",
-        "history_complete": true,
-        "assertions": [
-          "APPLICABLE",
-          "APPLICABLE"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "APPLICABLE"
-      },
-      {
-        "count": 1,
-        "source_status": "RESOLVED",
-        "history_complete": true,
-        "assertions": [
-          "APPLICABLE"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [
-          {
-            "status": "RESOLVED",
-            "resolves": true,
-            "supersedes": false
-          }
-        ],
-        "candidate_status": "RESOLVED",
-        "candidate_applicability": "APPLICABLE"
-      },
-      {
-        "count": 2,
-        "source_status": "RESOLVED",
-        "history_complete": true,
-        "assertions": [
-          "SATISFIED"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [
-          {
-            "status": "RESOLVED",
-            "resolves": true,
-            "supersedes": false
-          }
-        ],
-        "candidate_status": "RESOLVED",
-        "candidate_applicability": "SATISFIED"
-      },
-      {
-        "count": 1,
-        "source_status": "SUPERSEDED",
-        "history_complete": true,
-        "assertions": [
-          "SUPERSEDED"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [
-          {
-            "status": "SUPERSEDED",
-            "resolves": false,
-            "supersedes": true
-          }
-        ],
-        "candidate_status": "SUPERSEDED",
-        "candidate_applicability": "SUPERSEDED"
-      },
-      {
-        "count": 1,
-        "source_status": "OPEN",
-        "history_complete": true,
-        "assertions": [
-          "APPLICABLE"
-        ],
-        "lifecycle": [
-          "OPEN"
-        ],
-        "action_decisions": [
-          {
-            "status": "PENDING",
-            "resolves": false,
-            "supersedes": false
-          }
-        ],
-        "candidate_status": "OPEN",
-        "candidate_applicability": "APPLICABLE"
-      }
-    ],
-    "cross_ref_rule": "obligation and decision lifecycle/applicability are independent exact-ref reductions; no cascade"
+    "optional_fields": "omit when not semantically applicable; no null/undefined padding"
   },
   "demonstrated_authority_delegation": {
     "permission_step_count": 10,
     "reserved_authority_class": "PRINCIPAL_PRIVATE_DISCLOSURE",
     "reserved_class_mismatches": 0,
-    "authority_holder_when_usable": "AARON",
-    "valid_delegation_counts": {
+    "per_case": {
       "true": 0,
       "false": 9,
       "omitted_unknown": 1
     },
-    "outcomes": [
-      {
-        "case_id": "p1e1r4_13f14125911f4e4fafe0e128438a33ae",
-        "valid_delegation": false,
-        "reason": "privacy_scope_mismatch"
-      },
-      {
-        "case_id": "p1e1r4_2746198707b748999b539d1723fd84a2",
-        "valid_delegation": false,
-        "reason": "lease_worker_not_current_open_episode_worker"
-      },
-      {
-        "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
-        "valid_delegation": "OMITTED",
-        "authority_holder_identity_id": "UNKNOWN",
-        "health": "UNKNOWN",
-        "reason": "authority_surface_UNKNOWN/current_generation_null"
-      },
-      {
-        "case_id": "p1e1r4_593111b7f3bb4e32bd0a6456bba2942a",
-        "valid_delegation": false,
-        "reason": "lease_SUPERSEDED"
-      },
-      {
-        "case_id": "p1e1r4_a09424d46ca04ea3955094402e78966a",
-        "valid_delegation": false,
-        "reason": "lease_not_ACTIVE_selected_state"
-      },
-      {
-        "case_id": "p1e1r4_be72a0a686754345ac8bc70f34ea13f6",
-        "valid_delegation": false,
-        "reason": "no_referenced_lease"
-      },
-      {
-        "case_id": "p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8",
-        "valid_delegation": false,
-        "reason": "authority_generation_mismatch"
-      },
-      {
-        "case_id": "p1e1r4_ced4056d128542acaa474e6fb85df018",
-        "valid_delegation": false,
-        "reason": "lease_expired"
-      },
-      {
-        "case_id": "p1e1r4_d504e20ade654857a871565f2ae65fe0",
-        "valid_delegation": false,
-        "reason": "lease_REVOKED"
-      },
-      {
-        "case_id": "p1e1r4_e77d2a6a825a43f7af5b42afc5a94046",
-        "valid_delegation": false,
-        "reason": "no_referenced_lease"
+    "per_candidate_root": {
+      "true": 0,
+      "false": 18,
+      "omitted": 2
+    },
+    "unknown_case": {
+      "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+      "authority_holder_identity_id": "UNKNOWN",
+      "valid_delegation": "OMITTED",
+      "candidate_health": {
+        "applicability": "UNKNOWN",
+        "freshness": "UNKNOWN",
+        "source_identity": "UNKNOWN"
       }
+    },
+    "outcomes": [
+      [
+        "p1e1r4_13f14125911f4e4fafe0e128438a33ae",
+        false,
+        "privacy_scope_mismatch"
+      ],
+      [
+        "p1e1r4_2746198707b748999b539d1723fd84a2",
+        false,
+        "lease_worker_not_current_open_episode_worker"
+      ],
+      [
+        "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+        "OMITTED",
+        "authority_surface_UNKNOWN"
+      ],
+      [
+        "p1e1r4_593111b7f3bb4e32bd0a6456bba2942a",
+        false,
+        "lease_SUPERSEDED"
+      ],
+      [
+        "p1e1r4_a09424d46ca04ea3955094402e78966a",
+        false,
+        "lease_not_ACTIVE_selected_state"
+      ],
+      [
+        "p1e1r4_be72a0a686754345ac8bc70f34ea13f6",
+        false,
+        "no_referenced_lease"
+      ],
+      [
+        "p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8",
+        false,
+        "authority_generation_mismatch"
+      ],
+      [
+        "p1e1r4_ced4056d128542acaa474e6fb85df018",
+        false,
+        "lease_expired"
+      ],
+      [
+        "p1e1r4_d504e20ade654857a871565f2ae65fe0",
+        false,
+        "lease_REVOKED"
+      ],
+      [
+        "p1e1r4_e77d2a6a825a43f7af5b42afc5a94046",
+        false,
+        "no_referenced_lease"
+      ]
     ],
-    "generation_domain_rule": "worker identity generation and authority generation are distinct; never equate them numerically"
-  },
-  "pilot_candidate_construction": {
-    "property_order": [
-      "id",
-      "principal_id",
-      "objective_id?",
-      "obligation_id?",
-      "decision_requirement_id?",
-      "intent_id?",
-      "conflict_id?",
-      "obligation_status?",
-      "obligation_owner?",
-      "concrete_action_remaining?",
-      "decision_status?",
-      "decision_maker_identity_id?",
-      "reserved_authority_class?",
-      "authority_holder_identity_id?",
-      "valid_delegation?",
-      "escalation_required",
-      "unresolved_effect",
-      "material_conflict",
-      "informational_only",
-      "applicability",
-      "freshness",
-      "source_identity",
-      "provenance_refs",
-      "possible_duplicate_refs"
-    ],
-    "why": "NEVER_SUPPLIED",
-    "optional_property_rule": "omit when not semantically applicable; no null/undefined padding",
-    "explicit_boolean_fields": [
-      "escalation_required",
-      "unresolved_effect",
-      "material_conflict",
-      "informational_only"
-    ],
-    "common_reductions": {
-      "principal_id": "AARON exact",
-      "freshness": "UNKNOWN > STALE > CURRENT across exact used source evidence",
-      "source_identity": "CONFLICT > UNKNOWN > VERIFIED across exact used source evidence",
-      "provenance_refs": "exact-deduped UTF-8 byte-lexical union of exact used source refs",
-      "possible_duplicate_refs": "[] unless exact unresolved distinct duplicate evidence; then exact typed other refs"
-    }
-  },
-  "delegation_census": {
-    "reserved_authority_case_count": 10,
-    "valid_delegation_true": 0,
-    "valid_delegation_false": 9,
-    "valid_delegation_omitted_due_authority_unknown": 1,
-    "unknown_case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39"
-  },
-  "escalation_census": {
-    "governance_AARON_target_count": 2,
-    "escalation_required_true_count": 1,
-    "true_case_id": "p1e1r4_3592698cabc744789906162b61657890",
-    "reverse_link_not_sprayed_case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
-    "rule": "true only exact material root + exact governance escalation_target AARON; impact escalation packets prohibited"
+    "generation_domain_rule": "worker identity generation and authority generation are distinct"
   },
   "snapshot_bracket_census": {
     "STABLE": 37,
@@ -1511,32 +1174,6 @@
     "semantic_ambiguity": false,
     "binding_disposition": "use selected third-read semantics; bracket=UNSTABLE"
   },
-  "prebuild_candidate_census": {
-    "obligation_roots": 42,
-    "decision_roots": 40,
-    "unresolved_intent_roots": 1,
-    "conflict_only_roots": 1,
-    "total_candidates": 84,
-    "material_conflict_instruction_obligation_roots": 1,
-    "possible_duplicate_conflict_obligation_roots": 2,
-    "possible_duplicate_refs_populated_candidates": 2,
-    "reserved_authority_candidate_roots": 20,
-    "reserved_authority_unknown_health_roots": 2,
-    "multiple_conflict_id_candidates": 0
-  },
-  "conflict_only_candidate_rule": {
-    "count": 1,
-    "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
-    "objective_ref": "objective:0a9cb6c1b78a4910aa3d5e21fa960f51",
-    "applicability": "APPLICABLE",
-    "freshness": "CURRENT",
-    "source_identity": "VERIFIED",
-    "material_conflict": true,
-    "escalation_required": false,
-    "unresolved_effect": false,
-    "informational_only": false,
-    "possible_duplicate_refs": []
-  },
   "lifecycle_applicability_census": {
     "obligations": {
       "count": 42,
@@ -1545,9 +1182,7 @@
           "count": 35,
           "source": {
             "status": "OPEN",
-            "governance": [
-              "APPLICABLE"
-            ],
+            "governance": "APPLICABLE",
             "assertions": [
               "APPLICABLE"
             ],
@@ -1556,7 +1191,7 @@
             ]
           },
           "candidate": {
-            "obligation_status": "OPEN",
+            "status": "OPEN",
             "applicability": "APPLICABLE"
           }
         },
@@ -1564,9 +1199,7 @@
           "count": 1,
           "source": {
             "status": "OPEN",
-            "governance": [
-              "UNKNOWN"
-            ],
+            "governance": "UNKNOWN",
             "assertions": [
               "UNKNOWN"
             ],
@@ -1575,7 +1208,7 @@
             ]
           },
           "candidate": {
-            "obligation_status": "OPEN",
+            "status": "OPEN",
             "applicability": "UNKNOWN"
           }
         },
@@ -1583,9 +1216,7 @@
           "count": 1,
           "source": {
             "status": "ABANDONED",
-            "governance": [
-              "APPLICABLE"
-            ],
+            "governance": "APPLICABLE",
             "assertions": [
               "APPLICABLE"
             ],
@@ -1595,24 +1226,23 @@
             ]
           },
           "candidate": {
-            "obligation_status": "ABANDONED",
+            "status": "ABANDONED",
             "applicability": "APPLICABLE"
-          }
+          },
+          "note": "terminal status defeats AR-2; later exact applicability remains APPLICABLE"
         },
         {
           "count": 2,
           "source": {
             "status": "OPEN",
-            "governance": [
-              "APPLICABLE"
-            ],
+            "governance": "APPLICABLE",
             "assertions": [
               "APPLICABLE"
             ],
             "lifecycle": []
           },
           "candidate": {
-            "obligation_status": "OPEN",
+            "status": "OPEN",
             "applicability": "APPLICABLE"
           }
         },
@@ -1620,9 +1250,7 @@
           "count": 2,
           "source": {
             "status": "SATISFIED",
-            "governance": [
-              "SATISFIED"
-            ],
+            "governance": "SATISFIED",
             "assertions": [
               "SATISFIED"
             ],
@@ -1632,7 +1260,7 @@
             ]
           },
           "candidate": {
-            "obligation_status": "SATISFIED",
+            "status": "SATISFIED",
             "applicability": "SATISFIED"
           }
         },
@@ -1640,9 +1268,7 @@
           "count": 1,
           "source": {
             "status": "SUPERSEDED",
-            "governance": [
-              "SUPERSEDED"
-            ],
+            "governance": "SUPERSEDED",
             "assertions": [
               "SUPERSEDED"
             ],
@@ -1652,12 +1278,11 @@
             ]
           },
           "candidate": {
-            "obligation_status": "SUPERSEDED",
+            "status": "SUPERSEDED",
             "applicability": "SUPERSEDED"
           }
         }
-      ],
-      "concrete_action_remaining_rule": "action_remaining===true && concrete_action nonempty && informational_only===false; candidate classifier separately gates terminal status"
+      ]
     },
     "decisions": {
       "count": 40,
@@ -1666,17 +1291,13 @@
           "count": 33,
           "source": {
             "status": "OPEN",
-            "history_complete": true,
             "assertions": [
               "APPLICABLE"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": []
+            "action_decision": "NONE"
           },
           "candidate": {
-            "decision_status": "OPEN",
+            "status": "OPEN",
             "applicability": "APPLICABLE"
           }
         },
@@ -1684,17 +1305,13 @@
           "count": 1,
           "source": {
             "status": "OPEN",
-            "history_complete": true,
             "assertions": [
               "UNKNOWN"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": []
+            "action_decision": "NONE"
           },
           "candidate": {
-            "decision_status": "OPEN",
+            "status": "OPEN",
             "applicability": "UNKNOWN"
           }
         },
@@ -1702,18 +1319,14 @@
           "count": 1,
           "source": {
             "status": "OPEN",
-            "history_complete": true,
             "assertions": [
               "APPLICABLE",
               "APPLICABLE"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": []
+            "action_decision": "NONE"
           },
           "candidate": {
-            "decision_status": "OPEN",
+            "status": "OPEN",
             "applicability": "APPLICABLE"
           }
         },
@@ -1721,19 +1334,13 @@
           "count": 1,
           "source": {
             "status": "RESOLVED",
-            "history_complete": true,
             "assertions": [
               "APPLICABLE"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": [
-              "RESOLVED_EXACT"
-            ]
+            "action_decision": "RESOLVED_EXACT"
           },
           "candidate": {
-            "decision_status": "RESOLVED",
+            "status": "RESOLVED",
             "applicability": "APPLICABLE"
           }
         },
@@ -1741,19 +1348,13 @@
           "count": 2,
           "source": {
             "status": "RESOLVED",
-            "history_complete": true,
             "assertions": [
               "SATISFIED"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": [
-              "RESOLVED_EXACT"
-            ]
+            "action_decision": "RESOLVED_EXACT"
           },
           "candidate": {
-            "decision_status": "RESOLVED",
+            "status": "RESOLVED",
             "applicability": "SATISFIED"
           }
         },
@@ -1761,19 +1362,13 @@
           "count": 1,
           "source": {
             "status": "SUPERSEDED",
-            "history_complete": true,
             "assertions": [
               "SUPERSEDED"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": [
-              "SUPERSEDED_EXACT"
-            ]
+            "action_decision": "SUPERSEDED_EXACT"
           },
           "candidate": {
-            "decision_status": "SUPERSEDED",
+            "status": "SUPERSEDED",
             "applicability": "SUPERSEDED"
           }
         },
@@ -1781,19 +1376,13 @@
           "count": 1,
           "source": {
             "status": "OPEN",
-            "history_complete": true,
             "assertions": [
               "APPLICABLE"
             ],
-            "lifecycle": [
-              "OPEN"
-            ],
-            "action_decisions": [
-              "PENDING_NONRESOLVING"
-            ]
+            "action_decision": "PENDING_NONRESOLVING"
           },
           "candidate": {
-            "decision_status": "OPEN",
+            "status": "OPEN",
             "applicability": "APPLICABLE"
           }
         }
@@ -1807,16 +1396,17 @@
     "unresolved_intent": 1,
     "conflict_only": 1,
     "applicability": {
-      "APPLICABLE": 75,
-      "UNKNOWN": 3,
+      "APPLICABLE": 73,
+      "UNKNOWN": 5,
       "SATISFIED": 4,
       "SUPERSEDED": 2,
       "ABANDONED": 0
     },
+    "load_bearing_unknown_roots": 5,
     "booleans": {
+      "escalation_required_true": 0,
       "unresolved_effect_true": 1,
       "material_conflict_true": 4,
-      "escalation_required_true": 1,
       "informational_only_true": 1
     },
     "conflict_id_present": 4,
@@ -1844,10 +1434,9 @@
       "objective",
       "obligation",
       "unique obligation_governance",
-      "exact obligation-scoped applicability_assertions",
+      "exact obligation applicability_assertions",
       "exact obligation lifecycle_events",
-      "required_next_step when reserved",
-      "authority state/lease/identity/work_episode when reserved",
+      "required_next_step + authority evidence when reserved",
       "attached conflict/source-link evidence"
     ],
     "decision": [
@@ -1857,29 +1446,20 @@
       "exact decision lifecycle_events",
       "exact action_decisions",
       "required_next_step + linked governance/authority when reserved",
-      "directly attached conflict evidence"
+      "direct attached conflict evidence"
     ],
     "intent": [
       "objective",
       "intent",
       "unique linked effect_record",
       "exact intent/effect applicability/lifecycle",
-      "directly attached conflict evidence"
+      "direct attached conflict evidence"
     ],
     "conflict_only": [
       "exact conflict-generating records",
-      "exact objective/obligation link records required for conflict anchor set"
-    ]
-  },
-  "authority_unknown_representation": {
-    "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
-    "affected_candidate_roots": 2,
-    "authority_holder_identity_id": "UNKNOWN",
-    "valid_delegation": "OMITTED",
-    "item_applicability": "PRESERVE_EXACT_SOURCE_VALUE",
-    "item_freshness": "PRESERVE_EXACT_SOURCE_VALUE",
-    "item_source_identity": "PRESERVE_EXACT_SOURCE_VALUE",
-    "reason": "dedicated frozen candidate material-authority unknown path; no cross-dimension erasure"
+      "exact objective/obligation link records required for anchor closure"
+    ],
+    "health_reduction": "UNKNOWN > STALE > CURRENT; CONFLICT > UNKNOWN > VERIFIED; authority UNKNOWN is load-bearing on reserved roots"
   },
   "pilot_candidate_field_presence": {
     "id": 84,
@@ -1931,14 +1511,21 @@
       "RESOLVED": 3,
       "SUPERSEDED": 1
     },
+    "applicability": {
+      "APPLICABLE": 73,
+      "UNKNOWN": 5,
+      "SATISFIED": 4,
+      "SUPERSEDED": 2,
+      "ABANDONED": 0
+    },
     "freshness": {
-      "CURRENT": 84,
-      "STALE": 0,
-      "UNKNOWN": 0
+      "CURRENT": 82,
+      "UNKNOWN": 2,
+      "STALE": 0
     },
     "source_identity": {
-      "VERIFIED": 84,
-      "UNKNOWN": 0,
+      "VERIFIED": 82,
+      "UNKNOWN": 2,
       "CONFLICT": 0
     },
     "provenance_refs_length": {
