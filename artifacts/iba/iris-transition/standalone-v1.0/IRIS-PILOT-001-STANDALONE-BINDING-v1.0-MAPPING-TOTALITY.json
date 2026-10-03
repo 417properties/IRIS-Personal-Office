@@ -1266,5 +1266,71 @@
       }
     ],
     "cross_ref_rule": "obligation and decision lifecycle/applicability are independent exact-ref reductions; no cascade"
+  },
+  "demonstrated_authority_delegation": {
+    "permission_step_count": 10,
+    "reserved_authority_class": "PRINCIPAL_PRIVATE_DISCLOSURE",
+    "reserved_class_mismatches": 0,
+    "authority_holder_when_usable": "AARON",
+    "valid_delegation_counts": {
+      "true": 0,
+      "false": 9,
+      "omitted_unknown": 1
+    },
+    "outcomes": [
+      {
+        "case_id": "p1e1r4_13f14125911f4e4fafe0e128438a33ae",
+        "valid_delegation": false,
+        "reason": "privacy_scope_mismatch"
+      },
+      {
+        "case_id": "p1e1r4_2746198707b748999b539d1723fd84a2",
+        "valid_delegation": false,
+        "reason": "lease_worker_not_current_open_episode_worker"
+      },
+      {
+        "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+        "valid_delegation": "OMITTED",
+        "authority_holder_identity_id": "UNKNOWN",
+        "health": "UNKNOWN",
+        "reason": "authority_surface_UNKNOWN/current_generation_null"
+      },
+      {
+        "case_id": "p1e1r4_593111b7f3bb4e32bd0a6456bba2942a",
+        "valid_delegation": false,
+        "reason": "lease_SUPERSEDED"
+      },
+      {
+        "case_id": "p1e1r4_a09424d46ca04ea3955094402e78966a",
+        "valid_delegation": false,
+        "reason": "lease_not_ACTIVE_selected_state"
+      },
+      {
+        "case_id": "p1e1r4_be72a0a686754345ac8bc70f34ea13f6",
+        "valid_delegation": false,
+        "reason": "no_referenced_lease"
+      },
+      {
+        "case_id": "p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8",
+        "valid_delegation": false,
+        "reason": "authority_generation_mismatch"
+      },
+      {
+        "case_id": "p1e1r4_ced4056d128542acaa474e6fb85df018",
+        "valid_delegation": false,
+        "reason": "lease_expired"
+      },
+      {
+        "case_id": "p1e1r4_d504e20ade654857a871565f2ae65fe0",
+        "valid_delegation": false,
+        "reason": "lease_REVOKED"
+      },
+      {
+        "case_id": "p1e1r4_e77d2a6a825a43f7af5b42afc5a94046",
+        "valid_delegation": false,
+        "reason": "no_referenced_lease"
+      }
+    ],
+    "generation_domain_rule": "worker identity generation and authority generation are distinct; never equate them numerically"
   }
 }
