@@ -216,5 +216,15 @@
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
-  "preflight_version": "v1.0-canonical-totality"
+  "preflight_version": "v1.0-canonical-totality",
+  "executable_verifier": {
+    "runtime": "node",
+    "source_path": "artifacts/iba/iris-transition/standalone-v1.0/verify-standalone-v1.0.mjs",
+    "retired_alternate_verifiers": [],
+    "result_path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-VERIFIER-RESULT.json",
+    "package_index_path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-PACKAGE-INDEX.json",
+    "required_exit_code": 0,
+    "required_failures": [],
+    "required_disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES"
+  }
 }
