@@ -391,5 +391,578 @@
     ],
     "top_level_shape_variants": 1
   },
-  "totality_policy": "Every demonstrated top-level field, source envelope token, record type and transformation-relevant state has an explicit rule/disposition. Any demonstrated shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default."
+  "totality_policy": "Every demonstrated top-level field, source envelope token, record type and transformation-relevant state has an explicit rule/disposition. Any demonstrated shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default.",
+  "demonstrated_token_domains": {
+    "envelope": {
+      "objectives": {
+        "availability": [
+          "PRESENT"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "obligations": {
+        "availability": [
+          "PRESENT"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "obligation_governance": {
+        "availability": [
+          "PRESENT"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "decision_requirements": {
+        "availability": [
+          "PRESENT"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "authority_state": {
+        "availability": [
+          "PRESENT",
+          "UNKNOWN"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "intent_effect_state": {
+        "availability": [
+          "PRESENT"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "current_assertions": {
+        "availability": [
+          "PRESENT"
+        ],
+        "enumeration_complete": [
+          "true"
+        ],
+        "principal_identity": [
+          "AARON"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      },
+      "qualified_big_packets": {
+        "availability": [
+          "PRESENT",
+          "UNAVAILABLE"
+        ],
+        "enumeration_complete": [
+          "false",
+          "true"
+        ],
+        "principal_identity": [
+          "AARON",
+          "UNKNOWN"
+        ],
+        "provenance_verified": [
+          "true"
+        ]
+      }
+    },
+    "record": {
+      "obligation": {
+        "status": [
+          "ABANDONED",
+          "OPEN",
+          "SATISFIED",
+          "SUPERSEDED"
+        ],
+        "owner_identity_id": [
+          "AARON",
+          "EXTERNAL_ORG",
+          "IRIS",
+          "UNKNOWN"
+        ],
+        "action_remaining": [
+          "false",
+          "true"
+        ],
+        "informational_only": [
+          "false",
+          "true"
+        ]
+      },
+      "obligation_governance": {
+        "applicability_state": [
+          "APPLICABLE",
+          "SATISFIED",
+          "SUPERSEDED",
+          "UNKNOWN"
+        ],
+        "owner_identity_id": [
+          "AARON",
+          "EXTERNAL_ORG",
+          "IRIS",
+          "UNKNOWN"
+        ],
+        "decision_maker_identity_id": [
+          "AARON",
+          "IRIS",
+          "UNKNOWN"
+        ],
+        "authority_holder_identity_id": [
+          "<NULL>",
+          "AARON"
+        ],
+        "reserved_authority_class": [
+          "<NULL>",
+          "PRINCIPAL_PRIVATE_DISCLOSURE"
+        ]
+      },
+      "decision_requirement": {
+        "status": [
+          "OPEN",
+          "RESOLVED",
+          "SUPERSEDED"
+        ],
+        "decision_history_complete": [
+          "true"
+        ],
+        "decision_maker_identity_id": [
+          "AARON",
+          "IRIS",
+          "UNKNOWN"
+        ],
+        "reserved_authority_class": [
+          "<NULL>",
+          "PRINCIPAL_PRIVATE_DISCLOSURE"
+        ]
+      },
+      "applicability_assertion": {
+        "applicability": [
+          "APPLICABLE",
+          "SATISFIED",
+          "SUPERSEDED",
+          "UNKNOWN"
+        ]
+      },
+      "lifecycle_event": {
+        "event_kind": [
+          "ABANDONED",
+          "OPEN",
+          "SATISFIED",
+          "SUPERSEDED"
+        ]
+      },
+      "authority_generation_state": {
+        "current_generation": [
+          "2",
+          "<NULL>"
+        ],
+        "source_history_complete": [
+          "true"
+        ],
+        "operation_scope": [
+          "local-index-order"
+        ],
+        "privacy_policy_version": [
+          "1"
+        ],
+        "privacy_scope": [
+          "principal-private"
+        ],
+        "authority_policy_version": [
+          "1"
+        ]
+      },
+      "identity": {
+        "identity_kind": [
+          "IRIS",
+          "WORKER"
+        ],
+        "status": [
+          "ACTIVE",
+          "REPLACED"
+        ],
+        "generation": [
+          "1",
+          "2",
+          "<ABSENT>"
+        ],
+        "authority_envelope": [
+          "<ABSENT>",
+          "ZERO_EXTERNAL_EFFECT"
+        ],
+        "privacy_envelope": [
+          "<ABSENT>",
+          "principal-private"
+        ]
+      },
+      "work_episode": {
+        "status": [
+          "OPEN"
+        ]
+      },
+      "current_assertion": {
+        "applicability": [
+          "APPLICABLE"
+        ],
+        "predicate": [
+          "exclusive_index_owner",
+          "reference_index_owner"
+        ],
+        "value": [
+          "AARON",
+          "TEAM_X",
+          "TEAM_Y"
+        ]
+      },
+      "big_packet": {
+        "admission": [
+          "QUALIFIED_IN_IRIS_EVIDENCE"
+        ],
+        "authority_effect": [
+          "NONE"
+        ],
+        "source_current_mutation_allowed": [
+          "false"
+        ],
+        "source_principal_id": [
+          "AARON",
+          "UNKNOWN"
+        ]
+      },
+      "required_next_step": {
+        "status": [
+          "OPEN"
+        ],
+        "applicability": [
+          "APPLICABLE"
+        ],
+        "permission_needed": [
+          "true"
+        ],
+        "reserved_authority_class": [
+          "PRINCIPAL_PRIVATE_DISCLOSURE"
+        ]
+      },
+      "authority_lease": {
+        "state": [
+          "ACTIVE",
+          "REVOKED",
+          "SUPERSEDED"
+        ],
+        "generation": [
+          "1",
+          "2"
+        ],
+        "principal": [
+          "AARON"
+        ],
+        "principal_id": [
+          "AARON"
+        ],
+        "operation_scope": [
+          "local-index-order"
+        ],
+        "privacy_policy_version": [
+          "1"
+        ],
+        "privacy_scope": [
+          "different-private-scope",
+          "principal-private"
+        ],
+        "authority_policy_version": [
+          "1"
+        ],
+        "test_only": [
+          "true"
+        ]
+      },
+      "instruction": {
+        "issuer": [
+          "AARON"
+        ]
+      },
+      "device_observation": {
+        "device_authenticated": [
+          "true"
+        ],
+        "source_identity_verified": [
+          "false"
+        ],
+        "canonicalization_authority": [
+          "NONE"
+        ],
+        "persistence": [
+          "EPHEMERAL_WORKING"
+        ]
+      },
+      "intent": {
+        "status": [
+          "SUBMITTED_UNVERIFIED",
+          "VERIFIED"
+        ],
+        "consequential": [
+          "true"
+        ]
+      },
+      "effect_record": {
+        "state": [
+          "SUBMITTED_UNVERIFIED",
+          "VERIFIED"
+        ],
+        "consequential": [
+          "true"
+        ],
+        "receipt_present": [
+          "true"
+        ],
+        "verification_present": [
+          "false",
+          "true"
+        ],
+        "retry_permission": [
+          "false"
+        ]
+      },
+      "informational_receipt": {
+        "requires_action": [
+          "false"
+        ]
+      },
+      "action_decision": {
+        "status": [
+          "PENDING",
+          "RESOLVED",
+          "SUPERSEDED"
+        ]
+      },
+      "version_event": {
+        "prior_semantic_values_retained": [
+          "true"
+        ]
+      },
+      "source_link_observation": {
+        "identity_proven": [
+          "false",
+          "true"
+        ],
+        "possible_same_underlying_request": [
+          "true"
+        ],
+        "authoritative_merge_ref": [
+          "<NULL>"
+        ]
+      },
+      "source_packet": {
+        "admission": [
+          "QUARANTINED"
+        ],
+        "authority_effect": [
+          "NONE"
+        ],
+        "source_identity_verified": [
+          "true"
+        ],
+        "source_principal_id": [
+          "OTHER_PRINCIPAL"
+        ],
+        "privacy_scope": [
+          "other-principal-private"
+        ]
+      },
+      "provider_session": {
+        "canonical_admission": [
+          "false"
+        ],
+        "credential_retained": [
+          "true"
+        ],
+        "session_state": [
+          "LIVE"
+        ]
+      }
+    }
+  },
+  "source_evaluation_tuple_census": {
+    "objectives": [
+      {
+        "count": 40,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      }
+    ],
+    "obligations": [
+      {
+        "count": 40,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      }
+    ],
+    "obligation_governance": [
+      {
+        "count": 40,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      }
+    ],
+    "decision_requirements": [
+      {
+        "count": 40,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      }
+    ],
+    "intent_effect_state": [
+      {
+        "count": 40,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      }
+    ],
+    "current_assertions": [
+      {
+        "count": 40,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      }
+    ],
+    "authority_state": [
+      {
+        "count": 39,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      },
+      {
+        "count": 1,
+        "present": false,
+        "principal_match": true,
+        "identity": "UNKNOWN",
+        "applicability": "UNKNOWN",
+        "freshness": "UNKNOWN",
+        "provenance_ok": true,
+        "partial": true
+      }
+    ],
+    "qualified_big_packets": [
+      {
+        "count": 37,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      },
+      {
+        "count": 1,
+        "present": true,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "STALE",
+        "provenance_ok": true,
+        "partial": false
+      },
+      {
+        "count": 1,
+        "present": true,
+        "principal_match": false,
+        "identity": "UNKNOWN",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": false
+      },
+      {
+        "count": 1,
+        "present": false,
+        "principal_match": true,
+        "identity": "VERIFIED",
+        "applicability": "APPLICABLE",
+        "freshness": "CURRENT",
+        "provenance_ok": true,
+        "partial": true
+      }
+    ]
+  }
 }
