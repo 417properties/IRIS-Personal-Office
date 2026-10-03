@@ -113,9 +113,15 @@ F092 delegation validator compares authority generation only to authority curren
 F093 exact delegation outcomes are true=0 / false=9 / omitted-UNKNOWN=1 with the published failure reasons.
 F094 UNKNOWN authority surface cannot supply positive authority holder/delegation; holder becomes UNKNOWN, valid_delegation omitted, health degraded UNKNOWN.
 F095 provider session/credential or predecessor worker evidence never upgrades delegation.
+F096 the sole UNSTABLE case has only nonsemantic updated_at version drift with prior_semantic_values_retained=true; selected third-read semantics are unique and bracket remains UNSTABLE.
+F097 semantic ambiguity under UNSTABLE still triggers UNSTABLE_RECORD_SELECTION_AMBIGUOUS; version-number drift alone does not.
+F098 pre-build root counts are exactly 42 obligation + 40 decision + 1 unresolved intent + 1 conflict-only = 84 candidates.
+F099 demonstrated conflict attachment counts are exact: 1 instruction-conflict obligation root, 1 current-state conflict-only root, 2 duplicate-conflict obligation roots.
+F100 conflict-only candidate fields and property order match §9.3; current-state conflict-only health is APPLICABLE/CURRENT/VERIFIED.
+F101 reserved-authority candidate roots =20 and multiple-conflict-id candidate count=0.
 
 ## Success
-All F001-F095 PASS and static preflight reports:
+All F001-F101 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
