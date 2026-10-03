@@ -122,9 +122,12 @@ F101 reserved-authority candidate roots =20 and multiple-conflict-id candidate c
 F102 current-state conflict anchor closure includes both incompatible assertion records, exact objective, and linked obligation; exact ID is conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613; conf_5936... is forbidden stale identity.
 F103 authority UNKNOWN preserves independently source-known item applicability/freshness/source_identity; uncertainty is represented by authority_holder_identity_id=UNKNOWN + omitted valid_delegation.
 F104 stale/superseded rule blocks must not coexist with canonical v1.0 rule blocks in binding/matrix/preflight.
+F105 load-bearing unknown classification roots are exactly 6: applicability UNKNOWN=3, authority-holder UNKNOWN=2, decision-maker UNKNOWN=1; the sets are disjoint.
+F106 OPEN decision case p1e1r4_40cad8d6ee7440a5bd0fe22d674f9db7 must preserve decision_maker_identity_id=UNKNOWN and reach the frozen candidate material-unknown path; it cannot be omitted or coerced.
+F107 all 84 candidates reproduce the published field census, including owner/decision-maker/status/boolean/freshness/source_identity/property-presence counts.
 
 ## Success
-All F001-F104 PASS and static preflight reports:
+All F001-F107 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
