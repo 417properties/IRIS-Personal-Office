@@ -78,9 +78,14 @@ F057 any future non-demonstrated shape -> same named HOLD.
 F058 preflight failures array exactly empty before review.
 F059 population remains frozen; no E1 regeneration.
 F060 candidate remains frozen; no source/tests mutation.
+F061 every case-level top-level field has an explicit v1.0 disposition; no unlisted top-level field/default.
+F062 snapshot_time is consistency-only and cannot override the selected snapshot read.
+F063 all envelope record_refs/source_refs and record source_refs resolve inside the exact case.
+F064 every obligation has exactly one governance join and every intent exactly one effect join in the demonstrated population.
+F065 all source applicability/lifecycle tokens that can reach PilotCandidate fit the frozen candidate domain or named HOLD.
 
 ## Success
-All F001-F060 PASS and static preflight reports:
+All F001-F065 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
