@@ -1389,5 +1389,64 @@
     "true_case_id": "p1e1r4_3592698cabc744789906162b61657890",
     "reverse_link_not_sprayed_case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
     "rule": "true only exact material root + exact governance escalation_target AARON; impact escalation packets prohibited"
+  },
+  "snapshot_bracket_census": {
+    "STABLE": 37,
+    "RERUN_STABLE": 2,
+    "UNSTABLE": 1
+  },
+  "unstable_case": {
+    "case_id": "p1e1r4_d374c5fb7c064f98bad29f633804d4c8",
+    "drift_ref": "obligation:96315a710ff042b3a3c4a90eae2e0ce1",
+    "second_pair_versions": [
+      2,
+      3
+    ],
+    "version_events": [
+      {
+        "from_version": 1,
+        "to_version": 2,
+        "changed_fields": [
+          "updated_at"
+        ],
+        "prior_semantic_values_retained": true
+      },
+      {
+        "from_version": 2,
+        "to_version": 3,
+        "changed_fields": [
+          "updated_at"
+        ],
+        "prior_semantic_values_retained": true
+      }
+    ],
+    "semantic_ambiguity": false,
+    "binding_disposition": "use selected third-read semantics; bracket=UNSTABLE"
+  },
+  "prebuild_candidate_census": {
+    "obligation_roots": 42,
+    "decision_roots": 40,
+    "unresolved_intent_roots": 1,
+    "conflict_only_roots": 1,
+    "total_candidates": 84,
+    "material_conflict_instruction_obligation_roots": 1,
+    "possible_duplicate_conflict_obligation_roots": 2,
+    "possible_duplicate_refs_populated_candidates": 2,
+    "reserved_authority_candidate_roots": 20,
+    "reserved_authority_unknown_health_roots": 2,
+    "multiple_conflict_id_candidates": 0
+  },
+  "conflict_only_candidate_rule": {
+    "count": 1,
+    "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+    "objective_ref": "objective:0a9cb6c1b78a4910aa3d5e21fa960f51",
+    "applicability": "APPLICABLE",
+    "freshness": "CURRENT",
+    "source_identity": "VERIFIED",
+    "material_conflict": true,
+    "escalation_required": false,
+    "unresolved_effect": false,
+    "informational_only": false,
+    "possible_duplicate_refs": []
   }
 }
