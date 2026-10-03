@@ -1711,5 +1711,75 @@
         }
       ]
     }
+  },
+  "candidate_root_census": {
+    "obligation_roots": 42,
+    "decision_roots": 40,
+    "unresolved_intent_roots": 1,
+    "conflict_only_roots": 1,
+    "total_roots": 84,
+    "load_bearing_unknown_roots": 5,
+    "unknown_breakdown": [
+      {
+        "case_id": "p1e1r4_2b75131e44224cd98957c79b899fb168",
+        "roots": 2,
+        "cause": "exact obligation/decision applicability UNKNOWN"
+      },
+      {
+        "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+        "roots": 2,
+        "cause": "reserved-authority roots degraded because authority_state availability UNKNOWN; valid_delegation omitted"
+      },
+      {
+        "case_id": "p1e1r4_6f43027d04774acda0ac9dd58bc2f4af",
+        "roots": 1,
+        "cause": "unresolved intent has no exact scoped applicability -> UNKNOWN"
+      }
+    ],
+    "material_conflict_true_roots": 4,
+    "possible_duplicate_refs_nonempty_roots": 2,
+    "escalation_required_true_roots": 1,
+    "unresolved_effect_true_roots": 1,
+    "informational_only_true_roots": 1
+  },
+  "privacy_exclusion_census": {
+    "total_records": 1,
+    "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
+    "privacyExcluded": [
+      "source_packet:b8ac8fd78e794c25b476e145f4e6006b"
+    ],
+    "other_cases_empty": 39
+  },
+  "candidate_evidence_closure": {
+    "obligation": [
+      "objective",
+      "obligation",
+      "unique obligation_governance",
+      "exact obligation-scoped applicability_assertions",
+      "exact obligation lifecycle_events",
+      "required_next_step when reserved",
+      "authority state/lease/identity/work_episode when reserved",
+      "attached conflict/source-link evidence"
+    ],
+    "decision": [
+      "objective",
+      "decision_requirement",
+      "exact decision applicability_assertions",
+      "exact decision lifecycle_events",
+      "exact action_decisions",
+      "required_next_step + linked governance/authority when reserved",
+      "directly attached conflict evidence"
+    ],
+    "intent": [
+      "objective",
+      "intent",
+      "unique linked effect_record",
+      "exact intent/effect applicability/lifecycle",
+      "directly attached conflict evidence"
+    ],
+    "conflict_only": [
+      "exact conflict-generating records",
+      "exact objective/obligation link records required for conflict anchor set"
+    ]
   }
 }
