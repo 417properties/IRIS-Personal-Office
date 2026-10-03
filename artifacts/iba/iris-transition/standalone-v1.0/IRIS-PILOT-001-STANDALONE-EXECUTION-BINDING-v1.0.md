@@ -57,10 +57,15 @@ Snapshot reads are ordered dependency observations:
 - second drift -> bracket `UNSTABLE`;
 - malformed 1/3/>4 structure -> `BINDING_HOLD/SNAPSHOT_BRACKET_STRUCTURE_INVALID`.
 
-Set `started_at=emitted_at=selected read_at`. Wall clock, file time, Git time, and publication time are prohibited. If UNSTABLE leaves a canonical record version non-unique: `BINDING_HOLD/UNSTABLE_RECORD_SELECTION_AMBIGUOUS`.
+Set `started_at=emitted_at=selected read_at`. Wall clock, file time, Git time, and publication time are prohibited. UNSTABLE is a coverage state, not automatically a semantic-binding HOLD. If the second drift leaves candidate-relevant semantic fields non-unique, fail `BINDING_HOLD/UNSTABLE_RECORD_SELECTION_AMBIGUOUS`; if exact version_event evidence proves the drift changes only nonsemantic fields and `prior_semantic_values_retained=true`, preserve the selected third-read semantic values and pass `bracket=UNSTABLE` to the frozen candidate.
 
 ProjectionInput property insertion order is exactly:
 `candidates,sources,conflicts,privacyExcluded,bracket,started_at,emitted_at`.
+
+### 2.2 Frozen UNSTABLE semantic-equivalence case
+
+Exactly one frozen case is UNSTABLE: `p1e1r4_d374c5fb7c064f98bad29f633804d4c8`.
+Its second-pair drift is `obligation:96315a710ff042b3a3c4a90eae2e0ce1` version 2 -> 3. Exact version events are 1->2 and 2->3; both list only `changed_fields=["updated_at"]` and `prior_semantic_values_retained=true`. Therefore all candidate-relevant obligation semantic fields remain uniquely inherited from the selected canonical record while `bracket=UNSTABLE`. This case does NOT trigger UNSTABLE_RECORD_SELECTION_AMBIGUOUS.
 
 ## 2.1 Complete top-level case-field disposition
 
@@ -472,6 +477,30 @@ The frozen 40-case population demonstrates exactly:
 
 No `AUTHORITY_CONFLICT`, `EFFECT_REALITY_CONFLICT`, or `SOURCE_IDENTITY_CONFLICT` generating shape is demonstrated in this frozen population. Encountering one during execution of these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
+### 9.3 Exact conflict attachment and conflict-only root construction
+
+For the frozen demonstrated conflict shapes:
+- exclusive-instruction conflict on `obligation:b3c3c67639594094abc930cc450fd274`: attach the one deterministic conflict_id to that obligation candidate; `material_conflict=true`.
+- exclusive-current-state conflict on `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`: no obligation/decision/intent root is exactly referenced by the conflicting assertions, so create exactly one conflict-only candidate.
+- unresolved possible duplicate between `obligation:af6abeb0cf104e19bf59b400088a90b7` and `obligation:c1805592acb24fb884c9ec909d348408`: attach the same one deterministic conflict_id to both exact obligation candidates; each gets the other exact typed obligation ref in `possible_duplicate_refs`.
+- proven self-identity case creates no conflict and no duplicate refs.
+
+The conflict-only candidate is constructed exactly:
+- `id=e1:<case_id>:conflict:<conf_id>`;
+- `principal_id=AARON`;
+- `objective_id` = raw payload of the exact objective anchor when the conflict evidence uniquely carries that objective; otherwise omit;
+- `conflict_id=<conf_id>`;
+- `escalation_required=false`;
+- `unresolved_effect=false`;
+- `material_conflict=true`;
+- `informational_only=false`;
+- `applicability`, `freshness`, `source_identity`, and `provenance_refs` derive only from the exact conflict evidence under §7.4;
+- `possible_duplicate_refs=[]`;
+- all unrelated obligation/decision/intent/authority fields omitted;
+- exact property order remains §7.5.
+
+For the demonstrated current-state conflict, both exact conflicting current assertions are APPLICABLE, current, provenance-verified Aaron evidence; therefore the conflict-only root has `applicability=APPLICABLE / freshness=CURRENT / source_identity=VERIFIED`.
+
 ### 9.2 Duplicate/source-link identity table
 
 Duplicate/source-link decision order is total:
@@ -552,6 +581,23 @@ Any future execution shape outside the frozen demonstrated grammar:
 `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
 No implicit/default/discretionary transformation is permitted.
+
+### 13.1 Exact pre-build candidate census
+
+The candidate-neutral preflight must reproduce exactly, before buildProjection:
+- obligation roots = 42;
+- decision roots = 40;
+- unresolved-intent roots = 1;
+- conflict-only roots = 1;
+- total PilotCandidate objects = 84;
+- instruction-conflict obligation roots carrying material_conflict = 1;
+- possible-duplicate obligation roots carrying the duplicate conflict = 2;
+- possible_duplicate_refs-populated candidates = 2;
+- reserved-authority candidate roots = 20 (10 linked obligation + 10 linked decision roots);
+- reserved-authority roots with UNKNOWN authority health = 2;
+- no candidate requires more than one conflict_id.
+
+Any different pre-build candidate census for these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
 ## 14. Review package and acceptance
 
