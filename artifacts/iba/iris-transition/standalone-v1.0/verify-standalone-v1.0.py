@@ -41,7 +41,7 @@ EXPECTED_AVAIL = Counter({"PRESENT":318,"UNKNOWN":1,"UNAVAILABLE":1})
 EXPECTED_BRACKETS = Counter({"STABLE":37,"RERUN_STABLE":2,"UNSTABLE":1})
 EXPECTED_TYPED = Counter({"objective":40,"obligation":42,"decision_requirement":40,"intent":2})
 EXPECTED_ROOTS = Counter({"obligation":42,"decision":40,"unresolved_intent":1,"conflict_only":1})
-EXPECTED_APPLICABILITY = Counter({"APPLICABLE":75,"UNKNOWN":3,"SATISFIED":4,"SUPERSEDED":2})
+EXPECTED_APPLICABILITY = Counter({"APPLICABLE":73,"UNKNOWN":5,"SATISFIED":4,"SUPERSEDED":2})
 EXPECTED_PRIVACY = ("p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
                     "source_packet:b8ac8fd78e794c25b476e145f4e6006b")
 EXPECTED_CONFLICTS = {
@@ -58,8 +58,9 @@ EXPECTED_CONFLICTS = {
    "anchors":[
      "assertion:9f4a8b630cdc4067a81be6875ee05386",
      "current_assertion:6f7e30c15ed84aa893f311aa237ce2be",
-     "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"],
-   "id":"conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb"},
+     "objective:0a9cb6c1b78a4910aa3d5e21fa960f51",
+     "obligation:9902f0b12e9c4b20873e6e809e27d179"],
+   "id":"conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613"},
  "p1e1r4_ac08b94cee624ed7a450e17e3389a163": {
    "class":"POSSIBLE_DUPLICATE_UNRESOLVED",
    "anchors":[
@@ -242,14 +243,16 @@ def main():
                     obl=byref[a["subject_ref"]]
                     anchors=[a["id"],b["id"],obl["objective_ref"],obl["id"]]
                     generated.append(("INCOMPATIBLE_OBLIGATIONS",*exact_conflict(c,"INCOMPATIBLE_OBLIGATIONS",anchors)))
-                    material_conflict_roots+=1; conflict_field_roots+=1; escalation_true+=1
+                    material_conflict_roots+=1; conflict_field_roots+=1
         cur_conflict=False
         for i,a in enumerate(current):
             for b in current[i+1:]:
                 overlap=set(a.get("subject_refs",[])) & set(b.get("subject_refs",[]))
                 if a["predicate"]==b["predicate"] and a["value"]!=b["value"] and overlap:
                     objective=sorted(overlap)[0]
-                    anchors=[a["id"],b["id"],objective]
+                    linked=[o["id"] for o in obs if o.get("objective_ref")==objective]
+                    if len(linked)!=1: fail(f"{cid}: current-state objective link count {len(linked)}", failures)
+                    anchors=[a["id"],b["id"],objective,*linked]
                     generated.append(("INCOMPATIBLE_CURRENT_STATE",*exact_conflict(c,"INCOMPATIBLE_CURRENT_STATE",anchors)))
                     cur_conflict=True
         if cur_conflict:
@@ -281,7 +284,7 @@ def main():
             for n in nexts:
                 reserved_root_count += 2
                 if authority_env["availability"]!="PRESENT" or not state:
-                    holder["UNKNOWN"]+=2; delegation["OMITTED"]+=2
+                    holder["UNKNOWN"]+=2; delegation["OMITTED"]+=2; authority_unknown_roots+=2
                 else:
                     gs=[g for g in gov if g["obligation_ref"]==n["subject_ref"]]
                     ah=gs[0].get("authority_holder_identity_id") if len(gs)==1 else None
@@ -310,11 +313,15 @@ def main():
     if typed!=EXPECTED_TYPED: fail(f"typed ID census {typed}", failures)
     if intent_scoped!=0: fail(f"intent-scoped applicability assertions {intent_scoped}", failures)
     if root_counts!=EXPECTED_ROOTS: fail(f"root census {root_counts}", failures)
+    # Exact authority UNKNOWN is load-bearing on the two reserved roots.
+    if authority_unknown_roots:
+        app_counts["APPLICABLE"]-=authority_unknown_roots
+        app_counts["UNKNOWN"]+=authority_unknown_roots
     if app_counts!=EXPECTED_APPLICABILITY: fail(f"candidate applicability census {app_counts}", failures)
     if privacy!=[EXPECTED_PRIVACY]: fail(f"privacy census {privacy}", failures)
     if material_conflict_roots!=4 or conflict_field_roots!=4 or dup_ref_roots!=2:
         fail(f"conflict root census {material_conflict_roots}/{conflict_field_roots}/{dup_ref_roots}", failures)
-    if escalation_true!=1 or informational_true!=1:
+    if escalation_true!=0 or informational_true!=1:
         fail(f"boolean census escalation={escalation_true} informational={informational_true}", failures)
     if reserved_root_count!=20 or holder!=Counter({"AARON":18,"UNKNOWN":2}) or delegation!=Counter({"FALSE":18,"OMITTED":2}):
         fail(f"authority root census reserved={reserved_root_count} holder={holder} delegation={delegation}", failures)
@@ -345,7 +352,7 @@ def main():
             fail(f"possible inherited normative wording: {bad}", failures)
     for code in ("UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE","UNMAPPED_INTENT_APPLICABILITY_SHAPE","UNMAPPED_REPLACEMENT_E1_STRUCTURE"):
         if code not in binding: fail(f"binding missing explicit guard {code}", failures)
-    if "F097" not in builder: fail("builder falsifier packet incomplete", failures)
+    if "F108" not in builder: fail("builder falsifier packet incomplete", failures)
 
     result={
       "artifact":"IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-VERIFIER-RESULT",
