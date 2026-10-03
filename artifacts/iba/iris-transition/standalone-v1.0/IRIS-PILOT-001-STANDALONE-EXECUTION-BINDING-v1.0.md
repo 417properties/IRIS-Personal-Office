@@ -511,6 +511,36 @@ Conflict/material census before buildProjection:
 
 Any deviation is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
+### 7.6 Frozen candidate-root census
+
+Before buildProjection, the frozen 40-case population MUST produce exactly 84 PilotCandidate roots:
+- obligation roots: 42;
+- decision roots: 40;
+- unresolved-intent roots: 1;
+- conflict-only roots: 1.
+
+Candidate applicability census:
+- APPLICABLE: 75;
+- UNKNOWN: 3;
+- SATISFIED: 4;
+- SUPERSEDED: 2;
+- ABANDONED as candidate applicability: 0 (the single ABANDONED obligation retains status ABANDONED but independent applicability APPLICABLE).
+
+Always-boolean census:
+- `unresolved_effect=true`: 1 root;
+- `material_conflict=true`: 4 roots;
+- `escalation_required=true`: 1 root;
+- `informational_only=true`: 1 root.
+
+Identity/conflict field census:
+- `conflict_id` present: 4 roots;
+- nonempty `possible_duplicate_refs`: 2 roots;
+- reserved_authority_class present: 20 roots (10 obligation + 10 linked decision);
+- authority_holder_identity_id present on those 20 roots: 18 exact AARON, 2 exact UNKNOWN because the authority surface itself is UNKNOWN;
+- valid_delegation present=false on 18 roots; omitted on the same 2 UNKNOWN-authority roots; true on 0 roots.
+
+Any other root count or field-presence census is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+
 ## 8. Authority, permission and delegation
 
 required_next_step never creates a root.
@@ -534,6 +564,8 @@ Apply the exact lease validation above. The candidate-neutral audit yields:
 - authority source UNKNOWN -> omit `valid_delegation` while degrading the load-bearing candidate/source health to UNKNOWN: exactly case `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`.
 
 The nine false cases fail for exact source reasons including privacy-scope mismatch, predecessor/replaced-worker mismatch, non-ACTIVE lease state, no referenced lease, generation mismatch, or expiry. A false result is not an inference that delegation never exists generally; it is the deterministic reduction for these frozen cases.
+
+For the single UNKNOWN authority-surface case, do NOT cascade authority uncertainty into independently known item lifecycle/applicability/freshness/source identity. On both exact reserved-authority roots set `authority_holder_identity_id="UNKNOWN"`, omit `valid_delegation`, and preserve the independently source-derived item fields. The frozen candidate's `missingMaterialClassification` then represents the load-bearing authority unknown without erasing unrelated evidence.
 
 ### 8.1 Demonstrated reserved-authority / delegation table
 
@@ -613,7 +645,51 @@ The conflict-only candidate is constructed exactly:
 
 For the demonstrated current-state conflict, both exact conflicting current assertions are APPLICABLE, current, provenance-verified Aaron evidence; therefore the conflict-only root has `applicability=APPLICABLE / freshness=CURRENT / source_identity=VERIFIED`.
 
-### 9.2 Duplicate/source-link identity table
+### 9.2 Exact demonstrated conflict identities and attachments
+
+Conflict-anchor construction is frozen for the three demonstrated conflicts. UTF-8 byte sort and exact dedupe are already applied below.
+
+1. Case `p1e1r4_3592698cabc744789906162b61657890` — `INCOMPATIBLE_OBLIGATIONS`
+   - anchors:
+     - `instruction:209593c8008649b28329b14e62766d68`
+     - `instruction:bf7abddd95bd48fcad6e6d742213599d`
+     - `objective:083dabaa11c34e499a492c2381aef180`
+     - `obligation:b3c3c67639594094abc930cc450fd274`
+   - SHA preimage:
+     `AARON|instruction:209593c8008649b28329b14e62766d68|instruction:bf7abddd95bd48fcad6e6d742213599d|objective:083dabaa11c34e499a492c2381aef180|obligation:b3c3c67639594094abc930cc450fd274|INCOMPATIBLE_OBLIGATIONS`
+   - conflict_id:
+     `conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86`
+   - attach only to the exact obligation root `obligation:b3c3c67639594094abc930cc450fd274`.
+
+2. Case `p1e1r4_80ccea1138af42d8843eabe2a10fec66` — `INCOMPATIBLE_CURRENT_STATE`
+   - anchors:
+     - `assertion:9f4a8b630cdc4067a81be6875ee05386`
+     - `current_assertion:6f7e30c15ed84aa893f311aa237ce2be`
+     - `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`
+   - SHA preimage:
+     `AARON|assertion:9f4a8b630cdc4067a81be6875ee05386|current_assertion:6f7e30c15ed84aa893f311aa237ce2be|objective:0a9cb6c1b78a4910aa3d5e21fa960f51|INCOMPATIBLE_CURRENT_STATE`
+   - conflict_id:
+     `conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb`
+   - neither assertion directly resolves to an obligation/decision/intent root; create exactly one conflict-only root with objective payload `0a9cb6c1b78a4910aa3d5e21fa960f51`, this conflict_id, material_conflict=true, escalation_required=false.
+
+3. Case `p1e1r4_ac08b94cee624ed7a450e17e3389a163` — `POSSIBLE_DUPLICATE_UNRESOLVED`
+   - anchors:
+     - `objective:46b9bfe032724b97a46b202187d43cc6`
+     - `obligation:af6abeb0cf104e19bf59b400088a90b7`
+     - `obligation:c1805592acb24fb884c9ec909d348408`
+   - SHA preimage:
+     `AARON|objective:46b9bfe032724b97a46b202187d43cc6|obligation:af6abeb0cf104e19bf59b400088a90b7|obligation:c1805592acb24fb884c9ec909d348408|POSSIBLE_DUPLICATE_UNRESOLVED`
+   - conflict_id:
+     `conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d`
+   - attach to both exact obligation roots;
+   - left root possible_duplicate_refs=[`obligation:c1805592acb24fb884c9ec909d348408`];
+   - right root possible_duplicate_refs=[`obligation:af6abeb0cf104e19bf59b400088a90b7`].
+
+Case `p1e1r4_dd291386b74e4b568634d20c138457ea` is PROVEN_SELF_IDENTITY and generates no conflict ID, no conflict attachment, and no possible_duplicate_refs.
+
+`input.conflicts` therefore contains exactly the three conflict IDs above in UTF-8 byte-lexical order for their respective cases, and no fourth conflict exists.
+
+### 9.3 Duplicate/source-link identity table
 
 Duplicate/source-link decision order is total:
 
