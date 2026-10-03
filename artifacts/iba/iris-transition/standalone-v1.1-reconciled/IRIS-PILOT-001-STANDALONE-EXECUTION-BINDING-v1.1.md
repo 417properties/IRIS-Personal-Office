@@ -339,6 +339,21 @@ No AUTHORITY_CONFLICT / EFFECT_REALITY_CONFLICT / SOURCE_IDENTITY_CONFLICT gener
 
 `input.conflicts` is exact generated IDs only, exact-deduped UTF-8 byte-lexical.
 
+### 8.1 Exact conflict-only candidate ID grammar
+
+When an exact material conflict resolves to no obligation/decision/intent root, create exactly one conflict-only PilotCandidate with:
+- `id = "e1:" + case_id + ":conflict:" + conflict_id` where `conflict_id` is the untyped binding-generated `conf_<sha256>` payload;
+- `principal_id="AARON"`;
+- `objective_id` = raw payload of the exact typed objective anchor;
+- `conflict_id` = the same untyped `conf_<sha256>` value;
+- no obligation_id, decision_requirement_id, or intent_id;
+- common booleans/health/provenance in the exact §6.4 insertion order.
+
+For the sole demonstrated conflict-only root in `p1e1r4_80ccea1138af42d8843eabe2a10fec66`, the exact candidate id is:
+`e1:p1e1r4_80ccea1138af42d8843eabe2a10fec66:conflict:conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`.
+
+Any other conflict-only id derivation is `BINDING_HOLD/PREBUILD_INPUT_VECTOR_MISMATCH`.
+
 ## 9. Qualified BIG
 
 Only qualified_big_packets envelope can affect qualified BIG SourceEvaluation.
@@ -358,7 +373,7 @@ Before any buildProjection call, the v1.1 mechanical verifier MUST construct all
 
 - root count = 84;
 - classifier-material-unknown root count = 6;
-- applicability census = 75/3/4/2;
+- applicability census = 73/5/4/2;
 - booleans and authority/conflict/privacy censuses above;
 - exact SourceEvaluation census;
 - exact population/order/digest;
@@ -376,6 +391,21 @@ and MUST equal:
 Any mismatch is `BINDING_HOLD/PREBUILD_INPUT_VECTOR_MISMATCH`.
 
 This proof invokes neither `buildProjection` nor candidate outputs.
+
+## 11.1 Candidate-path composition totality
+
+The package includes `IRIS-PILOT-001-STANDALONE-BINDING-v1.1-CANDIDATE-PATH-TOTALITY.json`. It exhausts all 84 demonstrated PilotCandidate roots before candidate invocation. For every root it freezes: root class; exact source root ref; exact candidate id and id grammar; exact ordered field presence/value tuple; source/binding derivation class for every field; unknown-trigger predicates; and the expected static `classifyAaron` entry route (`UNKNOWN_ITEM` or `KNOWN_CLASSIFICATION`).
+
+The static path proof composes the binding representation with the frozen candidate branch conditions without calling `classifyAaron` or `buildProjection`. Required results:
+- 84/84 roots have exact ID grammar + complete field derivation proof;
+- Builder/falsifier section references resolve to an existing v1.1 section/artifact;
+- `UNKNOWN_ITEM=6`, `KNOWN_CLASSIFICATION=78`;
+- the two reserved roots in `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39` trigger UNKNOWN through applicability/freshness/source_identity before the AR-3 branch;
+- the unresolved intent UNKNOWN and direct applicability UNKNOWN roots likewise cannot reach known classification;
+- the OPEN decision-maker UNKNOWN root triggers the candidate's missing-decision-maker unknown path;
+- no omitted `valid_delegation` shape reaches known AR-3 when Current authority is UNKNOWN.
+
+Any candidate tuple whose static route differs from the path-totality artifact is `BINDING_HOLD/CANDIDATE_CLASSIFIER_PATH_MISMATCH`.
 
 ## 12. Determinism and later execution
 
@@ -396,7 +426,8 @@ Package includes:
 - mapping-totality matrix;
 - candidate-neutral preflight receipt with vector digest;
 - exact 40-case pre-build input index;
-- reproducible static verifier source;
+- mechanical verifier specification;
+- 84-root candidate-path totality matrix;
 - whole-object Builder/falsifier packet;
 - final package index.
 
