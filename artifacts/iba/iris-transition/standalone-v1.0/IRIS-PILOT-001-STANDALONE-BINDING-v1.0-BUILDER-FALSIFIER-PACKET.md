@@ -103,9 +103,14 @@ F082 applicability/freshness/source_identity/provenance_refs/possible_duplicate_
 F083 provenance_refs contain only exact typed source refs actually used; no protocol/review/binding URI injection.
 F084 possible_duplicate_refs is always an array; only unresolved distinct duplicate evidence populates exact typed other refs.
 F085 optional nonapplicable candidate fields are omitted, never null-filled; any extra decoder-owned property is a HOLD.
+F086 all 42 obligations match one of the six published lifecycle/applicability reductions.
+F087 exact ABANDONED obligation lifecycle yields candidate applicability ABANDONED despite older APPLICABLE governance/assertion; no resurrection.
+F088 all 40 decisions match one of the seven published decision reductions.
+F089 obligation lifecycle never cascades to linked decision; decision changes only from exact decision-scoped evidence.
+F090 PENDING action_decision neither resolves nor supersedes; agreeing duplicate applicability assertions do not create conflict or multiply semantics.
 
 ## Success
-All F001-F085 PASS and static preflight reports:
+All F001-F090 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
