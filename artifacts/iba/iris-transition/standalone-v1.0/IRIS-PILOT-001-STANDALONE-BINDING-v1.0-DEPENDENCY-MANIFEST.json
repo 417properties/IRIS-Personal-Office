@@ -19,7 +19,7 @@
       "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
       "blob": "fef39e3284eae5559ac016c01211c0d9bc244fa5",
       "bytes": 3169,
-      "sha256": "cefe2994a609903df501c680a8b653c75339a0f2063cc53853b983eae2fb664a"
+      "sha256": "0eca9c456d85bd2b3e62cd1752d0cf4de81988c519c2ae0724a81573269b53d6"
     },
     {
       "id": "e1-shard-01",
@@ -28,7 +28,7 @@
       "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
       "blob": "7a35d77ad927218f903e63f966ccee3341e7d717",
       "bytes": 302533,
-      "sha256": "f10d6d7d6ca045a6b64b2e6eacf599e1310f9d855aabe4a3e4ae033e630dbf8c"
+      "sha256": "62d1ba80143ec687e16cfed89641634108ab7520faa5fb04082fd92508e9a721"
     },
     {
       "id": "e1-shard-02",
@@ -37,7 +37,7 @@
       "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
       "blob": "53a8c9dbf36b1bc666d164daed3bcbf05c46b230",
       "bytes": 311749,
-      "sha256": "17bb8b0522216a83a6c6eeef21698ecedead4cf2fc451068025656188aa56958"
+      "sha256": "6085e37d0bcbe2b04f23070d11095406a4f17fc0a3e351676920fc758f63a09f"
     },
     {
       "id": "e1-shard-03",
@@ -46,7 +46,7 @@
       "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
       "blob": "4d492ac0d661b6fdb6315461fba5f720757a3cc7",
       "bytes": 310747,
-      "sha256": "c52f4093695c40c7aecce7021111d89c8dc2a57e9f5c319942f720ab2de9eb46"
+      "sha256": "136da8531ee7fb02f88abcd0f94b2cda42cc9b8da3802a33dd554ee7b53011be"
     },
     {
       "id": "e1-shard-04",
@@ -55,7 +55,7 @@
       "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
       "blob": "86924bb9e12c6e39e155ee6fcb0ca9f75dae7dec",
       "bytes": 303058,
-      "sha256": "2eb93e0599563abe11cb2a9b27a5fbf53db2dc10699758c6943baf761aa68312"
+      "sha256": "297d8a91115be81c5337f9973b423cfdcbf47c4b7ef81ed5ba8fa55356582685"
     },
     {
       "id": "population-identity",
@@ -64,7 +64,7 @@
       "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
       "blob": "ff873138926524501eba5ea1230f9635fca124c8",
       "bytes": 3148,
-      "sha256": "06104e30c513ee5ad5c49596aecbf96375a7878f7ad347e81efce1dc007a786a"
+      "sha256": "011874c2d8a62a79dac035585d5334a2e2d18a79dd64d2d76bf6f14bee37e9ab"
     },
     {
       "id": "blueprint-v0.4",
@@ -73,7 +73,7 @@
       "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
       "blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
       "bytes": 53261,
-      "sha256": "e6a6b920ba52c449d4d6209b0a631563702ad26aeac3269e86f1170ef08e51e2"
+      "sha256": "d478799495f06b7ac1d7b83c6726b913d8cc2fb43950ad45928ea0ec8affdc6d"
     },
     {
       "id": "candidate-types",
@@ -82,7 +82,7 @@
       "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
       "blob": "c8c7aa257b1f319b5fe518f8cebaf9ff55ea6301",
       "bytes": 2420,
-      "sha256": "1d4242b7a288b4bbbc37f7258dea4777c9bfa3b3539f16d7f461128a7ff6075e"
+      "sha256": "2a09f355e61fde1cfb413bd6f42bf14373d6d03c7dcdff3fb36b558487d98df0"
     },
     {
       "id": "candidate-classifier",
@@ -91,7 +91,7 @@
       "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
       "blob": "b716d1bf8d07cd040793d54674bb3cd1a4ae2e14",
       "bytes": 4246,
-      "sha256": "a8423e83312907a91e53dcc1e0b82af5360401e483b84c0ee58c821b01279081"
+      "sha256": "1955e160a19e2d25d8d865baf88c5a0fee8d5d0a956930e95f1e65e6505b42b5"
     },
     {
       "id": "candidate-coverage",
@@ -100,7 +100,7 @@
       "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
       "blob": "2b21f40cf27457523d5540db226446c1ee6c83e4",
       "bytes": 4733,
-      "sha256": "c37156418457bc15876b444c51d44ef65e74f6c2e67f61624323d62638777e0e"
+      "sha256": "1d9e28534faffb7c740dce683100654b4d86b0dc452e5220528a82e4212eae4e"
     },
     {
       "id": "candidate-projection",
@@ -109,7 +109,8 @@
       "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
       "blob": "4931d997e7200353e3011bfd3c548b0bf826c027",
       "bytes": 7108,
-      "sha256": "c498b6397f15e1e32f636ec5a0a1e252c1ea1bda3e7f8e557633eafb85d70db2"
+      "sha256": "07df696c1d3acfea3be0c3479f706ef217f322b389edddb23ab1297e6e031074"
     }
-  ]
+  ],
+  "verification_note": "All repository/path/commit/blob/byte/SHA-256 values independently re-read and recomputed from exact content before routing."
 }
