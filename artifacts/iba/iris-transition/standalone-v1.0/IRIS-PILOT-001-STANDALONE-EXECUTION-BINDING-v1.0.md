@@ -702,6 +702,40 @@ Duplicate/source-link decision order is total:
 
 No semantic similarity or inferred identity equivalence.
 
+### 9.3 Frozen demonstrated conflict identities
+
+For the exact 40-case population, the three generated conflicts are frozen to these exact anchor closures and IDs:
+
+1. case `p1e1r4_3592698cabc744789906162b61657890`
+   - class: `INCOMPATIBLE_OBLIGATIONS`
+   - anchors, UTF-8 lexical:
+     - `instruction:209593c8008649b28329b14e62766d68`
+     - `instruction:bf7abddd95bd48fcad6e6d742213599d`
+     - `objective:083dabaa11c34e499a492c2381aef180`
+     - `obligation:b3c3c67639594094abc930cc450fd274`
+   - exact ID: `conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86`.
+
+2. case `p1e1r4_80ccea1138af42d8843eabe2a10fec66`
+   - class: `INCOMPATIBLE_CURRENT_STATE`
+   - anchors:
+     - `assertion:9f4a8b630cdc4067a81be6875ee05386`
+     - `current_assertion:6f7e30c15ed84aa893f311aa237ce2be`
+     - `objective:0a9cb6c1b78a4910aa3d5e21fa960f51`
+     - `obligation:9902f0b12e9c4b20873e6e809e27d179`
+   - exact ID: `conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`.
+   - the incompatible assertions directly subject the objective; no obligation/decision/intent root is directly assertion-referenced, so this is the one conflict-only root. The obligation link remains in the conflict anchor closure but does not authorize conflict attachment by reverse-link inference.
+
+3. case `p1e1r4_ac08b94cee624ed7a450e17e3389a163`
+   - class: `POSSIBLE_DUPLICATE_UNRESOLVED`
+   - anchors:
+     - `objective:46b9bfe032724b97a46b202187d43cc6`
+     - `obligation:af6abeb0cf104e19bf59b400088a90b7`
+     - `obligation:c1805592acb24fb884c9ec909d348408`
+   - exact ID: `conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d`.
+   - attach to both exact obligation roots; each receives the other typed obligation ref in possible_duplicate_refs.
+
+`input.conflicts` for every case is the exact-deduped UTF-8 byte-lexically sorted list of these generated IDs applicable to that case. All other cases have `input.conflicts=[]`.
+
 ## 10. Qualified BIG boundary
 
 Only records inside the qualified_big_packets envelope may influence the qualified BIG SourceEvaluation.
