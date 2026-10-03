@@ -285,5 +285,35 @@
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
-  "preflight_version": "v1.1-strong-totality"
+  "preflight_version": "v1.1-strong-totality",
+  "independent_raw_source_reverification": {
+    "replacement_e1_commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "case_count": 40,
+    "ordered_manifest_ids_match": true,
+    "population_digest_match": true,
+    "top_level_field_mismatches": 0,
+    "demonstrated_record_type_mismatches": 0,
+    "demonstrated_token_domain_mismatches": 0,
+    "record_count_census_mismatches": 0,
+    "envelope_availability_census_mismatches": 0,
+    "obligation_lifecycle_census_mismatches": 0,
+    "decision_lifecycle_census_mismatches": 0,
+    "source_evaluation_tuple_mismatches": 0,
+    "privacy_exclusion_exact": true,
+    "privacy_excluded_record": "source_packet:b8ac8fd78e794c25b476e145f4e6006b",
+    "conflict_anchor_sets_all_resolve": true,
+    "conflict_hash_preimages_verified": [
+      "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+      "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
+      "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d"
+    ],
+    "candidate_field_census_mismatches": 0
+  },
+  "dependency_manifest_reverification": {
+    "dependency_count": 12,
+    "blob_mismatches": 0,
+    "byte_count_mismatches": 0,
+    "sha256_mismatches": 0,
+    "disposition": "DEPENDENCY_MANIFEST_COMPLETE"
+  }
 }
