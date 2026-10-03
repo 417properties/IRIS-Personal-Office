@@ -1,0 +1,78 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-RECONCILED-STATIC-PREFLIGHT",
+  "authority": "NONE",
+  "candidate_invoked": false,
+  "buildProjection_invoked": false,
+  "labels_consumed": 0,
+  "candidate_outputs_consumed": 0,
+  "scoring": false,
+  "population": {
+    "count": 40,
+    "ordered_ids_match": true,
+    "sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f"
+  },
+  "envelope_census": {
+    "PRESENT": 318,
+    "UNKNOWN": 1,
+    "UNAVAILABLE": 1
+  },
+  "bracket_census": {
+    "STABLE": 37,
+    "RERUN_STABLE": 2,
+    "UNSTABLE": 1
+  },
+  "typed_anchor_counts": {
+    "objective": 40,
+    "obligation": 42,
+    "decision_requirement": 40,
+    "intent": 2
+  },
+  "record_type_count": 25,
+  "candidate_census": {
+    "roots": 84,
+    "applicability": {
+      "APPLICABLE": 73,
+      "UNKNOWN": 5,
+      "SATISFIED": 4,
+      "SUPERSEDED": 2
+    },
+    "classifier_material_unknown": 6,
+    "material_conflict_true": 4,
+    "escalation_required_true": 1,
+    "unresolved_effect_true": 1,
+    "informational_only_true": 1,
+    "conflict_id_present": 4,
+    "possible_duplicate_nonempty": 2,
+    "reserved_authority_roots": 20,
+    "authority_holder_AARON": 18,
+    "authority_holder_UNKNOWN": 2,
+    "valid_delegation_false": 18,
+    "valid_delegation_omitted": 2
+  },
+  "exact_conflict_ids": [
+    "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+    "conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb",
+    "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d"
+  ],
+  "privacy_exclusion": {
+    "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
+    "record_id": "source_packet:b8ac8fd78e794c25b476e145f4e6006b"
+  },
+  "unstable_case": {
+    "case_id": "p1e1r4_d374c5fb7c064f98bad29f633804d4c8",
+    "semantic_ambiguity": false,
+    "bracket": "UNSTABLE",
+    "change": "updated_at-only version drift with prior_semantic_values_retained=true"
+  },
+  "authority_unknown_case": {
+    "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+    "affected_reserved_roots": 2,
+    "representation": "authority_holder=UNKNOWN; valid_delegation omitted; applicability/freshness/source_identity=UNKNOWN"
+  },
+  "open_decision_maker_unknown_case": "p1e1r4_40cad8d6ee7440a5bd0fe22d674f9db7",
+  "prebuild_vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "dependency_manifest_mismatches": 0,
+  "unmapped_demonstrated_shapes": 0,
+  "failures": [],
+  "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES / PREBUILD_INPUT_VECTOR_FROZEN"
+}
