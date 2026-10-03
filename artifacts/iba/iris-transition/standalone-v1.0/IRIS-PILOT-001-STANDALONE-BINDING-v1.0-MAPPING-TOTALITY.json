@@ -1013,7 +1013,50 @@
       "AUTHORITY_CONFLICT": 0,
       "EFFECT_REALITY_CONFLICT": 0,
       "SOURCE_IDENTITY_CONFLICT": 0
-    }
+    },
+    "exact_identities": [
+      {
+        "case_id": "p1e1r4_3592698cabc744789906162b61657890",
+        "conflict_class": "INCOMPATIBLE_OBLIGATIONS",
+        "anchors": [
+          "instruction:209593c8008649b28329b14e62766d68",
+          "instruction:bf7abddd95bd48fcad6e6d742213599d",
+          "objective:083dabaa11c34e499a492c2381aef180",
+          "obligation:b3c3c67639594094abc930cc450fd274"
+        ],
+        "conflict_id": "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+        "attachment": [
+          "obligation:b3c3c67639594094abc930cc450fd274"
+        ]
+      },
+      {
+        "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+        "conflict_class": "INCOMPATIBLE_CURRENT_STATE",
+        "anchors": [
+          "assertion:9f4a8b630cdc4067a81be6875ee05386",
+          "current_assertion:6f7e30c15ed84aa893f311aa237ce2be",
+          "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"
+        ],
+        "conflict_id": "conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb",
+        "attachment": [
+          "CONFLICT_ONLY_ROOT"
+        ]
+      },
+      {
+        "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
+        "conflict_class": "POSSIBLE_DUPLICATE_UNRESOLVED",
+        "anchors": [
+          "objective:46b9bfe032724b97a46b202187d43cc6",
+          "obligation:af6abeb0cf104e19bf59b400088a90b7",
+          "obligation:c1805592acb24fb884c9ec909d348408"
+        ],
+        "conflict_id": "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
+        "attachment": [
+          "obligation:af6abeb0cf104e19bf59b400088a90b7",
+          "obligation:c1805592acb24fb884c9ec909d348408"
+        ]
+      }
+    ]
   },
   "pilot_candidate_totality": {
     "exact_property_insertion_order": [
@@ -1713,42 +1756,43 @@
     }
   },
   "candidate_root_census": {
-    "obligation_roots": 42,
-    "decision_roots": 40,
-    "unresolved_intent_roots": 1,
-    "conflict_only_roots": 1,
-    "total_roots": 84,
-    "load_bearing_unknown_roots": 5,
-    "unknown_breakdown": [
-      {
-        "case_id": "p1e1r4_2b75131e44224cd98957c79b899fb168",
-        "roots": 2,
-        "cause": "exact obligation/decision applicability UNKNOWN"
-      },
-      {
-        "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
-        "roots": 2,
-        "cause": "reserved-authority roots degraded because authority_state availability UNKNOWN; valid_delegation omitted"
-      },
-      {
-        "case_id": "p1e1r4_6f43027d04774acda0ac9dd58bc2f4af",
-        "roots": 1,
-        "cause": "unresolved intent has no exact scoped applicability -> UNKNOWN"
-      }
-    ],
-    "material_conflict_true_roots": 4,
-    "possible_duplicate_refs_nonempty_roots": 2,
-    "escalation_required_true_roots": 1,
-    "unresolved_effect_true_roots": 1,
-    "informational_only_true_roots": 1
+    "total": 84,
+    "obligation": 42,
+    "decision": 40,
+    "unresolved_intent": 1,
+    "conflict_only": 1,
+    "applicability": {
+      "APPLICABLE": 75,
+      "UNKNOWN": 3,
+      "SATISFIED": 4,
+      "SUPERSEDED": 2,
+      "ABANDONED": 0
+    },
+    "booleans": {
+      "unresolved_effect_true": 1,
+      "material_conflict_true": 4,
+      "escalation_required_true": 1,
+      "informational_only_true": 1
+    },
+    "conflict_id_present": 4,
+    "possible_duplicate_refs_nonempty": 2,
+    "reserved_authority_class_present": 20,
+    "authority_holder_identity_id": {
+      "AARON": 18,
+      "UNKNOWN": 2
+    },
+    "valid_delegation": {
+      "true": 0,
+      "false": 18,
+      "omitted": 2
+    }
   },
   "privacy_exclusion_census": {
-    "total_records": 1,
+    "total_excluded_records": 1,
     "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
     "privacyExcluded": [
       "source_packet:b8ac8fd78e794c25b476e145f4e6006b"
-    ],
-    "other_cases_empty": 39
+    ]
   },
   "candidate_evidence_closure": {
     "obligation": [
@@ -1781,5 +1825,15 @@
       "exact conflict-generating records",
       "exact objective/obligation link records required for conflict anchor set"
     ]
+  },
+  "authority_unknown_representation": {
+    "case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39",
+    "affected_candidate_roots": 2,
+    "authority_holder_identity_id": "UNKNOWN",
+    "valid_delegation": "OMITTED",
+    "item_applicability": "PRESERVE_EXACT_SOURCE_VALUE",
+    "item_freshness": "PRESERVE_EXACT_SOURCE_VALUE",
+    "item_source_identity": "PRESERVE_EXACT_SOURCE_VALUE",
+    "reason": "dedicated frozen candidate material-authority unknown path; no cross-dimension erasure"
   }
 }
