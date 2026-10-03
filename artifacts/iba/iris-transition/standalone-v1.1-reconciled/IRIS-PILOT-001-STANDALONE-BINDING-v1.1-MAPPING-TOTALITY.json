@@ -1,0 +1,305 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-RECONCILED-MAPPING-TOTALITY",
+  "authority": {
+    "reserved_case_count": 10,
+    "delegation_case_outcomes": {
+      "true": 0,
+      "false": 9,
+      "unknown_omit": 1
+    },
+    "candidate_fields": {
+      "true": 0,
+      "false": 18,
+      "omitted": 2
+    },
+    "unknown_authority_representation": "holder UNKNOWN; valid_delegation omitted; exact reserved obligation+decision applicability/freshness/source_identity UNKNOWN"
+  },
+  "population": {
+    "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "count": 40,
+    "sha256": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f"
+  },
+  "top_level_fields": [
+    "case_id",
+    "coverage_contract",
+    "domain",
+    "emission_time",
+    "impact_packets",
+    "principal_id",
+    "records",
+    "snapshot_reads",
+    "snapshot_time",
+    "source_envelopes",
+    "source_requirements"
+  ],
+  "record_type_counts": {
+    "evidence": 40,
+    "resource": 40,
+    "objective": 40,
+    "obligation": 42,
+    "obligation_governance": 42,
+    "decision_requirement": 40,
+    "applicability_assertion": 43,
+    "lifecycle_event": 44,
+    "authority_generation_state": 40,
+    "identity": 81,
+    "work_episode": 40,
+    "current_assertion": 41,
+    "big_packet": 39,
+    "required_next_step": 10,
+    "authority_lease": 8,
+    "instruction": 2,
+    "device_observation": 1,
+    "intent": 2,
+    "effect_record": 2,
+    "informational_receipt": 1,
+    "action_decision": 5,
+    "version_event": 4,
+    "source_link_observation": 2,
+    "source_packet": 1,
+    "provider_session": 1
+  },
+  "envelope_census": {
+    "PRESENT": 318,
+    "UNKNOWN": 1,
+    "UNAVAILABLE": 1
+  },
+  "bracket_census": {
+    "STABLE": 37,
+    "RERUN_STABLE": 2,
+    "UNSTABLE": 1
+  },
+  "typed_anchor_counts": {
+    "objective": 40,
+    "obligation": 42,
+    "decision_requirement": 40,
+    "intent": 2
+  },
+  "source_evaluation_rule": "required surface; PRESENT->surface APPLICABLE absent exact whole-surface inapplicability; UNKNOWN stays UNKNOWN; UNAVAILABLE is known inaccessible APPLICABLE+partial",
+  "candidate_construction": {
+    "property_order": [
+      "id",
+      "principal_id",
+      "objective_id?",
+      "obligation_id?",
+      "decision_requirement_id?",
+      "intent_id?",
+      "conflict_id?",
+      "obligation_status?",
+      "obligation_owner?",
+      "concrete_action_remaining?",
+      "decision_status?",
+      "decision_maker_identity_id?",
+      "reserved_authority_class?",
+      "authority_holder_identity_id?",
+      "valid_delegation?",
+      "escalation_required",
+      "unresolved_effect",
+      "material_conflict",
+      "informational_only",
+      "applicability",
+      "freshness",
+      "source_identity",
+      "provenance_refs",
+      "possible_duplicate_refs"
+    ],
+    "why": "NEVER_SUPPLIED",
+    "optional_property_rule": "omit when nonapplicable; never null/undefined pad"
+  },
+  "candidate_census": {
+    "roots": 84,
+    "obligation": 42,
+    "decision": 40,
+    "unresolved_intent": 1,
+    "conflict_only": 1,
+    "applicability": {
+      "APPLICABLE": 73,
+      "UNKNOWN": 5,
+      "SATISFIED": 4,
+      "SUPERSEDED": 2,
+      "ABANDONED": 0
+    },
+    "classifier_material_unknown": 6,
+    "booleans": {
+      "unresolved_effect_true": 1,
+      "material_conflict_true": 4,
+      "escalation_required_true": 1,
+      "informational_only_true": 1
+    },
+    "conflict_id_present": 4,
+    "possible_duplicate_refs_nonempty": 2,
+    "reserved_authority_roots": 20,
+    "authority_holder": {
+      "AARON": 18,
+      "UNKNOWN": 2
+    },
+    "valid_delegation": {
+      "true": 0,
+      "false": 18,
+      "omitted": 2
+    },
+    "open_decision_maker_UNKNOWN": 1,
+    "authority_unknown_degraded_roots": 2
+  },
+  "lifecycle_tables": {
+    "obligation": [
+      {
+        "count": 35,
+        "status": "OPEN",
+        "governance": "APPLICABLE",
+        "assertion": "APPLICABLE",
+        "lifecycle": "OPEN",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 2,
+        "status": "OPEN",
+        "governance": "APPLICABLE",
+        "assertion": "APPLICABLE",
+        "lifecycle": "NONE",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 1,
+        "status": "OPEN",
+        "governance": "UNKNOWN",
+        "assertion": "UNKNOWN",
+        "lifecycle": "OPEN",
+        "candidate_applicability": "UNKNOWN"
+      },
+      {
+        "count": 1,
+        "status": "ABANDONED",
+        "governance": "APPLICABLE",
+        "assertion": "APPLICABLE",
+        "lifecycle": "OPEN->ABANDONED",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 2,
+        "status": "SATISFIED",
+        "governance": "SATISFIED",
+        "assertion": "SATISFIED",
+        "lifecycle": "OPEN->SATISFIED",
+        "candidate_applicability": "SATISFIED"
+      },
+      {
+        "count": 1,
+        "status": "SUPERSEDED",
+        "governance": "SUPERSEDED",
+        "assertion": "SUPERSEDED",
+        "lifecycle": "OPEN->SUPERSEDED",
+        "candidate_applicability": "SUPERSEDED"
+      }
+    ],
+    "decision": [
+      {
+        "count": 33,
+        "status": "OPEN",
+        "applicability": "APPLICABLE",
+        "action": "NONE"
+      },
+      {
+        "count": 1,
+        "status": "OPEN",
+        "applicability": "UNKNOWN",
+        "action": "NONE"
+      },
+      {
+        "count": 1,
+        "status": "OPEN",
+        "applicability": "APPLICABLE",
+        "assertions": 2,
+        "action": "NONE"
+      },
+      {
+        "count": 1,
+        "status": "RESOLVED",
+        "applicability": "APPLICABLE",
+        "action": "RESOLVED_EXACT"
+      },
+      {
+        "count": 2,
+        "status": "RESOLVED",
+        "applicability": "SATISFIED",
+        "action": "RESOLVED_EXACT"
+      },
+      {
+        "count": 1,
+        "status": "SUPERSEDED",
+        "applicability": "SUPERSEDED",
+        "action": "SUPERSEDED_EXACT"
+      },
+      {
+        "count": 1,
+        "status": "OPEN",
+        "applicability": "APPLICABLE",
+        "action": "PENDING_NONRESOLVING"
+      }
+    ]
+  },
+  "exact_conflicts": [
+    {
+      "case_id": "p1e1r4_3592698cabc744789906162b61657890",
+      "class": "INCOMPATIBLE_OBLIGATIONS",
+      "anchors": [
+        "instruction:209593c8008649b28329b14e62766d68",
+        "instruction:bf7abddd95bd48fcad6e6d742213599d",
+        "objective:083dabaa11c34e499a492c2381aef180",
+        "obligation:b3c3c67639594094abc930cc450fd274"
+      ],
+      "conflict_id": "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+      "attachment": [
+        "obligation:b3c3c67639594094abc930cc450fd274"
+      ],
+      "escalation_required": true
+    },
+    {
+      "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+      "class": "INCOMPATIBLE_CURRENT_STATE",
+      "anchors": [
+        "assertion:9f4a8b630cdc4067a81be6875ee05386",
+        "current_assertion:6f7e30c15ed84aa893f311aa237ce2be",
+        "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"
+      ],
+      "conflict_id": "conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb",
+      "attachment": [
+        "CONFLICT_ONLY_ROOT"
+      ],
+      "escalation_required": false
+    },
+    {
+      "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
+      "class": "POSSIBLE_DUPLICATE_UNRESOLVED",
+      "anchors": [
+        "objective:46b9bfe032724b97a46b202187d43cc6",
+        "obligation:af6abeb0cf104e19bf59b400088a90b7",
+        "obligation:c1805592acb24fb884c9ec909d348408"
+      ],
+      "conflict_id": "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
+      "attachment": [
+        "obligation:af6abeb0cf104e19bf59b400088a90b7",
+        "obligation:c1805592acb24fb884c9ec909d348408"
+      ],
+      "escalation_required": false
+    }
+  ],
+  "self_identity_no_conflict_case": "p1e1r4_dd291386b74e4b568634d20c138457ea",
+  "privacy_exclusion": {
+    "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
+    "record_id": "source_packet:b8ac8fd78e794c25b476e145f4e6006b"
+  },
+  "prebuild_vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "unmapped_policy": "Any demonstrated shape/token/field/tuple outside this object or standalone binding -> BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE",
+  "prebuild_vector_index": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-PREBUILD-INPUT-INDEX.json",
+  "reconciliation": {
+    "base": "9bd4355634935410c351c7814fb2b4b67bd06b36",
+    "supersedes": [
+      "standalone-v1.0",
+      "#703/5965060281",
+      "#703/5965107039",
+      "preliminary iba/iris-pilot001-standalone-execution-binding-v1-1"
+    ],
+    "reason": "concurrent pre-review mutation created contradictory authority/escalation/conflict/applicability rules; reconciled package has one rule per semantic question"
+  }
+}
