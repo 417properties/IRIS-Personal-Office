@@ -1,0 +1,202 @@
+{
+  "artifact": "IRIS-BATCH-A-CONSTITUTIONAL-RECONCILIATION-PACKAGE-v1.0",
+  "authority": "ARCHITECTURE_RECONCILIATION_ONLY / ZERO_AUTHORITY",
+  "canonical_execution_route": "BIG #703/5971125848",
+  "control_surface": "BIG #703/5971096636",
+  "parent_audit_commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+  "parent_audit_tree": "2b936223b1559281fdfa0e93cec5da610685d762",
+  "founder_decision_required": [],
+  "source_refs": [
+    "BIG #703/5970182571",
+    "BIG #703/5970231069",
+    "BIG #703/5970276368",
+    "BIG #703/5970286440",
+    "BIG #703/5970457404",
+    "BIG #703/5970577270",
+    "BIG #703/5970638484",
+    "BIG #703/5970796103",
+    "BIG #703/5970957076",
+    "BIG #703/5970991430",
+    "BIG #703/5971006516",
+    "BIG #703/5971092158",
+    "BIG #703/5971096636",
+    "BIG #703/5971125848",
+    "IRIS #3/5971127122",
+    "sealed audit #703/5966245144"
+  ],
+  "master": {
+    "path": "artifacts/iba/iris-batch-a-v1.0/00-IRIS-BATCH-A-MASTER-CONSTITUTION-v1.0.md",
+    "blob": "07c157fb1c6aa245842aa74d437974841489a0d1"
+  },
+  "families": [
+    {
+      "id": "01",
+      "name": "A1-A5 constitutional contracts",
+      "path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+      "blob": "56210d29770b92fc992d64abdc44020df79e344f"
+    },
+    {
+      "id": "02",
+      "name": "Executive Reasoning Constitution",
+      "path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+      "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5"
+    },
+    {
+      "id": "03",
+      "name": "Transition Filtration",
+      "path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+      "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533"
+    },
+    {
+      "id": "04",
+      "name": "Personal BIRE runtime metabolism",
+      "path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+      "blob": "5e98644391dff0a85a70242118bff3ca6a413b17"
+    },
+    {
+      "id": "05",
+      "name": "Personal Nervous System",
+      "path": "artifacts/iba/iris-batch-a-v1.0/05-PERSONAL-NERVOUS-SYSTEM.md",
+      "blob": "00b0d1e6ab6f1f99fe331853407509d9418b9d7c"
+    },
+    {
+      "id": "06",
+      "name": "Functional Perception",
+      "path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+      "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee"
+    },
+    {
+      "id": "07",
+      "name": "Temporal/as-of",
+      "path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+      "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8"
+    },
+    {
+      "id": "08",
+      "name": "IEF constitution/phase/floor",
+      "path": "artifacts/iba/iris-batch-a-v1.0/08-IRIS-IEF-CONSTITUTION.md",
+      "blob": "dadb4d34b079d1bb38ed5516b0ca6dfe88e76234"
+    },
+    {
+      "id": "09",
+      "name": "developmental vs realization maturity",
+      "path": "artifacts/iba/iris-batch-a-v1.0/09-MATURITY-AXES-NON-COLLAPSE.md",
+      "blob": "610fa691598ff20b2d17151123e840319adb5d25"
+    },
+    {
+      "id": "10",
+      "name": "D01-D20 causal-to-contract matrix",
+      "path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+      "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93"
+    },
+    {
+      "id": "11",
+      "name": "source precedence/traceability",
+      "path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+      "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3"
+    },
+    {
+      "id": "12",
+      "name": "intent/capability preservation",
+      "path": "artifacts/iba/iris-batch-a-v1.0/12-INTENT-CAPABILITY-PRESERVATION-MATRIX.md",
+      "blob": "db195b2467c7195c4910b4d4813813134528a6fa"
+    },
+    {
+      "id": "13",
+      "name": "canonical domain/state machine",
+      "path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+      "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b"
+    },
+    {
+      "id": "14",
+      "name": "canonical authority/capability/privacy",
+      "path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+      "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20"
+    },
+    {
+      "id": "15",
+      "name": "canonical identity/resolution/causal occurrence",
+      "path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+      "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6"
+    },
+    {
+      "id": "16",
+      "name": "canonical action/effect/lifecycle",
+      "path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+      "blob": "76a77518032717a4db35fe13ad7271f6c75883d7"
+    },
+    {
+      "id": "17",
+      "name": "canonical persistence/reconstruction",
+      "path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+      "blob": "70565fc58df3c5321c45122b587affeddd85c5ca"
+    },
+    {
+      "id": "18",
+      "name": "implementation repair dependency graph",
+      "path": "artifacts/iba/iris-batch-a-v1.0/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+      "blob": "b3492abab38b247d51202d117eccbe0800e59b00"
+    },
+    {
+      "id": "19",
+      "name": "impacted source/schema/test/caller surfaces",
+      "path": "artifacts/iba/iris-batch-a-v1.0/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+      "blob": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053"
+    },
+    {
+      "id": "20",
+      "name": "independent oracle derivation requirements",
+      "path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+      "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63"
+    },
+    {
+      "id": "21",
+      "name": "legacy proof revalidation register",
+      "path": "artifacts/iba/iris-batch-a-v1.0/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+      "blob": "28dedc07d783519658584743b9691a5efb1c2340"
+    },
+    {
+      "id": "22",
+      "name": "Founder ambiguity register",
+      "path": "artifacts/iba/iris-batch-a-v1.0/22-FOUNDER-AMBIGUITY-REGISTER.md",
+      "blob": "6c8f7d80d8cae79e70495bab43744cefcd72573b"
+    },
+    {
+      "id": "23",
+      "name": "falsifier/pre-mortem set",
+      "path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+      "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57"
+    },
+    {
+      "id": "24",
+      "name": "deferred-scope map",
+      "path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+      "blob": "198f588874f3d84d24133e69f33df6a28e2ce394"
+    },
+    {
+      "id": "25",
+      "name": "Chief-of-Staff preservation/distillation proof",
+      "path": "artifacts/iba/iris-batch-a-v1.0/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+      "blob": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d"
+    },
+    {
+      "id": "26",
+      "name": "ICCP Communication Constitution",
+      "path": "artifacts/iba/iris-batch-a-v1.0/26-ICCP-COMMUNICATION-CONSTITUTION.md",
+      "blob": "62ce6427cf729ec39f69df6d76046b88b812a473"
+    }
+  ],
+  "terminal_disposition": [
+    "IRIS_BATCH_A_CONSTITUTIONAL_RECONCILIATION_COMPLETE",
+    "D01_D20_CAUSAL_MAPPING_COMPLETE",
+    "A1_A5_CONTRACTS_FROZEN",
+    "CROSS_CUTTING_CONSTITUTIONS_FROZEN",
+    "INTENT_TO_IMPLEMENTATION_TRACEABILITY_COMPLETE",
+    "CAPABILITY_PRESERVATION_UNDER_DISTILLATION_PASS",
+    "FOUNDER_AMBIGUITY_REGISTER_ATTACHED",
+    "WHOLE_STACK_REPAIR_PACKET_READY",
+    "INDEPENDENT_ORACLE_DERIVATION_PACKET_READY",
+    "STRATA_RECONCILIATION_REQUIRED"
+  ],
+  "gate_accounting": "NO_GATE_PROGRESS until STRATA reconciliation"
+}
