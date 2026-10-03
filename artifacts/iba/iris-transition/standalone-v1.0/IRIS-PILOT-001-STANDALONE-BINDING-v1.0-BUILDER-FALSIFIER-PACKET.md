@@ -97,31 +97,38 @@ F076 no AUTHORITY_CONFLICT/EFFECT_REALITY_CONFLICT/SOURCE_IDENTITY_CONFLICT gene
 F077 conflict class and exact anchor set may never be selected by semantic similarity, consequence evidence, or Builder discretion.
 F078 every PilotCandidate is constructed in the exact 24-position insertion order frozen by v1.0.
 F079 decoder never supplies candidate.why.
-F080 escalation_required is explicit false for replacement-E1 v0.4; conflict/effect/authority semantics use their dedicated candidate fields and cannot be duplicated ad hoc.
+F080 escalation_required is explicit false on all 84 replacement-E1 candidates; governance escalation_target alone cannot create a second AR-4 signal.
 F081 unresolved_effect/material_conflict/informational_only are explicit booleans under exact root rules.
 F082 applicability/freshness/source_identity/provenance_refs/possible_duplicate_refs are always supplied under exact health-reduction rules.
 F083 provenance_refs contain only exact typed source refs actually used; no protocol/review/binding URI injection.
 F084 possible_duplicate_refs is always an array; only unresolved distinct duplicate evidence populates exact typed other refs.
-F085 optional nonapplicable candidate fields are omitted, never null-filled; any extra decoder-owned property is a HOLD.
+F085 optional nonapplicable candidate fields are omitted, never null/undefined-filled; any extra decoder-owned property is a HOLD.
 F086 all 42 obligations match one of the six published lifecycle/applicability reductions.
-F087 exact ABANDONED obligation lifecycle yields candidate applicability ABANDONED despite older APPLICABLE governance/assertion; no resurrection.
+F087 the exact ABANDONED obligation remains candidate obligation_status=ABANDONED / applicability=APPLICABLE; terminal status defeats AR-2 and the exact later applicability assertion is not rewritten.
 F088 all 40 decisions match one of the seven published decision reductions.
 F089 obligation lifecycle never cascades to linked decision; decision changes only from exact decision-scoped evidence.
 F090 PENDING action_decision neither resolves nor supersedes; agreeing duplicate applicability assertions do not create conflict or multiply semantics.
 F091 all 10 permission steps have exact matching reserved class across step/governance/decision.
-F092 delegation validator compares authority generation only to authority current_generation; worker identity generation is a separate domain.
-F093 exact delegation outcomes are true=0 / false=9 / omitted-UNKNOWN=1 with the published failure reasons.
-F094 UNKNOWN authority surface cannot supply positive authority holder/delegation; holder becomes UNKNOWN, valid_delegation omitted, health degraded UNKNOWN.
+F092 worker identity generation and authority generation are separate domains; never equate them numerically.
+F093 exact per-case delegation outcomes are true=0 / false=9 / omitted-UNKNOWN=1; root-level valid_delegation is false=18 / omitted=2.
+F094 the authority-UNKNOWN case sets holder UNKNOWN, omits valid_delegation, and degrades both reserved roots to applicability/freshness/source_identity UNKNOWN.
 F095 provider session/credential or predecessor worker evidence never upgrades delegation.
 F096 the sole UNSTABLE case has only nonsemantic updated_at version drift with prior_semantic_values_retained=true; selected third-read semantics are unique and bracket remains UNSTABLE.
 F097 semantic ambiguity under UNSTABLE still triggers UNSTABLE_RECORD_SELECTION_AMBIGUOUS; version-number drift alone does not.
 F098 pre-build root counts are exactly 42 obligation + 40 decision + 1 unresolved intent + 1 conflict-only = 84 candidates.
 F099 demonstrated conflict attachment counts are exact: 1 instruction-conflict obligation root, 1 current-state conflict-only root, 2 duplicate-conflict obligation roots.
-F100 conflict-only candidate fields and property order match §9.3; current-state conflict-only health is APPLICABLE/CURRENT/VERIFIED.
-F101 reserved-authority candidate roots =20 and multiple-conflict-id candidate count=0.
+F100 exact generated conflict IDs are conf_1678bc3c..., conf_4e885b98..., conf_d4ff9b50... from the published anchor closures; no alternate anchor set is permitted.
+F101 conflict-only candidate fields match §9 exactly; reverse objective->obligation attachment is forbidden.
+F102 candidate applicability census is exactly APPLICABLE=73 / UNKNOWN=5 / SATISFIED=4 / SUPERSEDED=2 / ABANDONED=0.
+F103 candidate health census is exactly freshness CURRENT=82/UNKNOWN=2 and source_identity VERIFIED=82/UNKNOWN=2.
+F104 exact PilotCandidate field-presence census matches the published 84-root table; why count is zero.
+F105 privacyExcluded is exactly one record in one case; all other cases [].
+F106 all 84 candidate provenance_refs arrays contain exactly one exact typed evidence source ref.
+F107 matrix/preflight contain one canonical semantic branch each for candidate construction, lifecycle, authority and conflicts; no contradictory duplicate branch remains.
+F108 static verifier source contains no candidate import/buildProjection call and checks the canonical v1.0 censuses/content addresses.
 
 ## Success
-All F001-F101 PASS and static preflight reports:
+All F001-F108 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
