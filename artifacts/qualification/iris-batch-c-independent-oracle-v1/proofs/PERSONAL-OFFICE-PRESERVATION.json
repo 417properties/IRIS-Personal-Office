@@ -1,0 +1,336 @@
+{
+  "north_star": "AARON_CAN_LIVE_HIS_LIFE_RATHER_THAN_ADMINISTER_IT / AARON_GETS_FREER_NOT_BUSIER",
+  "capabilities": [
+    {
+      "capability": "Aaron Current/bounded state",
+      "classification": "CORE_NOW",
+      "owner_seam": "A1/A5/07",
+      "oracle_id": "WS-REPOSITORIES",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "attention/interruption",
+      "classification": "CORE_NOW semantics; live proactive interruption OPERATING_SCOPE_LATER",
+      "owner_seam": "03/04/A3",
+      "oracle_id": "ICCP-ATTENTION",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "objective/obligation stewardship",
+      "classification": "CORE_NOW",
+      "owner_seam": "A4/A5/02",
+      "oracle_id": "WS-OBJECTIVE",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "need/intent anticipation",
+      "classification": "CORE_NOW distinctions; autonomous workflows DEFERRED_EXTENSION_POINT",
+      "owner_seam": "A1/02",
+      "oracle_id": "ER-SituationModel",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "executive judgment",
+      "classification": "CORE_NOW",
+      "owner_seam": "02",
+      "oracle_id": "ER-FALSE-FRAME",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "Personal BIRE",
+      "classification": "CORE_NOW",
+      "owner_seam": "04",
+      "oracle_id": "ER-CHEAP-INSUFFICIENT",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "opportunity/threat",
+      "classification": "DEFERRED_EXTENSION_POINT",
+      "owner_seam": "02/A1/03",
+      "oracle_id": "ER-SECOND-ORDER",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "social/relationship intelligence",
+      "classification": "DEFERRED_EXTENSION_POINT",
+      "owner_seam": "A1/02/A3",
+      "oracle_id": "ER-SECOND-ORDER",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "decision preparation",
+      "classification": "CORE_NOW",
+      "owner_seam": "02/A3",
+      "oracle_id": "ER-JudgmentRecord",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "worker orchestration",
+      "classification": "CORE_NOW seam; expanded workforce OPERATING_SCOPE_LATER",
+      "owner_seam": "A2/A3/05",
+      "oracle_id": "WS-CONTINUATION",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "durable Work Episodes",
+      "classification": "CORE_NOW",
+      "owner_seam": "A2/A5",
+      "oracle_id": "A5-COLD-9",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "provider-neutral routing",
+      "classification": "CORE_NOW local; federation OPERATING_SCOPE_LATER",
+      "owner_seam": "06/04/A3",
+      "oracle_id": "WS-QUALIFICATION",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "capability/frontier recalibration",
+      "classification": "CORE_NOW qualification; autonomous discovery DEFERRED_EXTENSION_POINT",
+      "owner_seam": "08/06/20",
+      "oracle_id": "IEF-RAW-EVIDENCE-LEVELS",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "portable procedures",
+      "classification": "CORE_NOW interface; broad maturation DEFERRED_EXTENSION_POINT",
+      "owner_seam": "A3/08",
+      "oracle_id": "FP-TRANSFER",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "independent enforcement",
+      "classification": "CORE_NOW",
+      "owner_seam": "A3/A4",
+      "oracle_id": "WS-REVOCATION-RACE",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "governed actions/effect verification",
+      "classification": "CORE_NOW semantics; consequential production OPERATING_SCOPE_LATER",
+      "owner_seam": "A3/A4",
+      "oracle_id": "WS-EFFECT-DISPOSITIONS",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "qualified learning/IEF",
+      "classification": "CORE_NOW bounded semantics; mature C4-C6 DEFERRED_EXTENSION_POINT",
+      "owner_seam": "08/A2/20",
+      "oracle_id": "WS-CAUSAL-LEARNING",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "ambient/device-neutral without surveillance",
+      "classification": "DEFERRED_EXTENSION_POINT; live sensing OPERATING_SCOPE_LATER",
+      "owner_seam": "A1/A3/05/06",
+      "oracle_id": "WS-RETENTION",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "earned autonomy",
+      "classification": "DEFERRED_EXTENSION_POINT; grants OPERATING_SCOPE_LATER",
+      "owner_seam": "A3/08/09",
+      "oracle_id": "WS-NO-OPERATIONAL-PROMOTION",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "BIG-IRIS delta exchange",
+      "classification": "CORE_NOW boundary; federation OPERATING_SCOPE_LATER",
+      "owner_seam": "26/03/A3/A5",
+      "oracle_id": "ICCP-BIG-BOUNDARY",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "provider/runtime/device independence",
+      "classification": "CORE_NOW",
+      "owner_seam": "A2/A5/04/05",
+      "oracle_id": "ER-MODE-SWITCH",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    },
+    {
+      "capability": "Aaron-facing personality/coherence",
+      "classification": "CORE_NOW semantic requirement",
+      "owner_seam": "02/04/A5",
+      "oracle_id": "ER-MODE-SWITCH",
+      "future_seam_obligations": [
+        "exact identity/evidence",
+        "authority/privacy boundary",
+        "future qualified interface",
+        "explicit dual-axis unearned realization status"
+      ],
+      "recurrence_control": "New repair must not delete capability or inflate seam into operational authority."
+    }
+  ],
+  "proof": {
+    "proof_id": "P-PRESERVATION",
+    "claim_invariant": "Full Personal Office envelope retains current semantics or explicit deferred seam without authority expansion",
+    "semantic_source": [
+      {
+        "artifact": "12",
+        "path": "sources/12-INTENT-CAPABILITY-PRESERVATION-MATRIX.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/12-INTENT-CAPABILITY-PRESERVATION-MATRIX.md",
+        "blob": "db195b2467c7195c4910b4d4813813134528a6fa",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "24",
+        "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+        "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "25",
+        "path": "sources/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+        "blob": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      }
+    ],
+    "dependency_closure": "every named capability -> source owner -> invariant seam -> oracle -> dual-axis status -> operating release boundary",
+    "method": "Source-derived capability census; downstream interface/traceability review and end-to-end flow where implemented.",
+    "PASS_establishes": "Every listed intent capability retains its load-bearing semantic seam and accurate deferred/operating boundary.",
+    "PASS_does_not_establish": "Does not prove capability implemented, deployed, economically effective, operationally authorized or mature.",
+    "falsifier": "Repair shrinks to Pilot/workflow assistant, loses future seam, duplicates semantic owner or labels deferred seam as operational.",
+    "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+    "implementation_assumptions": [
+      "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+      "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+    ],
+    "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+    "as_of_version": {
+      "oracle_version": "1.0",
+      "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+      "derivation_date": "2026-10-03",
+      "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+    },
+    "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+  }
+}

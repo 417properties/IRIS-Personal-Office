@@ -1,0 +1,70 @@
+{
+  "artifact": "IRIS_FULL_SYSTEM_DEEP_AUDIT_COMPLETE",
+  "candidate": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+  "disposition": "HOLD / NEW_BASELINE_REQUIRED / D_FOUNDATIONAL_REWORK",
+  "authority": "NONE",
+  "clean_room_certification": false,
+  "audit_surface_completion": "100% enumerated authorized source/input surface",
+  "files": [
+    {
+      "path": "84-ROOT-CENSUS.csv",
+      "bytes": 31571,
+      "sha256": "d11c6d3717755b794c4fff3dc6c5d595a8e9f5be0ada7af26c79927a6d63eb39",
+      "git_blob": "8adc41f3fbc1b429975bf7f37c1af883b51aa455"
+    },
+    {
+      "path": "84-ROOT-FIELD-DERIVATIONS.csv",
+      "bytes": 431688,
+      "sha256": "2cabdede9bfe5729cbbb08bbcb6ddee415d6eca47b2a57bc7f28b642c779ac7a",
+      "git_blob": "071baa6cc053de728c48afb72a0519aca33cbe36"
+    },
+    {
+      "path": "FIELD-DOMAINS.md",
+      "bytes": 5335,
+      "sha256": "14464e87894b9cc635d6661dac04a92bddc9b66155969e6af210d85bf99d3b07",
+      "git_blob": "00bdaec3088bc3615c137418ab1a7618be86a298"
+    },
+    {
+      "path": "FOUNDATIONAL-TRACEABILITY.csv",
+      "bytes": 9440,
+      "sha256": "c7e4e4db20eb28e194c5cda38974a9cafba01b4c0b36131007f6fcc3161db5a9",
+      "git_blob": "7858921e2ea56513f8609bfb235482ae5f6ef190"
+    },
+    {
+      "path": "IRIS-FULL-SYSTEM-DEEP-AUDIT.md",
+      "bytes": 127738,
+      "sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+      "git_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86"
+    },
+    {
+      "path": "MECHANICAL-EVIDENCE.json",
+      "bytes": 731,
+      "sha256": "3bdb54d85890b0c8d7634affc29a6e90c9bea1370c3ea398fe371a26a5579e3e",
+      "git_blob": "829af87175c111b01afd92077e33546debab42e9"
+    },
+    {
+      "path": "PILOT001-TRACEABILITY.csv",
+      "bytes": 13109,
+      "sha256": "79dc57072c80ca29cbf346cb2f1b7264669a46b7d70825df474d1ab3dcce409f",
+      "git_blob": "3acbc057b67324ebe525798751c9d1c4610bff6f"
+    },
+    {
+      "path": "SOURCE-INVENTORY.csv",
+      "bytes": 19253,
+      "sha256": "1ddeed2b2b636a5ffc0dc0a8e0ee8559009fc79727051d0690f91da7dec388f3",
+      "git_blob": "fa3b39e5970b50253a227bb942f467b8eb660e7f"
+    },
+    {
+      "path": "SUPPLEMENTAL-PROVENANCE.json",
+      "bytes": 2107,
+      "sha256": "010a83620ad79e6b0892984a4672f9f7dc9dbcc394dc096e0ad74418327c7746",
+      "git_blob": "2a74b01113c8b92ef73ce883e69a9f93c398efc8"
+    },
+    {
+      "path": "TEST-SOURCE-INDEX.csv",
+      "bytes": 19781,
+      "sha256": "3e63a067bb7f58c755fd165b50ad3a20d79acd9f8194ecb14e46535de4e65526",
+      "git_blob": "ecd28e427f524151dad9f669e77734eb13e77683"
+    }
+  ]
+}

@@ -1,0 +1,1907 @@
+{
+  "family": "EXECUTIVE",
+  "as_of_version": {
+    "oracle_version": "1.0",
+    "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+    "derivation_date": "2026-10-03",
+    "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+  },
+  "status": "FROZEN_SOURCE_DERIVED_EXPECTATIONS; implementation conformance unexecuted",
+  "vectors": [
+    {
+      "id": "ER-ReferentFrame",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "ReferentFrame",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "principal/objective/constraints/uncertainty/frame assumptions explicit",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-ReferentFrame",
+        "claim_invariant": {
+          "required_observable": "principal/objective/constraints/uncertainty/frame assumptions explicit",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-ReferentFrame under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-SituationModel",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "SituationModel",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "facts vs inferences vs predictions, competing hypotheses and missing evidence",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-SituationModel",
+        "claim_invariant": {
+          "required_observable": "facts vs inferences vs predictions, competing hypotheses and missing evidence",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-SituationModel under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-CausalModel",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "CausalModel",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "symptom -> direct mechanism -> enabling cause, falsifier/reversal",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-CausalModel",
+        "claim_invariant": {
+          "required_observable": "symptom -> direct mechanism -> enabling cause, falsifier/reversal",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-CausalModel under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-OptionSet",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "OptionSet",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "material alternatives incl wait/test/defer; supplied options not automatically exhaustive",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-OptionSet",
+        "claim_invariant": {
+          "required_observable": "material alternatives incl wait/test/defer; supplied options not automatically exhaustive",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-OptionSet under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-JudgmentRecord",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "JudgmentRecord",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "recommendation, evidence sufficiency, uncertainty, reversibility and authority boundary",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-JudgmentRecord",
+        "claim_invariant": {
+          "required_observable": "recommendation, evidence sufficiency, uncertainty, reversibility and authority boundary",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-JudgmentRecord under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-ResourceArbitration",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "ResourceArbitration",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "BIRE tradeoffs and minimum sufficient eligible execution config",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-ResourceArbitration",
+        "claim_invariant": {
+          "required_observable": "BIRE tradeoffs and minimum sufficient eligible execution config",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-ResourceArbitration under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-VerificationPlan",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "VerificationPlan",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "expected evidence, falsifiers, outcome reconciliation",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-VerificationPlan",
+        "claim_invariant": {
+          "required_observable": "expected evidence, falsifiers, outcome reconciliation",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-VerificationPlan under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-LearningCandidate",
+      "kind": "VECTOR",
+      "given": {
+        "observable_product": "LearningCandidate",
+        "task": "material executive decision preparation"
+      },
+      "expected": {
+        "required_observable": "bounded applicability, verified experience basis and promotion boundary",
+        "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+        "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-LearningCandidate",
+        "claim_invariant": {
+          "required_observable": "bounded applicability, verified experience basis and promotion boundary",
+          "private_reasoning": "no chain-of-thought requested or used as qualification evidence",
+          "grading": "meaning/evidence obligations, not preferred prose/style or verbosity"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified A1/A5 inputs -> exact A2 referents -> executive product -> BIRE -> A3/A4 release",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-LearningCandidate under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Product hides a load-bearing distinction or is scored from private reasoning.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-FALSE-FRAME",
+      "kind": "VECTOR",
+      "given": {
+        "request": "choose A or B",
+        "evidence": "both options optimize obsolete plan rather than governing objective"
+      },
+      "expected": {
+        "product": "challenge frame and expose objective-relevant alternative/wait/test as justified",
+        "not_allowed": "force choice because supplied options are assumed complete"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-FALSE-FRAME",
+        "claim_invariant": {
+          "product": "challenge frame and expose objective-relevant alternative/wait/test as justified",
+          "not_allowed": "force choice because supplied options are assumed complete"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-FALSE-FRAME under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-UNCERTAIN-CAUSE",
+      "kind": "VECTOR",
+      "given": {
+        "observations": "compatible with H1 and H2",
+        "causal_test": "not performed"
+      },
+      "expected": {
+        "product": "retain competing hypotheses and discriminate with missing evidence/falsifier; no causal fact from confidence"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-UNCERTAIN-CAUSE",
+        "claim_invariant": {
+          "product": "retain competing hypotheses and discriminate with missing evidence/falsifier; no causal fact from confidence"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-UNCERTAIN-CAUSE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-SECOND-ORDER",
+      "kind": "VECTOR",
+      "given": {
+        "recommendation": "short-term win with material social/financial/optionality consequences"
+      },
+      "expected": {
+        "product": "assess second-order, opportunity cost, reversibility/resource impacts and boundary to authority"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-SECOND-ORDER",
+        "claim_invariant": {
+          "product": "assess second-order, opportunity cost, reversibility/resource impacts and boundary to authority"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-SECOND-ORDER under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-MODE-SWITCH",
+      "kind": "VECTOR",
+      "given": {
+        "provider/mode": "changed",
+        "objective/referent": "same"
+      },
+      "expected": {
+        "product": "preserve governing principal/objective, personality and uncertainty/evidence semantics",
+        "Current": "canonical, independent of provider session"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-MODE-SWITCH",
+        "claim_invariant": {
+          "product": "preserve governing principal/objective, personality and uncertainty/evidence semantics",
+          "Current": "canonical, independent of provider session"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-MODE-SWITCH under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-CHEAP-INSUFFICIENT",
+      "kind": "VECTOR",
+      "given": {
+        "configA": "cheap unqualified",
+        "configB": "costlier qualified for required floor"
+      },
+      "expected": {
+        "select": "B or another eligible config; A ineligible",
+        "ranking": "only after eligibility"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-CHEAP-INSUFFICIENT",
+        "claim_invariant": {
+          "select": "B or another eligible config; A ineligible",
+          "ranking": "only after eligibility"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-CHEAP-INSUFFICIENT under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-NO-ELIGIBLE",
+      "kind": "VECTOR",
+      "given": {
+        "configs": "all below floor or unproven material requirements"
+      },
+      "expected": {
+        "product": "HOLD/escalate/defer/seek qualification; no arbitrary cheapest selection",
+        "limitation": "preserve required capability, no degradation disguised as mode"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-NO-ELIGIBLE",
+        "claim_invariant": {
+          "product": "HOLD/escalate/defer/seek qualification; no arbitrary cheapest selection",
+          "limitation": "preserve required capability, no degradation disguised as mode"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-NO-ELIGIBLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "ER-EXPLORATION-LOW-CONFIDENCE",
+      "kind": "VECTOR",
+      "given": {
+        "hypothesis": "unusual/low-confidence but relevant exploratory option",
+        "promotion": "not earned"
+      },
+      "expected": {
+        "option_architecture": "may explore retaining epistemic label",
+        "consequential_promotion": "filtered separately",
+        "not_allowed": "filtration censors thought merely for low confidence"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "02",
+          "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+          "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "04",
+          "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+          "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "06",
+          "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+          "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-ER-EXPLORATION-LOW-CONFIDENCE",
+        "claim_invariant": {
+          "option_architecture": "may explore retaining epistemic label",
+          "consequential_promotion": "filtered separately",
+          "not_allowed": "filtration censors thought merely for low confidence"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "02",
+            "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+            "blob": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "04",
+            "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+            "blob": "5e98644391dff0a85a70242118bff3ca6a413b17",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "qualified inputs -> executive products/options -> eligibility/BIRE -> judgment/release boundary",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only ER-EXPLORATION-LOW-CONFIDENCE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Recommendation confuses objective/plan, fact/inference, confidence/evidence or capability/authority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    }
+  ]
+}

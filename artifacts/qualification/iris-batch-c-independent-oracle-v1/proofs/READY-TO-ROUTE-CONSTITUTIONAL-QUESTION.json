@@ -1,0 +1,147 @@
+{
+  "status": "ONE_OPEN_ENCODING_CLARIFICATION",
+  "questions": [
+    {
+      "question_id": "Q-DISPOSITION",
+      "classification": "SPECIFICATION_GAP_EXISTING_INTENT_CLEAR",
+      "recipient": "Professor -> IBA 1.9 -> STRATA; no Founder redesign requested",
+      "question": "What is the canonical precedence/compound-reason rule assigning exactly one visible disposition when an admitted root simultaneously satisfies terminal/inapplicable/privacy-excluded/conflicted/UNKNOWN predicates?",
+      "source_closure_examined": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "A1 shared conservation and epistemic/applicability coordinates"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "arrow permitted dispositions; reversible suppression"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "Root/disposition conservation: exactly one visible disposition"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "Privacy: independent retain/use/disclose minimum-necessary proofs"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "reserved Aaron judgment / terminal transitions"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "all SourceEvaluations including terminal/privacy and historical reconstruction"
+        },
+        {
+          "artifact": "22",
+          "path": "sources/22-FOUNDER-AMBIGUITY-REGISTER.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/22-FOUNDER-AMBIGUITY-REGISTER.md",
+          "blob": "6c8f7d80d8cae79e70495bab43744cefcd72573b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "section": "specification gaps and Founder reopen threshold"
+        }
+      ],
+      "additional_governing_closure": [
+        "BIG #703/5970182571 A1 single state across classification/coverage/projection; A3 privacy; source gap classification",
+        "artifact11 precedence; artifact20 no implementation-favorable underdetermined behavior",
+        "all other 26 families consumed: no disposition-overlap ordering supplied"
+      ],
+      "minimal_pairs": [
+        {
+          "same_input": {
+            "root": "historically SATISFIED",
+            "recipient_disclosure": "prohibited",
+            "identity": "same r1",
+            "mandatory_history": "retained internally subject to retention"
+          },
+          "outcome_A": {
+            "visible_disposition": "TERMINAL_RETAINED",
+            "private_detail": "redacted with privacy reason",
+            "history": "retained internally"
+          },
+          "outcome_B": {
+            "visible_disposition": "PRIVACY_EXCLUDED",
+            "terminal_detail": "retained internally with terminal reason",
+            "history": "retained internally"
+          },
+          "incompatibility": "Exactly one scalar visible disposition cannot simultaneously be these two values. Both preserve history/privacy/conservation absent a source priority."
+        },
+        {
+          "same_input": {
+            "root": "APPLICABLE",
+            "knowledge": "CONFLICTED",
+            "required_holder": "UNKNOWN",
+            "privacy": "authorized"
+          },
+          "outcome_A": "CONFLICT_HOLD with UNKNOWN reason",
+          "outcome_B": "RELEVANCE_UNKNOWN with conflict reason",
+          "incompatibility": "Single scalar disposition differs while both preserve separate epistemic facts and deny unsafe promotion."
+        }
+      ],
+      "why_precedence_does_not_resolve": "Founder/base and accepted contracts require distinct coordinates, no silent drop and privacy protection, but neither supplies a priority between the listed simultaneous disposition predicates. Audit falsifies dropped/positive roots; it is not authority to choose the new partition. Implementation/tests are evidence only.",
+      "affected_vector_ids": [
+        "A1-OVERLAP-PRIVACY-TERMINAL",
+        "A1-OVERLAP-CONFLICT-UNKNOWN",
+        "WS-TERMINAL-PRIVATE-INAPPLICABLE (overlap variants only)"
+      ],
+      "affected_proof_ids": [
+        "P-A1-OVERLAP-PRIVACY-TERMINAL",
+        "P-A1-OVERLAP-CONFLICT-UNKNOWN",
+        "P-WS-TERMINAL-PRIVATE-INAPPLICABLE (overlap scalar only)",
+        "P-A1-PRODUCT (does not grade destination precedence)"
+      ],
+      "non_scoreable_boundary": "Only exact scalar disposition for overlapping predicates is withheld. Privacy, no release without authority, terminal history and explicit identity/destination conservation remain scoreable constraints. Nonoverlapping disposition vectors remain scoreable.",
+      "required_return": "A1/A4/A5-owned priority or canonical compound-reason rule with privacy-safe visible representation, exact cases and schema/version; no new implementation-local owner.",
+      "Founder_threshold": "Not established: no authority/privacy/end-state rights policy change requested; IBA1.9 must clarify existing-intent encoding."
+    }
+  ],
+  "source_closed_questions": [
+    {
+      "id": "Q-TIME",
+      "status": "CLOSED_SOURCE_DETERMINATE",
+      "source": "BIG #703/5971006516 required temporal distinctions",
+      "reason": "valid-from begins to apply, expiry ceases to apply, revocation when prior state stopped governing",
+      "vector": "A3-EXACT-TEMPORAL-BOUNDARY",
+      "rule": "effective <= cut < expiry; revocation by exact ordered canonical cut; coarse tied timestamps cannot decide race order"
+    },
+    {
+      "id": "Q-IEF",
+      "status": "NO_CONSTITUTIONAL_POLICY_GAP_CLAIMED",
+      "sources": [
+        "BIG #703/5970957076",
+        "BIG #703/5970991430",
+        "artifact08",
+        "artifact09"
+      ],
+      "reason": "Definitions, cumulative mandatory floor, evidence/currentness/no contradiction/independent qualification and qualitative compounding are source-determinate. Missing raw qualification evidence is an unearned claim, not permission to fabricate numerical thresholds or reopen Founder model.",
+      "vectors": [
+        "IEF-RAW-EVIDENCE-LEVELS",
+        "IEF-PHASE-1..7",
+        "IEF-MANDATORY-DIMENSION-CATALOG"
+      ]
+    }
+  ]
+}

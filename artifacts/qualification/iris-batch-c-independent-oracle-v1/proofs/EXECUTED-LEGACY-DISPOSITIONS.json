@@ -1,0 +1,1962 @@
+{
+  "status": "LEGACY_DISPOSITION_EXECUTED_FOR_ALL_17_ARTIFACT21_CLASSES_AND_AUDIT11_CLASSES",
+  "bound": "25 split/expanded claim classes; not an empirical retest of every legacy assertion",
+  "admission_rule": "No unregistered legacy assertion may serve as a normative oracle. Only L01/L02 narrow source-compatible semantic claims survive normatively; all other evidence retains explicit scope or is replaced. Contradictory/scope-overclaim entries cannot be consumed as expected outputs.",
+  "test_count_is_not_coverage": true,
+  "rows": [
+    {
+      "legacy_id": "L01",
+      "class": "bee076 intent-only / coexisting unresolved-effect narrow repair",
+      "disposition": "KEEP_AS_SEMANTICALLY_VALID",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Audit preserves this exact local repair; constitution independently requires unresolved state and safe next action.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "narrow normative semantic claim",
+      "replacement_vector_ids": [
+        "A4-COLD-AMBIGUITY",
+        "A5-UNRESOLVED-DOMINATES"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L01",
+        "claim_invariant": "An intent with unresolved/ambiguous state cannot be declared safe merely because a terminal verification exists; narrow intent-only repair is not erased.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "An intent with unresolved/ambiguous state cannot be declared safe merely because a terminal verification exists; narrow intent-only repair is not erased.",
+        "PASS_does_not_establish": "Full continuity admission, correct authority values/principal/time, retry execution or SQL recovery were not proved.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L02",
+      "class": "bee076 early tool-contract mismatch repair",
+      "disposition": "KEEP_AS_SEMANTICALLY_VALID",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Audit preserves the local guard; total authority and action identity still need independent proofs.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "narrow normative semantic claim",
+      "replacement_vector_ids": [
+        "A3-MUTATE-tool_operation",
+        "A4-READBACK-WRONG-INTENT"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L02",
+        "claim_invariant": "Mismatched tool/scope/retry contract is rejected before mutation; narrow early mismatch repair is not erased.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Mismatched tool/scope/retry contract is rejected before mutation; narrow early mismatch repair is not erased.",
+        "PASS_does_not_establish": "Matching label does not establish real authority, intent digest consistency or one-time submission.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L03",
+      "class": "accepted foundation file identity / 63-file byte identity",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Equality is identity evidence; inherited defects remain defects.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L03",
+        "claim_invariant": "Historical foundation lineage is preserved.",
+        "semantic_source": [
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "19",
+            "path": "sources/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+            "blob": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Historical foundation lineage is preserved.",
+        "PASS_does_not_establish": "Semantic correctness, all callers, operational maturity or repaired candidate correctness.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L04",
+      "class": "replacement E1 immutable population identity / structure / adjudicability",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Audit found no source-backed population regeneration requirement; source rules do not make E1 normative runtime semantics.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "A5-IMPORT-MISSING_REQUIRED_KEY"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L04",
+        "claim_invariant": "Preserve evaluation asset identity absent named source falsifier.",
+        "semantic_source": [
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "18",
+            "path": "sources/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+            "blob": "b3492abab38b247d51202d117eccbe0800e59b00",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Preserve evaluation asset identity absent named source falsifier.",
+        "PASS_does_not_establish": "Candidate correctness, universal coverage, semantic disjointness or independently recreated E1 authorship.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L05",
+      "class": "historical E2 labels/results and Blind E2 closure",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "No protected answer or result vector consumed; cannot revalidate substantive scoring.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-NO-OPERATIONAL-PROMOTION"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L05",
+        "claim_invariant": "Historical gate/asset existence is administrative evidence only; protected labels remain unread and unchanged.",
+        "semantic_source": [
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Historical gate/asset existence is administrative evidence only; protected labels remain unread and unchanged.",
+        "PASS_does_not_establish": "Answers, correctness of scoring, new-baseline oracle or acceptance.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L06",
+      "class": "v0.2-v1.x Pilot execution bindings",
+      "disposition": "RETIRE_AS_REDUNDANT",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Foundation plus cross-layer contracts supersede Pilot-only normative repair; retain defect lineage as evidence only.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L06",
+        "claim_invariant": "Old binding lane cannot govern new normative execution after full foundational repair boundary.",
+        "semantic_source": [
+          {
+            "artifact": "18",
+            "path": "sources/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+            "blob": "b3492abab38b247d51202d117eccbe0800e59b00",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "21",
+            "path": "sources/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "blob": "28dedc07d783519658584743b9691a5efb1c2340",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Erasure of immutable bindings, historical results or new execution authority.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L07",
+      "class": "D02 authority UNKNOWN expectations that assert known required without item UNKNOWN",
+      "disposition": "INVALID_CONTRADICTORY_ORACLE",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Semantic comparison of artifact21-described claim against A1 independent coordinates; direct contradiction.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "A1-authority-UNKNOWN",
+        "A1-COVERAGE-SCOPE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L07",
+        "claim_invariant": "Operational fail-closed denial cannot manufacture known requiredness or hide item uncertainty.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Individual test rerun or any claim beyond the exact described contradictory behavior.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L08",
+      "class": "D04 unequal-resolution consolidation / same-objective conflict absorption expectations",
+      "disposition": "INVALID_CONTRADICTORY_ORACLE",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Semantic comparison against A2 identity anchors vs context; direct contradiction.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "A2-SAME-OBJECTIVE",
+        "A2-CONFLICT-AUTH"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L08",
+        "claim_invariant": "No merge without exact explicit proven resolution equivalence.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "All consolidation operations are wrong; source-proven exact equivalent consolidation remains permitted.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L09",
+      "class": "T26/T27 count-only recovery claims",
+      "disposition": "REWRITE_FROM_BATCH_A_SEMANTICS",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Record counts cannot establish principal/state/authority/privacy/fence/effect/as-of recovery.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "WS-REPOSITORIES",
+        "A5-COLD-1",
+        "A5-COLD-13"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L09",
+        "claim_invariant": "Reconstruction must recover the full material institutional model.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Historical local count truth is erased or cold/SQL execution completed.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L10",
+      "class": "T08-T17 small authority negative set",
+      "disposition": "REWRITE_FROM_BATCH_A_SEMANTICS",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Partial negative examples fail the total validator claim; expand to all listed dimension/unknown mutations.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "A3-POSITIVE",
+        "WS-AUTHORITY"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L10",
+        "claim_invariant": "Every material authority dimension is exact and independently mutated.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "All original examples are false or new full authority invariant is empirically proven.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L11",
+      "class": "T21 single submission assertion",
+      "disposition": "REWRITE_FROM_BATCH_A_SEMANTICS",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "One local invocation is not an at-most-one fenced submission proof.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "A4-DUPLICATE-CALL",
+        "WS-REVOCATION-RACE",
+        "WS-CRASH-DIGEST"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L11",
+        "claim_invariant": "Durable release ownership must survive duplicate calls, crashes and races.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Tool idempotence, exactly-once transport or whole action lifecycle acceptance.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L12",
+      "class": "T69-T71/T75-T80/T101 literal or local assertions used as system invariant proof",
+      "disposition": "INVALID_SCOPE_OVERCLAIM",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Retain local observed facts as historical evidence, remove broad interpretation, replace normative proof under schema.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L12",
+        "claim_invariant": "Local/literal assertions cannot establish caller or full institutional invariant.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "21",
+            "path": "sources/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "blob": "28dedc07d783519658584743b9691a5efb1c2340",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Each named assertion is semantically false; not individually inspected or executed here.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L13",
+      "class": "T86 unchanged local identity assertion",
+      "disposition": "REWRITE_FROM_BATCH_A_SEMANTICS",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Local stable label does not cover canonical causal identity or transfer exclusivity.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "A2-REPLAY",
+        "A2-SAME-OBJECTIVE",
+        "WS-CONTINUATION"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L13",
+        "claim_invariant": "Distinct resolution/occurrence/continuation identity claims require exact relation and schedule proofs.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Current identity helper correctness or new caller-wide proof.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L14",
+      "class": "T91 routing success with qualification for different candidate",
+      "disposition": "INVALID_CONTRADICTORY_ORACLE",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Semantic comparison of artifact21-described claim against exact relational eligibility; direct contradiction.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "FP-SWAP",
+        "FP-ELIGIBILITY-tool"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L14",
+        "claim_invariant": "Qualification binds exact candidate/configuration or explicit transfer evidence.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "06",
+            "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+            "blob": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "Any generic benchmark/role badge can authorize routing or all historical routing assertions were tested here.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L15",
+      "class": "schema/table-name/README/static field presence",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "No field/table-name count proves domain constraints, NULL handling, runtime or SQL conformance.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "A5-IMPORT-NULL",
+        "WS-ROUNDTRIP"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L15",
+        "claim_invariant": "Presence is structural evidence only.",
+        "semantic_source": [
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Presence is structural evidence only.",
+        "PASS_does_not_establish": "Semantic or operational correctness.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L16",
+      "class": "Builder historical test-count / green-count summaries",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Counts remain reported history, stripped of whole-stack inference.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L16",
+        "claim_invariant": "TEST_COUNT != COVERAGE.",
+        "semantic_source": [
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "21",
+            "path": "sources/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "blob": "28dedc07d783519658584743b9691a5efb1c2340",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "TEST_COUNT != COVERAGE.",
+        "PASS_does_not_establish": "Any conformance invariant, authority or acceptance.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L17",
+      "class": "prior narrow independent PASS receipts",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Historical receipt is not fresh independent whole-stack acceptance.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L17",
+        "claim_invariant": "Preserve explicit earned narrow scope and independence limitations.",
+        "semantic_source": [
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "21",
+            "path": "sources/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+            "blob": "28dedc07d783519658584743b9691a5efb1c2340",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Preserve explicit earned narrow scope and independence limitations.",
+        "PASS_does_not_establish": "New candidate outputs, all callers, clean-room acceptance or widened scope.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L18",
+      "class": "sealed full-system DEEP audit",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Audit disclosed exposure to historical E3 result information; that limitation stays attached to audit, not imported as expected outputs.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L18",
+        "claim_invariant": "Audit is repair/falsification evidence, not oracle or fresh independent acceptance.",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Audit is repair/falsification evidence, not oracle or fresh independent acceptance.",
+        "PASS_does_not_establish": "Clean-room acceptance, score-derived configuration or empirical repair PASS.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L19",
+      "class": "C0 frontier/topology blueprint",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Design identity is not requalification of current vendor behavior or deployed integration.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-NO-OPERATIONAL-PROMOTION"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L19",
+        "claim_invariant": "Preserve selected architecture/provider-subordinate design.",
+        "semantic_source": [
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "25",
+            "path": "sources/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+            "blob": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Preserve selected architecture/provider-subordinate design.",
+        "PASS_does_not_establish": "Live provider functionality, production, credential or authority qualification.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L20",
+      "class": "C0-C3 original 56-test / 17-table return",
+      "disposition": "INVALID_SCOPE_OVERCLAIM",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Audit reopened broad foundational inference; retain local historical facts only.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "WS-REPOSITORIES",
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L20",
+        "claim_invariant": "Historical fixtures/table presence do not establish canonical kernel/admission/reconciliation/SQL durability.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "All 56 assertions false or present foundational acceptance.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L21",
+      "class": "transition local construction / strict-source / PGlite migration-seed summaries",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Reported migration/seed success does not establish all T01-T101 semantic or caller invariants.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-ROUNDTRIP",
+        "WS-REPOSITORIES"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L21",
+        "claim_invariant": "Preserve local structural and fixture evidence within its scope.",
+        "semantic_source": [
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "19",
+            "path": "sources/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+            "blob": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Preserve local structural and fixture evidence within its scope.",
+        "PASS_does_not_establish": "Real SQL constraints under all states, effect concurrency or new baseline integration.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L22",
+      "class": "post-replacement-E1 candidate refreeze",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "F2/D03/D04 falsify its broad semantic qualification; no extension of that qualification.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-RESOLUTIONS",
+        "WS-UNKNOWN-DENIED"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L22",
+        "claim_invariant": "Frozen candidate identity/history remains lineage.",
+        "semantic_source": [
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "18",
+            "path": "sources/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+            "blob": "b3492abab38b247d51202d117eccbe0800e59b00",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Frozen candidate identity/history remains lineage.",
+        "PASS_does_not_establish": "Candidate correctness or new baseline authority.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L23",
+      "class": "standalone v1.0 preflight PASS",
+      "disposition": "INVALID_SCOPE_OVERCLAIM",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Artifact/audit classify preflight HOLD; retain mechanical identities only.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "immutable lineage only; normative claim excluded",
+      "replacement_vector_ids": [
+        "A2-CONFLICT-ROOT-CONSTRUCTOR",
+        "A5-RENDERER-BYPASS",
+        "WS-RESOLUTIONS"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L23",
+        "claim_invariant": "Deterministic reductions/hash preflight cannot establish total identity, unique semantics or conformance.",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "The described normative claim is excluded/replaced, with immutable historical lineage preserved.",
+        "PASS_does_not_establish": "New standalone-binding acceptance or whole-stack qualification.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L24",
+      "class": "whole-object F1/F2 falsifier review",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Falsification does not establish surrounding foundational health or expanded whole-stack scope.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "A1-COVERAGE-SCOPE",
+        "WS-RESOLUTIONS"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L24",
+        "claim_invariant": "Preserve source-supported falsification of both named failure classes.",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Preserve source-supported falsification of both named failure classes.",
+        "PASS_does_not_establish": "Clean-room oracle, full audit acceptance or repaired output scoring.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    },
+    {
+      "legacy_id": "L25",
+      "class": "live provider / production / continuity historical status",
+      "disposition": "KEEP_AS_EVIDENCE_ONLY",
+      "execution": {
+        "status": "EXECUTED_SEMANTIC_COMPARISON",
+        "compared_inputs": [
+          "frozen artifact21 described claim",
+          "frozen constitutional source listed in proof",
+          "sealed audit exact scoped sections 10/11 where relevant"
+        ],
+        "decision_reason": "Source audit and Batch-A preserve OFF/unadmitted boundaries.",
+        "actual_evidence": {
+          "repository": "417properties/IRIS-Personal-Office",
+          "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+          "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+          "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+          "consumed_sections": [
+            "What remains earned",
+            "10 Non-findings",
+            "11 Previous PASS revalidation"
+          ],
+          "normative_role": "falsification/traceability only; never expected-output authority"
+        },
+        "individual_source_tests": "not inspected; old expected outputs not used as truth"
+      },
+      "survives_as": "historical evidence only",
+      "replacement_vector_ids": [
+        "WS-NO-OPERATIONAL-PROMOTION"
+      ],
+      "proof": {
+        "proof_id": "LEGACY-P-L25",
+        "claim_invariant": "Explicitly unearned/deferred; no operational state erased or granted.",
+        "semantic_source": [
+          {
+            "artifact": "09",
+            "path": "sources/09-MATURITY-AXES-NON-COLLAPSE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/09-MATURITY-AXES-NON-COLLAPSE.md",
+            "blob": "610fa691598ff20b2d17151123e840319adb5d25",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact stated historical claim -> audit scoped evidence -> constitutional comparison -> named replacement vectors; unlisted individual proofs remain quarantined",
+        "method": "EXECUTED source-level semantic claim comparison; no historical test/candidate re-execution.",
+        "PASS_establishes": "Explicitly unearned/deferred; no operational state erased or granted.",
+        "PASS_does_not_establish": "Current remote production inventory or any operational PASS.",
+        "falsifier": "A surviving proof is consumed with broader scope than recorded, contradictory expected behavior is copied, or uninspected individual tests are declared revalidated.",
+        "independence_class": "FRESH_SOURCE_ONLY_SEMANTIC_REVIEW; HISTORICAL_RECEIPT_INDEPENDENCE_NOT_RECREATED",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "AUDIT_ATTESTED_HISTORICAL_EVIDENCE_PLUS_EXECUTED_CONSTITUTIONAL_DISPOSITION",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_DISPOSITION_EXECUTED; HISTORICAL_TESTS_NOT_REEXECUTED"
+      }
+    }
+  ]
+}

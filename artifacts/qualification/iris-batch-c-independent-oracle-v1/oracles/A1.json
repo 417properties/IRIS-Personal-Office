@@ -1,0 +1,3621 @@
+{
+  "family": "A1",
+  "as_of_version": {
+    "oracle_version": "1.0",
+    "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+    "derivation_date": "2026-10-03",
+    "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+  },
+  "status": "FROZEN_SOURCE_DERIVED_EXPECTATIONS; implementation conformance unexecuted",
+  "vectors": [
+    {
+      "id": "A1-K-KNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "KNOWN",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "KNOWN",
+        "positive_release": "only if required validity/authority independently established",
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-KNOWN",
+        "claim_invariant": {
+          "retained_knowledge": "KNOWN",
+          "positive_release": "only if required validity/authority independently established",
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-KNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-K-UNKNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "UNKNOWN",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "UNKNOWN",
+        "positive_release": false,
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-UNKNOWN",
+        "claim_invariant": {
+          "retained_knowledge": "UNKNOWN",
+          "positive_release": false,
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-UNKNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-K-MISSING",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "MISSING",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "MISSING",
+        "positive_release": false,
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-MISSING",
+        "claim_invariant": {
+          "retained_knowledge": "MISSING",
+          "positive_release": false,
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-MISSING under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-K-UNAVAILABLE",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "UNAVAILABLE",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "UNAVAILABLE",
+        "positive_release": false,
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-UNAVAILABLE",
+        "claim_invariant": {
+          "retained_knowledge": "UNAVAILABLE",
+          "positive_release": false,
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-UNAVAILABLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-K-CONFLICTED",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "CONFLICTED",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "CONFLICTED",
+        "positive_release": false,
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-CONFLICTED",
+        "claim_invariant": {
+          "retained_knowledge": "CONFLICTED",
+          "positive_release": false,
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-CONFLICTED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-K-INVALID",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "INVALID",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "INVALID",
+        "positive_release": false,
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-INVALID",
+        "claim_invariant": {
+          "retained_knowledge": "INVALID",
+          "positive_release": false,
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-INVALID under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-K-REJECTED",
+      "kind": "VECTOR",
+      "given": {
+        "mandatory_fact_state": "REJECTED",
+        "operational_release_requires_positive_valid_fact": true
+      },
+      "expected": {
+        "retained_knowledge": "REJECTED",
+        "positive_release": false,
+        "forbidden": [
+          "UNKNOWN -> FALSE",
+          "MISSING -> KNOWN_ABSENT",
+          "UNAVAILABLE -> MISSING",
+          "CONFLICTED -> selected favorite fact",
+          "STALE -> KNOWN_INVALID"
+        ],
+        "destination": "explicit qualified disposition or named HOLD, never disappear"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-K-REJECTED",
+        "claim_invariant": {
+          "retained_knowledge": "REJECTED",
+          "positive_release": false,
+          "forbidden": [
+            "UNKNOWN -> FALSE",
+            "MISSING -> KNOWN_ABSENT",
+            "UNAVAILABLE -> MISSING",
+            "CONFLICTED -> selected favorite fact",
+            "STALE -> KNOWN_INVALID"
+          ],
+          "destination": "explicit qualified disposition or named HOLD, never disappear"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-K-REJECTED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Operational denial rewrites epistemic state or removes the root.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-holder-UNKNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "holder",
+        "state": "UNKNOWN"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-holder-UNKNOWN",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-holder-UNKNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-holder-MISSING",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "holder",
+        "state": "MISSING"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-holder-MISSING",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-holder-MISSING under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-holder-UNAVAILABLE",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "holder",
+        "state": "UNAVAILABLE"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-holder-UNAVAILABLE",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-holder-UNAVAILABLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-holder-CONFLICTED",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "holder",
+        "state": "CONFLICTED"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-holder-CONFLICTED",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-holder-CONFLICTED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-owner-UNKNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "owner",
+        "state": "UNKNOWN"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-owner-UNKNOWN",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-owner-UNKNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-owner-MISSING",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "owner",
+        "state": "MISSING"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-owner-MISSING",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-owner-MISSING under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-owner-UNAVAILABLE",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "owner",
+        "state": "UNAVAILABLE"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-owner-UNAVAILABLE",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-owner-UNAVAILABLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-owner-CONFLICTED",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "owner",
+        "state": "CONFLICTED"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-owner-CONFLICTED",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-owner-CONFLICTED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-authority-UNKNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "authority",
+        "state": "UNKNOWN"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-authority-UNKNOWN",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-authority-UNKNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-authority-MISSING",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "authority",
+        "state": "MISSING"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-authority-MISSING",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-authority-MISSING under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-authority-UNAVAILABLE",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "authority",
+        "state": "UNAVAILABLE"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-authority-UNAVAILABLE",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-authority-UNAVAILABLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-authority-CONFLICTED",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "authority",
+        "state": "CONFLICTED"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-authority-CONFLICTED",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-authority-CONFLICTED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-delegation-UNKNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "delegation",
+        "state": "UNKNOWN"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-delegation-UNKNOWN",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-delegation-UNKNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-delegation-MISSING",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "delegation",
+        "state": "MISSING"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-delegation-MISSING",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-delegation-MISSING under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-delegation-UNAVAILABLE",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "delegation",
+        "state": "UNAVAILABLE"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-delegation-UNAVAILABLE",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-delegation-UNAVAILABLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-delegation-CONFLICTED",
+      "kind": "VECTOR",
+      "given": {
+        "root": "material Aaron reserved decision or authorization",
+        "fact": "delegation",
+        "state": "CONFLICTED"
+      },
+      "expected": {
+        "release": "no positive authority",
+        "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+        "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+        "information": "do not label the principal known absent or FALSE"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-delegation-CONFLICTED",
+        "claim_invariant": {
+          "release": "no positive authority",
+          "root_relevance": "uncertainty retained as RELEVANCE_UNKNOWN where that fact determines requiredness",
+          "item_fact_and_coverage": "same source fact/state; UNKNOWN not manufactured as known Aaron-required",
+          "information": "do not label the principal known absent or FALSE"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-delegation-CONFLICTED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Classifier asserts known required while coverage erases the unknown in the same item.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-known-required",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "known-required",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "KNOWN_REQUIRED",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-known-required",
+        "claim_invariant": {
+          "destination": "KNOWN_REQUIRED",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-known-required under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-terminal",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "terminal",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "TERMINAL_RETAINED",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-terminal",
+        "claim_invariant": {
+          "destination": "TERMINAL_RETAINED",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-terminal under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-proven-inapplicable",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "proven-inapplicable",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "JUSTIFIED_NOT_APPLICABLE",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-proven-inapplicable",
+        "claim_invariant": {
+          "destination": "JUSTIFIED_NOT_APPLICABLE",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-proven-inapplicable under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-private",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "private",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "PRIVACY_EXCLUDED",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-private",
+        "claim_invariant": {
+          "destination": "PRIVACY_EXCLUDED",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-private under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-suppressed",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "suppressed",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "DEFERRED/SUPPRESSED_WITH_REACTIVATION",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-suppressed",
+        "claim_invariant": {
+          "destination": "DEFERRED/SUPPRESSED_WITH_REACTIVATION",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-suppressed under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-conflict",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "conflict",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "CONFLICT_HOLD",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-conflict",
+        "claim_invariant": {
+          "destination": "CONFLICT_HOLD",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-conflict under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-DEST-invalid",
+      "kind": "VECTOR",
+      "given": {
+        "root_has_single_decisive_class": "invalid",
+        "other_material_predicates": "do not overlap"
+      },
+      "expected": {
+        "destination": "INVALID_REJECTED",
+        "identity_retained": true,
+        "history_provenance": "retained internally consistent with retention/privacy",
+        "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+        "public_private_content": "excluded when unauthorized"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "03",
+          "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+          "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-DEST-invalid",
+        "claim_invariant": {
+          "destination": "INVALID_REJECTED",
+          "identity_retained": true,
+          "history_provenance": "retained internally consistent with retention/privacy",
+          "reactivation": "reason/base/expiry/invalidator preserved for suppressed or deferred roots",
+          "public_private_content": "excluded when unauthorized"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "03",
+            "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+            "blob": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-DEST-invalid under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Admitted root is omitted or reclassified without evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-NOT-APPLICABLE-ABSENCE",
+      "kind": "VECTOR",
+      "given": {
+        "applicability_evidence": "none",
+        "object_not_found_in_feed": true
+      },
+      "expected": {
+        "applicability": "UNKNOWN, not NOT_APPLICABLE_PROVEN",
+        "disposition": "explicit uncertainty/HOLD, not justified inapplicable"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-NOT-APPLICABLE-ABSENCE",
+        "claim_invariant": {
+          "applicability": "UNKNOWN, not NOT_APPLICABLE_PROVEN",
+          "disposition": "explicit uncertainty/HOLD, not justified inapplicable"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-NOT-APPLICABLE-ABSENCE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Absence is treated as proof of inapplicability.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-COVERAGE-SCOPE",
+      "kind": "VECTOR",
+      "given": {
+        "declared_scope": [
+          "r1",
+          "r2"
+        ],
+        "r1": "known",
+        "r2": "unknown",
+        "coverage_separate_boolean": "complete"
+      },
+      "expected": {
+        "coverage": "cannot assert COMPLETE_FOR_DECLARED_SCOPE from contradictory separate predicate",
+        "r2": "explicit uncertainty in item and coverage denominator",
+        "denominator": "both admitted roots conserved"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-COVERAGE-SCOPE",
+        "claim_invariant": {
+          "coverage": "cannot assert COMPLETE_FOR_DECLARED_SCOPE from contradictory separate predicate",
+          "r2": "explicit uncertainty in item and coverage denominator",
+          "denominator": "both admitted roots conserved"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-COVERAGE-SCOPE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Coverage says complete while an admitted required fact is unresolved.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A1-OVERLAP-PRIVACY-TERMINAL",
+      "kind": "VECTOR",
+      "given": {
+        "root": "satisfied obligation",
+        "privacy": "disclosure prohibited",
+        "visible_disposition_count_required": 1
+      },
+      "expected": {
+        "invariants": [
+          "history retained subject to privacy/retention",
+          "no private content disclosure",
+          "exact object identity and one disposition",
+          "no silent disappearance"
+        ],
+        "exact_disposition": "UNRESOLVED: TERMINAL_RETAINED vs PRIVACY_EXCLUDED; no priority chosen"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-OVERLAP-PRIVACY-TERMINAL",
+        "claim_invariant": {
+          "invariants": [
+            "history retained subject to privacy/retention",
+            "no private content disclosure",
+            "exact object identity and one disposition",
+            "no silent disappearance"
+          ],
+          "exact_disposition": "UNRESOLVED: TERMINAL_RETAINED vs PRIVACY_EXCLUDED; no priority chosen"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-OVERLAP-PRIVACY-TERMINAL under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Selecting one scalar without adjudicated priority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_INVARIANTS_WITH_UNSCORED_EXACT_DISPOSITION",
+      "gap_id": "Q-DISPOSITION",
+      "unscored_expected_fields": [
+        "exact_disposition"
+      ],
+      "scoreable_expected_fields": [
+        "invariants"
+      ]
+    },
+    {
+      "id": "A1-OVERLAP-CONFLICT-UNKNOWN",
+      "kind": "VECTOR",
+      "given": {
+        "root": "applicable resolution",
+        "knowledge": "CONFLICTED",
+        "required_holder": "UNKNOWN",
+        "privacy": "authorized",
+        "visible_disposition_count_required": 1
+      },
+      "expected": {
+        "invariants": [
+          "retain CONFLICTED item facts and UNKNOWN holder separately",
+          "no unsafe positive promotion",
+          "exact identity and explicit destination",
+          "no silent disappearance"
+        ],
+        "exact_disposition": "UNRESOLVED: CONFLICT_HOLD vs RELEVANCE_UNKNOWN; no priority chosen"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "13",
+          "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+          "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A1-OVERLAP-CONFLICT-UNKNOWN",
+        "claim_invariant": {
+          "invariants": [
+            "retain CONFLICTED item facts and UNKNOWN holder separately",
+            "no unsafe positive promotion",
+            "exact identity and explicit destination",
+            "no silent disappearance"
+          ],
+          "exact_disposition": "UNRESOLVED: CONFLICT_HOLD vs RELEVANCE_UNKNOWN; no priority chosen"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "13",
+            "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+            "blob": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "semantic kernel -> domain/command/query DTO -> repository -> reconstruction -> projection/classification/coverage -> exact consuming caller; no duplicate local reducer",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A1-OVERLAP-CONFLICT-UNKNOWN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Selecting one scalar without adjudicated priority.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_INVARIANTS_WITH_UNSCORED_EXACT_DISPOSITION",
+      "gap_id": "Q-DISPOSITION",
+      "unscored_expected_fields": [
+        "exact_disposition"
+      ],
+      "scoreable_expected_fields": [
+        "invariants"
+      ]
+    }
+  ]
+}

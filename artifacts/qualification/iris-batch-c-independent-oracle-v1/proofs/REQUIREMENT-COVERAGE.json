@@ -1,0 +1,272 @@
+{
+  "artifact20_counterexample_classes": [
+    {
+      "requirement": "unknown holder/owner/delegation with operational denial but epistemic UNKNOWN",
+      "scenario_id": "WS-UNKNOWN-DENIED",
+      "proof_id": "P-WS-UNKNOWN-DENIED",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "terminal/inapplicable/private roots cannot silently disappear",
+      "scenario_id": "WS-TERMINAL-PRIVATE-INAPPLICABLE",
+      "proof_id": "P-WS-TERMINAL-PRIVATE-INAPPLICABLE",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "same objective distinct resolution; explicit equivalent resolution",
+      "scenario_id": "WS-RESOLUTIONS",
+      "proof_id": "P-WS-RESOLUTIONS",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "denial-valued/future/expired/foreign authority",
+      "scenario_id": "WS-AUTHORITY",
+      "proof_id": "P-WS-AUTHORITY",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "changed digest; duplicate call; before/after possible submission crash/timeout",
+      "scenario_id": "WS-CRASH-DIGEST",
+      "proof_id": "P-WS-CRASH-DIGEST",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "revocation race",
+      "scenario_id": "WS-REVOCATION-RACE",
+      "proof_id": "P-WS-REVOCATION-RACE",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "partial/wrong/unavailable effect",
+      "scenario_id": "WS-EFFECT-DISPOSITIONS",
+      "proof_id": "P-WS-EFFECT-DISPOSITIONS",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "multiple obligations and unsatisfied criteria",
+      "scenario_id": "WS-OBJECTIVE",
+      "proof_id": "P-WS-OBJECTIVE",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "overlapping continuation generations",
+      "scenario_id": "WS-CONTINUATION",
+      "proof_id": "P-WS-CONTINUATION",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "memory/SQL/cold reconstruction and malformed import",
+      "scenario_id": "WS-REPOSITORIES",
+      "proof_id": "P-WS-REPOSITORIES",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "enum/schema/adapter roundtrip with NULL/missing",
+      "scenario_id": "WS-ROUNDTRIP",
+      "proof_id": "P-WS-ROUNDTRIP",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "qualification swap; missing tool/context/privacy/resource; expired",
+      "scenario_id": "WS-QUALIFICATION",
+      "proof_id": "P-WS-QUALIFICATION",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "qualified evidence without retention/disclosure permission",
+      "scenario_id": "WS-RETENTION",
+      "proof_id": "P-WS-RETENTION",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "one occurrence replay/reconstruction adds zero independent experiences",
+      "scenario_id": "WS-CAUSAL-LEARNING",
+      "proof_id": "P-WS-CAUSAL-LEARNING",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "identical content independent projection run identities",
+      "scenario_id": "WS-PROJECTION",
+      "proof_id": "P-WS-PROJECTION",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "expiry-only invalidates as-of proof",
+      "scenario_id": "WS-PROJECTION",
+      "proof_id": "P-WS-PROJECTION",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "Dense/Canonical/Wire unknown version/extensions/base/loss",
+      "scenario_id": "WS-ICCP",
+      "proof_id": "P-WS-ICCP",
+      "status": "derived; downstream execution required"
+    },
+    {
+      "requirement": "leading edge cannot average mandatory floor weakness",
+      "scenario_id": "WS-PHASE",
+      "proof_id": "P-WS-PHASE",
+      "status": "derived; downstream execution required"
+    }
+  ],
+  "D01_D20": [
+    {
+      "class": "D01",
+      "vector_ids": [
+        "A2-CONFLICT-ROOT-CONSTRUCTOR"
+      ],
+      "proof_id": "P-CAUSAL-D01"
+    },
+    {
+      "class": "D02",
+      "vector_ids": [
+        "WS-UNKNOWN-DENIED"
+      ],
+      "proof_id": "P-CAUSAL-D02"
+    },
+    {
+      "class": "D03",
+      "vector_ids": [
+        "WS-TERMINAL-PRIVATE-INAPPLICABLE"
+      ],
+      "proof_id": "P-CAUSAL-D03"
+    },
+    {
+      "class": "D04",
+      "vector_ids": [
+        "WS-RESOLUTIONS"
+      ],
+      "proof_id": "P-CAUSAL-D04"
+    },
+    {
+      "class": "D05",
+      "vector_ids": [
+        "WS-AUTHORITY"
+      ],
+      "proof_id": "P-CAUSAL-D05"
+    },
+    {
+      "class": "D06",
+      "vector_ids": [
+        "WS-CRASH-DIGEST"
+      ],
+      "proof_id": "P-CAUSAL-D06"
+    },
+    {
+      "class": "D07",
+      "vector_ids": [
+        "WS-EFFECT-DISPOSITIONS"
+      ],
+      "proof_id": "P-CAUSAL-D07"
+    },
+    {
+      "class": "D08",
+      "vector_ids": [
+        "WS-OBJECTIVE"
+      ],
+      "proof_id": "P-CAUSAL-D08"
+    },
+    {
+      "class": "D09",
+      "vector_ids": [
+        "A5-UNRESOLVED-DOMINATES"
+      ],
+      "proof_id": "P-CAUSAL-D09"
+    },
+    {
+      "class": "D10",
+      "vector_ids": [
+        "WS-CONTINUATION"
+      ],
+      "proof_id": "P-CAUSAL-D10"
+    },
+    {
+      "class": "D11",
+      "vector_ids": [
+        "WS-REPOSITORIES"
+      ],
+      "proof_id": "P-CAUSAL-D11"
+    },
+    {
+      "class": "D12",
+      "vector_ids": [
+        "WS-ROUNDTRIP"
+      ],
+      "proof_id": "P-CAUSAL-D12"
+    },
+    {
+      "class": "D13",
+      "vector_ids": [
+        "A3-POSITIVE"
+      ],
+      "proof_id": "P-CAUSAL-D13"
+    },
+    {
+      "class": "D14",
+      "vector_ids": [
+        "WS-REVOCATION-RACE"
+      ],
+      "proof_id": "P-CAUSAL-D14"
+    },
+    {
+      "class": "D15",
+      "vector_ids": [
+        "WS-PROJECTION"
+      ],
+      "proof_id": "P-CAUSAL-D15"
+    },
+    {
+      "class": "D16",
+      "vector_ids": [
+        "A5-CHECKPOINT-LABEL"
+      ],
+      "proof_id": "P-CAUSAL-D16"
+    },
+    {
+      "class": "D17",
+      "vector_ids": [
+        "WS-QUALIFICATION"
+      ],
+      "proof_id": "P-CAUSAL-D17"
+    },
+    {
+      "class": "D18",
+      "vector_ids": [
+        "WS-RETENTION"
+      ],
+      "proof_id": "P-CAUSAL-D18"
+    },
+    {
+      "class": "D19",
+      "vector_ids": [
+        "WS-CAUSAL-LEARNING"
+      ],
+      "proof_id": "P-CAUSAL-D19"
+    },
+    {
+      "class": "D20",
+      "vector_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof_id": "P-CAUSAL-D20"
+    }
+  ],
+  "personal_office": "22 capabilities retained in PERSONAL-OFFICE-PRESERVATION.json; counts do not prove conformance",
+  "no_empirical_gate_progress": true,
+  "source": [
+    {
+      "artifact": "20",
+      "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+      "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+      "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+      "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+    },
+    {
+      "artifact": "23",
+      "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+      "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+      "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+      "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+    }
+  ]
+}

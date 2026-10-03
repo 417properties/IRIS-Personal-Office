@@ -1,0 +1,3099 @@
+{
+  "family": "A4",
+  "as_of_version": {
+    "oracle_version": "1.0",
+    "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+    "derivation_date": "2026-10-03",
+    "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+  },
+  "status": "FROZEN_SOURCE_DERIVED_EXPECTATIONS; implementation conformance unexecuted",
+  "vectors": [
+    {
+      "id": "A4-DIGEST-CHANGED",
+      "kind": "VECTOR",
+      "given": {
+        "existing_intent": "i1/digest1",
+        "new_invocation": "i1/digest2"
+      },
+      "expected": {
+        "result": "INVALID/HOLD",
+        "submissions": 0,
+        "old_history": "unchanged"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-DIGEST-CHANGED",
+        "claim_invariant": {
+          "result": "INVALID/HOLD",
+          "submissions": 0,
+          "old_history": "unchanged"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-DIGEST-CHANGED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-DUPLICATE-CALL",
+      "kind": "VECTOR",
+      "given": {
+        "intent": "i1/digest1",
+        "existing_attempt": "released or ambiguous",
+        "repeat_calls": 2
+      },
+      "expected": {
+        "new_submission": "none merely from invocation",
+        "result": "read persisted attempt/return or reconcile; retain same occurrence"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-DUPLICATE-CALL",
+        "claim_invariant": {
+          "new_submission": "none merely from invocation",
+          "result": "read persisted attempt/return or reconcile; retain same occurrence"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-DUPLICATE-CALL under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-CRASH-BEFORE-SUBMISSION-PROVEN",
+      "kind": "VECTOR",
+      "given": {
+        "attempt": "PREPARED",
+        "crash": "before tool submission, positive trace proves no submission"
+      },
+      "expected": {
+        "effect_state": "NO_SUBMISSION_PROVEN",
+        "retry": "only allowed retry class + fresh A3/A2 + one-time owner; not automatic"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-CRASH-BEFORE-SUBMISSION-PROVEN",
+        "claim_invariant": {
+          "effect_state": "NO_SUBMISSION_PROVEN",
+          "retry": "only allowed retry class + fresh A3/A2 + one-time owner; not automatic"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-CRASH-BEFORE-SUBMISSION-PROVEN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-CRASH-BEFORE-SUBMISSION-UNPROVEN",
+      "kind": "VECTOR",
+      "given": {
+        "crash": "no receipt",
+        "possible_submission": "cannot rule out"
+      },
+      "expected": {
+        "state": "AMBIGUOUS_SUBMISSION/RECONCILIATION_REQUIRED",
+        "retry": "blocked"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-CRASH-BEFORE-SUBMISSION-UNPROVEN",
+        "claim_invariant": {
+          "state": "AMBIGUOUS_SUBMISSION/RECONCILIATION_REQUIRED",
+          "retry": "blocked"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-CRASH-BEFORE-SUBMISSION-UNPROVEN under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-CRASH-AFTER-SUBMISSION",
+      "kind": "VECTOR",
+      "given": {
+        "tool_submission": "possible or known",
+        "receipt_persist": "crash before persistence"
+      },
+      "expected": {
+        "state": "submission known if independent evidence; otherwise ambiguous",
+        "retry": "no blind second submit; reconcile canonical attempt"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-CRASH-AFTER-SUBMISSION",
+        "claim_invariant": {
+          "state": "submission known if independent evidence; otherwise ambiguous",
+          "retry": "no blind second submit; reconcile canonical attempt"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-CRASH-AFTER-SUBMISSION under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-TIMEOUT-AFTER-EFFECT",
+      "kind": "VECTOR",
+      "given": {
+        "remote_effect": "may have landed",
+        "timeout": true
+      },
+      "expected": {
+        "state": "AMBIGUOUS_EFFECT/RECONCILIATION_REQUIRED",
+        "retry": "blocked until safe proof"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-TIMEOUT-AFTER-EFFECT",
+        "claim_invariant": {
+          "state": "AMBIGUOUS_EFFECT/RECONCILIATION_REQUIRED",
+          "retry": "blocked until safe proof"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-TIMEOUT-AFTER-EFFECT under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-REVOKE-FIRST",
+      "kind": "VECTOR",
+      "given": {
+        "schedule": "canonical revocation linearizes -> release attempts",
+        "credential": "still possessed"
+      },
+      "expected": {
+        "submission": false,
+        "history": "revocation retained; validator denial"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-REVOKE-FIRST",
+        "claim_invariant": {
+          "submission": false,
+          "history": "revocation retained; validator denial"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-REVOKE-FIRST under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-RELEASE-FIRST",
+      "kind": "VECTOR",
+      "given": {
+        "schedule": "valid fenced release linearizes -> revocation"
+      },
+      "expected": {
+        "history": "release remains real; no retrospective rewrite",
+        "future_releases": "denied after revocation",
+        "effect": "verify/reconcile existing effect"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-RELEASE-FIRST",
+        "claim_invariant": {
+          "history": "release remains real; no retrospective rewrite",
+          "future_releases": "denied after revocation",
+          "effect": "verify/reconcile existing effect"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-RELEASE-FIRST under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-PARTIAL",
+      "kind": "VECTOR",
+      "given": {
+        "effect": "subset of expected landed",
+        "readback": "qualified"
+      },
+      "expected": {
+        "effect_state": "PARTIAL_EFFECT",
+        "no_effect": false,
+        "retry": "blocked absent independent safe policy",
+        "closure": "not inferred"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-PARTIAL",
+        "claim_invariant": {
+          "effect_state": "PARTIAL_EFFECT",
+          "no_effect": false,
+          "retry": "blocked absent independent safe policy",
+          "closure": "not inferred"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-PARTIAL under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-WRONG-VALUE",
+      "kind": "VECTOR",
+      "given": {
+        "expected": "X",
+        "observed": "Y",
+        "absence_proof": null
+      },
+      "expected": {
+        "no_effect": "not proven by X != Y",
+        "state": "partial/conflicted/ambiguous/unknown as supported by exact evidence; reconcile",
+        "retry": "not safe on inequality alone"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-WRONG-VALUE",
+        "claim_invariant": {
+          "no_effect": "not proven by X != Y",
+          "state": "partial/conflicted/ambiguous/unknown as supported by exact evidence; reconcile",
+          "retry": "not safe on inequality alone"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-WRONG-VALUE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-UNAVAILABLE",
+      "kind": "VECTOR",
+      "given": {
+        "readback": "unavailable",
+        "tool_response": "success"
+      },
+      "expected": {
+        "effect_state": "UNAVAILABLE_READBACK/UNKNOWN",
+        "objective_closure": false,
+        "retry": "not safe from missing readback"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-UNAVAILABLE",
+        "claim_invariant": {
+          "effect_state": "UNAVAILABLE_READBACK/UNKNOWN",
+          "objective_closure": false,
+          "retry": "not safe from missing readback"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-UNAVAILABLE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-CONFLICT",
+      "kind": "VECTOR",
+      "given": {
+        "effect_evidence": [
+          "landed",
+          "no effect"
+        ],
+        "both": "qualified conflicting observations"
+      },
+      "expected": {
+        "effect_state": "CONFLICTED_EFFECT",
+        "retry": "blocked pending reconciliation"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-CONFLICT",
+        "claim_invariant": {
+          "effect_state": "CONFLICTED_EFFECT",
+          "retry": "blocked pending reconciliation"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-CONFLICT under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-NO-EFFECT-POSITIVE",
+      "kind": "VECTOR",
+      "given": {
+        "effect_contract": "source-appropriate authoritative non-effect evidence",
+        "state": "verified no effect",
+        "retry_class": "allowed",
+        "authority_fence": "valid as-of retry"
+      },
+      "expected": {
+        "retry": "may proceed through common one-time safe retry boundary, retaining identity and proof",
+        "not_proven": "objective success or unlimited retries"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-NO-EFFECT-POSITIVE",
+        "claim_invariant": {
+          "retry": "may proceed through common one-time safe retry boundary, retaining identity and proof",
+          "not_proven": "objective success or unlimited retries"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-NO-EFFECT-POSITIVE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-RETRY-NOT-ALLOWED",
+      "kind": "VECTOR",
+      "given": {
+        "effect_state": "NO_EFFECT_VERIFIED",
+        "retry_class": "forbidden"
+      },
+      "expected": {
+        "retry": false
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-RETRY-NOT-ALLOWED",
+        "claim_invariant": {
+          "retry": false
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-RETRY-NOT-ALLOWED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-RETRY-AUTH-EXPIRED",
+      "kind": "VECTOR",
+      "given": {
+        "effect_state": "NO_EFFECT_VERIFIED",
+        "retry_class": "allowed",
+        "authority": "expired before retry t"
+      },
+      "expected": {
+        "retry": false,
+        "state": "verified non-effect retained"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-RETRY-AUTH-EXPIRED",
+        "claim_invariant": {
+          "retry": false,
+          "state": "verified non-effect retained"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-RETRY-AUTH-EXPIRED under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-READBACK-WRONG-INTENT",
+      "kind": "VECTOR",
+      "given": {
+        "expected_contract": "i1/d1",
+        "readback_identity": "i2/d2"
+      },
+      "expected": {
+        "verification": "cannot verify i1; explicit mismatch/HOLD",
+        "retry": "not authorized by mismatched proof"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-READBACK-WRONG-INTENT",
+        "claim_invariant": {
+          "verification": "cannot verify i1; explicit mismatch/HOLD",
+          "retry": "not authorized by mismatched proof"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-READBACK-WRONG-INTENT under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-MULTIPLE-OBLIGATIONS",
+      "kind": "VECTOR",
+      "given": {
+        "objective": "o1",
+        "mandatory": [
+          "b1",
+          "b2"
+        ],
+        "b1": "verified satisfied",
+        "b2": "unresolved"
+      },
+      "expected": {
+        "objective": "nonterminal/unresolved",
+        "closure": false,
+        "b1": "satisfaction retained"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-MULTIPLE-OBLIGATIONS",
+        "claim_invariant": {
+          "objective": "nonterminal/unresolved",
+          "closure": false,
+          "b1": "satisfaction retained"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-MULTIPLE-OBLIGATIONS under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-UNSATISFIED-CRITERION",
+      "kind": "VECTOR",
+      "given": {
+        "tool_effect": "verified",
+        "objective_success_criterion": "not established"
+      },
+      "expected": {
+        "closure": false,
+        "effect": "retained verified"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-UNSATISFIED-CRITERION",
+        "claim_invariant": {
+          "closure": false,
+          "effect": "retained verified"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-UNSATISFIED-CRITERION under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-UNRELATED-OBJECTIVE",
+      "kind": "VECTOR",
+      "given": {
+        "effect": "i1 relates o1",
+        "closure_request": "o2",
+        "relation_evidence": null
+      },
+      "expected": {
+        "o2_closure": false,
+        "o1": "requires own criteria reconciliation"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-UNRELATED-OBJECTIVE",
+        "claim_invariant": {
+          "o2_closure": false,
+          "o1": "requires own criteria reconciliation"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-UNRELATED-OBJECTIVE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-MID-FLIGHT-CRITERIA-CHANGE",
+      "kind": "VECTOR",
+      "given": {
+        "release_asof": "t1",
+        "closure_asof": "t2",
+        "mandatory_criteria": "version changed between cuts"
+      },
+      "expected": {
+        "closure": "re-evaluate relationship/criteria/current state at t2",
+        "historical_release": "retain t1 truth",
+        "not_allowed": "close using obsolete criteria without explicit applicable relation"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-MID-FLIGHT-CRITERIA-CHANGE",
+        "claim_invariant": {
+          "closure": "re-evaluate relationship/criteria/current state at t2",
+          "historical_release": "retain t1 truth",
+          "not_allowed": "close using obsolete criteria without explicit applicable relation"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-MID-FLIGHT-CRITERIA-CHANGE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-TERMINAL-FAILURE",
+      "kind": "VECTOR",
+      "given": {
+        "objective": "SATISFIED v3",
+        "later_failure": "observed"
+      },
+      "expected": {
+        "direct_reopen": false,
+        "required": "explicit correction/supersession event with evidence/new version"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-TERMINAL-FAILURE",
+        "claim_invariant": {
+          "direct_reopen": false,
+          "required": "explicit correction/supersession event with evidence/new version"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-TERMINAL-FAILURE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-DECISION-OBLIGATION-SEPARATE",
+      "kind": "VECTOR",
+      "given": {
+        "decision": "resolved",
+        "linked_obligation": "open",
+        "event_scope": "decision only"
+      },
+      "expected": {
+        "decision": "resolved",
+        "obligation": "remains open; no implicit terminal propagation"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-DECISION-OBLIGATION-SEPARATE",
+        "claim_invariant": {
+          "decision": "resolved",
+          "obligation": "remains open; no implicit terminal propagation"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-DECISION-OBLIGATION-SEPARATE under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    },
+    {
+      "id": "A4-COLD-AMBIGUITY",
+      "kind": "VECTOR",
+      "given": {
+        "cold_reconstruction": "intent and prepared attempt, no definitive submission/effect proof"
+      },
+      "expected": {
+        "next_safe_action": "reconciliation or HOLD; no blind release/retry",
+        "ambiguity": "retained in reconstructed A1/A4 model"
+      },
+      "semantic_sources": [
+        {
+          "artifact": "01",
+          "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+          "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "07",
+          "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+          "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "14",
+          "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+          "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "15",
+          "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+          "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "16",
+          "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+          "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "17",
+          "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+          "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "required_observations": [
+        "input/evidence snapshot identities and as-of",
+        "result/disposition with retained epistemic coordinates",
+        "durable writes, effect submissions and continuation state where applicable",
+        "consumer/caller identity and boundary trace"
+      ],
+      "proof": {
+        "proof_id": "P-A4-COLD-AMBIGUITY",
+        "claim_invariant": {
+          "next_safe_action": "reconciliation or HOLD; no blind release/retry",
+          "ambiguity": "retained in reconstructed A1/A4 model"
+        },
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "07",
+            "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+            "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "14",
+            "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+            "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "15",
+            "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+            "blob": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "16",
+            "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+            "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "17",
+            "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+            "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "all effect callers -> durable release state -> verifier -> objective reconciler -> cold reconstruction",
+        "method": "Source deduction and adversarial minimal-pair comparison; downstream execute through every mapped consumer/adapter in the declared closure.",
+        "PASS_establishes": "The observed run satisfies only A4-COLD-AMBIGUITY under its explicit premises and tested consumers.",
+        "PASS_does_not_establish": "Does not establish untested callers, all schedules, actual SQL/production behavior, authority, continuity admission, numeric score, or whole-stack acceptance.",
+        "falsifier": "Effect/retry/closure occurs without required independent stage evidence.",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      },
+      "scoreability": "DETERMINATE_SEMANTIC_CONSTRAINT",
+      "gap_id": null
+    }
+  ]
+}

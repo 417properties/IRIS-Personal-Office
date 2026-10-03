@@ -1,0 +1,2612 @@
+{
+  "findings": [
+    {
+      "id": "D01",
+      "observed_condition": "Required conflict-only identity has no derivation",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "A required constructor cell absent despite field/root counts",
+      "enabling_systemic_cause": "No total identity owner/compiler across all root types",
+      "demonstrated_or_adjacent_class": "All root constructors / projection identity",
+      "exhaustive_or_bounded_check": "Finite declared root-domain constructor matrix + exact input/source lineage; all admitted constructors downstream; no count-only acceptance",
+      "recurrence_control": "One owner A2 explicit constructors + A5 schema validation; new root/type reopens matrix",
+      "oracle_ids": [
+        "A2-CONFLICT-ROOT-CONSTRUCTOR"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D01",
+        "claim_invariant": "One owner A2 explicit constructors + A5 schema validation; new root/type reopens matrix",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Finite declared root-domain constructor matrix + exact input/source lineage; all admitted constructors downstream; no count-only acceptance",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: A required constructor cell absent despite field/root counts",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D02",
+      "observed_condition": "Unknown fact positive in classifier or absent in coverage",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Distinct local reducers treat unknown holder/authority as known-required or drop",
+      "enabling_systemic_cause": "Action fail-closed behavior confused with epistemic algebra",
+      "demonstrated_or_adjacent_class": "Owner/holder/delegation/privacy/state across classification/coverage",
+      "exhaustive_or_bounded_check": "Exhaustive declared A1 coordinate encoding product plus per-fact uncertainty mutations; actual caller closure required",
+      "recurrence_control": "A1 shared facts/reducer; invalidate all callers when A1 changes",
+      "oracle_ids": [
+        "WS-UNKNOWN-DENIED"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D02",
+        "claim_invariant": "A1 shared facts/reducer; invalidate all callers when A1 changes",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Exhaustive declared A1 coordinate encoding product plus per-fact uncertainty mutations; actual caller closure required",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Distinct local reducers treat unknown holder/authority as known-required or drop",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D03",
+      "observed_condition": "Terminal/private/unknown admitted roots disappear",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Positive predicates omit negative/terminal/free-token domains",
+      "enabling_systemic_cause": "Root partition not total or source-owned",
+      "demonstrated_or_adjacent_class": "All attention/action/root adapters and dispositions",
+      "exhaustive_or_bounded_check": "Bounded admitted root matrix; overlap scalar outcomes withheld under Q-DISPOSITION",
+      "recurrence_control": "A1 conservation + explicit versioned domain maps + total destination audit",
+      "oracle_ids": [
+        "WS-TERMINAL-PRIVATE-INAPPLICABLE"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D03",
+        "claim_invariant": "A1 conservation + explicit versioned domain maps + total destination audit",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Bounded admitted root matrix; overlap scalar outcomes withheld under Q-DISPOSITION",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Positive predicates omit negative/terminal/free-token domains",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D04",
+      "observed_condition": "Distinct same-objective resolutions collapse",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Context/shared objective used as identity equivalence",
+      "enabling_systemic_cause": "No canonical resolution/equivalence object",
+      "demonstrated_or_adjacent_class": "Conflicts, authorization roots, shared text/holder",
+      "exhaustive_or_bounded_check": "Minimal same-objective/holder negative pairs plus source-proven positive equivalence; opaque-ID perturbation",
+      "recurrence_control": "A2 explicit resolution relation and retained anchors/context separation",
+      "oracle_ids": [
+        "WS-RESOLUTIONS"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D04",
+        "claim_invariant": "A2 explicit resolution relation and retained anchors/context separation",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Minimal same-objective/holder negative pairs plus source-proven positive equivalence; opaque-ID perturbation",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Context/shared objective used as identity equivalence",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D05",
+      "observed_condition": "Scope match releases foreign/denied/future/expired authority",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "String bag ignores principal/value/time/privacy",
+      "enabling_systemic_cause": "No total canonical authority snapshot",
+      "demonstrated_or_adjacent_class": "Policy/orient/N4/tool boundary",
+      "exhaustive_or_bounded_check": "Independent each-bound-dimension mutations including all mandatory uncertainty states; common-caller closure",
+      "recurrence_control": "A3 one total validator + release-time cut",
+      "oracle_ids": [
+        "WS-AUTHORITY"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D05",
+        "claim_invariant": "A3 one total validator + release-time cut",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Independent each-bound-dimension mutations including all mandatory uncertainty states; common-caller closure",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: String bag ignores principal/value/time/privacy",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D06",
+      "observed_condition": "Repeat call bypasses durable retry/effect state",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Caller invokes tool despite persisted attempt",
+      "enabling_systemic_cause": "Persistence helpers optional, not mandatory release machine",
+      "demonstrated_or_adjacent_class": "Every executor/circuit/sentinel/worker effect caller",
+      "exhaustive_or_bounded_check": "Bounded crash locations+duplicate+digest minimal pairs; schedule model through durable seam",
+      "recurrence_control": "A4 durable single owner + A5 transactional attempts",
+      "oracle_ids": [
+        "WS-CRASH-DIGEST"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D06",
+        "claim_invariant": "A4 durable single owner + A5 transactional attempts",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Bounded crash locations+duplicate+digest minimal pairs; schedule model through durable seam",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Caller invokes tool despite persisted attempt",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D07",
+      "observed_condition": "Wrong/unavailable readback proves no-effect",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Binary comparison maps all inequality to absence",
+      "enabling_systemic_cause": "Simulator/helper oracle replaces typed evidence obligations",
+      "demonstrated_or_adjacent_class": "Readback/verification/retry/continuity",
+      "exhaustive_or_bounded_check": "Finite effect-disposition partition plus wrong-intent readback, positive absence control",
+      "recurrence_control": "A1/A4 one verifier with positive no-effect proof",
+      "oracle_ids": [
+        "WS-EFFECT-DISPOSITIONS"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D07",
+        "claim_invariant": "A1/A4 one verifier with positive no-effect proof",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Finite effect-disposition partition plus wrong-intent readback, positive absence control",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Binary comparison maps all inequality to absence",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D08",
+      "observed_condition": "One tool effect closes arbitrary objective",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Direct terminal mutation without all criteria/relations",
+      "enabling_systemic_cause": "No reconciler owning objective closure",
+      "demonstrated_or_adjacent_class": "Obligations/decision requirements/current criteria",
+      "exhaustive_or_bounded_check": "Multi-obligation+wrong relation+unsatisfied criteria+mid-flight criteria+explicit correction controls",
+      "recurrence_control": "A4 reconciler + validated A5 event/version",
+      "oracle_ids": [
+        "WS-OBJECTIVE"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D08",
+        "claim_invariant": "A4 reconciler + validated A5 event/version",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Multi-obligation+wrong relation+unsatisfied criteria+mid-flight criteria+explicit correction controls",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Direct terminal mutation without all criteria/relations",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D09",
+      "observed_condition": "Admission accepts unresolved state or wrong principal",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Recovery reducers disagree/undercheck model",
+      "enabling_systemic_cause": "Duplicated admission predicates and incomplete institutional state",
+      "demonstrated_or_adjacent_class": "Foundation/transition/cold/session recovery",
+      "exhaustive_or_bounded_check": "Bounded staged dimension omission matrix; same memory/SQL/cold scenario proof",
+      "recurrence_control": "A5 shared reconstruction/admission reducer with all mandatory dimensions",
+      "oracle_ids": [
+        "A5-UNRESOLVED-DOMINATES"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D09",
+        "claim_invariant": "A5 shared reconstruction/admission reducer with all mandatory dimensions",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Bounded staged dimension omission matrix; same memory/SQL/cold scenario proof",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Recovery reducers disagree/undercheck model",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D10",
+      "observed_condition": "Predecessor still releases after successor",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Generation monotonicity accepted without fencing old owner",
+      "enabling_systemic_cause": "Ownership not atomic compare-and-transfer",
+      "demonstrated_or_adjacent_class": "Workflow/N4/worker replacement/release",
+      "exhaustive_or_bounded_check": "Both transfer/release orderings; competing successors and stale compare; no all-network-schedule empirical claim",
+      "recurrence_control": "A2 transaction/fence + A4 release guard",
+      "oracle_ids": [
+        "WS-CONTINUATION"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D10",
+        "claim_invariant": "A2 transaction/fence + A4 release guard",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Both transfer/release orderings; competing successors and stale compare; no all-network-schedule empirical claim",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Generation monotonicity accepted without fencing old owner",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D11",
+      "observed_condition": "Mutable returns or unvalidated writes change Current",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Storage Maps/rows exposed as domain repository",
+      "enabling_systemic_cause": "Container APIs replace semantic commands/queries",
+      "demonstrated_or_adjacent_class": "SQL/memory/query/publish/import",
+      "exhaustive_or_bounded_check": "Nested snapshot mutation negative, principal/schema/version/temporal command mutations, real SQL downstream",
+      "recurrence_control": "A5 immutable query snapshots and transactional validated writes",
+      "oracle_ids": [
+        "WS-REPOSITORIES"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D11",
+        "claim_invariant": "A5 immutable query snapshots and transactional validated writes",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Nested snapshot mutation negative, principal/schema/version/temporal command mutations, real SQL downstream",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Storage Maps/rows exposed as domain repository",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D12",
+      "observed_condition": "NULL/enums/schema/adapters disagree",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Implicit defaults/coercions and separate domains",
+      "enabling_systemic_cause": "No single versioned decoder/translation owner",
+      "demonstrated_or_adjacent_class": "Migrations/domain DTO/Pilot/reconstruction",
+      "exhaustive_or_bounded_check": "Exhaustive declared state encoding roundtrip; NULL/missing required keys and unsupported versions",
+      "recurrence_control": "A5/A1 explicit total maps+schema constraints; domain change reopens all maps",
+      "oracle_ids": [
+        "WS-ROUNDTRIP"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D12",
+        "claim_invariant": "A5/A1 explicit total maps+schema constraints; domain change reopens all maps",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Exhaustive declared state encoding roundtrip; NULL/missing required keys and unsupported versions",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Implicit defaults/coercions and separate domains",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D13",
+      "observed_condition": "Lease validates subset or caller-provided snapshot",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Worker/profile/intent/history/generation omitted",
+      "enabling_systemic_cause": "Reusable string badge rather than exact canonical total proof",
+      "demonstrated_or_adjacent_class": "Issue/validate/release/replacement",
+      "exhaustive_or_bounded_check": "Every independently bound dimension and unknown-state mutation in both issuance and release",
+      "recurrence_control": "A3 same total validator canonical as-of snapshot",
+      "oracle_ids": [
+        "A3-POSITIVE"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D13",
+        "claim_invariant": "A3 same total validator canonical as-of snapshot",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Every independently bound dimension and unknown-state mutation in both issuance and release",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Worker/profile/intent/history/generation omitted",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D14",
+      "observed_condition": "Validate then submit race causes duplicate/revoked release",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Stateless release lacks durable prepared owner/fence",
+      "enabling_systemic_cause": "One-time effect gate not institutionally mandatory",
+      "demonstrated_or_adjacent_class": "All consequential callers and crash recovery",
+      "exhaustive_or_bounded_check": "Revoke-first/release-first plus duplicate/crash schedules; exact linearized cut, not timestamp guess",
+      "recurrence_control": "A3/A4/A5 atomic durable release owner under fences",
+      "oracle_ids": [
+        "WS-REVOCATION-RACE"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D14",
+        "claim_invariant": "A3/A4/A5 atomic durable release owner under fences",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Revoke-first/release-first plus duplicate/crash schedules; exact linearized cut, not timestamp guess",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Stateless release lacks durable prepared owner/fence",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D15",
+      "observed_condition": "Hash hides missing snapshot proof/run lineage",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Renderer bypass or content hash substitutes audit identity",
+      "enabling_systemic_cause": "Public render treated as verified repository operation",
+      "demonstrated_or_adjacent_class": "Projection/dependency expiry/repository audit",
+      "exhaustive_or_bounded_check": "Same-content two-run, changed dependency version, expiry-only minimal pairs; full dispositions/audit trace",
+      "recurrence_control": "A2 run identity + A5 verified projection entry and material temporal dependencies",
+      "oracle_ids": [
+        "WS-PROJECTION"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D15",
+        "claim_invariant": "A2 run identity + A5 verified projection entry and material temporal dependencies",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Same-content two-run, changed dependency version, expiry-only minimal pairs; full dispositions/audit trace",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Renderer bypass or content hash substitutes audit identity",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D16",
+      "observed_condition": "Resume trusts label despite unsafe effect/replay state",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Checkpoint badge lacks payload/proof binding",
+      "enabling_systemic_cause": "Proof object not shared classifier input",
+      "demonstrated_or_adjacent_class": "Workflow/cold replacement/continuation",
+      "exhaustive_or_bounded_check": "Effect/replay cross-product and checkpoint expiry/supersession/payload-owner mutations",
+      "recurrence_control": "A5 typed proof + A4 replay classification + A2 fence",
+      "oracle_ids": [
+        "A5-CHECKPOINT-LABEL"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D16",
+        "claim_invariant": "A5 typed proof + A4 replay classification + A2 fence",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Effect/replay cross-product and checkpoint expiry/supersession/payload-owner mutations",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Checkpoint badge lacks payload/proof binding",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D17",
+      "observed_condition": "Candidate uses another qualification or insufficient config",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Router treats qualification as reusable badge",
+      "enabling_systemic_cause": "Capability ontology/config truth duplicated",
+      "demonstrated_or_adjacent_class": "Provider/router/procedure/admission",
+      "exhaustive_or_bounded_check": "Exact-candidate swap and missing tool/context/privacy/resource/population/version + expiry/config-change mutations",
+      "recurrence_control": "Functional Perception exact config + A3 qualification; BIRE eligibility before ranking",
+      "oracle_ids": [
+        "WS-QUALIFICATION"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D17",
+        "claim_invariant": "Functional Perception exact config + A3 qualification; BIRE eligibility before ranking",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Exact-candidate swap and missing tool/context/privacy/resource/population/version + expiry/config-change mutations",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Router treats qualification as reusable badge",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D18",
+      "observed_condition": "Qualified observation automatically persists",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Evidence and privacy-retention one boolean",
+      "enabling_systemic_cause": "No separate use/retain/disclose/minimum-necessary gates",
+      "demonstrated_or_adjacent_class": "Ambient/selective perception/ICCP context",
+      "exhaustive_or_bounded_check": "Qualified private/expired/irrelevant evidence with separate denied permissions; not live ambient execution",
+      "recurrence_control": "A3 privacy proofs distinct from A1 qualification; new caller reopens retention review",
+      "oracle_ids": [
+        "WS-RETENTION"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D18",
+        "claim_invariant": "A3 privacy proofs distinct from A1 qualification; new caller reopens retention review",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Qualified private/expired/irrelevant evidence with separate denied permissions; not live ambient execution",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Evidence and privacy-retention one boolean",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D19",
+      "observed_condition": "More records count as more causal experience",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "Record/work-episode IDs replace occurrence key",
+      "enabling_systemic_cause": "Measurement and learning share representation-centric denominator",
+      "demonstrated_or_adjacent_class": "N2/metrics/replay/reconstruction/IEF",
+      "exhaustive_or_bounded_check": "Live+retry+replay+Wire+reconstruct invariance plus source-proven new event control",
+      "recurrence_control": "A2 occurrence conservation + verified bounded IEF learning; append/supersession history",
+      "oracle_ids": [
+        "WS-CAUSAL-LEARNING"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D19",
+        "claim_invariant": "A2 occurrence conservation + verified bounded IEF learning; append/supersession history",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Live+retry+replay+Wire+reconstruct invariance plus source-proven new event control",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: Record/work-episode IDs replace occurrence key",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    },
+    {
+      "id": "D20",
+      "observed_condition": "Local green/helper/field count asserted as whole-stack PASS",
+      "observation_class": "historical audit-derived falsification; not current candidate observation",
+      "direct_mechanism": "No exact semantic-to-caller/proof exclusions",
+      "enabling_systemic_cause": "Proof semantics not independent from implementation assumptions",
+      "demonstrated_or_adjacent_class": "All gates/receipts/oracles/caller maps",
+      "exhaustive_or_bounded_check": "Proof-schema field and reference mechanical checks only here; actual downstream caller execution mandatory",
+      "recurrence_control": "Frozen independent oracle + explicit PASS exclusions + fresh independent acceptance",
+      "oracle_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "semantic_sources": [
+        {
+          "artifact": "10",
+          "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+          "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "20",
+          "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+          "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        },
+        {
+          "artifact": "23",
+          "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+          "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+          "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+          "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+        }
+      ],
+      "as_of_version": {
+        "oracle_version": "1.0",
+        "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+        "derivation_date": "2026-10-03",
+        "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+      },
+      "limits": "Class discriminators are derived; no repaired implementation conformance has been observed.",
+      "proof": {
+        "proof_id": "P-CAUSAL-D20",
+        "claim_invariant": "Frozen independent oracle + explicit PASS exclusions + fresh independent acceptance",
+        "semantic_source": [
+          {
+            "artifact": "10",
+            "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+            "blob": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "23",
+            "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/23-FALSIFIER-PREMORTEM-SET.md",
+            "blob": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "owning source invariant -> class discriminator -> named oracle -> adjacent caller closure",
+        "method": "Source-level causal challenge and discriminator derivation; Proof-schema field and reference mechanical checks only here; actual downstream caller execution mandatory",
+        "PASS_establishes": "Only exercised class discriminators and documented caller closure satisfy the owning invariant.",
+        "PASS_does_not_establish": "Does not establish repaired candidate behavior, exhaustive unmodeled schedules or empirical class closure.",
+        "falsifier": "Second semantic owner/local caller retains mechanism: No exact semantic-to-caller/proof exclusions",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+      }
+    }
+  ],
+  "non_findings": [
+    {
+      "id": "NF01",
+      "observed_condition": "BIG envelope quarantine does not directly import Current/authority",
+      "direct_mechanism": "source BIG/target IRIS/authority NONE guard; quarantine distinct from Current",
+      "enabling_systemic_cause": "Bounded evidence-only seam; no downstream auto-admission caller",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at New caller promotes BIG/quarantine directly",
+      "oracle_ids": [
+        "ICCP-BIG-BOUNDARY"
+      ],
+      "proof": {
+        "proof_id": "P-NF01",
+        "claim_invariant": "BIG envelope quarantine does not directly import Current/authority",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "New caller promotes BIG/quarantine directly",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF02",
+      "observed_condition": "ambient/voice port does not directly canonicalize",
+      "direct_mechanism": "authority NONE and quarantined persisted=false return",
+      "enabling_systemic_cause": "Local ingress seam, not surveillance/persistence authority",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at Caller persists before A1 qualification/A3 retention",
+      "oracle_ids": [
+        "A3-PRIVACY-retain"
+      ],
+      "proof": {
+        "proof_id": "P-NF02",
+        "claim_invariant": "ambient/voice port does not directly canonicalize",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "Caller persists before A1 qualification/A3 retention",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF03",
+      "observed_condition": "unqualified perception blocked at THINK",
+      "direct_mechanism": "Explicit local guard on perception qualification",
+      "enabling_systemic_cause": "Guarded local executive entry, upstream truth not guaranteed",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at Repository falsely qualifies Current or a new THINK bypass",
+      "oracle_ids": [
+        "ER-SituationModel"
+      ],
+      "proof": {
+        "proof_id": "P-NF03",
+        "claim_invariant": "unqualified perception blocked at THINK",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "Repository falsely qualifies Current or a new THINK bypass",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF04",
+      "observed_condition": "intent-only/coexisting unresolved-effect subset conservative",
+      "direct_mechanism": "Separate terminal/unresolved sets; unresolved dominates",
+      "enabling_systemic_cause": "Local shared subset repair, not full admission",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at New effect disposition defaults terminal or full admission skips principal/privacy/fence",
+      "oracle_ids": [
+        "A5-UNRESOLVED-DOMINATES"
+      ],
+      "proof": {
+        "proof_id": "P-NF04",
+        "claim_invariant": "intent-only/coexisting unresolved-effect subset conservative",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "New effect disposition defaults terminal or full admission skips principal/privacy/fence",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF05",
+      "observed_condition": "early tool-contract mismatch rejected",
+      "direct_mechanism": "Mismatch checks before mutation in two local boundaries",
+      "enabling_systemic_cause": "Narrow contract guard, not total authority/effect state",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at Matching labels accepted while principal/time/value/intent mismatch remains",
+      "oracle_ids": [
+        "A3-MUTATE-tool_operation"
+      ],
+      "proof": {
+        "proof_id": "P-NF05",
+        "claim_invariant": "early tool-contract mismatch rejected",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "Matching labels accepted while principal/time/value/intent mismatch remains",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF06",
+      "observed_condition": "required-source membership/shape coverage controls",
+      "direct_mechanism": "Fixed required membership, duplicate conflict, field/domain checks",
+      "enabling_systemic_cause": "Bounded source membership shape seam, not supplied truth",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at False required narrows scope, actual item facts differ from coverage",
+      "oracle_ids": [
+        "A1-COVERAGE-SCOPE"
+      ],
+      "proof": {
+        "proof_id": "P-NF06",
+        "claim_invariant": "required-source membership/shape coverage controls",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "False required narrows scope, actual item facts differ from coverage",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF07",
+      "observed_condition": "immutable audit/identity DDL several separations",
+      "direct_mechanism": "Update/delete triggers/retirement constraints",
+      "enabling_systemic_cause": "Static bounded database seam, not executed SQL or all NULL semantics",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at New table/migration/caller bypasses constraints",
+      "oracle_ids": [
+        "A5-IMPORT-NULL"
+      ],
+      "proof": {
+        "proof_id": "P-NF07",
+        "claim_invariant": "immutable audit/identity DDL several separations",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "New table/migration/caller bypasses constraints",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF08",
+      "observed_condition": "E1 structure/exact-reference lifecycle intact",
+      "direct_mechanism": "Closed source arrays, scoped assertions/history, opaque IDs",
+      "enabling_systemic_cause": "Frozen candidate-independent asset; authorship independence attested not recreated",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at Named source-backed population falsifier; no automatic regeneration",
+      "oracle_ids": [
+        "A2-OPAQUE"
+      ],
+      "proof": {
+        "proof_id": "P-NF08",
+        "claim_invariant": "E1 structure/exact-reference lifecycle intact",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "Named source-backed population falsifier; no automatic regeneration",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF09",
+      "observed_condition": "E1 demonstrated private/self-identity packet bounded correctness",
+      "direct_mechanism": "Exact foreign record excluded/self-ref not new conflict",
+      "enabling_systemic_cause": "Exact packet source shape, not general runtime privacy/dedup",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at New recipient/private packet/dedup path bypasses guards",
+      "oracle_ids": [
+        "A3-PRIVACY-disclose-to-recipient"
+      ],
+      "proof": {
+        "proof_id": "P-NF09",
+        "claim_invariant": "E1 demonstrated private/self-identity packet bounded correctness",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "New recipient/private packet/dedup path bypasses guards",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF10",
+      "observed_condition": "research-worker result declared effect ceiling local guard",
+      "direct_mechanism": "Nonzero declared effect or authority throws; no direct canonical write",
+      "enabling_systemic_cause": "Evidence-only return; worker self-report not real-world observation",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at Independent evidence of unobserved worker actions or added effect caller",
+      "oracle_ids": [
+        "A3-MUTATE-credentials"
+      ],
+      "proof": {
+        "proof_id": "P-NF10",
+        "claim_invariant": "research-worker result declared effect ceiling local guard",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "Independent evidence of unobserved worker actions or added effect caller",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF11",
+      "observed_condition": "learning candidate restraint no local mastery promotion",
+      "direct_mechanism": "CANDIDATE, bounded applicability and alternatives, no promotion function",
+      "enabling_systemic_cause": "Local seam-only bounded learning, not causal/transfer qualification",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at New automatic admission, record count inflation or candidate qualification mismatch",
+      "oracle_ids": [
+        "IEF-REPLAY-LEARNING"
+      ],
+      "proof": {
+        "proof_id": "P-NF11",
+        "claim_invariant": "learning candidate restraint no local mastery promotion",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "New automatic admission, record count inflation or candidate qualification mismatch",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF12",
+      "observed_condition": "synthetic metrics cannot govern locally",
+      "direct_mechanism": "Synthetic-local context and governing-context rejection",
+      "enabling_systemic_cause": "Explicit local measurement boundary, not truth of supplied metrics",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at Caller reuses synthetic result as governing evidence",
+      "oracle_ids": [
+        "WS-WHOLE-CALLER-CLOSURE"
+      ],
+      "proof": {
+        "proof_id": "P-NF12",
+        "claim_invariant": "synthetic metrics cannot govern locally",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "Caller reuses synthetic result as governing evidence",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    },
+    {
+      "id": "NF13",
+      "observed_condition": "operating/C4-C6 scopes deferred locally",
+      "direct_mechanism": "Source scope limits and no live path used by audit",
+      "enabling_systemic_cause": "Architecture/local source boundaries; remote production inventory unobserved",
+      "demonstrated_or_adjacent_class": "Local seam and any newly added caller/adapter/field domain/authority-bearing use",
+      "exhaustive_or_bounded_check": "BOUNDED to exact surface in audit section10; source audit reports guard tracing/absence, not new empirical verification",
+      "recurrence_control": "Keep guard and automatically reopen at New live path/deployment/authority-bearing caller or false maturity claim",
+      "oracle_ids": [
+        "WS-NO-OPERATIONAL-PROMOTION"
+      ],
+      "proof": {
+        "proof_id": "P-NF13",
+        "claim_invariant": "operating/C4-C6 scopes deferred locally",
+        "semantic_source": [
+          {
+            "artifact": "01",
+            "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+            "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "11",
+            "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+            "blob": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "20",
+            "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+            "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          },
+          {
+            "artifact": "24",
+            "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+            "repository_path": "artifacts/iba/iris-batch-a-v1.0/24-DEFERRED-SCOPE-MAP.md",
+            "blob": "198f588874f3d84d24133e69f33df6a28e2ce394",
+            "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+          }
+        ],
+        "dependency_closure": "exact named historical local seam -> audit bounded observation -> constitutional constraint -> downstream new-caller invalidator",
+        "method": "EXECUTED source-level scope comparison against audit section10 and constitution; source tests/bodies not read here.",
+        "PASS_establishes": "Only the documented local guard or seam absence remains historical evidence compatible with the constitution.",
+        "PASS_does_not_establish": "Does not establish current implementation, subsystem health, SQL execution, external actions, E1 universal coverage or clean-room historical acceptance.",
+        "falsifier": "New live path/deployment/authority-bearing caller or false maturity claim",
+        "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+        "implementation_assumptions": [
+          "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+          "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+        ],
+        "evidence_class": "BOUNDED_AUDIT_NON_FINDING_TRACEABILITY_ONLY",
+        "as_of_version": {
+          "oracle_version": "1.0",
+          "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+          "derivation_date": "2026-10-03",
+          "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+        },
+        "execution_status": "SEMANTIC_SCOPE_REVIEW_EXECUTED; LOCAL_RUNTIME_NOT_RETESTED"
+      }
+    }
+  ],
+  "common_root": "DISTRIBUTED_SEMANTICS_WITHOUT_SINGLE_ENFORCEABLE_CROSS_LAYER_CONTRACT",
+  "second_order_challenge": "A single nominal owner alone does not close class if any alternate caller/decoder/renderer remains semantically authoritative. Actual transitive caller closure and boundary observations required downstream.",
+  "audit_source": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+    "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+    "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+    "consumed_sections": [
+      "What remains earned",
+      "10 Non-findings",
+      "11 Previous PASS revalidation"
+    ],
+    "normative_role": "falsification/traceability only; never expected-output authority"
+  }
+}

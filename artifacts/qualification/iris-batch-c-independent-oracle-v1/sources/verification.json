@@ -1,0 +1,226 @@
+[
+  {
+    "path": "sources/PACKAGE-MANIFEST.json",
+    "git_blob_sha": "156726e9d5ef0e4c71c9b58a3691901c538f9d27",
+    "observed_git_blob_sha": "156726e9d5ef0e4c71c9b58a3691901c538f9d27",
+    "sha256": "94660945508fb043b317f903a3f8d44723cb9261374c3afee7c03423b70662bf",
+    "size": 7516,
+    "verified": true
+  },
+  {
+    "path": "sources/00-IRIS-BATCH-A-MASTER-CONSTITUTION-v1.0.md",
+    "git_blob_sha": "07c157fb1c6aa245842aa74d437974841489a0d1",
+    "observed_git_blob_sha": "07c157fb1c6aa245842aa74d437974841489a0d1",
+    "sha256": "09cd1f5c826c0337b5992db240be6255d2fefbd94310724550a2c8acd6c977a8",
+    "size": 4529,
+    "verified": true
+  },
+  {
+    "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+    "git_blob_sha": "56210d29770b92fc992d64abdc44020df79e344f",
+    "observed_git_blob_sha": "56210d29770b92fc992d64abdc44020df79e344f",
+    "sha256": "990c45f56191b383cb496c0b12a681c8c01fc3e030320298fc0295b2655e83cd",
+    "size": 6788,
+    "verified": true
+  },
+  {
+    "path": "sources/02-EXECUTIVE-REASONING-CONSTITUTION.md",
+    "git_blob_sha": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+    "observed_git_blob_sha": "fbb74f828473b04dd7b74c7b0a6a42721ce3a4c5",
+    "sha256": "d5c72bba20c500a1f0f9de8de260717f767aa34ffe77d2239e34a6e3d249f79d",
+    "size": 2652,
+    "verified": true
+  },
+  {
+    "path": "sources/03-TRANSITION-FILTRATION-CONSTITUTION.md",
+    "git_blob_sha": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+    "observed_git_blob_sha": "74aac2dac68372c2ace66d2e94c6d4da46aff533",
+    "sha256": "3032aa44d507f76952fa3bffe639200a4dcbcc2b1e2705e7e70a11fff1b126bf",
+    "size": 2676,
+    "verified": true
+  },
+  {
+    "path": "sources/04-PERSONAL-BIRE-RUNTIME-METABOLISM.md",
+    "git_blob_sha": "5e98644391dff0a85a70242118bff3ca6a413b17",
+    "observed_git_blob_sha": "5e98644391dff0a85a70242118bff3ca6a413b17",
+    "sha256": "38af872091b700f85be1ea543cb2d5e2eef6807ccdca806b121e869d7348cfc9",
+    "size": 2338,
+    "verified": true
+  },
+  {
+    "path": "sources/05-PERSONAL-NERVOUS-SYSTEM.md",
+    "git_blob_sha": "00b0d1e6ab6f1f99fe331853407509d9418b9d7c",
+    "observed_git_blob_sha": "00b0d1e6ab6f1f99fe331853407509d9418b9d7c",
+    "sha256": "6fe3876d15c8a34e92c63f7778e85c86eadb905d813afe8180b42352eb33ba54",
+    "size": 2191,
+    "verified": true
+  },
+  {
+    "path": "sources/06-FUNCTIONAL-PERCEPTION-CONSTITUTION.md",
+    "git_blob_sha": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+    "observed_git_blob_sha": "7e17bc05482016bf2aca77e1d96374a786d187ee",
+    "sha256": "d8f6f7a5b460b8df762bbf56dd2924b0b265430bdd580784b1b7371079c7acb1",
+    "size": 2485,
+    "verified": true
+  },
+  {
+    "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+    "git_blob_sha": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+    "observed_git_blob_sha": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+    "sha256": "1cc952743deb4479c5ed5a9a38b1778c865296952010a698bb0c7e0a1ecb7865",
+    "size": 1470,
+    "verified": true
+  },
+  {
+    "path": "sources/08-IRIS-IEF-CONSTITUTION.md",
+    "git_blob_sha": "dadb4d34b079d1bb38ed5516b0ca6dfe88e76234",
+    "observed_git_blob_sha": "dadb4d34b079d1bb38ed5516b0ca6dfe88e76234",
+    "sha256": "ef009a1927cd4f7592ff0c76af7aac31d7015bf2e5f3ab8dbfb4d98f58503238",
+    "size": 4046,
+    "verified": true
+  },
+  {
+    "path": "sources/09-MATURITY-AXES-NON-COLLAPSE.md",
+    "git_blob_sha": "610fa691598ff20b2d17151123e840319adb5d25",
+    "observed_git_blob_sha": "610fa691598ff20b2d17151123e840319adb5d25",
+    "sha256": "55fcc7fd62fb884c2ca67fcfb471e95d11a87a16bb2c4d96b924fca26df0cafb",
+    "size": 1171,
+    "verified": true
+  },
+  {
+    "path": "sources/10-D01-D20-CAUSAL-TO-CONTRACT-MATRIX.md",
+    "git_blob_sha": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+    "observed_git_blob_sha": "e8051e9d269fb8e1ed7207f050d25358c2924d93",
+    "sha256": "98cd420187467b984e46c7823ca1a2c6a1746bc2f05cf9f61937984e5c6ba696",
+    "size": 7986,
+    "verified": true
+  },
+  {
+    "path": "sources/11-SOURCE-PRECEDENCE-TRACEABILITY.md",
+    "git_blob_sha": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+    "observed_git_blob_sha": "995b259afd5eac89e49048bc58ff6ad3fc9e0ad3",
+    "sha256": "0a0c3ccf61e39292506c15d7c1a14a3fcd5a255380bb6666ccdddc3e74714041",
+    "size": 2303,
+    "verified": true
+  },
+  {
+    "path": "sources/12-INTENT-CAPABILITY-PRESERVATION-MATRIX.md",
+    "git_blob_sha": "db195b2467c7195c4910b4d4813813134528a6fa",
+    "observed_git_blob_sha": "db195b2467c7195c4910b4d4813813134528a6fa",
+    "sha256": "327791b50d957649c6ab2e900beb463adb906f0632624fe921d4df5c207db1c4",
+    "size": 3539,
+    "verified": true
+  },
+  {
+    "path": "sources/13-CANONICAL-DOMAIN-STATE-MACHINE-CONTRACT.md",
+    "git_blob_sha": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+    "observed_git_blob_sha": "7fb5d001e63b2f796c64972adb5193f68becb98b",
+    "sha256": "94c13973be8f45aaf35c82e4aef80f81144f10c9af2558472b51a689e0d50f6b",
+    "size": 2876,
+    "verified": true
+  },
+  {
+    "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+    "git_blob_sha": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+    "observed_git_blob_sha": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+    "sha256": "3bdd4c80f85fa992adf516a0f9af4c6d70765fed118606363df95c0976626410",
+    "size": 3122,
+    "verified": true
+  },
+  {
+    "path": "sources/15-CANONICAL-IDENTITY-RESOLUTION-CAUSAL-OCCURRENCE.md",
+    "git_blob_sha": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+    "observed_git_blob_sha": "182f0611a146d84e9a05e33321b06712d71f6dc6",
+    "sha256": "9f6f8b89484f36f4cf735be68b428113d05272d4b699188200c638b4cbafe15a",
+    "size": 3003,
+    "verified": true
+  },
+  {
+    "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+    "git_blob_sha": "76a77518032717a4db35fe13ad7271f6c75883d7",
+    "observed_git_blob_sha": "76a77518032717a4db35fe13ad7271f6c75883d7",
+    "sha256": "436ad8b94df0a747281c26f75ea3f0894759802e3b0562bd8f24c1590c8777c5",
+    "size": 3045,
+    "verified": true
+  },
+  {
+    "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+    "git_blob_sha": "70565fc58df3c5321c45122b587affeddd85c5ca",
+    "observed_git_blob_sha": "70565fc58df3c5321c45122b587affeddd85c5ca",
+    "sha256": "ccd710dd57dda57550d95ef0d998a3c0d80d2a57578c55970d5d5f4750431227",
+    "size": 3052,
+    "verified": true
+  },
+  {
+    "path": "sources/18-IMPLEMENTATION-REPAIR-DEPENDENCY-GRAPH.md",
+    "git_blob_sha": "b3492abab38b247d51202d117eccbe0800e59b00",
+    "observed_git_blob_sha": "b3492abab38b247d51202d117eccbe0800e59b00",
+    "sha256": "f36ddbc387b33d48e8bf93938631d40a0de7eb99f8f5e5e6d89d448be0f8e2bf",
+    "size": 3631,
+    "verified": true
+  },
+  {
+    "path": "sources/19-IMPACTED-SOURCE-SCHEMA-TEST-CALLER-SURFACES.md",
+    "git_blob_sha": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053",
+    "observed_git_blob_sha": "cb9a72eed9dc42d106e8b117e5a12495ba6bc053",
+    "sha256": "aab0b7d57d449e53d0338f34309f6a4dc36fa4b9daf6ec910b7e122f6bbb3d99",
+    "size": 2785,
+    "verified": true
+  },
+  {
+    "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+    "git_blob_sha": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+    "observed_git_blob_sha": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+    "sha256": "8dd2a2362c6ddeb5cbdb93a84e5607a58f6bb69d92b23d86021e4a09049eac96",
+    "size": 3275,
+    "verified": true
+  },
+  {
+    "path": "sources/21-LEGACY-PROOF-REVALIDATION-REGISTER.md",
+    "git_blob_sha": "28dedc07d783519658584743b9691a5efb1c2340",
+    "observed_git_blob_sha": "28dedc07d783519658584743b9691a5efb1c2340",
+    "sha256": "a3c3a9245ceefa07d518afb7b6d3cdcc6f9c6ba3446b35de15785c2d10246eed",
+    "size": 3435,
+    "verified": true
+  },
+  {
+    "path": "sources/22-FOUNDER-AMBIGUITY-REGISTER.md",
+    "git_blob_sha": "6c8f7d80d8cae79e70495bab43744cefcd72573b",
+    "observed_git_blob_sha": "6c8f7d80d8cae79e70495bab43744cefcd72573b",
+    "sha256": "55a3890692ac050792d717bd298b9caeb982f5f023232300b984913a0797803b",
+    "size": 2484,
+    "verified": true
+  },
+  {
+    "path": "sources/23-FALSIFIER-PREMORTEM-SET.md",
+    "git_blob_sha": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+    "observed_git_blob_sha": "071ae9fbf698213f6dbb5f3cf6c6d49c16210c57",
+    "sha256": "c1576c1682c160004e9702232b469928c8a261869038be096a574263553bf164",
+    "size": 3927,
+    "verified": true
+  },
+  {
+    "path": "sources/24-DEFERRED-SCOPE-MAP.md",
+    "git_blob_sha": "198f588874f3d84d24133e69f33df6a28e2ce394",
+    "observed_git_blob_sha": "198f588874f3d84d24133e69f33df6a28e2ce394",
+    "sha256": "4045e5877bb0dd14ba4211182d5d9e7f146892ae5aa6dada39a59cb5ad9a3027",
+    "size": 2805,
+    "verified": true
+  },
+  {
+    "path": "sources/25-CHIEF-OF-STAFF-PRESERVATION-DISTILLATION-PROOF.md",
+    "git_blob_sha": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d",
+    "observed_git_blob_sha": "9ab5bd5525f23b511deda7843c18ead0c07d4c9d",
+    "sha256": "bc909d34e53ae7c92dd4718e7b2d6b174a3a8e5a0692a540fead2798505cbbe7",
+    "size": 3364,
+    "verified": true
+  },
+  {
+    "path": "sources/26-ICCP-COMMUNICATION-CONSTITUTION.md",
+    "git_blob_sha": "62ce6427cf729ec39f69df6d76046b88b812a473",
+    "observed_git_blob_sha": "62ce6427cf729ec39f69df6d76046b88b812a473",
+    "sha256": "455c25853f6d82047438eb038f0d50878c2463c9028876698380688a7561de2d",
+    "size": 5832,
+    "verified": true
+  }
+]

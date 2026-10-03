@@ -1,0 +1,34 @@
+{
+  "author_role": "new fresh independent source-only Batch-C oracle author under Professor",
+  "certification": "Clean starting context: only scoped parent dispatch and tool metadata. No repaired candidate implementation, tests, expected outputs, candidate/Pilot runs, scores or score-derived settings consumed. No implementation mutations/publication performed.",
+  "authority_refs": [
+    "BIG #703/5971539564",
+    "BIG #703/5971366932",
+    "IRIS mirror #3/5971540575 supplied in parent dispatch (not fetched)"
+  ],
+  "semantic_basis": "All 26 frozen Batch-A family blobs plus exact master/manifest fetched first, hash verified 28/28. Exact allowed governing comments for temporal/IEF/base clarification.",
+  "audit_use": {
+    "repository": "417properties/IRIS-Personal-Office",
+    "commit": "ef7fea887729f9e2a1864990eaa2fb1da15135ce",
+    "report_blob": "c7c18be77122d428f90fc8133c52f257dd7e7c86",
+    "report_sha256": "dcb1f629fab67a96073958db197ff5d914ae187bfc570f180c53e8f05c3a633b",
+    "consumed_sections": [
+      "What remains earned",
+      "10 Non-findings",
+      "11 Previous PASS revalidation"
+    ],
+    "normative_role": "falsification/traceability only; never expected-output authority"
+  },
+  "audit_read_boundary": "Full exact report fetched and byte/hash verified for provenance archive; only heading inventory, What remains earned, sections 10/11 consumed for this derivation. No candidate/test source, report code snippets, protected E2 or scores used as oracle truth.",
+  "other_inputs": "No broad issue history/search. No additional E1 input or Blueprint needed for these constitutional constraints; no population/sample-specific expected outputs claimed.",
+  "failed_retrieval": "One guessed 417properties/BIG exact audit-comment endpoint returned 404; corrected to parent-supplied BIG-Navigator. It supplied no source evidence.",
+  "semantic_ownership": "A1-A5 unique owners. Cross-cutting products refine but do not introduce new truth/authority stores.",
+  "implementation_acceptance": "Unexecuted. This author is not acceptance owner. Historical audit clean-room limitation remains attached to audit evidence; no historical E3 result values were exposed here.",
+  "progress": "NO_NEW_GATE_PROGRESS",
+  "as_of_version": {
+    "oracle_version": "1.0",
+    "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+    "derivation_date": "2026-10-03",
+    "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+  }
+}

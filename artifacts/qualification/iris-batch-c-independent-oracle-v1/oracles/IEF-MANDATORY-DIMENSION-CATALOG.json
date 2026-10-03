@@ -1,0 +1,189 @@
+{
+  "source_comments": [
+    "BIG #703/5970957076",
+    "BIG #703/5970991430"
+  ],
+  "catalog": [
+    {
+      "dimension": "P1",
+      "meaning": "qualified evidence/perception/UNKNOWN",
+      "phase_capability": "relevant Aaron world/current inputs, obligations, N1/N2/N3/functional evidence, provenance/freshness/coverage; missing unavailable conflicted separate",
+      "qualitative_entry_and_compounding_obligation": "reliable/selective/reconstructable/economical enough to reduce rediscovery",
+      "example_vector": "A1-COVERAGE-SCOPE"
+    },
+    {
+      "dimension": "P2",
+      "meaning": "calibration/causal understanding/executive interpretation",
+      "phase_capability": "facts/inferences/predictions, situation/causal models, false frames, relational consequences, uncertainty/BIRE",
+      "qualitative_entry_and_compounding_obligation": "recurring interpretation becomes reusable qualified knowledge rather than rediscovery",
+      "example_vector": "ER-CausalModel"
+    },
+    {
+      "dimension": "P3",
+      "meaning": "orchestration/continuation/authority-aware coordination",
+      "phase_capability": "qualified workers/tools, context projection, delegation, durable episodes, foreground/background reconciliation, bounded handoffs",
+      "qualitative_entry_and_compounding_obligation": "routine/local/filtered/reusable/exception-driven coordination preserves Aaron executive attention",
+      "example_vector": "WS-CONTINUATION"
+    },
+    {
+      "dimension": "P4",
+      "meaning": "judgment/options/objective/resource arbitration",
+      "phase_capability": "options/scenarios/counterfactuals, opportunity/threat, second-order/social effects, optionality/reversibility, plan-vs-objective",
+      "qualitative_entry_and_compounding_obligation": "lower layers dependable enough that navigation focuses on consequential uncertainty",
+      "example_vector": "ER-FALSE-FRAME"
+    },
+    {
+      "dimension": "P5",
+      "meaning": "learning/qualification/transfer/regression",
+      "phase_capability": "verified occurrence experience, candidate lessons, causal basis/falsifiers, portable procedure, retention/transfer, forgetting/negative-transfer",
+      "qualitative_entry_and_compounding_obligation": "solved classes become portable reusable competence reducing future burden",
+      "example_vector": "FP-TRANSFER"
+    },
+    {
+      "dimension": "P6",
+      "meaning": "leverage/economics/reuse/Aaron-burden reduction",
+      "phase_capability": "real outcome value vs all BIRE resources, recovered time/attention, reduced friction/error/reconstruction, routing/substitution/opportunity capture",
+      "qualitative_entry_and_compounding_obligation": "equal/better outcomes with lower unnecessary marginal cognition/coordination/context/cost/Aaron burden",
+      "example_vector": "ICCP-ECONOMICS"
+    },
+    {
+      "dimension": "P7",
+      "meaning": "governed frontier/development/independent qualification/rollback",
+      "phase_capability": "gap/frontier discovery, bounded candidate/experiment, independent qualification/adoption/substitution, regression/distillation/rollback/retire",
+      "qualitative_entry_and_compounding_obligation": "developmental machinery improves its improvement without self-certification or authority inflation",
+      "example_vector": "IEF-COMPOUNDING"
+    }
+  ],
+  "target_phase_matrix": [
+    {
+      "target_phase": 1,
+      "cumulative_mandatory": [
+        "P1"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    },
+    {
+      "target_phase": 2,
+      "cumulative_mandatory": [
+        "P1",
+        "P2"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    },
+    {
+      "target_phase": 3,
+      "cumulative_mandatory": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    },
+    {
+      "target_phase": 4,
+      "cumulative_mandatory": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    },
+    {
+      "target_phase": 5,
+      "cumulative_mandatory": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    },
+    {
+      "target_phase": 6,
+      "cumulative_mandatory": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    },
+    {
+      "target_phase": 7,
+      "cumulative_mandatory": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
+      ],
+      "required": "all listed dimensions meet target-phase evidence/capability requirements with current evidence, no defeating contradiction, complete phase-specific dependency closure and qualitative compounding",
+      "optional_dimensions": "weak optional dimension cannot lower mandatory phase floor; leading edge cannot raise it"
+    }
+  ],
+  "numeric_threshold": "none invented; independently qualified evidence sufficiency remains required",
+  "proof": {
+    "proof_id": "P-IEF-CATALOG",
+    "claim_invariant": "No mandatory cumulative phase dimension or defeating contradiction is omitted",
+    "semantic_source": [
+      {
+        "artifact": "07",
+        "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+        "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "08",
+        "path": "sources/08-IRIS-IEF-CONSTITUTION.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/08-IRIS-IEF-CONSTITUTION.md",
+        "blob": "dadb4d34b079d1bb38ed5516b0ca6dfe88e76234",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "09",
+        "path": "sources/09-MATURITY-AXES-NON-COLLAPSE.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/09-MATURITY-AXES-NON-COLLAPSE.md",
+        "blob": "610fa691598ff20b2d17151123e840319adb5d25",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "20",
+        "path": "sources/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/20-INDEPENDENT-ORACLE-DERIVATION-REQUIREMENTS.md",
+        "blob": "a0ae4a5b575dba98656c3d823244d68e881f8b63",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      }
+    ],
+    "dependency_closure": "all dimension evidence -> complete phase-specific dependency inventory -> independent qualification -> floor+compounding -> dual-axis public claim",
+    "method": "Source-derived cumulative catalog and adversarial omitted/weak-dimension proof plan.",
+    "PASS_establishes": "Catalog and exercised target claims include each source-required dimension and exclude averaging, maximum and optional weakest-link errors.",
+    "PASS_does_not_establish": "Does not empirically earn any phase, certify evidence sufficiency from counts or operationally qualify any deferred capability.",
+    "falsifier": "Mandatory dimension/dependency omitted, contradiction ignored, optional weakest-link lowers floor or leading edge raises phase.",
+    "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+    "implementation_assumptions": [
+      "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+      "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+    ],
+    "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+    "as_of_version": {
+      "oracle_version": "1.0",
+      "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+      "derivation_date": "2026-10-03",
+      "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+    },
+    "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+  }
+}

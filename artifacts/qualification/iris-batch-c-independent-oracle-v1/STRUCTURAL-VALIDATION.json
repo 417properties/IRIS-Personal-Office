@@ -1,0 +1,27 @@
+{
+  "validation": "PASS",
+  "method": "STRUCTURAL/MECHANICAL ONLY; no candidate or historical tests executed",
+  "checks": [
+    "JSON UTF8 parsing",
+    "unique vector/proof identities",
+    "full proof schema completeness",
+    "component/legacy/preservation/requirement references",
+    "28 frozen Batch-A SHA/Git-blob/size identities",
+    "sealed audit report and SEAL exact Git blob/SHA256",
+    "gap-specific scalar field withholding",
+    "all ten required oracle families and supporting state/catalog tables"
+  ],
+  "counts": {
+    "vectors": 402,
+    "proof_schemas": 464,
+    "coordinate_rows": 504,
+    "legacy_dispositions": 25,
+    "causal_findings": 20,
+    "bounded_nonfindings": 13,
+    "preserved_capabilities": 22,
+    "artifact20_class_mappings": 18,
+    "open_clarifications": 1
+  },
+  "does_not_establish": "Candidate conformance, actual caller closure, SQL execution, every distributed schedule, legacy test rerun, phase advancement, authority, continuity or independent acceptance.",
+  "errors": []
+}

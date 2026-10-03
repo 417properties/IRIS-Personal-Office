@@ -1,0 +1,148 @@
+{
+  "states_are_semantic": "Representational spelling may differ through explicit versioned maps; stages remain distinct.",
+  "edges": [
+    {
+      "from": "DECISION",
+      "guard": "propose intent",
+      "to": "DECISION_RECORD",
+      "boundary": "does not submit or authorize"
+    },
+    {
+      "from": "INTENT",
+      "guard": "durable immutable i1/digest1 exists",
+      "to": "INTENT_DURABLE",
+      "boundary": "not receipt/effect/verification"
+    },
+    {
+      "from": "PREPARED",
+      "guard": "persist release owner atomically",
+      "to": "PREPARED_DURABLE",
+      "boundary": "not authority or known submission"
+    },
+    {
+      "from": "PREPARED",
+      "guard": "A3 and A2 valid, release wins atomic gate",
+      "to": "RELEASED_SUBMITTED",
+      "boundary": "not effect/objective success"
+    },
+    {
+      "from": "PREPARED",
+      "guard": "revocation wins before release",
+      "to": "DENIED",
+      "boundary": "retained denied attempt; no submission"
+    },
+    {
+      "from": "POSSIBLE_SUBMISSION",
+      "guard": "timeout/crash and no positive non-submission evidence",
+      "to": "AMBIGUOUS_SUBMISSION/RECONCILIATION_REQUIRED",
+      "boundary": "no blind retry"
+    },
+    {
+      "from": "SUBMISSION_KNOWN",
+      "guard": "receipt accepted",
+      "to": "SUBMISSION_KNOWN",
+      "boundary": "receipt is not verified effect"
+    },
+    {
+      "from": "EFFECT_OBSERVED",
+      "guard": "effect contract fully evidenced",
+      "to": "EFFECT_VERIFIED",
+      "boundary": "not objective closure"
+    },
+    {
+      "from": "EFFECT_OBSERVED",
+      "guard": "positive source-backed absence appropriate to contract",
+      "to": "NO_EFFECT_VERIFIED",
+      "boundary": "retry still requires retry class+Current authority"
+    },
+    {
+      "from": "EFFECT_OBSERVED",
+      "guard": "only subset landed",
+      "to": "PARTIAL_EFFECT",
+      "boundary": "reconcile; no blind retry"
+    },
+    {
+      "from": "EFFECT_OBSERVED",
+      "guard": "unavailable readback",
+      "to": "UNAVAILABLE_READBACK/UNKNOWN",
+      "boundary": "do not prove no-effect"
+    },
+    {
+      "from": "EFFECT_OBSERVED",
+      "guard": "competing incompatible qualified effect facts",
+      "to": "CONFLICTED_EFFECT",
+      "boundary": "reconcile; no chosen favorite"
+    },
+    {
+      "from": "VERIFICATION",
+      "guard": "all mandatory objective criteria and obligations reconciled",
+      "to": "EXPLICIT_CLOSURE_EVENT_PERMITTED",
+      "boundary": "exact objective refs and current evidence only"
+    },
+    {
+      "from": "TERMINAL",
+      "guard": "correction/supersession evidence event with new version",
+      "to": "CORRECTED/SUPERSEDED_EXPLICITLY",
+      "boundary": "direct reopen mutation prohibited"
+    }
+  ],
+  "proof": {
+    "proof_id": "P-A4-MACHINE",
+    "claim_invariant": "No stage advances on evidence appropriate only to an earlier stage",
+    "semantic_source": [
+      {
+        "artifact": "01",
+        "path": "sources/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/01-A1-A5-CONSTITUTIONAL-CONTRACTS.md",
+        "blob": "56210d29770b92fc992d64abdc44020df79e344f",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "07",
+        "path": "sources/07-TEMPORAL-AS-OF-CONTRACT.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/07-TEMPORAL-AS-OF-CONTRACT.md",
+        "blob": "1897aab389fca94bbf88023c4a0c026dc0a87ba8",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "14",
+        "path": "sources/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/14-CANONICAL-AUTHORITY-CAPABILITY-PRIVACY-CONTRACT.md",
+        "blob": "ce1495c6a358ca998bbb4083bccf024bbec24f20",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "16",
+        "path": "sources/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/16-CANONICAL-ACTION-EFFECT-LIFECYCLE-CONTRACT.md",
+        "blob": "76a77518032717a4db35fe13ad7271f6c75883d7",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      },
+      {
+        "artifact": "17",
+        "path": "sources/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+        "repository_path": "artifacts/iba/iris-batch-a-v1.0/17-CANONICAL-PERSISTENCE-RECONSTRUCTION-CONTRACT.md",
+        "blob": "70565fc58df3c5321c45122b587affeddd85c5ca",
+        "commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292"
+      }
+    ],
+    "dependency_closure": "persisted intent/attempt -> common release -> receipt/effect verification -> reconciler -> canonical closure -> cold recovery",
+    "method": "Guarded-edge source derivation; downstream state/schedule exploration with crash observations.",
+    "PASS_establishes": "Each exercised edge has the required distinct identity, guard, evidence and immutable history.",
+    "PASS_does_not_establish": "No empirical submission or exhaustive distributed schedule proof has been executed by this author.",
+    "falsifier": "A release, effect, verification or closure is inferred from an earlier success token.",
+    "independence_class": "FRESH_SOURCE_ONLY_ORACLE_DERIVATION",
+    "implementation_assumptions": [
+      "The implementation supplies exact typed identities, explicit decision cut and evidence-bearing state; no field-name or internal module arrangement is prescribed.",
+      "Observed candidate results are unavailable to this author; downstream conformance must be independently executed."
+    ],
+    "evidence_class": "CONSTITUTION_DERIVED_ORACLE_NOT_CANDIDATE_PASS",
+    "as_of_version": {
+      "oracle_version": "1.0",
+      "constitution_commit": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+      "derivation_date": "2026-10-03",
+      "time_vectors": "symbolic decision cuts; no live clock or provider observation"
+    },
+    "execution_status": "EXPECTED_CONFORMANCE_ONLY_NOT_EXECUTED_ON_IMPLEMENTATION"
+  }
+}
