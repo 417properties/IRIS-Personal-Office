@@ -194,7 +194,7 @@
       "unresolved_intent": 1,
       "conflict_only": 1
     },
-    "load_bearing_unknown_candidate_roots": 5,
+    "load_bearing_unknown_candidate_roots": 6,
     "material_conflict_true_roots": 4,
     "possible_duplicate_refs_nonempty_roots": 2,
     "escalation_required_true_roots": 1,
@@ -230,7 +230,58 @@
     "abandonment_rewrites_independent_scoped_applicability": false,
     "abandonment_cascades_to_linked_decision": false,
     "current_state_conflict_id": "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
-    "obsolete_short_anchor_current_state_conflict_id_present": false
+    "obsolete_short_anchor_current_state_conflict_id_present": false,
+    "unknown_cause_counts": {
+      "applicability_UNKNOWN": 3,
+      "authority_holder_UNKNOWN": 2,
+      "decision_maker_UNKNOWN": 1,
+      "total_disjoint": 6
+    },
+    "candidate_field_census_exact": true,
+    "candidate_field_census": {
+      "objective_id_present": 84,
+      "obligation_id_present": 42,
+      "decision_requirement_id_present": 40,
+      "intent_id_present": 1,
+      "conflict_id_present": 4,
+      "obligation_status": {
+        "OPEN": 38,
+        "ABANDONED": 1,
+        "SATISFIED": 2,
+        "SUPERSEDED": 1
+      },
+      "obligation_owner": {
+        "AARON": 20,
+        "IRIS": 20,
+        "EXTERNAL_ORG": 1,
+        "UNKNOWN": 1
+      },
+      "concrete_action_remaining": {
+        "true": 38,
+        "false": 4
+      },
+      "decision_status": {
+        "OPEN": 36,
+        "RESOLVED": 3,
+        "SUPERSEDED": 1
+      },
+      "decision_maker_identity_id": {
+        "IRIS": 29,
+        "AARON": 10,
+        "UNKNOWN": 1
+      },
+      "freshness": {
+        "CURRENT": 84,
+        "STALE": 0,
+        "UNKNOWN": 0
+      },
+      "source_identity": {
+        "VERIFIED": 84,
+        "UNKNOWN": 0,
+        "CONFLICT": 0
+      },
+      "why_present": 0
+    }
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
