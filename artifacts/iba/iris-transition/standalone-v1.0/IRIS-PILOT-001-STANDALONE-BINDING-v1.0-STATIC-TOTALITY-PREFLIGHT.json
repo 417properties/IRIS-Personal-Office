@@ -189,7 +189,23 @@
     "decision_lifecycle_applicability_classes": 7,
     "decision_lifecycle_applicability_total": 40,
     "cross_record_status_applicability_cascade": false,
-    "terminal_status_does_not_rewrite_independent_APPLICABLE_governance": true
+    "terminal_status_does_not_rewrite_independent_APPLICABLE_governance": true,
+    "candidate_root_census": {
+      "obligation": 42,
+      "decision": 40,
+      "unresolved_intent": 1,
+      "conflict_only": 1,
+      "total": 84
+    },
+    "load_bearing_unknown_candidate_roots": 5,
+    "material_conflict_true_roots": 4,
+    "possible_duplicate_refs_nonempty_roots": 2,
+    "escalation_required_true_roots": 1,
+    "unresolved_effect_true_roots": 1,
+    "informational_only_true_roots": 1,
+    "privacyExcluded_total_records": 1,
+    "privacyExcluded_exact_record": "source_packet:b8ac8fd78e794c25b476e145f4e6006b",
+    "candidate_evidence_closure_sets_frozen": true
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
