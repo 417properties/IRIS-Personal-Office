@@ -83,6 +83,8 @@ Their dispositions are total:
 Any future or demonstrated top-level field absent from this disposition:
 `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
+The decoder/harness input allowlist is exact: v1.0 package files plus dependency-manifest entries only. Any unexpected source path, config, CLI semantic input, environment semantic input, test fixture, historical binding, review judgment, E2/E3 artifact, candidate output, or score-derived object is `BINDING_HOLD/LABEL_OR_SCORING_INPUT_FORBIDDEN` before candidate import/execution.
+
 ## 3. Required SourceEvaluation mapping — complete demonstrated envelope grammar
 
 Exactly eight source envelopes are required per case, in this candidate order:
@@ -185,6 +187,8 @@ Failures:
 - wrong namespace -> `BINDING_HOLD/CANDIDATE_ANCHOR_NAMESPACE_MISMATCH`;
 - malformed payload -> `BINDING_HOLD/CANDIDATE_ANCHOR_PAYLOAD_MALFORMED`.
 
+If any demonstrated source record would need a candidate-owned anchor namespace other than objective/obligation/decision_requirement/intent or binding-generated conflict, fail `BINDING_HOLD/UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE` before buildProjection.
+
 Typed refs remain typed for record IDs, joins, lifecycle/applicability subject refs, action-decision refs, required-next-step refs, source-link refs, evidence/source refs, impact refs, authority/lease/worker/episode refs, privacy exclusions, provenance_refs, possible_duplicate_refs, and binding trace.
 
 No candidate-owned payload field may contain a colon before buildProjection. No output anchor may contain a doubled namespace prefix.
@@ -243,6 +247,8 @@ Never inherit obligation/decision/objective applicability. Never infer APPLICABL
 
 The demonstrated unresolved case therefore maps:
 `unresolved_effect=true / applicability=UNKNOWN`.
+
+If an unresolved intent/effect in this frozen population presents an exact-scoped applicability evidence shape not covered by the decision rule above, fail `BINDING_HOLD/UNMAPPED_INTENT_APPLICABILITY_SHAPE` rather than choose a value.
 
 ## 8. Authority, permission and delegation
 
