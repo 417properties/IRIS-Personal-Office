@@ -63,7 +63,7 @@ No historical binding/review, preliminary v1.1 branch, E2/E3, candidate output, 
 - authority-holder fields = AARON 18 / UNKNOWN 2
 - valid_delegation = false 18 / omitted 2 / true 0
 - pre-build ProjectionInput vector SHA-256:
-  b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7
+  8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35
 
 Any mismatch is:
 BINDING_HOLD/PREBUILD_INPUT_VECTOR_MISMATCH
