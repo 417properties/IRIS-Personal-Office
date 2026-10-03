@@ -1,0 +1,66 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-RECONCILED-PACKAGE-INDEX",
+  "authority": "NONE",
+  "repository": "417properties/IRIS-Personal-Office",
+  "branch": "refs/heads/iba/iris-pilot001-standalone-v1-1-reconciled-5964996176",
+  "base_commit": "9bd4355634935410c351c7814fb2b4b67bd06b36",
+  "content_commit": "b5049a2023883be80f2701f9c9e6d3f2203e61f3",
+  "content_tree": "bc6358da5d3888839530a9f5e904469e1f7786f8",
+  "prebuild_vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "files": [
+    {
+      "name": "IRIS-PILOT-001-STANDALONE-EXECUTION-BINDING-v1.1.md",
+      "blob": "56ee5df7dc93205f65d1c4a4fc1edb4ddb1bb156",
+      "bytes": 20788,
+      "sha256": "af93c8c5d7aff31970dae786f1af9893e09e473b4b292f8ee316cf33cb5e5e27"
+    },
+    {
+      "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-DEPENDENCY-MANIFEST.json",
+      "blob": "de44e7fd316458bb37c648545a60995ee5f2687c",
+      "bytes": 5280,
+      "sha256": "d2200f1c8671cc248e428d1d9126ca9dd57f898e2c0121b575a688c3d6c03fe8"
+    },
+    {
+      "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-MAPPING-TOTALITY.json",
+      "blob": "dbd83dfb057b4b590c8a94c23e2ce64128d93a87",
+      "bytes": 8823,
+      "sha256": "175bbd740a0cfe42cd43e590ea4c3bdfacf71f890501a32509bd3681c58d1327"
+    },
+    {
+      "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-PREBUILD-INPUT-INDEX.json",
+      "blob": "a4c27e522c3026a6cd9c12c68a9f305e2f800bbe",
+      "bytes": 8241,
+      "sha256": "2dc247dc353a56f43db740ac29a530ba9d82538688363cebcd951cdb04d7bde8"
+    },
+    {
+      "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-STATIC-PREFLIGHT.json",
+      "blob": "6cd699c857b9af71e282d0610cad14bf2a8bbe78",
+      "bytes": 2593,
+      "sha256": "eacfd623e3437dd0293562629fe836040f1e0bfb7339ea70c2c41d5f33f10ee1"
+    },
+    {
+      "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-BUILDER-FALSIFIER-PACKET.md",
+      "blob": "5b0961ca8df3c6c2a537fc635197b4fd30bd8bcf",
+      "bytes": 4577,
+      "sha256": "a48c6a06026ea588b69444fe873f1dc78d21b9242fad6d95d12b3576a5f9ebf9"
+    },
+    {
+      "name": "MECHANICAL-VERIFIER-SPEC-v1.1.md",
+      "blob": "161935769a98abe1bff7f4ea525c6c2faa02f829",
+      "bytes": 4461,
+      "sha256": "326491f5d6151d83d20e4ef1e88fae06d0cb595b5471504cc080268bbb128e01"
+    }
+  ],
+  "verification": {
+    "dependency_manifest_mismatches": 0,
+    "stale_contradiction_markers": 0,
+    "unmapped_demonstrated_shapes": 0,
+    "static_preflight_failures": 0,
+    "candidate_invoked": false,
+    "buildProjection_invoked": false,
+    "labels_consumed": 0,
+    "candidate_outputs_consumed": 0,
+    "scoring": false
+  },
+  "disposition": "STANDALONE_BINDING_READY / DEPENDENCY_MANIFEST_COMPLETE / 40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES / PREBUILD_INPUT_VECTOR_FROZEN / FRESH_INDEPENDENT_ACCEPTANCE_REQUIRED"
+}
