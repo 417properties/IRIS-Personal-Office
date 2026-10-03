@@ -1332,5 +1332,62 @@
       }
     ],
     "generation_domain_rule": "worker identity generation and authority generation are distinct; never equate them numerically"
+  },
+  "pilot_candidate_construction": {
+    "property_order": [
+      "id",
+      "principal_id",
+      "objective_id?",
+      "obligation_id?",
+      "decision_requirement_id?",
+      "intent_id?",
+      "conflict_id?",
+      "obligation_status?",
+      "obligation_owner?",
+      "concrete_action_remaining?",
+      "decision_status?",
+      "decision_maker_identity_id?",
+      "reserved_authority_class?",
+      "authority_holder_identity_id?",
+      "valid_delegation?",
+      "escalation_required",
+      "unresolved_effect",
+      "material_conflict",
+      "informational_only",
+      "applicability",
+      "freshness",
+      "source_identity",
+      "provenance_refs",
+      "possible_duplicate_refs"
+    ],
+    "why": "NEVER_SUPPLIED",
+    "optional_property_rule": "omit when not semantically applicable; no null/undefined padding",
+    "explicit_boolean_fields": [
+      "escalation_required",
+      "unresolved_effect",
+      "material_conflict",
+      "informational_only"
+    ],
+    "common_reductions": {
+      "principal_id": "AARON exact",
+      "freshness": "UNKNOWN > STALE > CURRENT across exact used source evidence",
+      "source_identity": "CONFLICT > UNKNOWN > VERIFIED across exact used source evidence",
+      "provenance_refs": "exact-deduped UTF-8 byte-lexical union of exact used source refs",
+      "possible_duplicate_refs": "[] unless exact unresolved distinct duplicate evidence; then exact typed other refs"
+    }
+  },
+  "delegation_census": {
+    "reserved_authority_case_count": 10,
+    "valid_delegation_true": 0,
+    "valid_delegation_false": 9,
+    "valid_delegation_omitted_due_authority_unknown": 1,
+    "unknown_case_id": "p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39"
+  },
+  "escalation_census": {
+    "governance_AARON_target_count": 2,
+    "escalation_required_true_count": 1,
+    "true_case_id": "p1e1r4_3592698cabc744789906162b61657890",
+    "reverse_link_not_sprayed_case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+    "rule": "true only exact material root + exact governance escalation_target AARON; impact escalation packets prohibited"
   }
 }
