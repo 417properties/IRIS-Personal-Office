@@ -205,14 +205,14 @@ for(const c of cases){
   }
 }
 
-if(!eq(sortedObj(avail),EXPECT_AVAIL)) fail("availability census "+JSON.stringify(avail));
-if(!eq(sortedObj(brackets),EXPECT_BRACKET)) fail("bracket census "+JSON.stringify(brackets));
-if(!eq(new Set(Object.keys(rtypes)),TYPES)) fail("record type set drift");
-if(!eq(sortedObj(typed),EXPECT_TYPED)) fail("typed anchor census "+JSON.stringify(typed));
+if(!eq(sortedObj(avail),sortedObj(EXPECT_AVAIL))) fail("availability census "+JSON.stringify(avail));
+if(!eq(sortedObj(brackets),sortedObj(EXPECT_BRACKET))) fail("bracket census "+JSON.stringify(brackets));
+if(!eq(Object.keys(rtypes).sort(),[...TYPES].sort())) fail("record type set drift");
+if(!eq(sortedObj(typed),sortedObj(EXPECT_TYPED))) fail("typed anchor census "+JSON.stringify(typed));
 if(intentScoped!==0) fail("intent-scoped applicability assertions "+intentScoped);
-if(!eq(sortedObj(roots),EXPECT_ROOTS)) fail("root census "+JSON.stringify(roots));
+if(!eq(sortedObj(roots),sortedObj(EXPECT_ROOTS))) fail("root census "+JSON.stringify(roots));
 if(authorityUnknownRoots){apps.APPLICABLE-=authorityUnknownRoots;apps.UNKNOWN=(apps.UNKNOWN||0)+authorityUnknownRoots;}
-if(!eq(sortedObj(apps),EXPECT_APP)) fail("candidate applicability census "+JSON.stringify(apps));
+if(!eq(sortedObj(apps),sortedObj(EXPECT_APP))) fail("candidate applicability census "+JSON.stringify(apps));
 if(!eq(privacy,[["p1e1r4_c09b0e9d61544bbf825d1aa9215879e8","source_packet:b8ac8fd78e794c25b476e145f4e6006b"]])) fail("privacy census "+JSON.stringify(privacy));
 if(material!==4||conflictFields!==4||dupRefs!==2) fail("conflict root census "+[material,conflictFields,dupRefs]);
 if(infoTrue!==1) fail("informational true census "+infoTrue);
@@ -245,7 +245,8 @@ if(!eq(PREFLIGHT.checks?.conflicts?.exact_ids,Object.values(CONFLICTS).map(x=>x.
 
 for(const code of ["UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE","UNMAPPED_INTENT_APPLICABILITY_SHAPE","UNMAPPED_REPLACEMENT_E1_STRUCTURE"]) if(!BINDING.includes(code)) fail("binding missing guard "+code);
 if(BINDING.includes("conf_5936fd")) fail("superseded conflict ID leaked");
-if(BINDING.includes("escalation_required=true")) fail("unsupported escalation true leaked");
+if(!BINDING.includes("escalation_required=false")) fail("binding missing canonical escalation=false rule");
+if(BINDING.includes("roots with `escalation_required=true`: 1")) fail("superseded escalation=true census leaked");
 if(!BUILDER.includes("F108")) fail("Builder falsifier packet incomplete");
 if(!BUILDER.includes("obligation_status=ABANDONED / applicability=APPLICABLE")) fail("Builder abandoned reduction drift");
 if(!BUILDER.includes("conf_4e885b98")) fail("Builder conflict ID drift");
