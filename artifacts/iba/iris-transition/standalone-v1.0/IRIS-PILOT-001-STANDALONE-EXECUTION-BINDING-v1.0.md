@@ -353,6 +353,28 @@ Authority holder comes only from exact governance when the authority envelope is
 
 A permission-linked decision remains one authorization basis; decoder never manufactures an extra intervention.
 
+### 8.1 Demonstrated reserved-authority / delegation table
+
+The frozen population contains exactly 10 OPEN/APPLICABLE `required_next_step` records with `permission_needed=true` and `reserved_authority_class=PRINCIPAL_PRIVATE_DISCLOSURE`. For all 10, the exact step class equals the linked obligation-governance and decision reserved class; any mismatch is `BINDING_HOLD/RESERVED_AUTHORITY_CLASS_MISMATCH`.
+
+The reserved class is copied onto the exact linked obligation and decision candidates. For usable authority envelopes, `authority_holder_identity_id` is copied from exact linked obligation_governance. For the one UNKNOWN authority envelope, positive holder evidence is not usable: set `authority_holder_identity_id="UNKNOWN"`, omit `valid_delegation`, and degrade item/source identity, freshness, and applicability to UNKNOWN as required by §7.4.
+
+Current delegation is true only when a referenced lease is ACTIVE at selected time and exact authority-domain ref, authority generation, principal, operation scope, privacy policy/scope, authority policy, work-episode ref, active current worker ref, and active IRIS ref all match. Worker identity generation is NOT authority generation and is never numerically equated to it.
+
+Exact demonstrated outcomes:
+- `p1e1r4_13f14125911f4e4fafe0e128438a33ae`: false — privacy_scope mismatch.
+- `p1e1r4_2746198707b748999b539d1723fd84a2`: false — lease names replaced predecessor/non-current worker, not the open episode worker.
+- `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`: UNKNOWN authority surface/current_generation; holder UNKNOWN; `valid_delegation` omitted; health UNKNOWN.
+- `p1e1r4_593111b7f3bb4e32bd0a6456bba2942a`: false — lease state SUPERSEDED.
+- `p1e1r4_a09424d46ca04ea3955094402e78966a`: false — lease is not ACTIVE under the selected current state.
+- `p1e1r4_be72a0a686754345ac8bc70f34ea13f6`: false — no referenced lease.
+- `p1e1r4_c76e7b9a4e964fa394b629cb008b3ee8`: false — lease authority generation does not equal current_generation.
+- `p1e1r4_ced4056d128542acaa474e6fb85df018`: false — lease expired before selected read.
+- `p1e1r4_d504e20ade654857a871565f2ae65fe0`: false — lease state REVOKED.
+- `p1e1r4_e77d2a6a825a43f7af5b42afc5a94046`: false — no referenced lease.
+
+Thus demonstrated delegation counts are `true=0 / false=9 / omitted-UNKNOWN=1`. Any different authority/delegation shape in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+
 ## 9. Conflict and duplicate identity
 
 Conflict facts arise only from explicit source facts, never from consequence classes.
