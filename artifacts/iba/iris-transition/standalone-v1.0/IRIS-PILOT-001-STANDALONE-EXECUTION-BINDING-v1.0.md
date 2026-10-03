@@ -62,6 +62,27 @@ Set `started_at=emitted_at=selected read_at`. Wall clock, file time, Git time, a
 ProjectionInput property insertion order is exactly:
 `candidates,sources,conflicts,privacyExcluded,bracket,started_at,emitted_at`.
 
+## 2.1 Complete top-level case-field disposition
+
+Every frozen case has exactly these top-level fields and no others:
+`case_id, coverage_contract, domain, emission_time, impact_packets, principal_id, records, snapshot_reads, snapshot_time, source_envelopes, source_requirements`.
+
+Their dispositions are total:
+- `case_id`: exact opaque population identity; used only for population/order checks, synthetic candidate IDs, output path/index identity; never interpreted semantically.
+- `coverage_contract`: require contract_id `PILOT001_IRIS_PLUS_QUALIFIED_BIG_V0_1`, scope_version=1, and exact eight required surfaces. Mismatch -> `BINDING_HOLD/COVERAGE_CONTRACT_MISMATCH`.
+- `domain`: routing metadata only; `NOT_MAPPED_BY_DESIGN` to ProjectionInput semantics. It cannot establish relevance, consequence, identity, authority, completeness, applicability, or ordering.
+- `emission_time`: `NOT_MAPPED_BY_DESIGN` to execution time or candidate semantics. Wall/publication time is prohibited.
+- `impact_packets`: governed only by §11; consequence content is `NOT_MAPPED_BY_DESIGN` to ProjectionInput semantics except exact integrity/link validation.
+- `principal_id`: require exact `AARON` for this frozen population; mismatch -> `BINDING_HOLD/CASE_PRINCIPAL_MISMATCH`.
+- `records`: exact canonical/source evidence inventory consumed only by §§4-11; duplicate record IDs -> `BINDING_HOLD/DUPLICATE_SOURCE_RECORD_ID`.
+- `snapshot_reads`: sole bracket/version-selection control under §2.
+- `snapshot_time`: consistency metadata only. For the frozen population it equals the first read_at in every case; it MUST NOT override the §2 selected read_at. Mismatch -> `BINDING_HOLD/SNAPSHOT_TIME_CONSISTENCY_MISMATCH`.
+- `source_envelopes`: exact eight-surface inventory governed by §3.
+- `source_requirements`: require exactly one requirement for each exact eight surface, required_principal_id=AARON, and nonempty applicability/freshness/provenance contracts. These requirements constrain §3 but never create candidate roots.
+
+Any future or demonstrated top-level field absent from this disposition:
+`BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+
 ## 3. Required SourceEvaluation mapping — complete demonstrated envelope grammar
 
 Exactly eight source envelopes are required per case, in this candidate order:
