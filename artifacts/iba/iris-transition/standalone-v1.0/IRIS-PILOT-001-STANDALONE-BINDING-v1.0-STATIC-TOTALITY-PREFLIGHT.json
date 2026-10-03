@@ -153,7 +153,20 @@
       "omitted_unknown": 1
     },
     "worker_generation_compared_to_authority_generation": false,
-    "unknown_authority_positive_holder_or_delegation_used": false
+    "unknown_authority_positive_holder_or_delegation_used": false,
+    "PilotCandidate_property_order_frozen": true,
+    "PilotCandidate_why_never_supplied": true,
+    "PilotCandidate_optional_property_presence_frozen": true,
+    "PilotCandidate_explicit_boolean_fields_always_present": true,
+    "delegation_census": {
+      "reserved_cases": 10,
+      "true": 0,
+      "false": 9,
+      "omitted_unknown": 1
+    },
+    "escalation_governance_AARON_count": 2,
+    "escalation_required_true_count": 1,
+    "escalation_reverse_link_spray_forbidden": true
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
