@@ -97,14 +97,14 @@ F076 no AUTHORITY_CONFLICT/EFFECT_REALITY_CONFLICT/SOURCE_IDENTITY_CONFLICT gene
 F077 conflict class and exact anchor set may never be selected by semantic similarity, consequence evidence, or Builder discretion.
 F078 every PilotCandidate is constructed in the exact 24-position insertion order frozen by v1.0.
 F079 decoder never supplies candidate.why.
-F080 escalation_required is explicit false for replacement-E1 v0.4; conflict/effect/authority semantics use their dedicated candidate fields and cannot be duplicated ad hoc.
+F080 escalation_required is exact-root deterministic: exactly one true candidate (p1e1r4_359... obligation root with attached incompatible-instruction conflict + same-root Aaron escalation governance); all other 83 false; no reverse-link/same-objective propagation.
 F081 unresolved_effect/material_conflict/informational_only are explicit booleans under exact root rules.
 F082 applicability/freshness/source_identity/provenance_refs/possible_duplicate_refs are always supplied under exact health-reduction rules.
 F083 provenance_refs contain only exact typed source refs actually used; no protocol/review/binding URI injection.
 F084 possible_duplicate_refs is always an array; only unresolved distinct duplicate evidence populates exact typed other refs.
 F085 optional nonapplicable candidate fields are omitted, never null-filled; any extra decoder-owned property is a HOLD.
 F086 all 42 obligations match one of the six published lifecycle/applicability reductions.
-F087 exact ABANDONED obligation lifecycle yields candidate applicability ABANDONED despite older APPLICABLE governance/assertion; no resurrection.
+F087 exact ABANDONED obligation lifecycle yields obligation_status=ABANDONED while independent scoped applicability remains APPLICABLE; status blocks AR-2, no resurrection and no linked-decision cascade.
 F088 all 40 decisions match one of the seven published decision reductions.
 F089 obligation lifecycle never cascades to linked decision; decision changes only from exact decision-scoped evidence.
 F090 PENDING action_decision neither resolves nor supersedes; agreeing duplicate applicability assertions do not create conflict or multiply semantics.
@@ -119,9 +119,12 @@ F098 pre-build root counts are exactly 42 obligation + 40 decision + 1 unresolve
 F099 demonstrated conflict attachment counts are exact: 1 instruction-conflict obligation root, 1 current-state conflict-only root, 2 duplicate-conflict obligation roots.
 F100 conflict-only candidate fields and property order match §9.3; current-state conflict-only health is APPLICABLE/CURRENT/VERIFIED.
 F101 reserved-authority candidate roots =20 and multiple-conflict-id candidate count=0.
+F102 current-state conflict anchor closure includes both incompatible assertion records, exact objective, and linked obligation; exact ID is conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613; conf_5936... is forbidden stale identity.
+F103 authority UNKNOWN preserves independently source-known item applicability/freshness/source_identity; uncertainty is represented by authority_holder_identity_id=UNKNOWN + omitted valid_delegation.
+F104 stale/superseded rule blocks must not coexist with canonical v1.0 rule blocks in binding/matrix/preflight.
 
 ## Success
-All F001-F101 PASS and static preflight reports:
+All F001-F104 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
