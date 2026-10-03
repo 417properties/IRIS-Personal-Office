@@ -5,7 +5,7 @@
   "candidate_head": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
   "case_count": 40,
   "vector_digest_algorithm": "SHA256(JSON.stringify([{case_id,projection_input_sha256,bytes}, ...manifest order]))",
-  "vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "vector_sha256": "8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35",
   "entries": [
     {
       "case_id": "p1e1r4_121fb1ae4a68464fb6dedd38468a39da",
@@ -84,7 +84,7 @@
     },
     {
       "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
-      "projection_input_sha256": "f80956acf62c503bbef4ca3936442737fe8b518fe77810f33e358dd7832bfe0a",
+      "projection_input_sha256": "4f4ddd5ce6aa8d6aadeb92771a0c4d8f5843043a1f02a756b58099f333c17bb6",
       "bytes": 3660
     },
     {
