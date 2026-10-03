@@ -11,5 +11,5 @@ export interface EffectVerification {
   notes: string[];
 }
 export function mayBlindRetry(disposition: EffectDisposition): boolean {
-  return disposition === 'VERIFIED_NO_EFFECT';
+  void disposition;return false; // A label cannot prove absence, policy, authority or fencing.
 }

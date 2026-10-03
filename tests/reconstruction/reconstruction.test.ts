@@ -4,7 +4,7 @@ import { seededRepo, NOW } from '../helpers.ts';
 import { continuityAdmission } from '../../src/state/continuity-admission.ts';
 import { perceive } from '../../src/runtime/perceive.ts';
 
-test('R1_CLEAN_CONTINUATION',()=>{const r=seededRepo(); const x=continuityAdmission(r,r.stateVersion); assert.equal(x.admitted,true); assert.equal(x.requires_reorient,false); assert.deepEqual(x.open_obligation_ids,['obl-1']);});
+test('R1_CLEAN_CONTINUATION',()=>{const r=seededRepo(); const x=continuityAdmission(r,r.stateVersion); assert.equal(x.admitted,false); assert.equal(x.requires_reorient,true); assert.deepEqual(x.open_obligation_ids,['obl-1']);});
 test('R2_CURRENT_CHANGED_AFTER_INTERRUPTION',()=>{const r=seededRepo(); const prior=r.stateVersion; r.publishCurrent({assertion_id:'a2',subject_ref:'fixture:source',predicate:'status',value:'UPDATED',effective_from:'2026-09-27T12:01:00.000Z',source_occurrence_refs:['ev-1'],qualification:'VERIFIED',freshness:'FRESH',coverage:'COMPLETE',uncertainty:[],version:2,invalidated_by_refs:[]}); const x=continuityAdmission(r,prior); assert.equal(x.requires_reorient,true);});
 test('R3_CONFLICTING_EVIDENCE',()=>{const r=seededRepo(); r.publishCurrent({assertion_id:'a2',subject_ref:'fixture:source',predicate:'status',value:'UNKNOWN',effective_from:'2026-09-27T12:01:00.000Z',source_occurrence_refs:['ev-1'],qualification:'CONFLICT',freshness:'FRESH',coverage:'CONFLICT',uncertainty:['conflicting evidence'],version:2,invalidated_by_refs:[]}); const p=perceive(r,'fixture:source',['status']); assert.equal(p.conflict,true); assert.equal(p.qualified,false);});
 test('R4_MISSING_SOURCE',()=>{const p=perceive(seededRepo(),'fixture:source',['status','missing']); assert.equal(p.missing_source,true); assert.equal(p.qualified,false);});

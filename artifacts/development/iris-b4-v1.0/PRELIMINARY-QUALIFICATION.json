@@ -1,0 +1,63 @@
+{
+  "schema_version": "IRIS_B4_PRELIMINARY_RECONCILIATION_V1",
+  "not_final_evidence": true,
+  "runs": [
+    {
+      "stage": "initial new effect fixtures",
+      "result": "FAIL",
+      "cause": "Missing source qualification coordinates; corrected harness, no expected safety weakening."
+    },
+    {
+      "stage": "first valid source materialization",
+      "result": "FAIL",
+      "cause": "Restored memory array immutable; exact accepted-parent counterexample reproduced; private append ownership corrected."
+    },
+    {
+      "stage": "new restoration harness",
+      "result": "FAIL",
+      "cause": "Non-async await and reapplying migrations to existing cold SQL; corrected reader reopens existing persisted store without reinitialization."
+    },
+    {
+      "stage": "new compensation harness",
+      "result": "FAIL",
+      "cause": "Missing Current temporal coordinates / changed payload minimum-necessary digest; fixed fixture to satisfy unchanged A3."
+    },
+    {
+      "stage": "first full inherited requalification",
+      "tests": 1061,
+      "pass": 1047,
+      "fail": 14,
+      "cause": "13 legacy label-only assumptions plus invalid new restoration test file; all observations retained."
+    },
+    {
+      "stage": "intermediate full suite",
+      "tests": 1082,
+      "pass": 1082,
+      "fail": 0,
+      "boundary": "Earlier narrower 160-control B4 source; does not qualify the final candidate."
+    },
+    {
+      "stage": "late semantic-hold helper edit",
+      "result": "TypeScript FAIL",
+      "cause": "Text insertion also affected helper scope; scoped insertion corrected. Final source typecheck and complete final suites govern."
+    }
+  ],
+  "settled_result": {
+    "focused": {
+      "tests": 186,
+      "pass": 186,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "full": {
+      "tests": 1108,
+      "pass": 1108,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  }
+}

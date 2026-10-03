@@ -1,3 +1,5 @@
+import {VerificationService} from '../recovery/service.ts';
+export function verifyCanonicalEffect(service:VerificationService,input:unknown){if(!(service instanceof VerificationService))throw new Error('B4_QUALIFIED_VERIFIER_REQUIRED');return service.verify(input);}
 import { randomUUID } from 'node:crypto';
 import type { ActionIntent } from '../domain/action-intent.ts';
 import type { ActionReceipt } from '../domain/action-receipt.ts';
@@ -8,9 +10,9 @@ export function verifyFixtureEffect(intent:ActionIntent,receipt:ActionReceipt,ac
     verification_id:`verification:${randomUUID()}`,
     intent_id:intent.intent_id,
     receipt_id:receipt.receipt_id,
-    disposition:same?'VERIFIED_EFFECT':'VERIFIED_NO_EFFECT',
+    disposition:'UNKNOWN',
     evidence_refs:[`fixture-readback:${intent.intent_id}`],
     verified_at:new Date().toISOString(),
-    notes:[same?'EXPECTED_EFFECT_OBSERVED':'TOOL_SUCCESS_WITHOUT_EXPECTED_EFFECT']
+    notes:['B4_QUALIFIED_SOURCE_PROOF_REQUIRED',same?'UNQUALIFIED_MATCH':'UNQUALIFIED_MISMATCH_NOT_ABSENCE']
   };
 }

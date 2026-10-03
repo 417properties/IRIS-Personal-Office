@@ -129,7 +129,7 @@ export class ValidatedRepository implements CanonicalRepository {
 export class MemoryCanonicalRepository extends ValidatedRepository {
   constructor(){
     let commands:AppendCommand[]=[];
-    const journal:Journal={read:async()=>freeze(commands),append:async c=>{validateAppend(commands.map(x=>x.value),c);commands.push(freeze(c));},importEmpty:async c=>{demand(commands.length===0,'IMPORT_REQUIRES_EMPTY_STORE');commands=freeze([...c]) as AppendCommand[];}};
+    const journal:Journal={read:async()=>freeze(commands),append:async c=>{validateAppend(commands.map(x=>x.value),c);commands.push(freeze(c));},importEmpty:async c=>{demand(commands.length===0,'IMPORT_REQUIRES_EMPTY_STORE');commands=[...freeze(c)];}};
     super(journal);
   }
 }

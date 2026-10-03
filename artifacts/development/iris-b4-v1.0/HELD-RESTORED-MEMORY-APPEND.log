@@ -1,0 +1,1 @@
+{"accepted_parent":"1708dc0a999fae30aa479e94c6217e11c4735c69","case":"fresh memory import followed by canonical append","result":"REPRODUCED","error":"Cannot add property 1, object is not extensible","interpretation":"Imported event records are immutable; journal container must retain private mutable ownership."}

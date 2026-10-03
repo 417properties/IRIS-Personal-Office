@@ -13,11 +13,11 @@ let detail:unknown={};
 switch(caseName) {
   case 'R1_CLEAN_CONTINUATION': {
     const x=continuityAdmission(repo,envelope.priorStateVersion);
-    passed=x.admitted && !x.requires_reorient && x.open_obligation_ids.includes('obl-1'); detail=x; break;
+    passed=!x.admitted && x.reason==='HOLD_CANONICAL_RECOVERY_PROOF_REQUIRED' && x.requires_reorient && x.open_obligation_ids.includes('obl-1'); detail=x; break;
   }
   case 'R2_CURRENT_CHANGED_AFTER_INTERRUPTION': {
     const x=continuityAdmission(repo,envelope.priorStateVersion);
-    passed=x.admitted && x.requires_reorient; detail=x; break;
+    passed=!x.admitted && x.reason==='HOLD_CANONICAL_RECOVERY_PROOF_REQUIRED' && x.requires_reorient; detail=x; break;
   }
   case 'R3_CONFLICTING_EVIDENCE': {
     const x=perceive(repo,'fixture:source',['status']);

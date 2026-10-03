@@ -7,13 +7,14 @@ import {demand,record,text,version,evidence,freeze} from '../semantic-kernel/val
 import {jsonValue,denseArray,parseJSON} from '../domain/json.ts';
 import {MemoryCanonicalRepository,canonicalJSON,type CanonicalRepository,type AppendCommand} from '../state/repository.ts';
 import {SCHEMA_VERSION} from '../domain/canonical.ts';
-export type ReleaseState='PREPARED'|'NO_SUBMISSION_PROVEN'|'SUBMITTING'|'RELEASED_SUBMITTED'|'AMBIGUOUS_SUBMISSION'|'DENIED';
+import {reduceRecovery,isRecoveryCommand,recoveryEvidence,validateRetryAtRelease,type RecoveryState,type RecoveryContext} from '../recovery/reducer.ts';
+export type ReleaseState='PREPARED'|'NO_SUBMISSION_PROVEN'|'SUBMITTING'|'RELEASED_SUBMITTED'|'AMBIGUOUS_SUBMISSION'|'DENIED'|'RETRY_SAFE_VERIFIED';
 export interface SubmissionReceipt {receipt:Identity;attempt:Identity;intent:Identity;occurrence:Identity;operation_digest:string;provider_call_id:string;evidence_refs:string[];status:'SUBMISSION_KNOWN'}
 export interface ReleaseAttempt {schema_version:typeof ENFORCEMENT_SCHEMA;attempt:Identity;intent:Readonly<ReleaseIntent>;state:ReleaseState;version:number;prepared_at:string;updated_at:string;fence:Readonly<ContinuationClaim>;authority:Readonly<ValidatedAuthoritySnapshot>;dispatch_id:string|null;receipt:Readonly<SubmissionReceipt>|null;evidence_refs:string[];reason:string|null;effect:'NOT_ADJUDICATED'}
 interface LeaseRecord {principal:Identity;lease_id:string;intent_digest:string;authority:Readonly<ValidatedAuthoritySnapshot>}
-interface State {claims:ContinuationClaim[];leases:LeaseRecord[];attempts:ReleaseAttempt[];revocations:{principal:Identity;domain:string;generation:number;evidence_refs:string[]}[]}
+export interface State extends RecoveryState {claims:ContinuationClaim[];leases:LeaseRecord[];attempts:ReleaseAttempt[];revocations:{principal:Identity;domain:string;generation:number;evidence_refs:string[]}[]}
 export interface EnforcementEvent {schema_version:typeof ENFORCEMENT_SCHEMA;sequence:number;at:string;canonical_count:number;canonical_digest:string;command:unknown;result:unknown}
-export interface AtomicView {canonical:CanonicalRepository;canonical_commands:readonly AppendCommand[];events:readonly EnforcementEvent[];append(event:EnforcementEvent):Promise<void>}
+export interface AtomicView {canonical:CanonicalRepository;canonical_commands:readonly AppendCommand[];events:readonly EnforcementEvent[];append(event:EnforcementEvent):Promise<void>;appendCanonical?(command:AppendCommand):Promise<void>}
 export interface EnforcementBackend {atomic<T>(work:(view:AtomicView)=>Promise<T>):Promise<T>;canonical:CanonicalRepository;clock:()=>string;exportSnapshot():Promise<string>;importSnapshot(wire:string):Promise<void>}
 const same=(a:unknown,b:unknown)=>canonicalJSON(a)===canonicalJSON(b);
 const claimKey=(p:Identity,c:Identity)=>canonicalJSON([p,c]);
@@ -34,8 +35,9 @@ export function decodeSubmission(input:unknown,a:ReleaseAttempt):Readonly<Submis
  demand(receipt.kind==='RECEIPT'&&sameIdentity(decodeIdentity(r.attempt),a.attempt)&&sameIdentity(decodeIdentity(r.intent),a.intent.intent)&&sameIdentity(decodeIdentity(r.occurrence),a.intent.occurrence)&&r.operation_digest===a.intent.operation_digest&&r.status==='SUBMISSION_KNOWN','SUBMISSION_RECEIPT_BINDING');
  return freeze({receipt,attempt:a.attempt,intent:a.intent.intent,occurrence:a.intent.occurrence,operation_digest:a.intent.operation_digest,provider_call_id:text(r.provider_call_id),evidence_refs:evidence(denseArray(r.evidence_refs)),status:'SUBMISSION_KNOWN'});
 }
-async function reduce(s:State,repo:CanonicalRepository,input:unknown,at:string):Promise<unknown>{
+async function reduce(s:State,repo:CanonicalRepository,input:unknown,at:string,context:RecoveryContext):Promise<unknown>{
  const outer=record(input,['kind','value']),kind=text(outer.kind);
+ if(isRecoveryCommand(kind))return reduceRecovery(s,repo,kind,outer.value,at,context,async(a)=>{const c=fence(s,a.intent,a.fence);return authority(repo,s,a.intent,a.attempt,c,at);});
  if(kind==='ADMIT_CONTINUATION'){
   const r=record(outer.value,['claim']),c=decodeContinuation(r.claim);demand(c.temporal.valid_until!==undefined&&knownAsOf(c.temporal,at),'INITIAL_CONTINUATION_INVALID');
   demand(!s.claims.some(x=>claimKey(x.principal,x.causal_episode)===claimKey(c.principal,c.causal_episode)),'CONTINUATION_ALREADY_ADMITTED');
@@ -75,9 +77,9 @@ async function reduce(s:State,repo:CanonicalRepository,input:unknown,at:string):
  }
  if(kind==='RELEASE'){
   const r=record(outer.value,['attempt','dispatch_id','retry']),a=attempt(s,r.attempt);demand(typeof r.retry==='boolean','EXPLICIT_RETRY_REQUIRED');const dispatch=text(r.dispatch_id);
-  if(!['PREPARED','NO_SUBMISSION_PROVEN'].includes(a.state))return {owned:false,attempt:a};
-  if(a.state==='NO_SUBMISSION_PROVEN')demand(r.retry===true&&a.intent.retry_class!=='NON_IDEMPOTENT_UNSAFE','RETRY_NOT_ELIGIBLE');else demand(r.retry===false,'RETRY_WITHOUT_PROOF');
-  try{const c=fence(s,a.intent,a.fence);a.authority=await authority(repo,s,a.intent,a.attempt,c,at);}
+  if(!['PREPARED','NO_SUBMISSION_PROVEN','RETRY_SAFE_VERIFIED'].includes(a.state))return {owned:false,attempt:a};
+  if(a.state==='NO_SUBMISSION_PROVEN'||a.state==='RETRY_SAFE_VERIFIED')demand(r.retry===true&&a.intent.retry_class!=='NON_IDEMPOTENT_UNSAFE','RETRY_NOT_ELIGIBLE');else demand(r.retry===false,'RETRY_WITHOUT_PROOF');
+  try{if(a.state==='RETRY_SAFE_VERIFIED')await validateRetryAtRelease(s,repo,a,at);const c=fence(s,a.intent,a.fence);a.authority=await authority(repo,s,a.intent,a.attempt,c,at);}
   catch(error){a.state='DENIED';a.reason=(error as Error).message;a.updated_at=at;a.version++;return {owned:false,attempt:a};}
   a.state='SUBMITTING';a.dispatch_id=dispatch;a.updated_at=at;a.version++;a.reason='POSSIBLE_SUBMISSION_RECONCILIATION_REQUIRED';return {owned:true,attempt:a};
  }
@@ -96,10 +98,10 @@ async function reduce(s:State,repo:CanonicalRepository,input:unknown,at:string):
 }
 async function canonicalAt(commands:readonly AppendCommand[]):Promise<CanonicalRepository>{const repo=new MemoryCanonicalRepository();await repo.importSnapshot(canonicalJSON({schema_version:SCHEMA_VERSION,commands,records:commands.map(c=>c.value)}));return repo;}
 export async function replayEnforcement(events:readonly EnforcementEvent[],commands:readonly AppendCommand[]):Promise<State>{
- const state:State={claims:[],leases:[],attempts:[],revocations:[]};let count=0,last=-Infinity;
+ const state:State={claims:[],leases:[],attempts:[],revocations:[],effects:[],closures:[],checkpoints:[],runs:[],retries:[]};let count=0,last=-Infinity;
  for(const [index,input] of events.entries()){const e=record(input,['schema_version','sequence','at','canonical_count','canonical_digest','command','result']);demand(e.schema_version===ENFORCEMENT_SCHEMA&&e.sequence===index+1,'ENFORCEMENT_EVENT_SEQUENCE');
   const at=instant(e.at),n=e.canonical_count as number;demand(Number.isSafeInteger(n)&&n>=count&&n<=commands.length,'CANONICAL_CAPTURE_COUNT');demand(Date.parse(at)>=last,'ENFORCEMENT_TIME_REGRESSION');
-  const captured=commands.slice(0,n);demand(e.canonical_digest===digest(captured),'CANONICAL_CAPTURE_DRIFT');const repo=await canonicalAt(captured);const result=await reduce(state,repo,e.command,at);demand(same(result,e.result),'ENFORCEMENT_RESULT_DRIFT');count=n;last=Date.parse(at);
+  const captured=commands.slice(0,n);demand(e.canonical_digest===digest(captured),'CANONICAL_CAPTURE_DRIFT');const repo=await canonicalAt(captured);const result=await reduce(state,repo,e.command,at,{commands:captured,events:events.slice(0,index)});demand(same(result,e.result),'ENFORCEMENT_RESULT_DRIFT');if(isRecoveryCommand((e.command as {kind:string}).kind)){const materialized=(result as {materialized:AppendCommand[]}).materialized;demand(same(commands.slice(n,n+materialized.length),materialized),'B4_MATERIALIZATION_DRIFT');}count=n+(isRecoveryCommand((e.command as {kind:string}).kind)?(result as {materialized:AppendCommand[]}).materialized.length:0);last=Date.parse(at);
  }
  return state;
 }
@@ -113,8 +115,8 @@ export class EnforcementRepository {
  }
  async command(input:unknown):Promise<unknown>{const captured=freeze(jsonValue(input));return this.#backend.atomic(async v=>{
   const s=await replayEnforcement(v.events,v.canonical_commands),at=instant(this.#backend.clock());demand(!v.events.length||Date.parse(at)>=Date.parse(v.events.at(-1)!.at),'ENFORCEMENT_TIME_REGRESSION');
-  const before=canonicalJSON(s),result=await reduce(s,v.canonical,captured,at);if(canonicalJSON(s)===before)return freeze(result);const event:EnforcementEvent={schema_version:ENFORCEMENT_SCHEMA,sequence:v.events.length+1,at,canonical_count:v.canonical_commands.length,canonical_digest:digest(v.canonical_commands),command:captured,result:jsonValue(result)};
-  await v.append(event);return freeze(result);
+  const before=canonicalJSON(s),result=await reduce(s,v.canonical,captured,at,{commands:v.canonical_commands,events:v.events});if(canonicalJSON(s)===before)return freeze(result);const event:EnforcementEvent={schema_version:ENFORCEMENT_SCHEMA,sequence:v.events.length+1,at,canonical_count:v.canonical_commands.length,canonical_digest:digest(v.canonical_commands),command:captured,result:jsonValue(result)};
+  await v.append(event);if(isRecoveryCommand((captured as {kind:string}).kind)){const materialized=(result as {materialized:AppendCommand[]}).materialized;demand(!materialized.length||v.appendCanonical,'B4_ATOMIC_CANONICAL_WRITE_REQUIRED');for(const c of materialized)await v.appendCanonical!(c);}return freeze(result);
  });}
  async inspect():Promise<Readonly<State>>{return this.#backend.atomic(async v=>freeze(await replayEnforcement(v.events,v.canonical_commands)));}
  async nextSafeAction(ref:unknown){const a=await this.getAttempt(ref);return ['SUBMITTING','AMBIGUOUS_SUBMISSION'].includes(a.state)?'RECONCILIATION_REQUIRED':a.state==='RELEASED_SUBMITTED'?'B4_EFFECT_VERIFICATION_REQUIRED':a.state==='DENIED'?'HOLD':'VALIDATE_AT_RELEASE';}
@@ -124,6 +126,7 @@ export class EnforcementRepository {
   const canonical=await v.canonical.reconstruct({schema_version:SCHEMA_VERSION,principal:captured,as_of:cut});
   return freeze({schema_version:ENFORCEMENT_SCHEMA,canonical,enforcement:{claims:state.claims.filter(c=>sameIdentity(c.principal,captured)),leases:state.leases.filter(l=>sameIdentity(l.principal,captured)),attempts:state.attempts.filter(a=>sameIdentity(a.intent.principal,captured)),revocations:state.revocations.filter(r=>sameIdentity(r.principal,captured))},admission:'NOT_ADJUDICATED',effect_verification:'NOT_ADJUDICATED'});
  });}
+ async recoverySnapshot(principalInput:unknown,atInput:string){const principal=freeze(decodeIdentity(principalInput)),at=instant(atInput);return this.#backend.atomic(async v=>{const events=v.events.filter(e=>Date.parse(e.at)<=Date.parse(at)),state=await replayEnforcement(events,v.canonical_commands),recovery=await recoveryEvidence(state,v.canonical,principal,at);return freeze({recovery,checkpoints:state.checkpoints.filter(p=>sameIdentity(p.principal,principal)),runs:state.runs.filter(p=>sameIdentity(p.principal,principal)),snapshot:{canonical_count:v.canonical_commands.length,canonical_digest:digest(v.canonical_commands),enforcement_count:events.length,enforcement_digest:digest(events)}});});}
  exportSnapshot(){return this.#backend.exportSnapshot();}importSnapshot(wire:string){return this.#backend.importSnapshot(wire);}
 }
 export interface ReleaseRequest {intent:ReleaseIntent;attempt:Identity;fence:ContinuationClaim;retry:boolean}
@@ -152,8 +155,8 @@ export class ReleaseService {
   const captured=decodeReleaseRequest(request),intent=captured.intent;const b=freeze(jsonValue(this.#transport.binding)) as ConsequentialTransport['binding'];const preflight=this.#transport.preflight.bind(this.#transport),submit=this.#transport.submit.bind(this.#transport);demand(b.tool_id===intent.tool_id&&b.configuration_digest===intent.configuration_digest&&b.capability_id===intent.capability_id&&b.qualification_id===intent.qualification_id,'TRANSPORT_BINDING_MISMATCH');demand(sameIdentity(intent.principal,this.#actor.principal)&&sameIdentity(intent.grantee,this.#actor.grantee)&&sameIdentity(intent.incarnation,this.#actor.incarnation)&&intent.configuration_digest===this.#actor.configuration_digest,'EXECUTION_ACTOR_BINDING_MISMATCH');
   const prepared=await this.repository.command({kind:'PREPARE',value:{intent,attempt:captured.attempt,fence:captured.fence}}) as ReleaseAttempt;
   demand(same(prepared.attempt,captured.attempt)&&same(prepared.intent,intent)&&same(prepared.fence,captured.fence),'PREPARED_INVOCATION_BINDING_MISMATCH');
-  if(!['PREPARED','NO_SUBMISSION_PROVEN'].includes(prepared.state))return prepared;
-  if(prepared.state==='NO_SUBMISSION_PROVEN'&&!captured.retry)return prepared;
+  if(!['PREPARED','NO_SUBMISSION_PROVEN','RETRY_SAFE_VERIFIED'].includes(prepared.state))return prepared;
+  if(['NO_SUBMISSION_PROVEN','RETRY_SAFE_VERIFIED'].includes(prepared.state)&&!captured.retry)return prepared;
   let probe:{ready:true}|{ready:false;evidence_refs:string[]};
   try{probe=await preflight(intent);}catch{probe={ready:false,evidence_refs:['B3_LOCAL_PREFLIGHT_EXCEPTION_BEFORE_DISPATCH']};}
   const p=record(probe,probe.ready===true?['ready']:['ready','evidence_refs']);demand(typeof p.ready==='boolean','PREFLIGHT_RESULT_INVALID');

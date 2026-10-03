@@ -13,7 +13,8 @@ export function workerEvidenceOnly(repo:LegacyRepository,beforeVersion:number){
 }
 
 export function reconstructRuntime(repo:LegacyRepository){
-  const terminalIntentIds=new Set([...repo.verifications.values()].map(v=>v.intent_id));
+  // Legacy labels are not qualified B4 source proofs. Preserve all pending intents.
+  const terminalIntentIds=new Set<string>();
   return {
     objectives:getObjectives(repo),
     obligations:getOpenObligations(repo),

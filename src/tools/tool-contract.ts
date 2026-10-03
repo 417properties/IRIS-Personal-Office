@@ -19,6 +19,6 @@ export function toolContractMatches(intent:ActionIntent,contract:ToolContract,ac
 export function retryDisposition(retryClass:RetryClassification,effect:'VERIFIED_EFFECT'|'VERIFIED_NO_EFFECT'|'AMBIGUOUS_EFFECT'|'CONFLICT'|'UNKNOWN'): 'RETRY_ALLOWED'|'NO_RETRY'|'RECONCILE_FIRST'|'HOLD' {
   if (effect==='VERIFIED_EFFECT') return 'NO_RETRY';
   if (['AMBIGUOUS_EFFECT','CONFLICT','UNKNOWN'].includes(effect)) return retryClass==='NON_IDEMPOTENT_UNSAFE'?'HOLD':'RECONCILE_FIRST';
-  if (effect==='VERIFIED_NO_EFFECT') return retryClass==='NON_IDEMPOTENT_UNSAFE'?'HOLD':'RETRY_ALLOWED';
+  if (effect==='VERIFIED_NO_EFFECT') return retryClass==='NON_IDEMPOTENT_UNSAFE'?'HOLD':'RECONCILE_FIRST'; // B4 proof + policy and B3 validation are required.
   return 'HOLD';
 }

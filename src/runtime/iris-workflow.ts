@@ -12,3 +12,12 @@ export async function runBoundedCircuit(args:{
   if (!toolContractMatches(args.intent,args.contract,args.actionScope,args.privacyScope)) return {status:'HOLD_TOOL_CONTRACT_MISMATCH'};
   return {status:'HOLD_CANONICAL_RELEASE_REQUIRED'};
 }
+
+import {decodeReleaseRequest} from '../enforcement/repository.ts';
+import {VerificationService,RecoveryService} from '../recovery/service.ts';
+import {freeze,demand} from '../semantic-kernel/validation.ts';
+import {jsonValue} from '../domain/json.ts';
+export async function runVerifiedCircuit(service:ReleaseService,verifier:VerificationService,request:ReleaseRequest,closure:{service:RecoveryService;command:unknown}|null=null){
+ demand(service instanceof ReleaseService&&verifier instanceof VerificationService&&service.repository===verifier.repository,'B4_CANONICAL_CIRCUIT_REQUIRED');const captured=decodeReleaseRequest(request),close=closure===null?null:{service:closure.service,command:freeze(jsonValue(closure.command))};if(close)demand(close.service.repository===service.repository,'B4_CIRCUIT_STORE_MISMATCH');
+ const release=await service.release(captured);if(!['SUBMITTING','AMBIGUOUS_SUBMISSION','RELEASED_SUBMITTED'].includes(release.state))return freeze({status:'HOLD_RELEASE',release});const verification=await verifier.verifyNew(captured.attempt);if(verification.disposition!=='EFFECT_VERIFIED')return freeze({status:'RECONCILIATION_REQUIRED',release,verification});const reconciliation=close?await close.service.reconcileClosure(close.command):null;return freeze({status:reconciliation?'CLOSURE_RECONCILED':'EFFECT_VERIFIED_CLOSURE_NOT_ADJUDICATED',release,verification,reconciliation});
+}
