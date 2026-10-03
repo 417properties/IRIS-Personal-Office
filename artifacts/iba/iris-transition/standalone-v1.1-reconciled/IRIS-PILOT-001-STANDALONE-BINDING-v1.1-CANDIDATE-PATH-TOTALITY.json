@@ -3011,7 +3011,7 @@
           "binding:false"
         ],
         "applicability": [
-          "binding:v0.6 missing-exact->UNKNOWN"
+          "binding:§6.3-missing-exact->UNKNOWN"
         ],
         "freshness": [
           "binding:root-evidence-closure"
@@ -8956,5 +8956,18 @@
     "every_present_field_has_source_or_binding_derivation": true,
     "unknown_authority_reserved_roots_route_UNKNOWN_ITEM": true
   },
-  "disposition": "CANDIDATE_PATH_TOTALITY_PASS / 84_OF_84_FIELD_DERIVATIONS_BOUND / UNKNOWN_ITEM_6 / KNOWN_CLASSIFICATION_78"
+  "disposition": "CANDIDATE_PATH_TOTALITY_PASS / 84_OF_84_FIELD_DERIVATIONS_BOUND / UNKNOWN_ITEM_6 / KNOWN_CLASSIFICATION_78",
+  "rule_reference_validation": {
+    "binding_sections_required": [
+      "§6.3",
+      "§6.4",
+      "§7",
+      "§8",
+      "§8.1",
+      "§11.1"
+    ],
+    "binding_sections_resolved": true,
+    "historical_binding_normative_references": 0,
+    "builder_nonexistent_section_references": 0
+  }
 }
