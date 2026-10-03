@@ -406,10 +406,24 @@ Field census:
 - authority_holder_identity_id: 18 AARON + 2 UNKNOWN;
 - valid_delegation: 18 false + 2 omitted + 0 true.
 
-Exactly five candidates have a load-bearing unknown cause:
+Exactly six candidates have a load-bearing unknown cause:
 - case `p1e1r4_2b75131e44224cd98957c79b899fb168`: obligation + decision applicability UNKNOWN;
 - case `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`: obligation + decision material-authority dimension UNKNOWN;
-- case `p1e1r4_6f43027d04774acda0ac9dd58bc2f4af`: unresolved-intent applicability UNKNOWN.
+- case `p1e1r4_6f43027d04774acda0ac9dd58bc2f4af`: unresolved-intent applicability UNKNOWN;
+- case `p1e1r4_40cad8d6ee7440a5bd0fe22d674f9db7`: OPEN decision has exact `decision_maker_identity_id=UNKNOWN`, triggering the frozen candidate's missing-material-decision-maker path.
+
+Thus unknown causes are: applicability UNKNOWN=3 roots; authority-holder UNKNOWN=2 roots; decision-maker UNKNOWN=1 root; source_identity/freshness UNKNOWN=0 roots. These six are disjoint in the frozen population.
+
+Full pre-build load-bearing field census:
+- objective_id present 84; obligation_id 42; decision_requirement_id 40; intent_id 1; conflict_id 4;
+- obligation_status: OPEN 38 / ABANDONED 1 / SATISFIED 2 / SUPERSEDED 1;
+- obligation_owner: AARON 20 / IRIS 20 / EXTERNAL_ORG 1 / UNKNOWN 1;
+- concrete_action_remaining: true 38 / false 4;
+- decision_status: OPEN 36 / RESOLVED 3 / SUPERSEDED 1;
+- decision_maker_identity_id: IRIS 29 / AARON 10 / UNKNOWN 1;
+- freshness: CURRENT 84 / STALE 0 / UNKNOWN 0;
+- source_identity: VERIFIED 84 / UNKNOWN 0 / CONFLICT 0;
+- `why` present 0.
 
 Any different census -> `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
