@@ -312,9 +312,10 @@ Attach only to exact obligation root. That root also has escalation_required=tru
 INCOMPATIBLE_CURRENT_STATE, anchors:
 `assertion:9f4a8b630cdc4067a81be6875ee05386`,
 `current_assertion:6f7e30c15ed84aa893f311aa237ce2be`,
-`objective:0a9cb6c1b78a4910aa3d5e21fa960f51`.
-ID `conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb`.
-No obligation/decision/intent root is directly referenced by the conflicting assertions, so create exactly one conflict-only root. Reverse-link attachment is forbidden. Conflict-only health is APPLICABLE/CURRENT/VERIFIED; escalation_required=false.
+`objective:0a9cb6c1b78a4910aa3d5e21fa960f51`,
+`obligation:9902f0b12e9c4b20873e6e809e27d179`.
+ID `conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`.
+The protocol requires incompatible records plus their exact objective/obligation links in the conflict anchor closure. The conflicting assertions directly subject the objective, not an obligation/decision/intent root, so create exactly one conflict-only root; the linked obligation participates in conflict identity only and does not authorize reverse-link attachment. Conflict-only health is APPLICABLE/CURRENT/VERIFIED; escalation_required=false.
 
 3. `p1e1r4_ac08b94cee624ed7a450e17e3389a163`
 POSSIBLE_DUPLICATE_UNRESOLVED, anchors:
@@ -370,7 +371,7 @@ The ordered vector digest is:
 
 and MUST equal:
 
-`b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7`.
+`8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35`.
 
 Any mismatch is `BINDING_HOLD/PREBUILD_INPUT_VECTOR_MISMATCH`.
 
