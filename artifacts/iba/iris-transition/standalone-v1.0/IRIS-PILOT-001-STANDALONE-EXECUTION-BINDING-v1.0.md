@@ -340,6 +340,60 @@ Because the frozen candidate computes a load-bearing digest with `JSON.stringify
 
 Any different property order, implicit omitted common field, inserted `why`, null-for-omitted substitution, or extra decoder-owned property fails `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE` before buildProjection.
 
+## 7.4 Exact PilotCandidate object construction contract
+
+Because the frozen candidate computes its load-bearing dependency digest with `JSON.stringify({sources,candidates,conflicts,privacyExcluded})`, PilotCandidate property presence and insertion order are evaluation-relevant and are normative.
+
+Every candidate MUST be constructed by ordered assignment in exactly this order:
+
+1. `id`
+2. `principal_id`
+3. `objective_id`, when semantically applicable
+4. `obligation_id`, obligation roots only
+5. `decision_requirement_id`, decision roots only
+6. `intent_id`, intent roots only
+7. `conflict_id`, when a deterministic material conflict is attached or for a conflict-only root
+8. `obligation_status`, obligation roots only
+9. `obligation_owner`, obligation roots only
+10. `concrete_action_remaining`, obligation roots only
+11. `decision_status`, decision roots only
+12. `decision_maker_identity_id`, decision roots only
+13. `reserved_authority_class`, only when exact nonnull reserved authority applies
+14. `authority_holder_identity_id`, only when reserved authority is being classified and the field is exact/UNKNOWN under §8
+15. `valid_delegation`, only when deterministically boolean under §8
+16. `escalation_required`, ALWAYS boolean
+17. `unresolved_effect`, ALWAYS boolean
+18. `material_conflict`, ALWAYS boolean
+19. `informational_only`, ALWAYS boolean
+20. `applicability`
+21. `freshness`
+22. `source_identity`
+23. `provenance_refs`
+24. `possible_duplicate_refs`, ALWAYS an array
+
+`why` is NEVER supplied by the decoder. The frozen candidate may derive its own fallback explanation from its classes. Arbitrary decoder prose is prohibited because it would change output bytes.
+
+Optional properties that are not semantically applicable are OMITTED, not inserted as null/undefined. The only explicit UNKNOWN strings are those required by this binding. No Builder may add an otherwise legal optional property “for completeness.”
+
+### Candidate field reduction common to every root
+
+- `principal_id="AARON"` exactly.
+- `freshness`: reduce only the exact source envelopes/records actually used to establish that candidate: UNKNOWN dominates STALE, which dominates CURRENT.
+- `source_identity`: CONFLICT dominates UNKNOWN, which dominates VERIFIED, using only exact used source evidence.
+- `provenance_refs`: exact-deduped UTF-8 byte-lexically sorted union of the source_refs from exact source records/envelopes actually used to establish candidate fields. Do not invent protocol/review/binding URIs.
+- `possible_duplicate_refs=[]` unless exact unresolved distinct duplicate evidence applies; then it is the exact-deduped UTF-8 byte-lexically sorted set of the other typed source refs.
+- `unresolved_effect=true` only on unresolved-intent roots; false on every other root.
+- `material_conflict=true` only when the deterministic §9 conflict is attached to that root or it is the conflict-only root; false otherwise.
+- `informational_only` is the exact obligation boolean on obligation roots; false on decision, intent, and conflict-only roots.
+- `escalation_required` is true only when BOTH: (a) the exact root carries a material canonical conflict/authority/privacy condition independently supported by §§8–9, AND (b) exact canonical governance for that root has `escalation_target_identity_id="AARON"`. Otherwise false. Impact-packet escalation_blocks are forbidden inputs.
+- application/lifecycle fields follow §§4, 7, and 8 only.
+
+The frozen population demonstrates exactly two governance records with Aaron escalation target, both in the two material conflict cases. Under exact attachment rules:
+- case `p1e1r4_3592698cabc744789906162b61657890`: incompatible instructions directly target the obligation carrying Aaron escalation governance, so that obligation root has `material_conflict=true / escalation_required=true`;
+- case `p1e1r4_80ccea1138af42d8843eabe2a10fec66`: the incompatible current-state assertions are objective-scoped and produce the deterministic conflict-only root; the obligation's Aaron escalation target is not sprayed across that reverse link, so the conflict-only root has `material_conflict=true / escalation_required=false`.
+
+No other root in the frozen population may have `escalation_required=true`.
+
 ## 8. Authority, permission and delegation
 
 required_next_step never creates a root.
@@ -352,6 +406,17 @@ Authority holder comes only from exact governance when the authority envelope is
 `valid_delegation=true` only if a referenced authority_lease is ACTIVE at selected time and exact authority domain/generation, principal, operation_scope, privacy policy/scope, worker/episode, and authority policy match current authority_generation_state. Deterministically invalid mismatch/expiry/replaced worker -> false. Missing/ambiguous load-bearing state -> omit valid_delegation and degrade the relevant material dimension to UNKNOWN. Provider session/credential never grants delegation.
 
 A permission-linked decision remains one authorization basis; decoder never manufactures an extra intervention.
+
+### 8.1 Frozen delegation census
+
+Exactly 10 replacement-E1 cases contain an OPEN/APPLICABLE required_next_step with reserved authority class `PRINCIPAL_PRIVATE_DISCLOSURE`. Their required-next-step, governance, and decision reserved classes agree exactly.
+
+Apply the exact lease validation above. The candidate-neutral audit yields:
+- `valid_delegation=true`: 0 cases;
+- `valid_delegation=false`: 9 cases;
+- authority source UNKNOWN -> omit `valid_delegation` while degrading the load-bearing candidate/source health to UNKNOWN: exactly case `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`.
+
+The nine false cases fail for exact source reasons including privacy-scope mismatch, predecessor/replaced-worker mismatch, non-ACTIVE lease state, no referenced lease, generation mismatch, or expiry. A false result is not an inference that delegation never exists generally; it is the deterministic reduction for these frozen cases.
 
 ### 8.1 Demonstrated reserved-authority / delegation table
 
