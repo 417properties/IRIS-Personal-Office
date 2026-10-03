@@ -137,7 +137,14 @@
     "candidate_health_reduction_frozen": true,
     "provenance_refs_exact_typed_sorted_dedup": true,
     "possible_duplicate_refs_always_array": true,
-    "optional_candidate_null_substitution_permitted": false
+    "optional_candidate_null_substitution_permitted": false,
+    "obligation_lifecycle_combination_classes": 6,
+    "obligation_root_count": 42,
+    "decision_lifecycle_combination_classes": 7,
+    "decision_root_count": 40,
+    "terminal_obligation_lifecycle_overrides_older_obligation_APPLICABLE": true,
+    "obligation_to_decision_lifecycle_cascade": false,
+    "pending_action_decision_resolves_or_supersedes": false
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
