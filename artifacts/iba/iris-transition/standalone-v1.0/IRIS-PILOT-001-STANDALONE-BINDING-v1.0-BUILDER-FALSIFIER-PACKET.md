@@ -86,9 +86,13 @@ F065 all source applicability/lifecycle tokens that can reach PilotCandidate fit
 F066 any candidate-owned source namespace outside objective/obligation/decision_requirement/intent/conflict fails UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE.
 F067 any unresolved-intent applicability evidence shape outside the frozen decision table fails UNMAPPED_INTENT_APPLICABILITY_SHAPE.
 F068 semantic input allowlist is exact; unexpected config/CLI/env/test/history/review/E2/E3/output/score input fails before candidate import.
+F069 PRESENT required-surface applicability is frozen at surface level: APPLICABLE absent complete exact whole-surface inapplicability evidence; item applicability cannot leak into SourceEvaluation.
+F070 all 320 SourceEvaluation tuples reduce to the exact published tuple census; zero extra tuple classes.
+F071 `input.conflicts` contains only exact deterministic conflict IDs, exact-deduped UTF-8 byte-lexically sorted.
+F072 every demonstrated load-bearing scalar/token value belongs to the published token domain; any other value is UNMAPPED_REPLACEMENT_E1_STRUCTURE.
 
 ## Success
-All F001-F068 PASS and static preflight reports:
+All F001-F072 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
