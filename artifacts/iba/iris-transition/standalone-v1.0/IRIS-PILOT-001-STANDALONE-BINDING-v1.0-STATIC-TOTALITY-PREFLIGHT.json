@@ -215,7 +215,13 @@
     },
     "conflict_id_present_roots": 4,
     "exact_conflict_identities_frozen": 3,
-    "authority_unknown_cross_dimension_erasure_forbidden": true
+    "authority_unknown_cross_dimension_erasure_forbidden": true,
+    "exact_conflict_ids": [
+      "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+      "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
+      "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d"
+    ],
+    "incompatible_current_state_reverse_link_attachment_forbidden": true
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
