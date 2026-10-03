@@ -11,6 +11,7 @@ Use only:
 - exact reconciled v1.1 dependency manifest;
 - exact reconciled v1.1 mapping-totality matrix;
 - exact v1.1 pre-build input index;
+- exact 84-root candidate-path totality artifact;
 - exact frozen dependencies named by the manifest.
 
 No historical binding/review, preliminary v1.1 branch, E2/E3, candidate output, score, test fixture, or runtime semantic config is permitted.
@@ -42,11 +43,13 @@ No historical binding/review, preliminary v1.1 branch, E2/E3, candidate output, 
 15. Set escalation_required=true only on the incompatible-instructions obligation root whose exact governance names AARON escalation target.
 16. Populate privacyExcluded with exactly source_packet:b8ac8fd78e794c25b476e145f4e6006b in its case and nothing in the other 39.
 17. Construct PilotCandidate properties in exact v1.1 insertion order; conflict_id must be present on every conflict-bearing root; never supply why; omit nonapplicable optional properties.
-18. Construct ProjectionInput properties exactly:
+18. For all 84 roots compare exact candidate_id, property order, field values, and field-source/binding derivations to the candidate-path totality artifact; every rule reference must resolve to the standalone v1.1 binding/artifacts.
+19. Statically compose each candidate tuple through the frozen classifyAaron branch conditions without invoking the function. Require UNKNOWN_ITEM=6 / KNOWN_CLASSIFICATION=78; the two UNKNOWN-authority reserved roots must terminate in UNKNOWN_ITEM before AR-3.
+20. Construct ProjectionInput properties exactly:
     candidates, sources, conflicts, privacyExcluded, bracket, started_at, emitted_at.
-19. For each case compute SHA-256(JSON.stringify(ProjectionInput)).
-20. Compare case_id / projection_input_sha256 / bytes against the exact pre-build input index.
-21. Compute SHA-256(JSON.stringify(ordered vector)).
+21. For each case compute SHA-256(JSON.stringify(ProjectionInput)).
+22. Compare case_id / projection_input_sha256 / bytes against the exact pre-build input index.
+23. Compute SHA-256(JSON.stringify(ordered vector)).
 
 ## Required exact results
 
@@ -62,6 +65,9 @@ No historical binding/review, preliminary v1.1 branch, E2/E3, candidate output, 
 - reserved-authority roots = 20
 - authority-holder fields = AARON 18 / UNKNOWN 2
 - valid_delegation = false 18 / omitted 2 / true 0
+- candidate static path routes = UNKNOWN_ITEM 6 / KNOWN_CLASSIFICATION 78
+- root ID/field derivation proofs = 84/84
+- unresolved binding/Builder section references = 0
 - pre-build ProjectionInput vector SHA-256:
   8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35
 
