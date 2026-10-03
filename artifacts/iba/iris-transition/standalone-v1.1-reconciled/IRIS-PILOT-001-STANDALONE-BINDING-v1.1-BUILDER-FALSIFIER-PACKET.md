@@ -96,3 +96,12 @@ Next fresh independent reviewer receives this complete reconciled package and ex
 
 Successful pre-review disposition only:
 `STANDALONE_BINDING_READY / DEPENDENCY_MANIFEST_COMPLETE / 40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES / PREBUILD_INPUT_VECTOR_FROZEN / FRESH_INDEPENDENT_ACCEPTANCE_REQUIRED`.
+
+## Reviewer F1/F2 closure controls
+
+- F1 conflict-only ID: every root class has explicit candidate ID grammar; the sole conflict-only ID is exactly `e1:p1e1r4_80ccea1138af42d8843eabe2a10fec66:conflict:conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613`.
+- F1 systemic control: candidate-path totality artifact contains all 84 root IDs, exact ordered fields, and field source/binding derivations; rule-reference validation failures=0.
+- F2 authority path: the two reserved roots under UNKNOWN Current authority have holder/applicability/freshness/source_identity UNKNOWN and omitted valid_delegation; candidate-path totality proves both route to UNKNOWN_ITEM before AR-3.
+- F2 systemic control: static cross-interface path composition for all 84 roots; required summary UNKNOWN_ITEM=6 / KNOWN_CLASSIFICATION=78.
+
+Any mismatch -> `BINDING_HOLD/CANDIDATE_CLASSIFIER_PATH_MISMATCH` or `BINDING_HOLD/PREBUILD_INPUT_VECTOR_MISMATCH`.
