@@ -1,0 +1,52 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-TOTALITY-PREFLIGHT",
+  "authority": "NONE",
+  "executed_against": {
+    "replacement_e1_commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "candidate_interface_commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44"
+  },
+  "candidate_invoked": false,
+  "buildProjection_invoked": false,
+  "labels_consumed": 0,
+  "candidate_outputs_consumed": 0,
+  "scoring": false,
+  "source_population": {
+    "count": 40,
+    "ordered_ids_match": true,
+    "population_sha256_computed": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+    "population_sha256_expected": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f"
+  },
+  "checks": {
+    "exact_eight_surfaces_each_case": true,
+    "availability_token_domain": [
+      "PRESENT",
+      "UNKNOWN",
+      "UNAVAILABLE"
+    ],
+    "availability_counts": {
+      "PRESENT": 318,
+      "UNKNOWN": 1,
+      "UNAVAILABLE": 1
+    },
+    "demonstrated_record_type_count": 25,
+    "every_demonstrated_record_type_has_totality_row": true,
+    "every_demonstrated_availability_token_has_totality_row": true,
+    "typed_anchor_counts": {
+      "objective": 40,
+      "obligation": 42,
+      "decision_requirement": 40,
+      "intent": 2
+    },
+    "all_candidate_anchor_source_ids_exact_namespace_valid": true,
+    "candidate_owned_payload_rule_forbids_colon": true,
+    "cross_ref_applicability_leakage_forbidden": true,
+    "exact_intent_scoped_applicability_assertions": 0,
+    "unresolved_intent_missing_exact_applicability_maps_to_UNKNOWN": true,
+    "source_envelope_UNAVAILABLE_has_explicit_mapping": true,
+    "proven_self_identity_has_explicit_no_conflict_mapping": true,
+    "impact_consequence_fields_denied_as_transformation_inputs": true,
+    "unknown_shapes_unmapped": 0
+  },
+  "failures": [],
+  "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES"
+}
