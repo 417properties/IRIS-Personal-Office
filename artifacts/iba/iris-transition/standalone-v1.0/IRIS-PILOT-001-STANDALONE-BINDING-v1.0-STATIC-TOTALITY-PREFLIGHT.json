@@ -194,8 +194,7 @@
       "obligation": 42,
       "decision": 40,
       "unresolved_intent": 1,
-      "conflict_only": 1,
-      "total": 84
+      "conflict_only": 1
     },
     "load_bearing_unknown_candidate_roots": 5,
     "material_conflict_true_roots": 4,
@@ -205,7 +204,18 @@
     "informational_only_true_roots": 1,
     "privacyExcluded_total_records": 1,
     "privacyExcluded_exact_record": "source_packet:b8ac8fd78e794c25b476e145f4e6006b",
-    "candidate_evidence_closure_sets_frozen": true
+    "candidate_evidence_closure_sets_frozen": true,
+    "candidate_root_count_exact": 84,
+    "candidate_applicability_census": {
+      "APPLICABLE": 75,
+      "UNKNOWN": 3,
+      "SATISFIED": 4,
+      "SUPERSEDED": 2,
+      "ABANDONED": 0
+    },
+    "conflict_id_present_roots": 4,
+    "exact_conflict_identities_frozen": 3,
+    "authority_unknown_cross_dimension_erasure_forbidden": true
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
