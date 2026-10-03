@@ -144,7 +144,16 @@
     "decision_root_count": 40,
     "terminal_obligation_lifecycle_overrides_older_obligation_APPLICABLE": true,
     "obligation_to_decision_lifecycle_cascade": false,
-    "pending_action_decision_resolves_or_supersedes": false
+    "pending_action_decision_resolves_or_supersedes": false,
+    "required_next_step_count": 10,
+    "reserved_authority_class_mismatch_count": 0,
+    "valid_delegation_counts": {
+      "true": 0,
+      "false": 9,
+      "omitted_unknown": 1
+    },
+    "worker_generation_compared_to_authority_generation": false,
+    "unknown_authority_positive_holder_or_delegation_used": false
   },
   "failures": [],
   "disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
