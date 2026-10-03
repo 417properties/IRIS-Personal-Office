@@ -1,3 +1,5 @@
+// IRIS_LEGACY_V0 source representation. Explicit decoders/maps are in
+// source-dto.ts / legacy-maps.ts; qualified canonical records use canonical.ts.
 export type AuthorityBasisType = 'EXPLICIT_CURRENT_DECISION' | 'STANDING_AUTHORIZATION' | 'INTERNAL_NONCONSEQUENTIAL' | 'PREDICTED_PREFERENCE';
 export interface AuthorityPolicy {
   policy_id: string;

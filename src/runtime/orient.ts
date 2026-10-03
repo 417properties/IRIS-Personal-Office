@@ -1,4 +1,4 @@
-import type { CanonicalRepository } from '../state/repository.ts';
+import type { LegacyRepository } from '../state/legacy-repository.ts';
 export interface OrientationEnvelope {
   principal_id:string;
   orientation_id:string;
@@ -12,7 +12,7 @@ export interface OrientationEnvelope {
   open_objective_ids:string[];
   open_obligation_ids:string[];
 }
-export function orient(repo:CanonicalRepository, principalId:string): OrientationEnvelope {
+export function orient(repo:LegacyRepository, principalId:string): OrientationEnvelope {
   const orientation=[...repo.orientations.values()].filter(o=>o.principal_id===principalId && !o.effective_to).sort((a,b)=>b.version-a.version)[0];
   if (!orientation) throw new Error('ORIENTATION_MISSING');
   return {

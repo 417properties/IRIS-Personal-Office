@@ -1,3 +1,5 @@
+// IRIS_LEGACY_V0 source representation. Explicit decoders/maps are in
+// source-dto.ts / legacy-maps.ts; qualified canonical records use canonical.ts.
 export type ObjectiveStatus = 'OPEN' | 'SATISFIED' | 'UNSATISFIED' | 'HOLD' | 'ABANDONED';
 export interface Objective {
   objective_id: string;

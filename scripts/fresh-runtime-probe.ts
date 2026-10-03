@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import { importCanonicalSnapshot } from '../src/state/repository.ts';
+import { importLegacySnapshot } from '../src/state/legacy-repository.ts';
 import { continuityAdmission } from '../src/state/continuity-admission.ts';
 import { perceive } from '../src/runtime/perceive.ts';
 import { evaluateAuthority } from '../src/domain/authority.ts';
@@ -7,7 +7,7 @@ import { evaluateAuthority } from '../src/domain/authority.ts';
 const [path,caseName]=process.argv.slice(2);
 if (!path || !caseName) throw new Error('ARGS_REQUIRED');
 const envelope=JSON.parse(await readFile(path,'utf8'));
-const repo=importCanonicalSnapshot(envelope.snapshot);
+const repo=importLegacySnapshot(envelope.snapshot);
 let passed=false;
 let detail:unknown={};
 switch(caseName) {

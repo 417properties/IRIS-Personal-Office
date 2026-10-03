@@ -18,3 +18,11 @@ create table instrumentation_event (
   payload jsonb not null,
   occurred_at timestamptz not null
 );
+
+-- B2: historical source tables have an explicit V0 decoder owner.
+alter table big_delta_quarantine add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table instrumentation_event add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table big_delta_quarantine add check(evidence_refs is null or jsonb_typeof(evidence_refs)='array');
+alter table big_delta_quarantine add check(privacy_scope is null or jsonb_typeof(privacy_scope)='array');
+alter table big_delta_quarantine add check(applicability is null or jsonb_typeof(applicability)='array');
+alter table instrumentation_event add check(payload is null or jsonb_typeof(payload)='object');

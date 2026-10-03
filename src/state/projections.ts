@@ -1,11 +1,11 @@
-import type { CanonicalRepository } from './repository.ts';
+import type { LegacyRepository } from './legacy-repository.ts';
 export interface AaronCurrentProjection {
   noncanonical: true;
   state_version: number;
   assertions: Record<string, unknown>;
   open_obligation_ids: string[];
 }
-export function projectAaronCurrent(repo: CanonicalRepository): AaronCurrentProjection {
+export function projectAaronCurrent(repo: LegacyRepository): AaronCurrentProjection {
   const assertions: Record<string,unknown> = {};
   for (const [key,list] of repo.currentAssertions.entries()) {
     const active=list.findLast(x=>!x.effective_to);

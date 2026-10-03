@@ -1,9 +1,9 @@
-import { MemoryCanonicalRepository } from '../src/state/repository.ts';
+import { LegacyMemoryRepository } from '../src/state/legacy-repository.ts';
 import type { ActionIntent } from '../src/domain/action-intent.ts';
 
 export const NOW='2026-09-27T12:00:00.000Z';
 export function seededRepo() {
-  const repo=new MemoryCanonicalRepository();
+  const repo=new LegacyMemoryRepository();
   repo.principals.set('aaron',{principal_id:'aaron',principal_type:'AARON',status:'ACTIVE',created_at:NOW,schema_version:1});
   repo.orientations.set('orient-1',{orientation_id:'orient-1',principal_id:'aaron',effective_from:'2026-09-01T00:00:00.000Z',source_basis_refs:['directive:seed'],standing_preferences:[],explicit_current_decisions:[{key:'fixture.write',value:true,source_ref:'decision:fixture',effective_from:'2026-09-27T00:00:00.000Z'}],predicted_preferences:[{key:'spending.purchase',value:true,source_ref:'prediction:1',effective_from:'2026-09-27T00:00:00.000Z'}],privacy_constraints:['fixture.non_sensitive'],authority_constraints:['no-financial'],version:1});
   repo.authorityPolicies.set('auth-1',{policy_id:'auth-1',principal_id:'aaron',basis_type:'STANDING_AUTHORIZATION',scopes:['fixture.write'],valid_from:'2026-09-01T00:00:00.000Z',valid_to:'2026-12-31T00:00:00.000Z',source_ref:'decision:fixture',version:1});

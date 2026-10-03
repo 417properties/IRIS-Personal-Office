@@ -1,0 +1,531 @@
+{
+  "schema_version": "IRIS_B2_DELTA_MANIFEST_V1",
+  "branch": "builder/iris-b2-canonical-repository-v1",
+  "branch_publication": "LOCAL_ONLY / REMOTE_IMMUTABLE_OBJECT",
+  "base": "9801ef637801d4d8f54dc854c4d80ea17b1dfe6e",
+  "base_tree": "87a53eac3ba67a93d39f54056cedb25ca83c0bba",
+  "release": "BIG #703/5971825021",
+  "fresh_current": "BIG #703/5972224426",
+  "source_clarification": "BIG #703/5971926463",
+  "candidate_delta_excludes_manifest_self": {
+    "files": 61,
+    "bytes": 267248,
+    "sha256": "79a83c28e9e8e00009759d46c080615e9ff8b3cdb071e841ca382bb2b0ffab84",
+    "algorithm": "SHA256(sorted UTF8 path + NUL + decimal byte count + NUL + file SHA256 + LF)"
+  },
+  "changed_files": [
+    {
+      "path": "artifacts/development/iris-b2-v1.0/B2-CONTRACT-MAPPING-AND-RETURN.md",
+      "blob": "ad4a890d9eaf6675fbe0d85d29f121855e9470c3",
+      "bytes": 21392,
+      "sha256": "e3263cd6d2eaab3e938762978e13f34464b390b0a85d225dc070060d689e7828"
+    },
+    {
+      "path": "artifacts/development/iris-b2-v1.0/CALLER-BOUNDARY.txt",
+      "blob": "46af1cbc5ad9ad8a5d2484fc17254599926c120e",
+      "bytes": 8744,
+      "sha256": "b0be2965138247c6aee0e6dc5c828006db65343f90def29dca0af93a375d6b99"
+    },
+    {
+      "path": "artifacts/development/iris-b2-v1.0/QUALIFICATION.json",
+      "blob": "c2ab0d1ca012d17a5a088693833015aceb893e66",
+      "bytes": 2820,
+      "sha256": "87cd1991e4af387bcb931712298d3211c5209c77ab6cf745a7751324485f430f"
+    },
+    {
+      "path": "db/migrations/001_iris_core.sql",
+      "blob": "dcc44c4b0c29a7292e779bd4cc1ac91dbcff72b3",
+      "bytes": 50955,
+      "sha256": "999f35e3eec4488cad434991f9e2d181c879ea6a8f8b1707206b3cc3c69f28ad"
+    },
+    {
+      "path": "db/migrations/002_work_episode.sql",
+      "blob": "5e9899f6ef2da5497d0d2840e2f92544e6bd8ae1",
+      "bytes": 1284,
+      "sha256": "0871dc69ea8e7765142340a20fa8302ca7ec5615c936a81fce937413e268420b"
+    },
+    {
+      "path": "db/migrations/003_action_effect.sql",
+      "blob": "46166ee28628d547fd8211d7c44cd1c3f8e9098c",
+      "bytes": 3991,
+      "sha256": "634722acd138ff593f3200565a481fc65faf08b9ac0dd3e5147c0b6c77c56a3f"
+    },
+    {
+      "path": "db/migrations/004_instrumentation.sql",
+      "blob": "cb3926180d1a466d7f09e890d4cf5130d4d36e7c",
+      "bytes": 1405,
+      "sha256": "02edead36323325f6b0559f2d007126f4867d4de81cfa983142a5cffe77c870d"
+    },
+    {
+      "path": "db/migrations/005_agent_transition_identity_authority.sql",
+      "blob": "890d37a8c578cdfdd88619c1fcfad1956990a49e",
+      "bytes": 19153,
+      "sha256": "65799eba7c94775de1b696fb941044b698916654db21f04de182a132aa78fd70"
+    },
+    {
+      "path": "db/migrations/006_pilot001_projection.sql",
+      "blob": "be42fa65511d7784294015eddbfee27a06b5cec3",
+      "bytes": 6626,
+      "sha256": "abce4d58e44d81a950ac7f7547760005412690e699471b91c7d3be7b49d5ee33"
+    },
+    {
+      "path": "scripts/fresh-runtime-probe.ts",
+      "blob": "7bbcd257cd0024db49daf49081998310af64257b",
+      "bytes": 3360,
+      "sha256": "3a22a3a8a94112cbc7a5a7b9052c333f550c15d7655997ef2e113794df4ea657"
+    },
+    {
+      "path": "scripts/qualification/.gitignore",
+      "blob": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+      "bytes": 14,
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97"
+    },
+    {
+      "path": "scripts/qualification/network-guard.cjs",
+      "blob": "01b9ec053814182f2dc5f8e8845ee383107fd90b",
+      "bytes": 548,
+      "sha256": "1ede19ad3dc5dd4a87f0294583e374582d1da2c6a98c68d7ab62fa34569b55c4"
+    },
+    {
+      "path": "scripts/qualification/package-lock.json",
+      "blob": "85b50c2222725daf17c68fd9aceefcb90ed44f48",
+      "bytes": 631,
+      "sha256": "2534ad4f90195e035b29bf75f41cabc4cf0f6d831921dab636aad41c01389563"
+    },
+    {
+      "path": "scripts/qualification/package.json",
+      "blob": "73e8a1da6a515e49b27d521f2dd23faead1055a7",
+      "bytes": 210,
+      "sha256": "2a72e481b378eac05e9b2307bf890062b4a4ba0061f68dcc07f348f7dad72e50"
+    },
+    {
+      "path": "scripts/qualification/run.mjs",
+      "blob": "1522de7566d91b3dda428e122d2c8326108ec5cd",
+      "bytes": 638,
+      "sha256": "b3898d0e21fdf916900f6f1f5421a06f25ca941efbd94f944ff0ef73bc55b0e8"
+    },
+    {
+      "path": "src/agent-transition/capabilities.ts",
+      "blob": "4effd4ada588fa2b9b1a8571bbb2967c142dca32",
+      "bytes": 849,
+      "sha256": "4ca27738aaf664e39b0b3060d41f615940fddf228db8a4c16001af83edaffdbb"
+    },
+    {
+      "path": "src/agent-transition/persistent-objective-runtime.ts",
+      "blob": "3ede1b7871f359b3377be5858b4f776dae8b5644",
+      "bytes": 943,
+      "sha256": "2e38ad28c34dd324446628a667343b4ff94ceca1632fb870c8f8c62ff6c6f0d1"
+    },
+    {
+      "path": "src/domain/action-intent.ts",
+      "blob": "aab0cf8fa320000b73e04e81c97cbbd49ad5d5ba",
+      "bytes": 803,
+      "sha256": "a4f586ae2537b02f4ac7037c944781b857695bcf73491ea75bc6b31b4dec2741"
+    },
+    {
+      "path": "src/domain/action-receipt.ts",
+      "blob": "d370c8c4b8030a2c1df4deee001b15204df340ec",
+      "bytes": 463,
+      "sha256": "b5e79e9dda7eef0f64f715b6a8c62cb74dab6dc929dd51256bf5fc8a3ebf4e40"
+    },
+    {
+      "path": "src/domain/authority.ts",
+      "blob": "fbe50430f285aa0cb9130c0e9fdf4f1fbfa25480",
+      "bytes": 1417,
+      "sha256": "e554474984e3d641c3d778bcec2e853fcd6c91ef2fbd88dabc3e3d4f18323db9"
+    },
+    {
+      "path": "src/domain/canonical.ts",
+      "blob": "d12c4708bb8e7376b821a004eb691c96bfdb5fd8",
+      "bytes": 9388,
+      "sha256": "2242dcf0cfa5823f772c9fb498f9407323ce8314feff637592e7df2ff974a2de"
+    },
+    {
+      "path": "src/domain/capability-procedure.ts",
+      "blob": "47f2ffa5e46d3cb4bad0c1a72cc782ec3cb8e9e5",
+      "bytes": 594,
+      "sha256": "93c3ad319d06b5d9a12f9c3d5133d4e0b1d86c5cf7322d7e8bd461127e432c2d"
+    },
+    {
+      "path": "src/domain/current-assertion.ts",
+      "blob": "d2d32d586d182e16d2efef774e761175e938c00f",
+      "bytes": 858,
+      "sha256": "9368b37741989a4408c088de568f7151c5a2f5e5d52c3bf2ffbbd3b3c4f9f5d3"
+    },
+    {
+      "path": "src/domain/effect-verification.ts",
+      "blob": "c55aa35f55b3f2a6ceb602a84ff8ddc0b9242948",
+      "bytes": 608,
+      "sha256": "718c1018212672210a8d4b2112b7542d08c99d0d495f112307b5a950c75f6785"
+    },
+    {
+      "path": "src/domain/evidence-occurrence.ts",
+      "blob": "193556f6a4579ed937092451f71fc31c71a52f25",
+      "bytes": 740,
+      "sha256": "7be2f9491f51f7be185f5d1bfca4895dedf8c8fe2ca75072eaa2b9ef1f2133fc"
+    },
+    {
+      "path": "src/domain/json.ts",
+      "blob": "93f5c0d0aead26b1b0852d32504d653bb9e34392",
+      "bytes": 2072,
+      "sha256": "2cda8877bccdc340d65ce73500d88f00495d7396d80d3353411e8cf0e41b9093"
+    },
+    {
+      "path": "src/domain/learning-record.ts",
+      "blob": "cd3b7c38a6432e00268a0275018be0c53d23d50c",
+      "bytes": 616,
+      "sha256": "4f895dc815273999f9c6376e2cd829a03515142fff971e1cb553e3840b133c67"
+    },
+    {
+      "path": "src/domain/legacy-maps.ts",
+      "blob": "c684a1c148b85d934c5605ac074f5d81a298539b",
+      "bytes": 2940,
+      "sha256": "31a856112dee8b6c54825c4fcad861c0be2e96f45e9bb461d744a0562d80410d"
+    },
+    {
+      "path": "src/domain/objective.ts",
+      "blob": "9eca27e22fb00b6e6d0b6a99ec8af9de60900ea1",
+      "bytes": 639,
+      "sha256": "cbca9e9d3eb3dd59f5c1997b6133143550f35f588fd142b9d875600a2c6661bd"
+    },
+    {
+      "path": "src/domain/obligation.ts",
+      "blob": "d782927d9be973b3294ac9d89d550fd6c7008a71",
+      "bytes": 612,
+      "sha256": "ee5f242bbbef843ef6731b60adccfe73cffc2f80dda1a3b9de780a45654f13e1"
+    },
+    {
+      "path": "src/domain/orientation.ts",
+      "blob": "9b2b837f01c75c7796aa0b1b2e556da29cb9401f",
+      "bytes": 730,
+      "sha256": "0351a9ea6e342921ca93850613dabcde13bb1d2affc4abafbac13aef2d4da382"
+    },
+    {
+      "path": "src/domain/principal.ts",
+      "blob": "dffdbdc6c430a6f9321117fe8e487785011b9977",
+      "bytes": 315,
+      "sha256": "82d6cdce5840fea5639f67ef3405ac3b05809d3c68da4bdba252226649f5e57c"
+    },
+    {
+      "path": "src/domain/privacy.ts",
+      "blob": "32f6985d57200d2050f98699fbc69b1deb01b5e9",
+      "bytes": 818,
+      "sha256": "d0ba059a114e1847d1ddea9d62265ed923836f62f717bbbbc2516a24187be6cc"
+    },
+    {
+      "path": "src/domain/relations.ts",
+      "blob": "0d3f313b5635ba224cd962686532b23d10d0c200",
+      "bytes": 1490,
+      "sha256": "61682acd6d41048faded89e106ab2757e4b5fd39f688859c84ab9f4467d62248"
+    },
+    {
+      "path": "src/domain/root-disposition.ts",
+      "blob": "06c0ca6034fb8d9559be4c2a4fc2646bc31404c2",
+      "bytes": 6328,
+      "sha256": "7d258b6c667a1520d74184694a7ce68bfd0361ae9e3145b38234ba859a7e93fb"
+    },
+    {
+      "path": "src/domain/source-dto.ts",
+      "blob": "c562d1877a2c30b4a4bfac3dffab765d5a6da260",
+      "bytes": 19878,
+      "sha256": "2fa0670d0de29a90634bc2ac130ca092a5edf15adf081e7cfcbb0193ee1f9360"
+    },
+    {
+      "path": "src/domain/work-episode.ts",
+      "blob": "06243dc6bcf8820104a96f27e53a9120a10f35e4",
+      "bytes": 1241,
+      "sha256": "d9ab8ae17e863330fed6eb13a11a8480407e92527f06513330c59f68c3e26dde"
+    },
+    {
+      "path": "src/instrumentation/ief-events.ts",
+      "blob": "b7613bcd0c2d386b497dea28439ef3d962222e47",
+      "bytes": 595,
+      "sha256": "88389bc26bb150db147b1de8fbd44992341bf38ce9998fb7ceb74f878e68aa6d"
+    },
+    {
+      "path": "src/instrumentation/personal-bire.ts",
+      "blob": "0722a6135998391f9943f70e48adeac48ba01d41",
+      "bytes": 668,
+      "sha256": "ffc47705e6c087b9fb6ae32143298bef09747c41a3eab4462ce1eb12c5b2521f"
+    },
+    {
+      "path": "src/interop/big-delta-envelope.ts",
+      "blob": "9e40eabcbbd26c430c97dc2915bf421aed386f6a",
+      "bytes": 293,
+      "sha256": "d1f77e92deb95f27c5d7bf8d12684135ccdc8473e6253cb261b2f2321d8b05d3"
+    },
+    {
+      "path": "src/interop/big-delta-quarantine.ts",
+      "blob": "ba97bef767089add6cc4fc4083d789406cf26143",
+      "bytes": 343,
+      "sha256": "0ba4fa72762c94cbed4457c7c7dac674c8e1f0f02063cf0396e22d73e51b2a41"
+    },
+    {
+      "path": "src/runtime/episode-controller.ts",
+      "blob": "828735ab631445ade800eefd944931775f0d87dd",
+      "bytes": 592,
+      "sha256": "0edab26d0a94d32af86cdd56e873eb6f60c629f2f5cac72d54b6031d8972f35c"
+    },
+    {
+      "path": "src/runtime/iris-workflow.ts",
+      "blob": "bec2e7d59dc382bd22a95fc887b1118674d4e395",
+      "bytes": 3869,
+      "sha256": "f648f710596d461b8dbb4553292420cd1cfe2dfe2347409176decf49681b1049"
+    },
+    {
+      "path": "src/runtime/orient.ts",
+      "blob": "f5ff797ffc33e5ece5397cd6a33d606206a4e78a",
+      "bytes": 1544,
+      "sha256": "453c1b21940a23264ee472af08084008715547ba57fefc8cd6368d4be155bcd2"
+    },
+    {
+      "path": "src/runtime/perceive.ts",
+      "blob": "9ac99491dc778ab4efd4f64b935a6c0d4ef1ddf3",
+      "bytes": 867,
+      "sha256": "c71060bc4e6c6f0bd8bf7b488b130b8fd61831204995a07e425f2d3ca6846fb9"
+    },
+    {
+      "path": "src/state/continuity-admission.ts",
+      "blob": "a28759335a277ca5e433a9e76909473a327a0349",
+      "bytes": 1502,
+      "sha256": "a864ec34140644cee1891e2aab4239a275486924a29a5c679ae932d1f19879e0"
+    },
+    {
+      "path": "src/state/legacy-repository.ts",
+      "blob": "d904d451877fe105252a46bd3ee10e3be93bb47f",
+      "bytes": 6407,
+      "sha256": "965d2b5e58137e409a1bf66897608bcdacfbf33adcfc45e9cd70f9302e13b7c0"
+    },
+    {
+      "path": "src/state/migrations.ts",
+      "blob": "abbccc12cc42894f783832f04eb6aad6db9a478a",
+      "bytes": 314,
+      "sha256": "db5ce18159944a0a8b229c2be4b663a53b2022ba6c380553ce9f2b461d0db0c3"
+    },
+    {
+      "path": "src/state/postgres-repository.ts",
+      "blob": "354a7e2809d8ed2e40b5757d4a80d5c737419ac6",
+      "bytes": 1942,
+      "sha256": "7ebae99dd9a629901db38a7727a21b413d5076ee90a66ac3314f84efb6501f5b"
+    },
+    {
+      "path": "src/state/projections.ts",
+      "blob": "f7dac129a76bb8aa42739c1b8bb84a1b5801907a",
+      "bytes": 755,
+      "sha256": "29227e514b5562b5103ce0d74088496ec1ca032d00edf4b1a40fd2e7bba16b9c"
+    },
+    {
+      "path": "src/state/repository.ts",
+      "blob": "cd3dea187a1962a67c07141af18fc16251ae0a41",
+      "bytes": 13563,
+      "sha256": "e59f48a5ddaecbb5ca7f4ddc2d2987142771406c618a9602e263a629d15e619d"
+    },
+    {
+      "path": "tests/authority-privacy/authority-privacy.test.ts",
+      "blob": "243a2a5be1eac598d3811b5b5e9316904b0b5dd6",
+      "bytes": 5744,
+      "sha256": "19acfceed1d3b8a731a3d1c925aae97ef4f71221abe5ea5fba02731ffad016f1"
+    },
+    {
+      "path": "tests/canonical-repository/cold-process.test.ts",
+      "blob": "5b851b05d1bcfb702c599130503337a8ec0eff59",
+      "bytes": 4434,
+      "sha256": "6abe7f1b0f73a3cf5304e6dc81a4780567941cc5e92009e68fea0a91af4f9ad7"
+    },
+    {
+      "path": "tests/canonical-repository/cold-reader.ts",
+      "blob": "223af085972ced7b23df5e87619808a87a7553b6",
+      "bytes": 956,
+      "sha256": "9cac381a114e9f6ad375eaae27e566d91cedd41c2697593cfaf295e062ef4b24"
+    },
+    {
+      "path": "tests/canonical-repository/conformance.test.ts",
+      "blob": "fe65b8a350a7096e2ec118f7c8049dcc168e5fd0",
+      "bytes": 21707,
+      "sha256": "3411fea988f1cd5de072f9e48930316b494ad9b71b6fea8172ee7e37725447be"
+    },
+    {
+      "path": "tests/canonical-repository/fixtures.ts",
+      "blob": "b9cbb235b7d5ce606a382c530e4f9ac397e08ac0",
+      "bytes": 2311,
+      "sha256": "ed83b5541a12ccd8d78746e0e11d405efd74ba2c6198620ec1b6a8089bc70c6d"
+    },
+    {
+      "path": "tests/canonical-repository/representations.test.ts",
+      "blob": "a8d5e821982f230df606ff036c3ff95d8b5659b7",
+      "bytes": 8853,
+      "sha256": "52022381bf85eb738296751e13eac89dacbc66fc0d35f8b4ed19a95d09c76db9"
+    },
+    {
+      "path": "tests/canonical-repository/root-disposition.test.ts",
+      "blob": "272b5540b85141b2ca2f62055970f5ab837e25bd",
+      "bytes": 5689,
+      "sha256": "2e58b5a6c26868167aeb79adda498b420a846d0c5a9b8208af3b80dc32642bd5"
+    },
+    {
+      "path": "tests/canonical-repository/sql-fixture.ts",
+      "blob": "996bc76bcaa24a40fc1fc49bc0bc9d284ca58f0d",
+      "bytes": 1221,
+      "sha256": "6fad3ad26e28c422e8632be37cf0e72736dd9dcf7fdd95ee801d5611b0751f41"
+    },
+    {
+      "path": "tests/helpers.ts",
+      "blob": "f4de37e8a8cb7a65727ddd8ad21d63cf0021fd8e",
+      "bytes": 3188,
+      "sha256": "e05f27ea92902fc12a7b8fa83cbf885b6e1bb08617969da1a6121c002f871257"
+    },
+    {
+      "path": "tests/reconstruction/fresh-process.test.ts",
+      "blob": "f39b0fb32b647b7bd256f6c6f4403b703525b828",
+      "bytes": 3778,
+      "sha256": "7a9ced14593a272ba237bfc205fc8b387192b3ca52aa7c3424950a059a263f1b"
+    }
+  ],
+  "canonical_runtime_closure": {
+    "files": 23,
+    "bytes": 170703,
+    "sha256": "5ade6a07a291c20033f4c566103965c44eb87e35227f3a1ba2d007c2191162b7",
+    "algorithm": "SHA256(sorted UTF8 path + NUL + decimal byte count + NUL + file SHA256 + LF)"
+  },
+  "runtime_files": [
+    {
+      "path": "db/migrations/001_iris_core.sql",
+      "blob": "dcc44c4b0c29a7292e779bd4cc1ac91dbcff72b3",
+      "bytes": 50955,
+      "sha256": "999f35e3eec4488cad434991f9e2d181c879ea6a8f8b1707206b3cc3c69f28ad"
+    },
+    {
+      "path": "db/migrations/002_work_episode.sql",
+      "blob": "5e9899f6ef2da5497d0d2840e2f92544e6bd8ae1",
+      "bytes": 1284,
+      "sha256": "0871dc69ea8e7765142340a20fa8302ca7ec5615c936a81fce937413e268420b"
+    },
+    {
+      "path": "db/migrations/003_action_effect.sql",
+      "blob": "46166ee28628d547fd8211d7c44cd1c3f8e9098c",
+      "bytes": 3991,
+      "sha256": "634722acd138ff593f3200565a481fc65faf08b9ac0dd3e5147c0b6c77c56a3f"
+    },
+    {
+      "path": "db/migrations/004_instrumentation.sql",
+      "blob": "cb3926180d1a466d7f09e890d4cf5130d4d36e7c",
+      "bytes": 1405,
+      "sha256": "02edead36323325f6b0559f2d007126f4867d4de81cfa983142a5cffe77c870d"
+    },
+    {
+      "path": "db/migrations/005_agent_transition_identity_authority.sql",
+      "blob": "890d37a8c578cdfdd88619c1fcfad1956990a49e",
+      "bytes": 19153,
+      "sha256": "65799eba7c94775de1b696fb941044b698916654db21f04de182a132aa78fd70"
+    },
+    {
+      "path": "db/migrations/006_pilot001_projection.sql",
+      "blob": "be42fa65511d7784294015eddbfee27a06b5cec3",
+      "bytes": 6626,
+      "sha256": "abce4d58e44d81a950ac7f7547760005412690e699471b91c7d3be7b49d5ee33"
+    },
+    {
+      "path": "src/domain/canonical.ts",
+      "blob": "d12c4708bb8e7376b821a004eb691c96bfdb5fd8",
+      "bytes": 9388,
+      "sha256": "2242dcf0cfa5823f772c9fb498f9407323ce8314feff637592e7df2ff974a2de"
+    },
+    {
+      "path": "src/domain/json.ts",
+      "blob": "93f5c0d0aead26b1b0852d32504d653bb9e34392",
+      "bytes": 2072,
+      "sha256": "2cda8877bccdc340d65ce73500d88f00495d7396d80d3353411e8cf0e41b9093"
+    },
+    {
+      "path": "src/domain/legacy-maps.ts",
+      "blob": "c684a1c148b85d934c5605ac074f5d81a298539b",
+      "bytes": 2940,
+      "sha256": "31a856112dee8b6c54825c4fcad861c0be2e96f45e9bb461d744a0562d80410d"
+    },
+    {
+      "path": "src/domain/relations.ts",
+      "blob": "0d3f313b5635ba224cd962686532b23d10d0c200",
+      "bytes": 1490,
+      "sha256": "61682acd6d41048faded89e106ab2757e4b5fd39f688859c84ab9f4467d62248"
+    },
+    {
+      "path": "src/domain/root-disposition.ts",
+      "blob": "06c0ca6034fb8d9559be4c2a4fc2646bc31404c2",
+      "bytes": 6328,
+      "sha256": "7d258b6c667a1520d74184694a7ce68bfd0361ae9e3145b38234ba859a7e93fb"
+    },
+    {
+      "path": "src/domain/source-dto.ts",
+      "blob": "c562d1877a2c30b4a4bfac3dffab765d5a6da260",
+      "bytes": 19878,
+      "sha256": "2fa0670d0de29a90634bc2ac130ca092a5edf15adf081e7cfcbb0193ee1f9360"
+    },
+    {
+      "path": "src/semantic-kernel/continuation.ts",
+      "blob": "3057e5b838d322dc92bb2fc7a1d843000c700ccf",
+      "bytes": 1511,
+      "sha256": "994a3a20e781ef30fbb8da56cb2820c6c7a50f2675d65d7d6292f1277183c4d0"
+    },
+    {
+      "path": "src/semantic-kernel/epistemic.ts",
+      "blob": "5b537a96b3442960157ff625a0918d8476b2baf3",
+      "bytes": 6194,
+      "sha256": "0cb431c8ffa741394465f09f11b7a4982cecb13e13676fec5ca64d9a4ed669e6"
+    },
+    {
+      "path": "src/semantic-kernel/identity.ts",
+      "blob": "296e8e80c5e0e0182f674d2d285e2adffc0f5c7d",
+      "bytes": 4445,
+      "sha256": "5027f61f65db2570f7b4bad7722e10adc0bac5a54e84224ab9b3a3cab1cb03ba"
+    },
+    {
+      "path": "src/semantic-kernel/index.ts",
+      "blob": "61f8c0a4faa2440c81d6f9469ad8833fafefb003",
+      "bytes": 231,
+      "sha256": "7f625c665896087b2026415982d288d0b66361ba7493c5efad6f89ff139565d9"
+    },
+    {
+      "path": "src/semantic-kernel/lifecycle.ts",
+      "blob": "975e4e08e3fad3cacc50bdc22336ae5bd65eeb76",
+      "bytes": 8441,
+      "sha256": "b988367e094528bfabc13fc1670f149932c26da1099ef9e1daa455157a179e15"
+    },
+    {
+      "path": "src/semantic-kernel/representation.ts",
+      "blob": "245b571de8b2a6d2da4cd3d44934a4de320799e0",
+      "bytes": 4079,
+      "sha256": "292c204c52c850c1c1af63742700a4229a084c02b1f46af4d044aad18a05f438"
+    },
+    {
+      "path": "src/semantic-kernel/temporal.ts",
+      "blob": "d2e7f7e7631ce032ab857680d7d473b1ceaea630",
+      "bytes": 2123,
+      "sha256": "89157c1250cc98958acd61dd90ad952f4fe317f922f11f5a9540cc703c7e6527"
+    },
+    {
+      "path": "src/semantic-kernel/validation.ts",
+      "blob": "ead05d1770f0cebd112f59d4b2e6c7e40d9c9d9f",
+      "bytes": 2350,
+      "sha256": "fc96ce2241e922c3660c21533e2b7f172b2edf7fa78db960619ccd138eaa6e2e"
+    },
+    {
+      "path": "src/state/migrations.ts",
+      "blob": "abbccc12cc42894f783832f04eb6aad6db9a478a",
+      "bytes": 314,
+      "sha256": "db5ce18159944a0a8b229c2be4b663a53b2022ba6c380553ce9f2b461d0db0c3"
+    },
+    {
+      "path": "src/state/postgres-repository.ts",
+      "blob": "354a7e2809d8ed2e40b5757d4a80d5c737419ac6",
+      "bytes": 1942,
+      "sha256": "7ebae99dd9a629901db38a7727a21b413d5076ee90a66ac3314f84efb6501f5b"
+    },
+    {
+      "path": "src/state/repository.ts",
+      "blob": "cd3dea187a1962a67c07141af18fc16251ae0a41",
+      "bytes": 13563,
+      "sha256": "e59f48a5ddaecbb5ca7f4ddc2d2987142771406c618a9602e263a629d15e619d"
+    }
+  ],
+  "self_identity": "Manifest blob/bytes/SHA256, final HEAD/tree and complete changed-file identity including this file are in canonical publication receipt; no recursive self-hash is claimed."
+}

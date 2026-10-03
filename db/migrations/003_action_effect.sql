@@ -60,3 +60,22 @@ create table privacy_policy (
   source_ref text not null,
   version integer not null
 );
+
+-- B2: historical source tables have an explicit V0 decoder owner.
+alter table action_decision add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table action_intent add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table action_receipt add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table effect_verification add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table authority_policy add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table privacy_policy add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table effect_verification add check(evidence_refs is null or jsonb_typeof(evidence_refs)='array');
+alter table effect_verification add check(notes is null or jsonb_typeof(notes)='array');
+alter table authority_policy add check(version>0);
+alter table authority_policy add check(scopes is null or jsonb_typeof(scopes)='array');
+alter table privacy_policy add check(version>0);
+alter table privacy_policy add check(scopes is null or jsonb_typeof(scopes)='array');
+alter table action_intent add check(retry_classification in ('IDEMPOTENT_BY_KEY','READ_ONLY','NON_IDEMPOTENT_RECONCILABLE','NON_IDEMPOTENT_UNSAFE'));
+alter table action_receipt add check(completion_class in ('SUCCESS','ERROR','TIMEOUT','UNKNOWN'));
+alter table effect_verification add check(disposition in ('VERIFIED_EFFECT','VERIFIED_NO_EFFECT','AMBIGUOUS_EFFECT','CONFLICT','UNKNOWN'));
+alter table authority_policy add check(basis_type in ('EXPLICIT_CURRENT_DECISION','STANDING_AUTHORIZATION','INTERNAL_NONCONSEQUENTIAL','PREDICTED_PREFERENCE'));
+alter table privacy_policy add check(disclosure in ('ALLOW','DENY'));

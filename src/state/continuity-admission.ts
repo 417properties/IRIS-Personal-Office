@@ -1,4 +1,4 @@
-import type { CanonicalRepository } from './repository.ts';
+import type { LegacyRepository } from './legacy-repository.ts';
 import { projectAaronCurrent } from './projections.ts';
 export interface ContinuityAdmissionResult {
   admitted:boolean;
@@ -8,7 +8,7 @@ export interface ContinuityAdmissionResult {
   open_obligation_ids:string[];
   state_version:number;
 }
-export function continuityAdmission(repo: CanonicalRepository, priorStateVersion:number): ContinuityAdmissionResult {
+export function continuityAdmission(repo: LegacyRepository, priorStateVersion:number): ContinuityAdmissionResult {
   const open=[...repo.obligations.values()].filter(o=>o.status!=='CLOSED').map(o=>o.obligation_id);
   const terminal=new Set([...repo.verifications.values()].filter(v=>['VERIFIED_EFFECT','VERIFIED_NO_EFFECT'].includes(v.disposition)).map(v=>v.intent_id));
   const unresolved=new Set([...repo.verifications.values()].filter(v=>!['VERIFIED_EFFECT','VERIFIED_NO_EFFECT'].includes(v.disposition)).map(v=>v.intent_id));

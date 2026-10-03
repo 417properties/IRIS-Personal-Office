@@ -6,7 +6,7 @@ import { wrapMcpTool } from '../../src/tools/mcp-adapter.ts';
 import { seededRepo, NOW, fixtureIntent } from '../helpers.ts';
 import { runBoundedCircuit } from "../../src/runtime/iris-workflow.ts";
 import { act } from "../../src/runtime/act.ts";
-import { exportCanonicalSnapshot } from "../../src/state/repository.ts";
+import { exportLegacySnapshot } from "../../src/state/legacy-repository.ts";
 import { ActionFixtureAdapter } from "../../src/tools/action-fixture-adapter.ts";
 import type { ToolContract } from "../../src/tools/tool-contract.ts";
 
@@ -32,7 +32,7 @@ const mismatches:[string,Partial<ToolContract>][]=[
 for (const [name,override] of mismatches) {
   test(`circuit ${name} mismatch blocks before persistence and execution`,async()=>{
     const repo=seededRepo();
-    const before=exportCanonicalSnapshot(repo);
+    const before=exportLegacySnapshot(repo);
     const fixture=new ActionFixtureAdapter({status:"READY"},true);
     let calls=0;
     const out=await runBoundedCircuit({repo,principalId:"aaron",objectiveId:"obj-parent",obligationId:"obl-1",episodeId:"episode-1",subjectRef:"fixture:source",predicate:"status",actionScope:"fixture.write",privacyScope:"fixture.non_sensitive",intent:fixtureIntent(),contract:{...fixtureContract,...override},executor:{execute:async intent=>{calls++;return fixture.execute(intent);}},fixtureRead:()=>fixture.read(),expectedEffect:{status:"COMPLETE"},now:NOW});
@@ -44,7 +44,7 @@ for (const [name,override] of mismatches) {
     assert.equal(repo.objectives.get("obj-parent")!.status,"OPEN");
     assert.equal(repo.obligations.get("obl-1")!.status,"OPEN");
     assert.deepEqual(fixture.read(),{status:"READY"});
-    assert.equal(exportCanonicalSnapshot(repo),before);
+    assert.equal(exportLegacySnapshot(repo),before);
   });
   test(`act ${name} mismatch independently blocks executor invocation`,async()=>{
     let calls=0;
@@ -57,13 +57,13 @@ for (const [name,override] of mismatches) {
 for (const scope of ["authority","privacy"] as const) {
   test(`matching but UNKNOWN contract ${scope} scope still fails closed`,async()=>{
     const repo=seededRepo();
-    const before=exportCanonicalSnapshot(repo);
+    const before=exportLegacySnapshot(repo);
     const contract={...fixtureContract,...(scope==="authority"?{authority_scope:"legal.contract"}:{privacy_scope:"sensitive.external"})};
     const fixture=new ActionFixtureAdapter({status:"READY"},true);
     let calls=0;
     const out=await runBoundedCircuit({repo,principalId:"aaron",objectiveId:"obj-parent",obligationId:"obl-1",episodeId:"episode-1",subjectRef:"fixture:source",predicate:"status",actionScope:contract.authority_scope,privacyScope:contract.privacy_scope,intent:fixtureIntent(),contract,executor:{execute:async intent=>{calls++;return fixture.execute(intent);}},fixtureRead:()=>fixture.read(),expectedEffect:{status:"COMPLETE"},now:NOW});
     assert.equal(out.status,scope==="authority"?"HOLD_AUTHORITY":"HOLD_PRIVACY");
     assert.equal(calls,0);
-    assert.equal(exportCanonicalSnapshot(repo),before);
+    assert.equal(exportLegacySnapshot(repo),before);
   });
 }

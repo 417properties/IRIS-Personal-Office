@@ -1,3 +1,5 @@
+// IRIS_LEGACY_V0 source representation. Explicit decoders/maps are in
+// source-dto.ts / legacy-maps.ts; qualified canonical records use canonical.ts.
 export type RetryClassification = 'IDEMPOTENT_BY_KEY' | 'READ_ONLY' | 'NON_IDEMPOTENT_RECONCILABLE' | 'NON_IDEMPOTENT_UNSAFE';
 export interface ActionDecision {
   decision_id: string;

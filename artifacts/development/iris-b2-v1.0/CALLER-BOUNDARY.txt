@@ -1,0 +1,65 @@
+tests/authority-privacy/authority-privacy.test.ts:9:import { exportLegacySnapshot } from "../../src/state/legacy-repository.ts";
+tests/helpers.ts:1:import { LegacyMemoryRepository } from '../src/state/legacy-repository.ts';
+tests/reconstruction/fresh-process.test.ts:9:import { exportLegacySnapshot } from '../../src/state/legacy-repository.ts';
+src/runtime/orient.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/runtime/orient.ts:15:export function orient(repo:LegacyRepository, principalId:string): OrientationEnvelope {
+src/runtime/episode-controller.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/runtime/episode-controller.ts:3:export function claimContinuation(repo:LegacyRepository, episode:WorkEpisode): void {
+tests/canonical-repository/representations.test.ts:3:import { MemoryCanonicalRepository } from '../../src/state/repository.ts';
+tests/canonical-repository/representations.test.ts:4:import { PostgresCanonicalRepository } from '../../src/state/postgres-repository.ts';
+tests/canonical-repository/representations.test.ts:65: const e=await engine(),memory=new MemoryCanonicalRepository(),sql=new PostgresCanonicalRepository(e.executor);
+src/runtime/perceive.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/runtime/perceive.ts:9:export function perceive(repo:LegacyRepository, subjectRef:string, predicates:string[]): PerceptionResult {
+src/runtime/iris-workflow.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/runtime/iris-workflow.ts:16:  repo:LegacyRepository; principalId:string; objectiveId:string; obligationId:string; episodeId:string;
+tests/canonical-repository/root-disposition.test.ts:4:import {MemoryCanonicalRepository} from '../../src/state/repository.ts';
+tests/canonical-repository/root-disposition.test.ts:5:import {PostgresCanonicalRepository} from '../../src/state/postgres-repository.ts';
+tests/canonical-repository/root-disposition.test.ts:23: const e=await engine(),memory=new MemoryCanonicalRepository(),sql=new PostgresCanonicalRepository(e.executor);
+tests/canonical-repository/root-disposition.test.ts:32:  const imported=new MemoryCanonicalRepository();await imported.importSnapshot(await sql.exportSnapshot());assert.deepEqual(await imported.reconstruct(query()),await sql.reconstruct(query()));
+tests/canonical-repository/cold-process.test.ts:7:import {MemoryCanonicalRepository} from '../../src/state/repository.ts';
+tests/canonical-repository/cold-process.test.ts:8:import {PostgresCanonicalRepository} from '../../src/state/postgres-repository.ts';
+tests/canonical-repository/cold-process.test.ts:15:  const repo=e?new PostgresCanonicalRepository(e.executor):new MemoryCanonicalRepository();
+tests/canonical-repository/cold-reader.ts:2:import {MemoryCanonicalRepository} from '../../src/state/repository.ts';
+tests/canonical-repository/cold-reader.ts:3:import {PostgresCanonicalRepository} from '../../src/state/postgres-repository.ts';
+tests/canonical-repository/cold-reader.ts:8:if(mode==='MEMORY'){repo=new MemoryCanonicalRepository();await repo.importSnapshot(readFileSync(location!,'utf8'));}
+tests/canonical-repository/cold-reader.ts:9:else {const m=await import(process.env.IRIS_B2_PGLITE_MODULE??'@electric-sql/pglite');db=new m.PGlite(location);repo=new PostgresCanonicalRepository({query:async(sql:string,args?:unknown[])=> (await db.query(sql,args)).rows,transaction:(work:any)=>db.transaction((tx:any)=>work({query:async(sql:string,args?:unknown[])=>(await tx.query(sql,args)).rows}))});}
+tests/canonical-repository/conformance.test.ts:3:import { MemoryCanonicalRepository, canonicalJSON } from '../../src/state/repository.ts';
+tests/canonical-repository/conformance.test.ts:4:import { PostgresCanonicalRepository } from '../../src/state/postgres-repository.ts';
+tests/canonical-repository/conformance.test.ts:20:  const repo=backend==='SQL'?new PostgresCanonicalRepository(e!.executor):new MemoryCanonicalRepository();
+tests/canonical-repository/conformance.test.ts:119:   const repo=new PostgresCanonicalRepository(e.executor);await seed(repo);
+tests/canonical-repository/conformance.test.ts:128: const source=new MemoryCanonicalRepository();await seed(source);await source.append(command(currentRow()));const wire=await source.exportSnapshot();
+tests/canonical-repository/conformance.test.ts:131:  const e=backend==='SQL'?await engine():null,repo=e?new PostgresCanonicalRepository(e.executor):new MemoryCanonicalRepository();
+tests/canonical-repository/conformance.test.ts:135:  const e=backend==='SQL'?await engine():null,repo=e?new PostgresCanonicalRepository(e.executor):new MemoryCanonicalRepository();
+tests/canonical-repository/conformance.test.ts:142:  for(const repo of [new MemoryCanonicalRepository(),new PostgresCanonicalRepository(e.executor)]){
+tests/canonical-repository/conformance.test.ts:152: const memory=new MemoryCanonicalRepository();await seed(memory);await memory.append(command(currentRow()));
+tests/canonical-repository/conformance.test.ts:158: const repo=new PostgresCanonicalRepository(failing as any);
+tests/canonical-repository/conformance.test.ts:190:  for(const repo of [new MemoryCanonicalRepository(),new PostgresCanonicalRepository(e.executor)]){
+tests/canonical-repository/conformance.test.ts:204:  const repo=new PostgresCanonicalRepository(e.executor);await seed(repo);
+tests/canonical-repository/conformance.test.ts:212: const e=backend==='SQL'?await engine():null,repo=e?new PostgresCanonicalRepository(e.executor):new MemoryCanonicalRepository();
+src/interop/big-delta-envelope.ts:1:import type { BigDelta } from '../state/legacy-repository.ts';
+scripts/fresh-runtime-probe.ts:2:import { importLegacySnapshot } from '../src/state/legacy-repository.ts';
+src/state/continuity-admission.ts:1:import type { LegacyRepository } from './legacy-repository.ts';
+src/state/continuity-admission.ts:11:export function continuityAdmission(repo: LegacyRepository, priorStateVersion:number): ContinuityAdmissionResult {
+src/instrumentation/personal-bire.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/instrumentation/personal-bire.ts:11:export function recordBireMetric(repo:LegacyRepository,episodeId:string,metric:PersonalBireMetric):void {
+src/state/legacy-repository.ts:20:export interface LegacyRepository {
+src/state/legacy-repository.ts:41:export class LegacyMemoryRepository implements LegacyRepository {
+src/state/legacy-repository.ts:87:export function exportLegacySnapshot(repo: LegacyRepository): string {
+src/instrumentation/ief-events.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/instrumentation/ief-events.ts:3:export function emitIefEvent(repo:LegacyRepository,episodeId:string,eventType:IefEventType,payload:Record<string,unknown>):void {
+src/state/projections.ts:1:import type { LegacyRepository } from './legacy-repository.ts';
+src/state/projections.ts:8:export function projectAaronCurrent(repo: LegacyRepository): AaronCurrentProjection {
+src/interop/big-delta-quarantine.ts:1:import type { LegacyRepository, BigDelta } from '../state/legacy-repository.ts';
+src/interop/big-delta-quarantine.ts:3:export function quarantineBigDelta(repo:LegacyRepository,delta:BigDelta):void {
+src/agent-transition/capabilities.ts:1:import type {LegacyRepository} from '../state/legacy-repository.ts';import {getObjectives,getOpenObligations} from './persistent-objective-runtime.ts';import {buildProjection} from './pilot001-projection.ts';
+src/agent-transition/capabilities.ts:2:export const get_objectives=(repo:LegacyRepository)=>getObjectives(repo);
+src/agent-transition/capabilities.ts:3:export const get_open_obligations=(repo:LegacyRepository)=>getOpenObligations(repo);
+src/agent-transition/persistent-objective-runtime.ts:1:import type { LegacyRepository } from '../state/legacy-repository.ts';
+src/agent-transition/persistent-objective-runtime.ts:3:export function getObjectives(repo:LegacyRepository,principal='aaron'){
+src/agent-transition/persistent-objective-runtime.ts:7:export function getOpenObligations(repo:LegacyRepository){
+src/agent-transition/persistent-objective-runtime.ts:11:export function workerEvidenceOnly(repo:LegacyRepository,beforeVersion:number){
+src/agent-transition/persistent-objective-runtime.ts:15:export function reconstructRuntime(repo:LegacyRepository){
+src/state/postgres-repository.ts:9:export class PostgresCanonicalRepository extends ValidatedRepository {
+src/state/repository.ts:13:export interface CanonicalRepository {
+src/state/repository.ts:97:export class ValidatedRepository implements CanonicalRepository {
+src/state/repository.ts:129:export class MemoryCanonicalRepository extends ValidatedRepository {

@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { randomUUID } from 'node:crypto';
 import { seededRepo, NOW, fixtureIntent } from '../helpers.ts';
-import { exportCanonicalSnapshot } from '../../src/state/repository.ts';
+import { exportLegacySnapshot } from '../../src/state/legacy-repository.ts';
 
 function runCase(caseName:string,mutate?:(repo:ReturnType<typeof seededRepo>)=>number|void) {
   const repo=seededRepo();
@@ -14,7 +14,7 @@ function runCase(caseName:string,mutate?:(repo:ReturnType<typeof seededRepo>)=>n
   const maybe=mutate?.(repo);
   const priorStateVersion=typeof maybe==='number'?maybe:prior;
   const path=join(tmpdir(),`iris-${randomUUID()}.json`);
-  writeFileSync(path,JSON.stringify({snapshot:exportCanonicalSnapshot(repo),priorStateVersion}));
+  writeFileSync(path,JSON.stringify({snapshot:exportLegacySnapshot(repo),priorStateVersion}));
   try {
     const r=spawnSync(process.execPath,['--experimental-strip-types','scripts/fresh-runtime-probe.ts',path,caseName],{encoding:'utf8'});
     assert.equal(r.status,0,`${caseName}: ${r.stderr} ${r.stdout}`);

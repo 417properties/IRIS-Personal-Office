@@ -1,0 +1,93 @@
+{
+  "schema_version": "IRIS_B2_QUALIFICATION_V1",
+  "governing_release": "BIG #703/5971825021",
+  "base": "9801ef637801d4d8f54dc854c4d80ea17b1dfe6e",
+  "node": "v24.19.0",
+  "proof_scope": "BUILDER_AUTHORED_CONFORMANCE_AND_HISTORICAL_REGRESSION / NOT_INDEPENDENT_ORACLE",
+  "tests": {
+    "inherited_and_B1": 337,
+    "focused": 153,
+    "full": 490,
+    "fail": 0,
+    "skip": 0,
+    "cancel": 0,
+    "todo": 0
+  },
+  "typescript": {
+    "version": "5.7.3",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "result": "PASS"
+  },
+  "structural_table_check": {
+    "result": "PASS",
+    "required_tables": 17,
+    "scope": "STRUCTURAL_ONLY"
+  },
+  "sql": {
+    "package": "@electric-sql/pglite",
+    "package_version": "0.3.14",
+    "engine": "PostgreSQL 17.5 WASM",
+    "migration_files": 6,
+    "migration_result": "PASS",
+    "shim": "Historical pgcrypto extension loading replaced ONLY in test harness by core sha256 for digest(text,sha256)",
+    "native_extension_loading": "NOT_QUALIFIED",
+    "provider_persistence": "NOT_QUALIFIED",
+    "distributed_multi_connection_locking": "NOT_QUALIFIED"
+  },
+  "dependency_archive": {
+    "filename": "electric-sql-pglite-0.3.14.tgz",
+    "bytes": 6803270,
+    "sha256": "1e5a4ddec392f7edf604b5db8d679b822fab013c4004bbcb5ff58684d5712e38",
+    "sha1": "ea464c0bc52435ceba710d3ebd33917e91d893cf",
+    "retrieval": "DEPENDENCY_FETCH_BEFORE_OFFLINE_QUALIFICATION"
+  },
+  "state_representation": {
+    "epistemic_inputs": 504,
+    "admitted": 432,
+    "B1_rejected_SQL_agrees": 72,
+    "lifecycle": 5,
+    "decision_lifecycle": 5,
+    "effect": 10,
+    "B1_identity_kinds": 18,
+    "metadata_identity_kinds": 7,
+    "supplied_dispositions": 8,
+    "legacy_dto_descriptors": 15,
+    "compound_reason_version": "IRIS_ROOT_DISPOSITION_V2",
+    "projection_qualification": "NOT_ADJUDICATED"
+  },
+  "qualification_network": {
+    "denied": [
+      "fetch",
+      "http",
+      "https",
+      "net",
+      "tls"
+    ],
+    "attempts": 0,
+    "provider_dispatches": 0
+  },
+  "zero_mutation": {
+    "provider_writes": 0,
+    "deployments": 0,
+    "previews": 0,
+    "credential_generation": 0,
+    "live_redis": 0,
+    "acl_or_rotation": 0,
+    "provider_configuration": 0,
+    "production": 0,
+    "continuity_ON": 0,
+    "IRIS_admission": 0,
+    "BIG_activation": 0,
+    "E1": 0,
+    "pilot_scoring": 0,
+    "merge": 0,
+    "remote_refs_or_PR": 0
+  },
+  "disposition": "B2_SOURCE_CANDIDATE_READY / STRATA_RECONCILIATION_REQUIRED / NO_SELF_ACCEPTANCE",
+  "admission": "NOT_ADJUDICATED",
+  "fresh_current": "BIG #703/5972224426",
+  "source_clarification": "BIG #703/5971926463",
+  "independence_boundary": "Canonical adjudications/source clarification consumed; no sealed Batch-C artifact/vector/proof package consumed; no independent-oracle credit"
+}

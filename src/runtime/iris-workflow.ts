@@ -1,4 +1,4 @@
-import type { CanonicalRepository } from '../state/repository.ts';
+import type { LegacyRepository } from '../state/legacy-repository.ts';
 import { orient } from './orient.ts';
 import { perceive } from './perceive.ts';
 import { think } from './think.ts';
@@ -13,7 +13,7 @@ import { recordBireMetric } from '../instrumentation/personal-bire.ts';
 import { emitIefEvent } from '../instrumentation/ief-events.ts';
 
 export async function runBoundedCircuit(args:{
-  repo:CanonicalRepository; principalId:string; objectiveId:string; obligationId:string; episodeId:string;
+  repo:LegacyRepository; principalId:string; objectiveId:string; obligationId:string; episodeId:string;
   subjectRef:string; predicate:string; actionScope:string; privacyScope:string; intent:ActionIntent;
   contract:ToolContract; executor:ToolExecutor; fixtureRead:()=>unknown; expectedEffect:unknown; now:string;
 }) {

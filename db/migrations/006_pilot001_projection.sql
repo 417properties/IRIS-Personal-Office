@@ -42,3 +42,22 @@ select 'pilot001:'||surface,'PILOT001_IRIS_PLUS_QUALIFIED_BIG_V0_1',case when su
   surface,'AARON',case when surface='qualified_big_quarantine_evidence' then '{"observed_and_qualified_required":true,"valid_through_or_source_max_age_required":true}'::jsonb else '{"read_at_projection_snapshot":true}'::jsonb end,
   '["verified_source_identity","evidence_refs","verified_principal"]'::jsonb,jsonb_build_array(surface),'{"explicit_applicability_or_proven_inapplicability_required":true}'::jsonb
 from jsonb_array_elements_text('["objectives","obligations","obligation_governance","decision_requirements","authority_generation_and_leases","unresolved_intents_and_effects","applicability_current_assertions","qualified_big_quarantine_evidence"]') as surfaces(surface);
+
+-- B2: historical source tables have an explicit V0 decoder owner.
+alter table projection_coverage_contract add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table projection_source_requirement add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table pilot001_projection_run add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table pilot001_source_evaluation add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table pilot001_projection_item add column decoder_version text not null default 'IRIS_LEGACY_V0' check(decoder_version='IRIS_LEGACY_V0');
+alter table projection_coverage_contract add check(scope_version>0);
+alter table projection_coverage_contract add check(declared_scope is null or jsonb_typeof(declared_scope)='array');
+alter table projection_coverage_contract add check(required_surfaces is null or jsonb_typeof(required_surfaces)='array');
+alter table projection_coverage_contract add check(known_exclusions is null or jsonb_typeof(known_exclusions)='array');
+alter table projection_source_requirement add check(freshness_rule is null or jsonb_typeof(freshness_rule)='object');
+alter table projection_source_requirement add check(provenance_requirements is null or jsonb_typeof(provenance_requirements)='array');
+alter table projection_source_requirement add check(required_state_surfaces is null or jsonb_typeof(required_state_surfaces)='array');
+alter table projection_source_requirement add check(applicability_rule is null or jsonb_typeof(applicability_rule)='object');
+alter table pilot001_projection_run add check(scope_version>0);
+alter table pilot001_projection_run add check(output is null or jsonb_typeof(output)='object');
+alter table pilot001_source_evaluation add check(evaluation is null or jsonb_typeof(evaluation)='object');
+alter table pilot001_projection_item add check(payload is null or jsonb_typeof(payload)='object');
