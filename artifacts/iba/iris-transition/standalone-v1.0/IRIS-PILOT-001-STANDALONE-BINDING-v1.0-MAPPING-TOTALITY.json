@@ -16,6 +16,70 @@
   ],
   "rows": [
     {
+      "source_structure": "source_requirements",
+      "relevant_fields_or_tokens": "surface/required_principal_id/applicability_rule/freshness_rule/provenance_requirements",
+      "binding_rule_id": "§2.1,§3",
+      "projection_input_derivation_or_disposition": "validate exact eight requirements and AARON principal contract; evidence constraint, never candidate root",
+      "provenance_ref_scope": "case/surface",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "source_envelopes",
+      "relevant_fields_or_tokens": "exact eight named envelope objects",
+      "binding_rule_id": "§2.1,§3",
+      "projection_input_derivation_or_disposition": "exact eight-surface SourceEvaluation inventory; token-specific rows govern",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "snapshot_time",
+      "relevant_fields_or_tokens": "timestamp",
+      "binding_rule_id": "§2.1",
+      "projection_input_derivation_or_disposition": "consistency metadata; must equal first read_at in frozen population; cannot override selected read_at",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "records",
+      "relevant_fields_or_tokens": "exact source record inventory",
+      "binding_rule_id": "§2.1,§4-§11",
+      "projection_input_derivation_or_disposition": "indexed by exact typed record id; duplicate ID named HOLD; per-type rows below govern transformations",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "principal_id",
+      "relevant_fields_or_tokens": "AARON",
+      "binding_rule_id": "§2.1,§5",
+      "projection_input_derivation_or_disposition": "must equal AARON or named HOLD",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
+      "source_structure": "emission_time",
+      "relevant_fields_or_tokens": "timestamp",
+      "binding_rule_id": "§2.1",
+      "projection_input_derivation_or_disposition": "NOT_MAPPED_BY_DESIGN; cannot provide execution/candidate time",
+      "provenance_ref_scope": "case",
+      "load_bearing": false
+    },
+    {
+      "source_structure": "domain",
+      "relevant_fields_or_tokens": "routing metadata string",
+      "binding_rule_id": "§2.1",
+      "projection_input_derivation_or_disposition": "NOT_MAPPED_BY_DESIGN to ProjectionInput semantics",
+      "provenance_ref_scope": "case",
+      "load_bearing": false
+    },
+    {
+      "source_structure": "case_id",
+      "relevant_fields_or_tokens": "opaque p1e1r4_* identity",
+      "binding_rule_id": "§2,§2.1",
+      "projection_input_derivation_or_disposition": "population/order identity; synthetic candidate/output identity only; no semantic parsing",
+      "provenance_ref_scope": "case",
+      "load_bearing": true
+    },
+    {
       "source_structure": "coverage_contract",
       "relevant_fields_or_tokens": "contract_id/required_surfaces/scope_version",
       "binding_rule_id": "§2,§3",
@@ -303,7 +367,21 @@
       "decision_requirement": 40,
       "intent": 2
     },
-    "exact_intent_scoped_applicability_assertions": 0
+    "exact_intent_scoped_applicability_assertions": 0,
+    "top_level_case_fields": [
+      "case_id",
+      "coverage_contract",
+      "domain",
+      "emission_time",
+      "impact_packets",
+      "principal_id",
+      "records",
+      "snapshot_reads",
+      "snapshot_time",
+      "source_envelopes",
+      "source_requirements"
+    ],
+    "top_level_shape_variants": 1
   },
-  "totality_policy": "Every demonstrated structure/token/state above has an explicit rule/disposition. Any source shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default."
+  "totality_policy": "Every demonstrated top-level field, source envelope token, record type and transformation-relevant state has an explicit rule/disposition. Any demonstrated shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default."
 }
