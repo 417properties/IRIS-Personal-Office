@@ -180,6 +180,15 @@ Foreign/private source_packet, device observation, provider session, or record i
 Required foreign payload:
 `BINDING_HOLD/CROSS_PRINCIPAL_MAPPING_FORBIDDEN`.
 
+### 5.1 Frozen privacy-exclusion census
+
+The frozen population contains exactly one demonstrated foreign/private source object:
+- case `p1e1r4_c09b0e9d61544bbf825d1aa9215879e8`;
+- record `source_packet:b8ac8fd78e794c25b476e145f4e6006b`;
+- admission QUARANTINED / authority_effect NONE / source_identity_verified=true / source_principal_id OTHER_PRINCIPAL / privacy_scope other-principal-private.
+
+It creates no candidate field and its payload is never copied. `privacyExcluded` contains exactly this typed record ID for that case and is empty for the other 39 cases. The array is exact-deduped and UTF-8 byte-lexically sorted.
+
 ## 6. Typed source identity and candidate-owned payload boundary
 
 All source IDs and source refs stay fully typed during source-space joins.
@@ -433,6 +442,74 @@ The 40 decisions demonstrate exactly these seven classes:
 7. 1: OPEN / history complete / APPLICABLE assertion / lifecycle OPEN / PENDING action_decision that neither resolves nor supersedes -> OPEN / APPLICABLE.
 
 Any other obligation or decision lifecycle/applicability combination appearing in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+
+### 7.6 Exact candidate evidence-closure sets
+
+Candidate health/provenance MUST be reduced from a closed, root-specific evidence set. The Builder may not choose a narrower or broader set case-by-case.
+
+Obligation root evidence closure:
+- exact objective record supplying objective_id;
+- exact obligation record;
+- unique exact obligation_governance record;
+- every exact applicability_assertion whose subject_refs includes that obligation;
+- every exact lifecycle_event whose affected_record_refs includes that obligation;
+- exact required_next_step that names that obligation when reserved authority is classified;
+- exact authority_generation_state + referenced lease/identity/work_episode records required to determine reserved authority/delegation;
+- exact conflict-generating/source-link records when that obligation receives conflict_id/material_conflict/possible_duplicate_refs.
+
+Decision root evidence closure:
+- exact objective record;
+- exact decision_requirement record;
+- every exact decision-scoped applicability_assertion;
+- every exact lifecycle_event affecting that decision;
+- every exact action_decision whose subject/resolves/supersedes relation names that decision;
+- exact required_next_step plus linked governance/authority records when reserved authority is classified;
+- exact conflict-generating records only if that decision is directly attached to the conflict.
+
+Intent root evidence closure:
+- exact objective record;
+- exact intent record;
+- unique exact linked effect_record;
+- exact intent/effect-scoped applicability/lifecycle evidence;
+- exact conflict evidence only if directly attached.
+
+Conflict-only root evidence closure:
+- exact incompatible source records that generated the conflict;
+- exact objective/obligation link records required by §9 to compute the conflict anchor set;
+- no unrelated case records.
+
+For each closure:
+- candidate `freshness = UNKNOWN` if any load-bearing used envelope is UNKNOWN/unevaluable, else STALE if any is STALE, else CURRENT;
+- candidate `source_identity = CONFLICT` if any used source identity is conflicting, else UNKNOWN if any used source identity is unknown/unverified for a load-bearing fact, else VERIFIED;
+- candidate `provenance_refs` is the exact-deduped UTF-8 byte-lexical union of source_refs on those used records plus the exact containing-envelope source_refs. Nothing else is admitted.
+
+If a required candidate field cannot be supported by that root's exact closure, set the explicitly authorized UNKNOWN/omission or fail the named HOLD; do not borrow evidence from another root.
+
+### 7.7 Frozen root/unknown census
+
+Before buildProjection, the exact 40-case population must produce:
+- obligation roots: 42;
+- decision roots: 40;
+- unresolved-intent roots: 1;
+- conflict-only roots: 1;
+- total PilotCandidate roots: 84.
+
+Load-bearing candidate unknowns:
+- case `p1e1r4_2b75131e44224cd98957c79b899fb168`: one obligation + one decision with exact applicability UNKNOWN -> 2 roots;
+- case `p1e1r4_2ffd4e9ef2b1481c880a9acd16256f39`: one reserved obligation + one reserved decision degraded to UNKNOWN because authority_state availability=UNKNOWN -> 2 roots; valid_delegation omitted;
+- case `p1e1r4_6f43027d04774acda0ac9dd58bc2f4af`: one unresolved-intent root with no exact intent applicability -> 1 root.
+
+Thus exactly 5 candidate roots carry a load-bearing UNKNOWN applicability/health cause under this binding. No other root may be degraded to UNKNOWN absent an exact rule in this document.
+
+Conflict/material census before buildProjection:
+- generated material conflict IDs: 3;
+- roots with `material_conflict=true`: 4 (one incompatible-instruction obligation root; two unresolved-duplicate obligation roots; one incompatible-current-state conflict-only root);
+- roots with nonempty possible_duplicate_refs: 2;
+- roots with `escalation_required=true`: 1;
+- roots with `unresolved_effect=true`: 1;
+- roots with `informational_only=true`: 1.
+
+Any deviation is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
 ## 8. Authority, permission and delegation
 
