@@ -399,6 +399,41 @@ The frozen population demonstrates exactly two governance records with Aaron esc
 
 No other root in the frozen population may have `escalation_required=true`.
 
+### 7.5 Frozen obligation/decision lifecycle-applicability tables
+
+Status/lifecycle and applicability are independent candidate dimensions. Do not rewrite one from the other unless exact scoped source evidence supplies that exact value.
+
+For an obligation:
+- `obligation_status` is the exact selected obligation status;
+- `applicability` is the exact selected obligation governance/applicability assertion state after exact-ref lifecycle consistency checking;
+- terminal obligation status defeats AR-2 through the frozen classifier status predicate; it does NOT silently rewrite separately APPLICABLE governance.
+- `concrete_action_remaining = (action_remaining===true && concrete_action is nonempty && informational_only===false)` exactly, even if status is terminal; the classifier's status gate remains candidate-owned.
+
+The 42 obligations demonstrate exactly these six classes:
+1. 35: status OPEN / governance APPLICABLE / assertion APPLICABLE / lifecycle OPEN -> candidate status OPEN / applicability APPLICABLE;
+2. 1: status OPEN / governance UNKNOWN / assertion UNKNOWN / lifecycle OPEN -> status OPEN / applicability UNKNOWN;
+3. 1: status ABANDONED / governance APPLICABLE / assertion APPLICABLE / lifecycle OPEN then ABANDONED -> status ABANDONED / applicability APPLICABLE;
+4. 2: status OPEN / governance APPLICABLE / assertion APPLICABLE / no lifecycle row -> status OPEN / applicability APPLICABLE;
+5. 2: status SATISFIED / governance SATISFIED / assertion SATISFIED / lifecycle OPEN then SATISFIED -> status SATISFIED / applicability SATISFIED;
+6. 1: status SUPERSEDED / governance SUPERSEDED / assertion SUPERSEDED / lifecycle OPEN then SUPERSEDED -> status SUPERSEDED / applicability SUPERSEDED.
+
+For a decision:
+- `decision_status` preserves exact selected source status, with exact action_decision resolving/superseding refs controlling resolution history;
+- `applicability` is the exact decision-scoped applicability assertion state;
+- obligation lifecycle never rewrites either field;
+- PENDING action_decision does not resolve/supersede the decision.
+
+The 40 decisions demonstrate exactly these seven classes:
+1. 33: OPEN / history complete / one APPLICABLE assertion / lifecycle OPEN / no action_decision -> OPEN / APPLICABLE;
+2. 1: OPEN / history complete / UNKNOWN assertion / lifecycle OPEN -> OPEN / UNKNOWN;
+3. 1: OPEN / history complete / two identical APPLICABLE assertions / lifecycle OPEN -> OPEN / APPLICABLE; exact duplicate value evidence does not multiply or conflict;
+4. 1: RESOLVED / history complete / APPLICABLE assertion / lifecycle OPEN / exact RESOLVED action_decision naming the decision -> RESOLVED / APPLICABLE;
+5. 2: RESOLVED / history complete / SATISFIED assertion / lifecycle OPEN / exact RESOLVED action_decision -> RESOLVED / SATISFIED;
+6. 1: SUPERSEDED / history complete / SUPERSEDED assertion / lifecycle OPEN / exact superseding action_decision -> SUPERSEDED / SUPERSEDED;
+7. 1: OPEN / history complete / APPLICABLE assertion / lifecycle OPEN / PENDING action_decision that neither resolves nor supersedes -> OPEN / APPLICABLE.
+
+Any other obligation or decision lifecycle/applicability combination appearing in these exact 40 cases is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+
 ## 8. Authority, permission and delegation
 
 required_next_step never creates a root.
