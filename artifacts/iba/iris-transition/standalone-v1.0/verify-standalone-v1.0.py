@@ -335,7 +335,19 @@ def main():
     if "impact_packet" not in structures: fail("matrix missing impact_packet object row", failures)
     if matrix.get("candidate_root_census",{}).get("total")!=84: fail("matrix root census drift", failures)
     if matrix.get("privacy_exclusion_census",{}).get("total_excluded_records")!=1: fail("matrix privacy census drift", failures)
-    if len(matrix.get("demonstrated_conflict_generation",{}).get("exact_identities",[]))!=3: fail("matrix conflict identity drift", failures)
+    if len(matrix.get("demonstrated_conflict_generation",{}).get("exact_conflicts",[]))!=3: fail("matrix conflict identity drift", failures)
+    forbidden_matrix_branches={"demonstrated_lifecycle_reduction","pilot_candidate_construction","delegation_census","escalation_census","prebuild_candidate_census","conflict_only_candidate_rule","authority_unknown_representation"}
+    leaked=sorted(forbidden_matrix_branches & set(matrix))
+    if leaked: fail(f"duplicate/superseded matrix branches present: {leaked}", failures)
+    if matrix.get("candidate_root_census",{}).get("applicability") != {"APPLICABLE":73,"UNKNOWN":5,"SATISFIED":4,"SUPERSEDED":2,"ABANDONED":0}:
+        fail("matrix candidate applicability census drift", failures)
+    if matrix.get("candidate_root_census",{}).get("booleans",{}).get("escalation_required_true") != 0:
+        fail("matrix escalation census drift", failures)
+    auth=matrix.get("demonstrated_authority_delegation",{})
+    if auth.get("per_case") != {"true":0,"false":9,"omitted_unknown":1}:
+        fail("matrix per-case delegation census drift", failures)
+    if auth.get("per_candidate_root") != {"true":0,"false":18,"omitted":2}:
+        fail("matrix per-root delegation census drift", failures)
 
     # Published preflight must itself claim no failures only when verifier agrees.
     if published.get("failures")!=[]: fail("published preflight contains failures", failures)
@@ -345,6 +357,18 @@ def main():
         fail("published preflight claims candidate invocation", failures)
     if published.get("labels_consumed")!=0 or published.get("candidate_outputs_consumed")!=0 or published.get("scoring") is not False:
         fail("published independence counters drift", failures)
+    pc=published.get("checks",{}).get("candidate",{})
+    if pc.get("applicability") != {"APPLICABLE":73,"UNKNOWN":5,"SATISFIED":4,"SUPERSEDED":2,"ABANDONED":0}:
+        fail("published candidate applicability census drift", failures)
+    if pc.get("escalation_required_true") != 0:
+        fail("published escalation census drift", failures)
+    if published.get("checks",{}).get("lifecycle",{}).get("abandoned_obligation_candidate") != {"status":"ABANDONED","applicability":"APPLICABLE"}:
+        fail("published ABANDONED/APPLICABLE reduction drift", failures)
+    if published.get("checks",{}).get("conflicts",{}).get("exact_ids") != [
+        "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+        "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
+        "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d"]:
+        fail("published exact conflict ID set drift", failures)
 
     # Standalone/reviewer architecture guards.
     for bad in ("remain normative","normative unchanged","historical binding documents to reconstruct"):
@@ -353,6 +377,11 @@ def main():
     for code in ("UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE","UNMAPPED_INTENT_APPLICABILITY_SHAPE","UNMAPPED_REPLACEMENT_E1_STRUCTURE"):
         if code not in binding: fail(f"binding missing explicit guard {code}", failures)
     if "F108" not in builder: fail("builder falsifier packet incomplete", failures)
+    if "escalation_required is explicit false on all 84" not in builder: fail("builder escalation rule drift", failures)
+    if "obligation_status=ABANDONED / applicability=APPLICABLE" not in builder: fail("builder ABANDONED/APPLICABLE rule drift", failures)
+    if "conf_4e885b98" not in builder: fail("builder conflict identity drift", failures)
+    if "conf_5936fd" in binding or "conf_5936fd" in builder: fail("superseded current-state conflict ID leaked", failures)
+    if "escalation_required=true" in binding: fail("unsupported escalation=true leaked into binding", failures)
 
     result={
       "artifact":"IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-VERIFIER-RESULT",
