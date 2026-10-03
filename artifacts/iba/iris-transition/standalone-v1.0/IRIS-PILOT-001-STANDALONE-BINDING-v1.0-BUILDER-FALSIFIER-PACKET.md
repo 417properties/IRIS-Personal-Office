@@ -90,9 +90,14 @@ F069 PRESENT required-surface applicability is frozen at surface level: APPLICAB
 F070 all 320 SourceEvaluation tuples reduce to the exact published tuple census; zero extra tuple classes.
 F071 `input.conflicts` contains only exact deterministic conflict IDs, exact-deduped UTF-8 byte-lexically sorted.
 F072 every demonstrated load-bearing scalar/token value belongs to the published token domain; any other value is UNMAPPED_REPLACEMENT_E1_STRUCTURE.
+F073 mutually exclusive exact instructions on one obligation map to INCOMPATIBLE_OBLIGATIONS.
+F074 incompatible exact current_assertion values for one exact subject/predicate map to INCOMPATIBLE_CURRENT_STATE.
+F075 demonstrated unresolved distinct possible duplicate maps to POSSIBLE_DUPLICATE_UNRESOLVED; proven self-identity maps to no conflict.
+F076 no AUTHORITY_CONFLICT/EFFECT_REALITY_CONFLICT/SOURCE_IDENTITY_CONFLICT generator may appear in these frozen 40 cases; appearance is UNMAPPED_REPLACEMENT_E1_STRUCTURE.
+F077 conflict class and exact anchor set may never be selected by semantic similarity, consequence evidence, or Builder discretion.
 
 ## Success
-All F001-F072 PASS and static preflight reports:
+All F001-F077 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
