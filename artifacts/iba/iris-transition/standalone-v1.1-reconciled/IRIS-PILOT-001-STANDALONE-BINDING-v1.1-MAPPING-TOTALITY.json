@@ -260,13 +260,15 @@
       "anchors": [
         "assertion:9f4a8b630cdc4067a81be6875ee05386",
         "current_assertion:6f7e30c15ed84aa893f311aa237ce2be",
-        "objective:0a9cb6c1b78a4910aa3d5e21fa960f51"
+        "objective:0a9cb6c1b78a4910aa3d5e21fa960f51",
+        "obligation:9902f0b12e9c4b20873e6e809e27d179"
       ],
-      "conflict_id": "conf_5936fd94422be0799b3e76b3b8d97d49dbbf0ca2d3188a7e7d7882e0a3f183cb",
+      "conflict_id": "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
       "attachment": [
         "CONFLICT_ONLY_ROOT"
       ],
-      "escalation_required": false
+      "escalation_required": false,
+      "anchor_note": "linked obligation participates in conflict identity under protocol objective/obligation-link closure but does not receive conflict attachment by reverse-link inference"
     },
     {
       "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
@@ -289,7 +291,7 @@
     "case_id": "p1e1r4_c09b0e9d61544bbf825d1aa9215879e8",
     "record_id": "source_packet:b8ac8fd78e794c25b476e145f4e6006b"
   },
-  "prebuild_vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "prebuild_vector_sha256": "8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35",
   "unmapped_policy": "Any demonstrated shape/token/field/tuple outside this object or standalone binding -> BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE",
   "prebuild_vector_index": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-PREBUILD-INPUT-INDEX.json",
   "reconciliation": {
