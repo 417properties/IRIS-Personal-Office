@@ -95,9 +95,17 @@ F074 incompatible exact current_assertion values for one exact subject/predicate
 F075 demonstrated unresolved distinct possible duplicate maps to POSSIBLE_DUPLICATE_UNRESOLVED; proven self-identity maps to no conflict.
 F076 no AUTHORITY_CONFLICT/EFFECT_REALITY_CONFLICT/SOURCE_IDENTITY_CONFLICT generator may appear in these frozen 40 cases; appearance is UNMAPPED_REPLACEMENT_E1_STRUCTURE.
 F077 conflict class and exact anchor set may never be selected by semantic similarity, consequence evidence, or Builder discretion.
+F078 every PilotCandidate is constructed in the exact 24-position insertion order frozen by v1.0.
+F079 decoder never supplies candidate.why.
+F080 escalation_required is explicit false for replacement-E1 v0.4; conflict/effect/authority semantics use their dedicated candidate fields and cannot be duplicated ad hoc.
+F081 unresolved_effect/material_conflict/informational_only are explicit booleans under exact root rules.
+F082 applicability/freshness/source_identity/provenance_refs/possible_duplicate_refs are always supplied under exact health-reduction rules.
+F083 provenance_refs contain only exact typed source refs actually used; no protocol/review/binding URI injection.
+F084 possible_duplicate_refs is always an array; only unresolved distinct duplicate evidence populates exact typed other refs.
+F085 optional nonapplicable candidate fields are omitted, never null-filled; any extra decoder-owned property is a HOLD.
 
 ## Success
-All F001-F077 PASS and static preflight reports:
+All F001-F085 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
