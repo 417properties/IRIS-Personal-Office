@@ -1,0 +1,66 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.0-PACKAGE-INDEX",
+  "authority": "NONE",
+  "branch": "iba/iris-pilot001-standalone-execution-binding-v1-0",
+  "base_v0_6_head": "9bd4355634935410c351c7814fb2b4b67bd06b36",
+  "verified_semantic_head": "5462b53c30646c60540cdfe81f7c3d08690fb9ba",
+  "verifier_process_exit_code": 0,
+  "verifier_disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
+  "indexed_artifact_commit": "6b8ce6b1b426db11fe366eed80d07da084cead22",
+  "indexed_artifact_tree": "3b960e3dee821bbf5b4b956c4b9dc981666624b5",
+  "indexed_artifact_parent": "5462b53c30646c60540cdfe81f7c3d08690fb9ba",
+  "artifact_count": 7,
+  "artifacts": [
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-EXECUTION-BINDING-v1.0.md",
+      "blob": "533f3fc9a31e77f1356070c309e6d1834e94b371",
+      "bytes": 43767,
+      "sha256": "472f3b7c694657880e48b4c02bcab8fefef99230f712bf36fe5c73d936793d67"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-DEPENDENCY-MANIFEST.json",
+      "blob": "182c3fccc80742103ea46f5315c5b4f886acf188",
+      "bytes": 5541,
+      "sha256": "a13bc12447076b1fb6a677ff40e95bc2612eb34b3da2da92c373b380da48515e"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-MAPPING-TOTALITY.json",
+      "blob": "e6f1f93372a82c6fc8994332c97685cb7f35c1b6",
+      "bytes": 47259,
+      "sha256": "2f32a5df5f15824ea18fbdefa79591a1e02879fc66d12dd4b56e342f490d8eaa"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-TOTALITY-PREFLIGHT.json",
+      "blob": "a6514084cf6864c6dc8b3bb204505960b1eabe08",
+      "bytes": 7163,
+      "sha256": "64db9c193089bf8abadce188e949abf80f63cbf136ae457884518709db406301"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-BUILDER-FALSIFIER-PACKET.md",
+      "blob": "d4629fdc7abc4b29cb2d9f6652e01dbedffc2c0c",
+      "bytes": 11725,
+      "sha256": "8b81535a0cd0ead270de4379822a62e5e9d8e67c3172c0de007fac2f3e729b82"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/verify-standalone-v1.0.mjs",
+      "blob": "16f657daef7a4775cc370bd52f5ea6da9c1fadf7",
+      "bytes": 20595,
+      "sha256": "0f13dbee8d3914fc093407234d75dacfd130aa5d12cbded37000c1db474549f8"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-VERIFIER-RESULT.json",
+      "blob": "dda07ea424e4889678047dd8efb4c4220fbcb760",
+      "bytes": 1441,
+      "sha256": "7aaccf63e7cf9343f52c209e177e7d47ddd745822ae1f984eaadca98eee5ac43"
+    }
+  ],
+  "reviewer_retrieval_rule": "Fetch this package index by exact content address, then fetch only the seven indexed package artifacts plus the exact semantic dependencies named by the indexed dependency manifest. No search, directory traversal, historical binding reconstruction, tests, prior review judgments, E2/E3, or candidate outputs are required.",
+  "independence": {
+    "labels_consumed": 0,
+    "candidate_outputs_consumed": 0,
+    "scoring": false,
+    "candidate_invoked": false,
+    "buildProjection_invoked": false
+  },
+  "disposition": "STANDALONE_BINDING_READY / DEPENDENCY_MANIFEST_COMPLETE / 40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES / FRESH_INDEPENDENT_ACCEPTANCE_REQUIRED"
+}
