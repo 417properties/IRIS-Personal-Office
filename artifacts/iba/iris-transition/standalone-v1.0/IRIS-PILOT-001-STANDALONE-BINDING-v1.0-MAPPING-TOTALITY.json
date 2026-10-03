@@ -1056,5 +1056,215 @@
       "why": "PROHIBITED_BY_DESIGN / decoder never supplies"
     },
     "optional_fields": "omitted when not semantically applicable; null substitution prohibited except explicit UNKNOWN values represented by string fields"
+  },
+  "demonstrated_lifecycle_reduction": {
+    "obligations": [
+      {
+        "count": 35,
+        "source_status": "OPEN",
+        "governance": "APPLICABLE",
+        "assertions": [
+          "APPLICABLE"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 2,
+        "source_status": "OPEN",
+        "governance": "APPLICABLE",
+        "assertions": [
+          "APPLICABLE"
+        ],
+        "lifecycle": [],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 1,
+        "source_status": "OPEN",
+        "governance": "UNKNOWN",
+        "assertions": [
+          "UNKNOWN"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "UNKNOWN"
+      },
+      {
+        "count": 1,
+        "source_status": "ABANDONED",
+        "governance": "APPLICABLE",
+        "assertions": [
+          "APPLICABLE"
+        ],
+        "lifecycle": [
+          "ABANDONED",
+          "OPEN"
+        ],
+        "candidate_status": "ABANDONED",
+        "candidate_applicability": "ABANDONED",
+        "note": "terminal exact lifecycle defeats older APPLICABLE obligation governance only"
+      },
+      {
+        "count": 2,
+        "source_status": "SATISFIED",
+        "governance": "SATISFIED",
+        "assertions": [
+          "SATISFIED"
+        ],
+        "lifecycle": [
+          "OPEN",
+          "SATISFIED"
+        ],
+        "candidate_status": "SATISFIED",
+        "candidate_applicability": "SATISFIED"
+      },
+      {
+        "count": 1,
+        "source_status": "SUPERSEDED",
+        "governance": "SUPERSEDED",
+        "assertions": [
+          "SUPERSEDED"
+        ],
+        "lifecycle": [
+          "OPEN",
+          "SUPERSEDED"
+        ],
+        "candidate_status": "SUPERSEDED",
+        "candidate_applicability": "SUPERSEDED"
+      }
+    ],
+    "decisions": [
+      {
+        "count": 33,
+        "source_status": "OPEN",
+        "history_complete": true,
+        "assertions": [
+          "APPLICABLE"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 1,
+        "source_status": "OPEN",
+        "history_complete": true,
+        "assertions": [
+          "UNKNOWN"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "UNKNOWN"
+      },
+      {
+        "count": 1,
+        "source_status": "OPEN",
+        "history_complete": true,
+        "assertions": [
+          "APPLICABLE",
+          "APPLICABLE"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 1,
+        "source_status": "RESOLVED",
+        "history_complete": true,
+        "assertions": [
+          "APPLICABLE"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [
+          {
+            "status": "RESOLVED",
+            "resolves": true,
+            "supersedes": false
+          }
+        ],
+        "candidate_status": "RESOLVED",
+        "candidate_applicability": "APPLICABLE"
+      },
+      {
+        "count": 2,
+        "source_status": "RESOLVED",
+        "history_complete": true,
+        "assertions": [
+          "SATISFIED"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [
+          {
+            "status": "RESOLVED",
+            "resolves": true,
+            "supersedes": false
+          }
+        ],
+        "candidate_status": "RESOLVED",
+        "candidate_applicability": "SATISFIED"
+      },
+      {
+        "count": 1,
+        "source_status": "SUPERSEDED",
+        "history_complete": true,
+        "assertions": [
+          "SUPERSEDED"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [
+          {
+            "status": "SUPERSEDED",
+            "resolves": false,
+            "supersedes": true
+          }
+        ],
+        "candidate_status": "SUPERSEDED",
+        "candidate_applicability": "SUPERSEDED"
+      },
+      {
+        "count": 1,
+        "source_status": "OPEN",
+        "history_complete": true,
+        "assertions": [
+          "APPLICABLE"
+        ],
+        "lifecycle": [
+          "OPEN"
+        ],
+        "action_decisions": [
+          {
+            "status": "PENDING",
+            "resolves": false,
+            "supersedes": false
+          }
+        ],
+        "candidate_status": "OPEN",
+        "candidate_applicability": "APPLICABLE"
+      }
+    ],
+    "cross_ref_rule": "obligation and decision lifecycle/applicability are independent exact-ref reductions; no cascade"
   }
 }
