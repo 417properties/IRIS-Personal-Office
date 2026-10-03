@@ -108,9 +108,14 @@ F087 exact ABANDONED obligation lifecycle yields candidate applicability ABANDON
 F088 all 40 decisions match one of the seven published decision reductions.
 F089 obligation lifecycle never cascades to linked decision; decision changes only from exact decision-scoped evidence.
 F090 PENDING action_decision neither resolves nor supersedes; agreeing duplicate applicability assertions do not create conflict or multiply semantics.
+F091 all 10 permission steps have exact matching reserved class across step/governance/decision.
+F092 delegation validator compares authority generation only to authority current_generation; worker identity generation is a separate domain.
+F093 exact delegation outcomes are true=0 / false=9 / omitted-UNKNOWN=1 with the published failure reasons.
+F094 UNKNOWN authority surface cannot supply positive authority holder/delegation; holder becomes UNKNOWN, valid_delegation omitted, health degraded UNKNOWN.
+F095 provider session/credential or predecessor worker evidence never upgrades delegation.
 
 ## Success
-All F001-F090 PASS and static preflight reports:
+All F001-F095 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
