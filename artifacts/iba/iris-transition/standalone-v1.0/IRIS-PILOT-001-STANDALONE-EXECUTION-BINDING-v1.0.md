@@ -541,6 +541,47 @@ Identity/conflict field census:
 
 Any other root count or field-presence census is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
 
+### 7.7 Exact PilotCandidate field-presence census
+
+Across the exact 84 pre-buildProjection candidates, property presence MUST be:
+
+- id 84
+- principal_id 84
+- objective_id 84
+- obligation_id 42
+- decision_requirement_id 40
+- intent_id 1
+- conflict_id 4
+- obligation_status 42
+- obligation_owner 42
+- concrete_action_remaining 42
+- decision_status 40
+- decision_maker_identity_id 40
+- reserved_authority_class 20
+- authority_holder_identity_id 20
+- valid_delegation 18
+- escalation_required 84
+- unresolved_effect 84
+- material_conflict 84
+- informational_only 84
+- applicability 84
+- freshness 84
+- source_identity 84
+- provenance_refs 84
+- possible_duplicate_refs 84
+- why 0
+
+Exact value censuses:
+- obligation_owner: AARON 20 / IRIS 20 / EXTERNAL_ORG 1 / UNKNOWN 1;
+- obligation_status: OPEN 38 / ABANDONED 1 / SATISFIED 2 / SUPERSEDED 1;
+- decision_maker_identity_id: IRIS 29 / AARON 10 / UNKNOWN 1;
+- decision_status: OPEN 36 / RESOLVED 3 / SUPERSEDED 1;
+- candidate freshness: CURRENT 84 / STALE 0 / UNKNOWN 0;
+- candidate source_identity: VERIFIED 84 / UNKNOWN 0 / CONFLICT 0;
+- provenance_refs array length: exactly 1 for all 84 candidates.
+
+The conflict/duplicate/authority uncertainties in this frozen population are represented by their dedicated candidate fields and do not rewrite source_identity/freshness. Every direct candidate evidence union resolves to one exact case evidence source_ref. Any field-presence/value census drift is `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE`.
+
 ## 8. Authority, permission and delegation
 
 required_next_step never creates a root.
