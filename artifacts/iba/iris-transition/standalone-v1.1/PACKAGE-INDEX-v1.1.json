@@ -1,0 +1,50 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-PACKAGE-INDEX",
+  "authority": "NONE",
+  "lineage": {
+    "base_v0_6": "9bd4355634935410c351c7814fb2b4b67bd06b36",
+    "base_tree": "5b7c31a7c69635138aa5b227b5d728b139480dd9",
+    "branch": "iba/iris-pilot001-standalone-execution-binding-v1-1",
+    "pre_index_head": "40aefdedf6e5c4572950dc087cc26873509c4445"
+  },
+  "prebuild_projection_input_vector_sha256": "78b721944b15128f916dd528d4f3d8f827ffdb4f675f13c7ed68a1b7bed324e5",
+  "files": [
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.1/BUILDER-FALSIFIER-v1.1.md",
+      "blob": "000fda0c565a5309526d1334f608e4185433a7c0",
+      "bytes": 4791,
+      "sha256": "c8f84e94c13b08b7380f613298b286f4ed2592f3d8ad72bef2d7fa7c77a24333"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.1/IRIS-PILOT-001-STANDALONE-BINDING-v1.1-DEPENDENCY-MANIFEST.json",
+      "blob": "83c9de4a58a092ac06b040c0132794b9c0090a6d",
+      "bytes": 5239,
+      "sha256": "19c97f6089069d746ca4362aae7a5e681e02e6e227fb274e514e8861ba272ba7"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.1/IRIS-PILOT-001-STANDALONE-BINDING-v1.1-MAPPING-TOTALITY.json",
+      "blob": "8589a1c803a6a67ef433d9c263bc699c22a90803",
+      "bytes": 8075,
+      "sha256": "2f5f9eb45854b5c8e912663c62df31da882990e65b5753b54fa60f90b82660fc"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.1/IRIS-PILOT-001-STANDALONE-EXECUTION-BINDING-v1.1.md",
+      "blob": "dd049ae109d58208c06d193e1f3fb8b8456d4b12",
+      "bytes": 20309,
+      "sha256": "bfe098cfb5bd1ba4ff9e0cc29b11f41230844c2de12184fb751913b6320b4751"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.1/MECHANICAL-VERIFIER-SPEC-v1.1.md",
+      "blob": "558c5a61a2ec008cc5362c0712e48dc0f470cf53",
+      "bytes": 4239,
+      "sha256": "4892cba0a7b1de1bd23b46f841c21e56baa6ad20f9987a7974dccdefaeae25e0"
+    },
+    {
+      "path": "artifacts/iba/iris-transition/standalone-v1.1/TOTALITY-EVIDENCE-v1.1.json",
+      "blob": "da64e36ea0648ba4566eba0339f5f61add8ab864",
+      "bytes": 135,
+      "sha256": "20765e191573ed80668000e925492a3aac062bed3dca9e59c144ce3300aa5b99"
+    }
+  ],
+  "package_policy": "Only the seven files in standalone-v1.1 plus exact semantic dependencies named by the dependency manifest are needed for review. v1.0 is superseded and non-normative."
+}
