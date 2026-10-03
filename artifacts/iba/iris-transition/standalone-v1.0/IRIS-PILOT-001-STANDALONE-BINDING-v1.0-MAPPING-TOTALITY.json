@@ -147,7 +147,7 @@
       "source_structure": "objective",
       "relevant_fields_or_tokens": "typed id/status/owner/scope",
       "binding_rule_id": "§6,§7",
-      "projection_input_derivation_or_disposition": "raw objective payload into candidate roots where referenced",
+      "projection_input_derivation_or_disposition": "raw objective payload into candidate roots where referenced; any required candidate-owned namespace outside the frozen set -> BINDING_HOLD/UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE",
       "provenance_ref_scope": "exact typed ref",
       "load_bearing": true
     },
@@ -155,7 +155,7 @@
       "source_structure": "obligation",
       "relevant_fields_or_tokens": "typed id/status/owner/action/informational",
       "binding_rule_id": "§4,§6,§7.1",
-      "projection_input_derivation_or_disposition": "obligation candidate root and exact material fields",
+      "projection_input_derivation_or_disposition": "obligation candidate root and exact material fields; any required candidate-owned namespace outside the frozen set -> BINDING_HOLD/UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE",
       "provenance_ref_scope": "exact typed ref",
       "load_bearing": true
     },
@@ -171,7 +171,7 @@
       "source_structure": "decision_requirement",
       "relevant_fields_or_tokens": "typed id/status/history/decision-maker/reserved authority",
       "binding_rule_id": "§4,§6,§7.2",
-      "projection_input_derivation_or_disposition": "decision candidate root and exact material fields",
+      "projection_input_derivation_or_disposition": "decision candidate root and exact material fields; any required candidate-owned namespace outside the frozen set -> BINDING_HOLD/UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE",
       "provenance_ref_scope": "exact typed ref",
       "load_bearing": true
     },
@@ -267,7 +267,7 @@
       "source_structure": "intent",
       "relevant_fields_or_tokens": "typed id/status/consequential/objective/obligation",
       "binding_rule_id": "§4,§6,§7.3",
-      "projection_input_derivation_or_disposition": "unresolved-intent root only with exact unresolved effect; raw intent payload",
+      "projection_input_derivation_or_disposition": "unresolved-intent root only with exact unresolved effect; raw intent payload; exact-scoped applicability decision table; uncovered intent applicability shape -> BINDING_HOLD/UNMAPPED_INTENT_APPLICABILITY_SHAPE; any required candidate-owned namespace outside the frozen set -> BINDING_HOLD/UNMAPPED_CANDIDATE_ANCHOR_NAMESPACE",
       "provenance_ref_scope": "exact typed ref",
       "load_bearing": true
     },
