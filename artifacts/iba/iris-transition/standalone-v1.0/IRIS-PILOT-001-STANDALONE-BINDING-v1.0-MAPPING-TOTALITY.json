@@ -391,7 +391,7 @@
     ],
     "top_level_shape_variants": 1
   },
-  "totality_policy": "Every demonstrated top-level field, source envelope token, record type and transformation-relevant state has an explicit rule/disposition. Any demonstrated shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default.",
+  "totality_policy": "Every demonstrated top-level field, source envelope token, record type and transformation-relevant state has an explicit rule/disposition. Any demonstrated shape absent from this matrix fails BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE; no implicit default. PilotCandidate field presence/value/order is also total under pilot_candidate_totality; no decoder-owned optional field/default is discretionary.",
   "demonstrated_token_domains": {
     "envelope": {
       "objectives": {
@@ -1014,5 +1014,47 @@
       "EFFECT_REALITY_CONFLICT": 0,
       "SOURCE_IDENTITY_CONFLICT": 0
     }
+  },
+  "pilot_candidate_totality": {
+    "exact_property_insertion_order": [
+      "id",
+      "principal_id",
+      "objective_id?",
+      "obligation_id?",
+      "decision_requirement_id?",
+      "intent_id?",
+      "conflict_id?",
+      "obligation_status?",
+      "obligation_owner?",
+      "concrete_action_remaining?",
+      "decision_status?",
+      "decision_maker_identity_id?",
+      "reserved_authority_class?",
+      "authority_holder_identity_id?",
+      "valid_delegation?",
+      "escalation_required",
+      "unresolved_effect",
+      "material_conflict",
+      "informational_only",
+      "applicability",
+      "freshness",
+      "source_identity",
+      "provenance_refs",
+      "possible_duplicate_refs"
+    ],
+    "common_fields": {
+      "principal_id": "always AARON",
+      "escalation_required": "always false for replacement-E1 v0.4; no dedicated independent escalation record shape",
+      "unresolved_effect": "true only unresolved-intent root; otherwise false",
+      "material_conflict": "true only exact attached/conflict-only §9 conflict; otherwise false",
+      "informational_only": "exact obligation source boolean on obligation root; otherwise false",
+      "applicability": "always supplied; root-specific exact rule; conflict-only exact conflict-source applicability or UNKNOWN/HOLD",
+      "freshness": "always supplied; exact used evidence reduction UNKNOWN > STALE > CURRENT",
+      "source_identity": "always supplied; exact used evidence reduction CONFLICT > UNKNOWN > VERIFIED",
+      "provenance_refs": "always sorted unique exact typed source_refs actually used",
+      "possible_duplicate_refs": "always array; exact typed other-ref(s) only for unresolved duplicate; otherwise []",
+      "why": "PROHIBITED_BY_DESIGN / decoder never supplies"
+    },
+    "optional_fields": "omitted when not semantically applicable; null substitution prohibited except explicit UNKNOWN values represented by string fields"
   }
 }
