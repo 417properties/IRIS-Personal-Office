@@ -264,6 +264,55 @@ The demonstrated unresolved case therefore maps:
 
 If an unresolved intent/effect in this frozen population presents an exact-scoped applicability evidence shape not covered by the decision rule above, fail `BINDING_HOLD/UNMAPPED_INTENT_APPLICABILITY_SHAPE` rather than choose a value.
 
+### 7.4 Common candidate health and explicit field population
+
+Every produced PilotCandidate is constructed by ordered assignment. Optional fields that are not semantically applicable are omitted; null is never substituted unless this binding explicitly says UNKNOWN. The following fields are not Builder choices:
+
+- `principal_id="AARON"` for every admitted candidate.
+- `escalation_required=false` for replacement-E1 v0.4. This population contains no dedicated independent escalation record type. Material Aaron escalation is represented only through exact `material_conflict`, `unresolved_effect`, or reserved-authority fields; governance `escalation_target_identity_id` alone does not create a second AR-4 signal.
+- `unresolved_effect=true` only for §7.3 unresolved-intent roots; false for all other candidates.
+- `material_conflict=true` only when an exact §9 conflict is attached to that candidate or the candidate is the deterministic conflict-only root; false otherwise.
+- `informational_only` is the exact source boolean for obligation roots and false for decision/intent/conflict-only roots.
+- `applicability` is always supplied. Obligation/decision/intent roots use their exact root rule. A conflict-only root uses exact conflict-source applicability; if that applicability cannot be uniquely established, use UNKNOWN or fail the named source-shape HOLD—never default APPLICABLE.
+- `freshness` is always supplied from only the exact source envelopes/facts used by that candidate, reduced `UNKNOWN > STALE > CURRENT`.
+- `source_identity` is always supplied from only the exact source evidence used by that candidate, reduced `CONFLICT > UNKNOWN > VERIFIED`.
+- `provenance_refs` is always the UTF-8 byte-lexically sorted exact-deduped union of the original typed source_refs actually used to establish that candidate's fields. No binding/protocol/review URI may be invented as candidate provenance.
+- `possible_duplicate_refs` is always an array. It is empty unless the exact §9 unresolved-duplicate rule applies; then each affected obligation candidate receives the exact typed other-ref(s), sorted/deduped, with no payload stripping.
+- `why` is NEVER supplied by the decoder. The frozen candidate alone derives its fallback `why_aaron_required` from classification when needed.
+
+Candidate health must not be improved by ignoring a used source with UNKNOWN/STALE/CONFLICT state. PARTIAL surface evidence may support a positively established item only when the item's exact used facts are sufficient; it cannot justify a false COMPLETE/omission claim.
+
+### 7.5 Exact PilotCandidate property insertion order
+
+Because the frozen candidate computes a load-bearing digest with `JSON.stringify`, every candidate MUST be constructed in this exact insertion order:
+
+1. `id`
+2. `principal_id`
+3. `objective_id`, when applicable
+4. `obligation_id`, when applicable
+5. `decision_requirement_id`, when applicable
+6. `intent_id`, when applicable
+7. `conflict_id`, when applicable
+8. `obligation_status`, when applicable
+9. `obligation_owner`, when applicable
+10. `concrete_action_remaining`, when applicable
+11. `decision_status`, when applicable
+12. `decision_maker_identity_id`, when applicable
+13. `reserved_authority_class`, when nonnull/applicable
+14. `authority_holder_identity_id`, when reserved-authority classification is applicable
+15. `valid_delegation`, only when deterministically boolean
+16. `escalation_required`, always boolean
+17. `unresolved_effect`, always boolean
+18. `material_conflict`, always boolean
+19. `informational_only`, always boolean
+20. `applicability`
+21. `freshness`
+22. `source_identity`
+23. `provenance_refs`
+24. `possible_duplicate_refs`, always an array
+
+Any different property order, implicit omitted common field, inserted `why`, null-for-omitted substitution, or extra decoder-owned property fails `BINDING_HOLD/UNMAPPED_REPLACEMENT_E1_STRUCTURE` before buildProjection.
+
 ## 8. Authority, permission and delegation
 
 required_next_step never creates a root.
