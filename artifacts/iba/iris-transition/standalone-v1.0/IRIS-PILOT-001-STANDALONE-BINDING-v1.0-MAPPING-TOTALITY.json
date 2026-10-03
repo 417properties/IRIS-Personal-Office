@@ -16,6 +16,14 @@
   ],
   "rows": [
     {
+      "source_structure": "impact_packets",
+      "relevant_fields_or_tokens": "array of consequence source packets",
+      "binding_rule_id": "§2.1,§11",
+      "projection_input_derivation_or_disposition": "top-level collection is NOT_MAPPED_BY_DESIGN to ProjectionInput consequence semantics; individual impact_packet objects may be checked only for exact integrity/link validation under §11",
+      "provenance_ref_scope": "case/impact_packet_ref",
+      "load_bearing": true
+    },
+    {
       "source_structure": "source_requirements",
       "relevant_fields_or_tokens": "surface/required_principal_id/applicability_rule/freshness_rule/provenance_requirements",
       "binding_rule_id": "§2.1,§3",
