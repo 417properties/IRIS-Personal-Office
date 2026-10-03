@@ -4,15 +4,15 @@
   "repository": "417properties/IRIS-Personal-Office",
   "branch": "refs/heads/iba/iris-pilot001-standalone-v1-1-reconciled-5964996176",
   "base_commit": "9bd4355634935410c351c7814fb2b4b67bd06b36",
-  "content_commit": "b5049a2023883be80f2701f9c9e6d3f2203e61f3",
-  "content_tree": "bc6358da5d3888839530a9f5e904469e1f7786f8",
-  "prebuild_vector_sha256": "b5875e63a681bbbff5b31b02323897d7548cf84caabb25beb94565c89df752e7",
+  "content_commit": "07985f33daef26f84b94a881fc251987d1b61ac9",
+  "content_tree": "7f6724e73a6987803148430b597ba43e3384de71",
+  "prebuild_vector_sha256": "8edeb6ebd1aa058e70ad32aed319627158ec460f95795c47073dde0c012d3f35",
   "files": [
     {
       "name": "IRIS-PILOT-001-STANDALONE-EXECUTION-BINDING-v1.1.md",
-      "blob": "56ee5df7dc93205f65d1c4a4fc1edb4ddb1bb156",
-      "bytes": 20788,
-      "sha256": "af93c8c5d7aff31970dae786f1af9893e09e473b4b292f8ee316cf33cb5e5e27"
+      "blob": "6f6dcaa45737d33b4fc565a6ce5114b901c01a02",
+      "bytes": 21035,
+      "sha256": "18c629a76787496a83e51eeb6e095916ff5e04115a827ae4ae0a690e48d4cf3f"
     },
     {
       "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-DEPENDENCY-MANIFEST.json",
@@ -22,33 +22,33 @@
     },
     {
       "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-MAPPING-TOTALITY.json",
-      "blob": "dbd83dfb057b4b590c8a94c23e2ce64128d93a87",
-      "bytes": 8823,
-      "sha256": "175bbd740a0cfe42cd43e590ea4c3bdfacf71f890501a32509bd3681c58d1327"
+      "blob": "2e5bc901ee41d20ee4d6c00aaf45ac589d72cb4e",
+      "bytes": 9070,
+      "sha256": "d67b90e0bd84f51f7fb6803364c8a2fac8c9e4f7fec9fbb8a1ce13b2358b5044"
     },
     {
       "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-PREBUILD-INPUT-INDEX.json",
-      "blob": "a4c27e522c3026a6cd9c12c68a9f305e2f800bbe",
+      "blob": "acfb2fb317800f81333c1c17925701056b4b615b",
       "bytes": 8241,
-      "sha256": "2dc247dc353a56f43db740ac29a530ba9d82538688363cebcd951cdb04d7bde8"
+      "sha256": "5456dee2ad01c4e9d770ac621fc697c461ebfc2ac8483ec69774e5735a2eaae6"
     },
     {
       "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-STATIC-PREFLIGHT.json",
-      "blob": "6cd699c857b9af71e282d0610cad14bf2a8bbe78",
-      "bytes": 2593,
-      "sha256": "eacfd623e3437dd0293562629fe836040f1e0bfb7339ea70c2c41d5f33f10ee1"
+      "blob": "b76f4471fe42606ecae94d66c13054883334bdef",
+      "bytes": 2840,
+      "sha256": "3b8d88a5ab1fa8f459686b1b60baaefc98407ff1e0e849717aab533b58356166"
     },
     {
       "name": "IRIS-PILOT-001-STANDALONE-BINDING-v1.1-BUILDER-FALSIFIER-PACKET.md",
-      "blob": "5b0961ca8df3c6c2a537fc635197b4fd30bd8bcf",
-      "bytes": 4577,
-      "sha256": "a48c6a06026ea588b69444fe873f1dc78d21b9242fad6d95d12b3576a5f9ebf9"
+      "blob": "00a27108a2da802f8915bc97b20515ab1f185225",
+      "bytes": 4717,
+      "sha256": "7addb0261e2ff50470311abf27d37632a15e37a23c68111afe1a5e3e8d683869"
     },
     {
       "name": "MECHANICAL-VERIFIER-SPEC-v1.1.md",
-      "blob": "161935769a98abe1bff7f4ea525c6c2faa02f829",
+      "blob": "d562da2781730cd397f6bea763b30e40a813c1a9",
       "bytes": 4461,
-      "sha256": "326491f5d6151d83d20e4ef1e88fae06d0cb595b5471504cc080268bbb128e01"
+      "sha256": "5c142c8a465ef0b3d69adb497bd3439c4777b1252e9aceb4f6909d8e916bc463"
     }
   ],
   "verification": {
@@ -60,7 +60,9 @@
     "buildProjection_invoked": false,
     "labels_consumed": 0,
     "candidate_outputs_consumed": 0,
-    "scoring": false
+    "scoring": false,
+    "authority_unknown_candidate_roots": 2,
+    "current_state_conflict_id": "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613"
   },
   "disposition": "STANDALONE_BINDING_READY / DEPENDENCY_MANIFEST_COMPLETE / 40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES / PREBUILD_INPUT_VECTOR_FROZEN / FRESH_INDEPENDENT_ACCEPTANCE_REQUIRED"
 }
