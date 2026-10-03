@@ -1,0 +1,64 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.0-REVIEW-PACKAGE-INDEX",
+  "authority": "NONE",
+  "governing_release": "BIG-Navigator #703/5964996176",
+  "core_freeze_commit": "bb03640c127249daa313cc3fad7e19858b3ef063",
+  "core_freeze_tree": "53ad800dff063a1307d8186f65e48ebbab658a67",
+  "v0_6_merge_base": "9bd4355634935410c351c7814fb2b4b67bd06b36",
+  "normative_semantics_policy": "Only the standalone v1.0 binding plus exact semantic dependencies enumerated by its dependency manifest are normative. Historical v0.2-v0.6 bindings are provenance-only and must not reconstruct semantics.",
+  "review_transport_policy": "Reviewer fetches this index by exact content address from STRATA release, then fetches each core package object by exact blob or exact path at core_freeze_commit. Semantic dependencies are fetched only by exact addresses in the dependency manifest. No search, directory listing, commit/tree traversal, historical-binding traversal, tests, prior reviews, E2/E3, candidate outputs, or scoring artifacts.",
+  "package_files": [
+    {
+      "role": "standalone_binding",
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-EXECUTION-BINDING-v1.0.md",
+      "blob": "14f084d20c2b76f39fd534dcfa1bb808d52a511a",
+      "bytes": 40550,
+      "sha256": "2a4886e8c3f80c74366f274bea0bce1604e59a6ddab89b30c8b7b910d3b0b2bd"
+    },
+    {
+      "role": "semantic_dependency_manifest",
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-DEPENDENCY-MANIFEST.json",
+      "blob": "182c3fccc80742103ea46f5315c5b4f886acf188",
+      "bytes": 5425,
+      "sha256": "04dc2a12fe1c4897d98d066fe82f9ecb5511bce9c15c0e94f3d99aa2d843be34"
+    },
+    {
+      "role": "mapping_totality_matrix",
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-MAPPING-TOTALITY.json",
+      "blob": "7df1e646e59749d6b999919aeb2a9607492f98b1",
+      "bytes": 54965,
+      "sha256": "cf8654f8ad3ff8b8188cc8a63bb7086de75b04fafeee1362e7161840b0c957f6"
+    },
+    {
+      "role": "static_totality_preflight",
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-STATIC-TOTALITY-PREFLIGHT.json",
+      "blob": "e5bc5269c2c9e8e4c606147a08047261cd045e09",
+      "bytes": 11670,
+      "sha256": "5318ee6cc9af04ef1b1cfb5e84aaa1e21f0311897f2b1388f7701e718e8afdf3"
+    },
+    {
+      "role": "builder_falsifier_packet",
+      "path": "artifacts/iba/iris-transition/standalone-v1.0/IRIS-PILOT-001-STANDALONE-BINDING-v1.0-BUILDER-FALSIFIER-PACKET.md",
+      "blob": "5086b6f318d80f2d70a62e9a55edf92460253198",
+      "bytes": 12124,
+      "sha256": "0c1b8f41f4a69d024b5b35653b40554d2ea5faf026ebc49f55f6833a8d4c6a83"
+    }
+  ],
+  "semantic_dependency_count": 12,
+  "semantic_dependency_source": "package_files[role=semantic_dependency_manifest]",
+  "preflight_disposition": "40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES",
+  "required_reviewer_behavior": "Whole-object review. Return the COMPLETE SET of material binding falsifiers found in one pass; do not stop at first falsifier unless clean-room contamination requires retirement.",
+  "required_success_return": "STANDALONE_BINDING_READY / DEPENDENCY_MANIFEST_COMPLETE / 40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES / FRESH_INDEPENDENT_ACCEPTANCE_REQUIRED",
+  "restrictions": [
+    "NO_CANDIDATE_MUTATION",
+    "NO_E1_REGENERATION",
+    "NO_E2_RELABEL",
+    "NO_CANDIDATE_EXECUTION",
+    "NO_SCORING",
+    "NO_MERGE_DEPLOY",
+    "NO_PROVIDER_ACCESS",
+    "NO_IRIS_ADMISSION",
+    "CONTINUITY_DEFAULT_OFF",
+    "ZERO_AUTHORITY"
+  ]
+}
