@@ -1056,6 +1056,51 @@
           "obligation:c1805592acb24fb884c9ec909d348408"
         ]
       }
+    ],
+    "exact_conflicts": [
+      {
+        "case_id": "p1e1r4_3592698cabc744789906162b61657890",
+        "class": "INCOMPATIBLE_OBLIGATIONS",
+        "anchors": [
+          "instruction:209593c8008649b28329b14e62766d68",
+          "instruction:bf7abddd95bd48fcad6e6d742213599d",
+          "objective:083dabaa11c34e499a492c2381aef180",
+          "obligation:b3c3c67639594094abc930cc450fd274"
+        ],
+        "conflict_id": "conf_1678bc3ce4fd286e0889d69a1bb6f3c4efdcc4ad7e0e801c422b98abf3b46f86",
+        "attachment": [
+          "obligation:b3c3c67639594094abc930cc450fd274"
+        ]
+      },
+      {
+        "case_id": "p1e1r4_80ccea1138af42d8843eabe2a10fec66",
+        "class": "INCOMPATIBLE_CURRENT_STATE",
+        "anchors": [
+          "assertion:9f4a8b630cdc4067a81be6875ee05386",
+          "current_assertion:6f7e30c15ed84aa893f311aa237ce2be",
+          "objective:0a9cb6c1b78a4910aa3d5e21fa960f51",
+          "obligation:9902f0b12e9c4b20873e6e809e27d179"
+        ],
+        "conflict_id": "conf_4e885b98fa34f80966df5c9584f3b10db0117d61f791fedc38e28ecf7ffa6613",
+        "attachment": [
+          "CONFLICT_ONLY_ROOT"
+        ],
+        "reverse_link_attachment_forbidden": true
+      },
+      {
+        "case_id": "p1e1r4_ac08b94cee624ed7a450e17e3389a163",
+        "class": "POSSIBLE_DUPLICATE_UNRESOLVED",
+        "anchors": [
+          "objective:46b9bfe032724b97a46b202187d43cc6",
+          "obligation:af6abeb0cf104e19bf59b400088a90b7",
+          "obligation:c1805592acb24fb884c9ec909d348408"
+        ],
+        "conflict_id": "conf_d4ff9b505dcdbddfc874d18352b850524c188297ae3308a2510e3e3c2190429d",
+        "attachment": [
+          "obligation:af6abeb0cf104e19bf59b400088a90b7",
+          "obligation:c1805592acb24fb884c9ec909d348408"
+        ]
+      }
     ]
   },
   "pilot_candidate_totality": {
