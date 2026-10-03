@@ -125,9 +125,12 @@ F104 stale/superseded rule blocks must not coexist with canonical v1.0 rule bloc
 F105 load-bearing unknown classification roots are exactly 6: applicability UNKNOWN=3, authority-holder UNKNOWN=2, decision-maker UNKNOWN=1; the sets are disjoint.
 F106 OPEN decision case p1e1r4_40cad8d6ee7440a5bd0fe22d674f9db7 must preserve decision_maker_identity_id=UNKNOWN and reach the frozen candidate material-unknown path; it cannot be omitted or coerced.
 F107 all 84 candidates reproduce the published field census, including owner/decision-maker/status/boolean/freshness/source_identity/property-presence counts.
+F108 independent raw-source replay reports zero matrix/token/lifecycle/SourceEvaluation/candidate-census mismatches.
+F109 all three frozen conflict IDs reproduce exact SHA-256 preimages from their full anchor closures and class.
+F110 dependency manifest independently re-reads 12 exact objects with zero blob/byte/SHA-256 mismatches.
 
 ## Success
-All F001-F107 PASS and static preflight reports:
+All F001-F110 PASS and static preflight reports:
 `40_CASE_MAPPING_TOTALITY_PASS / ZERO_UNMAPPED_DEMONSTRATED_SHAPES`.
 
 Then return only to STRATA:
