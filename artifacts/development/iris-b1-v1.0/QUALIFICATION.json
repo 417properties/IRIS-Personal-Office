@@ -1,0 +1,33 @@
+{
+  "schema": "IRIS_B1_QUALIFICATION_V1",
+  "governing": "#703/5971539564",
+  "base": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+  "base_tree": "12f02f24323b66626c74b106f265bc719488097f",
+  "node": "v24.19.0",
+  "baseline": {
+    "tests": 178,
+    "pass": 178
+  },
+  "focused": {
+    "tests": 159,
+    "pass": 159
+  },
+  "full": {
+    "tests": 337,
+    "pass": 337,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "strict_kernel_typescript": "PASS",
+  "inherited_static_check": "PASS (17 tables / 6 migrations), structural only",
+  "qualification_network_guard": "fetch/http/https/net/tls disabled; zero blocked attempts",
+  "proof_status": "IMPLEMENTATION_AUTHORED_CONFORMANCE_NOT_INDEPENDENT_ORACLE",
+  "provider_writes": 0,
+  "credential_generation": 0,
+  "deployments": 0,
+  "continuity_mutations": 0,
+  "E1_mutations": 0,
+  "historical_source_changes": 0,
+  "gate": "STRATA_RECONCILIATION_REQUIRED"
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "IRIS_B1_DELTA_V1",
+  "base": "dbde4cea846fa9c7c8a4ad7094f360db318eb292",
+  "base_tree": "12f02f24323b66626c74b106f265bc719488097f",
+  "entries": [
+    {
+      "path": "artifacts/development/iris-b1-v1.0/B1-CONTRACT-MAPPING-AND-B2-PLAN.md",
+      "bytes": 9845,
+      "blob": "c2303a24674723f29ec1e3ded04404bccfb310bb",
+      "sha256": "3c05a0ca228d5374ce7e97d26da97010565d5e6321f1a61bbe9306065fb52863"
+    },
+    {
+      "path": "artifacts/development/iris-b1-v1.0/BASELINE-REGRESSION.tap",
+      "bytes": 13380,
+      "blob": "b8dd9960f20a32c8fdd1cefcb3821c3251769ce7",
+      "sha256": "c3541aebe31a509232f966c6813faa3edec7e5339eaa6db74aa17f498fdb07dc"
+    },
+    {
+      "path": "artifacts/development/iris-b1-v1.0/CALLER-INVENTORY.txt",
+      "bytes": 12451,
+      "blob": "78be0de13d1aed2b2d36b8d16ab9311c9961660f",
+      "sha256": "f479e3771cd8c6742d9f5778bfb2ff7ec7cf039c68a59d70d5590b24f9a9811e"
+    },
+    {
+      "path": "artifacts/development/iris-b1-v1.0/FOCUSED-CONFORMANCE.tap",
+      "bytes": 11204,
+      "blob": "875bd2d0fe868eaa1428a6b6eed18aba10b94775",
+      "sha256": "83e61b80540d396d2bd9b0c8521e0a8a0f6c1b0ec5a3ad7420114d14629be195"
+    },
+    {
+      "path": "artifacts/development/iris-b1-v1.0/FULL-REGRESSION.tap",
+      "bytes": 24461,
+      "blob": "0be4e09b604ab4eae6ed8f06213e70d1bc5543dd",
+      "sha256": "2d5812005b6c02c38690a06ee9ffb6fc81d3669094cc0f97ca171f3fab0da3d4"
+    },
+    {
+      "path": "artifacts/development/iris-b1-v1.0/QUALIFICATION.json",
+      "bytes": 918,
+      "blob": "9fdac4899fb7d9dba2a01ec1b899e7edd7cb210a",
+      "sha256": "a098f42396e2cd801a83700e2b9ed40ae7bb1b51b432136c515435f913b7db7a"
+    },
+    {
+      "path": "src/semantic-kernel/continuation.ts",
+      "bytes": 1511,
+      "blob": "3057e5b838d322dc92bb2fc7a1d843000c700ccf",
+      "sha256": "994a3a20e781ef30fbb8da56cb2820c6c7a50f2675d65d7d6292f1277183c4d0"
+    },
+    {
+      "path": "src/semantic-kernel/epistemic.ts",
+      "bytes": 6194,
+      "blob": "5b537a96b3442960157ff625a0918d8476b2baf3",
+      "sha256": "0cb431c8ffa741394465f09f11b7a4982cecb13e13676fec5ca64d9a4ed669e6"
+    },
+    {
+      "path": "src/semantic-kernel/identity.ts",
+      "bytes": 4445,
+      "blob": "296e8e80c5e0e0182f674d2d285e2adffc0f5c7d",
+      "sha256": "5027f61f65db2570f7b4bad7722e10adc0bac5a54e84224ab9b3a3cab1cb03ba"
+    },
+    {
+      "path": "src/semantic-kernel/index.ts",
+      "bytes": 231,
+      "blob": "61f8c0a4faa2440c81d6f9469ad8833fafefb003",
+      "sha256": "7f625c665896087b2026415982d288d0b66361ba7493c5efad6f89ff139565d9"
+    },
+    {
+      "path": "src/semantic-kernel/lifecycle.ts",
+      "bytes": 8441,
+      "blob": "975e4e08e3fad3cacc50bdc22336ae5bd65eeb76",
+      "sha256": "b988367e094528bfabc13fc1670f149932c26da1099ef9e1daa455157a179e15"
+    },
+    {
+      "path": "src/semantic-kernel/representation.ts",
+      "bytes": 4079,
+      "blob": "245b571de8b2a6d2da4cd3d44934a4de320799e0",
+      "sha256": "292c204c52c850c1c1af63742700a4229a084c02b1f46af4d044aad18a05f438"
+    },
+    {
+      "path": "src/semantic-kernel/temporal.ts",
+      "bytes": 2123,
+      "blob": "d2e7f7e7631ce032ab857680d7d473b1ceaea630",
+      "sha256": "89157c1250cc98958acd61dd90ad952f4fe317f922f11f5a9540cc703c7e6527"
+    },
+    {
+      "path": "src/semantic-kernel/validation.ts",
+      "bytes": 2350,
+      "blob": "ead05d1770f0cebd112f59d4b2e6c7e40d9c9d9f",
+      "sha256": "fc96ce2241e922c3660c21533e2b7f172b2edf7fa78db960619ccd138eaa6e2e"
+    },
+    {
+      "path": "tests/semantic-kernel/kernel.test.ts",
+      "bytes": 18648,
+      "blob": "012aa05ada4e5fc37da453d0cb96ef46fbdad9ab",
+      "sha256": "f87a234f482fa02d4b175b493db965b742e107c2cfaeffc1898c538048677655"
+    }
+  ],
+  "manifest_self_excluded": true,
+  "bytes": 120281,
+  "changed_old_files": 0,
+  "publication": "immutable commit/tree/blobs; branch local only; no ref or PR with deployment side effects"
+}

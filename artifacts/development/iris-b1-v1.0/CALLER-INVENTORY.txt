@@ -1,0 +1,67 @@
+src/runtime/orient.ts:4:  orientation_id:string;
+src/runtime/orient.ts:5:  orientation_version:number;
+src/runtime/orient.ts:15:export function orient(repo:CanonicalRepository, principalId:string): OrientationEnvelope {
+src/runtime/orient.ts:16:  const orientation=[...repo.orientations.values()].filter(o=>o.principal_id===principalId && !o.effective_to).sort((a,b)=>b.version-a.version)[0];
+src/runtime/orient.ts:17:  if (!orientation) throw new Error('ORIENTATION_MISSING');
+src/runtime/orient.ts:20:    orientation_id:orientation.orientation_id,
+src/runtime/orient.ts:21:    orientation_version:orientation.version,
+src/runtime/orient.ts:23:    explicit_decision_scopes:orientation.explicit_current_decisions.map(x=>x.key),
+src/runtime/orient.ts:24:    standing_preference_keys:orientation.standing_preferences.map(x=>x.key),
+src/runtime/orient.ts:25:    predicted_preference_keys:orientation.predicted_preferences.map(x=>x.key),
+src/runtime/orient.ts:26:    privacy_constraints:[...orientation.privacy_constraints],
+src/runtime/orient.ts:27:    authority_constraints:[...orientation.authority_constraints],
+src/runtime/episode-controller.ts:3:export function claimContinuation(repo:CanonicalRepository, episode:WorkEpisode): void {
+src/runtime/iris-workflow.ts:2:import { orient } from './orient.ts';
+src/runtime/iris-workflow.ts:5:import { evaluateAuthority } from '../domain/authority.ts';
+src/runtime/iris-workflow.ts:10:import { verifyFixtureEffect } from '../tools/verification.ts';
+src/runtime/iris-workflow.ts:15:export async function runBoundedCircuit(args:{
+src/runtime/iris-workflow.ts:22:  const orientation=orient(args.repo,args.principalId);
+src/runtime/iris-workflow.ts:25:  const auth=evaluateAuthority([...args.repo.authorityPolicies.values()],args.contract.authority_scope,args.now,orientation.explicit_decision_scopes);
+src/runtime/iris-workflow.ts:32:  const verification=verifyFixtureEffect(args.intent,receipt,args.fixtureRead(),args.expectedEffect);
+src/runtime/iris-workflow.ts:48:  return {status:verification.disposition==='VERIFIED_EFFECT'?'EPISODE_CLOSED':'OBJECTIVE_REMAINS_OPEN',orientation,perception,thought,receipt,verification,learning};
+src/tools/verification.ts:5:export function verifyFixtureEffect(intent:ActionIntent,receipt:ActionReceipt,actual:unknown,expected:unknown):EffectVerification {
+src/tools/tool-contract.ts:19:export function retryDisposition(retryClass:RetryClassification,effect:'VERIFIED_EFFECT'|'VERIFIED_NO_EFFECT'|'AMBIGUOUS_EFFECT'|'CONFLICT'|'UNKNOWN'): 'RETRY_ALLOWED'|'NO_RETRY'|'RECONCILE_FIRST'|'HOLD' {
+src/domain/work-episode.ts:18:  orientation_version_at_start: number;
+src/domain/orientation.ts:9:  orientation_id: string;
+src/domain/orientation.ts:20:  supersedes_orientation_id?: string;
+src/domain/authority.ts:18:export function evaluateAuthority(
+src/domain/capability-procedure.ts:2:  capability_id: string;
+src/domain/capability-procedure.ts:5:  capability_class: string;
+src/state/continuity-admission.ts:6:  requires_reorient:boolean;
+src/state/continuity-admission.ts:17:  if (unresolved.size) return {admitted:false,reason:'RECONCILIATION_REQUIRED',requires_reorient:true,unresolved_effect_intent_ids:[...unresolved],open_obligation_ids:open,state_version:projection.state_version};
+src/state/continuity-admission.ts:19:  return {admitted:true,reason:changed?'ADMITTED_REORIENT_REQUIRED':'ADMITTED_CLEAN',requires_reorient:changed,unresolved_effect_intent_ids:[],open_obligation_ids:open,state_version:projection.state_version};
+src/state/repository.ts:2:import type { OrientationState } from '../domain/orientation.ts';
+src/state/repository.ts:7:import type { CapabilityProcedure } from '../domain/capability-procedure.ts';
+src/state/repository.ts:21:  orientations: Map<string, OrientationState>;
+src/state/repository.ts:42:  orientations = new Map<string, OrientationState>();
+src/state/repository.ts:65:  publishCurrent(value: CurrentAssertion): void {
+src/state/repository.ts:91:    orientations: map(repo.orientations),
+src/state/repository.ts:115:  repo.orientations=load(x.orientations);
+src/agent-transition/sentinel.ts:1:import {validateLease,type AuthorityLease,type LeaseContext} from './authority-lease.ts';
+src/agent-transition/sentinel.ts:6:export async function validateAndRelease(attempt:ReleaseAttempt,lease:AuthorityLease,ctx:LeaseContext,adapter:FakeEffectAdapter):Promise<ReleaseAttempt>{ const v=validateLease(lease,ctx); if(!v.valid)return {...attempt,status:'DENIED',denial_reason:v.reason}; const r=await adapter.submit(attempt); return r.kind==='SUBMITTED'?{...attempt,status:'RELEASED_SUBMITTED',provider_call_id:r.provider_call_id}:{...attempt,status:'RECONCILIATION_REQUIRED'}; }
+src/agent-transition/sentinel.ts:7:export function recoverPreparedAttempt(attempt:ReleaseAttempt,knownReceipt:boolean):ReleaseAttempt { if(attempt.status!=='PREPARED')return structuredClone(attempt); return knownReceipt?{...attempt,status:'RELEASED_SUBMITTED'}:{...attempt,status:'RECONCILIATION_REQUIRED'}; }
+src/agent-transition/pilot001-classifier.ts:42:export function classifyAaron(c:PilotCandidate):{classes:ARClass[];unknown:boolean;omittable:boolean}{
+src/agent-transition/workflow-durability.ts:3:export function resumeDisposition(c:WorkflowCheckpoint,replacementWorkerId?:string){if(c.checkpoint_class!=='QUALIFIED_WORKFLOW'||!c.resumable)return 'HOLD_UNQUALIFIED_CHECKPOINT';if(c.unresolved_effect_refs.length)return 'RECONCILIATION_REQUIRED';if(c.effect_class==='EFFECTFUL'&&!['READ_ONLY_SAFE'].includes(c.replay_class))return 'NO_AUTOMATIC_REPLAY';return replacementWorkerId&&replacementWorkerId===c.worker_identity_id?'HOLD_REPLACEMENT_IDENTITY_REQUIRED':'RESUME_ZERO_EFFECT';}
+src/agent-transition/transition-repository.ts:3:import { buildProjection } from './pilot001-projection.ts';
+src/agent-transition/transition-repository.ts:40:export type ProjectionInput = Parameters<typeof buildProjection>[0];
+src/agent-transition/transition-repository.ts:100:      return buildProjection({...input,bracket:'STABLE'});
+src/agent-transition/transition-repository.ts:107:      return buildProjection({...input,bracket:'RERUN_STABLE'});
+src/agent-transition/transition-repository.ts:109:    return buildProjection({...input,bracket:'UNSTABLE'});
+src/agent-transition/capability-router.ts:1:import {isRouteEligible,type CapabilityQualification} from './capability-qualification.ts';
+src/agent-transition/identity.ts:3:export interface WorkerProfile { worker_identity_id:string; sponsor_identity_id:string; declared_purpose:string; worker_class:string; capability_class:string; authority_envelope:string[]; privacy_envelope:string[]; credential_boundary_ref:string; provider_binding_id?:string; audit_lineage:string[]; activated_at:string; expires_at?:string; revocation_generation:number; status:'ACTIVE'|'EXPIRED'|'REVOKED'|'REPLACED'; predecessor_worker_identity_id?:string; successor_worker_identity_id?:string; version:number; }
+src/agent-transition/portable-procedure.ts:1:export interface PortableProcedure{procedure_id:string;qualified:boolean;retired_at?:string;supersedes_capability_id?:string;provider_compatibility:string[];tool_refs:string[];}
+src/agent-transition/authority-lease.ts:2:export interface AuthorityGeneration { authority_domain_id:string; principal_id:string; capability_id:string; operation_scope:string; privacy_scope_digest:string; current_generation:number; authority_policy_id:string; authority_policy_version:number; privacy_policy_id:string; privacy_policy_version:number; version:number; }
+src/agent-transition/authority-lease.ts:3:export interface AuthorityLease { lease_id:string; principal_id:string; iris_identity_id:string; worker_identity_id:string; work_episode_id:string; causal_episode_id:string; authority_domain_id:string; capability_id:string; tool_id:string; operation_scope:string; privacy_scope:string[]; authority_policy_id:string; authority_policy_version:number; privacy_policy_id:string; privacy_policy_version:number; authority_generation:number; issued_at:string; expires_at?:string; state:'ACTIVE'|'REVOKED'|'EXPIRED'|'SUPERSEDED'; basis_refs:string[]; }
+src/agent-transition/authority-lease.ts:4:export interface LeaseContext { principal_id:string; iris_identity_id:string; worker:AgentIdentity; worker_profile:WorkerProfile; work_episode_id:string; causal_episode_id:string; capability_id:string; tool_id:string; operation_scope:string; privacy_scope:string[]; generation:AuthorityGeneration|null; unresolved_effect:boolean; unknown:boolean; now:string; }
+src/agent-transition/authority-lease.ts:5:export function validateLease(lease:AuthorityLease,ctx:LeaseContext):{valid:boolean;reason:string}{ if(ctx.unknown||!ctx.generation)return {valid:false,reason:'HOLD_UNKNOWN_AUTHORITY'}; if(lease.state!=='ACTIVE')return {valid:false,reason:'LEASE_NOT_ACTIVE'}; if(lease.expires_at&&lease.expires_at<ctx.now)return {valid:false,reason:'LEASE_EXPIRED'}; if(ctx.worker.retired_at||ctx.worker_profile.status!=='ACTIVE')return {valid:false,reason:'WORKER_INVALID'}; const exact=lease.principal_id===ctx.principal_id&&lease.iris_identity_id===ctx.iris_identity_id&&lease.worker_identity_id===ctx.worker.identity_id&&lease.work_episode_id===ctx.work_episode_id&&lease.causal_episode_id===ctx.causal_episode_id&&lease.capability_id===ctx.capability_id&&lease.tool_id===ctx.tool_id&&lease.operation_scope===ctx.operation_scope&&lease.authority_domain_id===ctx.generation.authority_domain_id&&lease.authority_generation===ctx.generation.current_generation&&lease.authority_policy_id===ctx.generation.authority_policy_id&&lease.authority_policy_version===ctx.generation.authority_policy_version&&lease.privacy_policy_id===ctx.generation.privacy_policy_id&&lease.privacy_policy_version===ctx.generation.privacy_policy_version&&JSON.stringify([...lease.privacy_scope].sort())===JSON.stringify([...ctx.privacy_scope].sort()); if(!exact)return {valid:false,reason:'LEASE_BINDING_MISMATCH'}; if(ctx.unresolved_effect)return {valid:false,reason:'EFFECT_RECONCILIATION_REQUIRED'}; return {valid:true,reason:'VALID'}; }
+src/agent-transition/authority-lease.ts:8:export function issueLease(lease:AuthorityLease,ctx:LeaseContext):AuthorityLease { if(ctx.worker.retired_at||ctx.worker_profile.status!=='ACTIVE')throw new Error('WORKER_NOT_ELIGIBLE'); if(!ctx.generation||ctx.unknown)throw new Error('AUTHORITY_UNKNOWN'); if(lease.authority_generation!==ctx.generation.current_generation)throw new Error('STALE_GENERATION'); return structuredClone(lease); }
+src/agent-transition/capabilities.ts:1:import type {CanonicalRepository} from '../state/repository.ts';import {getObjectives,getOpenObligations} from './persistent-objective-runtime.ts';import {buildProjection} from './pilot001-projection.ts';
+src/agent-transition/capabilities.ts:4:export const get_aaron_required_items=buildProjection;
+src/agent-transition/pilot001-projection.ts:2:import {classifyAaron,interventionFor,interventionForResolution,sameCanonicalIntervention} from './pilot001-classifier.ts';
+src/agent-transition/pilot001-projection.ts:3:import {evaluateCoverage,justifiedOmission} from './pilot001-coverage.ts';
+src/agent-transition/pilot001-projection.ts:86:export function buildProjection(input:{candidates:PilotCandidate[];sources:SourceEvaluation[];conflicts:string[];privacyExcluded:string[];bracket:'STABLE'|'RERUN_STABLE'|'UNSTABLE';started_at:string;emitted_at:string}):PilotProjection{
+src/agent-transition/pilot001-projection.ts:87:  const state=evaluateCoverage(input.sources,input.candidates,input.conflicts,input.bracket);
+src/agent-transition/pilot001-projection.ts:91:    const r=classifyAaron(c);
+src/agent-transition/pilot001-coverage.ts:42:export function evaluateCoverage(sources:SourceEvaluation[],candidates:PilotCandidate[],materialConflicts:string[],bracket:'STABLE'|'RERUN_STABLE'|'UNSTABLE'):CoverageState {
+src/agent-transition/capability-qualification.ts:1:export interface CapabilityQualification{qualification_id:string;capability_candidate_id:string;role_scope:string;evaluation_population_ref:string;comparator_qualification_ref?:string;dimensions:string[];evidence_refs:string[];falsifier_refs:string[];evaluation_result:'PASS'|'FAIL'|'UNKNOWN';admission_state:'CANDIDATE'|'ADMITTED'|'REJECTED'|'DEMOTED'|'EXPIRED';qualified_at?:string;valid_until?:string;version:number;benchmark_only?:boolean;}
+src/agent-transition/persistent-objective-runtime.ts:15:export function reconstructRuntime(repo:CanonicalRepository){
