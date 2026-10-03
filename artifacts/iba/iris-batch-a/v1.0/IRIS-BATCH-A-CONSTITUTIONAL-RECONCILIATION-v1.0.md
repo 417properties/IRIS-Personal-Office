@@ -158,6 +158,26 @@ Non-collapse:
 
 No hidden chain-of-thought persistence is required. Qualification tests observable reasoning products: option coverage, calibration, evidence use, frame challenge, causal understanding, tradeoffs, justified reframing and outcome reconciliation.
 
+Executive doctrine -> architecture traceability:
+
+| Doctrine | Primary constitutional surfaces | Observable falsifier |
+|---|---|---|
+| seek to understand / referent first | A1, Executive, Filtration | action/judgment emitted with unresolved referent or missing evidence basis |
+| fact vs inference vs prediction | A1, Temporal | inference promoted as fact or future-known evidence leaks into as-of state |
+| false-problem / frame challenge | Executive, A5 objective stewardship | system optimizes current plan despite evidence it no longer serves objective |
+| broaden option architecture | Executive, BIRE | only supplied options considered where source permits materially distinct alternative |
+| causal vs symptom reasoning | Executive, D01-D20 recurrence controls | surface patch leaves same mechanism in adjacent caller |
+| second-order / opportunity-cost | BIRE, Executive | decision ignores material resource/reversibility/optionality constraint |
+| preserve uncertainty | A1 | underdetermined evidence forced into known positive/negative disposition |
+| simplify after proof | Distillation, Proof Semantics | architecture removes capability/uncertainty/evidence seam merely to reduce machinery |
+| Aaron as referent | A2/A5, Executive | provider/worker objective substitutes for Aaron objective |
+| reasoning != authority | A3 | reasoning confidence/capability grants release authority |
+
+Executive falsifier set:
+inadequate frame not challenged; materially better option outside supplied set omitted; mechanism confused with symptom; plan-objective divergence ignored; resource tradeoff absent; uncertainty forced to certainty; mode/provider switch changes governing judgment semantics; reasoning product invents authority.
+
+Distillation proof: all observable capabilities above remain expressible after duplicate reducers/services are removed.
+
 ---
 
 # 3. Transition-Filtration Constitution
@@ -303,14 +323,19 @@ a phase matures when capability becomes reliable/reusable/economical/integrated/
 
 Maturity is a vector. Overall phase = minimum earned phase across mandatory dimensions for that phase; leading edges are preserved but cannot launder weak mandatory dimensions.
 
-Mandatory dimension families:
-IEF-1 evidence/Current/perception/nervous/function-state;
-IEF-2 calibration/situation/causal/uncertainty/frame/BIRE;
-IEF-3 orchestration/routing/context/delegation/episodes/reconciliation/authority;
-IEF-4 option/scenario/objective/opportunity-threat/second-order/optionality/resource/judgment;
-IEF-5 causal learning/falsifiers/retention/transfer/procedures/qualification/regression;
-IEF-6 value per metabolism/recovered Aaron burden/reuse/friction/opportunity;
-IEF-7 frontier discovery/candidates/experimentation/qualification/adoption/distillation/rollback/evolution economics.
+Mandatory phase-dimension matrix:
+
+| Phase | Mandatory dimensions at phase claim |
+|---|---|
+| IEF-1 Awareness / Perception | principal/referent identity; evidence/provenance; Current/as-of; selective perception/privacy; Nervous-System observation/circulation; Functional Perception; UNKNOWN/coverage |
+| IEF-2 Intelligence / Understanding | all IEF-1 floor + calibration; situation model; causal understanding; fact/inference/prediction separation; frame challenge; uncertainty; relational context; BIRE interpretation |
+| IEF-3 Coordination / Orchestration | all IEF-2 floor + worker/substrate identity; eligible routing; context projection; delegation/authority envelopes; Work Episodes/continuation; reconciliation; foreground/background coordination |
+| IEF-4 Navigation / Executive Judgment | all IEF-3 floor + option/scenario architecture; objective stewardship; opportunity/threat; second-order effects; reversibility/optionality; relationship consequence; resource arbitration; judgment/reframing |
+| IEF-5 Learning / Adaptation | all IEF-4 floor + causal experience identity; lesson basis/falsifiers; retention/transfer; portable procedure/skill qualification; negative-transfer/regression controls; empirical capability frontier |
+| IEF-6 Intelligence Leverage / Capitalization | all IEF-5 floor + Personal-BIRE value/metabolism evidence; Aaron burden reduction; capability reuse/substitution; friction/reconstruction reduction; opportunity capture; development economics |
+| IEF-7 Governed Evolutionary Maturation | all IEF-6 floor + frontier discovery; bounded candidate generation; independent qualification; adoption/substitution; distillation; rollback/retirement; evolution economics; self-observation without self-certification |
+
+Leading-edge capabilities are recorded separately and may help close lower dimensions, but cannot lift the phase floor.
 
 No present IEF phase claim is created by Batch A.
 
@@ -372,16 +397,19 @@ Architecture does not itself close the implementation/qualification defects.
 
 # 11. Source / Intent / Blueprint Precedence Matrix
 
-Order:
-1 Founder/IRIS intent + explicit Founder clarifications.
-2 accepted Architecture Closure/C0-C6/C0-C3/Transition semantic lineage in earned scope.
-3 sealed DEEP audit current falsification.
-4 preserved candidate-free replacement E1 absent new source-backed falsifier.
-5 STRATA Batch-A releases/amendments/control route.
+Precedence matrix:
+
+| Source class | Governs | May supersede | May not do |
+|---|---|---|---|
+| Founder/IRIS founding intent + explicit Founder clarification | North Star, institutional policy, Personal-Office capability intent, named constitutional semantics | earlier unresolved Founder-design gaps | retroactively turn implementation/test behavior into intent without explicit clarification |
+| accepted Architecture Closure/C0-C6/C0-C3/Transition lineage | source-supported semantic architecture in earned scope | older architecture when explicit accepted delta exists | outrank later Founder clarification or current falsification of implementation/qualification |
+| sealed Full-System DEEP audit | current falsification, defect mechanisms, salvage boundary | broad qualification assumptions contradicted by evidence | erase founding intent or preserved narrow evidence outside falsified claim |
+| frozen replacement E1 | candidate-free evaluation population/structure/identity | prior E1 for evaluation where STRATA already superseded it | define IRIS constitution or repaired candidate semantics |
+| STRATA Batch-A release/amendments/control route | current task boundary, reconciled Founder clarifications, required return | prior task-index routing | invent implementation semantics contrary to source evidence |
 
 Later Founder clarification resolves earlier gaps (e.g. IEF phase model).
-Audit falsification can invalidate broad implementation/qualification claims but does not erase intent.
-Tests/current implementation/Pilot cannot redefine constitution.
+Audit falsification narrows/invalidates broad implementation or proof claims without erasing source intent.
+Tests/current implementation/Pilot are evidence/objects under this hierarchy; they cannot redefine the constitution.
 
 Key refs:
 #5966245144 audit;
@@ -544,22 +572,111 @@ Integration requires B0-B6 + independently derived Batch-C oracle before one who
 
 # 19. Exact Impacted Source / Schema / Test / Caller Surfaces
 
-Pilot/projection D01-D04,D15:
-`src/agent-transition/pilot001-types.ts`, classifier, coverage, projection, transition-repository, capabilities, migration 006, classification/coverage/concurrency/repository/post-E3 tests.
+The sealed audit source inventory defines the Batch-B **impact-adjudication set** below. Inclusion means the repair owner must classify each surface as changed, adapter-affected, caller-affected, proof-affected, or verified-unaffected; it does not mean every file must be edited.
 
-Authority/effect D05-D08,D13-D14:
-`src/runtime/orient.ts`, domain authority/privacy, `runtime/iris-workflow.ts`, act, action-intent/action-receipt/effect-verification, tools verification/adapter/contract, authority-lease/identity/sentinel, migrations 003/005, authority/circuit/effect-retry/lease/sentinel tests.
+## SQL / schema surfaces
 
-Persistence D09-D12,D15-D16:
-continuity-admission, persistent-objective-runtime, postgres-repository/projections/migrations, episode-controller, workflow-durability, migrations 001+episode/continuity, reconstruction/fresh-process/continuity/workflow tests.
+- candidate/db/migrations/001_iris_core.sql
+- candidate/db/migrations/002_work_episode.sql
+- candidate/db/migrations/003_action_effect.sql
+- candidate/db/migrations/004_instrumentation.sql
+- candidate/db/migrations/005_agent_transition_identity_authority.sql
+- candidate/db/migrations/006_pilot001_projection.sql
 
-Capability/perception/learning D17-D19:
-capability-qualification/router/portable-procedure, cognition-router, selective-perception/ambient-ingress, IEF/BIRE/tracing, learn, BIG delta/continuity/voice ports and associated routing/provider/perception tests.
+## Source / caller surfaces
 
-D20:
-all historical test summaries/checkers/binding/preflight receipts only within explicit scoped evidence.
+- candidate/src/agent-transition/ambient-ingress.ts
+- candidate/src/agent-transition/authority-lease.ts
+- candidate/src/agent-transition/capabilities.ts
+- candidate/src/agent-transition/capability-qualification.ts
+- candidate/src/agent-transition/capability-router.ts
+- candidate/src/agent-transition/identity.ts
+- candidate/src/agent-transition/persistent-objective-runtime.ts
+- candidate/src/agent-transition/pilot001-classifier.ts
+- candidate/src/agent-transition/pilot001-coverage.ts
+- candidate/src/agent-transition/pilot001-metrics.ts
+- candidate/src/agent-transition/pilot001-projection.ts
+- candidate/src/agent-transition/pilot001-types.ts
+- candidate/src/agent-transition/portable-procedure.ts
+- candidate/src/agent-transition/research-worker.ts
+- candidate/src/agent-transition/selective-perception.ts
+- candidate/src/agent-transition/sentinel.ts
+- candidate/src/agent-transition/transition-repository.ts
+- candidate/src/agent-transition/workflow-durability.ts
+- candidate/src/domain/action-intent.ts
+- candidate/src/domain/action-receipt.ts
+- candidate/src/domain/authority.ts
+- candidate/src/domain/capability-procedure.ts
+- candidate/src/domain/current-assertion.ts
+- candidate/src/domain/effect-verification.ts
+- candidate/src/domain/evidence-occurrence.ts
+- candidate/src/domain/learning-record.ts
+- candidate/src/domain/objective.ts
+- candidate/src/domain/obligation.ts
+- candidate/src/domain/orientation.ts
+- candidate/src/domain/principal.ts
+- candidate/src/domain/privacy.ts
+- candidate/src/domain/work-episode.ts
+- candidate/src/instrumentation/ief-events.ts
+- candidate/src/instrumentation/personal-bire.ts
+- candidate/src/instrumentation/tracing.ts
+- candidate/src/interop/big-delta-envelope.ts
+- candidate/src/interop/big-delta-quarantine.ts
+- candidate/src/interop/persistent-continuity-port.ts
+- candidate/src/interop/voice-ingress-port.ts
+- candidate/src/platform/managed-capabilities.ts
+- candidate/src/runtime/act.ts
+- candidate/src/runtime/cognition-router.ts
+- candidate/src/runtime/episode-controller.ts
+- candidate/src/runtime/iris-workflow.ts
+- candidate/src/runtime/learn.ts
+- candidate/src/runtime/orient.ts
+- candidate/src/runtime/perceive.ts
+- candidate/src/runtime/think.ts
+- candidate/src/state/continuity-admission.ts
+- candidate/src/state/migrations.ts
+- candidate/src/state/postgres-repository.ts
+- candidate/src/state/projections.ts
+- candidate/src/state/repository.ts
+- candidate/src/tools/action-fixture-adapter.ts
+- candidate/src/tools/mcp-adapter.ts
+- candidate/src/tools/tool-contract.ts
+- candidate/src/tools/tool-registry.ts
+- candidate/src/tools/verification.ts
 
-Repair all callers sharing the mechanism, not just cited files.
+## Test / proof surfaces
+
+- candidate/tests/agent-transition/ambient.test.ts
+- candidate/tests/agent-transition/authority-lease.test.ts
+- candidate/tests/agent-transition/big-separation.test.ts
+- candidate/tests/agent-transition/capability-qualification.test.ts
+- candidate/tests/agent-transition/capability-router.test.ts
+- candidate/tests/agent-transition/identity.test.ts
+- candidate/tests/agent-transition/persistent-objective-runtime.test.ts
+- candidate/tests/agent-transition/pilot001-classification.test.ts
+- candidate/tests/agent-transition/pilot001-concurrency.test.ts
+- candidate/tests/agent-transition/pilot001-coverage.test.ts
+- candidate/tests/agent-transition/pilot001-metrics.test.ts
+- candidate/tests/agent-transition/pilot001-post-e3-repair.test.ts
+- candidate/tests/agent-transition/pilot001-repository-bracket.test.ts
+- candidate/tests/agent-transition/portable-procedure.test.ts
+- candidate/tests/agent-transition/research-worker.test.ts
+- candidate/tests/agent-transition/selective-perception.test.ts
+- candidate/tests/agent-transition/sentinel.test.ts
+- candidate/tests/agent-transition/workflow-durability.test.ts
+- candidate/tests/authority-privacy/authority-privacy.test.ts
+- candidate/tests/big-separation/big-separation.test.ts
+- candidate/tests/circuit/circuit.test.ts
+- candidate/tests/domain/domain.test.ts
+- candidate/tests/failure/continuity.test.ts
+- candidate/tests/failure/effect-retry.test.ts
+- candidate/tests/helpers.ts
+- candidate/tests/provider-substitution/provider-substitution.test.ts
+- candidate/tests/reconstruction/fresh-process.test.ts
+- candidate/tests/reconstruction/reconstruction.test.ts
+
+Batch B must produce a disposition for every item above and prove all public/material callers of repaired invariants use the shared constitutional contract. No file is exempt merely because its historical tests are green.
+
 
 ---
 
