@@ -1,0 +1,115 @@
+{
+  "artifact": "IRIS-PILOT-001-STANDALONE-BINDING-v1.0-DEPENDENCY-MANIFEST",
+  "authority": "NONE",
+  "semantic_dependency_policy": "ONLY entries below are permitted semantic dependencies; historical v0.2-v0.6 bindings are provenance-only and prohibited for normative reconstruction.",
+  "dependencies": [
+    {
+      "id": "e1-protocol",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/adjudication-protocol.md",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "5aa65205d401409b5b07b82e57864841bd57120b",
+      "bytes": 17169,
+      "sha256": "619b28d8cc6fdd8048bdaeff2807a10f438349f1a7249f3701b209a7e786d66b"
+    },
+    {
+      "id": "e1-manifest",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/case-input-manifest.json",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "fef39e3284eae5559ac016c01211c0d9bc244fa5",
+      "bytes": 3169,
+      "sha256": "cefe2994a609903df501c680a8b653c75339a0f2063cc53853b983eae2fb664a"
+    },
+    {
+      "id": "e1-shard-01",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/case-inputs-01.json",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "7a35d77ad927218f903e63f966ccee3341e7d717",
+      "bytes": 302533,
+      "sha256": "f10d6d7d6ca045a6b64b2e6eacf599e1310f9d855aabe4a3e4ae033e630dbf8c"
+    },
+    {
+      "id": "e1-shard-02",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/case-inputs-02.json",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "53a8c9dbf36b1bc666d164daed3bcbf05c46b230",
+      "bytes": 311749,
+      "sha256": "17bb8b0522216a83a6c6eeef21698ecedead4cf2fc451068025656188aa56958"
+    },
+    {
+      "id": "e1-shard-03",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/case-inputs-03.json",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "4d492ac0d661b6fdb6315461fba5f720757a3cc7",
+      "bytes": 310747,
+      "sha256": "c52f4093695c40c7aecce7021111d89c8dc2a57e9f5c319942f720ab2de9eb46"
+    },
+    {
+      "id": "e1-shard-04",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/case-inputs-04.json",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "86924bb9e12c6e39e155ee6fcb0ca9f75dae7dec",
+      "bytes": 303058,
+      "sha256": "2eb93e0599563abe11cb2a9b27a5fbf53db2dc10699758c6943baf761aa68312"
+    },
+    {
+      "id": "population-identity",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/evaluation/pilot001/replacement-e1-v0.4-08e89d578d95/population-identity.json",
+      "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+      "blob": "ff873138926524501eba5ea1230f9635fca124c8",
+      "bytes": 3148,
+      "sha256": "06104e30c513ee5ad5c49596aecbf96375a7878f7ad347e81efce1dc007a786a"
+    },
+    {
+      "id": "blueprint-v0.4",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "artifacts/iba/iris-transition/IRIS-PERSISTENT-PERSONAL-AGENT-TRANSITION-BUILDER-READY-BLUEPRINT-v0.4.md",
+      "commit": "cda075e0137571aaf9fcb4b752ce0085d361e0cb",
+      "blob": "c030c5f475f38d6edd4bda52ecd74d6f9d9eb786",
+      "bytes": 53261,
+      "sha256": "e6a6b920ba52c449d4d6209b0a631563702ad26aeac3269e86f1170ef08e51e2"
+    },
+    {
+      "id": "candidate-types",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "src/agent-transition/pilot001-types.ts",
+      "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+      "blob": "c8c7aa257b1f319b5fe518f8cebaf9ff55ea6301",
+      "bytes": 2420,
+      "sha256": "1d4242b7a288b4bbbc37f7258dea4777c9bfa3b3539f16d7f461128a7ff6075e"
+    },
+    {
+      "id": "candidate-classifier",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "src/agent-transition/pilot001-classifier.ts",
+      "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+      "blob": "b716d1bf8d07cd040793d54674bb3cd1a4ae2e14",
+      "bytes": 4246,
+      "sha256": "a8423e83312907a91e53dcc1e0b82af5360401e483b84c0ee58c821b01279081"
+    },
+    {
+      "id": "candidate-coverage",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "src/agent-transition/pilot001-coverage.ts",
+      "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+      "blob": "2b21f40cf27457523d5540db226446c1ee6c83e4",
+      "bytes": 4733,
+      "sha256": "c37156418457bc15876b444c51d44ef65e74f6c2e67f61624323d62638777e0e"
+    },
+    {
+      "id": "candidate-projection",
+      "repository": "417properties/IRIS-Personal-Office",
+      "path": "src/agent-transition/pilot001-projection.ts",
+      "commit": "185dbd1be80bd54c6cf5dcc085f105a637fe7e44",
+      "blob": "4931d997e7200353e3011bfd3c548b0bf826c027",
+      "bytes": 7108,
+      "sha256": "c498b6397f15e1e32f636ec5a0a1e252c1ea1bda3e7f8e557633eafb85d70db2"
+    }
+  ]
+}
