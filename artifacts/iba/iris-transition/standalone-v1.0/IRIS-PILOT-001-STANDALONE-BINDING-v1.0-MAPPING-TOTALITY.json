@@ -1622,6 +1622,12 @@
       "true": 0,
       "false": 18,
       "omitted": 2
+    },
+    "load_bearing_unknown_classification_roots": 6,
+    "unknown_cause_counts": {
+      "applicability_UNKNOWN": 3,
+      "authority_holder_UNKNOWN": 2,
+      "decision_maker_UNKNOWN": 1
     }
   },
   "privacy_exclusion_census": {
@@ -1678,5 +1684,91 @@
     "candidate_construction": "pilot_candidate_construction + candidate_root_census",
     "authority_unknown": "authority_unknown_representation",
     "conflict_identity": "demonstrated_conflict_generation.exact_identities"
+  },
+  "candidate_field_census": {
+    "total": 84,
+    "id_unique": 84,
+    "objective_id_present": 84,
+    "obligation_id_present": 42,
+    "decision_requirement_id_present": 40,
+    "intent_id_present": 1,
+    "conflict_id_present": 4,
+    "obligation_status": {
+      "OPEN": 38,
+      "ABANDONED": 1,
+      "SATISFIED": 2,
+      "SUPERSEDED": 1
+    },
+    "obligation_owner": {
+      "AARON": 20,
+      "IRIS": 20,
+      "EXTERNAL_ORG": 1,
+      "UNKNOWN": 1
+    },
+    "concrete_action_remaining": {
+      "true": 38,
+      "false": 4
+    },
+    "decision_status": {
+      "OPEN": 36,
+      "RESOLVED": 3,
+      "SUPERSEDED": 1
+    },
+    "decision_maker_identity_id": {
+      "IRIS": 29,
+      "AARON": 10,
+      "UNKNOWN": 1
+    },
+    "reserved_authority_class_present": 20,
+    "authority_holder_identity_id": {
+      "AARON": 18,
+      "UNKNOWN": 2
+    },
+    "valid_delegation": {
+      "true": 0,
+      "false": 18,
+      "omitted": 2
+    },
+    "escalation_required": {
+      "true": 1,
+      "false": 83
+    },
+    "unresolved_effect": {
+      "true": 1,
+      "false": 83
+    },
+    "material_conflict": {
+      "true": 4,
+      "false": 80
+    },
+    "informational_only": {
+      "true": 1,
+      "false": 83
+    },
+    "applicability": {
+      "APPLICABLE": 75,
+      "UNKNOWN": 3,
+      "SATISFIED": 4,
+      "SUPERSEDED": 2,
+      "ABANDONED": 0
+    },
+    "freshness": {
+      "CURRENT": 84,
+      "STALE": 0,
+      "UNKNOWN": 0
+    },
+    "source_identity": {
+      "VERIFIED": 84,
+      "UNKNOWN": 0,
+      "CONFLICT": 0
+    },
+    "possible_duplicate_refs_nonempty": 2,
+    "why_present": 0,
+    "classification_unknown_causes": {
+      "applicability_UNKNOWN": 3,
+      "authority_holder_UNKNOWN": 2,
+      "decision_maker_UNKNOWN": 1,
+      "total_disjoint": 6
+    }
   }
 }
