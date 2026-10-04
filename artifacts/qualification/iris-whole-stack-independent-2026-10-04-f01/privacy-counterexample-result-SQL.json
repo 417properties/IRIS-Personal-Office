@@ -1,0 +1,1549 @@
+{
+  "mode": "SQL",
+  "evidence_class": "TESTED_SYNTHETIC",
+  "oracle_vectors": [
+    "QD-PRIVACY-ALL",
+    "QD-PRIVATE-SECONDARY-NEGATIVE",
+    "QD-ROUNDTRIP-COLD"
+  ],
+  "baseline_primary": "KNOWN_REQUIRED",
+  "prohibited_primary": "PRIVACY_EXCLUDED",
+  "private_marker": "PRIVATE_EVIDENCE_REF:independent-synthetic-confidential-marker",
+  "marker_in_external_projection": true,
+  "marker_after_reconstruction": true,
+  "marker_in_cold_process": true,
+  "same_cold_content": true,
+  "same_replay_content": true,
+  "internal_reason_preserved": true,
+  "continuity_ON": false,
+  "authority_effect": "NONE",
+  "admission": "NOT_ADJUDICATED",
+  "output": {
+    "schema_version": "IRIS_B6_V1",
+    "run": {
+      "kind": "PROJECTION_RUN",
+      "id": "independent:privacy:run"
+    },
+    "as_of": "2026-10-01T02:00:00.000Z",
+    "projection": {
+      "schema_version": "IRIS_B6_V1",
+      "principal": {
+        "kind": "PRINCIPAL",
+        "id": "principal:one"
+      },
+      "recipient": {
+        "kind": "PRINCIPAL",
+        "id": "principal:one"
+      },
+      "purpose": "PERSONAL_ATTENTION",
+      "as_of": "2026-10-01T02:00:00.000Z",
+      "roots": [
+        {
+          "root_ref": {
+            "kind": "OBJECTIVE",
+            "id": "object:one"
+          },
+          "primary_visible_disposition": "PRIVACY_EXCLUDED",
+          "reason_set": [
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PROHIBITED",
+              "evidence_refs": [
+                "PRIVATE_EVIDENCE_REF:independent-synthetic-confidential-marker"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "OBLIGATION",
+            "id": "obligation:one"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:LIFECYCLE",
+              "reason_type": "LIFECYCLE",
+              "canonical_code": "NONTERMINAL",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "INTENT",
+            "id": "intent:1"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_coverage": [
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:0"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:1"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:2"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:3"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:4"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:5"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:6"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:7"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        }
+      ],
+      "interventions": [
+        {
+          "resolution": {
+            "kind": "RESOLUTION",
+            "id": "opaque:resolution:1"
+          },
+          "resolution_kind": "ACT",
+          "root_refs": [
+            {
+              "kind": "OBLIGATION",
+              "id": "obligation:one"
+            }
+          ]
+        },
+        {
+          "resolution": {
+            "kind": "RESOLUTION",
+            "id": "opaque:resolution:2"
+          },
+          "resolution_kind": "RECONCILE_EFFECT",
+          "root_refs": [
+            {
+              "kind": "INTENT",
+              "id": "intent:1"
+            }
+          ]
+        }
+      ],
+      "completeness_state": "UNKNOWN",
+      "coverage_gaps": [
+        "DECLARED_SCOPE_NOT_COMPLETE"
+      ],
+      "recovery_completeness": "UNKNOWN",
+      "work_routing": [
+        {
+          "root_ref": {
+            "kind": "INTENT",
+            "id": "intent:1"
+          },
+          "next_safe_action": "RECONCILE_FIRST",
+          "release_state": "AMBIGUOUS_SUBMISSION"
+        }
+      ],
+      "qualification_boundary": "PINNED_AS_OF_ONLY",
+      "requalification_before_action": true,
+      "continuity_ON": false,
+      "authority_effect": "NONE",
+      "admission": "NOT_ADJUDICATED"
+    },
+    "content_hash": "991c913a4b444ab6dd9f6159b173eef49d77b82cdc1811348de822bb645b72b7",
+    "proof": {
+      "canonical_count": 73,
+      "canonical_digest": "6ab19b8811234d363f961278d8db03506b944ce9f17bf071300f166950d800e2",
+      "enforcement_sequence": 7,
+      "proof_digest": "82a9b681d274830d7bfe5e3a3d351eb0a918e04231bfcec378204db1194e755d",
+      "run": {
+        "id": "independent:privacy:run",
+        "kind": "PROJECTION_RUN"
+      }
+    },
+    "qualification": "SOURCE_QUALIFIED_PINNED_AS_OF",
+    "current_at_delivery": false,
+    "continuity_ON": false,
+    "authority_effect": "NONE",
+    "admission": "NOT_ADJUDICATED"
+  },
+  "replay": {
+    "schema_version": "IRIS_B6_V1",
+    "run": {
+      "kind": "PROJECTION_RUN",
+      "id": "independent:privacy:run"
+    },
+    "as_of": "2026-10-01T02:00:00.000Z",
+    "projection": {
+      "schema_version": "IRIS_B6_V1",
+      "principal": {
+        "kind": "PRINCIPAL",
+        "id": "principal:one"
+      },
+      "recipient": {
+        "kind": "PRINCIPAL",
+        "id": "principal:one"
+      },
+      "purpose": "PERSONAL_ATTENTION",
+      "as_of": "2026-10-01T02:00:00.000Z",
+      "roots": [
+        {
+          "root_ref": {
+            "kind": "OBJECTIVE",
+            "id": "object:one"
+          },
+          "primary_visible_disposition": "PRIVACY_EXCLUDED",
+          "reason_set": [
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PROHIBITED",
+              "evidence_refs": [
+                "PRIVATE_EVIDENCE_REF:independent-synthetic-confidential-marker"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "OBLIGATION",
+            "id": "obligation:one"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:LIFECYCLE",
+              "reason_type": "LIFECYCLE",
+              "canonical_code": "NONTERMINAL",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "INTENT",
+            "id": "intent:1"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_coverage": [
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:0"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:1"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:2"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:3"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:4"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:5"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:6"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        },
+        {
+          "root_ref": {
+            "kind": "WORK_EPISODE",
+            "id": "opaque:source:7"
+          },
+          "primary_visible_disposition": "KNOWN_REQUIRED",
+          "reason_set": [
+            {
+              "reason_id": "reason:KNOWLEDGE",
+              "reason_type": "KNOWLEDGE",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:APPLICABILITY",
+              "reason_type": "APPLICABILITY",
+              "canonical_code": "APPLICABLE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:FRESHNESS",
+              "reason_type": "FRESHNESS",
+              "canonical_code": "CURRENT_AS_OF",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:COVERAGE",
+              "reason_type": "COVERAGE",
+              "canonical_code": "COMPLETE_FOR_DECLARED_SCOPE",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:REQUIREMENT",
+              "reason_type": "REQUIREMENT",
+              "canonical_code": "REQUIRED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:HOLDER",
+              "reason_type": "HOLDER",
+              "canonical_code": "KNOWN",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            },
+            {
+              "reason_id": "reason:DISCLOSURE",
+              "reason_type": "DISCLOSURE",
+              "canonical_code": "PERMITTED",
+              "evidence_refs": [
+                "source:qualified"
+              ]
+            }
+          ]
+        }
+      ],
+      "interventions": [
+        {
+          "resolution": {
+            "kind": "RESOLUTION",
+            "id": "opaque:resolution:1"
+          },
+          "resolution_kind": "ACT",
+          "root_refs": [
+            {
+              "kind": "OBLIGATION",
+              "id": "obligation:one"
+            }
+          ]
+        },
+        {
+          "resolution": {
+            "kind": "RESOLUTION",
+            "id": "opaque:resolution:2"
+          },
+          "resolution_kind": "RECONCILE_EFFECT",
+          "root_refs": [
+            {
+              "kind": "INTENT",
+              "id": "intent:1"
+            }
+          ]
+        }
+      ],
+      "completeness_state": "UNKNOWN",
+      "coverage_gaps": [
+        "DECLARED_SCOPE_NOT_COMPLETE"
+      ],
+      "recovery_completeness": "UNKNOWN",
+      "work_routing": [
+        {
+          "root_ref": {
+            "kind": "INTENT",
+            "id": "intent:1"
+          },
+          "next_safe_action": "RECONCILE_FIRST",
+          "release_state": "AMBIGUOUS_SUBMISSION"
+        }
+      ],
+      "qualification_boundary": "PINNED_AS_OF_ONLY",
+      "requalification_before_action": true,
+      "continuity_ON": false,
+      "authority_effect": "NONE",
+      "admission": "NOT_ADJUDICATED"
+    },
+    "content_hash": "991c913a4b444ab6dd9f6159b173eef49d77b82cdc1811348de822bb645b72b7",
+    "proof": {
+      "canonical_count": 73,
+      "canonical_digest": "6ab19b8811234d363f961278d8db03506b944ce9f17bf071300f166950d800e2",
+      "enforcement_sequence": 7,
+      "proof_digest": "82a9b681d274830d7bfe5e3a3d351eb0a918e04231bfcec378204db1194e755d",
+      "run": {
+        "id": "independent:privacy:run",
+        "kind": "PROJECTION_RUN"
+      }
+    },
+    "qualification": "SOURCE_QUALIFIED_PINNED_AS_OF",
+    "current_at_delivery": false,
+    "continuity_ON": false,
+    "authority_effect": "NONE",
+    "admission": "NOT_ADJUDICATED"
+  }
+}

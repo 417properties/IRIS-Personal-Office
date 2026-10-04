@@ -1,0 +1,39 @@
+{
+  "mode": "MEMORY",
+  "evidence_class": "TESTED_SYNTHETIC",
+  "oracle_vectors": [
+    "QD-PRIVACY-ALL",
+    "QD-PRIVATE-SECONDARY-NEGATIVE",
+    "QD-ROUNDTRIP-COLD"
+  ],
+  "baseline_primary": "KNOWN_REQUIRED",
+  "prohibited_primary": "PRIVACY_EXCLUDED",
+  "private_marker": "PRIVATE_EVIDENCE_REF:independent-synthetic-confidential-marker",
+  "marker_in_external_projection": true,
+  "marker_after_reconstruction": true,
+  "marker_in_cold_process": true,
+  "same_cold_content": true,
+  "same_replay_content": true,
+  "internal_reason_preserved": true,
+  "continuity_ON": false,
+  "authority_effect": "NONE",
+  "admission": "NOT_ADJUDICATED"
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: ORACLE_FALSIFIED: prohibited-recipient projection leaked private evidence reference
+
+true !== false
+
+    at file:///workspace/scratch/bb7b45c2ae2a/evaluator/privacy-counterexample.mjs:44:9 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: true,
+  expected: false,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

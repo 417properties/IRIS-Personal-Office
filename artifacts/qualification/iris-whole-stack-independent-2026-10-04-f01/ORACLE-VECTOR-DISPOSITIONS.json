@@ -1,0 +1,3361 @@
+{
+  "total_vectors": 419,
+  "full_vector_PASS_claims": 0,
+  "bounded_falsified_constraints": 5,
+  "unqualified_vectors": 414,
+  "stop_rule": "Acceptance stopped on F01; no inference of PASS or defect for unexecuted vectors",
+  "vectors": [
+    {
+      "vector_id": "A1-K-KNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-KNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-K-UNKNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-K-MISSING",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-K-UNAVAILABLE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-K-CONFLICTED",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-K-INVALID",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-INVALID",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-K-REJECTED",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-K-REJECTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-holder-UNKNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-holder-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-holder-MISSING",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-holder-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-holder-UNAVAILABLE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-holder-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-holder-CONFLICTED",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-holder-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-owner-UNKNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-owner-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-owner-MISSING",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-owner-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-owner-UNAVAILABLE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-owner-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-owner-CONFLICTED",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-owner-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-authority-UNKNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-authority-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-authority-MISSING",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-authority-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-authority-UNAVAILABLE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-authority-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-authority-CONFLICTED",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-authority-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-delegation-UNKNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-delegation-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-delegation-MISSING",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-delegation-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-delegation-UNAVAILABLE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-delegation-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-delegation-CONFLICTED",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-delegation-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-known-required",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-known-required",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-terminal",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-terminal",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-proven-inapplicable",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-proven-inapplicable",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-private",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-private",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-suppressed",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-suppressed",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-conflict",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-conflict",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-DEST-invalid",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-DEST-invalid",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-NOT-APPLICABLE-ABSENCE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-NOT-APPLICABLE-ABSENCE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-COVERAGE-SCOPE",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-COVERAGE-SCOPE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-OVERLAP-PRIVACY-TERMINAL",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-OVERLAP-PRIVACY-TERMINAL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A1-OVERLAP-CONFLICT-UNKNOWN",
+      "oracle_file": "oracles/A1.json",
+      "proof_id": "P-A1-OVERLAP-CONFLICT-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-OPAQUE",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-OPAQUE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SAME-OBJECTIVE",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SAME-OBJECTIVE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SAME-HOLDER",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SAME-HOLDER",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-EXPLICIT-EQUIVALENT",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-EXPLICIT-EQUIVALENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-EXPLICIT-UNEQUAL",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-EXPLICIT-UNEQUAL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-CONFLICT-AUTH",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-CONFLICT-AUTH",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-CONTEXT-CHANGE",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-CONTEXT-CHANGE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-MISSING-RESOLUTION",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-MISSING-RESOLUTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-CONFLICT-ROOT-CONSTRUCTOR",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-CONFLICT-ROOT-CONSTRUCTOR",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-REPLAY",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-REPLAY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-RETRY",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-RETRY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-INDEPENDENT-NEW-EVENT",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-INDEPENDENT-NEW-EVENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-PROJECTION-TWO-RUNS",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-PROJECTION-TWO-RUNS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SUCCESSOR-NO-AUTH",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SUCCESSOR-NO-AUTH",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SCHEDULE-15",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SCHEDULE-15",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SCHEDULE-16",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SCHEDULE-16",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SCHEDULE-17",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SCHEDULE-17",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A2-SCHEDULE-18",
+      "oracle_file": "oracles/A2.json",
+      "proof_id": "P-A2-SCHEDULE-18",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-POSITIVE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-POSITIVE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-principal",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-principal",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-sponsor",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-sponsor",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-subject",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-subject",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-role",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-role",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-purpose",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-purpose",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-object_scope",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-object_scope",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-capability",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-capability",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-tool_operation",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-tool_operation",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-consequence",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-consequence",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-value",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-value",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-resource",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-resource",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-privacy",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-privacy",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-recipient",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-recipient",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-generation",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-generation",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-delegation_chain",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-delegation_chain",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-temporal-future",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-temporal-future",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-temporal-expired",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-temporal-expired",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-temporal-revoked",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-temporal-revoked",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-domain",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-domain",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-episode",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-episode",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-intent",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-intent",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-fence",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-fence",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-evidence",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-evidence",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-worker-status",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-worker-status",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-lease-state",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-lease-state",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-context",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-context",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-qualification",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-qualification",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-MUTATE-credentials",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-MUTATE-credentials",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-principal-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-principal-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-principal-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-principal-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-principal-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-principal-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-principal-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-principal-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-subject-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-subject-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-subject-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-subject-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-subject-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-subject-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-subject-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-subject-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-purpose-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-purpose-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-purpose-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-purpose-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-purpose-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-purpose-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-purpose-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-purpose-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-object_scope-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-object_scope-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-object_scope-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-object_scope-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-object_scope-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-object_scope-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-object_scope-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-object_scope-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-capability-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-capability-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-capability-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-capability-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-capability-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-capability-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-capability-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-capability-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-tool_operation-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-tool_operation-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-tool_operation-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-tool_operation-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-tool_operation-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-tool_operation-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-tool_operation-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-tool_operation-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-value-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-value-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-value-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-value-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-value-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-value-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-value-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-value-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-privacy-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-privacy-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-privacy-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-privacy-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-privacy-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-privacy-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-privacy-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-privacy-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-recipient-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-recipient-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-recipient-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-recipient-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-recipient-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-recipient-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-recipient-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-recipient-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-generation-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-generation-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-generation-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-generation-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-generation-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-generation-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-generation-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-generation-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-delegation_chain-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-delegation_chain-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-delegation_chain-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-delegation_chain-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-delegation_chain-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-delegation_chain-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-delegation_chain-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-delegation_chain-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-temporal-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-temporal-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-temporal-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-temporal-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-temporal-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-temporal-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-temporal-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-temporal-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-episode-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-episode-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-episode-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-episode-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-episode-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-episode-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-episode-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-episode-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-intent-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-intent-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-intent-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-intent-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-intent-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-intent-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-intent-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-intent-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-fence-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-fence-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-fence-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-fence-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-fence-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-fence-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-fence-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-fence-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-evidence-UNKNOWN",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-evidence-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-evidence-MISSING",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-evidence-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-evidence-STALE",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-evidence-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-UNCERTAIN-evidence-CONFLICTED",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-UNCERTAIN-evidence-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-PRIVACY-retain",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-PRIVACY-retain",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-PRIVACY-use-for-purpose",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-PRIVACY-use-for-purpose",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-PRIVACY-disclose-to-recipient",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-PRIVACY-disclose-to-recipient",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-PRIVACY-minimum-necessary-projection",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-PRIVACY-minimum-necessary-projection",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-PRIVACY-reuse/transfer",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-PRIVACY-reuse/transfer",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-PRIVACY-retention-expiry",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-PRIVACY-retention-expiry",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A3-EXACT-TEMPORAL-BOUNDARY",
+      "oracle_file": "oracles/A3.json",
+      "proof_id": "P-A3-EXACT-TEMPORAL-BOUNDARY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-DIGEST-CHANGED",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-DIGEST-CHANGED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-DUPLICATE-CALL",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-DUPLICATE-CALL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-CRASH-BEFORE-SUBMISSION-PROVEN",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-CRASH-BEFORE-SUBMISSION-PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-CRASH-BEFORE-SUBMISSION-UNPROVEN",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-CRASH-BEFORE-SUBMISSION-UNPROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-CRASH-AFTER-SUBMISSION",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-CRASH-AFTER-SUBMISSION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-TIMEOUT-AFTER-EFFECT",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-TIMEOUT-AFTER-EFFECT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-REVOKE-FIRST",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-REVOKE-FIRST",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-RELEASE-FIRST",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-RELEASE-FIRST",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-PARTIAL",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-PARTIAL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-WRONG-VALUE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-WRONG-VALUE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-UNAVAILABLE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-CONFLICT",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-CONFLICT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-NO-EFFECT-POSITIVE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-NO-EFFECT-POSITIVE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-RETRY-NOT-ALLOWED",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-RETRY-NOT-ALLOWED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-RETRY-AUTH-EXPIRED",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-RETRY-AUTH-EXPIRED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-READBACK-WRONG-INTENT",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-READBACK-WRONG-INTENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-MULTIPLE-OBLIGATIONS",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-MULTIPLE-OBLIGATIONS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-UNSATISFIED-CRITERION",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-UNSATISFIED-CRITERION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-UNRELATED-OBJECTIVE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-UNRELATED-OBJECTIVE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-MID-FLIGHT-CRITERIA-CHANGE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-MID-FLIGHT-CRITERIA-CHANGE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-TERMINAL-FAILURE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-TERMINAL-FAILURE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-DECISION-OBLIGATION-SEPARATE",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-DECISION-OBLIGATION-SEPARATE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A4-COLD-AMBIGUITY",
+      "oracle_file": "oracles/A4.json",
+      "proof_id": "P-A4-COLD-AMBIGUITY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-1",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-2",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-3",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-4",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-5",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-6",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-7",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-7",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-8",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-8",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-9",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-9",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-10",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-10",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-11",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-11",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-12",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-12",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-COLD-13",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-COLD-13",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-READ-IMMUTABILITY",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-READ-IMMUTABILITY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WRITE-VALIDATION",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WRITE-VALIDATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-MEMORY-SQL-COLD",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-MEMORY-SQL-COLD",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-MALFORMED-IMPORT",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-MALFORMED-IMPORT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-LATEST-ROW",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-LATEST-ROW",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-EXPIRY-ONLY",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-EXPIRY-ONLY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-VERSION-CHANGE",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-VERSION-CHANGE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-TWO-PROJECTION-RUNS",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-TWO-PROJECTION-RUNS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-RENDERER-BYPASS",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-RENDERER-BYPASS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-PRINCIPAL-SCOPED-QUERY",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-PRINCIPAL-SCOPED-QUERY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-UNRESOLVED-DOMINATES",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-UNRESOLVED-DOMINATES",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-CHECKPOINT-LABEL",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-CHECKPOINT-LABEL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-CHECKPOINT-VALID",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-CHECKPOINT-VALID",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-CHECKPOINT-EXPIRED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-CHECKPOINT-EXPIRED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-CONTINUITY-SESSION",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-CONTINUITY-SESSION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-KNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-KNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-MISSING",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-UNAVAILABLE",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-UNAVAILABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-CONFLICTED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-INVALID",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-INVALID",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-knowledge-REJECTED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-knowledge-REJECTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-applicability-APPLICABLE",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-applicability-APPLICABLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-applicability-NOT_APPLICABLE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-applicability-NOT_APPLICABLE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-applicability-SATISFIED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-applicability-SATISFIED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-applicability-SUPERSEDED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-applicability-SUPERSEDED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-applicability-ABANDONED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-applicability-ABANDONED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-applicability-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-applicability-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-freshness-CURRENT_AS_OF",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-freshness-CURRENT_AS_OF",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-freshness-STALE",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-freshness-STALE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-freshness-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-freshness-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-coverage-COMPLETE_FOR_DECLARED_SCOPE",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-coverage-COMPLETE_FOR_DECLARED_SCOPE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-coverage-INCOMPLETE",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-coverage-INCOMPLETE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-coverage-CONFLICTED",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-coverage-CONFLICTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-ENUM-coverage-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-ENUM-coverage-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-IMPORT-NULL",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-IMPORT-NULL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-IMPORT-MISSING_REQUIRED_KEY",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-IMPORT-MISSING_REQUIRED_KEY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-IMPORT-UNKNOWN_ENUM",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-IMPORT-UNKNOWN_ENUM",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-IMPORT-UNSUPPORTED_SCHEMA",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-IMPORT-UNSUPPORTED_SCHEMA",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-IMPORT-WRONG_PRINCIPAL_RELATION",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-IMPORT-WRONG_PRINCIPAL_RELATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-IMPORT-UNVERSIONED_DECODER",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-IMPORT-UNVERSIONED_DECODER",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-NO_SUBMISSION_PROVEN-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-NO_SUBMISSION_PROVEN-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-NO_SUBMISSION_PROVEN-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-NO_SUBMISSION_PROVEN-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-NO_SUBMISSION_PROVEN-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-NO_SUBMISSION_PROVEN-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-SUBMISSION_KNOWN-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-SUBMISSION_KNOWN-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-SUBMISSION_KNOWN-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-SUBMISSION_KNOWN-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-SUBMISSION_KNOWN-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-SUBMISSION_KNOWN-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-EFFECT_VERIFIED-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-EFFECT_VERIFIED-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-EFFECT_VERIFIED-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-EFFECT_VERIFIED-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-EFFECT_VERIFIED-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-EFFECT_VERIFIED-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-NO_EFFECT_VERIFIED-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-NO_EFFECT_VERIFIED-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-NO_EFFECT_VERIFIED-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-NO_EFFECT_VERIFIED-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-NO_EFFECT_VERIFIED-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-NO_EFFECT_VERIFIED-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-PARTIAL_EFFECT-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-PARTIAL_EFFECT-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-PARTIAL_EFFECT-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-PARTIAL_EFFECT-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-PARTIAL_EFFECT-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-PARTIAL_EFFECT-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-AMBIGUOUS_EFFECT-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-AMBIGUOUS_EFFECT-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-AMBIGUOUS_EFFECT-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-AMBIGUOUS_EFFECT-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-AMBIGUOUS_EFFECT-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-AMBIGUOUS_EFFECT-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-CONFLICTED_EFFECT-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-CONFLICTED_EFFECT-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-CONFLICTED_EFFECT-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-CONFLICTED_EFFECT-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-CONFLICTED_EFFECT-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-CONFLICTED_EFFECT-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-UNKNOWN-SAFE_PROVEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-UNKNOWN-SAFE_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-UNKNOWN-FORBIDDEN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-UNKNOWN-FORBIDDEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "A5-WORKFLOW-UNKNOWN-UNKNOWN",
+      "oracle_file": "oracles/A5.json",
+      "proof_id": "P-A5-WORKFLOW-UNKNOWN-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-1",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-2",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-3",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-4",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-5",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-6",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-7",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-7",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FIL-ARROW-8",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-FIL-ARROW-8",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-1",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-2",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-3",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-4",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-5",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-6",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-7",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-7",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-8",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-8",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-9",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-9",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-10",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-10",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ROUNDTRIP-11",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ROUNDTRIP-11",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-UNKNOWN-VERSION",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-UNKNOWN-VERSION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-REQUIRED-EXTENSION",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-REQUIRED-EXTENSION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-OPTIONAL-EXTENSION",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-OPTIONAL-EXTENSION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-MISSING-BASE",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-MISSING-BASE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-LOSS-MATERIAL",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-LOSS-MATERIAL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-STALE-WIRE",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-STALE-WIRE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-UNAUTHORIZED-WIRE",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-UNAUTHORIZED-WIRE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-DUPLICATE-DELIVERY",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-DUPLICATE-DELIVERY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-NO-DELTA",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-NO-DELTA",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-BIG-BOUNDARY",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-BIG-BOUNDARY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-SUPPRESSION-WAKE",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-SUPPRESSION-WAKE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ATTENTION",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ATTENTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-PRIVATE-REFERENCE",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-PRIVATE-REFERENCE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ICCP-ECONOMICS",
+      "oracle_file": "oracles/COMMUNICATION.json",
+      "proof_id": "P-ICCP-ECONOMICS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-ReferentFrame",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-ReferentFrame",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-SituationModel",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-SituationModel",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-CausalModel",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-CausalModel",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-OptionSet",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-OptionSet",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-JudgmentRecord",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-JudgmentRecord",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-ResourceArbitration",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-ResourceArbitration",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-VerificationPlan",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-VerificationPlan",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-LearningCandidate",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-LearningCandidate",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-FALSE-FRAME",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-FALSE-FRAME",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-UNCERTAIN-CAUSE",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-UNCERTAIN-CAUSE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-SECOND-ORDER",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-SECOND-ORDER",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-MODE-SWITCH",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-MODE-SWITCH",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-CHEAP-INSUFFICIENT",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-CHEAP-INSUFFICIENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-NO-ELIGIBLE",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-NO-ELIGIBLE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "ER-EXPLORATION-LOW-CONFIDENCE",
+      "oracle_file": "oracles/EXECUTIVE.json",
+      "proof_id": "P-ER-EXPLORATION-LOW-CONFIDENCE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-1",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-2",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-3",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-4",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-5",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-6",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-7",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-7",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-8",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-8",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONFIG-9",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONFIG-9",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LADDER-OBSERVED_BEHAVIOR",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LADDER-OBSERVED_BEHAVIOR",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LADDER-DEMONSTRATED_CAPABILITY",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LADDER-DEMONSTRATED_CAPABILITY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LADDER-CONTEXT_DEPENDENT_IMPROVEMENT",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LADDER-CONTEXT_DEPENDENT_IMPROVEMENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LADDER-RETENTION",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LADDER-RETENTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LADDER-TRANSFER",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LADDER-TRANSFER",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LADDER-MECHANISTIC_EXPLANATION",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LADDER-MECHANISTIC_EXPLANATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-MISSING",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-MISSING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-LIMITATION",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-LIMITATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ASSOCIATION",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ASSOCIATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-TRANSFER",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-TRANSFER",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-EXPIRED",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-EXPIRED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-CONTRADICTION",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-CONTRADICTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-SWAP",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-SWAP",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-DERIVED",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-DERIVED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-DELTA-ECONOMICS",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-DELTA-ECONOMICS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ELIGIBILITY-tool",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ELIGIBILITY-tool",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ELIGIBILITY-context",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ELIGIBILITY-context",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ELIGIBILITY-privacy",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ELIGIBILITY-privacy",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ELIGIBILITY-resource",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ELIGIBILITY-resource",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ELIGIBILITY-population",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ELIGIBILITY-population",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "FP-ELIGIBILITY-capability-procedure version",
+      "oracle_file": "oracles/FUNCTIONAL.json",
+      "proof_id": "P-FP-ELIGIBILITY-capability-procedure version",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-3",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-4",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-5",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-6",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-PHASE-7",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-PHASE-7",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-2-P1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-2-P1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-2-P2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-2-P2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-3-P1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-3-P1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-3-P2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-3-P2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-3-P3",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-3-P3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-4-P1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-4-P1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-4-P2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-4-P2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-4-P3",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-4-P3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-4-P4",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-4-P4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-5-P1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-5-P1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-5-P2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-5-P2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-5-P3",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-5-P3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-5-P4",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-5-P4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-5-P5",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-5-P5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-6-P1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-6-P1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-6-P2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-6-P2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-6-P3",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-6-P3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-6-P4",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-6-P4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-6-P5",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-6-P5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-6-P6",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-6-P6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P1",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P1",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P2",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P2",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P3",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P3",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P4",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P4",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P5",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P5",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P6",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P6",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-FLOOR-7-P7",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-FLOOR-7-P7",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-CONCEPTUAL",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-CONCEPTUAL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-SPECIFIED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-SPECIFIED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-ARCHITECTED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-ARCHITECTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-BLUEPRINTED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-BLUEPRINTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-IMPLEMENTED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-IMPLEMENTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-INTEGRATED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-INTEGRATED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-TESTED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-TESTED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-DEPLOYED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-DEPLOYED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-OPERATED",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-OPERATED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-CONTINUITY_PROVEN",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-CONTINUITY_PROVEN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "MATURITY-INSTITUTIONAL_CURRENT",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-MATURITY-INSTITUTIONAL_CURRENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-HORIZON",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-HORIZON",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-DEFERRED-SEAM",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-DEFERRED-SEAM",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-REPLAY-LEARNING",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-REPLAY-LEARNING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-COMPOUNDING",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-COMPOUNDING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-NEGATIVE-TRANSFER",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-NEGATIVE-TRANSFER",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "IEF-RAW-EVIDENCE-LEVELS",
+      "oracle_file": "oracles/IEF.json",
+      "proof_id": "P-IEF-RAW-EVIDENCE-LEVELS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-V2-RECORD",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-V2-RECORD",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-PRECEDENCE",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-PRECEDENCE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-PRIVACY-ALL",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-PRIVACY-ALL",
+      "disposition": "FALSIFIED_BOUNDED_PRIVATE_REFERENCE_NONLEAK",
+      "finding_id": "F01",
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-TERMINAL-UNKNOWN",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-TERMINAL-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-NOTAPPLICABLE-UNKNOWN",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-NOTAPPLICABLE-UNKNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-CONFLICT-TERMINAL",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-CONFLICT-TERMINAL",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-DEFER-KNOWN",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-DEFER-KNOWN",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-BOUNDARY-RECIPIENT",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-BOUNDARY-RECIPIENT",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-BOUNDARY-PURPOSE",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-BOUNDARY-PURPOSE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-PRIVATE-SECONDARY-NEGATIVE",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-PRIVATE-SECONDARY-NEGATIVE",
+      "disposition": "FALSIFIED_BOUNDED_PRIVATE_REFERENCE_NONLEAK",
+      "finding_id": "F01",
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-ROUNDTRIP-COLD",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-ROUNDTRIP-COLD",
+      "disposition": "FALSIFIED_BOUNDED_PRIVACY_SAFE_REDERIVED_VIEW",
+      "finding_id": "F01",
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-ROUNDTRIP-COMMUNICATION",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-ROUNDTRIP-COMMUNICATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-NO-LOCAL-PRECEDENCE",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-NO-LOCAL-PRECEDENCE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-SECONDARY-REASON-DROP",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-SECONDARY-REASON-DROP",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-REACTIVATION-PRESERVATION",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-REACTIVATION-PRESERVATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-UNKNOWN-PRIVACY-NEGATIVE",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-UNKNOWN-PRIVACY-NEGATIVE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "QD-PRIMARY-NOT-AUTHORITY",
+      "oracle_file": "oracles/Q-DISPOSITION-AMPLIFICATION.json",
+      "proof_id": "P-QD-PRIMARY-NOT-AUTHORITY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-UNKNOWN-DENIED",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-UNKNOWN-DENIED",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-TERMINAL-PRIVATE-INAPPLICABLE",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-TERMINAL-PRIVATE-INAPPLICABLE",
+      "disposition": "FALSIFIED_PRIVATE_ROOT_SUBCONSTRAINT_ONLY_TERMINAL_OVERLAPS_UNQUALIFIED",
+      "finding_id": "F01",
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-RESOLUTIONS",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-RESOLUTIONS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-AUTHORITY",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-AUTHORITY",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-CRASH-DIGEST",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-CRASH-DIGEST",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-REVOCATION-RACE",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-REVOCATION-RACE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-EFFECT-DISPOSITIONS",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-EFFECT-DISPOSITIONS",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-OBJECTIVE",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-OBJECTIVE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-CONTINUATION",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-CONTINUATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-REPOSITORIES",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-REPOSITORIES",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-ROUNDTRIP",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-ROUNDTRIP",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-QUALIFICATION",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-QUALIFICATION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-RETENTION",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-RETENTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-CAUSAL-LEARNING",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-CAUSAL-LEARNING",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-PROJECTION",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-PROJECTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-ICCP",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-ICCP",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-PHASE",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-PHASE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-PERSONAL-OFFICE",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-PERSONAL-OFFICE",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-NO-OPERATIONAL-PROMOTION",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-NO-OPERATIONAL-PROMOTION",
+      "disposition": "UNQUALIFIED_AFTER_MATERIAL_STOP",
+      "finding_id": null,
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    },
+    {
+      "vector_id": "WS-WHOLE-CALLER-CLOSURE",
+      "oracle_file": "oracles/WHOLE.json",
+      "proof_id": "P-WS-WHOLE-CALLER-CLOSURE",
+      "disposition": "FALSIFIED_BOUNDED_CANDIDATE_INTERFACE_PRIVACY_RETURN_SEAM_OTHER_CALLERS_UNQUALIFIED",
+      "finding_id": "F01",
+      "expectation_source": "Accepted independent oracle; no implementation-derived expectation"
+    }
+  ]
+}

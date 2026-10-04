@@ -1,0 +1,12 @@
+{
+  "evidence": "TESTED_SYNTHETIC",
+  "runtime": "Node v24.19.0",
+  "command": "node --require ./scripts/qualification/network-guard.cjs --test tests/semantic-kernel/kernel.test.ts tests/personal-office/selector.test.ts",
+  "cwd": "candidate at c8118a013c926aa74c44dacc2469498dc24d78f2",
+  "exit_code": 0,
+  "tests": 201,
+  "pass": 201,
+  "fail": 0,
+  "duration_ms": 216.445453,
+  "scope": "Candidate-authored regression assertions. Observed in execution tool transcript before independent privacy falsifier. Not independent oracle coverage or whole-stack acceptance. No full-regression rerun after material stop."
+}

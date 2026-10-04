@@ -1,0 +1,36 @@
+{
+  "candidate": {
+    "commit": "c8118a013c926aa74c44dacc2469498dc24d78f2",
+    "tree": "24ee3ee13ac9a3859376bb94161e58da09dccf5c",
+    "sole_parent": "9e10e3ab6aaf21dea0c327945e5780070cea0193"
+  },
+  "oracle": {
+    "commit": "16afe73531c1227963b403cd63b97f6a5afbc8fe",
+    "tree": "35aaad21bff6ca401fe86640e425b8d1e643062a",
+    "sole_parent": "889341d0abb17d896701726448b62d2d2891149f",
+    "manifest_blob": "cb976069776c9ce1ee191fb4148956afd12711f1",
+    "package_sha256": "a52111862f7878c0d77eb63364d6100aa1d8f2576c467e572f0a3dd643f07e72",
+    "payload_count": 67
+  },
+  "frozen_E1": {
+    "commit": "849deca383add66773ab1ba0c8bc0ca852523c8f",
+    "tree": "fe0264a8fa5d0bc5ac7ee1dd9210f35dd97a6fc4",
+    "population": 40,
+    "digest": "32529f099c0f79d2b37782627cd6e8d7fd69ed6b4b9fbd390fddefeb0d0bac5f",
+    "verification": "Commit/tree verified through immutable Git API only. Population/digest are governing release metadata; no E1 payload was materialized, regenerated, scored, relabeled or reinterpreted."
+  },
+  "admission": {
+    "result": "WHOLE_STACK_STARTING_CONTEXT_CHECK = PASS",
+    "basis": "Fresh starting conversation contained assignment identities/architecture and attached zero-authority method only; admission recorded before candidate/output/acceptance discussion inspection.",
+    "prohibited_context_absent": [
+      "candidate outputs/predictions",
+      "Builder/STRATA individual vector conclusions",
+      "prior scores",
+      "E2/E3 labels or answers",
+      "prior case handling",
+      "hidden answer keys/score configuration"
+    ],
+    "independence": "Not Builder/STRATA/IBA/oracle author/E2/E3/prior candidate executor; no delegated agents or prior personal context retrieval.",
+    "release": "https://github.com/417properties/BIG-Navigator/issues/703#issuecomment-5976372734"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "artifact": "IRIS_WHOLE_STACK_FRESH_INDEPENDENT_CONFORMANCE_2026_10_04_F01",
+  "disposition": "IRIS_WHOLE_STACK_INDEPENDENT_CONFORMANCE_HOLD / B6_PRIVACY_PROJECTION_DISCLOSURE_BYPASS / STRATA_RECONCILIATION_REQUIRED",
+  "governing_release": "BIG #703/5976372734",
+  "candidate_commit": "c8118a013c926aa74c44dacc2469498dc24d78f2",
+  "oracle_commit": "16afe73531c1227963b403cd63b97f6a5afbc8fe",
+  "authority": "ZERO_AUTHORITY",
+  "next_owner": "STRATA 8.6.9",
+  "package_sha256": "a7e9c1871d28420f7fc08d74ab1e365b84a76e855bba998e2ebbc39f119f40c7",
+  "hash_algorithm": "SHA256 of compact UTF8 JSON sorted records with keys path,sha256,bytes in that order; this manifest excluded",
+  "payload_files": [
+    {
+      "path": "ACCEPTED-ORACLE-MANIFEST.json",
+      "sha256": "53ebc6c69550c8bbb9036fc0467c11105f87a1af246947f70ca5d481df82201a",
+      "bytes": 87387,
+      "git_blob_sha": "cb976069776c9ce1ee191fb4148956afd12711f1"
+    },
+    {
+      "path": "IDENTITIES-AND-ADMISSION.json",
+      "sha256": "16eb6e1effb94419acaefdf9d6014a832828e10baded8b51e5445772a9bd732d",
+      "bytes": 1824,
+      "git_blob_sha": "af3065b1d00c90d9fd14f728c69f9fd8365b79cc"
+    },
+    {
+      "path": "ORACLE-VECTOR-DISPOSITIONS.json",
+      "sha256": "60cf811cd2be0cb52bd80800ca308258b12dca4e023c555c8eddb779e77ac837",
+      "bytes": 136365,
+      "git_blob_sha": "59addcee6bd9a84508c55727ba650f1e4ba375aa"
+    },
+    {
+      "path": "QUALIFICATION.md",
+      "sha256": "1741581a8b433dc12f590ce6d981bc154c6029850fd35c5a1f09cd453658e999",
+      "bytes": 23220,
+      "git_blob_sha": "55220786e173fd6664f6dbff8fe01798988fed0c"
+    },
+    {
+      "path": "REGRESSION-OBSERVATION.json",
+      "sha256": "c085fe4ddfd365684e507bd582a4240dd7780712efc37f990e2901c9dbe47ffb",
+      "bytes": 617,
+      "git_blob_sha": "987587bcf4ba13bef656dd3c1f2dadb97060636d"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "sha256": "f673b1f4eeb0b55dfecec5e06dbac833f2916c0f24a20e1ae330bced8b269465",
+      "bytes": 2552,
+      "git_blob_sha": "64a481d085112008c29e51150e67fddd1e45e75b"
+    },
+    {
+      "path": "SOURCE-INTEGRITY.json",
+      "sha256": "5aee16d76ef842453107223b42f7cfc4b3901ac64a0938d3ee718169e03e6c21",
+      "bytes": 47827,
+      "git_blob_sha": "808497b6e708b5ba99bc0aaffdcc1892fd0c8525"
+    },
+    {
+      "path": "privacy-cold-reader.mjs",
+      "sha256": "598da3754d58035e65160e73912c486f109342e3b3d8eee5b85114d9feecadc3",
+      "bytes": 619,
+      "git_blob_sha": "db23165c607b05eb7d5f44b390c8fc150e8f7a64"
+    },
+    {
+      "path": "privacy-counterexample-MEMORY.log",
+      "sha256": "eeef2933dcdb9194d27f1aa526a8421f93689d728cb64f664f7877f827514146",
+      "bytes": 1090,
+      "git_blob_sha": "fbd976c1f6d1f80e7409a6fd734ebf45d70dca12"
+    },
+    {
+      "path": "privacy-counterexample-SQL.log",
+      "sha256": "9f040fc0d9f425aefae1c7aeac1e0ab32fc83a32cbe8bfb5aab5ff03386b8b44",
+      "bytes": 1087,
+      "git_blob_sha": "45af260abe44231e5f0262fbda4147f92224e22a"
+    },
+    {
+      "path": "privacy-counterexample-result-MEMORY.json",
+      "sha256": "173f2579a1bcd833f5d15873f8ed873d9a22beabf691c161f24d655a319cfc47",
+      "bytes": 46560,
+      "git_blob_sha": "d7b02790a4f2812f48702d1051bc8a9b7783a8d2"
+    },
+    {
+      "path": "privacy-counterexample-result-SQL.json",
+      "sha256": "73ddacc80c22b3cf3f9d0e810261fb42002349fae494d55e6e839a87c4ea1aed",
+      "bytes": 46557,
+      "git_blob_sha": "161bd412e219dd0c5922a8ce738406d9dbeb0bd5"
+    },
+    {
+      "path": "privacy-counterexample.mjs",
+      "sha256": "931bea7ab44229f8b65fdf458d99019fc14b257f8786b3d84f64f74bb243ed44",
+      "bytes": 4467,
+      "git_blob_sha": "fbae0a1517d1cdd67132daa5ceb8bef7426540d2"
+    },
+    {
+      "path": "privacy-snapshot-MEMORY.json",
+      "sha256": "d2c2629f1c27890b49bcb45d6416a1ef36138bd9d8db11f5ce543e610ac70e50",
+      "bytes": 615359,
+      "git_blob_sha": "9ee572c3241866c2b1ba22a91a37af1244d7c192"
+    }
+  ],
+  "excluded": "Superseded initial exploratory result/log and duplicate SQL snapshot; no new expectation is inferred from them"
+}
