@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {decodePilotRequest,decodeScope,B6} from '../../src/personal-office/contracts.ts';
+import {compound,principal,T2} from './fixtures.ts';
+import {decodeRootDisposition} from '../../src/domain/root-disposition.ts';
+import {selectPrimary} from '../../src/personal-office/selector.ts';
+const request={schema_version:B6,principal,run:{kind:'PROJECTION_RUN',id:'opaque:run'},as_of:T2,scope_ref:{record_id:'scope:one',object:principal,version:1},recovery_scope_version:1,recipient:principal,purpose:'PERSONAL_ATTENTION',boundary_id:'attention',consumer_class:'PERSONAL_OFFICE'};
+for(const field of Object.keys(request))test('candidate interface rejects missing '+field,()=>{const r:any={...request};delete r[field];assert.throws(()=>decodePilotRequest(r),/MISSING_COORDINATE/);});
+for(const [field,value] of Object.entries({schema_version:'UNKNOWN',principal:{kind:'WORKER',id:'wrong'},run:{kind:'RESOLUTION',id:'wrong'},as_of:'not-time',scope_ref:{record_id:'scope',object:principal,version:0},recovery_scope_version:0,recipient:{kind:'WORKER',id:'wrong'},purpose:'',boundary_id:' ',consumer_class:null}))test('candidate interface rejects malformed '+field,()=>assert.throws(()=>decodePilotRequest({...request,[field]:value})));
+test('candidate interface rejects extra output/label/score coordinates',()=>{for(const field of ['expected_output','label','score','continuity_ON','authority'])assert.throws(()=>decodePilotRequest({...request,[field]:true}),/UNMAPPED_COORDINATE/);});
+test('candidate interface getters are not executed across a command boundary',()=>{let invoked=0;assert.throws(()=>decodePilotRequest({...request,get purpose(){invoked++;return 'PERSONAL_ATTENTION';}}),/DATA_COORDINATES_REQUIRED/);assert.equal(invoked,0);});
+test('decoded invocation is deeply immutable',()=>{const frozen=decodePilotRequest(request);assert(Object.isFrozen(frozen));assert(Object.isFrozen(frozen.scope_ref));assert(Object.isFrozen(frozen.run));assert.throws(()=>{frozen.run.id='MUTATED';},TypeError);});
+test('raw legacy DTOs cannot masquerade as canonical scope',()=>assert.throws(()=>decodeScope({candidates:[],sources:[],bracket:'STABLE'}),/MISSING_COORDINATE/));
+for(const field of ['knowledge_state','applicability_state','freshness_state','coverage_state'] as const)test('Q selector rejects unsupported '+field+' rather than defaulting',()=>{const q=compound();(q.epistemic as any)[field]='UNVERIFIED';assert.throws(()=>selectPrimary(q),/UNSUPPORTED_STATE/);});
+test('full canonical reasons cannot be replaced by an answer-shaped primary badge',()=>{const q=compound();q.reason_set[0]!.canonical_code='REJECTED';assert.throws(()=>decodeRootDisposition(q),/REASON_COORDINATE_DRIFT/);});

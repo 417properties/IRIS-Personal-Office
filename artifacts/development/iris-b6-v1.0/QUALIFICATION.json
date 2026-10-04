@@ -1,0 +1,1993 @@
+{
+  "schema_version": "IRIS_B6_QUALIFICATION_V1",
+  "authority": "BIG #703/5975883867",
+  "q_semantics": "IBA #703/5971926463 reconciled STRATA #703/5972224426",
+  "parent": "9e10e3ab6aaf21dea0c327945e5780070cea0193",
+  "parent_tree": "72b35ab105b42f14e6c8660af3a3e1ec59db4a8b",
+  "branch": "builder/iris-b6-personal-office-pilot-integration-v1",
+  "scope": "BUILDER_AUTHORED_OFFLINE_SOURCE_QUALIFICATION / NOT_INDEPENDENT_ORACLE / NO_HOSTED_PROVIDER_OR_OPERATIONAL_EXPERIENCE_CLAIM",
+  "focused": {
+    "tests": 164,
+    "pass": 164,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0,
+    "occurrence": "extracted from the same successful final full-run; not an independent additional observation",
+    "new_B6_controls": 119,
+    "migrated_legacy_boundary_controls": 45
+  },
+  "full": {
+    "success": true,
+    "counts": {
+      "tests": 1405,
+      "failed": 0,
+      "passed": 1405,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "topLevel": 1022,
+      "suites": 0
+    },
+    "duration_ms": 317147.745604
+  },
+  "inherited_reconciliation": {
+    "accepted_B5_count": 1279,
+    "historical_legacy_Pilot_cases_replaced": 38,
+    "new_named_legacy_rejection_cases": 45,
+    "unchanged_inherited_cases": 1241,
+    "new_B6_cases": 119,
+    "equation": "1279 - 38 + 45 + 119 = 1405",
+    "test_files_deleted": 0,
+    "skip_or_test_masking_wrapper": false,
+    "legacy_positive_semantics": "retired; canonical positive/negative replacements explicitly qualified",
+    "B3_repair_and_B4_guarantee_controls": "unchanged; all pass"
+  },
+  "prior_layer_delta": {
+    "file": "src/recovery/reducer.ts",
+    "changes": "import existing B2 sameRepositoryIdentity; three canonical-record comparison substitutions",
+    "new_material_falsifier": "B5 CAPABILITY ENTITY -> B4 root scan UNSUPPORTED_STATE reproduced in Memory and SQL before repair",
+    "semantic_authority_fence_release_retry_rules": "unchanged",
+    "earlier_gate_receipts": "retained / delta reconciliation, not erasure"
+  },
+  "restoration": {
+    "directions": [
+      "MEMORY -> MEMORY",
+      "MEMORY -> fresh SQL",
+      "SQL -> MEMORY",
+      "SQL -> fresh SQL"
+    ],
+    "fresh_processes": true,
+    "original_prefix_counts_digests": "preserved",
+    "multiple_as_of_cuts": true,
+    "later_Current_and_canonical_tail": true,
+    "metadata_kinds_with_same_textual_root_ID": 7,
+    "continuation_transfer_revocation_ambiguous_submission": true,
+    "continued_writes": true
+  },
+  "whole_stack": {
+    "MEMORY": "PASS",
+    "SQL": "PASS",
+    "chain": "B5 qualified route -> B3 duplicate-fenced one-time actual fixture release -> B4 actual source readback and closure -> B6 canonical Pilot/Personal Office",
+    "actual_fixture_release_calls_per_direction": 1,
+    "second_consequential_effects": 0,
+    "live_provider_calls": 0,
+    "admission": "NOT_ADJUDICATED",
+    "continuity_ON": false,
+    "authority_effect": "NONE"
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "typescript": "5.7.3",
+    "node_types": "24.10.1",
+    "pglite": "0.3.14",
+    "postgres": "17.5 WASM"
+  },
+  "commands": {
+    "full": "IRIS_B2_PGLITE_MODULE=/tmp/iris-b2-pglite/package/dist/index.js NODE_OPTIONS=--require=./scripts/qualification/network-guard.cjs IRIS_B2_NETWORK_LOG=/tmp/iris-b6-network.jsonl node --experimental-strip-types --test --test-reporter=/tmp/b6-reporter.mjs $(rg --files tests -g *.test.ts | sort)",
+    "equivalent_standard_runner": "same offline environment; node scripts/run-tests.mjs",
+    "structural": "node scripts/static-check.mjs / PASS / 17 tables, eight migrations",
+    "strict": "TypeScript 5.7.3 --noEmit --strict --noUnusedLocals --noUnusedParameters --target es2022 --module nodenext --moduleResolution nodenext --allowImportingTsExtensions --skipLibCheck --types node; PersonalOffice/Pilot and migrated capability/transition roots / PASS"
+  },
+  "reporter_source": "export default async function* reporter(source){for await(const event of source)if(['test:pass','test:fail','test:summary'].includes(event.type))yield JSON.stringify(event,(_k,v)=>v instanceof Error?{message:v.message,stack:v.stack,code:v.code,actual:v.actual,expected:v.expected}:v)+'\\n';}\n",
+  "raw_complete_test_event_report": {
+    "bytes": 459312,
+    "sha256": "59d9b1b16477945d7795e94912ebc73ce7d14499e4f30e6701e4020873b1a3c8",
+    "interpretation": "full per-file summaries and every focused result preserved below; hash commits to raw local pass/fail/summary events"
+  },
+  "qualification_network_attempts": 0,
+  "zero_mutation": {
+    "deployment": 0,
+    "Preview": 0,
+    "credential_generation": 0,
+    "live_store": 0,
+    "provider_configuration": 0,
+    "Production": 0,
+    "office_ON": 0,
+    "IRIS_admission": 0,
+    "BIG_Activation": 0,
+    "E1_mutation": 0,
+    "oracle_mutation": 0,
+    "hidden_label_access": 0,
+    "scoring": 0,
+    "remote_ref_PR_merge_CI_trigger": 0,
+    "allowed_mutations": "local bounded source/tests/evidence; ephemeral PGlite and Memory fixtures; immutable Git objects and required institutional return comments"
+  },
+  "package_identity": {
+    "name": "iris-personal-office",
+    "version": "0.1.0",
+    "bytes": 963,
+    "blob": "34b974428d053199b03bba35498793e6e12f2b50",
+    "sha256": "b10a0a4de3b39a56c243de56b92e32335bc00b29b18443a551bedba59bb00b90",
+    "manifest_dependencies_migrations": "unchanged from accepted B5"
+  },
+  "per_file_results": {
+    "tests/agent-transition/ambient.test.ts": {
+      "counts": {
+        "tests": 3,
+        "failed": 0,
+        "passed": 3,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 3,
+        "suites": 0
+      },
+      "duration_ms": 10.943968
+    },
+    "tests/agent-transition/authority-lease.test.ts": {
+      "counts": {
+        "tests": 7,
+        "failed": 0,
+        "passed": 7,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 7,
+        "suites": 0
+      },
+      "duration_ms": 20.880783
+    },
+    "tests/agent-transition/big-separation.test.ts": {
+      "counts": {
+        "tests": 10,
+        "failed": 0,
+        "passed": 10,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 10,
+        "suites": 0
+      },
+      "duration_ms": 31.153669
+    },
+    "tests/agent-transition/capability-qualification.test.ts": {
+      "counts": {
+        "tests": 3,
+        "failed": 0,
+        "passed": 3,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 3,
+        "suites": 0
+      },
+      "duration_ms": 9.505277
+    },
+    "tests/agent-transition/capability-router.test.ts": {
+      "counts": {
+        "tests": 3,
+        "failed": 0,
+        "passed": 3,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 3,
+        "suites": 0
+      },
+      "duration_ms": 14.452338
+    },
+    "tests/agent-transition/identity.test.ts": {
+      "counts": {
+        "tests": 8,
+        "failed": 0,
+        "passed": 8,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 8,
+        "suites": 0
+      },
+      "duration_ms": 19.898077
+    },
+    "tests/agent-transition/persistent-objective-runtime.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 19.275122
+    },
+    "tests/agent-transition/pilot001-classification.test.ts": {
+      "counts": {
+        "tests": 15,
+        "failed": 0,
+        "passed": 15,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 15,
+        "suites": 0
+      },
+      "duration_ms": 26.542638
+    },
+    "tests/agent-transition/pilot001-concurrency.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 9.01383
+    },
+    "tests/agent-transition/pilot001-coverage.test.ts": {
+      "counts": {
+        "tests": 15,
+        "failed": 0,
+        "passed": 15,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 15,
+        "suites": 0
+      },
+      "duration_ms": 27.910802
+    },
+    "tests/agent-transition/pilot001-metrics.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 17.519255
+    },
+    "tests/agent-transition/pilot001-post-e3-repair.test.ts": {
+      "counts": {
+        "tests": 6,
+        "failed": 0,
+        "passed": 6,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 6,
+        "suites": 0
+      },
+      "duration_ms": 17.545914
+    },
+    "tests/agent-transition/pilot001-repository-bracket.test.ts": {
+      "counts": {
+        "tests": 5,
+        "failed": 0,
+        "passed": 5,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 5,
+        "suites": 0
+      },
+      "duration_ms": 19.337826
+    },
+    "tests/agent-transition/portable-procedure.test.ts": {
+      "counts": {
+        "tests": 3,
+        "failed": 0,
+        "passed": 3,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 3,
+        "suites": 0
+      },
+      "duration_ms": 12.760477
+    },
+    "tests/agent-transition/research-worker.test.ts": {
+      "counts": {
+        "tests": 2,
+        "failed": 0,
+        "passed": 2,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 2,
+        "suites": 0
+      },
+      "duration_ms": 7.452564
+    },
+    "tests/agent-transition/selective-perception.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 9.905378
+    },
+    "tests/agent-transition/sentinel.test.ts": {
+      "counts": {
+        "tests": 5,
+        "failed": 0,
+        "passed": 5,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 5,
+        "suites": 0
+      },
+      "duration_ms": 1740.384475
+    },
+    "tests/agent-transition/workflow-durability.test.ts": {
+      "counts": {
+        "tests": 5,
+        "failed": 0,
+        "passed": 5,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 5,
+        "suites": 0
+      },
+      "duration_ms": 15.77224
+    },
+    "tests/authority-privacy/authority-privacy.test.ts": {
+      "counts": {
+        "tests": 20,
+        "failed": 0,
+        "passed": 20,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 20,
+        "suites": 0
+      },
+      "duration_ms": 34.686169
+    },
+    "tests/big-separation/big-separation.test.ts": {
+      "counts": {
+        "tests": 6,
+        "failed": 0,
+        "passed": 6,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 6,
+        "suites": 0
+      },
+      "duration_ms": 20.246391
+    },
+    "tests/canonical-repository/cold-process.test.ts": {
+      "counts": {
+        "tests": 2,
+        "failed": 0,
+        "passed": 2,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 2,
+        "suites": 0
+      },
+      "duration_ms": 7869.920493
+    },
+    "tests/canonical-repository/conformance.test.ts": {
+      "counts": {
+        "tests": 111,
+        "failed": 0,
+        "passed": 111,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 13,
+        "suites": 0
+      },
+      "duration_ms": 19237.254121
+    },
+    "tests/canonical-repository/representations.test.ts": {
+      "counts": {
+        "tests": 22,
+        "failed": 0,
+        "passed": 22,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 7010.376056
+    },
+    "tests/canonical-repository/root-disposition.test.ts": {
+      "counts": {
+        "tests": 18,
+        "failed": 0,
+        "passed": 18,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 3,
+        "suites": 0
+      },
+      "duration_ms": 4041.122865
+    },
+    "tests/capability-integration/adapters-restoration.test.ts": {
+      "counts": {
+        "tests": 22,
+        "failed": 0,
+        "passed": 22,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 22,
+        "suites": 0
+      },
+      "duration_ms": 16457.452058
+    },
+    "tests/capability-integration/iccp.test.ts": {
+      "counts": {
+        "tests": 60,
+        "failed": 0,
+        "passed": 60,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 60,
+        "suites": 0
+      },
+      "duration_ms": 8218.65082
+    },
+    "tests/capability-integration/perception.test.ts": {
+      "counts": {
+        "tests": 20,
+        "failed": 0,
+        "passed": 20,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 20,
+        "suites": 0
+      },
+      "duration_ms": 5824.830811
+    },
+    "tests/capability-integration/qualification.test.ts": {
+      "counts": {
+        "tests": 69,
+        "failed": 0,
+        "passed": 69,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 69,
+        "suites": 0
+      },
+      "duration_ms": 8354.189913
+    },
+    "tests/circuit/circuit.test.ts": {
+      "counts": {
+        "tests": 2,
+        "failed": 0,
+        "passed": 2,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 2,
+        "suites": 0
+      },
+      "duration_ms": 11.164109
+    },
+    "tests/domain/domain.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 13.059235
+    },
+    "tests/enforcement-repair/boundaries.test.ts": {
+      "counts": {
+        "tests": 26,
+        "failed": 0,
+        "passed": 26,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 26,
+        "suites": 0
+      },
+      "duration_ms": 18085.19415
+    },
+    "tests/enforcement-repair/repair.test.ts": {
+      "counts": {
+        "tests": 28,
+        "failed": 0,
+        "passed": 28,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 28,
+        "suites": 0
+      },
+      "duration_ms": 68439.598718
+    },
+    "tests/enforcement/authority.test.ts": {
+      "counts": {
+        "tests": 307,
+        "failed": 0,
+        "passed": 307,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 55,
+        "suites": 0
+      },
+      "duration_ms": 179745.307703
+    },
+    "tests/enforcement/cold-process.test.ts": {
+      "counts": {
+        "tests": 12,
+        "failed": 0,
+        "passed": 12,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 12,
+        "suites": 0
+      },
+      "duration_ms": 20754.650755
+    },
+    "tests/enforcement/persistence.test.ts": {
+      "counts": {
+        "tests": 15,
+        "failed": 0,
+        "passed": 15,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 15,
+        "suites": 0
+      },
+      "duration_ms": 12291.643295
+    },
+    "tests/enforcement/release.test.ts": {
+      "counts": {
+        "tests": 44,
+        "failed": 0,
+        "passed": 44,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 44,
+        "suites": 0
+      },
+      "duration_ms": 34906.914121
+    },
+    "tests/failure/continuity.test.ts": {
+      "counts": {
+        "tests": 19,
+        "failed": 0,
+        "passed": 19,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 19,
+        "suites": 0
+      },
+      "duration_ms": 426.720366
+    },
+    "tests/failure/effect-retry.test.ts": {
+      "counts": {
+        "tests": 6,
+        "failed": 0,
+        "passed": 6,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 6,
+        "suites": 0
+      },
+      "duration_ms": 10.705841
+    },
+    "tests/personal-office/integration.test.ts": {
+      "counts": {
+        "tests": 35,
+        "failed": 0,
+        "passed": 35,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 35,
+        "suites": 0
+      },
+      "duration_ms": 296239.241133
+    },
+    "tests/personal-office/interface.test.ts": {
+      "counts": {
+        "tests": 29,
+        "failed": 0,
+        "passed": 29,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 29,
+        "suites": 0
+      },
+      "duration_ms": 34.588223
+    },
+    "tests/personal-office/resolution.test.ts": {
+      "counts": {
+        "tests": 7,
+        "failed": 0,
+        "passed": 7,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 7,
+        "suites": 0
+      },
+      "duration_ms": 44452.08712
+    },
+    "tests/personal-office/restoration.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 142454.757276
+    },
+    "tests/personal-office/selector.test.ts": {
+      "counts": {
+        "tests": 42,
+        "failed": 0,
+        "passed": 42,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 42,
+        "suites": 0
+      },
+      "duration_ms": 57.221277
+    },
+    "tests/personal-office/whole-stack.test.ts": {
+      "counts": {
+        "tests": 2,
+        "failed": 0,
+        "passed": 2,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 2,
+        "suites": 0
+      },
+      "duration_ms": 38606.02145
+    },
+    "tests/provider-substitution/provider-substitution.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 654.977127
+    },
+    "tests/reconstruction/fresh-process.test.ts": {
+      "counts": {
+        "tests": 10,
+        "failed": 0,
+        "passed": 10,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 10,
+        "suites": 0
+      },
+      "duration_ms": 1162.59886
+    },
+    "tests/reconstruction/reconstruction.test.ts": {
+      "counts": {
+        "tests": 8,
+        "failed": 0,
+        "passed": 8,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 8,
+        "suites": 0
+      },
+      "duration_ms": 15.560322
+    },
+    "tests/recovery/closure-multiple.test.ts": {
+      "counts": {
+        "tests": 2,
+        "failed": 0,
+        "passed": 2,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 2,
+        "suites": 0
+      },
+      "duration_ms": 7848.112301
+    },
+    "tests/recovery/compensation.test.ts": {
+      "counts": {
+        "tests": 4,
+        "failed": 0,
+        "passed": 4,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 4,
+        "suites": 0
+      },
+      "duration_ms": 15383.479885
+    },
+    "tests/recovery/effect.test.ts": {
+      "counts": {
+        "tests": 78,
+        "failed": 0,
+        "passed": 78,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 78,
+        "suites": 0
+      },
+      "duration_ms": 84887.555504
+    },
+    "tests/recovery/integration.test.ts": {
+      "counts": {
+        "tests": 11,
+        "failed": 0,
+        "passed": 11,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 11,
+        "suites": 0
+      },
+      "duration_ms": 13206.733199
+    },
+    "tests/recovery/recovery.test.ts": {
+      "counts": {
+        "tests": 60,
+        "failed": 0,
+        "passed": 60,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 60,
+        "suites": 0
+      },
+      "duration_ms": 78508.266065
+    },
+    "tests/recovery/restoration.test.ts": {
+      "counts": {
+        "tests": 7,
+        "failed": 0,
+        "passed": 7,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 7,
+        "suites": 0
+      },
+      "duration_ms": 41211.934487
+    },
+    "tests/recovery/source-boundaries.test.ts": {
+      "counts": {
+        "tests": 24,
+        "failed": 0,
+        "passed": 24,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 24,
+        "suites": 0
+      },
+      "duration_ms": 21868.068499
+    },
+    "tests/semantic-kernel/kernel.test.ts": {
+      "counts": {
+        "tests": 159,
+        "failed": 0,
+        "passed": 159,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0,
+        "topLevel": 159,
+        "suites": 0
+      },
+      "duration_ms": 88.483295
+    }
+  },
+  "focused_controls": [
+    {
+      "control_id": "B6-001",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified decision",
+      "result": "PASS",
+      "duration_ms": 1.719453
+    },
+    {
+      "control_id": "B6-002",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified obligation",
+      "result": "PASS",
+      "duration_ms": 0.18628
+    },
+    {
+      "control_id": "B6-003",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified authorization",
+      "result": "PASS",
+      "duration_ms": 0.165899
+    },
+    {
+      "control_id": "B6-004",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified conflict",
+      "result": "PASS",
+      "duration_ms": 0.109845
+    },
+    {
+      "control_id": "B6-005",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified unknownHolder",
+      "result": "PASS",
+      "duration_ms": 0.143195
+    },
+    {
+      "control_id": "B6-006",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified otherPrincipal",
+      "result": "PASS",
+      "duration_ms": 0.101422
+    },
+    {
+      "control_id": "B6-007",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified terminal",
+      "result": "PASS",
+      "duration_ms": 0.11322
+    },
+    {
+      "control_id": "B6-008",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified informational",
+      "result": "PASS",
+      "duration_ms": 0.143465
+    },
+    {
+      "control_id": "B6-009",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy classifier rejects unqualified unknownDecision",
+      "result": "PASS",
+      "duration_ms": 0.140592
+    },
+    {
+      "control_id": "B6-010",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy intervention rejects unqualified DECIDE",
+      "result": "PASS",
+      "duration_ms": 0.324958
+    },
+    {
+      "control_id": "B6-011",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy intervention rejects unqualified ACT",
+      "result": "PASS",
+      "duration_ms": 6.694826
+    },
+    {
+      "control_id": "B6-012",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy intervention rejects unqualified AUTHORIZE",
+      "result": "PASS",
+      "duration_ms": 0.138678
+    },
+    {
+      "control_id": "B6-013",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy intervention rejects unqualified RECONCILE_EFFECT",
+      "result": "PASS",
+      "duration_ms": 0.14656
+    },
+    {
+      "control_id": "B6-014",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy intervention rejects unqualified RESOLVE_CONFLICT",
+      "result": "PASS",
+      "duration_ms": 1.153512
+    },
+    {
+      "control_id": "B6-015",
+      "file": "tests/agent-transition/pilot001-classification.test.ts",
+      "name": "legacy identity matching and intervention factory cannot self-qualify",
+      "result": "PASS",
+      "duration_ms": 0.218729
+    },
+    {
+      "control_id": "B6-016",
+      "file": "tests/agent-transition/pilot001-concurrency.test.ts",
+      "name": "legacy caller bracket STABLE is no snapshot proof",
+      "result": "PASS",
+      "duration_ms": 1.007894
+    },
+    {
+      "control_id": "B6-017",
+      "file": "tests/agent-transition/pilot001-concurrency.test.ts",
+      "name": "legacy caller bracket RERUN_STABLE is no snapshot proof",
+      "result": "PASS",
+      "duration_ms": 0.211648
+    },
+    {
+      "control_id": "B6-018",
+      "file": "tests/agent-transition/pilot001-concurrency.test.ts",
+      "name": "legacy caller bracket UNSTABLE is no snapshot proof",
+      "result": "PASS",
+      "duration_ms": 0.085027
+    },
+    {
+      "control_id": "B6-019",
+      "file": "tests/agent-transition/pilot001-concurrency.test.ts",
+      "name": "legacy duplicate labels cannot manufacture exact identity",
+      "result": "PASS",
+      "duration_ms": 0.130867
+    },
+    {
+      "control_id": "B6-020",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove qualifiedFlags",
+      "result": "PASS",
+      "duration_ms": 3.131373
+    },
+    {
+      "control_id": "B6-021",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove stale",
+      "result": "PASS",
+      "duration_ms": 0.14657
+    },
+    {
+      "control_id": "B6-022",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove partial",
+      "result": "PASS",
+      "duration_ms": 0.083786
+    },
+    {
+      "control_id": "B6-023",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove missing",
+      "result": "PASS",
+      "duration_ms": 0.112249
+    },
+    {
+      "control_id": "B6-024",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove unknownIdentity",
+      "result": "PASS",
+      "duration_ms": 0.179349
+    },
+    {
+      "control_id": "B6-025",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove unknownApplicability",
+      "result": "PASS",
+      "duration_ms": 0.081712
+    },
+    {
+      "control_id": "B6-026",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove wrongPrincipal",
+      "result": "PASS",
+      "duration_ms": 0.143025
+    },
+    {
+      "control_id": "B6-027",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove narrowed",
+      "result": "PASS",
+      "duration_ms": 0.141833
+    },
+    {
+      "control_id": "B6-028",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove unknownFreshness",
+      "result": "PASS",
+      "duration_ms": 0.113691
+    },
+    {
+      "control_id": "B6-029",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove unsupportedInapplicability",
+      "result": "PASS",
+      "duration_ms": 0.208163
+    },
+    {
+      "control_id": "B6-030",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove malformedFreshness",
+      "result": "PASS",
+      "duration_ms": 5.909997
+    },
+    {
+      "control_id": "B6-031",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove malformedProvenance",
+      "result": "PASS",
+      "duration_ms": 0.07994
+    },
+    {
+      "control_id": "B6-032",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy coverage cannot self-prove malformedPartial",
+      "result": "PASS",
+      "duration_ms": 0.17289
+    },
+    {
+      "control_id": "B6-033",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy empty or narrowed source roster cannot qualify",
+      "result": "PASS",
+      "duration_ms": 0.138108
+    },
+    {
+      "control_id": "B6-034",
+      "file": "tests/agent-transition/pilot001-coverage.test.ts",
+      "name": "legacy justified omission cannot be minted by a caller COMPLETE badge",
+      "result": "PASS",
+      "duration_ms": 0.109334
+    },
+    {
+      "control_id": "B6-035",
+      "file": "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+      "name": "legacy contextualDecision requires exact canonical qualification",
+      "result": "PASS",
+      "duration_ms": 3.060437
+    },
+    {
+      "control_id": "B6-036",
+      "file": "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+      "name": "legacy parsedObligations requires exact canonical qualification",
+      "result": "PASS",
+      "duration_ms": 0.175714
+    },
+    {
+      "control_id": "B6-037",
+      "file": "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+      "name": "legacy materialConflict requires exact canonical qualification",
+      "result": "PASS",
+      "duration_ms": 0.11327
+    },
+    {
+      "control_id": "B6-038",
+      "file": "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+      "name": "legacy unresolvedEffect requires exact canonical qualification",
+      "result": "PASS",
+      "duration_ms": 0.12617
+    },
+    {
+      "control_id": "B6-039",
+      "file": "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+      "name": "legacy sharedContext requires exact canonical qualification",
+      "result": "PASS",
+      "duration_ms": 1.74426
+    },
+    {
+      "control_id": "B6-040",
+      "file": "tests/agent-transition/pilot001-post-e3-repair.test.ts",
+      "name": "legacy unknownDelegation requires exact canonical qualification",
+      "result": "PASS",
+      "duration_ms": 0.497938
+    },
+    {
+      "control_id": "B6-041",
+      "file": "tests/agent-transition/pilot001-repository-bracket.test.ts",
+      "name": "legacy SQL stable fails before SQL or decoder invocation",
+      "result": "PASS",
+      "duration_ms": 1.541475
+    },
+    {
+      "control_id": "B6-042",
+      "file": "tests/agent-transition/pilot001-repository-bracket.test.ts",
+      "name": "legacy SQL one drift fails before SQL or decoder invocation",
+      "result": "PASS",
+      "duration_ms": 0.203505
+    },
+    {
+      "control_id": "B6-043",
+      "file": "tests/agent-transition/pilot001-repository-bracket.test.ts",
+      "name": "legacy SQL repeated drift fails before SQL or decoder invocation",
+      "result": "PASS",
+      "duration_ms": 0.18669
+    },
+    {
+      "control_id": "B6-044",
+      "file": "tests/agent-transition/pilot001-repository-bracket.test.ts",
+      "name": "legacy SQL malformed decoder fails before SQL or decoder invocation",
+      "result": "PASS",
+      "duration_ms": 0.180481
+    },
+    {
+      "control_id": "B6-045",
+      "file": "tests/agent-transition/pilot001-repository-bracket.test.ts",
+      "name": "legacy SQL forged completeness fails before SQL or decoder invocation",
+      "result": "PASS",
+      "duration_ms": 0.204748
+    },
+    {
+      "control_id": "B6-046",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "source-qualified Pilot conserves exact roots and B1 coverage with durable unique run identity",
+      "result": "PASS",
+      "duration_ms": 19763.649258
+    },
+    {
+      "control_id": "B6-047",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot unknown holder",
+      "result": "PASS",
+      "duration_ms": 12375.573628
+    },
+    {
+      "control_id": "B6-048",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot unknown knowledge",
+      "result": "PASS",
+      "duration_ms": 12907.966672
+    },
+    {
+      "control_id": "B6-049",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot conflict plus unknown",
+      "result": "PASS",
+      "duration_ms": 12995.622902
+    },
+    {
+      "control_id": "B6-050",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot missing",
+      "result": "PASS",
+      "duration_ms": 14287.053855
+    },
+    {
+      "control_id": "B6-051",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot unavailable",
+      "result": "PASS",
+      "duration_ms": 12123.98345
+    },
+    {
+      "control_id": "B6-052",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot stale",
+      "result": "PASS",
+      "duration_ms": 12450.250234
+    },
+    {
+      "control_id": "B6-053",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot required plus valid deferral",
+      "result": "PASS",
+      "duration_ms": 11478.364355
+    },
+    {
+      "control_id": "B6-054",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "canonical Pilot proven not applicable",
+      "result": "PASS",
+      "duration_ms": 11801.338786
+    },
+    {
+      "control_id": "B6-055",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "prohibited conflict retains internal audit but reveals only privacy disposition and safe aggregate",
+      "result": "PASS",
+      "duration_ms": 11436.938137
+    },
+    {
+      "control_id": "B6-056",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "preflight HOLD unknown privacy before run or proof mutation",
+      "result": "PASS",
+      "duration_ms": 1221.782219
+    },
+    {
+      "control_id": "B6-057",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "preflight HOLD incomplete reason set before run or proof mutation",
+      "result": "PASS",
+      "duration_ms": 1060.621812
+    },
+    {
+      "control_id": "B6-058",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "preflight HOLD unqualified basis before run or proof mutation",
+      "result": "PASS",
+      "duration_ms": 1056.247421
+    },
+    {
+      "control_id": "B6-059",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "exact boundary fails closed on purpose",
+      "result": "PASS",
+      "duration_ms": 640.013532
+    },
+    {
+      "control_id": "B6-060",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "exact boundary fails closed on boundary_id",
+      "result": "PASS",
+      "duration_ms": 645.153677
+    },
+    {
+      "control_id": "B6-061",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "exact boundary fails closed on consumer_class",
+      "result": "PASS",
+      "duration_ms": 695.244556
+    },
+    {
+      "control_id": "B6-062",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "exact boundary fails closed on principal",
+      "result": "PASS",
+      "duration_ms": 503.914993
+    },
+    {
+      "control_id": "B6-063",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "exact boundary fails closed on recipient",
+      "result": "PASS",
+      "duration_ms": 646.307321
+    },
+    {
+      "control_id": "B6-064",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "missing immutable source slot and duplicate source slot are rejected",
+      "result": "PASS",
+      "duration_ms": 1304.792707
+    },
+    {
+      "control_id": "B6-065",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "mandatory source uncertainty drives the same B1 coverage fact list",
+      "result": "PASS",
+      "duration_ms": 10630.115223
+    },
+    {
+      "control_id": "B6-066",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "duplicate roots cannot disappear through consolidation",
+      "result": "PASS",
+      "duration_ms": 667.338281
+    },
+    {
+      "control_id": "B6-067",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "required root without explicit resolution stays HOLD",
+      "result": "PASS",
+      "duration_ms": 2957.878038
+    },
+    {
+      "control_id": "B6-068",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "context alone never absorbs a conflict into an authority intervention",
+      "result": "PASS",
+      "duration_ms": 11291.074531
+    },
+    {
+      "control_id": "B6-069",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "distinct run IDs preserve occurrences while identical projection content shares its content hash",
+      "result": "PASS",
+      "duration_ms": 21123.247849
+    },
+    {
+      "control_id": "B6-070",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "parallel duplicate invocation reconciles to one durable proof and one completion",
+      "result": "PASS",
+      "duration_ms": 19403.919657
+    },
+    {
+      "control_id": "B6-071",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "mutable invocation cannot cross the first awaited boundary",
+      "result": "PASS",
+      "duration_ms": 9600.345926
+    },
+    {
+      "control_id": "B6-072",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "a changed invocation cannot reuse a completed durable run",
+      "result": "PASS",
+      "duration_ms": 9752.178166
+    },
+    {
+      "control_id": "B6-073",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "crash before B4 proof resumes from the captured invocation without another occurrence",
+      "result": "PASS",
+      "duration_ms": 9733.196726
+    },
+    {
+      "control_id": "B6-074",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "crash after B4 proof resumes from the captured invocation without another occurrence",
+      "result": "PASS",
+      "duration_ms": 9616.873261
+    },
+    {
+      "control_id": "B6-075",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "crash before completed audit resumes from original pinned canonical prefix",
+      "result": "PASS",
+      "duration_ms": 12375.008471
+    },
+    {
+      "control_id": "B6-076",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "pre-existing unrelated B4 run cannot be relabelled as a B6 capture",
+      "result": "PASS",
+      "duration_ms": 3803.41989
+    },
+    {
+      "control_id": "B6-077",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "source change between capture and proof prevents a complete artifact",
+      "result": "PASS",
+      "duration_ms": 3958.216071
+    },
+    {
+      "control_id": "B6-078",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "readback recomputes output from proof prefix and rejects repaired candidate outputs",
+      "result": "PASS",
+      "duration_ms": 12687.999753
+    },
+    {
+      "control_id": "B6-079",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "Personal Office, migrated queries, and candidate interface share one canonical Pilot owner",
+      "result": "PASS",
+      "duration_ms": 19041.106423
+    },
+    {
+      "control_id": "B6-080",
+      "file": "tests/personal-office/integration.test.ts",
+      "name": "Personal Office cannot substitute another principal or legacy repository",
+      "result": "PASS",
+      "duration_ms": 178.282442
+    },
+    {
+      "control_id": "B6-081",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing schema_version",
+      "result": "PASS",
+      "duration_ms": 1.449958
+    },
+    {
+      "control_id": "B6-082",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing principal",
+      "result": "PASS",
+      "duration_ms": 0.17304
+    },
+    {
+      "control_id": "B6-083",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing run",
+      "result": "PASS",
+      "duration_ms": 0.142514
+    },
+    {
+      "control_id": "B6-084",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing as_of",
+      "result": "PASS",
+      "duration_ms": 0.1595
+    },
+    {
+      "control_id": "B6-085",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing scope_ref",
+      "result": "PASS",
+      "duration_ms": 0.118378
+    },
+    {
+      "control_id": "B6-086",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing recovery_scope_version",
+      "result": "PASS",
+      "duration_ms": 0.125949
+    },
+    {
+      "control_id": "B6-087",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing recipient",
+      "result": "PASS",
+      "duration_ms": 0.163145
+    },
+    {
+      "control_id": "B6-088",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing purpose",
+      "result": "PASS",
+      "duration_ms": 0.142464
+    },
+    {
+      "control_id": "B6-089",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing boundary_id",
+      "result": "PASS",
+      "duration_ms": 0.127762
+    },
+    {
+      "control_id": "B6-090",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects missing consumer_class",
+      "result": "PASS",
+      "duration_ms": 0.15351
+    },
+    {
+      "control_id": "B6-091",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed schema_version",
+      "result": "PASS",
+      "duration_ms": 0.151858
+    },
+    {
+      "control_id": "B6-092",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed principal",
+      "result": "PASS",
+      "duration_ms": 0.615445
+    },
+    {
+      "control_id": "B6-093",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed run",
+      "result": "PASS",
+      "duration_ms": 0.191868
+    },
+    {
+      "control_id": "B6-094",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed as_of",
+      "result": "PASS",
+      "duration_ms": 0.256986
+    },
+    {
+      "control_id": "B6-095",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed scope_ref",
+      "result": "PASS",
+      "duration_ms": 0.706361
+    },
+    {
+      "control_id": "B6-096",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed recovery_scope_version",
+      "result": "PASS",
+      "duration_ms": 0.169625
+    },
+    {
+      "control_id": "B6-097",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed recipient",
+      "result": "PASS",
+      "duration_ms": 0.169645
+    },
+    {
+      "control_id": "B6-098",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed purpose",
+      "result": "PASS",
+      "duration_ms": 0.189495
+    },
+    {
+      "control_id": "B6-099",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed boundary_id",
+      "result": "PASS",
+      "duration_ms": 0.125259
+    },
+    {
+      "control_id": "B6-100",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects malformed consumer_class",
+      "result": "PASS",
+      "duration_ms": 0.142144
+    },
+    {
+      "control_id": "B6-101",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface rejects extra output/label/score coordinates",
+      "result": "PASS",
+      "duration_ms": 0.227442
+    },
+    {
+      "control_id": "B6-102",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "candidate interface getters are not executed across a command boundary",
+      "result": "PASS",
+      "duration_ms": 0.194673
+    },
+    {
+      "control_id": "B6-103",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "decoded invocation is deeply immutable",
+      "result": "PASS",
+      "duration_ms": 0.237536
+    },
+    {
+      "control_id": "B6-104",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "raw legacy DTOs cannot masquerade as canonical scope",
+      "result": "PASS",
+      "duration_ms": 0.171438
+    },
+    {
+      "control_id": "B6-105",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "Q selector rejects unsupported knowledge_state rather than defaulting",
+      "result": "PASS",
+      "duration_ms": 0.543677
+    },
+    {
+      "control_id": "B6-106",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "Q selector rejects unsupported applicability_state rather than defaulting",
+      "result": "PASS",
+      "duration_ms": 0.13302
+    },
+    {
+      "control_id": "B6-107",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "Q selector rejects unsupported freshness_state rather than defaulting",
+      "result": "PASS",
+      "duration_ms": 0.16654
+    },
+    {
+      "control_id": "B6-108",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "Q selector rejects unsupported coverage_state rather than defaulting",
+      "result": "PASS",
+      "duration_ms": 0.137357
+    },
+    {
+      "control_id": "B6-109",
+      "file": "tests/personal-office/interface.test.ts",
+      "name": "full canonical reasons cannot be replaced by an answer-shaped primary badge",
+      "result": "PASS",
+      "duration_ms": 0.627933
+    },
+    {
+      "control_id": "B6-110",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "one explicitly proven resolution may cover two distinct roots without losing either disposition",
+      "result": "PASS",
+      "duration_ms": 12636.391237
+    },
+    {
+      "control_id": "B6-111",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "canonical RESOLUTION_EQUIVALENCE is interpreted only through B1 explicit equivalence",
+      "result": "PASS",
+      "duration_ms": 11754.271739
+    },
+    {
+      "control_id": "B6-112",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "canonical CONTEXT is interpreted only through B1 explicit equivalence",
+      "result": "PASS",
+      "duration_ms": 3491.847723
+    },
+    {
+      "control_id": "B6-113",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "expired equivalence cannot consolidate roots",
+      "result": "PASS",
+      "duration_ms": 3497.676763
+    },
+    {
+      "control_id": "B6-114",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "opaque ID spelling cannot change anchors or choose a raw ID suffix",
+      "result": "PASS",
+      "duration_ms": 10765.511701
+    },
+    {
+      "control_id": "B6-115",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "selected lifecycle drift cannot be hidden by a disposition payload",
+      "result": "PASS",
+      "duration_ms": 1077.445994
+    },
+    {
+      "control_id": "B6-116",
+      "file": "tests/personal-office/resolution.test.ts",
+      "name": "canonical invalidators require requalification instead of a caller Current badge",
+      "result": "PASS",
+      "duration_ms": 1212.005906
+    },
+    {
+      "control_id": "B6-117",
+      "file": "tests/personal-office/restoration.test.ts",
+      "name": "MEMORY -> fresh MEMORY preserves B6 pinned projections, interleaving, cuts, continuation, revocation and ambiguous submission",
+      "result": "PASS",
+      "duration_ms": 33467.387395
+    },
+    {
+      "control_id": "B6-118",
+      "file": "tests/personal-office/restoration.test.ts",
+      "name": "MEMORY -> fresh SQL preserves B6 pinned projections, interleaving, cuts, continuation, revocation and ambiguous submission",
+      "result": "PASS",
+      "duration_ms": 40541.254977
+    },
+    {
+      "control_id": "B6-119",
+      "file": "tests/personal-office/restoration.test.ts",
+      "name": "SQL -> fresh MEMORY preserves B6 pinned projections, interleaving, cuts, continuation, revocation and ambiguous submission",
+      "result": "PASS",
+      "duration_ms": 31914.198488
+    },
+    {
+      "control_id": "B6-120",
+      "file": "tests/personal-office/restoration.test.ts",
+      "name": "SQL -> fresh SQL preserves B6 pinned projections, interleaving, cuts, continuation, revocation and ambiguous submission",
+      "result": "PASS",
+      "duration_ms": 36522.541253
+    },
+    {
+      "control_id": "B6-121",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary invalid",
+      "result": "PASS",
+      "duration_ms": 3.003341
+    },
+    {
+      "control_id": "B6-122",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary conflict",
+      "result": "PASS",
+      "duration_ms": 0.608654
+    },
+    {
+      "control_id": "B6-123",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary terminal",
+      "result": "PASS",
+      "duration_ms": 0.50563
+    },
+    {
+      "control_id": "B6-124",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary notApplicable",
+      "result": "PASS",
+      "duration_ms": 0.469776
+    },
+    {
+      "control_id": "B6-125",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary unknown",
+      "result": "PASS",
+      "duration_ms": 0.601674
+    },
+    {
+      "control_id": "B6-126",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary deferred",
+      "result": "PASS",
+      "duration_ms": 0.592179
+    },
+    {
+      "control_id": "B6-127",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q primary required",
+      "result": "PASS",
+      "duration_ms": 0.412429
+    },
+    {
+      "control_id": "B6-128",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence invalid over conflict",
+      "result": "PASS",
+      "duration_ms": 0.631738
+    },
+    {
+      "control_id": "B6-129",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence invalid over terminal",
+      "result": "PASS",
+      "duration_ms": 0.42639
+    },
+    {
+      "control_id": "B6-130",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence invalid over unknown",
+      "result": "PASS",
+      "duration_ms": 1.77113
+    },
+    {
+      "control_id": "B6-131",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence invalid over deferred",
+      "result": "PASS",
+      "duration_ms": 0.389325
+    },
+    {
+      "control_id": "B6-132",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence invalid over required",
+      "result": "PASS",
+      "duration_ms": 0.432029
+    },
+    {
+      "control_id": "B6-133",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence conflict over terminal",
+      "result": "PASS",
+      "duration_ms": 0.520792
+    },
+    {
+      "control_id": "B6-134",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence conflict over unknown",
+      "result": "PASS",
+      "duration_ms": 1.07157
+    },
+    {
+      "control_id": "B6-135",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence conflict over deferred",
+      "result": "PASS",
+      "duration_ms": 0.235643
+    },
+    {
+      "control_id": "B6-136",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence conflict over required",
+      "result": "PASS",
+      "duration_ms": 0.203595
+    },
+    {
+      "control_id": "B6-137",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence terminal over notApplicable",
+      "result": "PASS",
+      "duration_ms": 0.19963
+    },
+    {
+      "control_id": "B6-138",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence terminal over unknown",
+      "result": "PASS",
+      "duration_ms": 0.188764
+    },
+    {
+      "control_id": "B6-139",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence terminal over deferred",
+      "result": "PASS",
+      "duration_ms": 0.265959
+    },
+    {
+      "control_id": "B6-140",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence terminal over required",
+      "result": "PASS",
+      "duration_ms": 0.41251
+    },
+    {
+      "control_id": "B6-141",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence notApplicable over unknown",
+      "result": "PASS",
+      "duration_ms": 0.201392
+    },
+    {
+      "control_id": "B6-142",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence notApplicable over deferred",
+      "result": "PASS",
+      "duration_ms": 0.277436
+    },
+    {
+      "control_id": "B6-143",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence notApplicable over required",
+      "result": "PASS",
+      "duration_ms": 0.289044
+    },
+    {
+      "control_id": "B6-144",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence unknown over deferred",
+      "result": "PASS",
+      "duration_ms": 0.438378
+    },
+    {
+      "control_id": "B6-145",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence unknown over required",
+      "result": "PASS",
+      "duration_ms": 0.371699
+    },
+    {
+      "control_id": "B6-146",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "Q precedence deferred over required",
+      "result": "PASS",
+      "duration_ms": 0.358278
+    },
+    {
+      "control_id": "B6-147",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals invalid",
+      "result": "PASS",
+      "duration_ms": 0.983517
+    },
+    {
+      "control_id": "B6-148",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals conflict",
+      "result": "PASS",
+      "duration_ms": 0.414542
+    },
+    {
+      "control_id": "B6-149",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals terminal",
+      "result": "PASS",
+      "duration_ms": 0.587442
+    },
+    {
+      "control_id": "B6-150",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals notApplicable",
+      "result": "PASS",
+      "duration_ms": 0.467262
+    },
+    {
+      "control_id": "B6-151",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals unknown",
+      "result": "PASS",
+      "duration_ms": 0.481383
+    },
+    {
+      "control_id": "B6-152",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals deferred",
+      "result": "PASS",
+      "duration_ms": 0.604898
+    },
+    {
+      "control_id": "B6-153",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "privacy outer guard conceals required",
+      "result": "PASS",
+      "duration_ms": 0.412389
+    },
+    {
+      "control_id": "B6-154",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "terminal + unknown retains unknown operational coverage without erasing lifecycle",
+      "result": "PASS",
+      "duration_ms": 0.460071
+    },
+    {
+      "control_id": "B6-155",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "conflict + terminal + UNKNOWN chooses conflict and conserves all coordinates",
+      "result": "PASS",
+      "duration_ms": 0.478238
+    },
+    {
+      "control_id": "B6-156",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "canonical UNKNOWN knowledge_state cannot become known required",
+      "result": "PASS",
+      "duration_ms": 1.749088
+    },
+    {
+      "control_id": "B6-157",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "canonical UNKNOWN applicability_state cannot become known required",
+      "result": "PASS",
+      "duration_ms": 0.894654
+    },
+    {
+      "control_id": "B6-158",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "canonical UNKNOWN freshness_state cannot become known required",
+      "result": "PASS",
+      "duration_ms": 0.257587
+    },
+    {
+      "control_id": "B6-159",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "canonical UNKNOWN coverage_state cannot become known required",
+      "result": "PASS",
+      "duration_ms": 0.237296
+    },
+    {
+      "control_id": "B6-160",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "unknown privacy is HOLD and is neither prohibition nor admissibility",
+      "result": "PASS",
+      "duration_ms": 0.603366
+    },
+    {
+      "control_id": "B6-161",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "a supplied primary badge cannot override the canonical coordinates",
+      "result": "PASS",
+      "duration_ms": 0.398198
+    },
+    {
+      "control_id": "B6-162",
+      "file": "tests/personal-office/selector.test.ts",
+      "name": "stale knowledge cannot manufacture required routing or complete coverage",
+      "result": "PASS",
+      "duration_ms": 0.66529
+    },
+    {
+      "control_id": "B6-163",
+      "file": "tests/personal-office/whole-stack.test.ts",
+      "name": "MEMORY Personal Office composes B5 route -> B3 one-time release -> B4 actual readback/closure -> B6 Pilot without admission",
+      "result": "PASS",
+      "duration_ms": 17098.500974
+    },
+    {
+      "control_id": "B6-164",
+      "file": "tests/personal-office/whole-stack.test.ts",
+      "name": "SQL Personal Office composes B5 route -> B3 one-time release -> B4 actual readback/closure -> B6 Pilot without admission",
+      "result": "PASS",
+      "duration_ms": 21484.056382
+    }
+  ],
+  "next_owner": "fresh STRATA independent exact-head B6 acceptor; whole-stack independent conformance release only after B6 acceptance",
+  "self_accept": false
+}

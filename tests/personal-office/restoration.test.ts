@@ -1,0 +1,15 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {fixture,put,principal,T0,T2,T3} from './fixtures.ts';
+import {MemoryEnforcementRepository,PostgresEnforcementRepository} from '../../src/enforcement/backends.ts';
+import {CanonicalPilotService} from '../../src/personal-office/pilot.ts';
+import {engine} from '../canonical-repository/sql-fixture.ts';
+import {command,identityRow} from '../canonical-repository/fixtures.ts';
+import {claim,successor} from '../enforcement/fixtures.ts';
+import {identity} from '../../src/semantic-kernel/identity.ts';
+import {mkdtempSync,writeFileSync,rmSync} from 'node:fs';import {tmpdir} from 'node:os';import {join} from 'node:path';import {spawnSync} from 'node:child_process';
+for(const from of ['MEMORY','SQL'] as const)for(const to of ['MEMORY','SQL'] as const)test(from+' -> fresh '+to+' preserves B6 pinned projections, interleaving, cuts, continuation, revocation and ambiguous submission',async()=>{const s=await fixture(from),e=to==='SQL'?await engine():null,repo=e?new PostgresEnforcementRepository(e.executor,()=>T2):new MemoryEnforcementRepository(()=>T2),dir=mkdtempSync(join(tmpdir(),'iris-b6-'));try{
+ const expected=await s.svc.project(s.request);await s.repo.command({kind:'TRANSFER_CONTINUATION',value:{expected:claim(),successor:claim(successor,2)}});await s.repo.command({kind:'REVOKE',value:{principal,domain:'domain:one',expected_generation:1,evidence_refs:['source:revocation']}});await put(s.repo.canonical,principal,'PILOT_SCOPE',{...s.scope,purpose:'LATER_CURRENT'},{at:T3});const wire=await s.repo.exportSnapshot();await repo.importSnapshot(wire);assert.equal(await repo.exportSnapshot(),wire);assert.deepEqual(await new CanonicalPilotService(repo).read(s.request),expected);assert.deepEqual(await new CanonicalPilotService(repo).project(s.request),expected);
+ for(const at of [T0,T2,T3])assert.deepEqual(await repo.reconstruct(principal,at),await s.repo.reconstruct(principal,at));const restored=await repo.inspect();assert.equal(restored.claims[0]!.generation,2);assert.equal(restored.attempts[0]!.state,'AMBIGUOUS_SUBMISSION');assert.equal(restored.revocations.length,1);
+ const path=join(dir,'composite.json'),requestFile=join(dir,'request.json');writeFileSync(path,wire);writeFileSync(requestFile,JSON.stringify(s.request));const cold=spawnSync(process.execPath,['--experimental-strip-types',new URL('./cold-reader.ts',import.meta.url).pathname,to,path,requestFile],{encoding:'utf8',timeout:60000});assert.equal(cold.status,0,cold.stderr);const parsed=JSON.parse(cold.stdout);assert.deepEqual(parsed.output,expected);assert.equal(parsed.wire,wire);
+ await repo.canonical.append(command(identityRow(identity('INTENT','post-restoration:tail'))));assert.deepEqual(await new CanonicalPilotService(repo).read(s.request),expected);const snapshot=JSON.parse(await repo.exportSnapshot());assert(snapshot.events.some((e:any,n:number)=>n>0&&e.canonical_count===snapshot.events[n-1].canonical_count));assert(snapshot.events.at(-1).canonical_count<snapshot.canonical.commands.length);
+ }finally{await s.close();await e?.db.close();rmSync(dir,{recursive:true,force:true});}});

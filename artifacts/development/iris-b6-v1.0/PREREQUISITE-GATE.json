@@ -1,0 +1,49 @@
+{
+  "gate": "PASS",
+  "current": "BIG #703/5975883867",
+  "parent": "9e10e3ab6aaf21dea0c327945e5780070cea0193",
+  "tree": "72b35ab105b42f14e6c8660af3a3e1ec59db4a8b",
+  "protocols": {
+    "BIG_WORK_PREREQUISITE_CONSTRAINTS_v1_1.md": "c14829703305dbc6e1afd363bb8f8af97b0aa153e295075bca23db9aec903469",
+    "02-BIG-Bounded-Completion-Protocol-v1.0-CURRENT.docx": "bceeece8ea91452da59f8bcae41002162f80d15752b4fef9f76bafae44107aae"
+  },
+  "prerequisites": {
+    "Current_source_exact_identity": "READY",
+    "Node24_PGlite_SQL_TypeScript": "INHERITED_READY",
+    "authenticated_GitHub_immutable_objects_comments_readback": "INHERITED_READY",
+    "nontriggering_publication_no_refs_PR_CI": "INHERITED_READY",
+    "cleanup_no_live_resources": "NOT_APPLICABLE",
+    "operational_credentials_deployment_production": "NOT_APPLICABLE",
+    "accepted_B1_B5_gates": "INHERITED_READY"
+  },
+  "scope": "B6 Personal Office / Pilot / candidate interface integration; bounded whole-stack B4 canonical metadata comparison repair for the newly reproduced source-backed defect. Accepted earlier gates and semantic owners retained; E1/oracle/labels/scoring untouched.",
+  "authority": "OFFLINE qualification, immutable source/evidence objects and institutional return/route comments only",
+  "ledger": {
+    "source_mutation": "bounded local source/tests/evidence; rollback accepted B5; no automatic remote refs",
+    "qualification": "focused and targeted checks before stable complete inherited regression; final focused controls extracted from the same full-run occurrence, not a second independent observation",
+    "publication": "one new tree/sole-parent commit and archive; verify blobs/tree/compare/readback before return",
+    "lost_ACK": "reconcile exact remote object/comment before retry",
+    "cleanup": "local scratch only; no provider resources or principals created",
+    "next_owner": "STRATA 8.6.9 fresh independent exact-head B6 acceptor; subsequent whole-stack independent conformance release is STRATA-owned",
+    "self_accept": false
+  },
+  "budget": {
+    "duration_class": "LONG",
+    "estimate_minutes": 40,
+    "checkpoint_interval_minutes": 10,
+    "reassessment_after_minutes": 40,
+    "investigation_boundary": "one diagnosis/one retry for mechanical failed step; named resumable blocker if still blocked; material semantic issue bounded repair only"
+  },
+  "zero_mutation_constraints": [
+    "no deployment/Preview",
+    "no credentials",
+    "no provider configuration",
+    "no live store",
+    "no Production",
+    "no continuity ON",
+    "no IRIS admission",
+    "no BIG Activation",
+    "no E1 scoring",
+    "no ref/PR/merge/CI"
+  ]
+}
