@@ -4,6 +4,8 @@ import { seededRepo, NOW, fixtureIntent } from '../helpers.ts';
 import { continuityAdmission } from '../../src/state/continuity-admission.ts';
 import { claimContinuation } from '../../src/runtime/episode-controller.ts';
 import { CognitionRouter } from '../../src/runtime/cognition-router.ts';
+import {setup as capabilitySetup,install,request as capabilityRequest,worker as capabilityWorker,qid} from '../capability-integration/fixtures.ts';
+import {identity} from '../../src/semantic-kernel/identity.ts';
 
 test('kill after THINK resumes from canonical objective/obligation',()=>{const r=seededRepo(); assert.equal(continuityAdmission(r,r.stateVersion).admitted,false);});
 test('kill after intent persisted preserves intent',()=>{const r=seededRepo(); r.intents.set('i',fixtureIntent()); assert.equal(r.intents.has('i'),true);});
@@ -13,7 +15,7 @@ test('external state change while asleep forces reorientation',()=>{const r=seed
 test('competing continuation generations fail CAS',()=>{const r=seededRepo(); const base={principal_id:'aaron',objective_id:'obj-parent',episode_generation:2,causal_episode_id:'cause',state_version_at_start:r.stateVersion,orientation_version_at_start:1,authority_snapshot_digest:'a',privacy_snapshot_digest:'p',toolset_digest:'t',cognition_profile:'test',status:'ORIENTING' as const,started_at:NOW,last_checkpoint_at:NOW}; const before=r.stateVersion; assert.throws(()=>claimContinuation(r,{...base,work_episode_id:'e2'}),/CANONICAL_CONTINUATION_CAS_REQUIRED/); assert.throws(()=>claimContinuation(r,{...base,work_episode_id:'e2b'}),/CANONICAL_CONTINUATION_CAS_REQUIRED/); assert.equal(r.stateVersion,before);});
 test('stale workflow checkpoint cannot outrank newer canonical state',()=>{const r=seededRepo(); const stale=r.stateVersion; r.bump(); assert.equal(continuityAdmission(r,stale).requires_reorient,true);});
 test('tracing unavailable cannot block canonical reconstruction',()=>{const r=seededRepo(); assert.equal(continuityAdmission(r,r.stateVersion).admitted,false);});
-test('model provider unavailable can fall back without changing authority',()=>{const router=new CognitionRouter(['provider-a/model','provider-b/model']); const chosen=router.route({phase:'THINK',task_type:'x',complexity:'HIGH',privacy_constraints:[],required_modalities:['text'],model_provider_restrictions:['provider-a'],max_reasoning_class:'HIGH',trace_context:'t'}); assert.equal(chosen,'provider-b/model'); assert.equal(router.normalize('provider-b','model').authority_effect,'NONE');});
+test('model provider unavailable can fall back without changing authority',async()=>{const s=await capabilitySetup(),other=identity('WORKER','fallback');await install(s.repo,other,{provider_id:'provider:b'});const router=new CognitionRouter(s.svc,[{subject:capabilityWorker,qualification_id:qid},{subject:other,qualification_id:qid}]);const r=await router.route({request_id:'fallback',phase:'THINK',task_type:'bounded',mode:'RESEARCH',capability:capabilityRequest({providers_denied:['provider:a']}),trace_context:'trace'});assert.equal(r.selected?.configuration.provider_id,'provider:b');assert.equal(r.authority_effect,'NONE');});
 test('empty model session memory does not affect reconstruction',()=>{const r=seededRepo(); const sessionMemory={}; assert.deepEqual(sessionMemory,{}); assert.equal(continuityAdmission(r,r.stateVersion).admitted,false);});
 
 for (const withReceipt of [false,true]) {

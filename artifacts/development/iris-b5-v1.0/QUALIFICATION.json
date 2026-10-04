@@ -1,0 +1,120 @@
+{
+  "schema_version": "IRIS_B5_QUALIFICATION_V1",
+  "authority": "BIG #703/5974736468",
+  "mirror": "IRIS #3/5974737184",
+  "parent": "eb19e89f87727aa2d86e8f3199d8da41fd016144",
+  "parent_tree": "a01a21dccdac5f620d63ebb16c6716be4198ea76",
+  "branch": "builder/iris-b5-capability-perception-routing-iccp-v1",
+  "scope": "BUILDER_AUTHORED_OFFLINE_SOURCE_QUALIFICATION / NOT_INDEPENDENT_ORACLE / NO_HOSTED_PROVIDER_OR_OPERATIONAL_EXPERIENCE_CLAIM",
+  "focused": {
+    "tests": 171,
+    "pass": 171,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "duration_ms": 13687
+  },
+  "full": {
+    "tests": 1279,
+    "pass": 1279,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "duration_ms": 178600,
+    "inherited_observations": 1108,
+    "new_B5_controls": 171,
+    "inherited_test_expectations_unchanged": 1099,
+    "strengthened_or_migrated_inherited_test_cases": 9,
+    "no_tests_deleted": true
+  },
+  "accepted_B1_B4_runtime_semantics": "unchanged",
+  "B3_repair_54": "unchanged / PASS in full regression",
+  "B4_recovery_186": "unchanged / PASS in full regression",
+  "Batch_C_oracle_and_Batch_A_constitution": "unchanged",
+  "qualification_network_attempts": 0,
+  "commands": {
+    "focused": "IRIS_B2_PGLITE_MODULE=/tmp/iris-b2-pglite/package/dist/index.js NODE_OPTIONS=--require=./scripts/qualification/network-guard.cjs node scripts/run-tests.mjs tests/capability-integration",
+    "full": "same environment; node scripts/run-tests.mjs",
+    "structural": "node scripts/static-check.mjs",
+    "strict": "TypeScript 5.7.3 --noEmit --strict --noUnusedLocals --noUnusedParameters --target es2022 --module nodenext --moduleResolution nodenext --allowImportingTsExtensions --skipLibCheck --types node; B5 service/adapter/ICCP/nervous/cognition roots"
+  },
+  "runtime": {
+    "node": "24.19.0",
+    "TypeScript": "5.7.3",
+    "node_types": "24.10.1",
+    "pglite": "0.3.14",
+    "postgres": "17.5 WASM",
+    "pglite_archive_sha256": "1e5a4ddec392f7edf604b5db8d679b822fab013c4004bbcb5ff58684d5712e38",
+    "pglite_archive_bytes": 6803270,
+    "offline_network_guard": "scripts/qualification/network-guard.cjs",
+    "no_dependency_install": true
+  },
+  "restoration": {
+    "directions": [
+      "Memory → Memory",
+      "Memory → fresh SQL",
+      "SQL → Memory",
+      "SQL → fresh SQL"
+    ],
+    "cuts": "prior qualification, later Current, fresh reader and continued writes",
+    "result": "PASS"
+  },
+  "causal_finding": "legacy label boundary collapses configuration/population/evidence/privacy; retired shortcuts/common canonical seam fixes class; guarded actual provider submission retains B3 permit validation",
+  "preliminary": {
+    "initial_focused": {
+      "pass": 141,
+      "fail": 0
+    },
+    "adapter_assertion_run": {
+      "tests": 161,
+      "pass": 154,
+      "fail": 7,
+      "diagnosis": "tests expected throw; existing B3 properly persisted NO_SUBMISSION_PROVEN with zero dispatch. Assertions corrected to verify safe durable disposition. No authority/retry change."
+    },
+    "post_diagnosis": {
+      "tests": 161,
+      "pass": 161,
+      "fail": 0
+    },
+    "caller_scope_run": {
+      "tests": 297,
+      "pass": 297,
+      "fail": 0
+    },
+    "final_focused": {
+      "tests": 171,
+      "pass": 171,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "duration_ms": 13687
+    }
+  },
+  "zero_mutation_evidence": {
+    "live_consequential_provider_calls": 0,
+    "deployments_Previews": 0,
+    "credential_generation": 0,
+    "live_Redis_store_ACL_rotation": 0,
+    "provider_configuration": 0,
+    "Production": 0,
+    "continuity_ON": 0,
+    "IRIS_admission": 0,
+    "BIG_Activation": 0,
+    "E1_payload_labels_scoring": 0,
+    "remote_ref_PR_merge_CI": 0,
+    "authorized_publication": "immutable Git blobs/tree/sole-parent commit/archive and canonical return/routing comments only"
+  },
+  "usage_boundary": {
+    "live_provider_usage": "none invoked",
+    "incremental_connector_model_cost": "UNKNOWN",
+    "full_regression_runs_on_stable_source": 1,
+    "focused_before_full": true,
+    "elapsed_seconds_before_publication": 1826
+  },
+  "disposition": "IRIS_B5_CAPABILITY_PERCEPTION_ROUTING_ICCP_SOURCE_CANDIDATE_READY / STRATA_8_6_9_EXACT_HEAD_ACCEPTANCE_REQUIRED / B5_GATE_OPEN / NO_SELF_ACCEPTANCE",
+  "next_owner": "STRATA 8.6.9 / fresh independent exact-head B5 acceptor",
+  "preserve": "CONTINUITY_DEFAULT_OFF / ZERO_AUTHORITY / NO_PRODUCTION / NO_IRIS_ADMISSION / BIG_ACTIVATION_NOT_AUTHORIZED"
+}

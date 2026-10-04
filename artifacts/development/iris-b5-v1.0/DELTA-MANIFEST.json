@@ -1,0 +1,710 @@
+{
+  "schema_version": "IRIS_B5_MANIFEST_V1",
+  "authority": "BIG #703/5974736468",
+  "base": "eb19e89f87727aa2d86e8f3199d8da41fd016144",
+  "base_tree": "a01a21dccdac5f620d63ebb16c6716be4198ea76",
+  "branch": "builder/iris-b5-capability-perception-routing-iccp-v1",
+  "manifest_self": "excluded from inner rows to avoid recursive hashing; included in complete external delta identity",
+  "delta": {
+    "files": 33,
+    "bytes": 236531,
+    "sha256": "0008af8680d0025e633f7ec0fc4912f0e7156ccc4ee2f940fca7cac093b014ec",
+    "algorithm": "SHA256(sorted UTF8 path+NUL+decimal bytes+NUL+file SHA256+LF)"
+  },
+  "runtime": {
+    "files": 61,
+    "bytes": 360233,
+    "sha256": "76b2a17e590713d5b9b1a3dca6376e87c19ab226bcf57d10d1f3e5ecdea134c5",
+    "algorithm": "SHA256(sorted UTF8 path+NUL+decimal bytes+NUL+file SHA256+LF)"
+  },
+  "runtime_roots": [
+    "src/enforcement/backends.ts",
+    "src/runtime/act.ts",
+    "src/runtime/iris-workflow.ts",
+    "src/tools/action-fixture-adapter.ts",
+    "src/agent-transition/authority-lease.ts",
+    "src/agent-transition/sentinel.ts",
+    "src/runtime/episode-controller.ts",
+    "src/state/migrations.ts",
+    "src/recovery/service.ts",
+    "src/state/continuity-admission.ts",
+    "src/agent-transition/workflow-durability.ts",
+    "src/agent-transition/persistent-objective-runtime.ts",
+    "src/tools/verification.ts",
+    "src/capability/service.ts",
+    "src/capability/adapters.ts",
+    "src/interop/iccp.ts",
+    "src/instrumentation/personal-nervous-system.ts",
+    "src/runtime/cognition-router.ts",
+    "src/platform/managed-capabilities.ts",
+    "src/agent-transition/capabilities.ts",
+    "src/agent-transition/capability-qualification.ts",
+    "src/agent-transition/capability-router.ts",
+    "src/agent-transition/portable-procedure.ts",
+    "src/agent-transition/research-worker.ts",
+    "src/agent-transition/selective-perception.ts"
+  ],
+  "runtime_derivation": "TypeScript 5.7.3 verbatim ESM transpilation; AST value import/export and literal dynamic import closure plus eight inherited exact migrations",
+  "files": [
+    {
+      "path": "artifacts/development/iris-b5-v1.0/B5-CAPABILITY-PERCEPTION-ROUTING-ICCP-RETURN.md",
+      "mode": "100644",
+      "blob": "ffbb8c24045bf36937cee3456e24936418d1fa6c",
+      "bytes": 15282,
+      "sha256": "ac6f46a2e6dc35d39a187340b59d14e6189d03b002054fc351146f065ded7f4c"
+    },
+    {
+      "path": "artifacts/development/iris-b5-v1.0/FOCUSED.log",
+      "mode": "100644",
+      "blob": "96070173e56dc2b7f5e3349cb568c446ed403594",
+      "bytes": 12238,
+      "sha256": "04be7ae57367fde01c9b7ba8bba138e70820e6f42106dd4edad2f70ddc8903a5"
+    },
+    {
+      "path": "artifacts/development/iris-b5-v1.0/FULL-REGRESSION.log",
+      "mode": "100644",
+      "blob": "200abc958cd1f067f0dbfe8c825e33a3a744edc6",
+      "bytes": 91468,
+      "sha256": "99ef7a7cee7889450d7c3274c1bcc015cce045502f5731ca5064410228d9ca03"
+    },
+    {
+      "path": "artifacts/development/iris-b5-v1.0/PREREQUISITE-GATE.json",
+      "mode": "100644",
+      "blob": "9822584ea00b9dea69662edcf790a49da627eb75",
+      "bytes": 2285,
+      "sha256": "fa3d42554252dc5e9d905c7dee0043726e5fe47e09b6123eb9da7f0754e56a50"
+    },
+    {
+      "path": "artifacts/development/iris-b5-v1.0/QUALIFICATION.json",
+      "mode": "100644",
+      "blob": "849872e155b5a303333f2729e766b5a0edd9ba5c",
+      "bytes": 4524,
+      "sha256": "a5a4cd45ed5ff4b13ae4ad70ab256d78c4133a7ed686d0440362d537aae2eb88"
+    },
+    {
+      "path": "artifacts/development/iris-b5-v1.0/structural.log",
+      "mode": "100644",
+      "blob": "5540b68110a8ce1887983cedbced49b69c892009",
+      "bytes": 275,
+      "sha256": "1429df9c5703f719e5cb884f58a933fb4e7779c56f4ab8131ce0faa846399ec4"
+    },
+    {
+      "path": "artifacts/development/iris-b5-v1.0/typecheck.log",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/agent-transition/capabilities.ts",
+      "mode": "100644",
+      "blob": "a7a31f95b781485cbec23788fbf4d0874541ea06",
+      "bytes": 850,
+      "sha256": "ffb83bfea65fb0fbd813e8ebf3ce6830afcfea6011a675374d4466d53149eebd"
+    },
+    {
+      "path": "src/agent-transition/capability-qualification.ts",
+      "mode": "100644",
+      "blob": "097aa963fad647b7d159ab04100bf7b52233ac78",
+      "bytes": 816,
+      "sha256": "7f8d596a740ef341f4c86080f58e8633b1a4b38ebbec6bb645643c1550eb1489"
+    },
+    {
+      "path": "src/agent-transition/capability-router.ts",
+      "mode": "100644",
+      "blob": "7a33d98ee0e0113defae0f7b0b2bac7d33e42bbc",
+      "bytes": 741,
+      "sha256": "ea8a442c12a4f9b5487576f6f92477e6145caa41f850ad439f6a3cdf2554225c"
+    },
+    {
+      "path": "src/agent-transition/portable-procedure.ts",
+      "mode": "100644",
+      "blob": "5fc07a6f5e69cf796d310879fbab0909bed235ef",
+      "bytes": 320,
+      "sha256": "bb626c9fe8a33677726e3d3727920411a020df4149c77315044f7216f6070641"
+    },
+    {
+      "path": "src/agent-transition/research-worker.ts",
+      "mode": "100644",
+      "blob": "332f745175f31d5867b6bbc6d00d1ce51463bb62",
+      "bytes": 419,
+      "sha256": "5997c39749df992ce9fbbb4f0bfd182f1a6f27ce4ffaba03d99c0163c460d85a"
+    },
+    {
+      "path": "src/agent-transition/selective-perception.ts",
+      "mode": "100644",
+      "blob": "71298cc7c1c46eb695df88c636582b76e66578a7",
+      "bytes": 517,
+      "sha256": "c9052a7b3d7a7ce9b0cb655a682eed280e358772ee8f14af020e07fae970f69c"
+    },
+    {
+      "path": "src/capability/adapters.ts",
+      "mode": "100644",
+      "blob": "c2f7589ce92124ac6838bfd34cb55719ea35ac35",
+      "bytes": 4591,
+      "sha256": "de87235db11a6dc21eb310eea2c3b02205485353b8906ba8dcea52466c228b80"
+    },
+    {
+      "path": "src/capability/context.ts",
+      "mode": "100644",
+      "blob": "b8b9f4b0ce814b43076f2933ce0d770235b617be",
+      "bytes": 4001,
+      "sha256": "d7215ae8fc71745453c279b0a2b638cafa96918d9c2ffc9095566b522214fd68"
+    },
+    {
+      "path": "src/capability/privacy.ts",
+      "mode": "100644",
+      "blob": "8e5eb0adb5e035777a952015c3524c4275021466",
+      "bytes": 2995,
+      "sha256": "1259f77dccd644be5df65fff04466cec5508554f5a67648fea99ce3cea16a3ad"
+    },
+    {
+      "path": "src/capability/qualification.ts",
+      "mode": "100644",
+      "blob": "020c8d9ac9db7ecd5c6961b1c87d1a4fb74622bf",
+      "bytes": 13863,
+      "sha256": "7945e3e5ce8cb524736ac5e70f0cc12c7b17f7cc00e733e89165c7634f9aa49c"
+    },
+    {
+      "path": "src/capability/service.ts",
+      "mode": "100644",
+      "blob": "6c66b41d058ab93febfc494484b2d70b2bf4ca1f",
+      "bytes": 8245,
+      "sha256": "40460a3578b118acf16f5930cf49ee3865bc22dc3e4ab5809d9a262ce62d12bd"
+    },
+    {
+      "path": "src/instrumentation/personal-bire.ts",
+      "mode": "100644",
+      "blob": "552cf6782f41cf8499b547126b28163aff668591",
+      "bytes": 1468,
+      "sha256": "724c804123c330030e850eeab8e52e6858887771ada65cec45d89634736136b8"
+    },
+    {
+      "path": "src/instrumentation/personal-nervous-system.ts",
+      "mode": "100644",
+      "blob": "2141ffae0417f6dfc8a0c13ff77de261a2db4228",
+      "bytes": 5102,
+      "sha256": "c80763e675a0388479a73653dab4d884fb1508dac88bd3eed1cafd4f0af59ce4"
+    },
+    {
+      "path": "src/interop/iccp.ts",
+      "mode": "100644",
+      "blob": "68e985b52ac0b8ad5ce4a69f85d607872d628b00",
+      "bytes": 12276,
+      "sha256": "c7dbbde496e3bd16f72f471646e85631b7384718c987c24efe548de9fedfcbb1"
+    },
+    {
+      "path": "src/runtime/cognition-router.ts",
+      "mode": "100644",
+      "blob": "ea753d5ba83347e9b5db8e8ec3a718caef4df4c9",
+      "bytes": 1700,
+      "sha256": "8ca85eade698bc4e480926013e4abc66585caebf4fc7bc38210731514f09a880"
+    },
+    {
+      "path": "tests/agent-transition/ambient.test.ts",
+      "mode": "100644",
+      "blob": "7c64f7067e073bc19413c021de4ff4765c52182a",
+      "bytes": 1151,
+      "sha256": "d6373da9d4131987a248838a928defe91e963e6352855e4bdfd31c800faa3dd2"
+    },
+    {
+      "path": "tests/agent-transition/capability-router.test.ts",
+      "mode": "100644",
+      "blob": "5bff5462e0f51730af3a6a5002fa2781b076712e",
+      "bytes": 1496,
+      "sha256": "7723027c2dbf1913c0a21cfbc78640542d51c178158db8e5a08fcb1eb3cced95"
+    },
+    {
+      "path": "tests/agent-transition/portable-procedure.test.ts",
+      "mode": "100644",
+      "blob": "eed3da2242e4292a7d10e823007f761aaa5a5ed4",
+      "bytes": 775,
+      "sha256": "00b4d1f473a9cdc5975cd54cd9d5f4472ccaa89ed969b7d003a7d298cd52e777"
+    },
+    {
+      "path": "tests/agent-transition/research-worker.test.ts",
+      "mode": "100644",
+      "blob": "c53824da955dc0d52694a8c61b1cddd02d22b43c",
+      "bytes": 704,
+      "sha256": "c601a7c66e5acf2d1e52d3aef2b8a6fa4df14ed7c0a2cb661969831c0cc7b90f"
+    },
+    {
+      "path": "tests/capability-integration/adapters-restoration.test.ts",
+      "mode": "100644",
+      "blob": "2055d229b429f9bfb1ca4471ada8aab75de9ac0a",
+      "bytes": 8323,
+      "sha256": "940d1441d22be6a10b26700eab8b3a8b0ff3f385924bd6dd206e1b8d91958f7b"
+    },
+    {
+      "path": "tests/capability-integration/fixtures.ts",
+      "mode": "100644",
+      "blob": "b765215d15b90948293e77ee911993f4d8d1b219",
+      "bytes": 11003,
+      "sha256": "6cbf85bb24eb7d535664cd3ffae2557af9ac5775aa9bf8ba0de044f31ca6915f"
+    },
+    {
+      "path": "tests/capability-integration/iccp.test.ts",
+      "mode": "100644",
+      "blob": "c4854ee88844c0ce522c3135e93f27ec827b207e",
+      "bytes": 7408,
+      "sha256": "f99777d379ef428dadcc34951c7d887647fea3925081d2f053d551147a6e09c3"
+    },
+    {
+      "path": "tests/capability-integration/perception.test.ts",
+      "mode": "100644",
+      "blob": "f3fb16dc0756efae7b6981a59551eb0916cacf7c",
+      "bytes": 3149,
+      "sha256": "7df7664ca55b1e6f0329471d04722ff9851d90248e0defc223753ddd82279880"
+    },
+    {
+      "path": "tests/capability-integration/qualification.test.ts",
+      "mode": "100644",
+      "blob": "a0f7581a9ca23c63448f4f14e4f18d226834418b",
+      "bytes": 9619,
+      "sha256": "c101b23ed8e6d9f4e833cac0acdb9b0a791449c36494b6ac1b281f132aa25dbd"
+    },
+    {
+      "path": "tests/failure/continuity.test.ts",
+      "mode": "100644",
+      "blob": "2757d7cab3128cb81d29e7da9a8feea04237fab8",
+      "bytes": 6917,
+      "sha256": "f779dff279d0660dcbf5e5f79f9e595b6b3d5620a2abbd7f141a1c3df8eadf6e"
+    },
+    {
+      "path": "tests/provider-substitution/provider-substitution.test.ts",
+      "mode": "100644",
+      "blob": "ad6559b9a3acb53eb500c3ef1585497d9a90b2a3",
+      "bytes": 2010,
+      "sha256": "5790693458519a2dedebf459e0a65ba22a03749aca473f2fc2ef5714005532da"
+    }
+  ],
+  "runtime_files": [
+    {
+      "path": "db/migrations/001_iris_core.sql",
+      "mode": "100644",
+      "blob": "dcc44c4b0c29a7292e779bd4cc1ac91dbcff72b3",
+      "bytes": 50955,
+      "sha256": "999f35e3eec4488cad434991f9e2d181c879ea6a8f8b1707206b3cc3c69f28ad"
+    },
+    {
+      "path": "db/migrations/002_work_episode.sql",
+      "mode": "100644",
+      "blob": "5e9899f6ef2da5497d0d2840e2f92544e6bd8ae1",
+      "bytes": 1284,
+      "sha256": "0871dc69ea8e7765142340a20fa8302ca7ec5615c936a81fce937413e268420b"
+    },
+    {
+      "path": "db/migrations/003_action_effect.sql",
+      "mode": "100644",
+      "blob": "46166ee28628d547fd8211d7c44cd1c3f8e9098c",
+      "bytes": 3991,
+      "sha256": "634722acd138ff593f3200565a481fc65faf08b9ac0dd3e5147c0b6c77c56a3f"
+    },
+    {
+      "path": "db/migrations/004_instrumentation.sql",
+      "mode": "100644",
+      "blob": "cb3926180d1a466d7f09e890d4cf5130d4d36e7c",
+      "bytes": 1405,
+      "sha256": "02edead36323325f6b0559f2d007126f4867d4de81cfa983142a5cffe77c870d"
+    },
+    {
+      "path": "db/migrations/005_agent_transition_identity_authority.sql",
+      "mode": "100644",
+      "blob": "890d37a8c578cdfdd88619c1fcfad1956990a49e",
+      "bytes": 19153,
+      "sha256": "65799eba7c94775de1b696fb941044b698916654db21f04de182a132aa78fd70"
+    },
+    {
+      "path": "db/migrations/006_pilot001_projection.sql",
+      "mode": "100644",
+      "blob": "be42fa65511d7784294015eddbfee27a06b5cec3",
+      "bytes": 6626,
+      "sha256": "abce4d58e44d81a950ac7f7547760005412690e699471b91c7d3be7b49d5ee33"
+    },
+    {
+      "path": "db/migrations/007_b3_enforcement.sql",
+      "mode": "100644",
+      "blob": "b7c090a1a9378f6d8f8d15dc36c0ba1b1d300a39",
+      "bytes": 3074,
+      "sha256": "df8b78001ff01dd2794f8644f758e15b6daace946b5d8bfb69cf5e6ea15a7be2"
+    },
+    {
+      "path": "db/migrations/008_b4_proof_commands.sql",
+      "mode": "100644",
+      "blob": "87df3474c651c3eee9d08e3d2afeebd4c39f9103",
+      "bytes": 864,
+      "sha256": "baae2f04a55ad91295bd60edc1474830d2e8e8df945158c0125f9c3f55d5609e"
+    },
+    {
+      "path": "src/agent-transition/authority-lease.ts",
+      "mode": "100644",
+      "blob": "5dcad7071832c820cfa5b9412941109c2d34f433",
+      "bytes": 2986,
+      "sha256": "98e6fdeb1f7d73e438528ea1880947814907abcaf82ffe3294efa52175549496"
+    },
+    {
+      "path": "src/agent-transition/capabilities.ts",
+      "mode": "100644",
+      "blob": "a7a31f95b781485cbec23788fbf4d0874541ea06",
+      "bytes": 850,
+      "sha256": "ffb83bfea65fb0fbd813e8ebf3ce6830afcfea6011a675374d4466d53149eebd"
+    },
+    {
+      "path": "src/agent-transition/capability-qualification.ts",
+      "mode": "100644",
+      "blob": "097aa963fad647b7d159ab04100bf7b52233ac78",
+      "bytes": 816,
+      "sha256": "7f8d596a740ef341f4c86080f58e8633b1a4b38ebbec6bb645643c1550eb1489"
+    },
+    {
+      "path": "src/agent-transition/capability-router.ts",
+      "mode": "100644",
+      "blob": "7a33d98ee0e0113defae0f7b0b2bac7d33e42bbc",
+      "bytes": 741,
+      "sha256": "ea8a442c12a4f9b5487576f6f92477e6145caa41f850ad439f6a3cdf2554225c"
+    },
+    {
+      "path": "src/agent-transition/persistent-objective-runtime.ts",
+      "mode": "100644",
+      "blob": "7421ad552c97fe5e30ed2fa33fadbf43ae265da5",
+      "bytes": 984,
+      "sha256": "a53f52f571ae5934695be48269f2816fbb41f73d09db86d8fbb8807a6690bfca"
+    },
+    {
+      "path": "src/agent-transition/pilot001-classifier.ts",
+      "mode": "100644",
+      "blob": "b716d1bf8d07cd040793d54674bb3cd1a4ae2e14",
+      "bytes": 4246,
+      "sha256": "1955e160a19e2d25d8d865baf88c5a0fee8d5d0a956930e95f1e65e6505b42b5"
+    },
+    {
+      "path": "src/agent-transition/pilot001-coverage.ts",
+      "mode": "100644",
+      "blob": "2b21f40cf27457523d5540db226446c1ee6c83e4",
+      "bytes": 4733,
+      "sha256": "1d9e28534faffb7c740dce683100654b4d86b0dc452e5220528a82e4212eae4e"
+    },
+    {
+      "path": "src/agent-transition/pilot001-projection.ts",
+      "mode": "100644",
+      "blob": "4931d997e7200353e3011bfd3c548b0bf826c027",
+      "bytes": 7108,
+      "sha256": "07df696c1d3acfea3be0c3479f706ef217f322b389edddb23ab1297e6e031074"
+    },
+    {
+      "path": "src/agent-transition/pilot001-types.ts",
+      "mode": "100644",
+      "blob": "c8c7aa257b1f319b5fe518f8cebaf9ff55ea6301",
+      "bytes": 2420,
+      "sha256": "2a09f355e61fde1cfb413bd6f42bf14373d6d03c7dcdff3fb36b558487d98df0"
+    },
+    {
+      "path": "src/agent-transition/portable-procedure.ts",
+      "mode": "100644",
+      "blob": "5fc07a6f5e69cf796d310879fbab0909bed235ef",
+      "bytes": 320,
+      "sha256": "bb626c9fe8a33677726e3d3727920411a020df4149c77315044f7216f6070641"
+    },
+    {
+      "path": "src/agent-transition/research-worker.ts",
+      "mode": "100644",
+      "blob": "332f745175f31d5867b6bbc6d00d1ce51463bb62",
+      "bytes": 419,
+      "sha256": "5997c39749df992ce9fbbb4f0bfd182f1a6f27ce4ffaba03d99c0163c460d85a"
+    },
+    {
+      "path": "src/agent-transition/selective-perception.ts",
+      "mode": "100644",
+      "blob": "71298cc7c1c46eb695df88c636582b76e66578a7",
+      "bytes": 517,
+      "sha256": "c9052a7b3d7a7ce9b0cb655a682eed280e358772ee8f14af020e07fae970f69c"
+    },
+    {
+      "path": "src/agent-transition/sentinel.ts",
+      "mode": "100644",
+      "blob": "4a5c28bb5146272969e37cdb018bd8cab3cf60ab",
+      "bytes": 1047,
+      "sha256": "9f38470886f600fa09d41e1f6e43745f5b40c4cde00475216f128a19ecb2fa11"
+    },
+    {
+      "path": "src/agent-transition/workflow-durability.ts",
+      "mode": "100644",
+      "blob": "7a7d150072394bccbc64d70030a753b576895400",
+      "bytes": 1029,
+      "sha256": "f19bfd60a6ce11d96fb86c42700b7152b1f68008b92727fb9de008778dc0575e"
+    },
+    {
+      "path": "src/capability/adapters.ts",
+      "mode": "100644",
+      "blob": "c2f7589ce92124ac6838bfd34cb55719ea35ac35",
+      "bytes": 4591,
+      "sha256": "de87235db11a6dc21eb310eea2c3b02205485353b8906ba8dcea52466c228b80"
+    },
+    {
+      "path": "src/capability/context.ts",
+      "mode": "100644",
+      "blob": "b8b9f4b0ce814b43076f2933ce0d770235b617be",
+      "bytes": 4001,
+      "sha256": "d7215ae8fc71745453c279b0a2b638cafa96918d9c2ffc9095566b522214fd68"
+    },
+    {
+      "path": "src/capability/privacy.ts",
+      "mode": "100644",
+      "blob": "8e5eb0adb5e035777a952015c3524c4275021466",
+      "bytes": 2995,
+      "sha256": "1259f77dccd644be5df65fff04466cec5508554f5a67648fea99ce3cea16a3ad"
+    },
+    {
+      "path": "src/capability/qualification.ts",
+      "mode": "100644",
+      "blob": "020c8d9ac9db7ecd5c6961b1c87d1a4fb74622bf",
+      "bytes": 13863,
+      "sha256": "7945e3e5ce8cb524736ac5e70f0cc12c7b17f7cc00e733e89165c7634f9aa49c"
+    },
+    {
+      "path": "src/capability/service.ts",
+      "mode": "100644",
+      "blob": "6c66b41d058ab93febfc494484b2d70b2bf4ca1f",
+      "bytes": 8245,
+      "sha256": "40460a3578b118acf16f5930cf49ee3865bc22dc3e4ab5809d9a262ce62d12bd"
+    },
+    {
+      "path": "src/domain/canonical.ts",
+      "mode": "100644",
+      "blob": "d12c4708bb8e7376b821a004eb691c96bfdb5fd8",
+      "bytes": 9388,
+      "sha256": "2242dcf0cfa5823f772c9fb498f9407323ce8314feff637592e7df2ff974a2de"
+    },
+    {
+      "path": "src/domain/json.ts",
+      "mode": "100644",
+      "blob": "93f5c0d0aead26b1b0852d32504d653bb9e34392",
+      "bytes": 2072,
+      "sha256": "2cda8877bccdc340d65ce73500d88f00495d7396d80d3353411e8cf0e41b9093"
+    },
+    {
+      "path": "src/domain/relations.ts",
+      "mode": "100644",
+      "blob": "0d3f313b5635ba224cd962686532b23d10d0c200",
+      "bytes": 1490,
+      "sha256": "61682acd6d41048faded89e106ab2757e4b5fd39f688859c84ab9f4467d62248"
+    },
+    {
+      "path": "src/domain/root-disposition.ts",
+      "mode": "100644",
+      "blob": "06c0ca6034fb8d9559be4c2a4fc2646bc31404c2",
+      "bytes": 6328,
+      "sha256": "7d258b6c667a1520d74184694a7ce68bfd0361ae9e3145b38234ba859a7e93fb"
+    },
+    {
+      "path": "src/domain/source-dto.ts",
+      "mode": "100644",
+      "blob": "c562d1877a2c30b4a4bfac3dffab765d5a6da260",
+      "bytes": 19878,
+      "sha256": "2fa0670d0de29a90634bc2ac130ca092a5edf15adf081e7cfcbb0193ee1f9360"
+    },
+    {
+      "path": "src/enforcement/backends.ts",
+      "mode": "100644",
+      "blob": "234e4fd5783b0db91e187753f735649cf6d91769",
+      "bytes": 5733,
+      "sha256": "1dfc945b173d454f85145adb2203ff0f4a2842fe2bd550e2c198a12d38906738"
+    },
+    {
+      "path": "src/enforcement/contracts.ts",
+      "mode": "100644",
+      "blob": "f0072346a802b1246ff504cb747a08296a52d181",
+      "bytes": 16239,
+      "sha256": "b4cb43df1547dac5ac7c331d85aa3bfc4a8873543c7e2c4c9c41f20b1c76c668"
+    },
+    {
+      "path": "src/enforcement/repository.ts",
+      "mode": "100644",
+      "blob": "30c56c6267c6da01f914d85c59c3768386b23ef9",
+      "bytes": 24193,
+      "sha256": "b6efc277177411e5c68fb0cf6d303b4c4c461f06b898e814c3f75bdd3227639f"
+    },
+    {
+      "path": "src/instrumentation/personal-bire.ts",
+      "mode": "100644",
+      "blob": "552cf6782f41cf8499b547126b28163aff668591",
+      "bytes": 1468,
+      "sha256": "724c804123c330030e850eeab8e52e6858887771ada65cec45d89634736136b8"
+    },
+    {
+      "path": "src/instrumentation/personal-nervous-system.ts",
+      "mode": "100644",
+      "blob": "2141ffae0417f6dfc8a0c13ff77de261a2db4228",
+      "bytes": 5102,
+      "sha256": "c80763e675a0388479a73653dab4d884fb1508dac88bd3eed1cafd4f0af59ce4"
+    },
+    {
+      "path": "src/interop/iccp.ts",
+      "mode": "100644",
+      "blob": "68e985b52ac0b8ad5ce4a69f85d607872d628b00",
+      "bytes": 12276,
+      "sha256": "c7dbbde496e3bd16f72f471646e85631b7384718c987c24efe548de9fedfcbb1"
+    },
+    {
+      "path": "src/platform/managed-capabilities.ts",
+      "mode": "100644",
+      "blob": "5c7849a88875ee668e6a4e64d389750e55283c3d",
+      "bytes": 760,
+      "sha256": "4cf267339d7c2c7b08d95a17dc036ddb0db26655ff8c6a77afe52e94766c390c"
+    },
+    {
+      "path": "src/recovery/contracts.ts",
+      "mode": "100644",
+      "blob": "c142629a0008a3a421263b8e26319eee4cace99d",
+      "bytes": 12727,
+      "sha256": "d81bd2b42c8ef660181a63c1f2f0c521b644b316da7872a4b4b3cca42f89a881"
+    },
+    {
+      "path": "src/recovery/reducer.ts",
+      "mode": "100644",
+      "blob": "f59b27b7be68d0a25d0f5ae5bd0b6025b3725bfc",
+      "bytes": 29016,
+      "sha256": "d94e4be243200bcdc0d1a925f4d94ce6237f87b7a9bea4f6a0789f15d323d3b9"
+    },
+    {
+      "path": "src/recovery/service.ts",
+      "mode": "100644",
+      "blob": "9ac19ceae5ab4e65e248bb2d5332a5c2ded0e631",
+      "bytes": 6644,
+      "sha256": "aff205a89f0c7805ed0c587483c06ee093535c500d393ad437e25eb880099998"
+    },
+    {
+      "path": "src/runtime/act.ts",
+      "mode": "100644",
+      "blob": "e2de972f31424848f1c224467d55a92d9c226ba5",
+      "bytes": 849,
+      "sha256": "cd5a5f747a2ddc174b9498152d30d3ed1319fc6865e32a56d7206cf8d3046f15"
+    },
+    {
+      "path": "src/runtime/cognition-router.ts",
+      "mode": "100644",
+      "blob": "ea753d5ba83347e9b5db8e8ec3a718caef4df4c9",
+      "bytes": 1700,
+      "sha256": "8ca85eade698bc4e480926013e4abc66585caebf4fc7bc38210731514f09a880"
+    },
+    {
+      "path": "src/runtime/episode-controller.ts",
+      "mode": "100644",
+      "blob": "27c8ea264d4ad46137d496962de3d387622e5819",
+      "bytes": 703,
+      "sha256": "f24aedd09af8f37f722fac6c651a74f63b09b929f201e6199adaa9a55cf046b0"
+    },
+    {
+      "path": "src/runtime/iris-workflow.ts",
+      "mode": "100644",
+      "blob": "1d0c22a67dd79059e40b7b9545bbb2fea444c438",
+      "bytes": 2586,
+      "sha256": "83612fa3298101bd8f829f97f1d6b748f321f9e89ae3b00c24f8a59d9a1a4df5"
+    },
+    {
+      "path": "src/semantic-kernel/continuation.ts",
+      "mode": "100644",
+      "blob": "3057e5b838d322dc92bb2fc7a1d843000c700ccf",
+      "bytes": 1511,
+      "sha256": "994a3a20e781ef30fbb8da56cb2820c6c7a50f2675d65d7d6292f1277183c4d0"
+    },
+    {
+      "path": "src/semantic-kernel/epistemic.ts",
+      "mode": "100644",
+      "blob": "5b537a96b3442960157ff625a0918d8476b2baf3",
+      "bytes": 6194,
+      "sha256": "0cb431c8ffa741394465f09f11b7a4982cecb13e13676fec5ca64d9a4ed669e6"
+    },
+    {
+      "path": "src/semantic-kernel/identity.ts",
+      "mode": "100644",
+      "blob": "296e8e80c5e0e0182f674d2d285e2adffc0f5c7d",
+      "bytes": 4445,
+      "sha256": "5027f61f65db2570f7b4bad7722e10adc0bac5a54e84224ab9b3a3cab1cb03ba"
+    },
+    {
+      "path": "src/semantic-kernel/lifecycle.ts",
+      "mode": "100644",
+      "blob": "975e4e08e3fad3cacc50bdc22336ae5bd65eeb76",
+      "bytes": 8441,
+      "sha256": "b988367e094528bfabc13fc1670f149932c26da1099ef9e1daa455157a179e15"
+    },
+    {
+      "path": "src/semantic-kernel/representation.ts",
+      "mode": "100644",
+      "blob": "245b571de8b2a6d2da4cd3d44934a4de320799e0",
+      "bytes": 4079,
+      "sha256": "292c204c52c850c1c1af63742700a4229a084c02b1f46af4d044aad18a05f438"
+    },
+    {
+      "path": "src/semantic-kernel/temporal.ts",
+      "mode": "100644",
+      "blob": "d2e7f7e7631ce032ab857680d7d473b1ceaea630",
+      "bytes": 2123,
+      "sha256": "89157c1250cc98958acd61dd90ad952f4fe317f922f11f5a9540cc703c7e6527"
+    },
+    {
+      "path": "src/semantic-kernel/validation.ts",
+      "mode": "100644",
+      "blob": "ead05d1770f0cebd112f59d4b2e6c7e40d9c9d9f",
+      "bytes": 2350,
+      "sha256": "fc96ce2241e922c3660c21533e2b7f172b2edf7fa78db960619ccd138eaa6e2e"
+    },
+    {
+      "path": "src/state/continuity-admission.ts",
+      "mode": "100644",
+      "blob": "ae7d2299f1754e2c65de7d9b1ec1dc309aa9af05",
+      "bytes": 1324,
+      "sha256": "290111116031621918bdf38b029ca39bce1f6ae2f8652ff1b5167ff791a7352e"
+    },
+    {
+      "path": "src/state/migrations.ts",
+      "mode": "100644",
+      "blob": "8903148032d981ed56129f8089a7ff3cac6664e3",
+      "bytes": 401,
+      "sha256": "cb80602b76c75b5e7a1da90fe0ce44c1c66b12a00412510d99420656a814c40d"
+    },
+    {
+      "path": "src/state/postgres-repository.ts",
+      "mode": "100644",
+      "blob": "354a7e2809d8ed2e40b5757d4a80d5c737419ac6",
+      "bytes": 1942,
+      "sha256": "7ebae99dd9a629901db38a7727a21b413d5076ee90a66ac3314f84efb6501f5b"
+    },
+    {
+      "path": "src/state/projections.ts",
+      "mode": "100644",
+      "blob": "f7dac129a76bb8aa42739c1b8bb84a1b5801907a",
+      "bytes": 755,
+      "sha256": "29227e514b5562b5103ce0d74088496ec1ca032d00edf4b1a40fd2e7bba16b9c"
+    },
+    {
+      "path": "src/state/repository.ts",
+      "mode": "100644",
+      "blob": "df6f34d46ae3e2a1cd701cbe7a0efe9fd3cf66b8",
+      "bytes": 13544,
+      "sha256": "ca5e9e8b66b458bb7c1103ecc273333718788878011489a6e2248d21a5df6775"
+    },
+    {
+      "path": "src/tools/action-fixture-adapter.ts",
+      "mode": "100644",
+      "blob": "4a1427bacf96d1f40401eb8b33d21c508819ef75",
+      "bytes": 2309,
+      "sha256": "49117b69f41bda12343b0414672cce81de589497f24d9403f058217a0f794888"
+    },
+    {
+      "path": "src/tools/tool-contract.ts",
+      "mode": "100644",
+      "blob": "796840a35d1ddea8e193a33d59f02447ef4911e2",
+      "bytes": 1314,
+      "sha256": "8ec35530fc7e7cf90c3261f466172dca17a17c9f887641ad1f652b7b43a87779"
+    },
+    {
+      "path": "src/tools/verification.ts",
+      "mode": "100644",
+      "blob": "bd6dbc71c7689cfc408029c8889ab330dbc60acb",
+      "bytes": 1086,
+      "sha256": "f43467788d2836b0405b41c8c2b92f531c447e75d26420f182a1259e1edb3e78"
+    }
+  ]
+}

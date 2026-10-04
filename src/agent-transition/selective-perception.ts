@@ -1,3 +1,4 @@
 export type PerceptionClass='EPHEMERAL_WORKING'|'EVIDENCE_CANDIDATE';
 export interface Perception{observation_id:string;sensor_available:boolean;perception_class:PerceptionClass;qualified:boolean;expires_at?:string;persisted:boolean;}
-export function processPerception(p:Perception,now:string){if(p.perception_class==='EPHEMERAL_WORKING')return {persist:false,evidence:false,current:false,expired:!!p.expires_at&&p.expires_at<now};return {persist:p.qualified,evidence:p.qualified,current:false,expired:false};}
+// Retired label-only boundary. No qualification or retention from booleans.
+export function processPerception(p:Perception,now:string){return {persist:false,evidence:false,current:false,expired:!!p.expires_at&&p.expires_at<=now,reason:'B5_CANONICAL_PERCEPTION_PRIVACY_REQUIRED'};}

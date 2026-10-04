@@ -1,0 +1,1 @@
+{"status":"PASS","requiredTables":17,"migrations":["001_iris_core.sql","002_work_episode.sql","003_action_effect.sql","004_instrumentation.sql","005_agent_transition_identity_authority.sql","006_pilot001_projection.sql","007_b3_enforcement.sql","008_b4_proof_commands.sql"]}

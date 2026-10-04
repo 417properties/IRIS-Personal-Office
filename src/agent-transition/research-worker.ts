@@ -1,2 +1,2 @@
 export interface ResearchWorkerResult{worker_identity_id:string;provider_ref:string;evidence_refs:string[];artifact_ref?:string;external_effect_count:0;authority_effect:'NONE';}
-export function qualifyResearchWorkerResult(r:ResearchWorkerResult){if(r.external_effect_count!==0||r.authority_effect!=='NONE')throw new Error('WORKER_EFFECT_FORBIDDEN');return {...r,canonical_current_mutation:false};}
+export function qualifyResearchWorkerResult(r:ResearchWorkerResult):never{if(r.external_effect_count!==0||r.authority_effect!=='NONE')throw new Error('WORKER_EFFECT_FORBIDDEN');throw new Error('B5_CANONICAL_WORKER_QUALIFICATION_REQUIRED');}
